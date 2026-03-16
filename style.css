@@ -1,0 +1,1344 @@
+/* ==========================================================================
+
+   EduNotes Mastery - Premium Dashboard Stylesheet
+
+   Theme: Modern EdTech / Clean & Minimal / Neumorphic Inspiration
+
+   ========================================================================== */
+
+
+
+/* 1. CSS VARIABLES (Color Palette & Theme) */
+
+:root {
+
+    /* Primary Colors: Rich Indigo / Blue */
+
+    --primary-color: #4f46e5;
+
+    --primary-color-hover: #4338ca;
+
+    
+
+    /* Backgrounds: Off-white / light slate setup */
+
+    --bg-main: #f8fafc;        /* Very light uniform background */
+
+    --bg-surface: #ffffff;     /* White for cards and inner elements */
+
+    --bg-sidebar: rgba(255, 255, 255, 0.75); /* Glassmorphism Base */
+
+    --bg-highlight: #eef2ff;   /* Soft blue for highlights */
+
+    
+
+    /* Typography Colors */
+
+    --text-primary: #0f172a;   /* Deep slate for headings */
+
+    --text-secondary: #475569; /* Soft slate for body text */
+
+    --text-muted: #94a3b8;     /* Faint text for badges/footer */
+
+    
+
+    /* Accents & Borders */
+
+    --border-light: #e2e8f0;
+
+    --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+
+    --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+    
+
+    /* Radii & Transitions */
+
+    --radius-md: 8px;
+
+    --radius-lg: 12px;
+
+    --radius-xl: 16px;
+
+    --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+}
+
+
+
+/* 2. RESET & BASE SETTINGS */
+
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+
+    background-color: var(--bg-main);
+
+    color: var(--text-secondary);
+
+    line-height: 1.6;
+
+    overflow-x: hidden;
+
+}
+
+
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+
+
+/* 3. LAYOUT GRID */
+
+.dashboard-container {
+
+    display: flex;
+
+    min-height: 100vh;
+
+    width: 100%;
+
+}
+
+
+
+/* ==========================================
+
+   4. SIDEBAR (Glassmorphism & Fixed)
+
+   ========================================== */
+
+.sidebar {
+
+    width: 280px;
+
+    background: var(--bg-sidebar);
+
+    backdrop-filter: blur(12px);
+
+    -webkit-backdrop-filter: blur(12px);
+
+    border-right: 1px solid var(--border-light);
+
+    display: flex;
+
+    flex-direction: column;
+
+    position: fixed;
+
+    height: 100vh;
+
+    z-index: 100;
+
+    transition: transform 0.3s ease;
+
+}
+
+
+
+.sidebar-header {
+
+    height: 70px;
+
+    padding: 0 1.5rem;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-bottom: 1px solid var(--border-light);
+
+}
+
+
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 0.75rem;
+
+    font-size: 1.25rem;
+
+    font-weight: 700;
+
+    color: var(--primary-color);
+
+}
+
+
+
+.close-sidebar-btn {
+
+    display: none;
+
+    background: none;
+
+    border: none;
+
+    font-size: 1.5rem;
+
+    color: var(--text-secondary);
+
+    cursor: pointer;
+
+}
+
+
+
+/* Sidebar Navigation */
+
+.sidebar-nav {
+
+    padding: 1.5rem 1rem;
+
+    flex: 1;
+
+    overflow-y: auto;
+
+}
+
+
+
+.nav-title {
+
+    font-size: 0.75rem;
+
+    font-weight: 600;
+
+    color: var(--text-muted);
+
+    letter-spacing: 0.1em;
+
+    padding: 0 1rem;
+
+    margin-bottom: 1rem;
+
+}
+
+
+
+.nav-item {
+
+    margin-bottom: 0.5rem;
+
+}
+
+
+
+.nav-link {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    padding: 0.75rem 1rem;
+
+    border-radius: var(--radius-md);
+
+    color: var(--text-secondary);
+
+    font-weight: 500;
+
+    transition: var(--transition-smooth);
+
+}
+
+
+
+.nav-link:hover, .nav-item.active .nav-link {
+
+    background-color: var(--bg-highlight);
+
+    color: var(--primary-color);
+
+}
+
+
+
+/* Dropdown */
+
+.dropdown-menu {
+
+    display: none;
+
+    flex-direction: column;
+
+    padding-left: 3.5rem;
+
+    margin-top: 0.25rem;
+
+}
+
+
+
+.nav-item.has-dropdown.active .dropdown-menu {
+
+    display: flex; /* Collapsible handled simply via 'active' class */
+
+}
+
+
+
+.dropdown-link {
+
+    padding: 0.5rem 0;
+
+    font-size: 0.9rem;
+
+    color: var(--text-secondary);
+
+    transition: var(--transition-smooth);
+
+    position: relative;
+
+}
+
+
+
+.dropdown-link:hover {
+
+    color: var(--primary-color);
+
+}
+
+
+
+.dropdown-link.active-dropdown {
+
+    color: var(--primary-color);
+
+    font-weight: 600;
+
+}
+
+.dropdown-link.active-dropdown::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: -1rem;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 6px;
+
+    height: 6px;
+
+    background-color: var(--primary-color);
+
+    border-radius: 50%;
+
+}
+
+
+
+/* ==========================================
+
+   5. MAIN CONTENT WRAPPER 
+
+   ========================================== */
+
+.main-wrapper {
+
+    flex: 1;
+
+    margin-left: 280px; /* Offset for fixed sidebar */
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 100vh;
+
+}
+
+
+
+/* TOP NAVBAR (Sticky header) */
+
+.topbar {
+
+    height: 70px;
+
+    background: var(--bg-surface);
+
+    border-bottom: 1px solid var(--border-light);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 2rem;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 50;
+
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+
+}
+
+
+
+.menu-toggle-btn {
+
+    display: none;
+
+    background: none;
+
+    border: none;
+
+    color: var(--text-secondary);
+
+    cursor: pointer;
+
+    vertical-align: middle;
+
+}
+
+
+
+/* Search Bar */
+
+.search-container {
+
+    display: flex;
+
+    align-items: center;
+
+    background: var(--bg-main);
+
+    border-radius: 50px;
+
+    padding: 0.5rem 1rem;
+
+    width: 300px;
+
+    transition: var(--transition-smooth);
+
+    border: 1px solid transparent;
+
+}
+
+
+
+.search-container:focus-within {
+
+    border-color: var(--primary-color);
+
+    background: var(--bg-surface);
+
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+
+}
+
+
+
+.search-icon {
+
+    color: var(--text-muted);
+
+    margin-right: 0.5rem;
+
+}
+
+
+
+.search-input {
+
+    border: none;
+
+    background: transparent;
+
+    outline: none;
+
+    width: 100%;
+
+    font-family: inherit;
+
+    color: var(--text-primary);
+
+    font-size: 0.95rem;
+
+}
+
+
+
+/* Theme Toggle */
+
+.theme-btn {
+
+    background: var(--bg-main);
+
+    border: 1px solid var(--border-light);
+
+    color: var(--text-secondary);
+
+    width: 40px;
+
+    height: 40px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: var(--transition-smooth);
+
+}
+
+.theme-btn:hover {
+
+    background: var(--bg-highlight);
+
+    color: var(--primary-color);
+
+}
+
+
+
+/* ==========================================
+
+   6. CONTENT AREA & FEED
+
+   ========================================== */
+
+.content-area {
+
+    padding: 2.5rem 3rem;
+
+    flex: 1;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    width: 100%;
+
+}
+
+
+
+/* Chapter Banner Header */
+
+.chapter-header-banner {
+
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-color-hover));
+
+    border-radius: var(--radius-xl);
+
+    padding: 2rem 2.5rem;
+
+    color: #fff;
+
+    margin-bottom: 2.5rem;
+
+    box-shadow: var(--shadow-soft);
+
+}
+
+
+
+.banner-content .badge {
+
+    display: inline-block;
+
+    background: rgba(255, 255, 255, 0.2);
+
+    padding: 0.25rem 0.75rem;
+
+    border-radius: 50px;
+
+    font-size: 0.85rem;
+
+    font-weight: 500;
+
+    margin-bottom: 1rem;
+
+    backdrop-filter: blur(5px);
+
+}
+
+
+
+.banner-content h1 {
+
+    font-size: 2rem;
+
+    font-weight: 700;
+
+    margin-bottom: 0.5rem;
+
+    line-height: 1.2;
+
+}
+
+
+
+.banner-content p {
+
+    font-size: 1rem;
+
+    opacity: 0.9;
+
+}
+
+
+
+/* ==========================================
+
+   7. QUESTION CARDS (Premium UI)
+
+   ========================================== */
+
+.questions-feed {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1.5rem;
+
+}
+
+
+
+.question-card {
+
+    background: var(--bg-surface);
+
+    border-radius: var(--radius-lg);
+
+    padding: 1.5rem 2rem;
+
+    border: 1px solid var(--border-light);
+
+    box-shadow: var(--shadow-soft);
+
+    transition: var(--transition-smooth);
+
+}
+
+
+
+.question-card:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: var(--shadow-hover);
+
+    border-color: rgba(79, 70, 229, 0.3);
+
+}
+
+
+
+/* Header (The Question) */
+
+.q-header {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 0.75rem;
+
+    margin-bottom: 1rem;
+
+    border-bottom: 1px solid var(--border-light);
+
+    padding-bottom: 1rem;
+
+    position: relative; /* Useful for precise positioning if needed */
+
+}
+
+
+
+.q-label {
+
+    font-size: 1.5rem;
+
+    font-weight: 700;
+
+    color: var(--primary-color);
+
+    line-height: 1.1;
+
+}
+
+
+
+.question-title {
+
+    font-size: 1.25rem;
+
+    font-weight: 600;
+
+    color: var(--text-primary);
+
+    line-height: 1.4;
+
+    margin-top: 0.15rem;
+
+    flex: 1; /* Pushes the copy button to the right */
+
+    padding-right: 1rem; /* Prevent overlap with copy button */
+
+}
+
+
+
+/* Copy Button Styling */
+
+.copy-btn {
+
+    background: transparent;
+
+    border: 1px solid transparent;
+
+    color: var(--text-muted);
+
+    border-radius: var(--radius-md);
+
+    padding: 0.5rem;
+
+    cursor: pointer;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: var(--transition-smooth);
+
+    margin-left: auto; /* Pushes it to the far right of the flex container */
+
+    margin-top: -0.2rem;
+
+}
+
+
+
+.copy-btn:hover {
+
+    background: var(--bg-highlight);
+
+    color: var(--primary-color);
+
+    border-color: var(--border-light);
+
+}
+
+
+
+.copy-btn.copied {
+
+    color: #10b981; /* Premium success green */
+
+    border-color: #10b981;
+
+    background: rgba(16, 185, 129, 0.1);
+
+}
+
+
+
+.copy-btn svg {
+
+    pointer-events: none; /* Prevents target confusion in JS */
+
+}
+
+
+
+/* Body (The Answer) */
+
+.a-body {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 0.75rem;
+
+    margin-bottom: 1rem;
+
+}
+
+
+
+.a-label {
+
+    font-size: 1.05rem;
+
+    font-weight: 600;
+
+    color: var(--text-muted);
+
+}
+
+
+
+.answer-text {
+    font-size: 1.05rem;
+    color: var(--text-primary);
+    line-height: 1.7;
+}
+
+body.dark-mode .answer-text {
+    color: var(--text-primary);
+}
+
+
+
+.answer-text strong {
+    color: var(--primary-color);
+    font-weight: 700;
+    background-color: rgba(79, 70, 229, 0.1);
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+}
+
+body.dark-mode .answer-text strong {
+    color: #FFD700;
+    background-color: rgba(255, 215, 0, 0.1);
+}
+
+
+
+/* Footer (Extra Info - Purpose, Example, etc) */
+
+.card-footer {
+    background: transparent;
+    border-left: 2px solid rgba(79, 70, 229, 0.4);
+    padding: 0.5rem 0 0.5rem 1rem;
+    margin-top: 1.25rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: baseline;
+    border-radius: 0;
+}
+
+
+
+.extra-badge {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    min-width: max-content;
+}
+
+
+
+.extra-text {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+
+
+/* Main Footer */
+
+.main-footer {
+
+    text-align: center;
+
+    padding: 3rem 0;
+
+    color: var(--text-muted);
+
+    font-size: 0.9rem;
+
+}
+
+
+
+/* ==========================================
+
+   8. DARK MODE THEME & UTILITIES
+
+   ========================================== */
+
+body.dark-mode {
+
+    /* Main Backgrounds */
+
+    --bg-main: #0f172a;               /* Deep Navy / Slate background */
+
+    --bg-surface: #1e293b;            /* Dark surface for cards/navbar */
+
+    --bg-sidebar: rgba(30, 41, 59, 0.85); /* Dark Glassmorphism */
+
+    --bg-highlight: #334155;          /* Muted highlight for badges */
+
+
+
+    /* Typography */
+
+    --text-primary: #f8fafc;          /* Pure white headers */
+
+    --text-secondary: #cbd5e1;        /* Light grey for readability */
+
+    --text-muted: #94a3b8;            /* Stealthy text for footers */
+
+
+
+    /* Borders & Shadows */
+
+    --border-light: #334155;          /* Subtle dark stroke */
+
+    --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+
+    --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.6), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+/* Smooth Transitions to Dark Mode for Core Elements */
+
+body, .sidebar, .topbar, .question-card, .search-container, .card-footer, .theme-btn {
+
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease, transform 0.3s ease;
+
+}
+
+
+
+/* Hidden Class for Live Search Filter */
+
+.question-card.hidden-card {
+
+    display: none !important;
+
+}
+
+
+
+/* ==========================================
+
+   9. RESPONSIVE DESIGN (Mobile)
+
+   ========================================== */
+
+@media (max-width: 992px) {
+
+    .content-area {
+
+        padding: 2rem 1.5rem;
+
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    .sidebar {
+
+        transform: translateX(-100%); /* Hidden by default on mobile */
+
+    }
+
+
+
+    .sidebar.mobile-open {
+
+        transform: translateX(0);
+
+        box-shadow: 4px 0 15px rgba(0,0,0,0.1);
+
+    }
+
+
+
+    .close-sidebar-btn {
+
+        display: block; /* Show close button internally on mobile */
+
+    }
+
+
+
+    .main-wrapper {
+
+        margin-left: 0; /* Full width */
+
+    }
+
+
+
+    .menu-toggle-btn {
+
+        display: block; /* Show hamburger */
+
+    }
+
+
+
+    .topbar {
+
+        padding: 0 1.5rem;
+
+        gap: 1rem;
+
+    }
+
+
+
+    .search-container {
+
+        width: 100%; /* Flexible search bar on mobile */
+
+    }
+
+
+
+    .chapter-header-banner {
+
+        padding: 1.5rem;
+
+    }
+
+    .banner-content h1 {
+
+        font-size: 1.6rem;
+
+    }
+
+
+
+    .question-card {
+
+        padding: 1.25rem;
+
+    }
+
+    
+
+    .q-header {
+
+        flex-direction: column;
+
+        gap: 0.25rem;
+
+    }
+
+    
+
+    .a-body {
+
+        flex-direction: column;
+
+        gap: 0.25rem;
+
+    }
+
+
+
+    .card-footer {
+    background: transparent;
+    border-left: 2px solid rgba(79, 70, 229, 0.4);
+    padding: 0.5rem 0 0.5rem 1rem;
+    margin-top: 1.25rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: baseline;
+    border-radius: 0;
+}
+
+}
+
+
+
+/* ========================================== */
+
+/* TABS NAVIGATION & PROGRESS BAR             */
+
+/* ========================================== */
+
+
+
+/* Scroll Progress Bar */
+
+.progress-container {
+
+    position: sticky;
+
+    top: -2rem; /* Offsets padding inside content-area */
+
+    left: 0;
+
+    width: 100%;
+
+    height: 5px;
+
+    background-color: var(--border-light);
+
+    z-index: 50; 
+
+    margin-bottom: 2rem;
+
+    border-radius: 4px;
+
+    overflow: hidden;
+
+}
+
+.progress-bar {
+
+    height: 100%;
+
+    background: linear-gradient(90deg, var(--accent), var(--accent-hover));
+
+    width: 0%;
+
+    border-radius: 4px;
+
+    transition: width 0.1s ease-out;
+
+}
+
+
+
+/* Tab Navigation System */
+
+.tab-navigation {
+
+    display: flex;
+
+    gap: 1rem;
+
+    margin-bottom: 2rem;
+
+    padding: 0.5rem;
+
+    background: var(--surface-bg);
+
+    border: 1px solid var(--border-light);
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-sm);
+
+    flex-wrap: wrap; 
+
+}
+
+
+
+.tab-btn {
+
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 0.5rem;
+
+    padding: 1rem;
+
+    background: transparent;
+
+    border: none;
+
+    border-radius: var(--radius-sm);
+
+    color: var(--text-secondary);
+
+    font-size: 0.95rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all var(--transition-fluid);
+
+    position: relative;
+
+    overflow: hidden;
+
+    min-width: 150px;
+
+}
+
+
+
+.tab-btn:hover {
+
+    color: var(--text-primary);
+
+    background: rgba(79, 70, 229, 0.05); /* very light accent fallback */
+
+}
+
+
+
+.tab-btn.active {
+
+    color: #1a1a1a;
+
+    background: #e2e8f0;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    font-weight: 600;
+
+}
+
+
+
+body.dark-mode .tab-btn.active {
+
+    color: white;
+
+    background: var(--primary-color);
+
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+
+}
+
+
+
+.tab-icon {
+
+    font-size: 1.2rem;
+
+}
+
+
+
+/* Tab Panes */
+
+.tab-pane {
+
+    display: none;
+
+    animation: fadeScaleIn 0.5s cubic-bezier(0.25, 1, 0.3, 1) forwards;
+
+}
+
+
+
+.tab-pane.active {
+
+    display: block;
+
+}
+
+
+
+@keyframes fadeScaleIn {
+
+    0% {
+
+        opacity: 0;
+
+        transform: translateY(15px);
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+/* Tab Panes */
+
+.tab-pane {
+
+    display: none;
+
+    animation: liquidSlide 0.5s cubic-bezier(0.25, 1, 0.3, 1) forwards;
+
+}
+
+
+
+.tab-pane.active {
+
+    display: block;
+
+}
+
+
+
+@keyframes liquidSlide {
+
+    0% {
+
+        opacity: 0;
+
+        transform: translateX(20px);
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform: translateX(0);
+
+    }
+
+}
+
+body.dark-mode strong { color: #FFD700; }
+
+
+
+strong { color: var(--primary-color); }
+
+
+

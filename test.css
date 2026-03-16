@@ -1,0 +1,20 @@
+/* Tab Panes */
+.tab-pane {
+    display: none;
+    animation: liquidSlide 0.5s cubic-bezier(0.25, 1, 0.3, 1) forwards;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+@keyframes liquidSlide {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

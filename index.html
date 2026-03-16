@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduNotes Mastery | Board Exam Notes</title>
+    <!-- Premium Tech Font: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <!-- ========================================== -->
+    <!-- GLASSMORPHISM SIDEBAR (LEFT)               -->
+    <!-- ========================================== -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <!-- Logo Area -->
+            <div class="logo">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+                </svg>
+                <span>EduNotes Mastery</span>
+            </div>
+            <!-- Mobile Close Button -->
+            <button class="close-sidebar-btn" id="closeSidebar" aria-label="Close Sidebar">&times;</button>
+        </div>
+
+        <nav class="sidebar-nav">
+            <p class="nav-title">SUBJECTS</p>
+
+            <!-- Accordion Item: Computer Science -->
+            <div class="nav-item has-dropdown active">
+                <a href="#" class="nav-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                    <span>Computer Science</span>
+                </a>
+                <!-- Dropdown for Chapters -->
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-link">Chapter 1</a>
+                    <a href="#" class="dropdown-link">Chapter 2</a>
+                    <a href="#" class="dropdown-link">Chapter 3</a>
+                    <a href="#" class="dropdown-link">Chapter 4</a>
+                    <a href="#" class="dropdown-link">Chapter 5</a>
+                    <a href="#" class="dropdown-link">Chapter 6</a>
+                    <a href="#" class="dropdown-link">Chapter 7</a>
+                    <a href="#" class="dropdown-link">Chapter 8</a>
+                    <a href="#" class="dropdown-link active-dropdown">Chapter 9</a>
+                </div>
+            </div>
+
+            <!-- Placeholder Links for Other Subjects -->
+            <div class="nav-item">
+                <a href="#" class="nav-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                    <span>Physics</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>
+                    <span>English</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+                    <span>Urdu</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                    <span>Islamiyat</span>
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- ========================================== -->
+    <!-- MAIN CONTENT AREA (RIGHT)                  -->
+    <!-- ========================================== -->
+    <div class="main-wrapper">
+
+        <!-- Top Navbar -->
+        <header class="topbar">
+            <!-- Mobile Hamburger Menu Toggle -->
+            <button class="menu-toggle-btn" id="openSidebar" aria-label="Open Sidebar">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+
+            <!-- Modern Search Bar -->
+            <div class="search-container">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input type="text" id="searchInput" placeholder="Search questions, chapters..." class="search-input">
+            </div>
+
+            <!-- Theme Toggle Placeholder -->
+            <div class="theme-toggle">
+                <button class="theme-btn" id="themeToggleBtn" aria-label="Toggle Dark/Light Mode">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content Feed -->
+        <main class="content-area">
+
+            <!-- Scroll Progress Bar -->
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+            <!-- Chapter Header Banner -->
+            <div class="chapter-header-banner">
+                <div class="banner-content">
+                    <span class="badge">Computer Science</span>
+                    <h1>Chapter 9: Entrepreneurship in Digital Age</h1>
+                    <p>PHASE 1: MOST IMPORTANT & HIGHLY REPEATED BOARD-LEVEL SQs</p>
+                </div>
+            </div>
+
+            <!-- Tab Navigation System -->
+            <div class="tab-navigation">
+                <button class="tab-btn active" data-target="tab-most-important">
+                    <span class="tab-icon">🔥</span> Most Important
+                </button>
+                <button class="tab-btn" data-target="tab-important">
+                    <span class="tab-icon">⭐</span> Important
+                </button>
+                <button class="tab-btn" data-target="tab-conceptual">
+                    <span class="tab-icon">🧠</span> Conceptual / Gems
+                </button>
+            </div>
+
+            <!-- Questions Feed Container -->
+            <div class="questions-feed">
+                <div class="tab-pane active" id="tab-most-important">
+                
+                <!-- Premium Question Card 1 -->
+                <article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">What is Design Thinking?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+Design Thinking is a <strong>method</strong> that helps look at problems from <strong>different angles</strong> to deeply understand the issue instead of just jumping to solutions.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Key Steps</span>
+<p class="extra-text">Empathize, Define, Ideate, Prototype, and Test.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">What are the five key steps of Design Thinking?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+The five key steps are <strong>Empathize, Define, Ideate, Prototype, and Test</strong>.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Process Flow</span>
+<p class="extra-text">These steps ensure businesses create products that users actually want by testing ideas and focusing on the user experience.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">Define Empathize in Design Thinking.</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+Empathize means putting yourself in someone else's shoes to understand their <strong>feelings, needs, and challenges</strong>.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Purpose</span>
+<p class="extra-text">It is the first step used to gather information before defining the problem.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">What is a Prototype?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+A prototype is a <strong>simple version of an idea</strong> created quickly to show how a product might look or work.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Example</span>
+<p class="extra-text">Creating a basic model of a school bag using cardboard before final production.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">Define a Business Plan.</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+A business plan is a document that explains a <strong>business idea</strong>, how it will succeed, and the steps required to achieve its goals.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Purpose</span>
+<p class="extra-text">It acts like a roadmap for starting and managing a business.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">What is an Executive Summary?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+An Executive Summary is a <strong>short overview</strong> of a business plan describing the idea, goals, and strategy.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Key Point</span>
+<p class="extra-text">It summarizes the most important points of the entire business plan.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">What is Market Analysis?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+Market Analysis studies the <strong>target customers, competitors, and market conditions</strong> to understand the business environment.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Example</span>
+<p class="extra-text">Researching the number of pet owners in an area before starting a pet service.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">What is Market Research?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+Market research is the process of collecting information about <strong>customer needs, preferences, and behavior</strong>.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Key Categories</span>
+<p class="extra-text">Qualitative research and Quantitative research.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">Differentiate between Qualitative and Quantitative Research.</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+<strong>Qualitative research</strong> uses non-numerical data like interviews to understand opinions, while <strong>Quantitative research</strong> uses numerical data such as surveys to identify trends.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Key Difference</span>
+<p class="extra-text">Qualitative explains "why", while quantitative measures patterns statistically.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">What is Market Segmentation?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+Market segmentation divides a large market into <strong>smaller specific groups</strong> based on factors like age, income, or buying habits.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Benefit</span>
+<p class="extra-text">Businesses can target each group more effectively.</p>
+</div>
+<!-- Competitor Analysis -->
+<article class="question-card">
+  <div class="q-header">
+    <span class="q-label">Q:</span>
+    <h3 class="question-title">Define Competitor Analysis.</h3>
+  </div>
+  <div class="a-body">
+    <span class="a-label">Ans:</span>
+    <p class="answer-text">
+      Competitor analysis involves studying your competitors' <strong>strengths, weaknesses, pricing strategies, and customer feedback</strong>.
+    </p>
+  </div>
+  <div class="card-footer">
+    <span class="extra-badge">Strategic Advantage</span>
+    <p class="extra-text">It helps identify opportunities to <strong>differentiate</strong> your business in the market.</p>
+  </div>
+</article>
+
+<!-- Predictive Analysis -->
+<article class="question-card">
+  <div class="q-header">
+    <span class="q-label">Q:</span>
+    <h3 class="question-title">What is Predictive Analysis?</h3>
+  </div>
+  <div class="a-body">
+    <span class="a-label">Ans:</span>
+    <p class="answer-text">
+      Predictive analysis uses <strong>historical data</strong> to forecast future trends and outcomes.
+    </p>
+  </div>
+  <div class="card-footer">
+    <span class="extra-badge">Example</span>
+    <p class="extra-text">If past sales show rising demand, you can predict the trend and adjust production accordingly.</p>
+  </div>
+</article>
+
+<!-- Business Pitch -->
+<article class="question-card">
+  <div class="q-header">
+    <span class="q-label">Q:</span>
+    <h3 class="question-title">What is a Business Pitch?</h3>
+  </div>
+  <div class="a-body">
+    <span class="a-label">Ans:</span>
+    <p class="answer-text">
+      A business pitch is a short presentation where you clearly explain your <strong>business idea</strong>.
+    </p>
+  </div>
+  <div class="card-footer">
+    <span class="extra-badge">Importance</span>
+    <p class="extra-text">It is crucial for getting support and investment to turn an idea into reality.</p>
+  </div>
+</article>
+
+<!-- Five steps to pitching -->
+<article class="question-card">
+  <div class="q-header">
+    <span class="q-label">Q:</span>
+    <h3 class="question-title">What are the five key steps to pitching your idea?</h3>
+  </div>
+  <div class="a-body">
+    <span class="a-label">Ans:</span>
+    <p class="answer-text">
+      1) Start with the Problem, 2) Introduce Your Solution, 3) Explain Why It's Unique, 4) Know Your Audience, 5) Be Prepared to Answer Questions.
+    </p>
+  </div>
+  <div class="card-footer">
+    <span class="extra-badge">Key Point</span>
+    <p class="extra-text">Tailor the pitch: investors care about returns, customers care about benefits.</p>
+  </div>
+</article>
+
+<!-- Marketing Plan -->
+<article class="question-card">
+  <div class="q-header">
+    <span class="q-label">Q:</span>
+    <h3 class="question-title">What is a Marketing Plan?</h3>
+  </div>
+  <div class="a-body">
+    <span class="a-label">Ans:</span>
+    <p class="answer-text">
+      A marketing plan details the strategies for reaching your <strong>target market</strong>.
+    </p>
+  </div>
+  <div class="card-footer">
+    <span class="extra-badge">Components</span>
+    <p class="extra-text">Includes promotional channels like social media, TV, and word-of-mouth.</p>
+  </div>
+</article>
+
+<!-- Communication -->
+<article class="question-card">
+  <div class="q-header">
+    <span class="q-label">Q:</span>
+    <h3 class="question-title">Define Communication in everyday and business life.</h3>
+  </div>
+  <div class="a-body">
+    <span class="a-label">Ans:</span>
+    <p class="answer-text">
+      Communication is the process of exchanging <strong>information, ideas, or feelings</strong> with others.
+    </p>
+  </div>
+  <div class="card-footer">
+    <span class="extra-badge">Types</span>
+    <p class="extra-text">Verbal (speaking/writing) and non-verbal (gestures, facial expressions).</p>
+  </div>
+</article>
+
+<!-- Storytelling -->
+<article class="question-card">
+  <div class="q-header">
+    <span class="q-label">Q:</span>
+    <h3 class="question-title">What is Storytelling in a business context?</h3>
+  </div>
+  <div class="a-body">
+    <span class="a-label">Ans:</span>
+    <p class="answer-text">
+      Storytelling uses words, images, and emotions to create a narrative that <strong>engages the audience</strong>.
+    </p>
+  </div>
+  <div class="card-footer">
+    <span class="extra-badge">Impact</span>
+    <p class="extra-text">A strong story captures attention and helps the audience remember the message.</p>
+  </div>
+</article>
+
+<!-- Collaboration -->
+<article class="question-card">
+  <div class="q-header">
+    <span class="q-label">Q:</span>
+    <h3 class="question-title">Define Collaboration.</h3>
+  </div>
+  <div class="a-body">
+    <span class="a-label">Ans:</span>
+    <p class="answer-text">
+      Collaboration is when two or more people work together to achieve a <strong>common goal</strong>.
+    </p>
+  </div>
+  <div class="card-footer">
+    <span class="extra-badge">Process</span>
+    <p class="extra-text">It involves sharing ideas, resources, and efforts to solve problems or create something new.</p>
+  </div>
+</article>
+
+<!-- Iteration -->
+<article class="question-card">
+  <div class="q-header">
+    <span class="q-label">Q:</span>
+    <h3 class="question-title">What is Iteration?</h3>
+  </div>
+  <div class="a-body">
+    <span class="a-label">Ans:</span>
+    <p class="answer-text">
+      Iteration means <strong>repeating a process</strong> while making improvements each time to reach a better result.
+    </p>
+  </div>
+  <div class="card-footer">
+    <span class="extra-badge">Mechanism</span>
+    <p class="extra-text">Changes are made based on continuous feedback until the final outcome is achieved.</p>
+  </div>
+</article>
+
+<!-- Why Collaboration & Iteration matter -->
+<article class="question-card">
+  <div class="q-header">
+    <span class="q-label">Q:</span>
+    <h3 class="question-title">Why are Collaboration and Iteration important?</h3>
+  </div>
+  <div class="a-body">
+    <span class="a-label">Ans:</span>
+    <p class="answer-text">
+      Collaboration pools knowledge to solve complex problems, while iteration refines work step-by-step to improve results.
+    </p>
+  </div>
+  <div class="card-footer">
+    <span class="extra-badge">Real-World Example</span>
+    <p class="extra-text">Community members planning a clean-up adjust their plan (iteration) and keep working together (collaboration).</p>
+  </div>
+</article>
+
+<!-- Innovation vs Creativity -->
+<article class="question-card">
+  <div class="q-header">
+    <span class="q-label">Q:</span>
+    <h3 class="question-title">Differentiate between Innovation and Creativity.</h3>
+  </div>
+  <div class="a-body">
+    <span class="a-label">Ans:</span>
+    <p class="answer-text">
+      <strong>Creativity</strong> is the ability to imagine new ideas; <strong>Innovation</strong> is applying those ideas to create useful products or improvements.
+    </p>
+  </div>
+  <div class="card-footer">
+    <span class="extra-badge">Key Difference</span>
+    <p class="extra-text">Creativity generates ideas; innovation turns ideas into real change.</p>
+  </div>
+</article>
+
+<!-- Fostering Innovation & Creativity -->
+<article class="question-card">
+  <div class="q-header">
+    <span class="q-label">Q:</span>
+    <h3 class="question-title">How can one foster Innovation and Creativity?</h3>
+  </div>
+  <div class="a-body">
+    <span class="a-label">Ans:</span>
+    <p class="answer-text">
+      Foster them by being curious, taking risks, thinking outside the box, and collaborating with others.
+    </p>
+  </div>
+  <div class="card-footer">
+    <span class="extra-badge">Key Point</span>
+    <p class="extra-text">Many innovations come from learning through early failure and iterating quickly.</p>
+  </div>
+</article>
+
+<!-- Focus Group -->
+<article class="question-card">
+  <div class="q-header">
+    <span class="q-label">Q:</span>
+    <h3 class="question-title">What is a Focus Group?</h3>
+  </div>
+  <div class="a-body">
+    <span class="a-label">Ans:</span>
+    <p class="answer-text">
+      A focus group is a small, diverse set of people brought together to discuss a product or idea for in-depth <strong>qualitative feedback</strong>.
+    </p>
+  </div>
+  <div class="card-footer">
+    <span class="extra-badge">Objective</span>
+    <p class="extra-text">To obtain detailed opinions, likes, and dislikes from real users.</p>
+  </div>
+</article>
+
+<!-- Collaborative Tools -->
+<article class="question-card">
+  <div class="q-header">
+    <span class="q-label">Q:</span>
+    <h3 class="question-title">What role do collaborative tools play in teamwork?</h3>
+  </div>
+  <div class="a-body">
+    <span class="a-label">Ans:</span>
+    <p class="answer-text">
+      Collaborative tools let multiple people work on tasks or documents simultaneously, enabling <strong>real-time feedback and coordination</strong>.
+    </p>
+  </div>
+  <div class="card-footer">
+    <span class="extra-badge">Examples</span>
+    <p class="extra-text">Google Drive, Dropbox Paper, and similar platforms.</p>
+  </div>
+</article>
+
+<!-- Market Insights -->
+<article class="question-card">
+  <div class="q-header">
+    <span class="q-label">Q:</span>
+    <h3 class="question-title">What is the purpose of collecting market insights?</h3>
+  </div>
+  <div class="a-body">
+    <span class="a-label">Ans:</span>
+    <p class="answer-text">
+      Collecting market insights gathers information about customers and competitors to make <strong>informed business decisions</strong>.
+    </p>
+  </div>
+  <div class="card-footer">
+    <span class="extra-badge">Key Advantage</span>
+    <p class="extra-text">Helps understand trends and turn raw data into useful strategies.</p>
+  </div>
+</article>
+                    </div>
+                </article>
+                </div>
+
+                <div class="tab-pane" id="tab-important">
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">What is the primary goal of entrepreneurship?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+The primary goal of entrepreneurship is to <strong>solve problems and create value for customers</strong>.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Key Focus</span>
+<p class="extra-text">It emphasizes a human-centered approach to developing effective business solutions.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">How do you define the "Define" step in Design Thinking?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+It is the stage where you clearly <strong>define the problem</strong> after gathering initial information.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Example</span>
+<p class="extra-text">Students need a lightweight, durable, and spacious school bag.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">What does "Ideate" mean in the Design Thinking process?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+Ideate is the phase where you <strong>brainstorm ideas</strong> and think of many possible solutions without worrying if they are perfect.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Key Action</span>
+<p class="extra-text">Generating raw ideas such as adding extra padding to a bag for comfort.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">Describe the "Test" phase in Design Thinking.</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+Testing means checking whether a prototype works well by collecting <strong>feedback from users</strong>.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Process Flow</span>
+<p class="extra-text">Based on feedback, improvements are made until a final product is ready.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">What are Business Solutions?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+Business solutions are <strong>practical ways to help companies solve problems</strong> and improve their operations.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Example</span>
+<p class="extra-text">Using inventory-tracking software in a grocery store to prevent stock shortages.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">What information is included in the "Business Description" of a business plan?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+It explains the <strong>products or services, target customers, and unique features</strong> of the business.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Example</span>
+<p class="extra-text">A lemonade stand selling refreshing drinks to the local neighborhood.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">What is the purpose of the "Products or Services" section in a business plan?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+This section explains <strong>what you are selling</strong> and highlights the features and benefits of your product or service.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Example</span>
+<p class="extra-text">A tutoring service that helps students improve their grades.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">What does a Financial Plan outline in a business plan?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+A financial plan outlines <strong>budget, funding needs, and expected revenue</strong>.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Key Requirement</span>
+<p class="extra-text">It proves how the business will raise money and what it expects to earn.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">How do digital software tools assist in creating a business plan?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+Digital tools simplify business planning by providing <strong>templates, financial models, and guidance</strong>.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Examples</span>
+<p class="extra-text">Software like PlanGuru or Enloop can generate financial projections automatically.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">What are Customer Surveys?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+Customer surveys are <strong>quantitative research tools</strong> used to collect numerical data about customer preferences and behavior.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Method</span>
+<p class="extra-text">They contain a set of questions and can be conducted online, by phone, or in person.</p>
+</div>
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">Why is understanding "Trends and Patterns" important in market data?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+Identifying trends and patterns helps businesses understand <strong>when and how customers buy</strong>, allowing them to adjust marketing strategies effectively.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Example</span>
+<p class="extra-text">A bakery noticing that most purchases happen on weekends and planning weekend promotions.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">What is the main purpose of Making Data-Driven Decisions?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+The main purpose is to use <strong>data insights</strong> to make well-informed decisions that improve business success.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Key Action</span>
+<p class="extra-text">Optimizing resources by discontinuing underperforming products.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">What are the three crucial elements of effective communication?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+The three elements are <strong>Clear Speaking, Good Body Language, and Active Listening</strong>.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Application</span>
+<p class="extra-text">Using gestures, maintaining eye contact confidently, and responding to audience questions properly.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">What does "Understanding Customer Needs" mean for a successful business?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+It means understanding what customers want and providing <strong>products that directly satisfy those needs</strong>.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Example</span>
+<p class="extra-text">A handmade jewelry startup using social media promotions during wedding seasons.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">What does it mean to "Think Outside the Box" for innovation?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+It means looking at problems from <strong>different perspectives</strong> to find new and creative solutions.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Result</span>
+<p class="extra-text">It leads to unique ideas rather than following traditional methods.</p>
+</div>
+</article>
+
+            </div>
+
+            <div class="tab-pane" id="tab-conceptual">
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">Why do many Pakistani businesses increase advertising during Ramadan and Eid?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+Businesses increase advertising because people tend to <strong>shop more during festive seasons</strong> like Ramadan and Eid.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Key Strategy</span>
+<p class="extra-text">This helps businesses boost sales and maximize profits during high-demand periods.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">Which sector in Pakistan is rapidly growing and helping businesses reach a wider audience?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+The <strong>e-commerce sector</strong> is growing rapidly, allowing businesses to sell products online.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Business Advantage</span>
+<p class="extra-text">Online marketing enables businesses to reach a much larger audience.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">How does mobile banking in Pakistan demonstrate innovation?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+Mobile banking allows people to <strong>send money and pay bills using their phones</strong> without visiting a bank.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Real-World Impact</span>
+<p class="extra-text">It saves time and makes banking easier, especially for people in rural areas.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">Name two traditional stories that show Pakistan's storytelling culture.</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+Two famous traditional stories are <strong>Heer Ranjha</strong> and <strong>Sassi Punnu</strong>.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Core Lesson</span>
+<p class="extra-text">These stories highlight themes of love, bravery, and sacrifice.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">Which ancient civilization in Pakistan showed early collaboration and iteration?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+The <strong>Indus Valley Civilization</strong> showed early examples of collaboration and iteration.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Historical Application</span>
+<p class="extra-text">They used these skills in advanced town planning and construction techniques.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">How did a Pakistani innovator make Urdu learning easier?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+A Pakistani innovator created the <strong>first online Urdu dictionary</strong>.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Key Achievement</span>
+<p class="extra-text">This made learning and understanding Urdu much more accessible.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">How did companies like Apple and Google start their journey?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+They started by presenting <strong>simple business pitches</strong> to investors and supporters.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Startup Logic</span>
+<p class="extra-text">Clear explanations helped them gain funding and support.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">How have digital tools and adaptive learning platforms changed education?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+They allow <strong>personalized learning</strong> where lessons adapt to each student's progress.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Tech Application</span>
+<p class="extra-text">Students can learn at their own pace with adjusted difficulty levels.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">How is iteration similar to everyday cooking?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+Iteration is like cooking where you <strong>adjust ingredients and taste repeatedly</strong> until the dish becomes perfect.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Logic</span>
+<p class="extra-text">Both involve improving results step by step based on feedback.</p>
+</div>
+</article>
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">What is the core principle behind the Design Thinking method? (Ref: Exercise MCQ 2)</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+A core principle of Design Thinking is the <strong>human-centered approach</strong>.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Focus Area</span>
+<p class="extra-text">It prioritizes understanding human feelings, needs, and challenges instead of jumping directly to solutions.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">What are the main characteristics of a successful business pitch? (Ref: Exercise MCQ 6)</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+A successful business pitch should be <strong>clear and persuasive</strong>.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Purpose</span>
+<p class="extra-text">It explains the business idea effectively to gain attention and secure support or investment.</p>
+</div>
+</article>
+
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">What is the fundamental purpose of collecting market insights? (Ref: Exercise MCQ 5)</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+The fundamental purpose is to understand <strong>customer needs and market trends</strong>.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Strategic Advantage</span>
+<p class="extra-text">This information helps businesses make informed decisions about strategy, products, and marketing.</p>
+</div>
+
+<article class="question-card">
+<div class="q-header">
+<span class="q-label">Q:</span>
+<h3 class="question-title">Why do many schools in Pakistan conduct debate competitions about storytelling?</h3>
+</div>
+
+<div class="a-body">
+<span class="a-label">Ans:</span>
+<p class="answer-text">
+Schools organize these debates because <strong>storytelling makes arguments more engaging and persuasive</strong>.
+</p>
+</div>
+
+<div class="card-footer">
+<span class="extra-badge">Practical Application</span>
+<p class="extra-text">For example, sharing a story about plastic waste harming marine life makes the argument stronger and more relatable.</p>
+</div>
+</article>
+            </div>
+        </main>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
