@@ -63,23 +63,30 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 4. Live Search
+    // 4. Live Search (Global)
     const searchInput = document.getElementById('searchInput');
 
     if (searchInput) {
         searchInput.addEventListener('input', (e) => {
             const searchTerm = e.target.value.toLowerCase();
             const questionCards = document.querySelectorAll('.question-card');
+            const tabPanes = document.querySelectorAll('.tab-pane');
 
-            questionCards.forEach(card => {
-                const textContent = card.innerText.toLowerCase();
-                // We toggle .hidden-card (defined in your CSS to be display: none !important)
-                if (textContent.includes(searchTerm)) {
-                    card.classList.remove('hidden-card');
-                } else {
-                    card.classList.add('hidden-card');
-                }
-            });
+            if (searchTerm === "") {
+                // Reset search state
+                tabPanes.forEach(pane => pane.classList.remove('search-active'));
+                questionCards.forEach(card => card.classList.remove('hidden-card'));
+            } else {
+                tabPanes.forEach(pane => pane.classList.add('search-active'));
+                questionCards.forEach(card => {
+                    const textContent = card.innerText.toLowerCase();
+                    if (textContent.includes(searchTerm)) {
+                        card.classList.remove('hidden-card');
+                    } else {
+                        card.classList.add('hidden-card');
+                    }
+                });
+            }
         });
     }
 
@@ -93,23 +100,74 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const questionTextEl = card.querySelector('.question-title');
             const answerTextEl = card.querySelector('.answer-text');
+            const marksBoosterEl = card.querySelector('.extra-text');
 
             const questionText = questionTextEl ? questionTextEl.innerText.trim() : '';
             const answerText = answerTextEl ? answerTextEl.innerText.trim() : '';
+            const marksBoosterText = marksBoosterEl ? marksBoosterEl.innerText.trim() : '';
 
-            const textToCopy = `Q: ${questionText}\nAns: ${answerText}`;
+            const textToCopy = `Q: ${questionText}\nAns: ${answerText}\nMarks Booster: ${marksBoosterText}`;
 
             try {
                 await navigator.clipboard.writeText(textToCopy);
                 
                 // Visual feedback saving original svg layout
                 const originalHTML = btn.innerHTML;
-                btn.innerHTML = '<span style="font-size: 13px; font-weight: bold;">Copied!</span>';
+                btn.innerHTML = '<span style="font-size: 11px; font-weight: bold; background: var(--bg-surface); padding: 2px 4px; border-radius: 4px; border: 1px solid var(--border-light);">Copied!</span>';
                 setTimeout(() => {
                     btn.innerHTML = originalHTML;
                 }, 2000);
             } catch (err) {
                 console.error('Failed to copy: ', err);
+            }
+        });
+    });
+
+    // Subject/Chapter Navigation Logic
+    const subjectLinks = document.querySelectorAll('.subject-link, .dropdown-link');
+    const questionsFeed = document.getElementById('questions-feed');
+    const contentUnavailable = document.getElementById('content-unavailable');
+    const tabNavigation = document.querySelector('.tab-navigation');
+    const bannerTitle = document.querySelector('.chapter-header-banner h1');
+    const bannerBadge = document.querySelector('.chapter-header-banner .badge');
+
+    subjectLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            // Remove active style from all links
+            document.querySelectorAll('.active-dropdown').forEach(el => el.classList.remove('active-dropdown'));
+            if (link.classList.contains('dropdown-link')) {
+                link.classList.add('active-dropdown');
+            }
+
+            // Demo logic: If it's not Computer Science Chapter 9, say "Content is not available"
+            const linkText = link.innerText.trim();
+            let isAvailable = false;
+            const hasDropdown = link.closest('.has-dropdown');
+            if (hasDropdown) {
+                const parentSubject = hasDropdown.querySelector('.nav-link span').innerText.trim();
+                if (linkText === 'Chapter 9' && parentSubject === 'Computer Science') {
+                    isAvailable = true;
+                }
+            }
+            
+            if (!isAvailable) {
+                questionsFeed.style.display = 'none';
+                if (tabNavigation) tabNavigation.style.display = 'none';
+                contentUnavailable.style.display = 'block';
+                if (link.classList.contains('subject-link')) {
+                    bannerBadge.innerText = link.getAttribute('data-subject') || linkText;
+                    bannerTitle.innerText = "No Chapters Available";
+                } else {
+                    bannerTitle.innerText = linkText;
+                }
+            } else {
+                questionsFeed.style.display = 'block';
+                if (tabNavigation) tabNavigation.style.display = 'flex';
+                contentUnavailable.style.display = 'none';
+                bannerBadge.innerText = 'Computer Science';
+                bannerTitle.innerText = 'Chapter 9: Entrepreneurship in Digital Age';
             }
         });
     });

@@ -9,35 +9,20 @@
 
 
 /* 1. CSS VARIABLES (Color Palette & Theme) */
-
 :root {
-
-    /* Primary Colors: Rich Indigo / Blue */
-
-    --primary-color: #4f46e5;
-
-    --primary-color-hover: #4338ca;
-
+    /* Primary Colors: Teal / Dark Blue combo */
+    --primary-color: #0d9488;
+    --primary-color-hover: #0f766e;
     
-
     /* Backgrounds: Off-white / light slate setup */
-
     --bg-main: #f8fafc;        /* Very light uniform background */
-
     --bg-surface: #ffffff;     /* White for cards and inner elements */
-
     --bg-sidebar: rgba(255, 255, 255, 0.75); /* Glassmorphism Base */
-
-    --bg-highlight: #eef2ff;   /* Soft blue for highlights */
-
+    --bg-highlight: #f0fdfa;   /* Soft teal for highlights */
     
-
     /* Typography Colors */
-
     --text-primary: #0f172a;   /* Deep slate for headings */
-
-    --text-secondary: #475569; /* Soft slate for body text */
-
+    --text-secondary: #334155; /* Soft slate for body text */
     --text-muted: #94a3b8;     /* Faint text for badges/footer */
 
     
@@ -191,19 +176,12 @@ a {
 
 
 .close-sidebar-btn {
-
     display: none;
-
     background: none;
-
     border: none;
-
     font-size: 1.5rem;
-
     color: var(--text-secondary);
-
     cursor: pointer;
-
 }
 
 
@@ -1342,3 +1320,27 @@ strong { color: var(--primary-color); }
 
 
 
+
+/* Custom Additions */
+.search-active { display: block !important; }
+.hidden { display: none !important; }
+.copy-btn { background: transparent; border: none; color: var(--text-muted); cursor: pointer; padding: 4px; border-radius: var(--radius-md); transition: var(--transition-smooth); display: flex; align-items: center; justify-content: center; }
+.copy-btn:hover { color: var(--primary-color); background: var(--bg-highlight); }
+.q-header { display: flex; align-items: flex-start; gap: 0.75rem; position: relative; width: 100%; }
+.q-header .question-title { flex: 1; }
+.q-header .copy-btn { margin-left: auto; }
+
+/* Scroll & Constraint Fixes */
+body, html { max-width: 100%; overflow-x: hidden; width: 100%; }
+.dashboard-container, .main-wrapper { max-width: 100%; overflow-x: hidden; }
+* { box-sizing: border-box; }
+.question-card, img { max-width: 100%; }
+.question-title, .answer-text, .extra-text { word-wrap: break-word; overflow-wrap: anywhere; }
+@media (max-width: 768px) {
+  .content-area { padding: 1rem 0.75rem; }
+  .question-card { padding: 1rem; }
+  .banner-content h1 { font-size: 1.4rem; }
+  .q-header { display: flex; flex-direction: row; flex-wrap: wrap; align-items: flex-start; }
+  .q-header .question-title { flex: 1 1 0%; min-width: 0; }
+  .q-header .copy-btn { margin-left: auto; }
+}
