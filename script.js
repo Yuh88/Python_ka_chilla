@@ -396,37 +396,35 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 5. Copy Functionality
-    const copyButtons = document.querySelectorAll('.copy-btn');
-    
-    copyButtons.forEach(btn => {
-        btn.addEventListener('click', async () => {
-            const card = btn.closest('.question-card');
-            if (!card) return;
+    // 5. Copy Functionality (delegated for dynamic cards)
+    document.addEventListener('click', async (event) => {
+        const btn = event.target.closest('.copy-btn');
+        if (!btn) return;
 
-            const questionTextEl = card.querySelector('.question-title');
-            const answerTextEl = card.querySelector('.answer-text');
-            const marksBoosterEl = card.querySelector('.extra-text');
+        const card = btn.closest('.question-card');
+        if (!card) return;
 
-            const questionText = questionTextEl ? questionTextEl.innerText.trim() : '';
-            const answerText = answerTextEl ? answerTextEl.innerText.trim() : '';
-            const marksBoosterText = marksBoosterEl ? marksBoosterEl.innerText.trim() : '';
+        const questionTextEl = card.querySelector('.question-title');
+        const answerTextEl = card.querySelector('.answer-text');
+        const marksBoosterEl = card.querySelector('.extra-text');
 
-            const textToCopy = `Q: ${questionText}\nAns: ${answerText}\nMarks Booster: ${marksBoosterText}`;
+        const questionText = questionTextEl ? questionTextEl.innerText.trim() : '';
+        const answerText = (answerTextEl ? answerTextEl.innerText.trim() : '').replace(/^Ans:\s*/i, '');
+        const marksBoosterText = marksBoosterEl ? marksBoosterEl.innerText.trim() : '';
 
-            try {
-                await navigator.clipboard.writeText(textToCopy);
-                
-                // Visual feedback saving original svg layout
-                const originalHTML = btn.innerHTML;
-                btn.innerHTML = '<span style="font-size: 11px; font-weight: bold; background: var(--bg-surface); padding: 2px 4px; border-radius: 4px; border: 1px solid var(--border-light);">Copied!</span>';
-                setTimeout(() => {
-                    btn.innerHTML = originalHTML;
-                }, 2000);
-            } catch (err) {
-                console.error('Failed to copy: ', err);
-            }
-        });
+        const textToCopy = `Q: ${questionText}\nAns: ${answerText}\nMarks Booster: ${marksBoosterText}`;
+
+        try {
+            await navigator.clipboard.writeText(textToCopy);
+
+            const originalHTML = btn.innerHTML;
+            btn.innerHTML = '<span style="font-size: 11px; font-weight: bold; background: var(--bg-surface); padding: 2px 4px; border-radius: 4px; border: 1px solid var(--border-light);">Copied!</span>';
+            setTimeout(() => {
+                btn.innerHTML = originalHTML;
+            }, 2000);
+        } catch (err) {
+            console.error('Failed to copy: ', err);
+        }
     });
 
     // Subject Dashboard → Chapters → Content Flow
@@ -439,7 +437,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const sidebarHomeLink = document.getElementById('sidebarHomeLink');
     const subjectLinks = document.querySelectorAll('.subject-link');
     const sidebarDropdownItems = document.querySelectorAll('.sidebar .nav-item.has-dropdown');
-    const chapterLinks = document.querySelectorAll('.dropdown-link');
     const chapterHeaderBanner = document.querySelector('.chapter-header-banner');
     const questionsFeed = document.getElementById('questions-feed');
     const contentUnavailable = document.getElementById('content-unavailable');
@@ -452,16 +449,83 @@ document.addEventListener('DOMContentLoaded', () => {
     const navStateKey = '__edunotesNav';
     let activeSubject = null;
 
-    const chapterMap = {
-        'Computer Science': ['Chapter 1', 'Chapter 2', 'Chapter 3', 'Chapter 4', 'Chapter 5', 'Chapter 6', 'Chapter 7', 'Chapter 8', 'Chapter 9'],
-        'English': ['Chapter 1', 'Chapter 2', 'Chapter 3', 'Chapter 4', 'Chapter 5'],
-        'Physics': ['Chapter 1', 'Chapter 2', 'Chapter 3', 'Chapter 4', 'Chapter 5', 'Chapter 6', 'Chapter 7', 'Chapter 8'],
-        'Urdu': ['Chapter 1', 'Chapter 2', 'Chapter 3', 'Chapter 4', 'Chapter 5', 'Chapter 6'],
-        'Islamiyat': ['Chapter 1', 'Chapter 2', 'Chapter 3', 'Chapter 4', 'Chapter 5', 'Chapter 6']
+    const siteData = (window.siteData && typeof window.siteData === 'object') ? window.siteData : {};
+
+    const getSubjectChapterData = (subjectName) => {
+        return siteData[subjectName] && typeof siteData[subjectName] === 'object' ? siteData[subjectName] : {};
     };
 
-    const availableChapterContent = {
-        'Computer Science': new Set(['Chapter 9'])
+    const getNodeKeys = (subjectName, node) => {
+        const keys = Object.keys(node || {});
+        if (subjectName === 'Islamiyat') return keys;
+
+        const allNumeric = keys.every(key => /^\d+$/.test(key));
+        if (allNumeric) {
+            return keys.sort((a, b) => Number(a) - Number(b));
+        }
+
+        return keys.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
+    };
+
+    const encodeChapterPath = (pathSegments) => pathSegments.map(segment => String(segment)).join('||');
+    const decodeChapterPath = (chapterKey) => String(chapterKey || '').split('||').filter(Boolean);
+
+    const formatChapterLabelFromPath = (subjectName, pathSegments) => {
+        if (!pathSegments.length) return 'Untitled';
+        if (subjectName === 'Islamiyat') {
+            return pathSegments.join(' - ');
+        }
+
+        if (pathSegments.length === 1 && /^\d+$/.test(pathSegments[0])) {
+            return `Chapter ${pathSegments[0]}`;
+        }
+
+        return pathSegments.join(' - ');
+    };
+
+    const getChapterEntries = (subjectName) => {
+        const chapterData = getSubjectChapterData(subjectName);
+        const entries = [];
+
+        const walk = (node, currentPath = []) => {
+            if (Array.isArray(node)) {
+                if (currentPath.length) {
+                    entries.push({
+                        key: encodeChapterPath(currentPath),
+                        path: currentPath,
+                        label: formatChapterLabelFromPath(subjectName, currentPath)
+                    });
+                }
+                return;
+            }
+
+            if (!node || typeof node !== 'object') {
+                return;
+            }
+
+            const keys = getNodeKeys(subjectName, node);
+            keys.forEach(key => walk(node[key], [...currentPath, key]));
+        };
+
+        walk(chapterData);
+        return entries;
+    };
+
+    const getChapterQuestions = (subjectName, chapterKey) => {
+        const pathSegments = decodeChapterPath(chapterKey);
+        if (!pathSegments.length) {
+            return [];
+        }
+
+        let node = getSubjectChapterData(subjectName);
+        for (const segment of pathSegments) {
+            if (!node || typeof node !== 'object' || !(segment in node)) {
+                return [];
+            }
+            node = node[segment];
+        }
+
+        return Array.isArray(node) ? node : [];
     };
 
     const hideElement = (element) => {
@@ -516,6 +580,77 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
+    const normalizeCategoryKey = (rawCategory) => {
+        const category = String(rawCategory || '').toLowerCase().trim();
+        if (category === '1' || category.includes('most')) return 'most';
+        if (category === '2' || (category.includes('important') && !category.includes('most'))) return 'important';
+        if (category === '3' || category.includes('conceptual') || category.includes('concept')) return 'conceptual';
+        return 'most';
+    };
+
+    const createQuestionCardHtml = (entry) => {
+        const escapeHtml = (value) => String(value || '')
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+
+        const applyStarMagic = (rawValue) => {
+            const escaped = escapeHtml(rawValue || '');
+            return escaped
+                .replace(/\*([^*]+)\*/g, '<strong class="highlight">$1</strong>')
+                .replace(/\n/g, '<br>');
+        };
+
+        const question = applyStarMagic(entry.question);
+        const answer = applyStarMagic(entry.answer);
+        const badgeTitle = applyStarMagic(entry.badgeTitle || entry.badge_title || 'MARKS BOOSTER');
+        const badgeText = applyStarMagic(entry.badgeText || entry.badge_text || entry.marks_booster || entry.marksBooster || '');
+
+        return `
+<article class="question-card">
+    <div class="q-header">
+        <span class="q-label">Q:</span>
+        <h3 class="question-title">${question}</h3>
+        <button class="copy-btn" aria-label="Copy Question">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+        </button>
+    </div>
+    <div class="a-body">
+        <p class="answer-text"><span class="a-label">Ans: </span>${answer}</p>
+    </div>
+    <div class="card-footer">
+        <span class="extra-badge">${badgeTitle}</span>
+        <p class="extra-text">${badgeText}</p>
+    </div>
+</article>
+        `;
+    };
+
+    const renderQuestionsByCategory = (questionList) => {
+        const paneMost = document.getElementById('tab-most-important');
+        const paneImportant = document.getElementById('tab-important');
+        const paneConceptual = document.getElementById('tab-conceptual');
+        if (!paneMost || !paneImportant || !paneConceptual) return;
+
+        const grouped = {
+            most: [],
+            important: [],
+            conceptual: []
+        };
+
+        questionList.forEach(entry => {
+            const key = normalizeCategoryKey(entry.category || entry.categoryKey || entry.type);
+            grouped[key].push(entry);
+        });
+
+        const emptyHtml = '<div class="chapter-empty-state">No questions in this category yet.</div>';
+        paneMost.innerHTML = grouped.most.length ? grouped.most.map(createQuestionCardHtml).join('') : emptyHtml;
+        paneImportant.innerHTML = grouped.important.length ? grouped.important.map(createQuestionCardHtml).join('') : emptyHtml;
+        paneConceptual.innerHTML = grouped.conceptual.length ? grouped.conceptual.map(createQuestionCardHtml).join('') : emptyHtml;
+    };
+
     const buildNavState = (view, subject = null, chapter = null) => ({
         [navStateKey]: true,
         view,
@@ -564,10 +699,12 @@ document.addEventListener('DOMContentLoaded', () => {
         setExpandedSidebarSubject(subjectName, true);
 
         if (chapterSelectionTitle) {
-            chapterSelectionTitle.innerText = `${subjectName} Chapters`;
+            chapterSelectionTitle.innerText = subjectName === 'Islamiyat'
+                ? 'Islamiyat Baab & Topics'
+                : `${subjectName} Chapters`;
         }
 
-        const chapters = chapterMap[subjectName] || [];
+        const chapters = getChapterEntries(subjectName);
         if (!chapterList) return;
 
         if (chapters.length === 0) {
@@ -575,9 +712,16 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        chapterList.innerHTML = chapters
-            .map(chapter => `<button class="chapter-card" type="button" data-subject="${subjectName}" data-chapter="${chapter}">${chapter}</button>`)
-            .join('');
+        chapterList.innerHTML = '';
+        chapters.forEach(chapter => {
+            const chapterCard = document.createElement('button');
+            chapterCard.className = 'chapter-card';
+            chapterCard.type = 'button';
+            chapterCard.setAttribute('data-subject', subjectName);
+            chapterCard.setAttribute('data-chapter', chapter.key);
+            chapterCard.textContent = chapter.label;
+            chapterList.appendChild(chapterCard);
+        });
 
         chapterList.querySelectorAll('.chapter-card').forEach(chapterCard => {
             chapterCard.addEventListener('click', () => {
@@ -602,21 +746,17 @@ document.addEventListener('DOMContentLoaded', () => {
             bannerBadge.innerText = subjectName;
         }
         if (bannerTitle) {
-            bannerTitle.innerText = `${chapterName}: ${subjectName}`;
+            bannerTitle.innerText = `${formatChapterLabelFromPath(subjectName, decodeChapterPath(chapterName))}: ${subjectName}`;
         }
         if (bannerSubtitle) {
             bannerSubtitle.innerText = 'Focused revision view for board preparation.';
         }
 
-        const hasChapterContent = Boolean(availableChapterContent[subjectName] && availableChapterContent[subjectName].has(chapterName));
+        const chapterQuestions = getChapterQuestions(subjectName, chapterName);
+        const hasChapterContent = chapterQuestions.length > 0;
 
         if (hasChapterContent) {
-            if (bannerTitle) {
-                bannerTitle.innerText = 'Chapter 9: Entrepreneurship in Digital Age';
-            }
-            if (bannerSubtitle) {
-                bannerSubtitle.innerText = 'PHASE 1: MOST IMPORTANT & HIGHLY REPEATED BOARD-LEVEL SQs';
-            }
+            renderQuestionsByCategory(chapterQuestions);
 
             showElement(tabNavigation);
             showElement(questionsFeed);
@@ -695,22 +835,56 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    chapterLinks.forEach(link => {
-        link.addEventListener('click', (event) => {
+    const renderSidebarDropdownsFromData = () => {
+        sidebarDropdownItems.forEach(item => {
+            const subjectLink = item.querySelector('.subject-link');
+            const dropdownMenu = item.querySelector('.dropdown-menu');
+            if (!subjectLink || !dropdownMenu) return;
+
+            const subjectName = subjectLink.getAttribute('data-subject');
+            if (!subjectName) return;
+
+            const chapterEntries = getChapterEntries(subjectName);
+            dropdownMenu.innerHTML = '';
+
+            if (!chapterEntries.length) {
+                return;
+            }
+
+            chapterEntries.forEach(chapter => {
+                const link = document.createElement('a');
+                link.href = '#';
+                link.className = 'dropdown-link';
+                link.setAttribute('data-chapter-key', chapter.key);
+                link.textContent = chapter.label;
+                dropdownMenu.appendChild(link);
+            });
+        });
+    };
+
+    renderSidebarDropdownsFromData();
+
+    if (sidebar) {
+        sidebar.addEventListener('click', (event) => {
+            const chapterLink = event.target.closest('.dropdown-link');
+            if (!chapterLink) return;
+
             event.preventDefault();
             resetDropdownActiveState();
-            link.classList.add('active-dropdown');
+            chapterLink.classList.add('active-dropdown');
 
-            const chapterName = link.innerText.trim();
-            const parentDropdownItem = link.closest('.has-dropdown');
+            const parentDropdownItem = chapterLink.closest('.has-dropdown');
             if (parentDropdownItem) {
                 sidebarDropdownItems.forEach(item => item.classList.toggle('expanded', item === parentDropdownItem));
             }
+
             const parentSubjectLink = parentDropdownItem ? parentDropdownItem.querySelector('.subject-link') : null;
             const subjectName = parentSubjectLink ? parentSubjectLink.getAttribute('data-subject') : 'Computer Science';
-            navigateToState(buildNavState('content', subjectName || 'Computer Science', chapterName), 'forward');
+            const chapterKey = chapterLink.getAttribute('data-chapter-key') || chapterLink.innerText.trim();
+
+            navigateToState(buildNavState('content', subjectName || 'Computer Science', chapterKey), 'forward');
         });
-    });
+    }
 
     if (persistentBackBtn) {
         persistentBackBtn.addEventListener('click', () => {
