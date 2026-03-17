@@ -4,11 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>EduNotes Mastery | Board Exam Notes</title>
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('edunotes_splash_seen') === '1') {
+          document.documentElement.classList.add('returning-visitor');
+        }
+      } catch (error) {
+        /* no-op */
+      }
+    })();
+  </script>
     <!-- Premium Tech Font: Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<div id="firstVisitSplash" class="first-visit-splash" aria-hidden="true">
+  <div class="splash-content">
+    <div class="splash-logo-wrap">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
+      </svg>
+      <h1 class="splash-title">EduNotes Mastery</h1>
+    </div>
+    <p id="splashTypingText" class="splash-subtext">Welcome to EduNotes Mastery — Your Board Exam Success Starts Here.</p>
+    <p class="splash-credit">Developed by Muhammad Yousaf.</p>
+  </div>
+</div>
 
 <div class="dashboard-container">
 
@@ -31,50 +55,96 @@
         <nav class="sidebar-nav">
             <p class="nav-title">SUBJECTS</p>
 
+          <div class="nav-item sidebar-home-item">
+            <a href="#" class="nav-link sidebar-home-link" id="sidebarHomeLink">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10.5 12 3l9 7.5"></path><path d="M5 9.5V21h14V9.5"></path></svg>
+              <span>Main Menu</span>
+            </a>
+          </div>
+
             <!-- Accordion Item: Computer Science -->
-            <div class="nav-item has-dropdown active">
-                <a href="#" class="nav-link">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-                    <span>Computer Science</span>
-                </a>
-                <!-- Dropdown for Chapters -->
-                <div class="dropdown-menu">
-                    <a href="#" class="dropdown-link">Chapter 1</a>
-                    <a href="#" class="dropdown-link">Chapter 2</a>
-                    <a href="#" class="dropdown-link">Chapter 3</a>
-                    <a href="#" class="dropdown-link">Chapter 4</a>
-                    <a href="#" class="dropdown-link">Chapter 5</a>
-                    <a href="#" class="dropdown-link">Chapter 6</a>
-                    <a href="#" class="dropdown-link">Chapter 7</a>
-                    <a href="#" class="dropdown-link">Chapter 8</a>
-                    <a href="#" class="dropdown-link active-dropdown">Chapter 9</a>
-                </div>
+            <div class="nav-item has-dropdown">
+              <a href="#" class="nav-link subject-link" data-subject="Computer Science">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                <span>Computer Science</span>
+                <svg class="nav-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-link">Chapter 1</a>
+                <a href="#" class="dropdown-link">Chapter 2</a>
+                <a href="#" class="dropdown-link">Chapter 3</a>
+                <a href="#" class="dropdown-link">Chapter 4</a>
+                <a href="#" class="dropdown-link">Chapter 5</a>
+                <a href="#" class="dropdown-link">Chapter 6</a>
+                <a href="#" class="dropdown-link">Chapter 7</a>
+                <a href="#" class="dropdown-link">Chapter 8</a>
+                <a href="#" class="dropdown-link">Chapter 9</a>
+              </div>
             </div>
 
-            <!-- Other Subjects -->
-            <div class="nav-item">
-                <a href="#" class="nav-link subject-link" data-subject="English">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>
-                    <span>English</span>
-                </a>
+            <div class="nav-item has-dropdown">
+              <a href="#" class="nav-link subject-link" data-subject="English">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>
+                <span>English</span>
+                <svg class="nav-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-link">Chapter 1</a>
+                <a href="#" class="dropdown-link">Chapter 2</a>
+                <a href="#" class="dropdown-link">Chapter 3</a>
+                <a href="#" class="dropdown-link">Chapter 4</a>
+                <a href="#" class="dropdown-link">Chapter 5</a>
+              </div>
             </div>
-            <div class="nav-item">
-                <a href="#" class="nav-link subject-link" data-subject="Physics">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
-                    <span>Physics</span>
-                </a>
+
+            <div class="nav-item has-dropdown">
+              <a href="#" class="nav-link subject-link" data-subject="Physics">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                <span>Physics</span>
+                <svg class="nav-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-link">Chapter 1</a>
+                <a href="#" class="dropdown-link">Chapter 2</a>
+                <a href="#" class="dropdown-link">Chapter 3</a>
+                <a href="#" class="dropdown-link">Chapter 4</a>
+                <a href="#" class="dropdown-link">Chapter 5</a>
+                <a href="#" class="dropdown-link">Chapter 6</a>
+                <a href="#" class="dropdown-link">Chapter 7</a>
+                <a href="#" class="dropdown-link">Chapter 8</a>
+              </div>
             </div>
-            <div class="nav-item">
-                <a href="#" class="nav-link subject-link" data-subject="Islamiyat">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-                    <span>Islamiyat</span>
-                </a>
+
+            <div class="nav-item has-dropdown">
+              <a href="#" class="nav-link subject-link" data-subject="Islamiyat">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                <span>Islamiyat</span>
+                <svg class="nav-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-link">Chapter 1</a>
+                <a href="#" class="dropdown-link">Chapter 2</a>
+                <a href="#" class="dropdown-link">Chapter 3</a>
+                <a href="#" class="dropdown-link">Chapter 4</a>
+                <a href="#" class="dropdown-link">Chapter 5</a>
+                <a href="#" class="dropdown-link">Chapter 6</a>
+              </div>
             </div>
-            <div class="nav-item">
-                <a href="#" class="nav-link subject-link" data-subject="Tarjama-tul-Quran">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-                    <span>Tarjama-tul-Quran</span>
-                </a>
+
+            <div class="nav-item has-dropdown">
+              <a href="#" class="nav-link subject-link" data-subject="Urdu">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                <span>Urdu</span>
+                <svg class="nav-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-link">Chapter 1</a>
+                <a href="#" class="dropdown-link">Chapter 2</a>
+                <a href="#" class="dropdown-link">Chapter 3</a>
+                <a href="#" class="dropdown-link">Chapter 4</a>
+                <a href="#" class="dropdown-link">Chapter 5</a>
+                <a href="#" class="dropdown-link">Chapter 6</a>
+              </div>
             </div>
         </nav>
     </aside>
@@ -113,8 +183,66 @@
                 <div class="progress-bar" id="progressBar"></div>
             </div>
 
+            <button id="persistentBackBtn" class="persistent-back-btn hidden" type="button" aria-label="Back" title="Back">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+            </button>
+
+            <!-- Subject Dashboard (Default Home View) -->
+            <section id="subjectDashboardView" class="subject-dashboard-view">
+              <div class="subject-hero-banner">
+                <h1>EduNotes Mastery: Your Digital Study Companion</h1>
+              </div>
+              <div class="subject-dashboard-header">
+                <h2>Select a Subject</h2>
+                <p>Choose your subject to browse chapters and start revision.</p>
+              </div>
+              <div class="subject-grid" id="subjectGrid">
+                <button class="subject-card subject-card-computer" data-subject="Computer Science" type="button">
+                  <span class="subject-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                  </span>
+                  <span class="subject-name">Computer Science</span>
+                </button>
+                <button class="subject-card subject-card-english" data-subject="English" type="button">
+                  <span class="subject-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>
+                  </span>
+                  <span class="subject-name">English</span>
+                </button>
+                <button class="subject-card subject-card-physics" data-subject="Physics" type="button">
+                  <span class="subject-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M12 2c4 0 7 4.5 7 10s-3 10-7 10-7-4.5-7-10 3-10 7-10z"></path><path d="M2 12h20"></path></svg>
+                  </span>
+                  <span class="subject-name">Physics</span>
+                </button>
+                <button class="subject-card subject-card-urdu" data-subject="Urdu" type="button">
+                  <span class="subject-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"></path></svg>
+                  </span>
+                  <span class="subject-name">Urdu</span>
+                </button>
+                <button class="subject-card subject-card-islamiyat" data-subject="Islamiyat" type="button">
+                  <span class="subject-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                  </span>
+                  <span class="subject-name">Islamiyat</span>
+                </button>
+              </div>
+            </section>
+
+            <!-- Chapter Selection View -->
+            <section id="chapterSelectionView" class="chapter-selection-view hidden">
+              <div class="chapter-selection-header">
+                <h2 id="chapterSelectionTitle">Choose a Chapter</h2>
+              </div>
+              <div id="chapterList" class="chapter-grid"></div>
+            </section>
+
             <!-- Chapter Header Banner -->
-            <div class="chapter-header-banner">
+            <div class="chapter-header-banner hidden">
                 <div class="banner-content">
                     <span class="badge">Computer Science</span>
                     <h1>Chapter 9: Entrepreneurship in Digital Age</h1>
@@ -123,7 +251,7 @@
             </div>
 
             <!-- Tab Navigation System -->
-            <div class="tab-navigation">
+            <div class="tab-navigation hidden">
                 <button class="tab-btn active" data-target="tab-most-important">
                     <span class="tab-icon">🔥</span> Most Important
                 </button>
@@ -138,11 +266,11 @@
             <!-- Content Unavailable Message -->
             <div id="content-unavailable" class="content-unavailable hidden" style="text-align: center; padding: 3rem; color: var(--text-muted); font-size: 1.2rem; font-weight: 500;">
                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="margin-bottom: 1rem;"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
-                <p>Content is not available</p>
+              <p>Content Coming Soon</p>
             </div>
 
             <!-- Questions Feed Container -->
-            <div class="questions-feed" id="questions-feed">
+            <div class="questions-feed hidden" id="questions-feed">
                 <div class="tab-pane active" id="tab-most-important">
                 
                 <!-- Premium Question Card 1 -->
@@ -1163,7 +1291,7 @@ The fundamental purpose is to understand <strong>customer needs and market trend
 <span class="extra-badge">Strategic Advantage</span>
 <p class="extra-text">This information helps businesses make informed decisions about strategy, products, and marketing.</p>
 </div>
-
+</article>
 <article class="question-card">
 <div class="q-header">
 <span class="q-label">Q:</span>
