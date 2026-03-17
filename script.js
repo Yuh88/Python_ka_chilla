@@ -4,12 +4,57 @@ document.addEventListener('DOMContentLoaded', () => {
     const openBtn = document.getElementById('openSidebar');
     const closeBtn = document.getElementById('closeSidebar');
 
-    if (openBtn && closeBtn) {
+    const isMobileView = () => window.matchMedia('(max-width: 768px)').matches;
+
+    const updateSidebarToggleState = () => {
+        if (!openBtn || !sidebar) return;
+        const isExpanded = isMobileView()
+            ? sidebar.classList.contains('mobile-open')
+            : !document.body.classList.contains('sidebar-collapsed');
+        openBtn.setAttribute('aria-expanded', String(isExpanded));
+        openBtn.setAttribute('aria-label', isExpanded ? 'Hide Sidebar' : 'Show Sidebar');
+    };
+
+    if (openBtn && sidebar) {
         openBtn.addEventListener('click', () => {
-            sidebar.classList.add('mobile-open');
+            if (isMobileView()) {
+                sidebar.classList.toggle('mobile-open');
+            } else {
+                document.body.classList.toggle('sidebar-collapsed');
+            }
+            updateSidebarToggleState();
         });
+    }
+
+    if (closeBtn && sidebar) {
         closeBtn.addEventListener('click', () => {
+            if (isMobileView()) {
+                sidebar.classList.remove('mobile-open');
+            } else {
+                document.body.classList.add('sidebar-collapsed');
+            }
+            updateSidebarToggleState();
+        });
+    }
+
+    window.addEventListener('resize', () => {
+        if (!isMobileView() && sidebar) {
             sidebar.classList.remove('mobile-open');
+        }
+        updateSidebarToggleState();
+    });
+
+    updateSidebarToggleState();
+
+    if (sidebar) {
+        const sidebarLinks = sidebar.querySelectorAll('a');
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.matchMedia('(max-width: 768px)').matches) {
+                    sidebar.classList.remove('mobile-open');
+                    updateSidebarToggleState();
+                }
+            });
         });
     }
 
@@ -172,7 +217,31 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 6. Scroll Progress Bar
+    // 6. Back To Top Button
+    const backToTopBtn = document.getElementById('backToTopBtn');
+
+    const toggleBackToTopVisibility = () => {
+        if (!backToTopBtn) return;
+        if (window.scrollY > 300) {
+            backToTopBtn.classList.add('is-visible');
+        } else {
+            backToTopBtn.classList.remove('is-visible');
+        }
+    };
+
+    window.addEventListener('scroll', toggleBackToTopVisibility, { passive: true });
+    toggleBackToTopVisibility();
+
+    if (backToTopBtn) {
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+
+    // 7. Scroll Progress Bar
     const contentArea = document.getElementById('contentArea');
     const progressBar = document.getElementById('progressBar');
 
