@@ -27,6 +27,13 @@ def prompt_with_back(prompt_text: str):
     return user_input
 
 
+def clean_menu_token(raw_value: str):
+    value = str(raw_value or "").strip()
+    value = re.sub(r"\s+", "", value)
+    value = value.strip("[](){}")
+    return value.upper()
+
+
 def read_site_data(js_path: Path):
     content = js_path.read_text(encoding="utf-8")
     pattern = re.compile(
@@ -83,6 +90,21 @@ def choose_mode():
         print("Invalid mode. Enter 1 or 2.")
 
 
+def choose_delete_submenu_action():
+    print("\nDelete Menu")
+    print("[A] Delete Specific Numbers")
+    print("[B] Delete Entire Category")
+    print("[BACK] Return to Main Menu")
+    while True:
+        raw_action = input("Choose option (A-B or BACK): ").strip()
+        normalized_action = clean_menu_token(raw_action)
+        if normalized_action in {"A", "B"}:
+            return normalized_action
+        if normalized_action in {"BACK", "RETURN"}:
+            return None
+        print("Invalid choice. Please enter A, B, or BACK.")
+
+
 def choose_main_menu_action():
     print("\nMain Menu")
     print("[1] Add New Questions (Single/Bulk)")
@@ -120,6 +142,41 @@ def choose_category():
         if category:
             return category
         print("Invalid category. Please enter 1, 2, or 3.")
+
+
+def get_category_menu_code(category_value):
+    for code, value in CATEGORY_MENU.items():
+        if value == category_value:
+            return code
+    return category_value
+
+
+def choose_chapter_for_subject(data_obj, subject):
+    subject_data = data_obj.get(subject, {}) if isinstance(data_obj.get(subject), dict) else {}
+    chapter_keys = list(subject_data.keys())
+
+    if not chapter_keys:
+        print("No chapters found for this subject.")
+        return None
+
+    print("\nAvailable Chapters:")
+    for index, chapter_key in enumerate(chapter_keys, start=1):
+        print(f"{index}. {chapter_key}")
+
+    while True:
+        choice = prompt_with_back("Enter chapter index from list")
+        if choice is None:
+            return None
+
+        if choice.isdigit():
+            index = int(choice)
+            if 1 <= index <= len(chapter_keys):
+                return chapter_keys[index - 1]
+
+        if choice in subject_data:
+            return choice
+
+        print("Invalid chapter. Enter a valid index from the list.")
 
 
 def build_entry(question, answer, category, badge_title, badge_text):
@@ -274,7 +331,7 @@ def parse_bulk_blocks(raw_text: str):
         line = raw_line.strip()
         if not line:
             continue
-        if line == "---":
+        if re.fullmatch(r"-{3,}", line):
             if current_lines:
                 blocks.append("\n".join(current_lines))
                 current_lines = []
@@ -300,7 +357,7 @@ def parse_bulk_entry_block(block: str):
         line = raw_line.strip()
         if not line:
             continue
-        match = re.match(r"^([A-Za-z]{1,3})\s*:\s*(.*)$", line)
+        match = re.match(r"^([A-Za-z]{1,3})\s*:\s*(.*)$", line, flags=re.IGNORECASE)
         if match:
             key = match.group(1).upper()
             value = match.group(2).strip()
@@ -341,19 +398,44 @@ def parse_bulk_entry_block(block: str):
 
 def read_bulk_batch_text():
     print("Paste your batch now and press Ctrl+Z then Enter (Windows) when done.")
+    print("Type 'END' on a new line to save this batch now.")
     print("Type 'b' on the first line to go back.")
     lines = []
     first_line = True
+    ended_by_end = False
+    ended_by_eof = False
+    ended_by_interrupt = False
+
     while True:
         try:
             line = input()
             if first_line and line.strip().lower() == BACK_KEYWORD:
-                return None
+                return {
+                    "text": None,
+                    "ended_by_end": False,
+                    "ended_by_interrupt": False,
+                    "went_back": True,
+                }
+            if line.strip().upper() == "END":
+                ended_by_end = True
+                break
             lines.append(line)
             first_line = False
         except EOFError:
+            ended_by_eof = True
             break
-    return "\n".join(lines)
+        except KeyboardInterrupt:
+            ended_by_interrupt = True
+            print("\nKeyboard interrupt detected. Trying to save parsed blocks...")
+            break
+
+    return {
+        "text": "\n".join(lines),
+        "ended_by_end": ended_by_end,
+        "ended_by_eof": ended_by_eof,
+        "ended_by_interrupt": ended_by_interrupt,
+        "went_back": False,
+    }
 
 
 def collect_bulk_entries(save_callback):
@@ -373,7 +455,19 @@ def collect_bulk_entries(save_callback):
     print("3. Exit Without Saving Pending")
 
     while True:
-        action = prompt_with_back("\nChoose action (1-3)")
+        try:
+            action = prompt_with_back("\nChoose action (1-3)")
+        except KeyboardInterrupt:
+            print("\nKeyboard interrupt detected. Trying to save pending blocks...")
+            if pending:
+                saved_now = save_callback(pending)
+                total_saved += saved_now
+                pending = []
+                print(f"Successfully Saved {saved_now} Blocks.")
+            else:
+                print("Successfully Saved 0 Blocks.")
+            return total_saved, False
+
         if action is None:
             if pending:
                 saved_now = save_callback(pending)
@@ -400,17 +494,27 @@ def collect_bulk_entries(save_callback):
             print("Invalid action. Enter 1, 2, or 3.")
             continue
 
-        raw_bulk = read_bulk_batch_text()
-        if raw_bulk is None:
+        bulk_read_result = read_bulk_batch_text()
+        if bulk_read_result["went_back"]:
             print("Going back to previous menu.")
             continue
+
+        raw_bulk = bulk_read_result["text"]
         blocks = parse_bulk_blocks(raw_bulk)
         if not blocks:
             print("No valid blocks found in this batch.")
+            if bulk_read_result["ended_by_interrupt"]:
+                if pending:
+                    saved_now = save_callback(pending)
+                    total_saved += saved_now
+                    pending = []
+                    print(f"Successfully Saved {saved_now} Blocks.")
+                return total_saved, False
             continue
 
         parsed_count = 0
         skipped_count = 0
+        saved_this_batch = 0
         for block in blocks:
             parsed = parse_bulk_entry_block(block)
             if parsed:
@@ -425,8 +529,27 @@ def collect_bulk_entries(save_callback):
             batch_to_save = pending[:AUTO_SAVE_BATCH]
             saved_now = save_callback(batch_to_save)
             total_saved += saved_now
+            saved_this_batch += saved_now
             pending = pending[AUTO_SAVE_BATCH:]
             print(f"Auto-saved {saved_now} item(s).")
+
+        if bulk_read_result["ended_by_end"] or bulk_read_result["ended_by_eof"]:
+            if pending:
+                saved_now = save_callback(pending)
+                total_saved += saved_now
+                saved_this_batch += saved_now
+                pending = []
+            print(f"Successfully Saved {saved_this_batch} Blocks.")
+
+        if bulk_read_result["ended_by_interrupt"]:
+            if pending:
+                saved_now = save_callback(pending)
+                total_saved += saved_now
+                pending = []
+                print(f"Successfully Saved {saved_now} Blocks.")
+            else:
+                print("Successfully Saved 0 Blocks.")
+            return total_saved, False
 
     return total_saved, False
 
@@ -445,6 +568,17 @@ def write_data_with_error_handling(js_path, original_content, match, data_obj):
     except Exception as exc:
         print(f"Error writing {js_path.name}: {exc}")
         return False
+
+
+def get_leaf_question_lists(node):
+    if isinstance(node, list):
+        return [node]
+    if isinstance(node, dict):
+        lists = []
+        for value in node.values():
+            lists.extend(get_leaf_question_lists(value))
+        return lists
+    return []
 
 
 def run_add_questions_flow(js_path, original_content, match, data_obj):
@@ -494,14 +628,14 @@ def run_add_questions_flow(js_path, original_content, match, data_obj):
                 return
 
 
-def run_delete_question_flow(js_path, original_content, match, data_obj):
+def run_delete_specific_numbers_flow(js_path, original_content, match, data_obj):
     while True:
         subject = choose_subject()
         if subject is None:
             return
 
         while True:
-            chapter = choose_chapter()
+            chapter = choose_chapter_for_subject(data_obj, subject)
             if chapter is None:
                 break
 
@@ -579,6 +713,74 @@ def run_delete_question_flow(js_path, original_content, match, data_obj):
 
                 if len(chapter_questions) == 0:
                     break
+
+
+def run_delete_entire_category_flow(js_path, original_content, match, data_obj):
+    while True:
+        subject = choose_subject()
+        if subject is None:
+            break
+
+        while True:
+            chapter = choose_chapter_for_subject(data_obj, subject)
+            if chapter is None:
+                break
+
+            chapter_node = data_obj.get(subject, {}).get(chapter)
+            leaf_lists = get_leaf_question_lists(chapter_node)
+
+            if not leaf_lists:
+                print("No questions found to delete.")
+                continue
+
+            category = choose_category()
+            if category is None:
+                print("Going back to previous menu.")
+                continue
+
+            total_found = 0
+            for question_list in leaf_lists:
+                for entry in question_list:
+                    if isinstance(entry, dict) and normalize_category(entry.get("category")) == category:
+                        total_found += 1
+
+            confirmation = prompt_with_back(f"Found {total_found} questions. Delete all? (y/n)")
+            if confirmation is None:
+                print("Going back to previous menu.")
+                continue
+
+            if confirmation.lower() != "y":
+                print("Category delete cancelled.")
+                continue
+
+            for question_list in leaf_lists:
+                filtered = []
+                for entry in question_list:
+                    if not (isinstance(entry, dict) and normalize_category(entry.get("category")) == category):
+                        filtered.append(entry)
+                question_list[:] = filtered
+
+            if not write_data_with_error_handling(js_path, original_content, match, data_obj):
+                return
+
+            category_code = get_category_menu_code(category)
+            print(f"Success! All questions in Category [{category_code}] for Chapter [{chapter}] have been cleared.")
+            continue
+
+
+def run_delete_question_flow(js_path, original_content, match, data_obj):
+    while True:
+        action = choose_delete_submenu_action()
+        if action is None:
+            return
+
+        if action == "A":
+            run_delete_specific_numbers_flow(js_path, original_content, match, data_obj)
+            continue
+
+        if action == "B":
+            run_delete_entire_category_flow(js_path, original_content, match, data_obj)
+            continue
 
 
 def main():

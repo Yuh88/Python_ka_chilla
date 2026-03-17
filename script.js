@@ -597,7 +597,8 @@ document.addEventListener('DOMContentLoaded', () => {
             .replace(/'/g, '&#39;');
 
         const applyStarMagic = (rawValue) => {
-            const escaped = escapeHtml(rawValue || '');
+            const normalizedLineBreaks = String(rawValue || '').replace(/\\n/g, '\n');
+            const escaped = escapeHtml(normalizedLineBreaks);
             return escaped
                 .replace(/\*([^*]+)\*/g, '<strong class="highlight">$1</strong>')
                 .replace(/\n/g, '<br>');
@@ -649,6 +650,10 @@ document.addEventListener('DOMContentLoaded', () => {
         paneMost.innerHTML = grouped.most.length ? grouped.most.map(createQuestionCardHtml).join('') : emptyHtml;
         paneImportant.innerHTML = grouped.important.length ? grouped.important.map(createQuestionCardHtml).join('') : emptyHtml;
         paneConceptual.innerHTML = grouped.conceptual.length ? grouped.conceptual.map(createQuestionCardHtml).join('') : emptyHtml;
+
+        if (window.MathJax && typeof window.MathJax.typesetPromise === 'function') {
+            window.MathJax.typesetPromise();
+        }
     };
 
     const buildNavState = (view, subject = null, chapter = null) => ({
