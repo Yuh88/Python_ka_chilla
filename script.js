@@ -480,7 +480,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const questionCard = event.target.closest('.question-card');
             if (!questionCard) return;
 
-            if (event.target.closest('.copy-btn, .bookmark-btn, .done-toggle, .done-checkbox, button, input, label, a')) {
+            if (event.target.closest('.done-toggle, .done-checkbox, button, input, label, a')) {
                 return;
             }
 
@@ -491,29 +491,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!isFlashcardMode) return;
             document.querySelectorAll('.question-card').forEach(card => card.classList.remove('revealed'));
         };
-    };
-
-    const handleBookmarks = () => {
-        document.addEventListener('click', (event) => {
-            const bookmarkBtn = event.target.closest('.bookmark-btn');
-            if (!bookmarkBtn) return;
-
-            const questionCard = bookmarkBtn.closest('.question-card');
-            if (!questionCard) return;
-
-            const questionId = questionCard.getAttribute('data-question-id');
-            if (!questionId) return;
-
-            if (bookmarkedQuestionIds.has(questionId)) {
-                bookmarkedQuestionIds.delete(questionId);
-                updateBookmarkUI(bookmarkBtn, false);
-            } else {
-                bookmarkedQuestionIds.add(questionId);
-                updateBookmarkUI(bookmarkBtn, true);
-            }
-
-            saveStorageSet(STORAGE_KEYS.bookmarks, bookmarkedQuestionIds);
-        });
     };
 
     const handleProgress = () => {
@@ -541,39 +518,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     runSearchFilter = initSearch();
     runFlashcardSync = initFlashcardInteractions();
-    handleBookmarks();
     handleProgress();
 
-    // 5. Copy Functionality (delegated for dynamic cards)
-    document.addEventListener('click', async (event) => {
-        const btn = event.target.closest('.copy-btn');
-        if (!btn) return;
-
-        const card = btn.closest('.question-card');
-        if (!card) return;
-
-        const questionTextEl = card.querySelector('.question-title');
-        const answerTextEl = card.querySelector('.answer-text');
-        const marksBoosterEl = card.querySelector('.extra-text');
-
-        const questionText = questionTextEl ? questionTextEl.innerText.trim() : '';
-        const answerText = (answerTextEl ? answerTextEl.innerText.trim() : '').replace(/^Ans:\s*/i, '');
-        const marksBoosterText = marksBoosterEl ? marksBoosterEl.innerText.trim() : '';
-
-        const textToCopy = `Q: ${questionText}\nAns: ${answerText}\nMarks Booster: ${marksBoosterText}`;
-
-        try {
-            await navigator.clipboard.writeText(textToCopy);
-
-            const originalHTML = btn.innerHTML;
-            btn.innerHTML = '<span style="font-size: 11px; font-weight: bold; background: var(--bg-surface); padding: 2px 4px; border-radius: 4px; border: 1px solid var(--border-light);">Copied!</span>';
-            setTimeout(() => {
-                btn.innerHTML = originalHTML;
-            }, 2000);
-        } catch (err) {
-            console.error('Failed to copy: ', err);
-        }
-    });
+    // 5. Subject Dashboard → Chapters → Content Flow
 
     // Subject Dashboard → Chapters → Content Flow
     const subjectDashboardView = document.getElementById('subjectDashboardView');
@@ -599,7 +546,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let activeChapter = null;
 
     const STORAGE_KEYS = {
-        bookmarks: 'edunotes_bookmarks',
         completed: 'edunotes_completed'
     };
 
@@ -620,7 +566,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    const bookmarkedQuestionIds = readStorageSet(STORAGE_KEYS.bookmarks);
     const completedQuestionIds = readStorageSet(STORAGE_KEYS.completed);
 
     const buildQuestionId = (entry, meta = {}) => {
@@ -641,12 +586,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return `q-${Math.abs(hash).toString(36)}`;
     };
 
-    const updateBookmarkUI = (bookmarkBtn, isActive) => {
-        if (!bookmarkBtn) return;
-        bookmarkBtn.classList.toggle('active', isActive);
-        bookmarkBtn.setAttribute('aria-pressed', String(isActive));
-    };
-
     const updateProgressUI = (questionCard, isDone) => {
         if (!questionCard) return;
         questionCard.classList.toggle('is-done', isDone);
@@ -658,13 +597,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const questionId = card.getAttribute('data-question-id');
             if (!questionId) return;
 
-            const bookmarkBtn = card.querySelector('.bookmark-btn');
             const doneCheckbox = card.querySelector('.done-checkbox');
 
-            const isBookmarked = bookmarkedQuestionIds.has(questionId);
             const isDone = completedQuestionIds.has(questionId);
 
-            updateBookmarkUI(bookmarkBtn, isBookmarked);
             updateProgressUI(card, isDone);
 
             if (doneCheckbox) {
@@ -833,7 +769,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const badgeTitle = applyStarMagic(entry.badgeTitle || entry.badge_title || 'MARKS BOOSTER');
         const badgeText = applyStarMagic(entry.badgeText || entry.badge_text || entry.marks_booster || entry.marksBooster || '');
         const questionId = buildQuestionId(entry, meta);
-        const isBookmarked = bookmarkedQuestionIds.has(questionId);
         const isDone = completedQuestionIds.has(questionId);
 
         return `
@@ -841,12 +776,6 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="q-header">
         <span class="q-label">Q:</span>
         <h3 class="question-title">${question}</h3>
-        <div class="q-actions">
-            <button class="bookmark-btn${isBookmarked ? ' active' : ''}" type="button" aria-label="Bookmark Question" aria-pressed="${isBookmarked}">⭐</button>
-            <button class="copy-btn" aria-label="Copy Question" type="button">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-            </button>
-        </div>
     </div>
     <div class="a-body">
         <p class="answer-text"><span class="a-label">Ans: </span>${answer}</p>
