@@ -235,6 +235,10 @@
 
             <!-- Subject Dashboard (Default Home View) -->
             <section id="subjectDashboardView" class="subject-dashboard-view">
+              <div class="bismillah-banner" aria-label="Bismillah-ir-Rahman-ir-Rahim">
+                <p class="bismillah-arabic" dir="rtl" lang="ar">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
+                <p class="bismillah-translit">Bismillah-ir-Rahman-ir-Rahim</p>
+              </div>
               <div class="subject-hero-banner">
                 <h1 id="welcomeMainHeading">NotesCraft: Fast Revision Companion</h1>
               </div>
@@ -242,6 +246,16 @@
                 <p id="welcomeIntroText">Interactive chapter-wise short notes for ICS &amp; FSc. Master your board exams with precision notes designed for efficiency.</p>
                 <p id="welcomeCtaText" class="welcome-cta">Select a subject from the sidebar to start your revision.</p>
               </div>
+              <section class="daily-wisdom" aria-live="polite">
+                <div class="daily-wisdom-icon" aria-hidden="true">
+                  <i class="fa-solid fa-book-open-reader"></i>
+                </div>
+                <div class="daily-wisdom-content">
+                  <h2>Daily Wisdom · Ilm &amp; Sunnah</h2>
+                  <p id="dailyWisdomQuote">“Seeking knowledge is a duty upon every Muslim.”</p>
+                  <p id="dailyWisdomSource">Hadith (Ibn Majah)</p>
+                </div>
+              </section>
               <div class="subject-grid" id="subjectGrid">
                 <button class="subject-card subject-card-computer" data-subject="Computer Science" type="button">
                   <span class="subject-icon" aria-hidden="true">
@@ -1370,8 +1384,39 @@ Schools organize these debates because <strong>storytelling makes arguments more
         </button>
 
         <footer class="site-footer">
-          <p>© 2026 NotesCraft. Developed with ♥️ by Muhammad Yousaf.| Good Luck for Exams!</p>
+          <p>© 2026 NotesCraft. Developed with ♥️ by Muhammad Yousaf. | Join us in seeking blessings: Please recite a Durood Pak for the Ummah. | Good luck with your studies!</p>
         </footer>
+
+<script>
+  (function () {
+    const wisdomItems = [
+      {
+        quote: 'Seeking knowledge is a duty upon every Muslim.',
+        source: 'Hadith (Ibn Majah)'
+      },
+      {
+        quote: 'Are those who know equal to those who do not know?',
+        source: 'Qur\'an 39:9'
+      },
+      {
+        quote: 'Whoever follows a path in pursuit of knowledge, Allah will make easy for him a path to Paradise.',
+        source: 'Hadith (Sahih Muslim)'
+      },
+      {
+        quote: 'My Lord, increase me in knowledge.',
+        source: 'Qur\'an 20:114'
+      }
+    ];
+
+    const quoteEl = document.getElementById('dailyWisdomQuote');
+    const sourceEl = document.getElementById('dailyWisdomSource');
+    if (!quoteEl || !sourceEl || !wisdomItems.length) return;
+
+    const randomItem = wisdomItems[Math.floor(Math.random() * wisdomItems.length)];
+    quoteEl.textContent = `“${randomItem.quote}”`;
+    sourceEl.textContent = randomItem.source;
+  })();
+</script>
 
 <script defer src="content_data.js"></script>
 <script defer src="script.js"></script>
