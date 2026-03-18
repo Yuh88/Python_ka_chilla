@@ -322,21 +322,46 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. Dark Mode Toggle
     const themeToggleBtn = document.getElementById('themeToggleBtn');
     const body = document.body;
-    
-    // Start in Light Mode by Default
+    const themeStorageKey = 'edunotes_theme';
 
     const moonIcon = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>`;
     const sunIcon = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>`;
 
-    if (themeToggleBtn) {
-        themeToggleBtn.innerHTML = body.classList.contains('dark-mode') ? sunIcon : moonIcon;
-        themeToggleBtn.addEventListener('click', () => {
-            body.classList.toggle('dark-mode');
-            if (body.classList.contains('dark-mode')) {
-                themeToggleBtn.innerHTML = sunIcon;
-            } else {
-                themeToggleBtn.innerHTML = moonIcon;
+    const getInitialTheme = () => {
+        try {
+            const savedTheme = localStorage.getItem(themeStorageKey);
+            if (savedTheme === 'light' || savedTheme === 'dark') {
+                return savedTheme;
             }
+        } catch (error) {
+            /* no-op */
+        }
+        return 'dark';
+    };
+
+    const applyTheme = (theme) => {
+        const isDark = theme === 'dark';
+        body.classList.toggle('dark-mode', isDark);
+        if (themeToggleBtn) {
+            themeToggleBtn.innerHTML = isDark ? sunIcon : moonIcon;
+        }
+    };
+
+    const persistTheme = (theme) => {
+        try {
+            localStorage.setItem(themeStorageKey, theme);
+        } catch (error) {
+            /* no-op */
+        }
+    };
+
+    applyTheme(getInitialTheme());
+
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+            const nextTheme = body.classList.contains('dark-mode') ? 'light' : 'dark';
+            applyTheme(nextTheme);
+            persistTheme(nextTheme);
         });
     }
 
@@ -361,9 +386,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     targetPane.classList.add('active');
                     // Reset animation sequence to ensure it replays
                     targetPane.style.animation = 'none';
-                    targetPane.offsetHeight; // trigger reflow
-                    targetPane.style.animation = ''; // let CSS handle the animation 
-                    // (Ensure style.css has standard animation setup for .tab-pane.active)
+                    targetPane.offsetHeight;
+                    targetPane.style.animation = '';
                 }
             }
         });
