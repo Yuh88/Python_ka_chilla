@@ -178,6 +178,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const isMobileView = () => window.matchMedia('(max-width: 768px)').matches;
 
+    const closeSidebarOnMobile = () => {
+        if (!sidebar || !isMobileView()) return;
+        sidebar.classList.remove('mobile-open', 'active');
+        updateSidebarToggleState();
+    };
+
+    const closeSidebarAfterNavigation = () => {
+        if (!sidebar || !isMobileView()) return;
+        window.requestAnimationFrame(() => {
+            closeSidebarOnMobile();
+        });
+    };
+
     const updateSidebarToggleState = () => {
         if (!openBtn || !sidebar) return;
         const isExpanded = isMobileView()
@@ -201,11 +214,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (closeBtn && sidebar) {
         closeBtn.addEventListener('click', () => {
             if (isMobileView()) {
-                sidebar.classList.remove('mobile-open');
+                closeSidebarOnMobile();
             } else {
                 document.body.classList.add('sidebar-collapsed');
+                updateSidebarToggleState();
             }
-            updateSidebarToggleState();
         });
     }
 
@@ -217,18 +230,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     updateSidebarToggleState();
-
-    if (sidebar) {
-        const sidebarLinks = sidebar.querySelectorAll('a');
-        sidebarLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                if (window.matchMedia('(max-width: 768px)').matches) {
-                    sidebar.classList.remove('mobile-open');
-                    updateSidebarToggleState();
-                }
-            });
-        });
-    }
 
     // 2. Dark Mode Toggle
     const themeToggleBtn = document.getElementById('themeToggleBtn');
@@ -994,7 +995,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (sidebar) {
         sidebar.addEventListener('click', (event) => {
-            const chapterLink = event.target.closest('.dropdown-link');
+            const chapterLink = event.target.closest('.chapter-link, .dropdown-link');
             if (!chapterLink) return;
 
             event.preventDefault();
@@ -1011,6 +1012,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const chapterKey = chapterLink.getAttribute('data-chapter-key') || chapterLink.innerText.trim();
 
             navigateToState(buildNavState('content', subjectName || 'Computer Science', chapterKey), 'forward');
+            closeSidebarAfterNavigation();
         });
     }
 

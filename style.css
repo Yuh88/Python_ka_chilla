@@ -80,6 +80,8 @@ body {
 
     overflow-x: hidden;
 
+    padding-bottom: 100px;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -2123,6 +2125,8 @@ body.dark-mode .subject-icon {
     width: 100%;
     text-align: center;
     padding: 1rem 1rem 1.15rem;
+    position: relative;
+    z-index: 10;
     background: linear-gradient(180deg, #0f172a, #020617);
     color: #dbeafe;
     border-top: 1px solid rgba(99, 102, 241, 0.24);
@@ -2137,6 +2141,10 @@ body.dark-mode .subject-icon {
 }
 
 @media (max-width: 768px) {
+    body {
+        padding-bottom: 110px;
+    }
+
     .site-footer {
         padding: 0.9rem 0.85rem 1rem;
     }
