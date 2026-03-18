@@ -368,6 +368,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 3. Tab Switching
     const tabButtons = document.querySelectorAll('.tab-btn');
     const tabPanes = document.querySelectorAll('.tab-pane');
+    let runSearchFilter = () => {};
 
     tabButtons.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -390,35 +391,93 @@ document.addEventListener('DOMContentLoaded', () => {
                     targetPane.style.animation = '';
                 }
             }
+
+            runSearchFilter();
         });
     });
 
-    // 4. Live Search (Global)
-    const searchInput = document.getElementById('searchInput');
+    const initSearch = () => {
+        const searchInput = document.getElementById('searchInput');
+        if (!searchInput) {
+            return () => {};
+        }
 
-    if (searchInput) {
-        searchInput.addEventListener('input', (e) => {
-            const searchTerm = e.target.value.toLowerCase();
+        const applySearch = () => {
+            const searchTerm = searchInput.value.trim().toLowerCase();
+            const activePane = document.querySelector('.tab-pane.active');
             const questionCards = document.querySelectorAll('.question-card');
-            const tabPanes = document.querySelectorAll('.tab-pane');
 
-            if (searchTerm === "") {
-                // Reset search state
-                tabPanes.forEach(pane => pane.classList.remove('search-active'));
-                questionCards.forEach(card => card.classList.remove('hidden-card'));
+            questionCards.forEach(card => {
+                if (!activePane || !activePane.contains(card)) {
+                    card.classList.remove('hidden-card');
+                    return;
+                }
+
+                if (!searchTerm) {
+                    card.classList.remove('hidden-card');
+                    return;
+                }
+
+                const textContent = card.innerText.toLowerCase();
+                card.classList.toggle('hidden-card', !textContent.includes(searchTerm));
+            });
+        };
+
+        searchInput.addEventListener('keyup', applySearch);
+        searchInput.addEventListener('search', applySearch);
+
+        return applySearch;
+    };
+
+    const handleBookmarks = () => {
+        document.addEventListener('click', (event) => {
+            const bookmarkBtn = event.target.closest('.bookmark-btn');
+            if (!bookmarkBtn) return;
+
+            const questionCard = bookmarkBtn.closest('.question-card');
+            if (!questionCard) return;
+
+            const questionId = questionCard.getAttribute('data-question-id');
+            if (!questionId) return;
+
+            if (bookmarkedQuestionIds.has(questionId)) {
+                bookmarkedQuestionIds.delete(questionId);
+                updateBookmarkUI(bookmarkBtn, false);
             } else {
-                tabPanes.forEach(pane => pane.classList.add('search-active'));
-                questionCards.forEach(card => {
-                    const textContent = card.innerText.toLowerCase();
-                    if (textContent.includes(searchTerm)) {
-                        card.classList.remove('hidden-card');
-                    } else {
-                        card.classList.add('hidden-card');
-                    }
-                });
+                bookmarkedQuestionIds.add(questionId);
+                updateBookmarkUI(bookmarkBtn, true);
             }
+
+            saveStorageSet(STORAGE_KEYS.bookmarks, bookmarkedQuestionIds);
         });
-    }
+    };
+
+    const handleProgress = () => {
+        document.addEventListener('change', (event) => {
+            const doneCheckbox = event.target.closest('.done-checkbox');
+            if (!doneCheckbox) return;
+
+            const questionCard = doneCheckbox.closest('.question-card');
+            if (!questionCard) return;
+
+            const questionId = questionCard.getAttribute('data-question-id');
+            if (!questionId) return;
+
+            const isDone = doneCheckbox.checked;
+            if (isDone) {
+                completedQuestionIds.add(questionId);
+            } else {
+                completedQuestionIds.delete(questionId);
+            }
+
+            updateProgressUI(questionCard, isDone);
+            saveStorageSet(STORAGE_KEYS.completed, completedQuestionIds);
+        });
+    };
+
+    runSearchFilter = initSearch();
+    handleBookmarks();
+    handleProgress();
 
     // 5. Copy Functionality (delegated for dynamic cards)
     document.addEventListener('click', async (event) => {
@@ -472,6 +531,82 @@ document.addEventListener('DOMContentLoaded', () => {
     const contentAreaView = document.querySelector('.content-area');
     const navStateKey = '__edunotesNav';
     let activeSubject = null;
+    let activeChapter = null;
+
+    const STORAGE_KEYS = {
+        bookmarks: 'edunotes_bookmarks',
+        completed: 'edunotes_completed'
+    };
+
+    const readStorageSet = (key) => {
+        try {
+            const parsed = JSON.parse(localStorage.getItem(key) || '[]');
+            return new Set(Array.isArray(parsed) ? parsed : []);
+        } catch (error) {
+            return new Set();
+        }
+    };
+
+    const saveStorageSet = (key, valueSet) => {
+        try {
+            localStorage.setItem(key, JSON.stringify(Array.from(valueSet)));
+        } catch (error) {
+            /* no-op */
+        }
+    };
+
+    const bookmarkedQuestionIds = readStorageSet(STORAGE_KEYS.bookmarks);
+    const completedQuestionIds = readStorageSet(STORAGE_KEYS.completed);
+
+    const buildQuestionId = (entry, meta = {}) => {
+        const source = [
+            String(meta.subjectName || activeSubject || ''),
+            String(meta.chapterName || activeChapter || ''),
+            String(meta.categoryKey || ''),
+            String(entry.question || ''),
+            String(entry.answer || '')
+        ].join('|');
+
+        let hash = 0;
+        for (let index = 0; index < source.length; index += 1) {
+            hash = ((hash << 5) - hash) + source.charCodeAt(index);
+            hash |= 0;
+        }
+
+        return `q-${Math.abs(hash).toString(36)}`;
+    };
+
+    const updateBookmarkUI = (bookmarkBtn, isActive) => {
+        if (!bookmarkBtn) return;
+        bookmarkBtn.classList.toggle('active', isActive);
+        bookmarkBtn.setAttribute('aria-pressed', String(isActive));
+    };
+
+    const updateProgressUI = (questionCard, isDone) => {
+        if (!questionCard) return;
+        questionCard.classList.toggle('is-done', isDone);
+    };
+
+    const applyStoredCardStates = () => {
+        const cards = document.querySelectorAll('.question-card[data-question-id]');
+        cards.forEach(card => {
+            const questionId = card.getAttribute('data-question-id');
+            if (!questionId) return;
+
+            const bookmarkBtn = card.querySelector('.bookmark-btn');
+            const doneCheckbox = card.querySelector('.done-checkbox');
+
+            const isBookmarked = bookmarkedQuestionIds.has(questionId);
+            const isDone = completedQuestionIds.has(questionId);
+
+            updateBookmarkUI(bookmarkBtn, isBookmarked);
+            updateProgressUI(card, isDone);
+
+            if (doneCheckbox) {
+                doneCheckbox.checked = isDone;
+            }
+        });
+    };
 
     const siteData = (window.siteData && typeof window.siteData === 'object') ? window.siteData : {};
 
@@ -612,7 +747,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return 'most';
     };
 
-    const createQuestionCardHtml = (entry) => {
+    const createQuestionCardHtml = (entry, meta = {}) => {
         const escapeHtml = (value) => String(value || '')
             .replace(/&/g, '&amp;')
             .replace(/</g, '&lt;')
@@ -632,15 +767,21 @@ document.addEventListener('DOMContentLoaded', () => {
         const answer = applyStarMagic(entry.answer);
         const badgeTitle = applyStarMagic(entry.badgeTitle || entry.badge_title || 'MARKS BOOSTER');
         const badgeText = applyStarMagic(entry.badgeText || entry.badge_text || entry.marks_booster || entry.marksBooster || '');
+        const questionId = buildQuestionId(entry, meta);
+        const isBookmarked = bookmarkedQuestionIds.has(questionId);
+        const isDone = completedQuestionIds.has(questionId);
 
         return `
-<article class="question-card">
+<article class="question-card${isDone ? ' is-done' : ''}" data-question-id="${questionId}">
     <div class="q-header">
         <span class="q-label">Q:</span>
         <h3 class="question-title">${question}</h3>
-        <button class="copy-btn" aria-label="Copy Question">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-        </button>
+        <div class="q-actions">
+            <button class="bookmark-btn${isBookmarked ? ' active' : ''}" type="button" aria-label="Bookmark Question" aria-pressed="${isBookmarked}">⭐</button>
+            <button class="copy-btn" aria-label="Copy Question" type="button">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            </button>
+        </div>
     </div>
     <div class="a-body">
         <p class="answer-text"><span class="a-label">Ans: </span>${answer}</p>
@@ -649,11 +790,17 @@ document.addEventListener('DOMContentLoaded', () => {
         <span class="extra-badge">${badgeTitle}</span>
         <p class="extra-text">${badgeText}</p>
     </div>
+    <div class="card-meta-actions">
+        <label class="done-toggle">
+            <input class="done-checkbox" type="checkbox" ${isDone ? 'checked' : ''}>
+            <span>Mark as Done</span>
+        </label>
+    </div>
 </article>
         `;
     };
 
-    const renderQuestionsByCategory = (questionList) => {
+    const renderQuestionsByCategory = (questionList, subjectName, chapterName) => {
         const paneMost = document.getElementById('tab-most-important');
         const paneImportant = document.getElementById('tab-important');
         const paneConceptual = document.getElementById('tab-conceptual');
@@ -671,9 +818,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         const emptyHtml = '<div class="chapter-empty-state">No questions in this category yet.</div>';
-        paneMost.innerHTML = grouped.most.length ? grouped.most.map(createQuestionCardHtml).join('') : emptyHtml;
-        paneImportant.innerHTML = grouped.important.length ? grouped.important.map(createQuestionCardHtml).join('') : emptyHtml;
-        paneConceptual.innerHTML = grouped.conceptual.length ? grouped.conceptual.map(createQuestionCardHtml).join('') : emptyHtml;
+        paneMost.innerHTML = grouped.most.length
+            ? grouped.most.map((entry) => createQuestionCardHtml(entry, { subjectName, chapterName, categoryKey: 'most' })).join('')
+            : emptyHtml;
+        paneImportant.innerHTML = grouped.important.length
+            ? grouped.important.map((entry) => createQuestionCardHtml(entry, { subjectName, chapterName, categoryKey: 'important' })).join('')
+            : emptyHtml;
+        paneConceptual.innerHTML = grouped.conceptual.length
+            ? grouped.conceptual.map((entry) => createQuestionCardHtml(entry, { subjectName, chapterName, categoryKey: 'conceptual' })).join('')
+            : emptyHtml;
+
+        applyStoredCardStates();
+        runSearchFilter();
 
         if (window.MathJax && typeof window.MathJax.typesetPromise === 'function') {
             window.MathJax.typesetPromise();
@@ -765,6 +921,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const showChapterContent = (subjectName, chapterName) => {
         activeSubject = subjectName;
+        activeChapter = chapterName;
         hideElement(subjectDashboardView);
         hideElement(chapterSelectionView);
         showElement(chapterHeaderBanner);
@@ -785,7 +942,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const hasChapterContent = chapterQuestions.length > 0;
 
         if (hasChapterContent) {
-            renderQuestionsByCategory(chapterQuestions);
+            renderQuestionsByCategory(chapterQuestions, subjectName, chapterName);
 
             showElement(tabNavigation);
             showElement(questionsFeed);
@@ -797,6 +954,7 @@ document.addEventListener('DOMContentLoaded', () => {
             tabPanes.forEach(pane => pane.classList.remove('active'));
             if (firstTabBtn) firstTabBtn.classList.add('active');
             if (firstTabPane) firstTabPane.classList.add('active');
+            runSearchFilter();
         } else {
             hideElement(tabNavigation);
             hideElement(questionsFeed);
