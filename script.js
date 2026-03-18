@@ -1,92 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const splashKey = 'edunotes_splash_seen';
+    const splashKey = 'notescraft_splash_seen';
     const splash = document.getElementById('firstVisitSplash');
     const isFirstVisit = !document.documentElement.classList.contains('returning-visitor');
     let featureTourStarted = false;
-    let hasPlayedVoiceGreeting = false;
-    let isVoiceAttemptInProgress = false;
-    let hasBoundVoiceGestureRetry = false;
-
-    const bindVoiceGestureRetry = () => {
-        if (!isFirstVisit || hasPlayedVoiceGreeting || hasBoundVoiceGestureRetry) return;
-        hasBoundVoiceGestureRetry = true;
-
-        const retryOnGesture = () => {
-            hasBoundVoiceGestureRetry = false;
-            document.removeEventListener('click', retryOnGesture, true);
-            document.removeEventListener('touchstart', retryOnGesture, true);
-            document.removeEventListener('keydown', retryOnGesture, true);
-            playFirstVisitVoiceGreeting(true);
-        };
-
-        document.addEventListener('click', retryOnGesture, true);
-        document.addEventListener('touchstart', retryOnGesture, true);
-        document.addEventListener('keydown', retryOnGesture, true);
-    };
-
-    const getPreferredEnglishVoice = () => {
-        const allVoices = window.speechSynthesis.getVoices();
-        const englishVoices = allVoices.filter(voice => voice.lang && voice.lang.toLowerCase().startsWith('en'));
-        const preferredNameTokens = ['female', 'zira', 'aria', 'samantha', 'joanna', 'karen', 'susan', 'victoria', 'hazel', 'serena'];
-
-        return englishVoices.find(voice => {
-            const lowerName = voice.name.toLowerCase();
-            return preferredNameTokens.some(token => lowerName.includes(token));
-        }) || englishVoices[0] || allVoices[0] || null;
-    };
-
-    const playFirstVisitVoiceGreeting = (fromUserGesture = false) => {
-        if (!isFirstVisit || hasPlayedVoiceGreeting || isVoiceAttemptInProgress) return;
-        if (!('speechSynthesis' in window) || typeof SpeechSynthesisUtterance === 'undefined') return;
-
-        isVoiceAttemptInProgress = true;
-
-        const message = 'Assalamualikum! Welcome Dear';
-        const utterance = new SpeechSynthesisUtterance(message);
-        utterance.lang = 'en-US';
-        utterance.rate = 0.95;
-        utterance.pitch = 1;
-
-        const preferredVoice = getPreferredEnglishVoice();
-
-        if (preferredVoice) {
-            utterance.voice = preferredVoice;
-        }
-
-        utterance.onstart = () => {
-            hasPlayedVoiceGreeting = true;
-            isVoiceAttemptInProgress = false;
-            hasBoundVoiceGestureRetry = false;
-        };
-
-        utterance.onend = () => {
-            isVoiceAttemptInProgress = false;
-        };
-
-        utterance.onerror = () => {
-            isVoiceAttemptInProgress = false;
-            if (!hasPlayedVoiceGreeting && !fromUserGesture) {
-                bindVoiceGestureRetry();
-            }
-        };
-
-        try {
-            window.speechSynthesis.cancel();
-            window.speechSynthesis.speak(utterance);
-            if (!fromUserGesture) {
-                window.setTimeout(() => {
-                    if (!hasPlayedVoiceGreeting) {
-                        bindVoiceGestureRetry();
-                    }
-                }, 200);
-            }
-        } catch (error) {
-            isVoiceAttemptInProgress = false;
-            if (!fromUserGesture) {
-                bindVoiceGestureRetry();
-            }
-        }
-    };
 
     const createTourTooltip = (text) => {
         const tooltip = document.createElement('div');
@@ -241,15 +157,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.body.classList.add('splash-active');
 
-        splash.addEventListener('click', () => {
-            playFirstVisitVoiceGreeting(true);
-        }, { once: true });
-
         let hasClosed = false;
         const closeOnce = () => {
             if (hasClosed) return;
             hasClosed = true;
-            playFirstVisitVoiceGreeting();
             hideSplash();
             window.setTimeout(startFeatureTour, 760);
         };
@@ -323,8 +234,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggleBtn = document.getElementById('themeToggleBtn');
     const flashcardFabBtn = document.getElementById('flashcardFabBtn');
     const body = document.body;
-    const themeStorageKey = 'edunotes_theme';
-    const flashcardStorageKey = 'edunotes_flashcard_mode';
+    const themeStorageKey = 'notescraft_theme';
+    const flashcardStorageKey = 'notescraft_flashcard_mode';
     let isFlashcardMode = false;
 
     const moonIcon = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>`;
@@ -552,7 +463,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const bannerBadge = document.querySelector('.chapter-header-banner .badge');
     const bannerSubtitle = document.querySelector('.chapter-header-banner p');
     const contentAreaView = document.querySelector('.content-area');
-    const navStateKey = '__edunotesNav';
+    const navStateKey = '__notescraftNav';
     let activeSubject = null;
     let activeChapter = null;
 
@@ -563,7 +474,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const STORAGE_KEYS = {
-        completed: 'edunotes_completed'
+        completed: 'notescraft_completed'
     };
 
     const readStorageSet = (key) => {
