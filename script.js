@@ -459,6 +459,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const welcomeMainHeading = document.getElementById('welcomeMainHeading');
     const welcomeIntroText = document.getElementById('welcomeIntroText');
     const welcomeCtaText = document.getElementById('welcomeCtaText');
+    const dailyWisdomQuote = document.getElementById('dailyWisdomQuote');
+    const dailyWisdomSource = document.getElementById('dailyWisdomSource');
     const tabNavigation = document.querySelector('.tab-navigation');
     const bannerTitle = document.querySelector('.chapter-header-banner h2');
     const bannerBadge = document.querySelector('.chapter-header-banner .badge');
@@ -473,6 +475,34 @@ document.addEventListener('DOMContentLoaded', () => {
         intro: 'Interactive chapter-wise short notes for ICS & FSc. Master your board exams with precision notes designed for efficiency.',
         cta: 'Select a subject from the sidebar to start your revision.'
     };
+
+    const DAILY_WISDOM_URDU = [
+        { text: 'اے میرے رب! میرے علم میں اضافہ فرما۔', reference: 'القرآن — سورۃ طٰہٰ 20:114' },
+        { text: 'کیا جاننے والے اور نہ جاننے والے برابر ہو سکتے ہیں؟', reference: 'القرآن — سورۃ الزمر 39:9' },
+        { text: 'اگر تم نہیں جانتے تو اہلِ ذکر سے پوچھ لو۔', reference: 'القرآن — سورۃ النحل 16:43' },
+        { text: 'اور کہہ دو: عمل کرو، اللہ تمہارے عمل کو دیکھے گا۔', reference: 'القرآن — سورۃ التوبہ 9:105' },
+        { text: 'اللہ سے ڈرو، اور اللہ تمہیں علم عطا فرماتا ہے۔', reference: 'القرآن — سورۃ البقرہ 2:282' },
+        { text: 'نیکی اور تقویٰ میں ایک دوسرے کی مدد کرو۔', reference: 'القرآن — سورۃ المائدہ 5:2' },
+        { text: 'اللہ صبر کرنے والوں کے ساتھ ہے۔', reference: 'القرآن — سورۃ البقرہ 2:153' },
+        { text: 'بے شک مشکل کے ساتھ آسانی ہے۔', reference: 'القرآن — سورۃ الشرح 94:6' },
+        { text: 'اللہ کسی جان پر اس کی طاقت سے بڑھ کر بوجھ نہیں ڈالتا۔', reference: 'القرآن — سورۃ البقرہ 2:286' },
+        { text: 'جو اللہ پر بھروسا کرے تو وہ اس کے لیے کافی ہے۔', reference: 'القرآن — سورۃ الطلاق 65:3' },
+        { text: 'اور لوگوں سے بھلی بات کہو۔', reference: 'القرآن — سورۃ البقرہ 2:83' },
+        { text: 'پس تم میرا ذکر کرو، میں تمہیں یاد رکھوں گا۔', reference: 'القرآن — سورۃ البقرہ 2:152' },
+        { text: 'بے شک اللہ انصاف اور احسان کا حکم دیتا ہے۔', reference: 'القرآن — سورۃ النحل 16:90' },
+        { text: 'بے شک اللہ احسان کرنے والوں سے محبت کرتا ہے۔', reference: 'القرآن — سورۃ البقرہ 2:195' },
+        { text: 'اور کہو: اے میرے رب! مجھ پر رحم فرما، اور تو سب رحم کرنے والوں سے بہتر ہے۔', reference: 'القرآن — سورۃ المؤمنون 23:118' },
+        { text: 'اعمال کا دارومدار نیتوں پر ہے۔', reference: 'صحیح بخاری و صحیح مسلم' },
+        { text: 'تم میں بہترین وہ ہے جو قرآن سیکھے اور سکھائے۔', reference: 'صحیح بخاری' },
+        { text: 'مسلمان وہ ہے جس کی زبان اور ہاتھ سے مسلمان محفوظ رہیں۔', reference: 'صحیح بخاری و صحیح مسلم' },
+        { text: 'جو اللہ اور آخرت پر ایمان رکھتا ہے وہ بھلی بات کہے یا خاموش رہے۔', reference: 'صحیح بخاری و صحیح مسلم' },
+        { text: 'دین آسان ہے۔', reference: 'صحیح بخاری' },
+        { text: 'طاقتور مومن اللہ کے نزدیک کمزور مومن سے بہتر اور زیادہ محبوب ہے۔', reference: 'صحیح مسلم' },
+        { text: 'پاکیزگی ایمان کا نصف ہے۔', reference: 'صحیح مسلم' },
+        { text: 'اللہ تمہاری صورتوں اور مالوں کو نہیں دیکھتا، بلکہ تمہارے دلوں اور اعمال کو دیکھتا ہے۔', reference: 'صحیح مسلم' },
+        { text: 'جو شخص علم کی تلاش میں راستہ اختیار کرتا ہے، اللہ اس کے لیے جنت کا راستہ آسان کر دیتا ہے۔', reference: 'صحیح مسلم' }
+    ];
+    let selectedDailyWisdom = null;
 
     const STORAGE_KEYS = {
         completed: 'notescraft_completed'
@@ -783,6 +813,21 @@ document.addEventListener('DOMContentLoaded', () => {
         return buildNavState('dashboard');
     };
 
+    const renderDailyWisdom = () => {
+        if (!dailyWisdomQuote || !dailyWisdomSource || !DAILY_WISDOM_URDU.length) return;
+
+        if (!selectedDailyWisdom) {
+            selectedDailyWisdom = DAILY_WISDOM_URDU[Math.floor(Math.random() * DAILY_WISDOM_URDU.length)];
+        }
+
+        dailyWisdomQuote.textContent = selectedDailyWisdom.text;
+        dailyWisdomSource.textContent = selectedDailyWisdom.reference;
+        dailyWisdomQuote.setAttribute('lang', 'ur');
+        dailyWisdomQuote.setAttribute('dir', 'rtl');
+        dailyWisdomSource.setAttribute('lang', 'ur');
+        dailyWisdomSource.setAttribute('dir', 'rtl');
+    };
+
     const renderWelcomeSection = () => {
         if (welcomeMainHeading) {
             welcomeMainHeading.textContent = WELCOME_CONTENT.heading;
@@ -793,6 +838,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (welcomeCtaText) {
             welcomeCtaText.textContent = WELCOME_CONTENT.cta;
         }
+
+        renderDailyWisdom();
     };
 
     const showSubjectDashboard = () => {

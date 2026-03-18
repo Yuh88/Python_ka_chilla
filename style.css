@@ -1719,100 +1719,6 @@ body.splash-active {
     }
 }
 
-/* First Visit Feature Tour */
-.theme-btn.feature-pulse {
-    position: relative;
-    isolation: isolate;
-}
-
-.theme-btn.feature-pulse::after {
-    content: "";
-    position: absolute;
-    inset: -8px;
-    border-radius: 999px;
-    border: 2px solid rgba(99, 102, 241, 0.45);
-    box-shadow: 0 0 0 6px rgba(99, 102, 241, 0.16);
-    animation: featurePulseRing 1.8s ease-out infinite;
-    pointer-events: none;
-    z-index: -1;
-}
-
-.feature-tooltip {
-    position: fixed;
-    z-index: 240;
-    padding: 0.55rem 0.8rem;
-    border-radius: 12px;
-    border: 1px solid rgba(148, 163, 184, 0.35);
-    background: rgba(15, 23, 42, 0.76);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    color: #e2e8f0;
-    font-size: 0.85rem;
-    font-weight: 500;
-    line-height: 1.25;
-    box-shadow: var(--shadow-soft);
-    white-space: nowrap;
-    pointer-events: none;
-    opacity: 0;
-    transform: translateY(6px) scale(0.98);
-    transition: opacity 0.22s ease, transform 0.22s ease;
-}
-
-.feature-tooltip::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: -6px;
-    transform: translateX(-50%) rotate(45deg);
-    width: 10px;
-    height: 10px;
-    border-left: 1px solid rgba(148, 163, 184, 0.35);
-    border-top: 1px solid rgba(148, 163, 184, 0.35);
-    background: rgba(15, 23, 42, 0.76);
-}
-
-.feature-tooltip.is-visible {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-    animation: featureTooltipBounce 1.8s ease-in-out infinite;
-}
-
-@keyframes featurePulseRing {
-    0% {
-        transform: scale(0.94);
-        opacity: 0.95;
-    }
-
-    70% {
-        transform: scale(1.16);
-        opacity: 0.3;
-    }
-
-    100% {
-        transform: scale(1.24);
-        opacity: 0;
-    }
-}
-
-@keyframes featureTooltipBounce {
-    0%,
-    100% {
-        transform: translateY(0) scale(1);
-    }
-
-    50% {
-        transform: translateY(-3px) scale(1.01);
-    }
-}
-
-@media (max-width: 768px) {
-    .feature-tooltip {
-        white-space: normal;
-        max-width: min(260px, 90vw);
-        text-align: center;
-    }
-}
-
 /* Subject Dashboard Flow */
 .subject-dashboard-view,
 .chapter-selection-view {
@@ -1890,6 +1796,30 @@ body.splash-active {
     color: var(--text-secondary);
 }
 
+#welcomeIntroText {
+    min-height: 3.3em;
+}
+
+#welcomeIntroText.typewriter-active::after {
+    content: '|';
+    margin-left: 2px;
+    color: #93c5fd;
+    font-weight: 600;
+    animation: typewriterCursorBlink 0.9s steps(1, end) infinite;
+}
+
+@keyframes typewriterCursorBlink {
+    0%,
+    49% {
+        opacity: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 0;
+    }
+}
+
 .subject-dashboard-header.welcome-copy .welcome-cta {
     margin-bottom: 0;
     font-weight: 600;
@@ -1951,6 +1881,9 @@ body.splash-active {
     color: #93c5fd;
     font-size: 0.82rem;
     font-weight: 500;
+    font-family: 'Noto Nastaliq Urdu', 'Noto Naskh Arabic', 'Jameel Noori Nastaleeq', 'Segoe UI', serif;
+    text-align: right;
+    direction: rtl;
 }
 
 .subject-grid,
@@ -1959,6 +1892,9 @@ body.splash-active {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 0.9rem;
 }
+    font-family: 'Noto Nastaliq Urdu', 'Noto Naskh Arabic', 'Jameel Noori Nastaleeq', 'Segoe UI', serif;
+    text-align: right;
+    direction: rtl;
 
 .subject-card,
 .chapter-card {
@@ -2193,6 +2129,10 @@ body.dark-mode .subject-icon {
         max-width: 100%;
     }
 
+    #welcomeIntroText {
+        min-height: 3.6em;
+    }
+
     .daily-wisdom {
         gap: 0.7rem;
         padding: 0.82rem 0.78rem;
@@ -2245,6 +2185,19 @@ body.dark-mode .subject-icon {
     color: #dbeafe;
     border-top: 1px solid rgba(99, 102, 241, 0.24);
     box-shadow: 0 -12px 26px -20px rgba(99, 102, 241, 0.65), 0 0 22px -16px rgba(56, 189, 248, 0.55);
+    transition: margin-left 0.3s ease, width 0.3s ease;
+}
+
+@media (min-width: 769px) {
+    .site-footer {
+        margin-left: 280px;
+        width: calc(100% - 280px);
+    }
+
+    body.sidebar-collapsed .site-footer {
+        margin-left: 0;
+        width: 100%;
+    }
 }
 
 .site-footer p {
@@ -2260,6 +2213,8 @@ body.dark-mode .subject-icon {
     }
 
     .site-footer {
+        margin-left: 0;
+        width: 100%;
         padding: 0.9rem 0.85rem 1rem;
     }
 
