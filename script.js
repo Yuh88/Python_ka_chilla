@@ -321,8 +321,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 2. Dark Mode Toggle
     const themeToggleBtn = document.getElementById('themeToggleBtn');
+    const flashcardModeToggle = document.getElementById('flashcardModeToggle');
     const body = document.body;
     const themeStorageKey = 'edunotes_theme';
+    const flashcardStorageKey = 'edunotes_flashcard_mode';
+    let isFlashcardMode = false;
 
     const moonIcon = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>`;
     const sunIcon = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>`;
@@ -355,7 +358,46 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    const applyFlashcardMode = (enabled) => {
+        isFlashcardMode = Boolean(enabled);
+        body.classList.toggle('flashcard-mode', isFlashcardMode);
+
+        if (flashcardModeToggle) {
+            flashcardModeToggle.checked = isFlashcardMode;
+        }
+
+        if (isFlashcardMode) {
+            document.querySelectorAll('.question-card').forEach(card => {
+                card.classList.remove('revealed');
+            });
+        }
+    };
+
+    const initFlashcardMode = () => {
+        let savedMode = '0';
+        try {
+            savedMode = localStorage.getItem(flashcardStorageKey) || '0';
+        } catch (error) {
+            /* no-op */
+        }
+
+        applyFlashcardMode(savedMode === '1');
+
+        if (flashcardModeToggle) {
+            flashcardModeToggle.addEventListener('change', () => {
+                const enabled = flashcardModeToggle.checked;
+                applyFlashcardMode(enabled);
+                try {
+                    localStorage.setItem(flashcardStorageKey, enabled ? '1' : '0');
+                } catch (error) {
+                    /* no-op */
+                }
+            });
+        }
+    };
+
     applyTheme(getInitialTheme());
+    initFlashcardMode();
 
     if (themeToggleBtn) {
         themeToggleBtn.addEventListener('click', () => {
@@ -369,6 +411,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const tabButtons = document.querySelectorAll('.tab-btn');
     const tabPanes = document.querySelectorAll('.tab-pane');
     let runSearchFilter = () => {};
+    let runFlashcardSync = () => {};
 
     tabButtons.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -393,6 +436,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             runSearchFilter();
+            runFlashcardSync();
         });
     });
 
@@ -427,6 +471,26 @@ document.addEventListener('DOMContentLoaded', () => {
         searchInput.addEventListener('search', applySearch);
 
         return applySearch;
+    };
+
+    const initFlashcardInteractions = () => {
+        document.addEventListener('click', (event) => {
+            if (!isFlashcardMode) return;
+
+            const questionCard = event.target.closest('.question-card');
+            if (!questionCard) return;
+
+            if (event.target.closest('.copy-btn, .bookmark-btn, .done-toggle, .done-checkbox, button, input, label, a')) {
+                return;
+            }
+
+            questionCard.classList.toggle('revealed');
+        });
+
+        return () => {
+            if (!isFlashcardMode) return;
+            document.querySelectorAll('.question-card').forEach(card => card.classList.remove('revealed'));
+        };
     };
 
     const handleBookmarks = () => {
@@ -476,6 +540,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     runSearchFilter = initSearch();
+    runFlashcardSync = initFlashcardInteractions();
     handleBookmarks();
     handleProgress();
 
@@ -525,7 +590,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const contentUnavailable = document.getElementById('content-unavailable');
     const contentUnavailableText = contentUnavailable ? contentUnavailable.querySelector('p') : null;
     const tabNavigation = document.querySelector('.tab-navigation');
-    const bannerTitle = document.querySelector('.chapter-header-banner h1');
+    const bannerTitle = document.querySelector('.chapter-header-banner h2');
     const bannerBadge = document.querySelector('.chapter-header-banner .badge');
     const bannerSubtitle = document.querySelector('.chapter-header-banner p');
     const contentAreaView = document.querySelector('.content-area');
@@ -830,6 +895,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         applyStoredCardStates();
         runSearchFilter();
+        runFlashcardSync();
 
         if (window.MathJax && typeof window.MathJax.typesetPromise === 'function') {
             window.MathJax.typesetPromise();
@@ -955,6 +1021,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (firstTabBtn) firstTabBtn.classList.add('active');
             if (firstTabPane) firstTabPane.classList.add('active');
             runSearchFilter();
+            runFlashcardSync();
         } else {
             hideElement(tabNavigation);
             hideElement(questionsFeed);
