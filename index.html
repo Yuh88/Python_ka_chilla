@@ -33,6 +33,7 @@
   <script type="text/javascript" id="MathJax-script" async defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
     <!-- Premium Tech Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -208,14 +209,7 @@
                 <input type="search" id="searchInput" placeholder="Search questions, chapters..." class="search-input">
             </div>
 
-            <!-- Theme Toggle Placeholder -->
-            <div class="flashcard-toggle-wrap" title="Flashcard Mode">
-              <span class="flashcard-toggle-label">Flashcards</span>
-              <label class="switch" aria-label="Toggle Flashcard Mode">
-                <input type="checkbox" id="flashcardModeToggle">
-                <span class="slider round"></span>
-              </label>
-            </div>
+            <!-- Theme Toggle -->
             <div class="theme-toggle">
                 <button class="theme-btn" id="themeToggleBtn" aria-label="Toggle Dark/Light Mode">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
@@ -241,11 +235,11 @@
             <!-- Subject Dashboard (Default Home View) -->
             <section id="subjectDashboardView" class="subject-dashboard-view">
               <div class="subject-hero-banner">
-                <h2>EduNotes Mastery: Your Digital Study Companion</h2>
+                <h1 id="welcomeMainHeading">NotesCraft: Fast Revision Companion</h1>
               </div>
-              <div class="subject-dashboard-header">
-                <h2>Select a Subject</h2>
-                <p>Choose your subject to browse chapters and start revision.</p>
+              <div class="subject-dashboard-header welcome-copy">
+                <p id="welcomeIntroText">Interactive chapter-wise short notes for ICS &amp; FSc. Master your board exams with precision notes designed for efficiency.</p>
+                <p id="welcomeCtaText" class="welcome-cta">Select a subject from the sidebar to start your revision.</p>
               </div>
               <div class="subject-grid" id="subjectGrid">
                 <button class="subject-card subject-card-computer" data-subject="Computer Science" type="button">
@@ -1369,6 +1363,14 @@ Schools organize these debates because <strong>storytelling makes arguments more
             <polyline points="5 12 12 5 19 12"></polyline>
           </svg>
         </button>
+
+        <button id="flashcardFabBtn" class="flashcard-fab" type="button" aria-label="Toggle Flashcard Mode" aria-pressed="false" title="Flashcard Mode: Off">
+          <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+        </button>
+
+        <footer class="site-footer">
+          <p>© 2026 NotesCraft. Developed with ♥️ by Muhammad Yousaf.| Good Luck for Exams!</p>
+        </footer>
 
 <script defer src="content_data.js"></script>
 <script defer src="script.js"></script>

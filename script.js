@@ -321,7 +321,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 2. Dark Mode Toggle
     const themeToggleBtn = document.getElementById('themeToggleBtn');
-    const flashcardModeToggle = document.getElementById('flashcardModeToggle');
+    const flashcardFabBtn = document.getElementById('flashcardFabBtn');
     const body = document.body;
     const themeStorageKey = 'edunotes_theme';
     const flashcardStorageKey = 'edunotes_flashcard_mode';
@@ -358,12 +358,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    const setFlashcardFabVisibility = (shouldShow) => {
+        if (!flashcardFabBtn) return;
+        flashcardFabBtn.classList.toggle('is-visible', Boolean(shouldShow));
+    };
+
     const applyFlashcardMode = (enabled) => {
         isFlashcardMode = Boolean(enabled);
         body.classList.toggle('flashcard-mode', isFlashcardMode);
 
-        if (flashcardModeToggle) {
-            flashcardModeToggle.checked = isFlashcardMode;
+        if (flashcardFabBtn) {
+            flashcardFabBtn.classList.toggle('active', isFlashcardMode);
+            flashcardFabBtn.setAttribute('aria-pressed', String(isFlashcardMode));
+            flashcardFabBtn.setAttribute('title', isFlashcardMode ? 'Flashcard Mode: On' : 'Flashcard Mode: Off');
         }
 
         if (isFlashcardMode) {
@@ -383,9 +390,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         applyFlashcardMode(savedMode === '1');
 
-        if (flashcardModeToggle) {
-            flashcardModeToggle.addEventListener('change', () => {
-                const enabled = flashcardModeToggle.checked;
+        if (flashcardFabBtn) {
+            flashcardFabBtn.addEventListener('click', () => {
+                const enabled = !isFlashcardMode;
                 applyFlashcardMode(enabled);
                 try {
                     localStorage.setItem(flashcardStorageKey, enabled ? '1' : '0');
@@ -398,6 +405,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     applyTheme(getInitialTheme());
     initFlashcardMode();
+    setFlashcardFabVisibility(false);
 
     if (themeToggleBtn) {
         themeToggleBtn.addEventListener('click', () => {
@@ -536,6 +544,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const questionsFeed = document.getElementById('questions-feed');
     const contentUnavailable = document.getElementById('content-unavailable');
     const contentUnavailableText = contentUnavailable ? contentUnavailable.querySelector('p') : null;
+    const welcomeMainHeading = document.getElementById('welcomeMainHeading');
+    const welcomeIntroText = document.getElementById('welcomeIntroText');
+    const welcomeCtaText = document.getElementById('welcomeCtaText');
     const tabNavigation = document.querySelector('.tab-navigation');
     const bannerTitle = document.querySelector('.chapter-header-banner h2');
     const bannerBadge = document.querySelector('.chapter-header-banner .badge');
@@ -544,6 +555,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const navStateKey = '__edunotesNav';
     let activeSubject = null;
     let activeChapter = null;
+
+    const WELCOME_CONTENT = {
+        heading: 'NotesCraft: Fast Revision Companion',
+        intro: 'Interactive chapter-wise short notes for ICS & FSc. Master your board exams with precision notes designed for efficiency.',
+        cta: 'Select a subject from the sidebar to start your revision.'
+    };
 
     const STORAGE_KEYS = {
         completed: 'edunotes_completed'
@@ -778,7 +795,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <h3 class="question-title">${question}</h3>
     </div>
     <div class="a-body">
-        <p class="answer-text"><span class="a-label">Ans: </span>${answer}</p>
+        <p class="answer-text"><span class="a-label">Definition: </span>${answer}</p>
     </div>
     <div class="card-footer">
         <span class="extra-badge">${badgeTitle}</span>
@@ -854,8 +871,22 @@ document.addEventListener('DOMContentLoaded', () => {
         return buildNavState('dashboard');
     };
 
+    const renderWelcomeSection = () => {
+        if (welcomeMainHeading) {
+            welcomeMainHeading.textContent = WELCOME_CONTENT.heading;
+        }
+        if (welcomeIntroText) {
+            welcomeIntroText.textContent = WELCOME_CONTENT.intro;
+        }
+        if (welcomeCtaText) {
+            welcomeCtaText.textContent = WELCOME_CONTENT.cta;
+        }
+    };
+
     const showSubjectDashboard = () => {
         activeSubject = null;
+        renderWelcomeSection();
+        setFlashcardFabVisibility(false);
         showElement(subjectDashboardView);
         hideElement(chapterSelectionView);
         hideElement(chapterHeaderBanner);
@@ -869,6 +900,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const showChapterSelection = (subjectName) => {
         activeSubject = subjectName;
+        setFlashcardFabVisibility(false);
         showElement(chapterSelectionView);
         hideElement(subjectDashboardView);
         hideElement(chapterHeaderBanner);
@@ -938,6 +970,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (hasChapterContent) {
             renderQuestionsByCategory(chapterQuestions, subjectName, chapterName);
+            setFlashcardFabVisibility(true);
 
             showElement(tabNavigation);
             showElement(questionsFeed);
@@ -952,6 +985,7 @@ document.addEventListener('DOMContentLoaded', () => {
             runSearchFilter();
             runFlashcardSync();
         } else {
+            setFlashcardFabVisibility(false);
             hideElement(tabNavigation);
             hideElement(questionsFeed);
             showElement(contentUnavailable);
