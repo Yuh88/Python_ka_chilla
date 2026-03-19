@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+const initializeNotesCraftApp = () => {
     const splashKey = 'notescraft_splash_seen';
     const splash = document.getElementById('firstVisitSplash');
     const isFirstVisit = !document.documentElement.classList.contains('returning-visitor');
@@ -273,8 +273,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let commentsUnsubscribe = null;
     let isPostingComment = false;
     let latestCommentsCache = [];
+    let activeReplyTargetId = null;
+    let isInitialCommentsSnapshot = true;
 
-    const ADMIN_EMAIL = 'johnythewithcher@gmail.com';
+    const ADMIN_EMAIL = 'johnywithcher2@gmail.com';
     const ADMIN_DISPLAY_NAME = 'Admin 👑';
 
     const getInitialTheme = () => {
@@ -363,14 +365,196 @@ document.addEventListener('DOMContentLoaded', () => {
         return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
     };
 
+    const getCommentTimestampMs = (timestampValue) => {
+        if (!timestampValue) return 0;
+        if (typeof timestampValue.toDate === 'function') {
+            const date = timestampValue.toDate();
+            return date instanceof Date ? date.getTime() : 0;
+        }
+        if (timestampValue instanceof Date) {
+            return timestampValue.getTime();
+        }
+        return 0;
+    };
+
+    const ensureAdminNotificationPermission = async () => {
+        if (!isCurrentUserAdmin() || typeof Notification === 'undefined') return;
+        if (Notification.permission === 'default') {
+            try {
+                await Notification.requestPermission();
+            } catch (error) {
+                console.warn('Notification permission request failed.', error);
+            }
+        }
+    };
+
+    const notifyAdminForComment = (entry) => {
+        if (!isCurrentUserAdmin() || typeof Notification === 'undefined' || Notification.permission !== 'granted') return;
+        if (!entry || !entry.text) return;
+        if (currentAuthenticatedUser && entry.userUid && entry.userUid === currentAuthenticatedUser.uid) return;
+
+        const commenterName = isAdminEmail(entry.userEmail)
+            ? ADMIN_DISPLAY_NAME
+            : (entry.userName || 'Student');
+
+        try {
+            new Notification('New comment on NotesCraft', {
+                body: `${commenterName}: ${entry.text.slice(0, 110)}`,
+                icon: entry.userPhoto || undefined,
+                tag: `comment-${entry.id}`
+            });
+        } catch (error) {
+            console.warn('Unable to dispatch notification.', error);
+        }
+    };
+
+    const isUserBlockedForComments = async (uid) => {
+        if (!uid) return false;
+
+        try {
+            const db = await initializeFirestoreCompat();
+            const blockedDoc = await db.collection('blocked_users').doc(uid).get();
+            return blockedDoc.exists;
+        } catch (error) {
+            console.warn('Unable to verify blocked status.', error);
+            return false;
+        }
+    };
+
+    const ensureCurrentUserCanPost = async () => {
+        if (!currentAuthenticatedUser || !currentAuthenticatedUser.uid) {
+            await requestGoogleSignIn();
+            return false;
+        }
+
+        const blocked = await isUserBlockedForComments(currentAuthenticatedUser.uid);
+        if (blocked) {
+            setAuthStatus('You are blocked from posting comments.', true);
+            return false;
+        }
+
+        return true;
+    };
+
     const deleteCommentById = async (commentId) => {
         if (!commentId || !isCurrentUserAdmin()) return;
 
         try {
             const db = await initializeFirestoreCompat();
-            await db.collection('comments').doc(commentId).delete();
+            const childReplies = await db.collection('comments').where('parentId', '==', commentId).get();
+            const batch = db.batch();
+
+            childReplies.forEach((replyDoc) => {
+                batch.delete(replyDoc.ref);
+            });
+
+            batch.delete(db.collection('comments').doc(commentId));
+            await batch.commit();
         } catch (error) {
             console.warn('Unable to delete comment.', error);
+        }
+    };
+
+    const togglePinComment = async (commentEntry) => {
+        if (!isCurrentUserAdmin() || !commentEntry || !commentEntry.id || commentEntry.parentId) return;
+
+        try {
+            const db = await initializeFirestoreCompat();
+            await db.collection('comments').doc(commentEntry.id).set({
+                pinned: !Boolean(commentEntry.pinned),
+                pinnedAt: firestoreFieldValue && typeof firestoreFieldValue.serverTimestamp === 'function'
+                    ? firestoreFieldValue.serverTimestamp()
+                    : new Date()
+            }, { merge: true });
+        } catch (error) {
+            console.warn('Unable to update pinned state.', error);
+        }
+    };
+
+    const blockCommentAuthor = async (commentEntry) => {
+        if (!isCurrentUserAdmin() || !commentEntry || !commentEntry.userUid) return;
+        if (currentAuthenticatedUser && commentEntry.userUid === currentAuthenticatedUser.uid) return;
+
+        try {
+            const db = await initializeFirestoreCompat();
+            await db.collection('blocked_users').doc(commentEntry.userUid).set({
+                uid: commentEntry.userUid,
+                email: commentEntry.userEmail || '',
+                name: commentEntry.userName || 'Student',
+                blockedBy: currentAuthenticatedUser ? currentAuthenticatedUser.uid : '',
+                blockedAt: firestoreFieldValue && typeof firestoreFieldValue.serverTimestamp === 'function'
+                    ? firestoreFieldValue.serverTimestamp()
+                    : new Date()
+            }, { merge: true });
+        } catch (error) {
+            console.warn('Unable to block user.', error);
+        }
+    };
+
+    const toggleCommentLove = async (commentEntry) => {
+        if (!commentEntry || !commentEntry.id) return;
+
+        const canPost = await ensureCurrentUserCanPost();
+        if (!canPost || !currentAuthenticatedUser) return;
+
+        const uid = currentAuthenticatedUser.uid;
+        const likedBy = Array.isArray(commentEntry.likedBy) ? commentEntry.likedBy : [];
+        const hasLiked = likedBy.includes(uid);
+
+        try {
+            const db = await initializeFirestoreCompat();
+            const payload = {};
+
+            if (firestoreFieldValue) {
+                payload.likedBy = hasLiked
+                    ? firestoreFieldValue.arrayRemove(uid)
+                    : firestoreFieldValue.arrayUnion(uid);
+                payload.likesCount = hasLiked
+                    ? Math.max(0, (Number(commentEntry.likesCount) || likedBy.length || 0) - 1)
+                    : (Number(commentEntry.likesCount) || likedBy.length || 0) + 1;
+            } else {
+                const nextLikedBy = hasLiked
+                    ? likedBy.filter((id) => id !== uid)
+                    : [...new Set([...likedBy, uid])];
+                payload.likedBy = nextLikedBy;
+                payload.likesCount = nextLikedBy.length;
+            }
+
+            await db.collection('comments').doc(commentEntry.id).set(payload, { merge: true });
+        } catch (error) {
+            console.warn('Unable to toggle love on comment.', error);
+        }
+    };
+
+    const postReply = async (parentId, replyText) => {
+        if (!parentId) return;
+
+        const trimmedText = String(replyText || '').trim();
+        if (!trimmedText) return;
+
+        const canPost = await ensureCurrentUserCanPost();
+        if (!canPost || !currentAuthenticatedUser) return;
+
+        try {
+            const db = await initializeFirestoreCompat();
+            await db.collection('comments').add({
+                parentId,
+                text: trimmedText,
+                userUid: String(currentAuthenticatedUser.uid || ''),
+                userName: String(currentAuthenticatedUser.displayName || 'Student'),
+                userEmail: String(currentAuthenticatedUser.email || ''),
+                userPhoto: String(currentAuthenticatedUser.photoURL || ''),
+                likesCount: 0,
+                likedBy: [],
+                pinned: false,
+                timestamp: firestoreFieldValue && typeof firestoreFieldValue.serverTimestamp === 'function'
+                    ? firestoreFieldValue.serverTimestamp()
+                    : new Date()
+            });
+
+            activeReplyTargetId = null;
+        } catch (error) {
+            console.warn('Unable to post reply.', error);
         }
     };
 
@@ -387,25 +571,40 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        const canDeleteAnyComment = isCurrentUserAdmin();
-
+        const groupedByParent = new Map();
         comments.forEach((entry) => {
+            const parentKey = entry.parentId || 'root';
+            if (!groupedByParent.has(parentKey)) {
+                groupedByParent.set(parentKey, []);
+            }
+            groupedByParent.get(parentKey).push(entry);
+        });
+
+        const sortComments = (items, includePinPriority) => {
+            return [...items].sort((first, second) => {
+                if (includePinPriority) {
+                    const pinDelta = Number(Boolean(second.pinned)) - Number(Boolean(first.pinned));
+                    if (pinDelta !== 0) return pinDelta;
+                }
+                return getCommentTimestampMs(second.timestamp) - getCommentTimestampMs(first.timestamp);
+            });
+        };
+
+        const renderCommentNode = (entry, containerElement, depth = 0) => {
             const commentIsAdmin = isAdminEmail(entry.userEmail);
-            const displayName = commentIsAdmin ? ADMIN_DISPLAY_NAME : entry.userName;
+            const displayName = commentIsAdmin ? ADMIN_DISPLAY_NAME : (entry.userName || 'Student');
+            const likesCount = Number.isFinite(Number(entry.likesCount))
+                ? Number(entry.likesCount)
+                : (Array.isArray(entry.likedBy) ? entry.likedBy.length : 0);
+            const likedBy = Array.isArray(entry.likedBy) ? entry.likedBy : [];
+            const hasLiked = Boolean(currentAuthenticatedUser && likedBy.includes(currentAuthenticatedUser.uid));
 
             const item = document.createElement('article');
-            item.className = 'comment-item';
-
-            if (commentIsAdmin) {
-                item.style.borderColor = 'rgba(245, 158, 11, 0.78)';
-                item.style.boxShadow = '0 0 0 1px rgba(250, 204, 21, 0.34), 0 10px 22px rgba(15, 23, 42, 0.35)';
-            }
+            item.className = `comment-item${depth > 0 ? ' reply-item' : ''}${commentIsAdmin ? ' admin-comment' : ''}`;
 
             const avatar = document.createElement('img');
             avatar.className = 'comment-avatar';
-            avatar.src = commentIsAdmin
-                ? createCommentAvatarFallback(ADMIN_DISPLAY_NAME)
-                : entry.userPhoto || createCommentAvatarFallback(displayName);
+            avatar.src = entry.userPhoto || createCommentAvatarFallback(displayName);
             avatar.alt = `${displayName} avatar`;
 
             const content = document.createElement('div');
@@ -414,51 +613,139 @@ document.addEventListener('DOMContentLoaded', () => {
             const meta = document.createElement('div');
             meta.className = 'comment-meta';
 
+            const metaLeft = document.createElement('div');
+            metaLeft.className = 'comment-meta-left';
+
             const userName = document.createElement('span');
-            userName.className = 'comment-user-name';
+            userName.className = `comment-user-name${commentIsAdmin ? ' is-admin' : ''}`;
             userName.textContent = displayName;
-            if (commentIsAdmin) {
-                userName.style.fontWeight = '800';
-                userName.style.color = '#facc15';
-                userName.style.letterSpacing = '0.01em';
+            metaLeft.appendChild(userName);
+
+            if (entry.pinned && !entry.parentId) {
+                const pinnedTag = document.createElement('span');
+                pinnedTag.className = 'comment-pin-badge';
+                pinnedTag.textContent = '📌 Pinned';
+                metaLeft.appendChild(pinnedTag);
             }
 
             const time = document.createElement('span');
             time.className = 'comment-time';
             time.textContent = formatCommentDate(entry.timestamp);
 
-            if (canDeleteAnyComment && entry.id) {
-                const deleteBtn = document.createElement('button');
-                deleteBtn.type = 'button';
-                deleteBtn.setAttribute('aria-label', 'Delete comment');
-                deleteBtn.setAttribute('title', 'Delete comment');
-                deleteBtn.textContent = '🗑';
-                deleteBtn.style.border = '1px solid rgba(248, 113, 113, 0.45)';
-                deleteBtn.style.background = 'rgba(127, 29, 29, 0.28)';
-                deleteBtn.style.color = '#fecaca';
-                deleteBtn.style.borderRadius = '8px';
-                deleteBtn.style.padding = '0.12rem 0.38rem';
-                deleteBtn.style.cursor = 'pointer';
-                deleteBtn.style.fontSize = '0.8rem';
-                deleteBtn.style.lineHeight = '1.2';
-                deleteBtn.addEventListener('click', () => {
-                    deleteCommentById(entry.id);
-                });
-                meta.appendChild(deleteBtn);
-            }
+            meta.appendChild(metaLeft);
+            meta.appendChild(time);
 
             const text = document.createElement('p');
             text.className = 'comment-text';
             text.textContent = entry.text;
 
-            meta.appendChild(userName);
-            meta.appendChild(time);
+            const actions = document.createElement('div');
+            actions.className = 'comment-actions';
+
+            const replyBtn = document.createElement('button');
+            replyBtn.type = 'button';
+            replyBtn.className = 'comment-action-btn';
+            replyBtn.textContent = 'Reply';
+            replyBtn.addEventListener('click', async () => {
+                if (!currentAuthenticatedUser) {
+                    await requestGoogleSignIn();
+                    return;
+                }
+
+                activeReplyTargetId = activeReplyTargetId === entry.id ? null : entry.id;
+                renderComments(latestCommentsCache);
+            });
+            actions.appendChild(replyBtn);
+
+            const loveBtn = document.createElement('button');
+            loveBtn.type = 'button';
+            loveBtn.className = `comment-action-btn comment-love-btn${hasLiked ? ' active' : ''}`;
+            loveBtn.textContent = `❤️ ${likesCount}`;
+            loveBtn.addEventListener('click', () => {
+                toggleCommentLove(entry);
+            });
+            actions.appendChild(loveBtn);
+
+            if (isCurrentUserAdmin()) {
+                if (!entry.parentId) {
+                    const pinBtn = document.createElement('button');
+                    pinBtn.type = 'button';
+                    pinBtn.className = 'comment-action-btn admin-action';
+                    pinBtn.textContent = entry.pinned ? 'Unpin 📌' : 'Pin 📌';
+                    pinBtn.addEventListener('click', () => {
+                        togglePinComment(entry);
+                    });
+                    actions.appendChild(pinBtn);
+                }
+
+                if (entry.userUid && (!currentAuthenticatedUser || entry.userUid !== currentAuthenticatedUser.uid)) {
+                    const blockBtn = document.createElement('button');
+                    blockBtn.type = 'button';
+                    blockBtn.className = 'comment-action-btn admin-action';
+                    blockBtn.textContent = 'Block 🚫';
+                    blockBtn.addEventListener('click', () => {
+                        blockCommentAuthor(entry);
+                    });
+                    actions.appendChild(blockBtn);
+                }
+
+                const deleteBtn = document.createElement('button');
+                deleteBtn.type = 'button';
+                deleteBtn.className = 'comment-action-btn admin-action delete-action';
+                deleteBtn.textContent = 'Delete 🗑️';
+                deleteBtn.addEventListener('click', () => {
+                    deleteCommentById(entry.id);
+                });
+                actions.appendChild(deleteBtn);
+            }
+
             content.appendChild(meta);
             content.appendChild(text);
+            content.appendChild(actions);
+
+            if (activeReplyTargetId === entry.id && currentAuthenticatedUser) {
+                const replyComposer = document.createElement('div');
+                replyComposer.className = 'reply-compose';
+
+                const replyInput = document.createElement('textarea');
+                replyInput.className = 'comment-input reply-input';
+                replyInput.rows = 2;
+                replyInput.maxLength = 350;
+                replyInput.placeholder = 'Write a reply...';
+
+                const replyPostBtn = document.createElement('button');
+                replyPostBtn.type = 'button';
+                replyPostBtn.className = 'post-comment-btn reply-post-btn';
+                replyPostBtn.textContent = 'Reply';
+                replyPostBtn.addEventListener('click', async () => {
+                    replyPostBtn.disabled = true;
+                    await postReply(entry.id, replyInput.value);
+                    replyPostBtn.disabled = false;
+                });
+
+                replyComposer.appendChild(replyInput);
+                replyComposer.appendChild(replyPostBtn);
+                content.appendChild(replyComposer);
+            }
+
+            const childComments = sortComments(groupedByParent.get(entry.id) || [], false);
+            if (childComments.length) {
+                const repliesWrap = document.createElement('div');
+                repliesWrap.className = 'comment-replies';
+                childComments.forEach((childEntry) => {
+                    renderCommentNode(childEntry, repliesWrap, depth + 1);
+                });
+                content.appendChild(repliesWrap);
+            }
 
             item.appendChild(avatar);
             item.appendChild(content);
-            commentsList.appendChild(item);
+            containerElement.appendChild(item);
+        };
+
+        const rootComments = sortComments(groupedByParent.get('root') || [], true);
+        rootComments.forEach((entry) => {
+            renderCommentNode(entry, commentsList, 0);
         });
     };
 
@@ -467,7 +754,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             const db = await initializeFirestoreCompat();
-            const commentsQuery = db.collection('comments').orderBy('timestamp', 'desc').limit(100);
+            const commentsQuery = db.collection('comments').orderBy('timestamp', 'desc').limit(300);
+
+            isInitialCommentsSnapshot = true;
 
             commentsUnsubscribe = commentsQuery.onSnapshot(
                 (snapshot) => {
@@ -476,15 +765,38 @@ document.addEventListener('DOMContentLoaded', () => {
                         return {
                             id: doc.id,
                             text: String(data.text || '').trim(),
+                            parentId: data.parentId ? String(data.parentId) : null,
+                            userUid: String(data.userUid || ''),
                             userName: String(data.userName || 'Student'),
                             userEmail: String(data.userEmail || data.email || ''),
                             userPhoto: String(data.userPhoto || ''),
+                            likesCount: Number(data.likesCount || 0),
+                            likedBy: Array.isArray(data.likedBy) ? data.likedBy : [],
+                            pinned: Boolean(data.pinned),
                             timestamp: data.timestamp || null
                         };
                     }).filter(item => item.text);
 
                     latestCommentsCache = mapped;
                     renderComments(latestCommentsCache);
+
+                    if (isCurrentUserAdmin() && !isInitialCommentsSnapshot) {
+                        snapshot.docChanges().forEach((change) => {
+                            if (change.type !== 'added') return;
+
+                            const data = change.doc.data() || {};
+                            notifyAdminForComment({
+                                id: change.doc.id,
+                                text: String(data.text || ''),
+                                userName: String(data.userName || 'Student'),
+                                userEmail: String(data.userEmail || data.email || ''),
+                                userPhoto: String(data.userPhoto || ''),
+                                userUid: String(data.userUid || '')
+                            });
+                        });
+                    }
+
+                    isInitialCommentsSnapshot = false;
                 },
                 () => {
                     latestCommentsCache = [];
@@ -499,7 +811,10 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const postComment = async () => {
-        if (!postCommentBtn || !commentInput || !currentAuthenticatedUser || !currentAuthenticatedUser.uid) return;
+        if (!postCommentBtn || !commentInput) return;
+
+        const canPost = await ensureCurrentUserCanPost();
+        if (!canPost || !currentAuthenticatedUser) return;
 
         const trimmedText = commentInput.value.trim();
         if (!trimmedText || isPostingComment) return;
@@ -510,10 +825,15 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const db = await initializeFirestoreCompat();
             await db.collection('comments').add({
+                parentId: null,
                 text: trimmedText,
+                userUid: String(currentAuthenticatedUser.uid || ''),
                 userName: String(currentAuthenticatedUser.displayName || 'Student'),
                 userEmail: String(currentAuthenticatedUser.email || ''),
                 userPhoto: String(currentAuthenticatedUser.photoURL || ''),
+                likesCount: 0,
+                likedBy: [],
+                pinned: false,
                 timestamp: firestoreFieldValue && typeof firestoreFieldValue.serverTimestamp === 'function'
                     ? firestoreFieldValue.serverTimestamp()
                     : new Date()
@@ -720,6 +1040,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 setCommentsComposerVisibility(Boolean(currentAuthenticatedUser));
                 renderComments(latestCommentsCache);
                 setAuthStatus('');
+
+                if (isCurrentUserAdmin()) {
+                    ensureAdminNotificationPermission();
+                }
 
                 if (currentAuthenticatedUser && currentAuthenticatedUser.uid) {
                     queueMicrotask(() => {
@@ -1713,4 +2037,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-});
+};
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeNotesCraftApp, { once: true });
+} else {
+    initializeNotesCraftApp();
+}

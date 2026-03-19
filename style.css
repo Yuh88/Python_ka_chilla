@@ -2480,6 +2480,17 @@ body.dark-mode .subject-icon {
     background: rgba(15, 23, 42, 0.48);
 }
 
+.comment-item.admin-comment {
+    border-color: rgba(245, 158, 11, 0.78);
+    box-shadow: 0 0 0 1px rgba(250, 204, 21, 0.34), 0 10px 22px rgba(15, 23, 42, 0.35);
+}
+
+.comment-item.reply-item {
+    margin-top: 0.58rem;
+    margin-left: 1.25rem;
+    background: rgba(2, 6, 23, 0.52);
+}
+
 .comment-avatar {
     width: 34px;
     height: 34px;
@@ -2502,10 +2513,33 @@ body.dark-mode .subject-icon {
     margin-bottom: 0.28rem;
 }
 
+.comment-meta-left {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 0;
+}
+
 .comment-user-name {
     color: #f8fafc;
     font-size: 0.84rem;
     font-weight: 600;
+}
+
+.comment-user-name.is-admin {
+    color: #facc15;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+}
+
+.comment-pin-badge {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #fcd34d;
+    border: 1px solid rgba(245, 158, 11, 0.46);
+    border-radius: 999px;
+    padding: 0.12rem 0.45rem;
+    background: rgba(120, 53, 15, 0.24);
 }
 
 .comment-time {
@@ -2522,6 +2556,73 @@ body.dark-mode .subject-icon {
     word-break: break-word;
 }
 
+.comment-actions {
+    margin-top: 0.55rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.38rem;
+}
+
+.comment-action-btn {
+    border: 1px solid rgba(148, 163, 184, 0.3);
+    background: rgba(15, 23, 42, 0.6);
+    color: #cbd5e1;
+    border-radius: 999px;
+    padding: 0.2rem 0.62rem;
+    font-size: 0.74rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.comment-action-btn:hover {
+    background: rgba(30, 41, 59, 0.78);
+    color: #ffffff;
+}
+
+.comment-love-btn.active {
+    border-color: rgba(251, 113, 133, 0.5);
+    background: rgba(159, 18, 57, 0.28);
+    color: #fecdd3;
+}
+
+.comment-action-btn.admin-action {
+    border-color: rgba(167, 139, 250, 0.42);
+    background: rgba(76, 29, 149, 0.22);
+    color: #ddd6fe;
+}
+
+.comment-action-btn.admin-action.delete-action {
+    border-color: rgba(248, 113, 113, 0.48);
+    background: rgba(127, 29, 29, 0.25);
+    color: #fecaca;
+}
+
+.reply-compose {
+    margin-top: 0.65rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.reply-input {
+    min-height: 72px;
+    font-size: 0.86rem;
+}
+
+.reply-post-btn {
+    align-self: flex-start;
+    padding: 0.38rem 0.75rem;
+    font-size: 0.76rem;
+}
+
+.comment-replies {
+    margin-top: 0.58rem;
+    border-left: 2px solid rgba(99, 102, 241, 0.28);
+    padding-left: 0.82rem;
+}
+
 @media (max-width: 768px) {
     .comments-section {
         margin-top: 1.5rem;
@@ -2530,6 +2631,10 @@ body.dark-mode .subject-icon {
 
     .comment-item {
         padding: 0.65rem;
+    }
+
+    .comment-item.reply-item {
+        margin-left: 0.65rem;
     }
 
     .comment-avatar {
