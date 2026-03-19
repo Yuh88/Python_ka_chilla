@@ -271,6 +271,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let firestoreInitPromise = null;
     let commentsUnsubscribe = null;
     let isPostingComment = false;
+    let latestCommentsCache = [];
+
+    const ADMIN_EMAIL = 'johnythewithcher@gmail.com';
+    const ADMIN_DISPLAY_NAME = 'Admin 👑';
 
     const getInitialTheme = () => {
         try {
@@ -325,6 +329,10 @@ document.addEventListener('DOMContentLoaded', () => {
         commentsLoginRequired.classList.toggle('hidden', Boolean(isLoggedIn));
     };
 
+    const normalizeEmail = (emailValue) => String(emailValue || '').trim().toLowerCase();
+    const isAdminEmail = (emailValue) => normalizeEmail(emailValue) === ADMIN_EMAIL;
+    const isCurrentUserAdmin = () => Boolean(currentAuthenticatedUser && isAdminEmail(currentAuthenticatedUser.email));
+
     const formatCommentDate = (timestampValue) => {
         if (!timestampValue) return 'Just now';
 
@@ -349,6 +357,17 @@ document.addEventListener('DOMContentLoaded', () => {
         return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
     };
 
+    const deleteCommentById = async (commentId) => {
+        if (!commentId || !isCurrentUserAdmin()) return;
+
+        try {
+            const db = await initializeFirestoreCompat();
+            await db.collection('comments').doc(commentId).delete();
+        } catch (error) {
+            console.warn('Unable to delete comment.', error);
+        }
+    };
+
     const renderComments = (comments = []) => {
         if (!commentsList) return;
 
@@ -362,14 +381,26 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
+        const canDeleteAnyComment = isCurrentUserAdmin();
+
         comments.forEach((entry) => {
+            const commentIsAdmin = isAdminEmail(entry.userEmail);
+            const displayName = commentIsAdmin ? ADMIN_DISPLAY_NAME : entry.userName;
+
             const item = document.createElement('article');
             item.className = 'comment-item';
 
+            if (commentIsAdmin) {
+                item.style.borderColor = 'rgba(245, 158, 11, 0.78)';
+                item.style.boxShadow = '0 0 0 1px rgba(250, 204, 21, 0.34), 0 10px 22px rgba(15, 23, 42, 0.35)';
+            }
+
             const avatar = document.createElement('img');
             avatar.className = 'comment-avatar';
-            avatar.src = entry.userPhoto || createCommentAvatarFallback(entry.userName);
-            avatar.alt = `${entry.userName} avatar`;
+            avatar.src = commentIsAdmin
+                ? createCommentAvatarFallback(ADMIN_DISPLAY_NAME)
+                : entry.userPhoto || createCommentAvatarFallback(displayName);
+            avatar.alt = `${displayName} avatar`;
 
             const content = document.createElement('div');
             content.className = 'comment-content';
@@ -379,11 +410,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const userName = document.createElement('span');
             userName.className = 'comment-user-name';
-            userName.textContent = entry.userName;
+            userName.textContent = displayName;
+            if (commentIsAdmin) {
+                userName.style.fontWeight = '800';
+                userName.style.color = '#facc15';
+                userName.style.letterSpacing = '0.01em';
+            }
 
             const time = document.createElement('span');
             time.className = 'comment-time';
             time.textContent = formatCommentDate(entry.timestamp);
+
+            if (canDeleteAnyComment && entry.id) {
+                const deleteBtn = document.createElement('button');
+                deleteBtn.type = 'button';
+                deleteBtn.setAttribute('aria-label', 'Delete comment');
+                deleteBtn.setAttribute('title', 'Delete comment');
+                deleteBtn.textContent = '🗑';
+                deleteBtn.style.border = '1px solid rgba(248, 113, 113, 0.45)';
+                deleteBtn.style.background = 'rgba(127, 29, 29, 0.28)';
+                deleteBtn.style.color = '#fecaca';
+                deleteBtn.style.borderRadius = '8px';
+                deleteBtn.style.padding = '0.12rem 0.38rem';
+                deleteBtn.style.cursor = 'pointer';
+                deleteBtn.style.fontSize = '0.8rem';
+                deleteBtn.style.lineHeight = '1.2';
+                deleteBtn.addEventListener('click', () => {
+                    deleteCommentById(entry.id);
+                });
+                meta.appendChild(deleteBtn);
+            }
 
             const text = document.createElement('p');
             text.className = 'comment-text';
@@ -415,18 +471,22 @@ document.addEventListener('DOMContentLoaded', () => {
                             id: doc.id,
                             text: String(data.text || '').trim(),
                             userName: String(data.userName || 'Student'),
+                            userEmail: String(data.userEmail || data.email || ''),
                             userPhoto: String(data.userPhoto || ''),
                             timestamp: data.timestamp || null
                         };
                     }).filter(item => item.text);
 
-                    renderComments(mapped);
+                    latestCommentsCache = mapped;
+                    renderComments(latestCommentsCache);
                 },
                 () => {
+                    latestCommentsCache = [];
                     renderComments([]);
                 }
             );
         } catch (error) {
+            latestCommentsCache = [];
             renderComments([]);
             console.warn('Unable to start comments listener.', error);
         }
@@ -446,6 +506,7 @@ document.addEventListener('DOMContentLoaded', () => {
             await db.collection('comments').add({
                 text: trimmedText,
                 userName: String(currentAuthenticatedUser.displayName || 'Student'),
+                userEmail: String(currentAuthenticatedUser.email || ''),
                 userPhoto: String(currentAuthenticatedUser.photoURL || ''),
                 timestamp: firestoreFieldValue && typeof firestoreFieldValue.serverTimestamp === 'function'
                     ? firestoreFieldValue.serverTimestamp()
@@ -650,6 +711,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 updateAuthUi(user);
                 updateLoginIncentive(Boolean(currentAuthenticatedUser));
                 setCommentsComposerVisibility(Boolean(currentAuthenticatedUser));
+                renderComments(latestCommentsCache);
                 setAuthStatus('');
 
                 if (currentAuthenticatedUser && currentAuthenticatedUser.uid) {
