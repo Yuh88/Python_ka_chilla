@@ -278,6 +278,7 @@ const initializeNotesCraftApp = () => {
 
     const ADMIN_EMAIL = 'johnythewithcher@gmail.com';
     const ADMIN_DISPLAY_NAME = 'Admin 👑';
+    const UNBLOCKABLE_EMAIL = 'johnythewithcher@gmail.com';
 
     const getInitialTheme = () => {
         try {
@@ -340,6 +341,7 @@ const initializeNotesCraftApp = () => {
     const normalizeEmail = (emailValue) => String(emailValue || '').trim().toLowerCase();
     const isAdminEmail = (emailValue) => normalizeEmail(emailValue) === ADMIN_EMAIL;
     const isCurrentUserAdmin = () => Boolean(currentAuthenticatedUser && isAdminEmail(currentAuthenticatedUser.email));
+    const isUnblockableEmail = (emailValue) => normalizeEmail(emailValue) === UNBLOCKABLE_EMAIL;
 
     const formatCommentDate = (timestampValue) => {
         if (!timestampValue) return 'Just now';
@@ -427,6 +429,10 @@ const initializeNotesCraftApp = () => {
             return false;
         }
 
+        if (isUnblockableEmail(currentAuthenticatedUser.email)) {
+            return true;
+        }
+
         const blocked = await isUserBlockedForComments(currentAuthenticatedUser.uid);
         if (blocked) {
             setAuthStatus('You are blocked from posting comments.', true);
@@ -474,6 +480,10 @@ const initializeNotesCraftApp = () => {
     const blockCommentAuthor = async (commentEntry) => {
         if (!isCurrentUserAdmin() || !commentEntry || !commentEntry.userUid) return;
         if (currentAuthenticatedUser && commentEntry.userUid === currentAuthenticatedUser.uid) return;
+        if (isUnblockableEmail(commentEntry.userEmail)) {
+            setAuthStatus('This account cannot be blocked.', true);
+            return;
+        }
 
         try {
             const db = await initializeFirestoreCompat();
@@ -678,7 +688,7 @@ const initializeNotesCraftApp = () => {
                     actions.appendChild(pinBtn);
                 }
 
-                if (entry.userUid && (!currentAuthenticatedUser || entry.userUid !== currentAuthenticatedUser.uid)) {
+                if (entry.userUid && (!currentAuthenticatedUser || entry.userUid !== currentAuthenticatedUser.uid) && !isUnblockableEmail(entry.userEmail)) {
                     const blockBtn = document.createElement('button');
                     blockBtn.type = 'button';
                     blockBtn.className = 'comment-action-btn admin-action';
