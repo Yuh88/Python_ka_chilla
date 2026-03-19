@@ -60,48 +60,14 @@
       svg: { fontCache: 'global' }
     };
   </script>
-  <script type="text/javascript" id="MathJax-script" async defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
     <!-- Premium Tech Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
-  <script>
-    (function () {
-      const version = Date.now();
-
-      const injectStyle = (href) => {
-        const styleTag = document.createElement('link');
-        styleTag.rel = 'stylesheet';
-        styleTag.href = href;
-        document.head.appendChild(styleTag);
-      };
-
-      const loadScript = (src) => new Promise((resolve, reject) => {
-        const scriptTag = document.createElement('script');
-        scriptTag.src = src;
-        scriptTag.async = false;
-        scriptTag.onload = resolve;
-        scriptTag.onerror = reject;
-        document.head.appendChild(scriptTag);
-      });
-
-      injectStyle(`style.css?v=${version}`);
-
-      const scriptQueue = [
-        'https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js',
-        'https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js',
-        `content_data.js?v=${version}`,
-        `script.js?v=${version}`
-      ];
-
-      scriptQueue.reduce((chain, src) => chain.then(() => loadScript(src)), Promise.resolve())
-        .catch((error) => {
-          console.error('Asset loader failed:', error);
-        });
-    })();
-  </script>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark-mode" style="background-color: #0b0b0d; color: #ffffff;">
 
 <div id="firstVisitSplash" class="first-visit-splash" aria-hidden="true">
   <div class="splash-content">
@@ -1488,6 +1454,11 @@ Schools organize these debates because <strong>storytelling makes arguments more
         <footer class="site-footer">
           <p>© 2026 NotesCraft. Developed with ♥️ by Muhammad Yousaf. | Join us in seeking blessings: Please recite a Durood Pak for the Ummah. | Good luck with your studies!</p>
         </footer>
+
+<script defer src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
+<script defer src="content_data.js"></script>
+<script defer src="script.js"></script>
 
 </body>
 </html>
