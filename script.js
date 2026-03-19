@@ -244,6 +244,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeStorageKey = 'notescraft_theme';
     const flashcardStorageKey = 'notescraft_flashcard_mode';
     let isFlashcardMode = false;
+    let completedQuestionIds = new Set();
+    let currentAuthenticatedUser = null;
 
     const moonIcon = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>`;
     const sunIcon = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>`;
@@ -258,6 +260,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let firebaseAuthInstance = null;
     let firebaseAuthInitPromise = null;
     let isSignInInProgress = false;
+    let firestoreDbInstance = null;
+    let firestoreFieldValue = null;
+    let firestoreInitPromise = null;
 
     const getInitialTheme = () => {
         try {
@@ -345,6 +350,101 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    const initializeFirestoreCompat = async () => {
+        if (firestoreDbInstance) return firestoreDbInstance;
+        if (firestoreInitPromise) return firestoreInitPromise;
+
+        firestoreInitPromise = Promise.resolve().then(() => {
+            if (!window.firebase || typeof window.firebase.firestore !== 'function') {
+                throw new Error('Firestore compat SDK is not available.');
+            }
+
+            let appInstance;
+            try {
+                appInstance = window.firebase.app();
+            } catch (error) {
+                appInstance = window.firebase.initializeApp(firebaseConfig);
+            }
+
+            firestoreDbInstance = appInstance.firestore();
+            firestoreFieldValue = window.firebase.firestore.FieldValue || null;
+            return firestoreDbInstance;
+        });
+
+        return firestoreInitPromise;
+    };
+
+    const syncAllProgressForUser = async (uid) => {
+        if (!uid) return;
+
+        try {
+            const db = await initializeFirestoreCompat();
+            const payload = {
+                completedQuestionIds: Array.from(completedQuestionIds)
+            };
+
+            if (firestoreFieldValue && typeof firestoreFieldValue.serverTimestamp === 'function') {
+                payload.updatedAt = firestoreFieldValue.serverTimestamp();
+            } else {
+                payload.updatedAt = new Date();
+            }
+
+            await db.collection('user_progress').doc(uid).set(payload, { merge: true });
+        } catch (error) {
+            console.warn('Unable to sync full progress set to Firestore.', error);
+        }
+    };
+
+    const loadProgressFromFirestore = async (uid) => {
+        if (!uid) return;
+
+        try {
+            const db = await initializeFirestoreCompat();
+            const docSnapshot = await db.collection('user_progress').doc(uid).get();
+            const data = docSnapshot.exists ? docSnapshot.data() : {};
+            const remoteIds = Array.isArray(data.completedQuestionIds) ? data.completedQuestionIds : [];
+
+            const mergedSet = new Set([...completedQuestionIds, ...remoteIds]);
+            completedQuestionIds.clear();
+            mergedSet.forEach((id) => completedQuestionIds.add(id));
+            saveStorageSet(STORAGE_KEYS.completed, completedQuestionIds);
+
+            queueMicrotask(() => {
+                applyStoredCardStates();
+            });
+
+            const needsRemoteMerge = mergedSet.size !== remoteIds.length;
+            if (needsRemoteMerge) {
+                await syncAllProgressForUser(uid);
+            }
+        } catch (error) {
+            console.warn('Unable to load progress from Firestore.', error);
+        }
+    };
+
+    const syncSingleProgressChange = async (questionId, isDone) => {
+        if (!currentAuthenticatedUser || !currentAuthenticatedUser.uid || !questionId) return;
+
+        try {
+            const db = await initializeFirestoreCompat();
+            const payload = {};
+
+            if (firestoreFieldValue) {
+                payload.completedQuestionIds = isDone
+                    ? firestoreFieldValue.arrayUnion(questionId)
+                    : firestoreFieldValue.arrayRemove(questionId);
+                payload.updatedAt = firestoreFieldValue.serverTimestamp();
+            } else {
+                payload.completedQuestionIds = Array.from(completedQuestionIds);
+                payload.updatedAt = new Date();
+            }
+
+            await db.collection('user_progress').doc(currentAuthenticatedUser.uid).set(payload, { merge: true });
+        } catch (error) {
+            console.warn('Unable to sync progress change to Firestore.', error);
+        }
+    };
+
     const initializeFirebaseAuth = async () => {
         if (firebaseAuthInstance) return firebaseAuthInstance;
         if (firebaseAuthInitPromise) return firebaseAuthInitPromise;
@@ -361,8 +461,19 @@ document.addEventListener('DOMContentLoaded', () => {
             provider.setCustomParameters({ prompt: 'select_account' });
 
             authModule.onAuthStateChanged(auth, (user) => {
+                currentAuthenticatedUser = user || null;
                 updateAuthUi(user);
                 setAuthStatus('');
+
+                if (currentAuthenticatedUser && currentAuthenticatedUser.uid) {
+                    queueMicrotask(() => {
+                        loadProgressFromFirestore(currentAuthenticatedUser.uid);
+                    });
+                } else {
+                    queueMicrotask(() => {
+                        applyStoredCardStates();
+                    });
+                }
             });
 
             firebaseAuthInstance = {
@@ -383,6 +494,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         updateAuthUi(null);
         setAuthStatus('');
+
+        initializeFirestoreCompat().catch((error) => {
+            console.warn('Firestore initialization failed.', error);
+        });
 
         initializeFirebaseAuth().catch(() => {
             setAuthStatus('Sign-in is unavailable right now. Please try again later.', true);
@@ -587,6 +702,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             updateProgressUI(questionCard, isDone);
             saveStorageSet(STORAGE_KEYS.completed, completedQuestionIds);
+            syncSingleProgressChange(questionId, isDone);
         });
     };
 
@@ -679,7 +795,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    const completedQuestionIds = readStorageSet(STORAGE_KEYS.completed);
+    completedQuestionIds = readStorageSet(STORAGE_KEYS.completed);
 
     const buildQuestionId = (entry, meta = {}) => {
         const source = [
@@ -705,12 +821,42 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const applyStoredCardStates = () => {
-        const cards = document.querySelectorAll('.question-card[data-question-id]');
+        const cards = document.querySelectorAll('.question-card');
         cards.forEach(card => {
-            const questionId = card.getAttribute('data-question-id');
+            let questionId = card.getAttribute('data-question-id');
+
+            if (!questionId) {
+                const questionText = (card.querySelector('.question-title') ? card.querySelector('.question-title').innerText : '').trim();
+                const answerText = (card.querySelector('.answer-text') ? card.querySelector('.answer-text').innerText : '').trim();
+                const source = [String(activeSubject || ''), String(activeChapter || ''), questionText, answerText].join('|');
+
+                let hash = 0;
+                for (let index = 0; index < source.length; index += 1) {
+                    hash = ((hash << 5) - hash) + source.charCodeAt(index);
+                    hash |= 0;
+                }
+
+                questionId = `q-${Math.abs(hash).toString(36)}`;
+                card.setAttribute('data-question-id', questionId);
+            }
+
             if (!questionId) return;
 
-            const doneCheckbox = card.querySelector('.done-checkbox');
+            let doneCheckbox = card.querySelector('.done-checkbox');
+            if (!doneCheckbox) {
+                let metaActions = card.querySelector('.card-meta-actions');
+                if (!metaActions) {
+                    metaActions = document.createElement('div');
+                    metaActions.className = 'card-meta-actions';
+                    card.appendChild(metaActions);
+                }
+
+                const doneLabel = document.createElement('label');
+                doneLabel.className = 'done-toggle';
+                doneLabel.innerHTML = '<input class="done-checkbox" type="checkbox"><span>Mark as Done</span>';
+                metaActions.appendChild(doneLabel);
+                doneCheckbox = doneLabel.querySelector('.done-checkbox');
+            }
 
             const isDone = completedQuestionIds.has(questionId);
 
@@ -721,6 +867,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     };
+
+    queueMicrotask(() => {
+        applyStoredCardStates();
+    });
 
     const siteData = (window.siteData && typeof window.siteData === 'object') ? window.siteData : {};
 
