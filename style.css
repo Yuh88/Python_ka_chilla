@@ -2379,6 +2379,28 @@ body.dark-mode .subject-icon {
     margin: 0.8rem 0 0;
     font-size: 0.84rem;
     color: #fbbf24;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    cursor: pointer;
+    user-select: none;
+    border: 1px dashed rgba(251, 191, 36, 0.38);
+    border-radius: 10px;
+    padding: 0.45rem 0.6rem;
+    transition: var(--transition-smooth);
+}
+
+.comments-login-required:hover,
+.comments-login-required:focus-visible {
+    color: #fde68a;
+    border-color: rgba(253, 230, 138, 0.62);
+    background: rgba(245, 158, 11, 0.1);
+    outline: none;
+}
+
+.comments-login-required.is-busy {
+    opacity: 0.75;
+    pointer-events: none;
 }
 
 .comments-compose {

@@ -246,6 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const commentInput = document.getElementById('comment-input');
     const postCommentBtn = document.getElementById('post-comment-btn');
     const commentsList = document.getElementById('comments-list');
+    const commentsSection = document.getElementById('comments-section');
     const body = document.body;
     const themeStorageKey = 'notescraft_theme';
     const flashcardStorageKey = 'notescraft_flashcard_mode';
@@ -327,6 +328,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         commentsCompose.classList.toggle('hidden', !isLoggedIn);
         commentsLoginRequired.classList.toggle('hidden', Boolean(isLoggedIn));
+    };
+
+    const setCommentsSectionVisibility = (shouldShow) => {
+        if (!commentsSection) return;
+        commentsSection.classList.toggle('hidden', !shouldShow);
     };
 
     const normalizeEmail = (emailValue) => String(emailValue || '').trim().toLowerCase();
@@ -524,6 +530,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const initCommentsSection = () => {
         setCommentsComposerVisibility(false);
+        setCommentsSectionVisibility(false);
         renderComments([]);
 
         startCommentsRealtimeListener();
@@ -738,6 +745,39 @@ document.addEventListener('DOMContentLoaded', () => {
         return firebaseAuthInitPromise;
     };
 
+    const requestGoogleSignIn = async () => {
+        if (isSignInInProgress) return;
+
+        isSignInInProgress = true;
+        if (googleSignInBtn) {
+            googleSignInBtn.disabled = true;
+        }
+        if (commentsLoginRequired) {
+            commentsLoginRequired.classList.add('is-busy');
+        }
+        setAuthStatus('');
+
+        try {
+            const { auth, provider, signInWithPopup } = await initializeFirebaseAuth();
+            await signInWithPopup(auth, provider);
+        } catch (error) {
+            const errorCode = error && typeof error === 'object' ? error.code : '';
+            if (errorCode === 'auth/popup-closed-by-user' || errorCode === 'auth/cancelled-popup-request') {
+                setAuthStatus('Sign-in cancelled.');
+            } else {
+                setAuthStatus('Unable to sign in. Please try again.', true);
+            }
+        } finally {
+            if (googleSignInBtn) {
+                googleSignInBtn.disabled = false;
+            }
+            if (commentsLoginRequired) {
+                commentsLoginRequired.classList.remove('is-busy');
+            }
+            isSignInInProgress = false;
+        }
+    };
+
     const initOptInGoogleAuth = () => {
         if (!googleSignInBtn || !logoutBtn || !authUserState) return;
 
@@ -753,28 +793,22 @@ document.addEventListener('DOMContentLoaded', () => {
             setAuthStatus('Sign-in is unavailable right now. Please try again later.', true);
         });
 
-        googleSignInBtn.addEventListener('click', async () => {
-            if (isSignInInProgress) return;
-
-            isSignInInProgress = true;
-            googleSignInBtn.disabled = true;
-            setAuthStatus('');
-
-            try {
-                const { auth, provider, signInWithPopup } = await initializeFirebaseAuth();
-                await signInWithPopup(auth, provider);
-            } catch (error) {
-                const errorCode = error && typeof error === 'object' ? error.code : '';
-                if (errorCode === 'auth/popup-closed-by-user' || errorCode === 'auth/cancelled-popup-request') {
-                    setAuthStatus('Sign-in cancelled.');
-                } else {
-                    setAuthStatus('Unable to sign in. Please try again.', true);
-                }
-            } finally {
-                googleSignInBtn.disabled = false;
-                isSignInInProgress = false;
-            }
+        googleSignInBtn.addEventListener('click', () => {
+            requestGoogleSignIn();
         });
+
+        if (commentsLoginRequired) {
+            commentsLoginRequired.addEventListener('click', () => {
+                requestGoogleSignIn();
+            });
+
+            commentsLoginRequired.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    requestGoogleSignIn();
+                }
+            });
+        }
 
         logoutBtn.addEventListener('click', async () => {
             setAuthStatus('');
@@ -1401,6 +1435,7 @@ document.addEventListener('DOMContentLoaded', () => {
         activeSubject = null;
         renderWelcomeSection();
         setFlashcardFabVisibility(false);
+        setCommentsSectionVisibility(false);
         showElement(subjectDashboardView);
         hideElement(chapterSelectionView);
         hideElement(chapterHeaderBanner);
@@ -1415,6 +1450,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const showChapterSelection = (subjectName) => {
         activeSubject = subjectName;
         setFlashcardFabVisibility(false);
+        setCommentsSectionVisibility(false);
         showElement(chapterSelectionView);
         hideElement(subjectDashboardView);
         hideElement(chapterHeaderBanner);
@@ -1485,6 +1521,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (hasChapterContent) {
             renderQuestionsByCategory(chapterQuestions, subjectName, chapterName);
             setFlashcardFabVisibility(true);
+            setCommentsSectionVisibility(true);
 
             showElement(tabNavigation);
             showElement(questionsFeed);
@@ -1500,6 +1537,7 @@ document.addEventListener('DOMContentLoaded', () => {
             runFlashcardSync();
         } else {
             setFlashcardFabVisibility(false);
+            setCommentsSectionVisibility(false);
             hideElement(tabNavigation);
             hideElement(questionsFeed);
             showElement(contentUnavailable);
