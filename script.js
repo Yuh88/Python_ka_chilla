@@ -234,6 +234,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. Dark Mode Toggle
     const themeToggleBtn = document.getElementById('themeToggleBtn');
     const flashcardFabBtn = document.getElementById('flashcardFabBtn');
+    const googleSignInBtn = document.getElementById('googleSignInBtn');
+    const authUserState = document.getElementById('authUserState');
+    const authUserAvatar = document.getElementById('authUserAvatar');
+    const authUserName = document.getElementById('authUserName');
+    const logoutBtn = document.getElementById('logoutBtn');
+    const authStatusText = document.getElementById('authStatusText');
     const body = document.body;
     const themeStorageKey = 'notescraft_theme';
     const flashcardStorageKey = 'notescraft_flashcard_mode';
@@ -241,6 +247,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const moonIcon = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>`;
     const sunIcon = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>`;
+    const firebaseConfig = {
+        apiKey: 'AIzaSyChjOOrOc5lv7_TO5DYf7CeZHsP_s8c2fU',
+        authDomain: 'notes-craft.firebaseapp.com',
+        projectId: 'notes-craft',
+        storageBucket: 'notes-craft.firebasestorage.app',
+        messagingSenderId: '1047204613728',
+        appId: '1:1047204613728:web:8645581af3037555423d05'
+    };
+    let firebaseAuthInstance = null;
+    let firebaseAuthInitPromise = null;
+    let isSignInInProgress = false;
 
     const getInitialTheme = () => {
         try {
@@ -268,6 +285,142 @@ document.addEventListener('DOMContentLoaded', () => {
         } catch (error) {
             /* no-op */
         }
+    };
+
+    const setAuthStatus = (message = '', isError = false) => {
+        if (!authStatusText) return;
+        authStatusText.textContent = message;
+        authStatusText.classList.toggle('is-error', isError);
+    };
+
+    const getFirstName = (user) => {
+        const preferredName = user && (user.displayName || user.email) ? String(user.displayName || user.email) : 'User';
+        const trimmed = preferredName.trim();
+        if (!trimmed) return 'User';
+        return trimmed.split(/\s+/)[0];
+    };
+
+    const buildFallbackAvatar = (name) => {
+        const initial = String(name || 'U').charAt(0).toUpperCase();
+        const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80"><rect width="80" height="80" rx="40" fill="#4f46e5"/><text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="700">${initial}</text></svg>`;
+        return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+    };
+
+    const animateAuthSwapIn = (element) => {
+        if (!element || typeof element.animate !== 'function') return;
+        element.animate(
+            [
+                { opacity: 0, transform: 'translateY(-4px)' },
+                { opacity: 1, transform: 'translateY(0)' }
+            ],
+            {
+                duration: 180,
+                easing: 'ease-out'
+            }
+        );
+    };
+
+    const updateAuthUi = (user) => {
+        if (!googleSignInBtn || !authUserState || !authUserAvatar || !authUserName || !logoutBtn) return;
+
+        if (user) {
+            const firstName = getFirstName(user);
+            const avatarSrc = user.photoURL || buildFallbackAvatar(firstName);
+
+            authUserName.textContent = firstName;
+            authUserAvatar.src = avatarSrc;
+            authUserAvatar.alt = `${firstName} avatar`;
+
+            googleSignInBtn.classList.add('hidden');
+            authUserState.classList.remove('hidden');
+            animateAuthSwapIn(authUserState);
+        } else {
+            authUserName.textContent = 'User';
+            authUserAvatar.src = '';
+            authUserAvatar.alt = 'User avatar';
+
+            authUserState.classList.add('hidden');
+            googleSignInBtn.classList.remove('hidden');
+            animateAuthSwapIn(googleSignInBtn);
+        }
+    };
+
+    const initializeFirebaseAuth = async () => {
+        if (firebaseAuthInstance) return firebaseAuthInstance;
+        if (firebaseAuthInitPromise) return firebaseAuthInitPromise;
+
+        firebaseAuthInitPromise = (async () => {
+            const [appModule, authModule] = await Promise.all([
+                import('https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js'),
+                import('https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js')
+            ]);
+
+            const app = appModule.initializeApp(firebaseConfig);
+            const auth = authModule.getAuth(app);
+            const provider = new authModule.GoogleAuthProvider();
+            provider.setCustomParameters({ prompt: 'select_account' });
+
+            authModule.onAuthStateChanged(auth, (user) => {
+                updateAuthUi(user);
+                setAuthStatus('');
+            });
+
+            firebaseAuthInstance = {
+                auth,
+                provider,
+                signInWithPopup: authModule.signInWithPopup,
+                signOut: authModule.signOut
+            };
+
+            return firebaseAuthInstance;
+        })();
+
+        return firebaseAuthInitPromise;
+    };
+
+    const initOptInGoogleAuth = () => {
+        if (!googleSignInBtn || !logoutBtn || !authUserState) return;
+
+        updateAuthUi(null);
+        setAuthStatus('');
+
+        initializeFirebaseAuth().catch(() => {
+            setAuthStatus('Sign-in is unavailable right now. Please try again later.', true);
+        });
+
+        googleSignInBtn.addEventListener('click', async () => {
+            if (isSignInInProgress) return;
+
+            isSignInInProgress = true;
+            googleSignInBtn.disabled = true;
+            setAuthStatus('');
+
+            try {
+                const { auth, provider, signInWithPopup } = await initializeFirebaseAuth();
+                await signInWithPopup(auth, provider);
+            } catch (error) {
+                const errorCode = error && typeof error === 'object' ? error.code : '';
+                if (errorCode === 'auth/popup-closed-by-user' || errorCode === 'auth/cancelled-popup-request') {
+                    setAuthStatus('Sign-in cancelled.');
+                } else {
+                    setAuthStatus('Unable to sign in. Please try again.', true);
+                }
+            } finally {
+                googleSignInBtn.disabled = false;
+                isSignInInProgress = false;
+            }
+        });
+
+        logoutBtn.addEventListener('click', async () => {
+            setAuthStatus('');
+
+            try {
+                const { auth, signOut } = await initializeFirebaseAuth();
+                await signOut(auth);
+            } catch (error) {
+                setAuthStatus('Unable to log out right now. Please try again.', true);
+            }
+        });
     };
 
     const setFlashcardFabVisibility = (shouldShow) => {
@@ -317,6 +470,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     applyTheme(getInitialTheme());
     initFlashcardMode();
+    initOptInGoogleAuth();
     setFlashcardFabVisibility(false);
 
     if (themeToggleBtn) {

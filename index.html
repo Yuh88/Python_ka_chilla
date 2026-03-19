@@ -78,6 +78,28 @@
         <nav class="sidebar-nav">
             <p class="nav-title">SUBJECTS</p>
 
+          <section class="auth-optin-card" aria-label="Account access">
+            <p class="auth-incentive">Sign in to sync your saved progress across devices.</p>
+            <button class="auth-google-btn" id="googleSignInBtn" type="button" aria-label="Sign in with Google">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M21.35 11.1H12v2.98h5.36c-.23 1.52-1.14 2.8-2.43 3.66v2.43h3.93c2.3-2.11 3.63-5.22 3.63-8.92 0-.74-.07-1.45-.2-2.15Z" fill="#4285F4"></path>
+                <path d="M12 22c2.7 0 4.97-.9 6.63-2.43l-3.93-2.43c-1.09.73-2.49 1.16-4.03 1.16-3.1 0-5.72-2.09-6.66-4.9H.94v2.5A9.99 9.99 0 0 0 12 22Z" fill="#34A853"></path>
+                <path d="M4.01 13.4A6 6 0 0 1 3.64 12c0-.49.08-.97.22-1.4V8.1H.94A9.98 9.98 0 0 0 0 12c0 1.6.38 3.1 1.06 4.4l2.95-2.3Z" fill="#FBBC05"></path>
+                <path d="M12 5.7c1.47 0 2.8.51 3.84 1.5l2.88-2.88C16.96 2.7 14.7 2 12 2A9.99 9.99 0 0 0 .94 8.1l2.93 2.5c.94-2.81 3.56-4.9 6.66-4.9Z" fill="#EA4335"></path>
+              </svg>
+              <span>Sign in with Google</span>
+            </button>
+            <div class="auth-user-state hidden" id="authUserState" aria-live="polite">
+              <img id="authUserAvatar" class="auth-user-avatar" src="" alt="User avatar">
+              <div class="auth-user-meta">
+                <p class="auth-user-label">Signed in as</p>
+                <p id="authUserName" class="auth-user-name">User</p>
+              </div>
+              <button class="auth-logout-btn" id="logoutBtn" type="button">Logout</button>
+            </div>
+            <p class="auth-status-text" id="authStatusText" aria-live="polite"></p>
+          </section>
+
           <div class="nav-item sidebar-home-item">
             <a href="#" class="nav-link sidebar-home-link" id="sidebarHomeLink">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10.5 12 3l9 7.5"></path><path d="M5 9.5V21h14V9.5"></path></svg>

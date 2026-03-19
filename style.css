@@ -236,6 +236,115 @@ a {
 
 }
 
+.auth-optin-card {
+    margin: 0 0.75rem 1rem;
+    padding: 0.85rem;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(129, 140, 248, 0.34);
+    background: rgba(30, 41, 59, 0.56);
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.28);
+}
+
+.auth-incentive {
+    margin: 0 0 0.65rem;
+    font-size: 0.75rem;
+    line-height: 1.45;
+    color: #cbd5e1;
+}
+
+.auth-google-btn {
+    width: 100%;
+    border: 1px solid rgba(148, 163, 184, 0.5);
+    background: rgba(15, 23, 42, 0.72);
+    color: #f8fafc;
+    border-radius: 10px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    font-size: 0.84rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.auth-google-btn:hover {
+    background: rgba(67, 56, 202, 0.38);
+    border-color: rgba(165, 180, 252, 0.72);
+}
+
+.auth-google-btn:disabled {
+    opacity: 0.72;
+    cursor: wait;
+}
+
+.auth-user-state {
+    margin-top: 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.auth-user-avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 999px;
+    object-fit: cover;
+    border: 1px solid rgba(148, 163, 184, 0.45);
+    flex-shrink: 0;
+}
+
+.auth-user-meta {
+    min-width: 0;
+    flex: 1;
+}
+
+.auth-user-label {
+    margin: 0;
+    font-size: 0.66rem;
+    color: #94a3b8;
+    line-height: 1.2;
+}
+
+.auth-user-name {
+    margin: 0.1rem 0 0;
+    font-size: 0.86rem;
+    font-weight: 600;
+    color: #f1f5f9;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.auth-logout-btn {
+    border: 1px solid rgba(148, 163, 184, 0.48);
+    background: rgba(15, 23, 42, 0.68);
+    color: #cbd5e1;
+    border-radius: 8px;
+    padding: 0.34rem 0.52rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.auth-logout-btn:hover {
+    background: rgba(148, 163, 184, 0.2);
+    color: #ffffff;
+}
+
+.auth-status-text {
+    min-height: 1rem;
+    margin: 0.46rem 0 0;
+    font-size: 0.7rem;
+    color: #94a3b8;
+}
+
+.auth-status-text.is-error {
+    color: #fda4af;
+}
+
 
 
 .nav-item {
@@ -1159,6 +1268,15 @@ body, .sidebar, .topbar, .question-card, .search-container, .card-footer, .theme
 
         margin-left: 0; /* Full width */
 
+    }
+
+    .auth-optin-card {
+        margin: 0 0.55rem 0.9rem;
+        padding: 0.75rem;
+    }
+
+    .auth-user-name {
+        max-width: 86px;
     }
 
 
