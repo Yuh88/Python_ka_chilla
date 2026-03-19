@@ -2696,8 +2696,829 @@ const siteData = {
         "badgeText": "Graph node assignment."
       }
     ],
-    "5": [],
-    "6": [],
+    "5": [
+      {
+        "question": "What is the definition of data analytics?",
+        "answer": "Data analytics is the process of examining data to discover useful information, patterns and trends to support decision-making.",
+        "category": "most",
+        "badgeTitle": "CORE OBJECTIVE",
+        "badgeText": "Analyzing real-world data to make informed choices."
+      },
+      {
+        "question": "How does statistics aid in understanding data?",
+        "answer": "Statistics is a branch of mathematics that allows us to summarize large sets of information in a simple way, facilitating easier analysis and helping to draw conclusions.",
+        "category": "most",
+        "badgeTitle": "FUNCTION",
+        "badgeText": "It simplifies complex datasets to uncover patterns."
+      },
+      {
+        "question": "What is the main purpose of measuring central tendency?",
+        "answer": "Measures of central tendency help identify the \"center\" or typical value in a dataset, providing a sense of the average or most common values.",
+        "category": "most",
+        "badgeTitle": "MAIN MEASURES",
+        "badgeText": "Mean, median, and mode."
+      },
+      {
+        "question": "Define the term \"Mean\" in basic statistics.",
+        "answer": "The mean is the average of all numbers in a dataset, calculated by adding all numbers together and dividing the sum by the total number of values.",
+        "category": "most",
+        "badgeTitle": "FORMULA REPRESENTATION",
+        "badgeText": "Mean = $\\frac{\\text{Sum of values}}{\\text{Total number of values}}$."
+      },
+      {
+        "question": "How is the \"Median\" determined in a dataset?",
+        "answer": "The median is the middle value in a dataset when numbers are arranged in order; for an odd number of values, it is the exact middle number.",
+        "category": "most",
+        "badgeTitle": "PURPOSE",
+        "badgeText": "Helps understand the exact middle point of the data distribution."
+      },
+      {
+        "question": "What is the rule for finding the median when the dataset has an even number of values?",
+        "answer": "If there is an even number of values, the median is calculated by taking the average of the two middle numbers.",
+        "category": "most",
+        "badgeTitle": "CALCULATION EXAMPLE",
+        "badgeText": "For scores 50, 60, 70, 80, the median is (60+70)/2 = 65."
+      },
+      {
+        "question": "Define \"Mode\" in a statistical dataset.",
+        "answer": "The mode is the number that appears most often (with the highest frequency) in a dataset, helping to identify the most frequent or common value.",
+        "category": "most",
+        "badgeTitle": "MULTIPLE MODES CONDITION",
+        "badgeText": "A dataset can have more than one mode if multiple numbers share the highest frequency."
+      },
+      {
+        "question": "What do measures of dispersion reveal about a dataset?",
+        "answer": "Measures of dispersion indicate how spread out or scattered the data is, showing whether data points are close to the average (mean) or spread far from it.",
+        "category": "most",
+        "badgeTitle": "COMMON TYPES",
+        "badgeText": "Variance and standard deviation."
+      },
+      {
+        "question": "Explain the statistical concept of \"Variance.\"",
+        "answer": "Variance shows how much the numbers in a dataset differ from the mean, where a higher variance means numbers are more spread out and a lower variance means they are closer to the mean.",
+        "category": "most",
+        "badgeTitle": "MATHEMATICAL FORMULA",
+        "badgeText": "$\\sigma^{2}=\\frac{1}{N}\\sum_{i=1}^{N}(x_{i}-\\mu)^{2}$."
+      },
+      {
+        "question": "Define \"Standard Deviation\" and its relationship to variance.",
+        "answer": "Standard deviation tells us how spread out the numbers are in relation to the mean, serving as a more practical and interpretable value because it uses the same unit as the original data, and is simply the square root of the variance.",
+        "category": "most",
+        "badgeTitle": "MATHEMATICAL FORMULA",
+        "badgeText": "Standard Deviation = $\\sigma=\\sqrt{\\frac{1}{N}\\sum_{i=1}^{N}(x_{i}-\\mu)^{2}}$."
+      },
+      {
+        "question": "What is Probability?",
+        "answer": "Probability is the study of how likely an event is to happen, which helps in making predictions based on known information.",
+        "category": "most",
+        "badgeTitle": "REAL-WORLD APPLICATION",
+        "badgeText": "Used heavily in weather forecasting, business decisions, and predicting sports outcomes."
+      },
+      {
+        "question": "State the mathematical formula for finding the probability of an event.",
+        "answer": "Probability is mathematically expressed as the number of favorable outcomes divided by the total number of outcomes.",
+        "category": "most",
+        "badgeTitle": "COIN FLIP EXAMPLE",
+        "badgeText": "The probability of getting heads is 1/2, which represents 1 favorable outcome out of 2 total possible outcomes."
+      },
+      {
+        "question": "What is the definition of Data Collection?",
+        "answer": "Data collection is the process of gathering relevant information for a specific purpose, where the chosen method relies heavily on the research objective and the required data type.",
+        "category": "most",
+        "badgeTitle": "PRIMARY METHODS DISCUSSED",
+        "badgeText": "Surveys, observations, and experiments."
+      },
+      {
+        "question": "Describe the \"Surveys\" method of data collection.",
+        "answer": "Surveys involve asking a predefined set of questions to a sample group, widely used for collecting large amounts of data in a structured way.",
+        "category": "most",
+        "badgeTitle": "EXECUTION MODES",
+        "badgeText": "They can be conducted via online forms, telephone calls, or face-to-face interviews."
+      },
+      {
+        "question": "When is the \"Observations\" method particularly useful in data collection?",
+        "answer": "Observation involves collecting data by watching or monitoring subjects in their natural environment, highly useful when researchers want to gather behavioral data without interference.",
+        "category": "most",
+        "badgeTitle": "EXAMPLE USE CASE",
+        "badgeText": "Monitoring which restaurant tables are most frequently chosen to optimize comfort and traffic flow."
+      },
+      {
+        "question": "What defines the \"Experiments\" method in data collection?",
+        "answer": "Experiments involve manipulating one or more variables to determine their effect on another variable, primarily used in scientific fields requiring controlled environments.",
+        "category": "most",
+        "badgeTitle": "PRIMARY OBJECTIVE",
+        "badgeText": "Allows for accurate measurement and establishment of cause-and-effect relationships."
+      },
+      {
+        "question": "What essential activities are involved in Data Preparation?",
+        "answer": "Data preparation involves cleaning the data to remove errors or inconsistencies, organizing it meaningfully, and converting it into a format suitable for analysis.",
+        "category": "most",
+        "badgeTitle": "ULTIMATE GOAL",
+        "badgeText": "Ensures that the subsequent analysis leads to highly reliable and valid results."
+      },
+      {
+        "question": "Why is Data Cleaning extremely important before beginning analysis?",
+        "answer": "Data cleaning involves correcting or removing problems like incorrect entries, missing values, or duplicate results, ensuring the final analysis is not highly misleading.",
+        "category": "most",
+        "badgeTitle": "CONSEQUENCE OF SKIPPING",
+        "badgeText": "Raw data naturally contains errors that must be fixed to ensure accurate analytical results."
+      },
+      {
+        "question": "What is Data Transformation?",
+        "answer": "Data transformation is the process of changing cleaned data into a format easier to work with, which may include converting formats, creating new columns, or reorganizing data entirely.",
+        "category": "most",
+        "badgeTitle": "DIRECT BENEFIT",
+        "badgeText": "Makes the dataset significantly more suitable for accurate modeling or analysis."
+      },
+      {
+        "question": "How does the \"Imputation\" strategy effectively handle missing data?",
+        "answer": "Imputation is a specific technique where missing values are estimated and filled using existing data, such as calculating an average score from similar, existing cases.",
+        "category": "most",
+        "badgeTitle": "CORE ADVANTAGE",
+        "badgeText": "Allows researchers to maintain a complete dataset by making mathematically reasonable assumptions."
+      },
+      {
+        "question": "Explain the \"Flagging\" technique for incomplete datasets.",
+        "answer": "Flagging involves keeping track of missing entries by adding a specific note to the dataset, making future analysts fully aware that the data is incomplete or currently unavailable.",
+        "category": "most",
+        "badgeTitle": "ANALYTICAL IMPACT",
+        "badgeText": "Ensures full transparency and allows complex analysis to proceed without artificially filling gaps."
+      },
+      {
+        "question": "Define \"Data Visualization\" in the context of data analytics.",
+        "answer": "Data visualization is the specialized process of representing data in a visual format, such as graphs or charts, designed to quickly identify hidden patterns, trends, and insights.",
+        "category": "most",
+        "badgeTitle": "CORE BENEFIT",
+        "badgeText": "Makes interpreting and analyzing complex informational datasets dramatically easier."
+      },
+      {
+        "question": "What is the primary analytical function of Bar Charts?",
+        "answer": "Bar charts are universally ideal for comparing different categories, where the explicit height or length of each bar precisely indicates the numerical value associated with that specific category.",
+        "category": "most",
+        "badgeTitle": "EXAMPLE BUSINESS USE CASE",
+        "badgeText": "Visually comparing the monthly sales figures for various different products in a retail store."
+      },
+      {
+        "question": "When should Line Graphs be specifically utilized by analysts?",
+        "answer": "Line graphs are specifically used to show trends over time by systematically plotting data points and connecting them with a continuous line, making gradual or sudden changes very easy to observe.",
+        "category": "most",
+        "badgeTitle": "COMMON EXAMPLE",
+        "badgeText": "Visually tracking the daily rise and fall of temperature distributions over a single week."
+      },
+      {
+        "question": "What vital statistical information do Histograms convey?",
+        "answer": "Histograms powerfully show the distribution of a dataset by grouping all data into consecutive bins or intervals, visually revealing exactly how frequently specific values occur within those set ranges.",
+        "category": "most",
+        "badgeTitle": "PRACTICAL APPLICATION",
+        "badgeText": "Graphically showing the distribution frequency of an entire class of students' final exam scores."
+      },
+      {
+        "question": "How are Scatterplots visually structured to display data?",
+        "answer": "Scatterplots display the precise relationships between two variables, where each distinct point on the graph represents a single observation and its exact position indicates the values for both independent and dependent variables.",
+        "category": "most",
+        "badgeTitle": "TYPICAL ANALYTICAL USE",
+        "badgeText": "Visually exploring the mathematical correlation between the number of hours studied and the final exam scores achieved."
+      },
+      {
+        "question": "Name the common software tools frequently utilized for creating basic data visualizations.",
+        "answer": "The most commonly used and highly accessible software tools for basic data visualization include Microsoft Excel and Google Sheets.",
+        "category": "most",
+        "badgeTitle": "SOFTWARE CAPABILITIES",
+        "badgeText": "These specific tools provide straightforward, built-in methods to input structured data and instantly generate standard bar charts, line graphs, and scatterplots."
+      },
+      {
+        "question": "What is the specific effect of having multiple numbers with the highest frequency in a dataset?",
+        "answer": "It creates a statistical situation where there is *more than one mode*, meaning the dataset has *multiple most frequent values*.",
+        "category": "important",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "In the data set 50, 60, 70, 70, 60, 90, both 60 and 70 are considered modes."
+      },
+      {
+        "question": "How do you evaluate the \"center\" of a dataset when it consists of an even set of numbers like 50, 60, 70, and 80?",
+        "answer": "Since there is an *even number of values*, the median is calculated by taking the *average of the two middle numbers*.",
+        "category": "important",
+        "badgeTitle": "CALCULATION",
+        "badgeText": "The two middle numbers are 60 and 70, making the median $(60+70)/2 = 65$."
+      },
+      {
+        "question": "What does the mathematical symbol $\\mu$ represent in the variance and standard deviation formulas?",
+        "answer": "The symbol $\\mu$ specifically represents the *mean of the data set*, which must be calculated before determining any squared deviations.",
+        "category": "important",
+        "badgeTitle": "FORMULA CONTEXT",
+        "badgeText": "It is subtracted from each individual value in the expression $(x_i - \\mu)^2$."
+      },
+      {
+        "question": "What does the variable $N$ stand for in the formulas for statistical dispersion?",
+        "answer": "The variable $N$ stands for the *total number of values* present in the entire data set being analyzed.",
+        "category": "important",
+        "badgeTitle": "USAGE",
+        "badgeText": "It acts as the denominator to calculate the average of the sum of squared deviations."
+      },
+      {
+        "question": "How is a low variance practically interpreted when analyzing a real-world dataset?",
+        "answer": "A *lower variance* indicates that the numerical values are closely packed together and are much *closer to the mean* of the dataset.",
+        "category": "important",
+        "badgeTitle": "PRACTICAL EXAMPLE",
+        "badgeText": "A class with scores tightly grouped around 55 (e.g., 50, 52, 55, 57, 60) demonstrates low variance."
+      },
+      {
+        "question": "How is a high variance practically interpreted when analyzing a dataset?",
+        "answer": "A *higher variance* signifies that the data points are highly scattered and *more spread out* from the average value.",
+        "category": "important",
+        "badgeTitle": "PRACTICAL EXAMPLE",
+        "badgeText": "A class with scores ranging wildly from 30 to 90 demonstrates a high variance."
+      },
+      {
+        "question": "Why is standard deviation often considered a more practical metric for analysts than variance?",
+        "answer": "Standard deviation provides a highly *practical and interpretable value* because taking the square root reverts the metric back to the *same unit as the original data*.",
+        "category": "important",
+        "badgeTitle": "STATISTICAL BENEFIT",
+        "badgeText": "It allows for direct comparison between the spread and the original data points."
+      },
+      {
+        "question": "Besides simple coin flips, what are the advanced real-world applications of probability mentioned in the text?",
+        "answer": "Probability is actively utilized for *predicting the weather*, making strategic *business decisions*, and forecasting competitive outcomes in *sports like cricket*.",
+        "category": "important",
+        "badgeTitle": "CORE PRINCIPLE",
+        "badgeText": "It relies on using known historical information to accurately predict the likelihood of future events."
+      },
+      {
+        "question": "What direct impact does the execution of data collection have on a research study?",
+        "answer": "The overall *quality and relevance* of the collected data completely and directly impact the validity of the *results and insights drawn* from the study.",
+        "category": "important",
+        "badgeTitle": "IMPORTANT NOTE",
+        "badgeText": "Flawed data collection inevitably leads to completely misleading analytical conclusions."
+      },
+      {
+        "question": "In a survey methodology, how is targeted information systematically gathered?",
+        "answer": "Information is gathered by presenting a structured, *predefined set of questions* to a specifically chosen *sample group*.",
+        "category": "important",
+        "badgeTitle": "COMMON DELIVERY METHODS",
+        "badgeText": "Surveys are highly versatile, conducted via online forms, telephone calls, or face-to-face interviews."
+      },
+      {
+        "question": "What specific scenario makes the \"Observation\" method the most appropriate choice for data collection?",
+        "answer": "Observation is perfectly suited when researchers must accurately gather data on natural *behaviors or phenomena without any interference* from the observer.",
+        "category": "important",
+        "badgeTitle": "PRACTICAL EXAMPLE",
+        "badgeText": "Silently monitoring which tables customers organically choose in a restaurant to optimize traffic flow."
+      },
+      {
+        "question": "What strict characteristic defines the \"Experiments\" method of data collection compared to basic observation?",
+        "answer": "Experiments actively require *manipulating one or more variables* within a controlled environment to definitively determine their direct *effect on another variable*.",
+        "category": "important",
+        "badgeTitle": "TARGET FIELDS",
+        "badgeText": "This method is absolutely critical in scientific and engineering disciplines for establishing cause-and-effect."
+      },
+      {
+        "question": "What specific critical errors does \"Data Cleaning\" strictly aim to eradicate from a raw dataset?",
+        "answer": "It focuses heavily on correcting or entirely purging severe structural problems such as *incorrect entries, missing values, or duplicate results*.",
+        "category": "important",
+        "badgeTitle": "CONSEQUENCE",
+        "badgeText": "Failing to clean these specific errors guarantees mathematically flawed and misleading analytical results."
+      },
+      {
+        "question": "Provide a textbook example of a structural \"Data Transformation\" step.",
+        "answer": "Transformation involves restructuring raw data, such as converting individual student grades into new formats that display aggregated *class-level statistics* like average scores.",
+        "category": "important",
+        "badgeTitle": "MAIN OBJECTIVE",
+        "badgeText": "Making the data structurally and fundamentally more suitable for advanced statistical modeling."
+      },
+      {
+        "question": "When handling incomplete datasets, under what specific mathematical condition is \"Removal\" considered an acceptable strategy?",
+        "answer": "Completely removing rows with missing values is only acceptable if the absolute number of missing entries is *very small* and its absence won't *significantly impact* the overall analysis.",
+        "category": "important",
+        "badgeTitle": "MAJOR RISK",
+        "badgeText": "It inherently carries the permanent risk of losing valuable, irrecoverable underlying information."
+      },
+      {
+        "question": "In visual data analytics, what does the height or length of the bars in a Bar Chart mathematically represent?",
+        "answer": "The explicit *height (or length)* of each individual bar precisely visually indicates the numerical *value associated with that specific category*.",
+        "category": "important",
+        "badgeTitle": "DESIGN STRUCTURE",
+        "badgeText": "The categories themselves are typically placed along the horizontal axis, with values on the vertical axis."
+      },
+      {
+        "question": "Which specific visualization is explicitly designed to track continuous temperature variations over a week?",
+        "answer": "A *Line Graph* is the definitive visualization because it is expressly engineered to accurately show continuous *trends over time*.",
+        "category": "important",
+        "badgeTitle": "VISUAL MECHANISM",
+        "badgeText": "It plots individual chronological data points and seamlessly connects them with a continuous line."
+      },
+      {
+        "question": "How does a Histogram mathematically organize continuous raw data before visually displaying it?",
+        "answer": "It systematically groups continuous datasets into consecutive *bins or intervals*, visually counting and displaying how frequently values fall into each distinct range.",
+        "category": "important",
+        "badgeTitle": "VISUAL REPRESENTATION",
+        "badgeText": "It uses adjacent bars to show a continuous frequency distribution, unlike a standard bar chart."
+      },
+      {
+        "question": "What exactly does each individual \"point\" explicitly represent on a scatterplot graph?",
+        "answer": "Every single point mathematically represents one *single observation*, where its exact grid position simultaneously indicates the precise values for *both variables* being analyzed.",
+        "category": "important",
+        "badgeTitle": "PRIMARY USE",
+        "badgeText": "Visually identifying complex relationships, clusters, or correlations between two distinct metrics."
+      },
+      {
+        "question": "What is the critical first execution step when utilizing software like MS Excel or Google Sheets for data visualization?",
+        "answer": "The initial step is to correctly and systematically *Enter Your Data* into the digital spreadsheet, typically organizing it into clearly defined, separate *columns*.",
+        "category": "important",
+        "badgeTitle": "EXAMPLE STEP",
+        "badgeText": "Entering categorical data (\"Months\") in column A and numerical data (\"Sales\") in column B."
+      },
+      {
+        "question": "How can an analyst significantly improve the interpretability of a raw generated chart in MS Excel?",
+        "answer": "They must rigorously *Customize the Chart* by deliberately adding clear descriptive *labels to the x-axis and y-axis* to explicitly clarify what the visual data represents.",
+        "category": "important",
+        "badgeTitle": "ACTIONABLE RULE",
+        "badgeText": "An unlabelled axis renders a visualization practically useless to a secondary viewer."
+      },
+      {
+        "question": "According to the textbook exercises, what defines the core activity involved in \"experimental design\" in data science?",
+        "answer": "Experimental design fundamentally involves *collecting and analyzing data systematically* to rigorously test specific variables and hypotheses.",
+        "category": "important",
+        "badgeTitle": "EXERCISE SOURCE",
+        "badgeText": "Verified via chapter multiple-choice question number 2."
+      },
+      {
+        "question": "Name the commonly used digital software tools explicitly highlighted for creating data visualizations in the chapter exercises.",
+        "answer": "The textbook specifically highlights *MS Excel, Tableau, and Python (Matplotlib)* as primary industry tools.",
+        "category": "important",
+        "badgeTitle": "EXERCISE SOURCE",
+        "badgeText": "Verified via chapter multiple-choice question number 3."
+      },
+      {
+        "question": "What primary analytical goals does data visualization fundamentally achieve when dealing with large datasets?",
+        "answer": "It drastically benefits analysts by effectively *Summarizing large datasets*, instantly identifying hidden *trends and patterns*, and seamlessly *communicating insights effectively*.",
+        "category": "important",
+        "badgeTitle": "EXERCISE SOURCE",
+        "badgeText": "Verified via chapter multiple-choice question number 6."
+      },
+      {
+        "question": "How does visually charting data directly assist an analyst in understanding descriptive statistics?",
+        "answer": "It instantly translates abstract mathematical summaries into clear visual formats, allowing researchers to *quickly identify patterns* and visually comprehend the dataset's *central tendency and dispersion spread*.",
+        "category": "important",
+        "badgeTitle": "CONCEPTUAL LINK",
+        "badgeText": "Bridges the critical gap between raw mathematical calculation and rapid human cognitive comprehension."
+      },
+      {
+        "question": "What distinct logistical advantage do surveys hold when dealing with broad target populations?",
+        "answer": "They are uniquely capable of highly efficiently collecting massive, *large amounts of data* in a strictly *structured way* across broad, diverse sample groups.",
+        "category": "important",
+        "badgeTitle": "APPLICATION STRATEGY",
+        "badgeText": "The most optimal choice for assessing sweeping customer preferences or broad public opinions rapidly."
+      },
+      {
+        "question": "If an analyst refuses to artificially estimate a missing student score or entirely delete the record, what specific data handling option remains?",
+        "answer": "They must immediately utilize the *Flagging* method, explicitly adding a distinct note or marker to the dataset to visibly indicate the score is *unavailable or incomplete*.",
+        "category": "important",
+        "badgeTitle": "ANALYTICAL INTEGRITY",
+        "badgeText": "This preserves the dataset's exact size while preventing automated tools from making false mathematical assumptions."
+      },
+      {
+        "question": "Why might a restaurant management team correctly choose hidden \"observation\" over a direct \"survey\" to determine lunch seating preferences?",
+        "answer": "Customers might not consciously know or accurately report their preferences; watching their *natural behaviors without interference* yields untainted, highly accurate behavioral data.",
+        "category": "important",
+        "badgeTitle": "METHODOLOGY BENEFIT",
+        "badgeText": "Completely removes subconscious \"survey bias\" and eliminates forced-choice inaccuracies."
+      },
+      {
+        "question": "Explain the mathematical logic behind squaring the deviations when calculating statistical variance.",
+        "answer": "Squaring the deviations ensures that negative differences don't strictly cancel out positive differences, forcefully measuring the *absolute spread* while heavily penalizing values that are *further from the mean*.",
+        "category": "important",
+        "badgeTitle": "FORMULA COMPONENT",
+        "badgeText": "Represented by the $(x_i - \\mu)^2$ portion of the variance equation."
+      },
+      {
+        "question": "How does statistical clustering directly differ from calculating a simple mean or average?",
+        "answer": "While a mean strictly finds one single numerical center for all data, clustering actively seeks to *divide the data into distinct groups* based on multi-variable *similarities or shared characteristics*.",
+        "category": "important",
+        "badgeTitle": "PRACTICAL EXAMPLE",
+        "badgeText": "Grouping a single class into distinct \"Math-strong\" and \"English-strong\" clusters instead of just finding the class's overall average grade."
+      },
+      {
+        "question": "According to the chapter's \"Student Learning Outcomes,\" what are the specific software applications students should be able to use to create and interpret data visualizations?",
+        "answer": "Students should use *MS Excel, Google Sheets, Python, Tableau, and Matplotlib*.",
+        "category": "conceptual",
+        "badgeTitle": "LEARNING OUTCOMES",
+        "badgeText": "Software tools scope"
+      },
+      {
+        "question": "In a theoretical scenario where all 5 students score exactly 70 on a test, what mathematically happens to the measures of central tendency?",
+        "answer": "The *mean, median, and mode* will all perfectly equal *70*.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPTUAL EDGE CASE",
+        "badgeText": "Identical dataset values"
+      },
+      {
+        "question": "According to the \"DO YOU KNOW?\" margin box, what are two specific everyday activities that heavily rely on statistics?",
+        "answer": "Predicting *weather patterns* and analyzing *sports performance*.",
+        "category": "conceptual",
+        "badgeTitle": "MARGIN NOTE",
+        "badgeText": "Everyday applications"
+      },
+      {
+        "question": "In the \"Tidbits\" section regarding statistical patterns, which two professional industries are explicitly highlighted as benefiting from better data-driven decision-making?",
+        "answer": "*Healthcare* and *marketing*.",
+        "category": "conceptual",
+        "badgeTitle": "HIDDEN GEM",
+        "badgeText": "Industry applications"
+      },
+      {
+        "question": "Conceptually, why does a mean score of 54.8 for Class A (variance 12.56) represent the students' actual abilities better than Class B's mean of 59 (variance 454)?",
+        "answer": "Because Class A's significantly *lower variance* means the scores are tightly *packed around the mean*, making the average highly representative of the whole group.",
+        "category": "conceptual",
+        "badgeTitle": "STATISTICAL INTERPRETATION",
+        "badgeText": "Variance reliability"
+      },
+      {
+        "question": "In the \"Customer Preference Survey\" example, what are the three predefined multiple-choice options provided for the question \"How often do you shop at this grocery store?\"",
+        "answer": "*Daily, weekly, monthly*.",
+        "category": "conceptual",
+        "badgeTitle": "EXAMPLE DETAIL",
+        "badgeText": "Survey structure"
+      },
+      {
+        "question": "In the practical observation example of a restaurant, what is the ultimate operational goal of analyzing customer seating choices?",
+        "answer": "To deliberately arrange seating to optimize *customer comfort and traffic flow*, thereby improving overall *satisfaction and service efficiency*.",
+        "category": "conceptual",
+        "badgeTitle": "BUSINESS APPLICATION",
+        "badgeText": "Operational optimization"
+      },
+      {
+        "question": "In the teacher's experiment regarding study materials, what was the exact condition applied to the \"control group\" of students?",
+        "answer": "The control group was relying *solely on lectures* without receiving any printed notes.",
+        "category": "conceptual",
+        "badgeTitle": "EXPERIMENTAL DESIGN",
+        "badgeText": "Variable isolation"
+      },
+      {
+        "question": "When raw data is missing or highly incorrect, what advanced statistical techniques are conceptually suggested to ensure analytical reliability without deleting records?",
+        "answer": "Researchers may need to employ advanced techniques such as *interpolation* or *statistical adjustments*.",
+        "category": "conceptual",
+        "badgeTitle": "DATA PREP",
+        "badgeText": "Advanced correction methods"
+      },
+      {
+        "question": "Based on Table 5.1 (Original Data), identify the three specific distinct errors present in the dataset before cleaning.",
+        "answer": "An *incorrect name* spelling (\"Alie\"), a *missing score* for Sara, and a *duplicate entry* for Ali.",
+        "category": "conceptual",
+        "badgeTitle": "TABLE ANALYSIS",
+        "badgeText": "Error identification"
+      },
+      {
+        "question": "If a school uses the \"Imputation\" strategy to temporarily assign an 87 to Sara's missing record, what underlying conceptual assumption is mathematically being made?",
+        "answer": "The school logically assumes Sara's performance aligns with the *calculated average score* of all other students in her specific class.",
+        "category": "conceptual",
+        "badgeTitle": "IMPUTATION LOGIC",
+        "badgeText": "Average substitution"
+      },
+      {
+        "question": "Conceptually, what is the severe analytical risk of strictly utilizing the \"Removal\" strategy for handling missing datasets?",
+        "answer": "It inherently carries the permanent risk of *losing valuable, irrecoverable information* about the subject that was removed from the analysis.",
+        "category": "conceptual",
+        "badgeTitle": "DATA LOSS",
+        "badgeText": "Analytical consequence"
+      },
+      {
+        "question": "By closely examining Figure 5.1 (Bar chart), what is the absolute maximum numerical limit plotted on the visual y-axis?",
+        "answer": "The vertical y-axis reaches a maximum visual limit of *1000*.",
+        "category": "conceptual",
+        "badgeTitle": "VISUAL EXTRACTION",
+        "badgeText": "Graph limits"
+      },
+      {
+        "question": "According to the specific data plotted in Figure 5.2 (Line graph), at what exact time does the temperature peak, and what is its approximate value?",
+        "answer": "The temperature clearly peaks at *2 pm*, reaching approximately *2°C*.",
+        "category": "conceptual",
+        "badgeTitle": "DATA POINT ANALYSIS",
+        "badgeText": "Maximum value"
+      },
+      {
+        "question": "Based on the trajectory shown in Figure 5.2, at what specific time does the temperature drop to its absolute lowest recorded point on the chart?",
+        "answer": "It drops to its lowest point at *8 pm*, reaching approximately *-9°C*.",
+        "category": "conceptual",
+        "badgeTitle": "DATA POINT ANALYSIS",
+        "badgeText": "Minimum value"
+      },
+      {
+        "question": "In Figure 5.3 (Histogram), which specific exam score interval (bin) visibly contains the absolute highest frequency of students?",
+        "answer": "The *61-65* exam score interval visibly holds the highest frequency, plotting at exactly 5 students.",
+        "category": "conceptual",
+        "badgeTitle": "DISTRIBUTION ANALYSIS",
+        "badgeText": "Mode interval"
+      },
+      {
+        "question": "According to the graphical representation in Figure 5.3, exactly how many students scored in the absolute lowest interval bin (50-55)?",
+        "answer": "Exactly *1 student* is recorded in the 50-55 interval bin.",
+        "category": "conceptual",
+        "badgeTitle": "DISTRIBUTION ANALYSIS",
+        "badgeText": "Minimum frequency"
+      },
+      {
+        "question": "By visually analyzing Figure 5.4 (Scatterplot), what is the approximate starting exam score for a theoretical student who studied for exactly 0 hours?",
+        "answer": "The y-intercept plots the baseline score at approximately *40 marks*.",
+        "category": "conceptual",
+        "badgeTitle": "TREND ANALYSIS",
+        "badgeText": "Baseline performance"
+      },
+      {
+        "question": "Conceptually, what type of mathematical relationship does Figure 5.4 visually demonstrate between the number of hours studied and resulting exam scores?",
+        "answer": "It visually demonstrates a strong *positive correlation*, proving that an increase in hours studied generally leads to higher exam scores.",
+        "category": "conceptual",
+        "badgeTitle": "VISUAL CORRELATION",
+        "badgeText": "Variable relationship"
+      },
+      {
+        "question": "Conceptually, what is the fundamental structural difference between how a Bar Chart and a Histogram group their underlying data?",
+        "answer": "A bar chart strictly compares distinct, separate *categories*, whereas a histogram systematically groups continuous numerical data into consecutive *bins or intervals*.",
+        "category": "conceptual",
+        "badgeTitle": "VISUALIZATION COMPARISON",
+        "badgeText": "Categorical vs Continuous"
+      },
+      {
+        "question": "In the Step-by-Step guide for using spreadsheet tools, what precise mouse action is strictly required immediately after entering raw data?",
+        "answer": "You must *highlight the data* you want to visualize by *clicking and dragging* your mouse over the specific cells.",
+        "category": "conceptual",
+        "badgeTitle": "SOFTWARE NAVIGATION",
+        "badgeText": "Selection protocol"
+      },
+      {
+        "question": "When generating a chart in Google Sheets or MS Excel, which specific software tab must a user navigate to in order to select the chart type?",
+        "answer": "The user must explicitly click on the *\"Insert\" tab*.",
+        "category": "conceptual",
+        "badgeTitle": "SOFTWARE NAVIGATION",
+        "badgeText": "Menu location"
+      },
+      {
+        "question": "What is the very first step clearly listed in the Class Activity instructions (Page 5) before any statistical calculations can even begin?",
+        "answer": "The first mandatory step is to *Collect Data* by surveying exactly 10 classmates about their weekly homework hours.",
+        "category": "conceptual",
+        "badgeTitle": "CLASS ACTIVITY",
+        "badgeText": "Prerequisite step"
+      },
+      {
+        "question": "According to the chapter's \"Short Questions\" exercise section, what specific branch of statistics does data visualization directly help users understand?",
+        "answer": "It explicitly helps in understanding complex *descriptive statistics*.",
+        "category": "conceptual",
+        "badgeTitle": "EXERCISE EXTRACTION",
+        "badgeText": "Short Question 4"
+      },
+      {
+        "question": "In the manual calculation of variance for Class A (Table Page 3), what is the exact squared deviation mathematical result for the raw score of 50?",
+        "answer": "The result is *23.04*, mathematically derived from $(50 - 54.8)^2$.",
+        "category": "conceptual",
+        "badgeTitle": "MANUAL CALCULATION",
+        "badgeText": "Step-by-step verification"
+      },
+      {
+        "question": "In the manual calculation table for Class B's variance, what is the absolute highest squared deviation recorded, and what raw score produced it?",
+        "answer": "The highest squared deviation is *961*, produced by the maximum score of *90* $(90-59=31)$.",
+        "category": "conceptual",
+        "badgeTitle": "MANUAL CALCULATION",
+        "badgeText": "Extremes in data"
+      },
+      {
+        "question": "According to the \"Long Questions\" exercise section, what two specific components must a student provide when discussing the measure of tendency?",
+        "answer": "The student must thoroughly discuss the *concept* itself and provide an accompanying *example*.",
+        "category": "conceptual",
+        "badgeTitle": "EXERCISE EXTRACTION",
+        "badgeText": "Long Question 5"
+      },
+      {
+        "question": "Conceptually, how does the researcher's physical involvement fundamentally differ between conducting an \"Observation\" versus an \"Experiment\"?",
+        "answer": "In an observation, the researcher strictly *avoids interference*, whereas in an experiment, the researcher actively and deliberately *manipulates variables*.",
+        "category": "conceptual",
+        "badgeTitle": "METHODOLOGY COMPARISON",
+        "badgeText": "Passive vs Active"
+      },
+      {
+        "question": "What specific visual element is highly recommended under the \"Customize the Chart\" step to ensure a generated graph is not misinterpreted by a viewer?",
+        "answer": "Adding descriptive *labels to the x-axis and y-axis* to explicitly clarify what the data parameters represent.",
+        "category": "conceptual",
+        "badgeTitle": "BEST PRACTICES",
+        "badgeText": "Chart clarity"
+      },
+      {
+        "question": "If the number of missing entries in a dataset is extremely large, why is the \"Removal\" method conceptually the worst possible data preparation choice?",
+        "answer": "Because removing a massive volume of rows would severely shrink the sample size, completely destroying the dataset's *overall understanding* and statistical validity.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPTUAL EDGE CASE",
+        "badgeText": "High-volume missing data"
+      }
+    ],
+    "6": [
+      {
+        "question": "Define emerging technologies.",
+        "answer": "Emerging technologies are new tools, systems, and methods that are currently being developed or have only recently started to be used. These technologies have the potential to change the way we live, work, and interact with the world.",
+        "category": "most",
+        "badgeTitle": "KEY EXAMPLES",
+        "badgeText": "Key emerging technologies include Artificial Intelligence (AI), Cloud Computing, Internet of Things (IoT), and Quantum Computing."
+      },
+      {
+        "question": "What is Artificial Intelligence (AI)?",
+        "answer": "AI refers to machines and software that can learn and perform like human beings.",
+        "category": "most",
+        "badgeTitle": "REAL-WORLD APPLICATION",
+        "badgeText": "AI is used in everything from smart assistants like Siri to self-driving cars."
+      },
+      {
+        "question": "How does cloud computing fundamentally operate?",
+        "answer": "Cloud computing allows people to store and access data and applications over the internet instead of on a local computer or server.",
+        "category": "most",
+        "badgeTitle": "PROMINENT EXAMPLES",
+        "badgeText": "Examples include services like Google Drive, Dropbox, and Amazon Web Services (AWS)."
+      },
+      {
+        "question": "What is the Internet of Things (IoT)?",
+        "answer": "IoT connects everyday objects, like refrigerators, cars, and even clothes, to the internet. This allows them to send and receive data, making our lives more convenient.",
+        "category": "most",
+        "badgeTitle": "PRACTICAL EXAMPLE",
+        "badgeText": "A smart thermostat can learn your schedule and adjust the temperature in your home automatically."
+      },
+      {
+        "question": "Differentiate between Augmented Reality (AR) and Virtual Reality (VR).",
+        "answer": "AR adds digital elements to the real world using devices like smartphones or glasses, whereas VR creates a completely virtual environment that you can interact with using special equipment.",
+        "category": "most",
+        "badgeTitle": "USE CASES",
+        "badgeText": "These technologies are used in gaming, education, and training."
+      },
+      {
+        "question": "What is the primary advantage of 5G Technology?",
+        "answer": "5G is the next generation of wireless technology, offering much faster internet speeds and more reliable connections.",
+        "category": "most",
+        "badgeTitle": "TECHNOLOGICAL IMPACT",
+        "badgeText": "This will enable better performance for cell phones, smart devices, and even new technologies like augmented reality (AR) and virtual reality (VR)."
+      },
+      {
+        "question": "Explain the basic concept of Quantum Computing.",
+        "answer": "Quantum computing is a type of computer that uses tiny building blocks called qubits, which, unlike regular bits 0 and 1's, can be both 0 and 1 at the same time.",
+        "category": "most",
+        "badgeTitle": "CORE ADVANTAGE",
+        "badgeText": "It allows to solve problem much faster than normal computer."
+      },
+      {
+        "question": "How is biotechnology utilized in modern science?",
+        "answer": "Biotechnology involves using living organisms, like bacteria and plants, to create new products or solve problems.",
+        "category": "most",
+        "badgeTitle": "SCIENTIFIC APPLICATION",
+        "badgeText": "Scientists use biotechnology to develop new medicines, improve crops, and produce environmentally friendly materials."
+      },
+      {
+        "question": "Provide a comprehensive definition of cloud computing as a service model.",
+        "answer": "Cloud computing is a model that allows easy and convenient access to computing resources like servers, storage, and applications over the internet. These resources can be quickly provided and released with minimal management effort or service provider interaction.",
+        "category": "most",
+        "badgeTitle": "SIMPLE ANALOGY",
+        "badgeText": "It is like renting a supercomputer that you can use whenever you need it, from anywhere in the world."
+      },
+      {
+        "question": "Describe the concept of virtualization in cloud computing.",
+        "answer": "Virtualization is a technology that allows a single physical machine to run multiple virtual machines.",
+        "category": "most",
+        "badgeTitle": "FUNCTIONAL EXPLANATION",
+        "badgeText": "Each of these virtual computers can run its own operating system and applications as if they were independent machines."
+      },
+      {
+        "question": "Define scalability in the context of cloud computing.",
+        "answer": "Scalability means you can add more resources when you need them.",
+        "category": "most",
+        "badgeTitle": "BUSINESS APPLICATION",
+        "badgeText": "With scalability, you can add more servers to handle increased traffic during busy times like Eid or 14th August sales, ensuring your website runs smoothly without slowing down or crashing."
+      },
+      {
+        "question": "What does elasticity refer to in a cloud system?",
+        "answer": "Elasticity refers to the ability of a cloud system to automatically scale resources, such as computing power, storage, or network bandwidth, up or down based on current demand.",
+        "category": "most",
+        "badgeTitle": "DYNAMIC SCALING EXAMPLE",
+        "badgeText": "If an e-commerce website experiences a surge in traffic during a sale, a cloud platform can automatically allocate more servers to handle the load, and scale back down afterward."
+      },
+      {
+        "question": "What is meant by on-demand access in cloud computing?",
+        "answer": "On-demand access means that you can use computing resources whenever you need them, without waiting for a long setup process.",
+        "category": "most",
+        "badgeTitle": "TIME-SAVING BENEFIT",
+        "badgeText": "This saves time and effort, allowing you instantly rent additional storage from a cloud provider and start using it right away."
+      },
+      {
+        "question": "What are the three main categories of cloud services?",
+        "answer": "Cloud services are typically categorized into three main types: Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS).",
+        "category": "most",
+        "badgeTitle": "KEY DISTINCTION",
+        "badgeText": "Each type offers different levels of control, flexibility, and management."
+      },
+      {
+        "question": "Explain Infrastructure as a Service (IaaS).",
+        "answer": "IaaS offers basic computing infrastructure such as servers, storage, and networking on a pay-as-you-go basis. Users have control over the operating systems, applications, and storage, but not the underlying physical infrastructure.",
+        "category": "most",
+        "badgeTitle": "INDUSTRY EXAMPLES",
+        "badgeText": "Amazon Web Services (AWS), Microsoft Azure, and Google Compute Engine are popular IaaS providers."
+      },
+      {
+        "question": "What does Platform as a Service (PaaS) provide to developers?",
+        "answer": "PaaS offers a complete development and deployment environment in the cloud, including infrastructure, middleware, development tools, and management services. Developers can focus on coding and deploying applications without managing the hardware and software layers.",
+        "category": "most",
+        "badgeTitle": "PLATFORM EXAMPLES",
+        "badgeText": "Google App Engine allows developers to build and deploy applications using a variety of programming languages."
+      },
+      {
+        "question": "Define Software as a Service (SaaS).",
+        "answer": "SaaS provides access to software applications that are hosted and managed by the service provider. Users simply subscribe to the service and use it over the internet.",
+        "category": "most",
+        "badgeTitle": "END-USER ADVANTAGE",
+        "badgeText": "This model is convenient for end-users as it requires no hardware management or software updates."
+      },
+      {
+        "question": "What is a public cloud deployment model?",
+        "answer": "A public cloud is a cloud service offered over the internet that is shared among multiple organizations and managed by a third-party cloud service provider.",
+        "category": "most",
+        "badgeTitle": "BUSINESS UTILIZATION",
+        "badgeText": "Businesses of all sizes can use public clouds like AWS to access computing resources without having to manage the physical hardware themselves."
+      },
+      {
+        "question": "How does a private cloud differ from a public cloud?",
+        "answer": "A private cloud is a cloud environment used exclusively by one organization and is not shared with other organizations.",
+        "category": "most",
+        "badgeTitle": "SECURITY ASPECT",
+        "badgeText": "A large bank may use a private cloud, hosted on-premises or by a third-party, to handle sensitive customer data securely."
+      },
+      {
+        "question": "Describe the hybrid cloud model.",
+        "answer": "A hybrid cloud combines public and private clouds, allowing data and applications to be shared between them.",
+        "category": "most",
+        "badgeTitle": "FLEXIBILITY BENEFIT",
+        "badgeText": "During busy periods, companies can move less sensitive data to the public cloud to handle increased load, while keeping critical data secure in the private cloud."
+      },
+      {
+        "question": "Define a multi-cloud strategy.",
+        "answer": "A multi-cloud model is a cloud computing strategy where an organization uses services from multiple cloud providers simultaneously to meet different business or technical needs.",
+        "category": "most",
+        "badgeTitle": "ENTERPRISE EXAMPLE",
+        "badgeText": "A global retail company might use AWS for its e-commerce website, Microsoft Azure for internal enterprise applications, and Google Cloud Platform for advanced data analytics."
+      },
+      {
+        "question": "Briefly compare the different cloud deployment models based on cost, security, and flexibility.",
+        "answer": "Public clouds are cost-effective but less secure, whereas private clouds are more secure but expensive.",
+        "category": "most",
+        "badgeTitle": "STRATEGIC COMPARISON",
+        "badgeText": "Hybrid clouds offer flexibility, while multi-clouds provide resilience."
+      },
+      {
+        "question": "How is cloud storage utilized as an application of cloud computing?",
+        "answer": "Cloud storage allows users to save data on remote servers rather than on local devices, making it easier to access data from anywhere and share it with others.",
+        "category": "most",
+        "badgeTitle": "DATA SAFETY",
+        "badgeText": "Businesses can use cloud storage to keep backups of their data, ensuring it is safe from local hardware failures or other issues."
+      },
+      {
+        "question": "What role does cloud computing play in web hosting and content delivery?",
+        "answer": "Cloud computing provides the infrastructure needed to host websites and deliver content efficiently to users around the world.",
+        "category": "most",
+        "badgeTitle": "DELIVERY OPTIMIZATION",
+        "badgeText": "Content delivery networks (CDNs) such as Cloudflare help deliver website content quickly by caching it on servers close to the end-users."
+      },
+      {
+        "question": "How does cloud computing facilitate Machine Learning and AI?",
+        "answer": "Cloud computing offers powerful tools and platforms for developing, training, and running machine learning models and artificial intelligence applications.",
+        "category": "most",
+        "badgeTitle": "DEVELOPER BENEFIT",
+        "badgeText": "These services make it easier for data scientists and developers to create AI solutions without needing extensive local computing resources."
+      },
+      {
+        "question": "Discuss the data security implications in cloud computing.",
+        "answer": "Storing sensitive data on remote servers introduces risks such as data breaches, unauthorized access, and loss of data.",
+        "category": "most",
+        "badgeTitle": "PROTECTIVE MEASURES",
+        "badgeText": "To mitigate risks, users should use encryption, strong authentication methods, and regularly review their security policies."
+      },
+      {
+        "question": "Why is effective resource management essential in cloud environments?",
+        "answer": "While cloud services can automatically scale, effective resource management is essential to avoid unnecessary costs and ensure optimal performance.",
+        "category": "most",
+        "badgeTitle": "MANAGEMENT PRACTICES",
+        "badgeText": "Proper management practices include monitoring resource usage and optimizing performance to ensure efficient use of cloud resources."
+      },
+      {
+        "question": "Define the concept of edge computing.",
+        "answer": "Edge computing brings processing power closer to data sources, which reduces latency and improves efficiency.",
+        "category": "most",
+        "badgeTitle": "ARCHITECTURAL SHIFT",
+        "badgeText": "Instead of relying solely on centralized data centers, edge computing processes data at the \"edge\" of the network, near the data source."
+      },
+      {
+        "question": "What is the primary advantage and application of edge computing?",
+        "answer": "Edge computing minimizes the time it takes for data to travel, leading to faster decision-making and real-time data processing.",
+        "category": "most",
+        "badgeTitle": "CRITICAL APPLICATIONS",
+        "badgeText": "It is especially beneficial for applications requiring real-time processing and low latency, such as autonomous vehicles, smart cities, and healthcare monitoring."
+      },
+      {
+        "question": "Describe serverless architectures in cloud computing.",
+        "answer": "Serverless architectures allow developers to build and deploy applications without managing servers, enhancing scalability and reducing operational complexity.",
+        "category": "most",
+        "badgeTitle": "COST EFFICIENCY",
+        "badgeText": "Cloud providers automatically allocate resources as needed, and developers only pay for the actual usage of computing resources."
+      }
+    ],
     "7": [],
     "8": [],
     "9": []
