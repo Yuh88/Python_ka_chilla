@@ -240,6 +240,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const authUserName = document.getElementById('authUserName');
     const logoutBtn = document.getElementById('logoutBtn');
     const authStatusText = document.getElementById('authStatusText');
+    const loginIncentive = document.getElementById('login-incentive');
+    const commentsCompose = document.getElementById('comments-compose');
+    const commentsLoginRequired = document.getElementById('comments-login-required');
+    const commentInput = document.getElementById('comment-input');
+    const postCommentBtn = document.getElementById('post-comment-btn');
+    const commentsList = document.getElementById('comments-list');
     const body = document.body;
     const themeStorageKey = 'notescraft_theme';
     const flashcardStorageKey = 'notescraft_flashcard_mode';
@@ -263,6 +269,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let firestoreDbInstance = null;
     let firestoreFieldValue = null;
     let firestoreInitPromise = null;
+    let commentsUnsubscribe = null;
+    let isPostingComment = false;
 
     const getInitialTheme = () => {
         try {
@@ -296,6 +304,183 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!authStatusText) return;
         authStatusText.textContent = message;
         authStatusText.classList.toggle('is-error', isError);
+    };
+
+    const updateLoginIncentive = (isLoggedIn) => {
+        if (!loginIncentive) return;
+
+        if (isLoggedIn) {
+            loginIncentive.textContent = '✅ Progress is synced to cloud.';
+            loginIncentive.classList.add('is-synced');
+        } else {
+            loginIncentive.textContent = 'Sign in to sync your saved progress across devices.';
+            loginIncentive.classList.remove('is-synced');
+        }
+    };
+
+    const setCommentsComposerVisibility = (isLoggedIn) => {
+        if (!commentsCompose || !commentsLoginRequired) return;
+
+        commentsCompose.classList.toggle('hidden', !isLoggedIn);
+        commentsLoginRequired.classList.toggle('hidden', Boolean(isLoggedIn));
+    };
+
+    const formatCommentDate = (timestampValue) => {
+        if (!timestampValue) return 'Just now';
+
+        let dateValue = null;
+        if (timestampValue && typeof timestampValue.toDate === 'function') {
+            dateValue = timestampValue.toDate();
+        } else if (timestampValue instanceof Date) {
+            dateValue = timestampValue;
+        }
+
+        if (!dateValue || Number.isNaN(dateValue.getTime())) return 'Just now';
+
+        return new Intl.DateTimeFormat(undefined, {
+            dateStyle: 'medium',
+            timeStyle: 'short'
+        }).format(dateValue);
+    };
+
+    const createCommentAvatarFallback = (name) => {
+        const initial = String(name || 'U').trim().charAt(0).toUpperCase() || 'U';
+        const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72"><rect width="72" height="72" rx="36" fill="#4338ca"/><text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">${initial}</text></svg>`;
+        return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+    };
+
+    const renderComments = (comments = []) => {
+        if (!commentsList) return;
+
+        commentsList.innerHTML = '';
+
+        if (!comments.length) {
+            const emptyState = document.createElement('div');
+            emptyState.className = 'comment-empty';
+            emptyState.textContent = 'No comments yet. Start the discussion!';
+            commentsList.appendChild(emptyState);
+            return;
+        }
+
+        comments.forEach((entry) => {
+            const item = document.createElement('article');
+            item.className = 'comment-item';
+
+            const avatar = document.createElement('img');
+            avatar.className = 'comment-avatar';
+            avatar.src = entry.userPhoto || createCommentAvatarFallback(entry.userName);
+            avatar.alt = `${entry.userName} avatar`;
+
+            const content = document.createElement('div');
+            content.className = 'comment-content';
+
+            const meta = document.createElement('div');
+            meta.className = 'comment-meta';
+
+            const userName = document.createElement('span');
+            userName.className = 'comment-user-name';
+            userName.textContent = entry.userName;
+
+            const time = document.createElement('span');
+            time.className = 'comment-time';
+            time.textContent = formatCommentDate(entry.timestamp);
+
+            const text = document.createElement('p');
+            text.className = 'comment-text';
+            text.textContent = entry.text;
+
+            meta.appendChild(userName);
+            meta.appendChild(time);
+            content.appendChild(meta);
+            content.appendChild(text);
+
+            item.appendChild(avatar);
+            item.appendChild(content);
+            commentsList.appendChild(item);
+        });
+    };
+
+    const startCommentsRealtimeListener = async () => {
+        if (commentsUnsubscribe || !commentsList || !window.firebase || !window.firebase.firestore) return;
+
+        try {
+            const db = await initializeFirestoreCompat();
+            const commentsQuery = db.collection('comments').orderBy('timestamp', 'desc').limit(100);
+
+            commentsUnsubscribe = commentsQuery.onSnapshot(
+                (snapshot) => {
+                    const mapped = snapshot.docs.map((doc) => {
+                        const data = doc.data() || {};
+                        return {
+                            id: doc.id,
+                            text: String(data.text || '').trim(),
+                            userName: String(data.userName || 'Student'),
+                            userPhoto: String(data.userPhoto || ''),
+                            timestamp: data.timestamp || null
+                        };
+                    }).filter(item => item.text);
+
+                    renderComments(mapped);
+                },
+                () => {
+                    renderComments([]);
+                }
+            );
+        } catch (error) {
+            renderComments([]);
+            console.warn('Unable to start comments listener.', error);
+        }
+    };
+
+    const postComment = async () => {
+        if (!postCommentBtn || !commentInput || !currentAuthenticatedUser || !currentAuthenticatedUser.uid) return;
+
+        const trimmedText = commentInput.value.trim();
+        if (!trimmedText || isPostingComment) return;
+
+        isPostingComment = true;
+        postCommentBtn.disabled = true;
+
+        try {
+            const db = await initializeFirestoreCompat();
+            await db.collection('comments').add({
+                text: trimmedText,
+                userName: String(currentAuthenticatedUser.displayName || 'Student'),
+                userPhoto: String(currentAuthenticatedUser.photoURL || ''),
+                timestamp: firestoreFieldValue && typeof firestoreFieldValue.serverTimestamp === 'function'
+                    ? firestoreFieldValue.serverTimestamp()
+                    : new Date()
+            });
+
+            commentInput.value = '';
+        } catch (error) {
+            console.warn('Unable to post comment.', error);
+        } finally {
+            postCommentBtn.disabled = false;
+            isPostingComment = false;
+        }
+    };
+
+    const initCommentsSection = () => {
+        setCommentsComposerVisibility(false);
+        renderComments([]);
+
+        startCommentsRealtimeListener();
+
+        if (postCommentBtn) {
+            postCommentBtn.addEventListener('click', () => {
+                postComment();
+            });
+        }
+
+        if (commentInput) {
+            commentInput.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' && (event.ctrlKey || event.metaKey)) {
+                    event.preventDefault();
+                    postComment();
+                }
+            });
+        }
     };
 
     const getFirstName = (user) => {
@@ -463,6 +648,8 @@ document.addEventListener('DOMContentLoaded', () => {
             authModule.onAuthStateChanged(auth, (user) => {
                 currentAuthenticatedUser = user || null;
                 updateAuthUi(user);
+                updateLoginIncentive(Boolean(currentAuthenticatedUser));
+                setCommentsComposerVisibility(Boolean(currentAuthenticatedUser));
                 setAuthStatus('');
 
                 if (currentAuthenticatedUser && currentAuthenticatedUser.uid) {
@@ -493,6 +680,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!googleSignInBtn || !logoutBtn || !authUserState) return;
 
         updateAuthUi(null);
+        updateLoginIncentive(false);
         setAuthStatus('');
 
         initializeFirestoreCompat().catch((error) => {
@@ -586,6 +774,7 @@ document.addEventListener('DOMContentLoaded', () => {
     applyTheme(getInitialTheme());
     initFlashcardMode();
     initOptInGoogleAuth();
+    initCommentsSection();
     setFlashcardFabVisibility(false);
 
     if (themeToggleBtn) {

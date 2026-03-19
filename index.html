@@ -79,7 +79,7 @@
             <p class="nav-title">SUBJECTS</p>
 
           <section class="auth-optin-card" aria-label="Account access">
-            <p class="auth-incentive">Sign in to sync your saved progress across devices.</p>
+            <p class="auth-incentive" id="login-incentive">Sign in to sync your saved progress across devices.</p>
             <button class="auth-google-btn" id="googleSignInBtn" type="button" aria-label="Sign in with Google">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path d="M21.35 11.1H12v2.98h5.36c-.23 1.52-1.14 2.8-2.43 3.66v2.43h3.93c2.3-2.11 3.63-5.22 3.63-8.92 0-.74-.07-1.45-.2-2.15Z" fill="#4285F4"></path>
@@ -1394,6 +1394,22 @@ Schools organize these debates because <strong>storytelling makes arguments more
 <p class="extra-text">For example, sharing a story about plastic waste harming marine life makes the argument stronger and more relatable.</p>
 </div>
 </article>
+            </div>
+
+            <div id="comments-section" class="comments-section">
+              <div class="comments-section-header">
+                <h3>Discussion</h3>
+                <p>Ask, answer, and help classmates in real-time.</p>
+              </div>
+
+              <p id="comments-login-required" class="comments-login-required">🔒 Please Log in with Google to post a comment.</p>
+
+              <div id="comments-compose" class="comments-compose hidden">
+                <textarea id="comment-input" class="comment-input" rows="3" maxlength="500" placeholder="Write your comment..."></textarea>
+                <button id="post-comment-btn" class="post-comment-btn" type="button">Post Comment</button>
+              </div>
+
+              <div id="comments-list" class="comments-list" aria-live="polite"></div>
             </div>
         </main>
     </div>
