@@ -276,7 +276,7 @@ const initializeNotesCraftApp = () => {
     let activeReplyTargetId = null;
     let isInitialCommentsSnapshot = true;
 
-    const ADMIN_EMAIL = 'johnywithcher2@gmail.com';
+    const ADMIN_EMAIL = 'johnythewithcher@gmail.com';
     const ADMIN_DISPLAY_NAME = 'Admin 👑';
 
     const getInitialTheme = () => {
