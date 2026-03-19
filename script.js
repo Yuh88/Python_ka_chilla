@@ -295,6 +295,9 @@ const initializeNotesCraftApp = () => {
     const applyTheme = (theme) => {
         const isDark = theme === 'dark';
         body.classList.toggle('dark-mode', isDark);
+        document.documentElement.classList.toggle('dark-mode', isDark);
+        document.documentElement.style.backgroundColor = isDark ? '#0b0b0d' : '#f8fafc';
+        document.body.style.backgroundColor = isDark ? '#0b0b0d' : '#f8fafc';
         if (themeToggleBtn) {
             themeToggleBtn.innerHTML = isDark ? sunIcon : moonIcon;
         }
