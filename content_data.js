@@ -5905,8 +5905,1333 @@ const siteData = {
     "14": []
   },
   "Physics": {
-    "1": [],
-    "2": [],
+    "1": [
+      {
+        "question": "What limits the accuracy of a measuring instrument?",
+        "answer": "Every instrument is calibrated to a certain *smallest division mark*, which puts a *limit* regarding its *accuracy*.",
+        "category": "most",
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "This limit of measurement is the smallest division or graduation on its scale."
+      },
+      {
+        "question": "What limits the accuracy of a measuring instrument?",
+        "answer": "Every instrument is calibrated to a certain *smallest division mark*, which puts a *limit* regarding its *accuracy*.",
+        "category": "most",
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "This limit of measurement is the smallest division or graduation on its scale."
+      },
+      {
+        "question": "What is meant by absolute uncertainty?",
+        "answer": "The *estimated maximum uncertainty* as being *one smallest division* of the instrument is called *absolute uncertainty*.",
+        "category": "most",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "It is one millimetre on a metre rule that is graduated in millimetres."
+      },
+      {
+        "question": "How do you record the measurement if one edge of a book is at 10.0 cm and the other at 33.5 cm on a metre rule?",
+        "answer": "The length with uncertainty is given by *subtracting the initial reading* with its uncertainty from the *final reading* with its uncertainty: (33.5 ± 0.05) cm - (10.0 ± 0.05) cm = (23.5 ± 0.1) cm.",
+        "category": "most",
+        "badgeTitle": "MEANING",
+        "badgeText": "The true length of the book is in between 23.4 cm and 23.6 cm."
+      },
+      {
+        "question": "How is fractional uncertainty defined and calculated?",
+        "answer": "*Fractional uncertainty* is defined as the *ratio* of the *absolute uncertainty* to the *measured value*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "Fractional uncertainty = Absolute uncertainty / Measured value."
+      },
+      {
+        "question": "How is percentage uncertainty defined?",
+        "answer": "*Percentage uncertainty* is the *fractional uncertainty* multiplied by *100*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "Percentage uncertainty = (Absolute uncertainty / Measured value) × 100."
+      },
+      {
+        "question": "How is uncertainty estimated in modern digital instruments?",
+        "answer": "In modern instruments with a digital scale, uncertainty is estimated as *one digit beyond what is certain*, reflected in some *fluctuations* of the *last digit*.",
+        "category": "most",
+        "badgeTitle": "RULE",
+        "badgeText": "If the last digit fluctuates by 1 or 2, write down that last digit."
+      },
+      {
+        "question": "What does a large fluctuation in the last digit of a digital scale indicate?",
+        "answer": "If fluctuation is more than 2 in the last digit, it indicates the *reading is being influenced* by some factor such as *air currents*, meaning the *displayed digit is not really significant*.",
+        "category": "most",
+        "badgeTitle": "IMPLICATION",
+        "badgeText": "A large fluctuation may mean that the displayed digit is not really significant."
+      },
+      {
+        "question": "Define significant figures in a measurement.",
+        "answer": "In any measurement, the *accurately known digits* and the *first estimated* or *doubtful digit* are called *significant figures*.",
+        "category": "most",
+        "badgeTitle": "MEANING",
+        "badgeText": "They are the number of digits of a measurement about which we do feel reasonably sure."
+      },
+      {
+        "question": "Why should the result of any calculation from a calculator be rounded off?",
+        "answer": "A calculator yields many additional digits after the decimal point which may mislead another person into believing them, so they must be *rounded off* to the *correct number* of *significant figures*.",
+        "category": "most",
+        "badgeTitle": "FACTOR TO CONSIDER",
+        "badgeText": "This rounding should keep in view the uncertainty or least count of the instrument."
+      },
+      {
+        "question": "Are zeros placed between two significant figures considered significant?",
+        "answer": "Yes, a *zero placed between two significant figures* is itself *significant*.",
+        "category": "most",
+        "badgeTitle": "RULE CONTEXT",
+        "badgeText": "This is one of the standard rules for counting significant digits."
+      },
+      {
+        "question": "Are zeros to the left of significant figures considered significant?",
+        "answer": "No, *zeros to the left of significant figures* are *not significant*.",
+        "category": "most",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "None of the zeros in 0.00467 or 02.59 is significant."
+      },
+      {
+        "question": "How do you determine the significance of zeros in integers like 8,000 kg?",
+        "answer": "In integers, the number of significant zeros is determined by the *precision of the measuring instrument*.",
+        "category": "most",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "If the least count is 1 kg, there are four significant figures, written as $8.000\\times10^{3}$ kg."
+      },
+      {
+        "question": "Which figures are considered significant when a measurement is recorded in scientific notation?",
+        "answer": "When a measurement is recorded in *scientific notation* or *standard form*, the *figures other than the powers of ten* are *significant figures*.",
+        "category": "most",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "A measurement recorded as $8.70\\times10^{4}$ kg has three significant figures."
+      },
+      {
+        "question": "What rule must be followed for significant figures when multiplying or dividing numbers?",
+        "answer": "Keep a number of significant figures in the product or quotient *not more than* that contained in the *least accurate factor* (the factor containing the *least number of significant figures*).",
+        "category": "most",
+        "badgeTitle": "THUMB RULE",
+        "badgeText": "Multiplication/Division requires the same accuracy (Same number of significant figures)."
+      },
+      {
+        "question": "What is the rule for rounding off if the first digit to be dropped is exactly 5?",
+        "answer": "If the digit to be dropped is 5, the *previous digit to be retained* is *increased by one* if it is *odd* and *retained as such* if it is *even*.",
+        "category": "most",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "43.75 is rounded off as 43.8, whereas 64.350 is rounded off as 64.4."
+      },
+      {
+        "question": "What is the rule for significant figures when adding or subtracting numbers?",
+        "answer": "The number of *decimal places retained* in the answer should be equal to the *smallest number of decimal places* in any of the quantities being added or subtracted.",
+        "category": "most",
+        "badgeTitle": "IMPORTANT NOTE",
+        "badgeText": "In this case, the number of significant figures is not important; it is the position of decimal that matters."
+      },
+      {
+        "question": "What are the limitations of using significant figures to assess uncertainties?",
+        "answer": "Significant figures deal with *only one source of uncertainties* that is inherent in *reading the scale*, failing to account for *personal errors* and *hidden systematic errors*.",
+        "category": "most",
+        "badgeTitle": "LIMITATION",
+        "badgeText": "Total uncertainty may well be more than what the significant figure of the measurements would suggest."
+      },
+      {
+        "question": "What determines the precision of a measurement?",
+        "answer": "The *precision* of a measurement is determined by the *instrument* or *device* being used.",
+        "category": "most",
+        "badgeTitle": "RELATIONSHIP",
+        "badgeText": "The smaller the least count the more precise is the measurement."
+      },
+      {
+        "question": "How is accuracy defined in physical measurements?",
+        "answer": "*Accuracy* is defined as the *closeness* of a measurement to the *exact* or *accepted value* of a physical quantity.",
+        "category": "most",
+        "badgeTitle": "MEASUREMENT REPRESENTATION",
+        "badgeText": "It is expressed by the fractional or percentage uncertainty."
+      },
+      {
+        "question": "Differentiate between a precise measurement and an accurate measurement.",
+        "answer": "A *precise measurement* is one which has *less absolute uncertainty*, while an *accurate measurement* is one which has *less fractional* or *percentage uncertainty*.",
+        "category": "most",
+        "badgeTitle": "THUMB RULE",
+        "badgeText": "Precision means less absolute uncertainty; Accuracy means less percentage uncertainty."
+      },
+      {
+        "question": "How do you assess the total uncertainty when adding or subtracting physical quantities?",
+        "answer": "For addition and subtraction, the *absolute uncertainties* of the individual quantities are *added*.",
+        "category": "most",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "For $l_{1}=8.5\\pm0.1$ cm and $l_{2}=12.6\\pm0.1$ cm, $l=l_{1}+l_{2}=21.1\\pm0.2~cm$."
+      },
+      {
+        "question": "How do you determine the maximum possible uncertainty in the final result involving multiplication and division?",
+        "answer": "For multiplication and division, the *percentage uncertainties* of the individual factors are *added*.",
+        "category": "most",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "If $V$ has 3% uncertainty and $I$ has 7% uncertainty, the total percentage uncertainty in $R = V/I$ is $3+7=10\\%$."
+      },
+      {
+        "question": "How is the percentage uncertainty handled for a term with a power factor?",
+        "answer": "The *percentage uncertainty* of the variable is *multiplied by the power factor* in the formula.",
+        "category": "most",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "For area $A=\\pi r^{2}$, the percentage uncertainty is $2\\times$ percentage uncertainty in radius $r$."
+      },
+      {
+        "question": "What does the term \"dimensions of a physical quantity\" mean?",
+        "answer": "Any physical quantity can be described by certain familiar measurable properties called *dimensions*, which deal with the *qualitative nature* of a physical quantity in terms of *fundamental quantities*.",
+        "category": "most",
+        "badgeTitle": "SYMBOLS",
+        "badgeText": "They are denoted by specific symbols within square brackets, like [L] for length, [M] for mass, and [T] for time."
+      },
+      {
+        "question": "What is the principle of homogeneity of physical equations?",
+        "answer": "The correctness of an equation can be checked by showing that the *dimensions of quantities* on both sides of the equation are the *same*, which is known as the *principle of homogeneity*.",
+        "category": "most",
+        "badgeTitle": "EXAMPLE APPLICATION",
+        "badgeText": "Proving $S=\\frac{1}{2}at^{2}$ gives $[L]=[L]$, showing the equation is dimensionally correct."
+      },
+      {
+        "question": "What are the dimensions of velocity and acceleration?",
+        "answer": "The dimensions of velocity $v$ are *length divided by time*, $[LT^{-1}]$, and the dimensions of acceleration $a$ are *velocity divided by time*, $[LT^{-2}]$.",
+        "category": "most",
+        "badgeTitle": "DERIVATION",
+        "badgeText": "$[v]=[L]/[T]=[LT^{-1}]$ and $[a]=[v]/[T]=[LT^{-1}]/[T]=[LT^{-2}]$."
+      },
+      {
+        "question": "How can dimensionality be used to derive a physical formula?",
+        "answer": "Dimensionality can be used to derive a possible formula by *correct estimation* of various factors on which the quantity depends, and *comparing the powers* of dimensions on both sides.",
+        "category": "most",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "Deriving the centripetal force formula $F=mv^{2}/r$."
+      },
+      {
+        "question": "What is a major limitation of dimensional analysis regarding equations?",
+        "answer": "The dimensional method *cannot identify where an equation is wrong*, nor does it provide a check on any *numerical factor* or *constant*.",
+        "category": "most",
+        "badgeTitle": "CONSEQUENCE",
+        "badgeText": "Numerical values of constants must be determined by experiments or plotting suitable graphs."
+      },
+      {
+        "question": "What are the dimensions of force?",
+        "answer": "The dimensions of force can be written as *$[MLT^{-2}]$*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "Derived from $[F]=[m][a]=[M][LT^{-2}]$."
+      },
+      {
+        "question": "How are numerical factors like $1/2$ treated in dimensional analysis?",
+        "answer": "Numerical factors like $1/2$ have *no dimensions*, so they can be *ignored* when putting the dimensions of both sides of the equation.",
+        "category": "most",
+        "badgeTitle": "CONTEXT",
+        "badgeText": "Used when checking the homogeneity of equations like $S=\\frac{1}{2}at^{2}$."
+      },
+      {
+        "question": "Why might a measurement taken with a Vernier Callipers (e.g., 0.45 cm) be less accurate than one taken with a metre rule (e.g., 25.5 cm)?",
+        "answer": "The reading 0.45 cm has a *higher percentage uncertainty* (2%) compared to the 25.5 cm reading (0.4%), making it more *precise* but less *accurate* because accuracy depends on the fractional or percentage uncertainty.",
+        "category": "important",
+        "badgeTitle": "RELATIVE MEASUREMENT",
+        "badgeText": "The smaller a physical quantity, the more precise instrument should be used to maintain accuracy."
+      },
+      {
+        "question": "What is the rule for rounding off a number if the digit to be dropped is exactly 5 and the preceding digit is even?",
+        "answer": "If the digit to be dropped is 5, the previous digit which is to be retained is *retained as such* (remains unchanged) if it is *even*.",
+        "category": "important",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "The number 73.650 is rounded off as 73.6."
+      },
+      {
+        "question": "What is the rule for rounding off a number if the digit to be dropped is exactly 5 and the preceding digit is odd?",
+        "answer": "If the digit to be dropped is 5, the previous digit which is to be retained is *increased by one* if it is *odd*.",
+        "category": "important",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "The number 43.75 is rounded off as 43.8."
+      },
+      {
+        "question": "In the addition of 72.1 m, 3.42 m, and 0.003 m, why is the final answer written as 75.5 m?",
+        "answer": "In addition, the number of decimal places retained must equal the *smallest number of decimal places* in any of the quantities; since 72.1 has only *one decimal place*, the answer is rounded to the same position.",
+        "category": "important",
+        "badgeTitle": "PRINCIPLE",
+        "badgeText": "The number of significant figures is not important here; it is the position of the decimal that matters."
+      },
+      {
+        "question": "How do you determine the percentage uncertainty in the calculation of an area (A=πr²)?",
+        "answer": "The *percentage uncertainty* of the radius r is *multiplied by the power factor* (which is 2), so the total percentage uncertainty in area A is *2 × percentage uncertainty* in radius r.",
+        "category": "important",
+        "badgeTitle": "FORMULA EFFECT",
+        "badgeText": "As uncertainty is multiplied by a power factor, it increases the precision demand of the measurement."
+      },
+      {
+        "question": "If voltage is recorded as V=3.4±0.1V, how is its percentage uncertainty calculated?",
+        "answer": "The percentage uncertainty is calculated by *dividing the absolute uncertainty* (0.1V) by the *measured value* (3.4V) and *multiplying by 100*.",
+        "category": "important",
+        "badgeTitle": "CALCULATION",
+        "badgeText": "(0.1V/3.4V)×100=3%."
+      },
+      {
+        "question": "If current is recorded as I=0.68±0.05A, what is its percentage uncertainty?",
+        "answer": "The percentage uncertainty in current is found by taking the *absolute uncertainty* (0.05A) over the *measured value* (0.68A) times *100*.",
+        "category": "important",
+        "badgeTitle": "CALCULATION",
+        "badgeText": "(0.05A/0.68A)×100=7%."
+      },
+      {
+        "question": "Based on the voltage and current uncertainties above, how is the final resistance R=V/I recorded?",
+        "answer": "The percentage uncertainties are *added* (3%+7%=10%), and 10% of the calculated R (5.0Ω) is 0.5Ω, so it is recorded as *5.0±0.5 ohms*.",
+        "category": "important",
+        "badgeTitle": "IMPORTANT NOTE",
+        "badgeText": "The uncertainty, being an estimate only, is recorded to one significant figure."
+      },
+      {
+        "question": "If a radius is measured as 1.25 cm using a Vernier Callipers with a least count of 0.01 cm, what is the absolute uncertainty?",
+        "answer": "The absolute uncertainty is exactly equal to the *least count* of the instrument, which is *±0.01 cm*.",
+        "category": "important",
+        "badgeTitle": "RECORDED VALUE",
+        "badgeText": "r=1.25±0.01 cm."
+      },
+      {
+        "question": "How do you interpret the dimensional correctness of the equation S=½at²?",
+        "answer": "By *ignoring the dimensionless numerical factor* 1/2, we substitute the dimensions: [L]=[LT⁻²][T²], which simplifies to *[L]=[L]*, proving the equation is dimensionally correct.",
+        "category": "important",
+        "badgeTitle": "PRINCIPLE",
+        "badgeText": "Principle of Homogeneity of physical equations."
+      },
+      {
+        "question": "In the derivation of centripetal force (F=constant×mᵃ vᵇ rᶜ), how is the constant handled?",
+        "answer": "The *numerical value of the constant* cannot be determined by dimensional analysis; it has *no dimension* and must be found by *experiments*.",
+        "category": "important",
+        "badgeTitle": "LIMITATION",
+        "badgeText": "Dimensional analysis does not provide a check on any numerical factor."
+      },
+      {
+        "question": "According to the rules, are zeroes in a decimal fraction (like 3.570 or 7.4000) significant?",
+        "answer": "Yes, in a decimal fraction, *zeros to the right of a significant figure* are *significant*.",
+        "category": "important",
+        "badgeTitle": "APPLICATION",
+        "badgeText": "Both 3.570 and 7.4000 have four significant figures."
+      },
+      {
+        "question": "How many significant figures are in the measured mass 2500.0 kg? (MCQ 1.6)",
+        "answer": "The measurement 2500.0 kg has *five significant figures* because zeros to the right of a significant figure in a decimal fraction are significant.",
+        "category": "important",
+        "badgeTitle": "CORRECT OPTION",
+        "badgeText": "(d) five."
+      },
+      {
+        "question": "What is the sum of 12 kg+2.02 kg+5.1 kg to the appropriate precision? (MCQ 1.7)",
+        "answer": "The term with the *least decimal places* is 12 kg (zero decimal places), so the sum (19.12) must be *rounded to zero decimal places*, resulting in 19 kg.",
+        "category": "important",
+        "badgeTitle": "CORRECT OPTION",
+        "badgeText": "(a) 19 kg."
+      },
+      {
+        "question": "What is the answer to appropriate precision for the subtraction (1.126−0.97268)? (MCQ 1.8)",
+        "answer": "The number 1.126 has *three decimal places*, so the result (0.15332) must be *rounded to three decimal places*, which is 0.153.",
+        "category": "important",
+        "badgeTitle": "CORRECT OPTION",
+        "badgeText": "(b) 0.153."
+      },
+      {
+        "question": "What is the product of (2.8723×1.6) to the appropriate number of significant figures? (MCQ 1.9)",
+        "answer": "The factor 1.6 has *two significant figures* (the least accurate), so the product (4.59568) must be *rounded to two significant figures*, yielding 4.6.",
+        "category": "important",
+        "badgeTitle": "CORRECT OPTION",
+        "badgeText": "(d) 4.6."
+      },
+      {
+        "question": "What is the answer to the division (45.2÷6.0) in the appropriate number of significant figures? (MCQ 1.10)",
+        "answer": "The factor 6.0 has *two significant figures*, so the quotient (7.5333...) must be *rounded to two significant figures*, giving 7.5.",
+        "category": "important",
+        "badgeTitle": "CORRECT OPTION",
+        "badgeText": "(a) 7.5."
+      },
+      {
+        "question": "What is the ratio of the dimensions of force and energy? (MCQ 1.12)",
+        "answer": "The dimensions of force are *[MLT⁻²]* and energy (work) are *[ML²T⁻²]*, so their ratio [MLT⁻²]/[ML²T⁻²] simplifies to *[L⁻¹]*.",
+        "category": "important",
+        "badgeTitle": "CORRECT OPTION",
+        "badgeText": "(d) L⁻¹."
+      },
+      {
+        "question": "Which pair of quantities does NOT have identical dimensions? (MCQ 1.13)",
+        "answer": "*Moment of inertia* ([ML²]) and *moment of force* ([ML²T⁻²]) do not have identical dimensions.",
+        "category": "important",
+        "badgeTitle": "CORRECT OPTION",
+        "badgeText": "(c) Moment of inertia and moment of force."
+      },
+      {
+        "question": "What does the least count of an instrument determine? (MCQ 1.15)",
+        "answer": "The least count of an instrument directly determines the *precision* of a measurement (also known as absolute uncertainty).",
+        "category": "important",
+        "badgeTitle": "CORRECT OPTION",
+        "badgeText": "(a) precision of a measurement."
+      },
+      {
+        "question": "What are the dimensions of kinetic energy (½mv²)? (Short Q 1.6)",
+        "answer": "Ignoring the ½, the dimensions are mass *[M]* times velocity squared *[LT⁻¹]²*, which equals *[ML²T⁻²]*.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "[Eₖ]=[M][L²T⁻²]."
+      },
+      {
+        "question": "How many significant figures are in the measurement 0.002953 m? (Short Q 1.7)",
+        "answer": "There are *four significant figures*, because *zeros to the left of significant figures* are *not significant*.",
+        "category": "important",
+        "badgeTitle": "RULE",
+        "badgeText": "Leading zeros only indicate the position of the decimal."
+      },
+      {
+        "question": "How many significant figures are in the measurement 7.50034 cm? (Short Q 1.7)",
+        "answer": "There are *six significant figures*, because *zeros between two significant figures* are *themselves significant*.",
+        "category": "important",
+        "badgeTitle": "RULE",
+        "badgeText": "Captive zeros are always significant."
+      },
+      {
+        "question": "What are the dimensions of Planck's constant (h)? (Short Q 1.8)",
+        "answer": "Since energy E=hf (and frequency f=1/T), h=E×T. Multiplying energy *[ML²T⁻²]* by time *[T]* gives *[ML²T⁻¹]*.",
+        "category": "important",
+        "badgeTitle": "UNIT EQUIVALENT",
+        "badgeText": "Joule-second (J·s)."
+      },
+      {
+        "question": "What are the dimensions of angular velocity? (Short Q 1.8)",
+        "answer": "Angular velocity is defined as an angle (dimensionless) divided by time, so its dimensions are *[T⁻¹]*.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "[ω]=1/[T]=[T⁻¹]."
+      },
+      {
+        "question": "How do you assess the uncertainty for the average value of many readings?",
+        "answer": "According to the Thumb Rule, find the *mean deviation* from the average value to determine the uncertainty.",
+        "category": "important",
+        "badgeTitle": "THUMB RULE",
+        "badgeText": "Average value uncertainty = Mean deviation."
+      },
+      {
+        "question": "How is periodic uncertainty assessed for a timing device?",
+        "answer": "To find periodic uncertainty, divide the *least count* of the timing device by the *number of oscillations*.",
+        "category": "important",
+        "badgeTitle": "THUMB RULE",
+        "badgeText": "Periodic Uncertainty = Least count / Number of oscillations."
+      },
+      {
+        "question": "Between an electronic balance (3.145±0.001 g) and a lever balance (3.1±0.1 g), which is more precise?",
+        "answer": "The electronic balance is more precise because it has a *smaller absolute uncertainty* (±0.001 g) compared to the lever balance (±0.1 g).",
+        "category": "important",
+        "badgeTitle": "IMPLICATION",
+        "badgeText": "It extends the result to more significant figures."
+      },
+      {
+        "question": "If a measurement is 8.00×10³ kg, what is the least count of the scale used?",
+        "answer": "Writing the integer as 8.00×10³ kg indicates *three significant figures*, meaning the measuring scale had a *precision* or *least count* of *10 kg*.",
+        "category": "important",
+        "badgeTitle": "RULE",
+        "badgeText": "The number of significant zeros in an integer is determined by instrument precision."
+      },
+      {
+        "question": "What is the final answer for 2.45×10³ m×2.46m/3.6m to appropriate significant figures? (Quick Quiz 4)",
+        "answer": "The factor 3.6 has the *least number of significant figures* (two). The raw calculation gives 1674.16..., which rounded to *two significant figures* is *1700*, written as *1.7×10³ m*.",
+        "category": "important",
+        "badgeTitle": "THUMB RULE",
+        "badgeText": "Multiplication/Division requires the same number of significant figures as the least accurate factor."
+      },
+      {
+        "question": "What is the base material for manufacturing computer chips according to scientific applications?",
+        "answer": "Computer chips are made from *silicon*, which is obtained from *sand*.",
+        "category": "conceptual",
+        "badgeTitle": "IMPLICATION",
+        "badgeText": "It highlights how fundamental physical sciences transform raw materials into advanced technology."
+      },
+      {
+        "question": "When were the units for plane angle and solid angle officially included in the list of derived SI units?",
+        "answer": "The units of plane angle (radian) and solid angle (steradian) have been *included in the list of derived units* since *1995*.",
+        "category": "conceptual",
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "Both of these are purely dimensionless quantities."
+      },
+      {
+        "question": "What are the traditional mathematical units used for measuring angles outside of the SI system?",
+        "answer": "The traditional mathematical units for measuring angles are the *degree*, *arcminute*, and *arcsecond*.",
+        "category": "conceptual",
+        "badgeTitle": "ALTERNATIVE",
+        "badgeText": "The standard SI permitted derived unit is the radian."
+      },
+      {
+        "question": "Which specific non-metric units are commonly used in the fields of physics and astronomy for measuring areas or very small lengths?",
+        "answer": "The *angstrom* and the *barn* are non-metric units traditionally used in physics and astronomy.",
+        "category": "conceptual",
+        "badgeTitle": "APPLICATION",
+        "badgeText": "Used heavily for subatomic and atomic scale measurements."
+      },
+      {
+        "question": "What is the unit of pressure commonly used in meteorology and engineering instead of the Pascal?",
+        "answer": "The *bar* is a unit of pressure, commonly used as the *millibar* in meteorology and the *kilobar* in engineering.",
+        "category": "conceptual",
+        "badgeTitle": "SYSTEM CONTEXT",
+        "badgeText": "It is a permitted additional unit outside the pure SI base/derived units."
+      },
+      {
+        "question": "According to Einstein's mass-energy equivalence, how much energy is contained in exactly 1 kg of mass?",
+        "answer": "According to the equation $E=mc^2$, 1 kg of mass is a *highly concentrated form of energy* equal to *$9 \\times 10^{16}$ J*.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPT",
+        "badgeText": "Mass can be fundamentally thought of as a form of energy."
+      },
+      {
+        "question": "Why is the use of a solidus (m/s) discouraged in writing SI units?",
+        "answer": "SI conventions dictate the use of *negative index notation* ($ms^{-1}$) instead of a solidus (m/s) to *avoid ambiguity*, especially in complex derived units.",
+        "category": "conceptual",
+        "badgeTitle": "CONVENTION RULE",
+        "badgeText": "It provides mathematical clarity when multiple units are combined."
+      },
+      {
+        "question": "How should a compound prefix like micro-micro farad be correctly written in the SI system?",
+        "answer": "*Compound prefixes are not allowed*; thus, 1 $\\mu\\mu$F should be correctly written using a single prefix as *1 pF (picofarad)*.",
+        "category": "conceptual",
+        "badgeTitle": "SI CONVENTION",
+        "badgeText": "Only one standard prefix is permitted per base unit."
+      },
+      {
+        "question": "When a prefix is attached to a base unit and raised to a power, does the power apply to the prefix as well?",
+        "answer": "Yes, when a multiple of a base unit is raised to a power, the *power applies to the whole multiple* and not to the base unit alone.",
+        "category": "conceptual",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "$1 km^2 = 1 (10^3 m)^2 = 1 \\times 10^6 m^2$."
+      },
+      {
+        "question": "Do significant figures account for hidden systematic errors in an experiment?",
+        "answer": "No, significant figures only deal with the *uncertainty inherent in reading the scale* and do not account for *personal or hidden systematic errors*.",
+        "category": "conceptual",
+        "badgeTitle": "LIMITATION",
+        "badgeText": "The real total uncertainty may well be more than what the significant figures formally suggest."
+      },
+      {
+        "question": "What colors are fundamentally used in modern color printing to produce the entire range of colors?",
+        "answer": "Color printing uses just *four colors*: *cyan*, *magenta*, *yellow*, and *black* to produce the entire range of colors.",
+        "category": "conceptual",
+        "badgeTitle": "APPLICATION",
+        "badgeText": "This is an everyday application of physical optics and pigment combinations."
+      },
+      {
+        "question": "How much time does it take for light to travel from the Moon to the Earth?",
+        "answer": "The travel time of light from the Moon to the Earth is exactly *1 min 20 s*.",
+        "category": "conceptual",
+        "badgeTitle": "ASTRONOMICAL FACT",
+        "badgeText": "This demonstrates the finite speed of light over celestial distances."
+      },
+      {
+        "question": "How much time does light take to reach the Earth from the Sun?",
+        "answer": "The travel time of light from the Sun to the Earth is approximately *8 min 20 s*.",
+        "category": "conceptual",
+        "badgeTitle": "ASTRONOMICAL FACT",
+        "badgeText": "This is based on the average Earth-Sun distance (1 Astronomical Unit)."
+      },
+      {
+        "question": "What is the approximate travel time of light from Pluto to Earth?",
+        "answer": "The travel time of light from Pluto to the Earth is approximately *5 h 20 s*.",
+        "category": "conceptual",
+        "badgeTitle": "ASTRONOMICAL FACT",
+        "badgeText": "This illustrates the vast scale of our solar system compared to the Earth-Moon distance."
+      },
+      {
+        "question": "Where were the earliest known exquisite and sensitive liquid thermometers built?",
+        "answer": "The earliest known sensitive thermometers were built by the *Accademia del Cimento* (1657-1667) in *Florence*.",
+        "category": "conceptual",
+        "badgeTitle": "HISTORICAL CONTEXT",
+        "badgeText": "They contained alcohol, sometimes colored red for easier visual reading."
+      },
+      {
+        "question": "What is the primary standard used worldwide for the exact measurement of the unit of time?",
+        "answer": "The *cesium atomic frequency standard* (Atomic Clock), such as the one at the National Institute of Standards and Technology in Colorado, is the *primary standard* for the unit of time.",
+        "category": "conceptual",
+        "badgeTitle": "PRECISION DEVICE",
+        "badgeText": "It uses the vibration period of atoms to maintain extreme accuracy."
+      },
+      {
+        "question": "What specific mechanism inside a traditional clock made the pendulum clock practical for keeping time?",
+        "answer": "The combination of the *anchor*, *pallet*, and *escape wheel* interacting with the pendulum acts as the *regulating device* that made the pendulum clock practical.",
+        "category": "conceptual",
+        "badgeTitle": "MECHANICAL PHYSICS",
+        "badgeText": "These components regulate the release of energy to maintain uniform, repeatable oscillations."
+      },
+      {
+        "question": "Why is dimensional analysis unable to determine the exact formula for a physical quantity?",
+        "answer": "Dimensional analysis can only verify if dimensions match, but it *cannot determine the numerical value* of any *constant* or *numerical factor* in the equation.",
+        "category": "conceptual",
+        "badgeTitle": "LIMITATION",
+        "badgeText": "These exact numerical constants must be found experimentally or graphically."
+      },
+      {
+        "question": "What is the approximate temperature of the outer part of the Sun?",
+        "answer": "The approximate temperature of the outer part of the Sun is *6000°C*.",
+        "category": "conceptual",
+        "badgeTitle": "THERMAL SCALE",
+        "badgeText": "This is far hotter than the melting point of most Earth-bound materials."
+      },
+      {
+        "question": "At what specific temperature does air become a liquid?",
+        "answer": "Air becomes liquid at approximately *-200°C*.",
+        "category": "conceptual",
+        "badgeTitle": "THERMAL SCALE",
+        "badgeText": "This is near absolute zero, demonstrating extreme cryogenic physics."
+      },
+      {
+        "question": "In terms of order of magnitude, what is the mass of the observable universe's largest single object mentioned (the Sun)?",
+        "answer": "The order of magnitude for the mass of the Sun is given as *$10^{30}$ kg*.",
+        "category": "conceptual",
+        "badgeTitle": "MACRO-SCALE PHYSICS",
+        "badgeText": "Contrast this with the extremely small mass of an electron at $10^{-30}$ kg."
+      },
+      {
+        "question": "What is the order of magnitude for the mass of an electron?",
+        "answer": "The order of magnitude for the mass of an electron is *$10^{-30}$ kg*.",
+        "category": "conceptual",
+        "badgeTitle": "MICRO-SCALE PHYSICS",
+        "badgeText": "This is the smallest specific mass explicitly mentioned in the mass scale chart."
+      },
+      {
+        "question": "Why must practical work measurements (like using a screw gauge) be recorded in their original units before final calculations?",
+        "answer": "Measurements should be recorded in the *most convenient units* depending on the instrument (e.g., mm for a screw gauge) to maintain the *exact precision record*, but final results must be converted to the *appropriate base SI units*.",
+        "category": "conceptual",
+        "badgeTitle": "RECORDING SKILL",
+        "badgeText": "This avoids conversion rounding errors during the intermediate physical steps."
+      },
+      {
+        "question": "If an equation is proven to be dimensionally correct, does that mean the equation is entirely physically correct?",
+        "answer": "No, if an equation is dimensionally correct, we can only say the equation *might be correct*, because the method cannot identify *missing dimensionless quantities* or *incorrect numerical factors*.",
+        "category": "conceptual",
+        "badgeTitle": "PRINCIPLE OF HOMOGENEITY",
+        "badgeText": "Dimensional consistency is a necessary but not entirely sufficient condition for absolute correctness."
+      },
+      {
+        "question": "Why is the number of significant figures not considered when performing addition or subtraction?",
+        "answer": "In addition and subtraction, the limiting factor is the *precision (least count)* of the measurements, which depends strictly on the *smallest number of decimal places*, not the total number of significant figures.",
+        "category": "conceptual",
+        "badgeTitle": "THUMB RULE",
+        "badgeText": "Addition/Subtraction follows the strict rule of \"same precision\" rather than \"same accuracy\"."
+      },
+      {
+        "question": "What is the purpose of using scientific notation (standard form) to express a physical number?",
+        "answer": "Scientific notation employs *powers of ten* with only *one non-zero digit left of the decimal* to strictly *eliminate non-significant digits* and avoid ambiguity in the number of significant figures.",
+        "category": "conceptual",
+        "badgeTitle": "STANDARD PRACTICE",
+        "badgeText": "Makes expressing extremely large or small quantities universally convenient."
+      },
+      {
+        "question": "What is the fundamental difference in reading the uncertainty of a digital instrument versus an analog scale?",
+        "answer": "For an analog scale, uncertainty is exactly the *smallest division*, but for a digital instrument, it is estimated by the *fluctuation of the last digit* (usually recording 1 or 2 as normal).",
+        "category": "conceptual",
+        "badgeTitle": "ESTIMATION TECHNIQUE",
+        "badgeText": "If it fluctuates by more than 2, it clearly indicates external environmental influences."
+      },
+      {
+        "question": "How do you strictly find the uncertainty in the average value of multiple physical readings?",
+        "answer": "The uncertainty in the average value is definitively found by calculating the *mean deviation* from the average value of all the collected readings.",
+        "category": "conceptual",
+        "badgeTitle": "DATA ANALYSIS",
+        "badgeText": "This mathematically assesses the random spread of the recorded measurements."
+      },
+      {
+        "question": "Why are calculators considered \"dangerous\" when quoting final physical answers without manual rounding?",
+        "answer": "Calculators are designed to yield *as many digits as the memory of the chip permits*, which implies a *completely false sense of physical accuracy* if not manually rounded off to the correct significant figures.",
+        "category": "conceptual",
+        "badgeTitle": "BEWARE NOTE",
+        "badgeText": "Never quote raw calculator outputs directly as final scientific answers."
+      },
+      {
+        "question": "What are the dimensions of the constant factor in the kinematic equation $S = \\frac{1}{2}at^2$?",
+        "answer": "The numerical factor is a *dimensionless quantity*, meaning it has *absolutely no dimensions* and is *completely ignored* during dimensional analysis.",
+        "category": "conceptual",
+        "badgeTitle": "MATHEMATICAL CONSTANTS",
+        "badgeText": "Pure numbers do not represent any measurable physical properties."
+      },
+      {
+        "question": "What is the age of the Earth expressed in seconds as an order of magnitude?",
+        "answer": "The approximate age of the Earth is given as *$1.4 \\times 10^{17}$ s*.",
+        "category": "conceptual",
+        "badgeTitle": "TIME INTERVAL",
+        "badgeText": "This is compared to the entire universe's age of $5 \\times 10^{17}$ s."
+      },
+      {
+        "question": "What defines the boundary between accuracy and precision when evaluating multiple measurements?",
+        "answer": "*Precision* refers strictly to the *absolute uncertainty* (least count of the device), whereas *accuracy* purely accounts for the *relative size* of the measurement via fractional/percentage uncertainty.",
+        "category": "conceptual",
+        "badgeTitle": "COMPARATIVE METRIC",
+        "badgeText": "A highly precise reading can be highly inaccurate if the fractional error is large."
+      },
+      {
+        "question": "Are physical constants like the speed of light considered mathematically dimensionless?",
+        "answer": "No, physical constants like the speed of light have *specific units* (e.g., $ms^{-1}$) and therefore *possess dimensions* ($[LT^{-1}]$), unlike pure numerical constants.",
+        "category": "conceptual",
+        "badgeTitle": "PHYSICAL VS NUMERICAL",
+        "badgeText": "Only pure numbers and ratios (like plane angles) are mathematically dimensionless."
+      }
+    ],
+    "2": [
+      {
+        "question": "What are rectangular components of a vector?",
+        "answer": "The components of a vector which are at *right angles* to each other are called *rectangular components*, representing the *effective value* of a vector in mutually perpendicular directions.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$A_{x} = A \\cos \\theta$ and $A_{y} = A \\sin \\theta$"
+      },
+      {
+        "question": "How can the magnitude of a vector be determined from its rectangular components?",
+        "answer": "The magnitude of a vector can be determined from its rectangular components by using the *Pythagorean Theorem* on the *right-angled triangle* formed by the components.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$A = \\sqrt{A_{x}^2 + A_{y}^2}$"
+      },
+      {
+        "question": "How is the direction of a vector determined from its rectangular components?",
+        "answer": "The direction of a vector, represented by the angle $\\theta$ it makes with the x‑axis, is found by taking the *inverse tangent* of the *ratio* of its y‑component to its x‑component.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$\\theta = \\tan^{-1}(\\frac{A_{y}}{A_{x}})$"
+      },
+      {
+        "question": "Define the scalar or dot product of two vectors.",
+        "answer": "If the product of two vectors results in a *scalar quantity*, it is called a *scalar product*, defined as the product of their *magnitudes* and the *cosine* of the angle between them.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$A.B = AB \\cos \\theta$"
+      },
+      {
+        "question": "What is the physical interpretation of the dot product of two vectors?",
+        "answer": "The dot product $A.B$ represents the *magnitude* of vector A multiplied by the *projection* of vector B on A, or the *effective component* of one vector in the direction of the other.",
+        "category": "most",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "Work done is $F.d = Fd \\cos \\theta$"
+      },
+      {
+        "question": "Prove that the scalar product is commutative.",
+        "answer": "The scalar product is *commutative* because the order of multiplication is irrelevant, meaning the product of the *magnitudes* and the *cosine* of the angle remains identical regardless of sequence.",
+        "category": "most",
+        "badgeTitle": "PROOF",
+        "badgeText": "$A.B = AB \\cos \\theta$ and $B.A = BA \\cos \\theta$, hence $A.B = B.A$"
+      },
+      {
+        "question": "What is the scalar product of two mutually perpendicular vectors?",
+        "answer": "The scalar product of two *mutually perpendicular vectors* is always *zero*, because the angle between them is $90^{\\circ}$ and the *cosine* of $90^{\\circ}$ is zero.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$A.B = AB \\cos 90^{\\circ} = 0$"
+      },
+      {
+        "question": "How is the scalar product expressed in terms of rectangular components?",
+        "answer": "The scalar product of two vectors in terms of their *rectangular components* is the *sum* of the products of their respective x, y, and z components.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$A.B = A_{x}B_{x} + A_{y}B_{y} + A_{z}B_{z}$"
+      },
+      {
+        "question": "Define the vector or cross product.",
+        "answer": "If the product of two vectors results in a *vector quantity*, it is called a *vector product*, defined by the product of their *magnitudes*, the *sine* of the angle, and a *normal unit vector*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$A \\times B = AB \\sin \\theta \\hat{n}$"
+      },
+      {
+        "question": "How is the direction of a cross product determined?",
+        "answer": "The direction of a cross product is determined by the *right hand rule*, where curling the fingers from the first vector to the second vector points the erect thumb in the direction of the product vector.",
+        "category": "most",
+        "badgeTitle": "DIRECTION",
+        "badgeText": "Perpendicular to the plane containing vectors A and B."
+      },
+      {
+        "question": "Why is the cross product non-commutative?",
+        "answer": "The cross product is *non‑commutative* because reversing the order of multiplication reverses the *direction* of the resulting vector according to the *right hand rule*, giving it an opposite sign.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$A \\times B = - B \\times A$"
+      },
+      {
+        "question": "What is the geometric interpretation of the magnitude of a cross product?",
+        "answer": "The magnitude of the cross product of two vectors is equal to the *area of the parallelogram* formed with those two vectors acting as its *adjacent sides*.",
+        "category": "most",
+        "badgeTitle": "GEOMETRIC PROPERTY",
+        "badgeText": "Magnitude of $A \\times B$ = Area of parallelogram."
+      },
+      {
+        "question": "State the algebraic derivation of the first equation of motion.",
+        "answer": "The first equation of motion is derived from the basic definition of *uniform acceleration*, which is the *rate of change of velocity*, by rearranging the terms to solve for the *final velocity*.",
+        "category": "most",
+        "badgeTitle": "DERIVATION",
+        "badgeText": "$a = \\frac{v_f - v_i}{t}$ rearranging to $v_f = v_i + at$"
+      },
+      {
+        "question": "State the algebraic derivation of the second equation of motion.",
+        "answer": "The second equation of motion is derived by substituting the *average velocity* and the *first equation of motion* into the formula for *displacement*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$S = v_i t + \\frac{1}{2}at^2$"
+      },
+      {
+        "question": "State the algebraic derivation of the third equation of motion.",
+        "answer": "The third equation of motion is derived by substituting the expression for *time* from the first equation of motion into the formula for *displacement* using *average velocity*, eliminating the time variable.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$2aS = v_f^2 - v_i^2$"
+      },
+      {
+        "question": "What is the sign convention for acceleration due to gravity in free fall motion?",
+        "answer": "Acceleration due to gravity ($g$) is taken as *positive* for a *falling body* where initial velocity is zero, and *negative* for a body *projected vertically upward* where initial velocity is not zero.",
+        "category": "most",
+        "badgeTitle": "VALUE",
+        "badgeText": "Experimental value is $9.8 \\text{ m s}^{-2}$ in SI units."
+      },
+      {
+        "question": "Define projectile motion.",
+        "answer": "*Projectile motion* is defined as a *two‑dimensional motion* experienced by an object thrown or projected, moving under the influence of *constant acceleration due to gravity* while ignoring air resistance.",
+        "category": "most",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "A football kicked off by a player or a missile fired from a launching pad."
+      },
+      {
+        "question": "Why does the horizontal component of a projectile's velocity remain constant?",
+        "answer": "The *horizontal component* of a projectile's velocity remains constant because we neglect *air resistance* and there is no other *horizontal force* acting on it to cause horizontal acceleration.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$v_{fx} = v_i \\cos \\theta$"
+      },
+      {
+        "question": "How is the vertical component of a projectile's velocity determined at any instant?",
+        "answer": "The *vertical component* of a projectile's velocity at any instant is determined by treating its upward motion as *free fall motion* with a *downward acceleration* of gravity, using the first equation of motion.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$v_{fy} = v_i \\sin \\theta - gt$"
+      },
+      {
+        "question": "How do you calculate the maximum height attained by a projectile?",
+        "answer": "The *maximum height* of a projectile is the *vertical distance* it covers before its *vertical velocity* becomes zero, derived using the third equation of motion with upward initial velocity and downward gravity.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$h = \\frac{v_i^2 \\sin^2 \\theta}{2g}$"
+      },
+      {
+        "question": "What is the time of flight of a projectile?",
+        "answer": "The *time of flight* is the *total time* taken by a projectile to cover the distance from its place of projection to the place where it hits the ground, covering *zero net vertical displacement*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$t = \\frac{2v_i \\sin \\theta}{g}$"
+      },
+      {
+        "question": "Define the range of a projectile.",
+        "answer": "The *range* of a projectile is the *maximum distance* the body covers in the *horizontal direction*, calculated by multiplying the constant horizontal velocity by the total time of flight.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$R = \\frac{v_i^2}{g} \\sin 2\\theta$"
+      },
+      {
+        "question": "Under what condition is the range of a projectile maximum?",
+        "answer": "The range of a projectile is maximum when the factor $\\sin 2\\theta$ equals $1$, which occurs when the *angle of projection* is exactly *$45^{\\circ}$*.",
+        "category": "most",
+        "badgeTitle": "ANGLE",
+        "badgeText": "$\\theta = 45^{\\circ}$ for maximum range."
+      },
+      {
+        "question": "Define linear momentum.",
+        "answer": "*Linear momentum* is defined as the *quantity of motion* possessed by a moving body, calculated mathematically as the *product* of the object's *mass* and its *velocity*.",
+        "category": "most",
+        "badgeTitle": "SI UNIT",
+        "badgeText": "$\\text{kg m s}^{-1}$ or $\\text{Ns}$"
+      },
+      {
+        "question": "State Newton's second law of motion in terms of momentum.",
+        "answer": "Newton's second law of motion in terms of momentum states that the *time rate of change of momentum* of a body is exactly equal to the *applied force* acting on it.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$F = \\frac{mv_f - mv_i}{t}$"
+      },
+      {
+        "question": "What is impulse and when is it used?",
+        "answer": "*Impulse* is defined as the *product* of *average force* and the *time* during which it acts, used primarily for cases where a varying force acts for a very short time interval, like a bat hitting a ball.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$\\text{Impulse} = F \\times t = mv_f - mv_i$"
+      },
+      {
+        "question": "State the Law of Conservation of Momentum.",
+        "answer": "The Law of Conservation of Momentum states that the *total linear momentum* of an *isolated system*—a system on which no external agency exerts any force—always remains *constant*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$m_1v_1 + m_2v_2 = m_1v'_1 + m_2v'_2$"
+      },
+      {
+        "question": "Differentiate between elastic and inelastic collisions.",
+        "answer": "A collision where *kinetic energy* is completely conserved is an *elastic collision*, whereas a collision in which a portion of kinetic energy is lost (transferred to heat/sound) is called an *inelastic collision*.",
+        "category": "most",
+        "badgeTitle": "KEY NOTE",
+        "badgeText": "Momentum and total energy are conserved in both types."
+      },
+      {
+        "question": "What is the relationship between relative velocities before and after an elastic collision in one dimension?",
+        "answer": "In a perfectly elastic one‑dimensional collision, the magnitude of the *relative velocity of approach* before collision is strictly equal to the magnitude of the *relative velocity of separation* after collision.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$(v_1 - v_2) = -(v'_1 - v'_2)$"
+      },
+      {
+        "question": "What happens when a light body elastically collides with a massive stationary body?",
+        "answer": "When a *light body* collides elastically with a *massive body* at rest, the light body will *bounce back* with the same velocity in the opposite direction, while the massive body remains *stationary*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$v'_1 \\approx -v$ and $v'_2 \\approx 0$"
+      },
+      {
+        "question": "What occurs when a massive body elastically collides with a light stationary body?",
+        "answer": "When a *massive body* collides with a *light stationary body*, the massive body continues with practically no change in velocity, but the lighter body bounces forward with approximately *twice the incident velocity*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$v'_1 \\approx v_1$ and $v'_2 \\approx 2v_1$"
+      },
+      {
+        "question": "How does an inelastic collision in one dimension affect final velocity?",
+        "answer": "In an *inelastic collision* where bodies *stick together*, they move with a *common final velocity*, which is mathematically reduced by the mass ratio depending on the combination of both masses.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$v_f = \\frac{m_1}{m_1 + m_2} v_{1i} + \\frac{m_2}{m_1 + m_2} v_{2i}$"
+      },
+      {
+        "question": "What is the result of the self scalar product of a vector?",
+        "answer": "The self product of a vector A is equal to the *square of its magnitude*, because the angle between identical vectors is $0^{\\circ}$.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$A.A = AA \\cos 0^{\\circ} = A^2$"
+      },
+      {
+        "question": "What is the scalar product of two parallel vectors?",
+        "answer": "The scalar product of two *parallel vectors* ($\\theta = 0^{\\circ}$) is exactly equal to the *product of their magnitudes*, as the cosine of zero is one.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$A.B = AB \\cos 0^{\\circ} = AB$"
+      },
+      {
+        "question": "What is the scalar product of two antiparallel vectors?",
+        "answer": "The scalar product of two *antiparallel vectors* ($\\theta = 180^{\\circ}$) is equal to the *negative product of their magnitudes*.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$A.B = AB \\cos 180^{\\circ} = -AB$"
+      },
+      {
+        "question": "How can the scalar product be used to mathematically find the angle between two vectors?",
+        "answer": "The angle between two vectors can be found by taking the *inverse cosine* of the *ratio* of their dot product to the product of their respective magnitudes.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$\\cos \\theta = \\frac{A_xB_x + A_yB_y + A_zB_z}{AB}$"
+      },
+      {
+        "question": "Why is the cross product of two parallel vectors a null vector?",
+        "answer": "The cross product of two *parallel* or *antiparallel* vectors is a null vector because the *sine* of the angle between them ($0^{\\circ}$ or $180^{\\circ}$) is zero.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$A \\times B = AB \\sin 0^{\\circ} \\hat{n} = 0$"
+      },
+      {
+        "question": "What is the result of the self vector product of a single vector?",
+        "answer": "The *self cross product* of any vector is always a *null vector* because a vector is naturally parallel to itself, creating an angle of $0^{\\circ}$.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$A \\times A = 0$"
+      },
+      {
+        "question": "Under what exact condition does the cross product of two vectors yield maximum magnitude?",
+        "answer": "The cross product has *maximum magnitude* when the two vectors are *mutually perpendicular* ($\\theta = 90^{\\circ}$), because the sine of $90^{\\circ}$ is exactly $1$.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$A \\times B = AB \\sin 90^{\\circ} \\hat{n} = AB\\hat{n}$"
+      },
+      {
+        "question": "Give a practical physical example of a vector product involving a force and a position vector.",
+        "answer": "The *torque* ($\\tau$) or the turning effect produced by a force on a rigid body is calculated as the *vector product* of the *position vector* ($r$) and the *applied force* ($F$).",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$\\tau = r \\times F$"
+      },
+      {
+        "question": "How is the magnetic force on a moving charge calculated as a vector product?",
+        "answer": "The *magnetic force* ($F$) acting on a particle of charge $q$ moving with velocity $v$ inside a magnetic field $B$ is determined by the *vector product* of its *velocity* and the *magnetic field strength*.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$F = q(v \\times B)$"
+      },
+      {
+        "question": "What are the strict limiting conditions under which the standard equations of motion can be applied?",
+        "answer": "The standard equations of motion are strictly restricted to objects moving in a *straight line* while maintaining a *constant acceleration*; they are invalid for variable acceleration curves.",
+        "category": "important",
+        "badgeTitle": "KEY LIMITATION",
+        "badgeText": "If direction does not change, vector quantities can be manipulated as scalars."
+      },
+      {
+        "question": "What are the three kinematic variable pairings addressed by the three equations of motion?",
+        "answer": "The equations mathematically pair kinematic variables into *velocity‑time* (1st equation), *position‑time* (2nd equation), and *velocity‑position* (3rd equation) relationships.",
+        "category": "important",
+        "badgeTitle": "CORE VARIABLES",
+        "badgeText": "Velocity ($v$), position ($s$), and time ($t$)."
+      },
+      {
+        "question": "What did Galileo experimentally conclude about the free fall motion of bodies?",
+        "answer": "Galileo concluded that all material bodies fall freely in a vacuum under the exact same *uniform acceleration due to gravity*, meaning *mass does not affect falling velocity*.",
+        "category": "important",
+        "badgeTitle": "OBSERVATION",
+        "badgeText": "Objects dropped from the same height strike the ground simultaneously."
+      },
+      {
+        "question": "How are the standard equations of uniformly accelerated motion modified for a freely falling body?",
+        "answer": "For a freely falling body, the linear acceleration '$a$' is substituted with the *acceleration due to gravity* '$g$', and linear distance '$S$' is generally replaced by *vertical height* '$h$'.",
+        "category": "important",
+        "badgeTitle": "EXAMPLE MODIFICATION",
+        "badgeText": "$v_f = v_i + gt$"
+      },
+      {
+        "question": "How do you precisely calculate the horizontal distance covered by a horizontally launched projectile?",
+        "answer": "The horizontal distance '$x$' is calculated by taking the product of the *constant horizontal velocity component* and the *total time in flight*.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$x = v_{x} \\times t$"
+      },
+      {
+        "question": "How is the vertical drop calculated for a projectile that is launched perfectly horizontally?",
+        "answer": "Because the *initial vertical velocity* is zero, the vertical distance '$y$' is calculated using the *second equation of motion* for free fall, influenced solely by gravity and elapsed time.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$y = \\frac{1}{2}gt^2$"
+      },
+      {
+        "question": "How is the magnitude of a projectile's resultant velocity determined at any given instant during its flight?",
+        "answer": "The magnitude of the *resultant velocity* is calculated using the *Pythagorean theorem*, strictly combining the instantaneous *horizontal* and *vertical velocity components*.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$v = \\sqrt{v_{fx}^2 + v_{fy}^2}$"
+      },
+      {
+        "question": "How is the exact direction of a projectile's resultant velocity calculated at any instant?",
+        "answer": "The angle $\\phi$, representing the direction of the resultant velocity relative to the horizontal, is found by calculating the *inverse tangent* of the *vertical velocity* divided by the *horizontal velocity*.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$\\tan \\phi = \\frac{v_{fy}}{v_{fx}}$"
+      },
+      {
+        "question": "Qualitatively describe how air resistance negatively impacts the maximum height of a projectile.",
+        "answer": "In the presence of air resistance, the *upward velocity* of the projectile decreases *more rapidly* than in a vacuum, which directly results in a *significantly reduced maximum height*.",
+        "category": "important",
+        "badgeTitle": "KINEMATIC EFFECT",
+        "badgeText": "Upward retardation increases."
+      },
+      {
+        "question": "What is the precise physical effect of air resistance on the horizontal range of a standard projectile?",
+        "answer": "Air resistance continuously *slows down* the projectile's forward motion, reducing its *horizontal velocity component*, which directly results in a *decrease* in the total horizontal range.",
+        "category": "important",
+        "badgeTitle": "TRAJECTORY CONSEQUENCE",
+        "badgeText": "It falls short of its ideal parabolic target."
+      },
+      {
+        "question": "Why does air resistance cause the actual trajectory of a high-speed projectile to become skewed rather than parabolic?",
+        "answer": "Because air friction is *not constant*; as the object slows down, the drag decreases, causing the object to retard more slowly and fall differently, creating a *skewed trajectory* characterized by a *steeper descent* than ascent.",
+        "category": "important",
+        "badgeTitle": "VISUAL INDICATOR",
+        "badgeText": "The actual path falls inside the ideal path envelope."
+      },
+      {
+        "question": "In terms of momentum, why is it substantially more difficult to stop a massive object compared to a light object moving at the identical velocity?",
+        "answer": "The massive object possesses a mathematically *greater quantity of motion*, scientifically termed *linear momentum*, allowing it to exert a *far larger physical force* on any obstacle attempting to arrest its motion.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$p = mv$"
+      },
+      {
+        "question": "Why is Newton's second law expressed in terms of momentum considered mathematically more general than $F = ma$?",
+        "answer": "The *momentum formulation* is more general because it inherently accounts for dynamic systems where the *mass* of the accelerating body is *actively changing* over time, such as a rocket expelling burnt fuel.",
+        "category": "important",
+        "badgeTitle": "GENERAL EQUATION",
+        "badgeText": "$F = \\frac{mv_f - mv_i}{t}$"
+      },
+      {
+        "question": "What are the strict physical requirements for a system to be defined as an \"isolated system\"?",
+        "answer": "An *isolated system* strictly requires a group of interacting bodies where *absolutely no external agency* or outside influence exerts any net physical force on the components.",
+        "category": "important",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "Gas molecules enclosed in a rigid glass vessel at a constant temperature."
+      },
+      {
+        "question": "Mathematically, what is the total change in momentum of an isolated two-ball system immediately following a collision?",
+        "answer": "Due to Newton's third law, the *momentum gained* by the first ball is perfectly offset by the *momentum lost* by the second ball, ensuring the *total change in momentum* of the entire system remains exactly *zero*.",
+        "category": "important",
+        "badgeTitle": "MATHEMATICAL PROOF",
+        "badgeText": "$(m_1v'_1 - m_1v_1) + (m_2v'_2 - m_2v_2) = 0$"
+      },
+      {
+        "question": "What physical mechanisms are responsible for the permanent loss of kinetic energy in macroscopic inelastic collisions?",
+        "answer": "Kinetic energy is permanently lost primarily due to *internal friction* as molecules shift past one another during structural distortion, converting the mechanical energy into unrecoverable *heat* and *sound* energies.",
+        "category": "important",
+        "badgeTitle": "GENERAL RULE",
+        "badgeText": "Most real-world macroscopic collisions are inelastic."
+      },
+      {
+        "question": "State the absolute theoretical condition under which a physical collision is considered perfectly elastic.",
+        "answer": "A collision is classified as *perfectly elastic* strictly in the ideal, frictionless case where *absolutely no kinetic energy* is lost or transformed during the physical interaction between the bodies.",
+        "category": "important",
+        "badgeTitle": "CLOSEST PHYSICAL APPROXIMATION",
+        "badgeText": "A hard ball dropping onto a solid marble floor."
+      },
+      {
+        "question": "What is the fundamental, invariable difference in conservation laws when comparing elastic and inelastic collisions?",
+        "answer": "While both *momentum* and *total system energy* are universally conserved in all collisions, *kinetic energy* specifically remains conserved only in a *perfectly elastic collision*.",
+        "category": "important",
+        "badgeTitle": "CRUCIAL DISTINCTION",
+        "badgeText": "Inelastic collisions never conserve kinetic energy."
+      },
+      {
+        "question": "What is the precise kinematic outcome when two bodies of perfectly equal mass undergo a perfectly elastic, one-dimensional collision?",
+        "answer": "When two bodies of *identically equal mass* collide elastically in one dimension, they mathematically *interchange their velocities* entirely after the moment of impact.",
+        "category": "important",
+        "badgeTitle": "MATHEMATICAL RESULT",
+        "badgeText": "$v'_1 = v_2$ and $v'_2 = v_1$"
+      },
+      {
+        "question": "Describe the exact outcome when a moving billiard ball collides elastically with an identical, stationary billiard ball.",
+        "answer": "The originally moving ball comes to a *complete, immediate stop*, while the previously stationary ball takes off forward with the *exact same velocity* the first ball initially possessed.",
+        "category": "important",
+        "badgeTitle": "CONDITION",
+        "badgeText": "$m_1 = m_2$, with target velocity $v_2 = 0$."
+      },
+      {
+        "question": "How does the physics of a light body colliding with a massive stationary body apply to a squash player hitting a wall?",
+        "answer": "The squash ball (light body) strikes the *massive, immovable wall* (massive stationary body) and instantly *bounces back* with nearly the exact same velocity in reverse, while the wall's velocity remains zero.",
+        "category": "important",
+        "badgeTitle": "FORMULAIC APPROXIMATION",
+        "badgeText": "$v'_1 \\approx -v$, $v'_2 = 0$"
+      },
+      {
+        "question": "From a physics standpoint, why is a successful karate chop breaking a pile of bricks categorized as an inelastic collision?",
+        "answer": "It is highly *inelastic* because the striking hand does *not rebound*; the kinetic energy is deliberately *absorbed by the bricks*, transforming into *heat*, *sound*, and the deformation force required to permanently fracture the material.",
+        "category": "important",
+        "badgeTitle": "OUTCOME",
+        "badgeText": "No elastic restitution occurs."
+      },
+      {
+        "question": "How is kinetic energy fundamentally redistributed during an inelastic automobile crash?",
+        "answer": "During a severe crash, the vehicles intentionally *crumple* and *deform*, absorbing the destructive impact energy by converting the vast majority of the original *kinetic energy* into *heat*, *loud sound*, and permanent *structural damage*.",
+        "category": "important",
+        "badgeTitle": "SAFETY FEATURE",
+        "badgeText": "This prevents elastic bouncing, reducing passenger whiplash."
+      },
+      {
+        "question": "Why does a collision between a standard cricket bat and a ball invariably demonstrate inelastic behavior?",
+        "answer": "The impact is *inelastic* because the ball physically *compresses* and *deforms* violently upon contact, and the rigid bat structure absorbs shock, permanently converting a fraction of the kinetic energy into dissipated *heat* and *sound*.",
+        "category": "important",
+        "badgeTitle": "CONCLUSION",
+        "badgeText": "Perfect kinetic conservation is impossible in this scenario."
+      },
+      {
+        "question": "Why is the specific order of vector multiplication completely irrelevant when calculating a scalar product?",
+        "answer": "The order is irrelevant because the scalar product strictly obeys the *commutative property*, meaning the mathematical product of the *magnitudes* and the *cosine* of the angle remains identical regardless of the sequence.",
+        "category": "conceptual",
+        "badgeTitle": "PROOF",
+        "badgeText": "$A.B = B.A$"
+      },
+      {
+        "question": "How is the physical concept of mechanical work accurately represented using vector multiplication?",
+        "answer": "Work is accurately calculated as the *dot product* of the *force* and *displacement* vectors, representing the *effective component* of the force acting strictly in the direction of motion.",
+        "category": "conceptual",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$W = F.d = Fd \\cos \\theta$"
+      },
+      {
+        "question": "What specific kinematic pairing is inherently described by the third equation of motion?",
+        "answer": "The third equation of motion is unique because it strictly pairs the kinematic variables of *velocity* and *position* (displacement), purposefully completely *eliminating the time variable* from the mathematical relationship.",
+        "category": "conceptual",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$2aS = v_f^2 - v_i^2$"
+      },
+      {
+        "question": "Why is a negative sign mathematically assigned to specific vector quantities when using linear equations of motion?",
+        "answer": "A negative sign is deliberately assigned to any vector quantity (like acceleration or displacement) whose *physical direction* is strictly *opposite* to the direction of the defined *initial velocity*.",
+        "category": "conceptual",
+        "badgeTitle": "CONVENTION",
+        "badgeText": "Initial velocity is universally taken as positive."
+      },
+      {
+        "question": "Under what specific condition is the acceleration due to gravity ($g$) mathematically taken as a positive value?",
+        "answer": "The value of $g$ is taken as strictly *positive* for a *falling body* where the initial velocity is zero, and *negative* for a body projected vertically upward against gravity.",
+        "category": "conceptual",
+        "badgeTitle": "VALUE",
+        "badgeText": "$+9.8 \\text{ m s}^{-2}$ for free fall from rest."
+      },
+      {
+        "question": "Why do two different physical bodies, when allowed to fall freely from the exact same height in a vacuum, strike the ground simultaneously?",
+        "answer": "According to Galileo, all bodies fall freely under the *exact same uniform acceleration due to gravity*, definitively proving that a body's *mass does not affect its falling velocity* in the absence of air friction.",
+        "category": "conceptual",
+        "badgeTitle": "CONDITION",
+        "badgeText": "Moving strictly in a vacuum."
+      },
+      {
+        "question": "Why does a horizontally projected ball and a simultaneously dropped ball from the exact same height hit the level ground at the exact same time?",
+        "answer": "They strike the ground simultaneously because the *downward vertical motion* is completely *independent* of the forward horizontal motion; both experience *identical downward acceleration* due to gravity.",
+        "category": "conceptual",
+        "badgeTitle": "OBSERVATION",
+        "badgeText": "Their vertical displacements are equal at any given time $t$."
+      },
+      {
+        "question": "What is the specific kinematic effect on a projectile's trajectory if it is fired at an angle strictly less than $45^\\circ$?",
+        "answer": "If the angle is less than $45^\\circ$, the *maximum height* reached by the projectile is visibly reduced, and the resulting *horizontal range* is also proportionally *less* than the maximum possible theoretical range.",
+        "category": "conceptual",
+        "badgeTitle": "TRAJECTORY FACT",
+        "badgeText": "Shallow angles yield shorter flights."
+      },
+      {
+        "question": "Why do complementary angles of projection (e.g., $30^\\circ$ and $60^\\circ$) result in the exact same horizontal range?",
+        "answer": "Because the mathematical range formula relies on $\\sin 2\\theta$, and the sine of *double a complementary angle* yields the *exact same trigonometric value*, making the ratio $R/R'$ strictly equal to $1$.",
+        "category": "conceptual",
+        "badgeTitle": "MATHEMATICAL PROOF",
+        "badgeText": "$\\sin 2(30^\\circ) = \\sin 60^\\circ$ and $\\sin 2(60^\\circ) = \\sin 120^\\circ = \\sin 60^\\circ$."
+      },
+      {
+        "question": "How does air resistance visually alter the ideal mathematical parabolic trajectory of a high-speed projectile?",
+        "answer": "Air resistance continuously *slows down* the forward motion, causing the actual trajectory to fall *considerably short* of a perfect parabola, creating a *skewed path* characterized by a noticeably *steeper descent* than ascent.",
+        "category": "conceptual",
+        "badgeTitle": "VISUAL INDICATOR",
+        "badgeText": "Actual path is consistently inside the ideal path envelope."
+      },
+      {
+        "question": "Why does the air resistance experienced by a projectile actively decrease throughout its flight rather than remain constant?",
+        "answer": "Because air resistance is a *velocity‑dependent force*; as the object naturally *slows down* over time, the opposing drag force *proportionally decreases*, meaning the object retards more slowly as it falls.",
+        "category": "conceptual",
+        "badgeTitle": "CONSEQUENCE",
+        "badgeText": "Non-uniform horizontal deceleration."
+      },
+      {
+        "question": "Why does a heavy football objectively hurt a catcher significantly more than a light stone moving at the identical speed?",
+        "answer": "The football possesses a *vastly larger linear momentum* due to its significantly greater mass, allowing it to exert a *much harsher stopping force* upon sudden deceleration.",
+        "category": "conceptual",
+        "badgeTitle": "FORMULA",
+        "badgeText": "Momentum $p = mv$"
+      },
+      {
+        "question": "Can a steadily moving object physically possess \"impulse\" while in transit?",
+        "answer": "No, a moving object inherently possesses *momentum*, but *impulse* strictly measures a *physical change in momentum* over time caused by an applied external force; it is not a persistent property of constant motion.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPT CLARIFICATION",
+        "badgeText": "Impulse requires an active interaction."
+      },
+      {
+        "question": "How does human hair biologically act as a functional \"crumple zone\" for the skull during a blunt impact?",
+        "answer": "The hair and skin slightly compress, deliberately *extending the time* of the physical collision, which means a *drastically larger force* (e.g., $50\\text{ N}$ vs $5\\text{ N}$) is actively required to physically fracture the cranium.",
+        "category": "conceptual",
+        "badgeTitle": "PHYSICS PRINCIPLE",
+        "badgeText": "Increased time equals decreased average force."
+      },
+      {
+        "question": "What is the fundamental physics principle utilized by modern automobile seatbelts to drastically reduce passenger injury?",
+        "answer": "Seatbelts deliberately *stretch* to apply a restraining force over an *extended time duration*, safely dissipating the kinetic energy and completely preventing the rapid, lethal momentum change of striking the windshield.",
+        "category": "conceptual",
+        "badgeTitle": "APPLICATION",
+        "badgeText": "Life-saving impulse modification."
+      },
+      {
+        "question": "How does the internal padding strictly inside a motorcycle safety helmet fundamentally protect the rider's brain during a severe crash?",
+        "answer": "The thick padding structurally *compresses* to deliberately *extend the time interval* of the physical collision, thereby drastically reducing the lethal *average force* applied directly to the human head.",
+        "category": "conceptual",
+        "badgeTitle": "SAFETY STANDARD",
+        "badgeText": "Maximizing collision time $\\Delta t$."
+      },
+      {
+        "question": "Why is dealing with \"impulse\" mathematically more convenient than analyzing raw force when a bat powerfully hits a cricket ball?",
+        "answer": "The actual physical force varies *violently* from instant to instant during the microsecond collision, making the mathematical product of *average force* and *total time* far easier to calculate than instantaneous values.",
+        "category": "conceptual",
+        "badgeTitle": "FORMULA",
+        "badgeText": "Impulse = $F_{avg} \\times t$"
+      },
+      {
+        "question": "Why does a tennis ball practically never rebound to its original drop height on a standard court?",
+        "answer": "It undergoes an *inelastic collision* where a portion of its original *kinetic energy* is permanently lost to *internal molecular friction*, *heat generation*, and temporary *structural distortion*.",
+        "category": "conceptual",
+        "badgeTitle": "ENERGY REALITY",
+        "badgeText": "K.E. is never conserved here."
+      },
+      {
+        "question": "When a fast-moving billiard ball collides head-on elastically with an identical stationary one, why does the first ball stop completely?",
+        "answer": "In a perfectly elastic 1D collision involving bodies of *identical mass*, the physics strictly dictates that the objects *perfectly and entirely interchange their velocities* upon impact.",
+        "category": "conceptual",
+        "badgeTitle": "CONDITION",
+        "badgeText": "$m_1 = m_2$ and $v_2 = 0$ yields $v'_1 = 0$ and $v'_2 = v_1$."
+      },
+      {
+        "question": "How does a professional squash player expertly utilize the physics of a light body colliding with a massive stationary body?",
+        "answer": "The light squash ball impacts the *massive, completely immovable wall* and elastically *bounces back* in the reverse direction with practically the exact same incident speed.",
+        "category": "conceptual",
+        "badgeTitle": "MATHEMATICAL APPROXIMATION",
+        "badgeText": "$v'_1 \\approx -v$"
+      },
+      {
+        "question": "Why is a powerful karate chop deliberately executing a strike through a pile of bricks categorized scientifically as an inelastic collision?",
+        "answer": "The striking hand does *not rebound* elastically; the vast majority of kinetic energy is directly and permanently *absorbed* into generating the severe force required for breaking the bricks, alongside heat and sound.",
+        "category": "conceptual",
+        "badgeTitle": "OUTCOME",
+        "badgeText": "Complete failure to conserve kinetic energy."
+      },
+      {
+        "question": "How does the deliberate crumpling of an automobile chassis during a severe crash physically demonstrate inelastic behavior?",
+        "answer": "The chassis intentionally *deforms permanently*, safely *absorbing* the massive kinetic energy and completely stopping the car from dangerously *bouncing back* (rebounding) into active traffic.",
+        "category": "conceptual",
+        "badgeTitle": "ENGINEERING GOAL",
+        "badgeText": "Maximum energy absorption, zero restitution."
+      },
+      {
+        "question": "Why does a collision between a standard rigid cricket bat and a ball inevitably demonstrate inelastic behavior despite the bat's stiffness?",
+        "answer": "The ball physically *compresses* and *deforms* violently upon impact, and the rigid bat structure itself absorbs high-frequency shock, permanently converting a fraction of the kinetic energy into dissipated *heat* and *loud sound*.",
+        "category": "conceptual",
+        "badgeTitle": "REALITY",
+        "badgeText": "Perfect elasticity is impossible in sports equipment."
+      },
+      {
+        "question": "Why must a skilled hunter aiming a rifle at a distant tree branch deliberately aim slightly above the visible target?",
+        "answer": "Because the fired bullet inherently acts as a *horizontal projectile* and immediately begins to *fall vertically* under the continuous acceleration of gravity, requiring a calculated upward compensation to hit the exact mark.",
+        "category": "conceptual",
+        "badgeTitle": "REASON",
+        "badgeText": "Vertical drop $y = \\frac{1}{2}gt^2$."
+      },
+      {
+        "question": "From a momentum perspective, why does a person falling directly onto a soft heap of sand hurt considerably less than striking a rigid concrete floor?",
+        "answer": "The yielding sand drastically *increases the time duration* of the physical impact, which proportionally and safely decreases the crippling *average rate of change of momentum* (force) exerted on the human body.",
+        "category": "conceptual",
+        "badgeTitle": "PHYSICS CONCEPT",
+        "badgeText": "Impulse manipulation ($F = \\Delta p / t$)."
+      },
+      {
+        "question": "Under what precise physical circumstance is the instantaneous velocity of a thrown object exactly zero while its acceleration is definitively not zero?",
+        "answer": "At the *absolute highest point* (peak) of a vertically thrown object's trajectory, its instantaneous vertical velocity is strictly *zero*, but its acceleration remains a constant $9.8 \\text{ m/s}^2$ *downwards*.",
+        "category": "conceptual",
+        "badgeTitle": "KINEMATIC EDGE CASE",
+        "badgeText": "Velocity vector flips, acceleration is constant."
+      },
+      {
+        "question": "Under what precise physical circumstance is the linear acceleration of a vehicle exactly zero while its velocity remains strictly non-zero?",
+        "answer": "This strictly occurs when the vehicle is *cruising effortlessly* along a perfectly straight path with a *constant, uniform velocity*, meaning there is absolutely no rate of change in its speed or direction.",
+        "category": "conceptual",
+        "badgeTitle": "CONDITION",
+        "badgeText": "$\\Delta v = 0$ yields $a = 0$."
+      },
+      {
+        "question": "Under what specific trajectory condition are the velocity and acceleration vectors of a projectile strictly perpendicular to one another?",
+        "answer": "At the *exact top* of a parabolic trajectory, where the velocity vector is completely *horizontal* ($v_x$ only) and the acceleration due to gravity is completely *vertical* (downward).",
+        "category": "conceptual",
+        "badgeTitle": "ANGLE",
+        "badgeText": "$\\theta = 90^\\circ$ between $v$ and $g$."
+      },
+      {
+        "question": "Provide a practical real-world example where kinetic energy is forcefully transformed into severe structural deformation and loud sound during an inelastic interaction.",
+        "answer": "A classic example of an extreme inelastic collision is a *high-speed bullet fired directly into a wooden block*, where the bullet *embeds itself* and kinetic energy is permanently lost to friction, splitting the wood, and thermal heating.",
+        "category": "conceptual",
+        "badgeTitle": "ENERGY STATE",
+        "badgeText": "$(K.E.)_i > (K.E.)_f$"
+      },
+      {
+        "question": "Why is the specific fractional amount of kinetic energy definitively lost in a perfectly inelastic 1D collision mathematically represented by the ratio $m_2 / (m_1 + m_2)$?",
+        "answer": "Because the *target's mass* ($m_2$) relative to the *total combined mass* directly dictates the exact mathematical proportion of incident kinetic energy that must be permanently *absorbed* when the two masses physically stick together to conserve momentum.",
+        "category": "conceptual",
+        "badgeTitle": "MATHEMATICAL PROOF",
+        "badgeText": "Derived from $\\Delta K.E. / (K.E.)_i$."
+      }
+    ],
     "3": [],
     "4": [],
     "5": [],
