@@ -249,6 +249,13 @@ const initializeNotesCraftApp = () => {
     const commentsSection = document.getElementById('comments-section');
     const leaderboardTopThree = document.getElementById('leaderboardTopThree');
     const leaderboardEmptyState = document.getElementById('leaderboardEmptyState');
+    const examCountdown = document.getElementById('exam-countdown');
+    const examCountdownGrid = document.getElementById('examCountdownGrid');
+    const examCountdownMessage = document.getElementById('examCountdownMessage');
+    const examDays = document.getElementById('examDays');
+    const examHours = document.getElementById('examHours');
+    const examMinutes = document.getElementById('examMinutes');
+    const examSeconds = document.getElementById('examSeconds');
     const body = document.body;
     const themeStorageKey = 'notescraft_theme';
     const flashcardStorageKey = 'notescraft_flashcard_mode';
@@ -1281,6 +1288,88 @@ const initializeNotesCraftApp = () => {
         flashcardFabBtn.classList.toggle('is-visible', Boolean(shouldShow));
     };
 
+    const initExamCountdown = () => {
+        if (!examCountdown || !examCountdownGrid || !examCountdownMessage || !examDays || !examHours || !examMinutes || !examSeconds) {
+            return;
+        }
+
+        const targetTimestamp = new Date('May 20, 2026 00:00:00').getTime();
+        if (!Number.isFinite(targetTimestamp)) {
+            return;
+        }
+
+        const dayMs = 24 * 60 * 60 * 1000;
+        const hourMs = 60 * 60 * 1000;
+        const minuteMs = 60 * 1000;
+
+        let countdownIntervalId = null;
+        let lastDays = null;
+        let lastHours = null;
+        let lastMinutes = null;
+        let lastSeconds = null;
+
+        const updateSegment = (element, value, shouldPad = true) => {
+            const nextText = shouldPad ? String(value).padStart(2, '0') : String(value);
+            if (element.textContent !== nextText) {
+                element.textContent = nextText;
+            }
+        };
+
+        const completeCountdown = () => {
+            updateSegment(examDays, 0, false);
+            updateSegment(examHours, 0);
+            updateSegment(examMinutes, 0);
+            updateSegment(examSeconds, 0);
+
+            examCountdownGrid.classList.add('hidden');
+            examCountdownMessage.textContent = 'Best of Luck for your Exams! 🚀';
+            examCountdownMessage.classList.remove('hidden');
+
+            if (countdownIntervalId) {
+                window.clearInterval(countdownIntervalId);
+                countdownIntervalId = null;
+            }
+        };
+
+        const tickCountdown = () => {
+            const now = Date.now();
+            const distance = targetTimestamp - now;
+
+            if (distance <= 0) {
+                completeCountdown();
+                return;
+            }
+
+            examCountdownGrid.classList.remove('hidden');
+            examCountdownMessage.classList.add('hidden');
+
+            const daysLeft = Math.floor(distance / dayMs);
+            const hoursLeft = Math.floor((distance % dayMs) / hourMs);
+            const minutesLeft = Math.floor((distance % hourMs) / minuteMs);
+            const secondsLeft = Math.floor((distance % minuteMs) / 1000);
+
+            if (daysLeft !== lastDays) {
+                updateSegment(examDays, daysLeft, false);
+                lastDays = daysLeft;
+            }
+            if (hoursLeft !== lastHours) {
+                updateSegment(examHours, hoursLeft);
+                lastHours = hoursLeft;
+            }
+            if (minutesLeft !== lastMinutes) {
+                updateSegment(examMinutes, minutesLeft);
+                lastMinutes = minutesLeft;
+            }
+            if (secondsLeft !== lastSeconds) {
+                updateSegment(examSeconds, secondsLeft);
+                lastSeconds = secondsLeft;
+            }
+        };
+
+        tickCountdown();
+        countdownIntervalId = window.setInterval(tickCountdown, 1000);
+    };
+
     const applyFlashcardMode = (enabled) => {
         isFlashcardMode = Boolean(enabled);
         body.classList.toggle('flashcard-mode', isFlashcardMode);
@@ -1322,6 +1411,7 @@ const initializeNotesCraftApp = () => {
     };
 
     applyTheme(getInitialTheme());
+    initExamCountdown();
     initFlashcardMode();
     initOptInGoogleAuth();
     initCommentsSection();

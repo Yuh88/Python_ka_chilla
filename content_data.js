@@ -3948,18 +3948,599 @@ const siteData = {
     ],
     "7": [
       {
-        "question": "What is the definition of data analytics?",
-        "answer": "Data analytics is the process of \"examining data\" to discover useful information, patterns and trends to support decision-making.",
+        "question": "What are \"Terms of Use\" in computing systems?",
+        "answer": "\"Terms of Use\" are *legal agreements* that outline how a *service* or *product* can be used, which are set by the provider and must be *agreed upon* by the user.",
         "category": "most",
-        "badgeTitle": "CORE OBJECTIVE",
-        "badgeText": "Analyzing real-world data to make informed choices."
+        "badgeTitle": "ALTERNATIVE NAMES",
+        "badgeText": "They are also called Terms and Conditions or Terms of Service."
       },
       {
-        "question": "What is the definition of data analytics?",
-        "answer": "Data analytics is the process of *examining data* to discover useful information, patterns and trends to support decision-making.",
+        "question": "What is the primary purpose of establishing Terms of Use between a provider and a user?",
+        "answer": "The main purpose is to establish a *fair* and *transparent relationship*, ensuring both parties fully understand their *rights* and *obligations*.",
         "category": "most",
-        "badgeTitle": "CORE OBJECTIVE",
-        "badgeText": "Analyzing real-world data to make informed choices."
+        "badgeTitle": "REAL-WORLD EXAMPLE",
+        "badgeText": "An online shopping platform like Daraz includes clauses about payment methods, return policies, and deliveries."
+      },
+      {
+        "question": "How do Terms of Use ensure the \"Protection of Rights\" for users?",
+        "answer": "They protect users by clearly *defining their rights*, such as the *right to privacy*, the right to a certain level of service, and the right to *seek redress* if issues occur.",
+        "category": "most",
+        "badgeTitle": "APPLICATION",
+        "badgeText": "A food delivery service's terms will specify protocols for delayed or incorrect orders."
+      },
+      {
+        "question": "Why are \"Clarity and Transparency\" crucial components of Terms of Use?",
+        "answer": "They provide clarity on what the *service provider will deliver*, under what specific *conditions*, and clearly state what user actions are *not permitted*.",
+        "category": "most",
+        "badgeTitle": "BENEFIT",
+        "badgeText": "This prevents misunderstandings and helps users make informed decisions."
+      },
+      {
+        "question": "How do Terms of Use act as \"Legal Safeguards\" for businesses?",
+        "answer": "They act as a safeguard against the *misuse of services* by setting strict *boundaries* to protect the company from potential *legal issues* caused by non-compliant users.",
+        "category": "most",
+        "badgeTitle": "BUSINESS EXAMPLE",
+        "badgeText": "Online education platforms prohibit unauthorized sharing of course content to protect intellectual property."
+      },
+      {
+        "question": "What is the function of the \"User Obligations\" clause in Terms of Use?",
+        "answer": "This clause explicitly outlines what is *expected from the user* while utilizing the platform or service.",
+        "category": "most",
+        "badgeTitle": "PRACTICAL EXAMPLE",
+        "badgeText": "Ride-sharing apps like Careem require a valid phone number and strictly prohibit non-transportation misuse."
+      },
+      {
+        "question": "Why do service providers include a \"Limitations of Liability\" clause?",
+        "answer": "These clauses legally *limit the service provider's liability* in the event that *something goes wrong* during the use of the service.",
+        "category": "most",
+        "badgeTitle": "BANKING SCENARIO",
+        "badgeText": "If an online banking app goes down temporarily, this clause limits the bank's liability for the disruption."
+      },
+      {
+        "question": "What information is detailed in \"Privacy and Data Use\" clauses?",
+        "answer": "These clauses explain exactly how a company will *collect*, *use*, and *protect user data*, addressing rising concerns around *data privacy*.",
+        "category": "most",
+        "badgeTitle": "MESSAGING EXAMPLE",
+        "badgeText": "WhatsApp's terms detail how user messages are securely stored and protected."
+      },
+      {
+        "question": "How do \"Intellectual Property Rights\" clauses protect service providers?",
+        "answer": "They legally protect *content owned* by the provider, including proprietary materials such as *logos* and *software*.",
+        "category": "most",
+        "badgeTitle": "NEWS WEBSITE EXAMPLE",
+        "badgeText": "Terms prohibit copying and distributing articles without explicit permission to prevent content misuse."
+      },
+      {
+        "question": "What is the purpose of a \"Termination of Service\" clause?",
+        "answer": "It explains the specific *conditions* under which the service provider retains the right to *terminate a user's access*.",
+        "category": "most",
+        "badgeTitle": "SOCIAL MEDIA POLICY",
+        "badgeText": "Platforms like Facebook can suspend accounts that spread hate speech or violate community standards."
+      },
+      {
+        "question": "What are the potential legal ramifications for a user violating Terms of Use?",
+        "answer": "Violating these terms can lead to serious *legal consequences*, where users can be *fined*, *sued*, or *banned* from the service completely.",
+        "category": "most",
+        "badgeTitle": "CYBERSECURITY RISK",
+        "badgeText": "Using unlicensed software can result in lawsuits for software piracy and expose companies to cyber threats."
+      },
+      {
+        "question": "What are the core ethical considerations companies must follow when drafting Terms of Use?",
+        "answer": "Companies must prioritize *fairness*, *transparency*, and *respect* for user rights, ensuring terms are *clear*, *straightforward*, and not deceptive.",
+        "category": "most",
+        "badgeTitle": "EDUCATIONAL EXAMPLE",
+        "badgeText": "Online course terms should transparently state certificate awarding criteria, data handling, and hidden fees."
+      },
+      {
+        "question": "What \"Personal Rights\" are guaranteed to users within ethical Terms of Use?",
+        "answer": "Personal rights include the *right to privacy*, the *right to be informed*, and the essential *right to withdraw consent* at any time.",
+        "category": "most",
+        "badgeTitle": "LEGAL FRAMEWORK",
+        "badgeText": "Pakistan's Personal Data Protection Bill grants users the right to access, correct, or delete personal data."
+      },
+      {
+        "question": "Define \"Spam\" in the context of digital security threats.",
+        "answer": "Spam refers to *unwanted messages* that are unsolicited and received directly on a user's *email* or *phone*.",
+        "category": "most",
+        "badgeTitle": "COMMON OCCURRENCE",
+        "badgeText": "Receiving numerous promotional text messages from completely unknown numbers."
+      },
+      {
+        "question": "How does \"Spyware\" compromise a user's digital environment?",
+        "answer": "Spyware is *harmful software* that installs itself to *secretly monitor* online activities on a computer or mobile device *without user knowledge*.",
+        "category": "most",
+        "badgeTitle": "INFECTION METHOD",
+        "badgeText": "Downloading a free application from an unreliable or untrusted source."
+      },
+      {
+        "question": "What are \"Cookies\" and how do they function on websites?",
+        "answer": "Cookies are *small files* placed on a device by websites to help the site *remember login details* and user *personal preferences*.",
+        "category": "most",
+        "badgeTitle": "PRIVACY CONCERN",
+        "badgeText": "While convenient, cookies can track browsing activities to display highly targeted advertisements."
+      },
+      {
+        "question": "Describe the security threat known as \"Phishing\".",
+        "answer": "Phishing is a *scam* where an attacker pretends to be a *trustworthy organization* to strategically *trick* users into surrendering *personal information*.",
+        "category": "most",
+        "badgeTitle": "THREAT STATISTIC",
+        "badgeText": "Over 90% of all phishing attacks are executed through deceptive emails."
+      },
+      {
+        "question": "How does \"Pharming\" differ from standard phishing attacks?",
+        "answer": "Pharming is a *sophisticated technique* where users are forcefully *redirected to a fake website* entirely *without their knowledge*, even if they type the correct URL.",
+        "category": "most",
+        "badgeTitle": "DATA THEFT",
+        "badgeText": "Attackers collect login credentials when the user attempts to log into the counterfeit banking site."
+      },
+      {
+        "question": "How do \"Spam Filters\" act as a security threat prevention technique?",
+        "answer": "Spam filters help maintain security by keeping *unwanted emails* out of the main inbox, automatically moving them to a *separate folder* or deleting them.",
+        "category": "most",
+        "badgeTitle": "USER BENEFIT",
+        "badgeText": "This ensures the user only interacts with legitimate and desired email communications."
+      },
+      {
+        "question": "What protective function does \"Antivirus Software\" provide to a computer?",
+        "answer": "Antivirus software actively *protects your computer* by scanning files downloaded from the internet for *hidden threats* and harmful programs like *spyware*.",
+        "category": "most",
+        "badgeTitle": "THREAT MITIGATION",
+        "badgeText": "If a file is harmful, the software issues an alert and actively prevents the file from causing system damage."
+      },
+      {
+        "question": "What is the primary positive impact of computing systems on education and knowledge?",
+        "answer": "Computing has dramatically increased *accessibility to information*, allowing people to access vast amounts of data and breaking down *barriers to education*.",
+        "category": "most",
+        "badgeTitle": "GLOBAL LEARNING",
+        "badgeText": "Platforms like Coursera allow students in remote areas to access courses from prestigious universities."
+      },
+      {
+        "question": "How have computing systems positively influenced global communication and social movements?",
+        "answer": "Computing has made it *easier and faster* to connect globally, with *social media platforms* enabling social movements to rapidly gain *global traction*.",
+        "category": "most",
+        "badgeTitle": "HISTORICAL IMPACT",
+        "badgeText": "Social media in Pakistan raised awareness and mobilized solidarity during the 2014 Peshawar school attack."
+      },
+      {
+        "question": "What is a major negative impact of computing regarding the dissemination of information?",
+        "answer": "A significant negative impact is the rapid *spread of misinformation* and *fake news*, which has the potential to cause widespread *social unrest*.",
+        "category": "most",
+        "badgeTitle": "HEALTH CRISIS EXAMPLE",
+        "badgeText": "The rapid spread of false information regarding the virus and vaccines during the COVID-19 pandemic."
+      },
+      {
+        "question": "Why are privacy concerns considered a severe negative impact of computing systems?",
+        "answer": "The increased use of systems leads to the *collection and storage* of vast amounts of *personal data*, which, without proper regulations, can be *misused*.",
+        "category": "most",
+        "badgeTitle": "NATIONAL DATA BREACH",
+        "badgeText": "Incidents like the leakage of citizens' data from NADRA highlight the critical need for robust data protection."
+      },
+      {
+        "question": "What is \"Digital Citizenship\"?",
+        "answer": "Digital citizenship involves understanding how to behave *responsibly and ethically* when utilizing digital technologies, ensuring a *positive and secure* online experience.",
+        "category": "most",
+        "badgeTitle": "CORE GOAL",
+        "badgeText": "It aims to protect individuals from harm, respect rights, and build a safe, inclusive digital environment."
+      },
+      {
+        "question": "How does \"Responsible Data Sharing\" contribute to the ethical use of information?",
+        "answer": "It mandates that users only share *personal* or *sensitive information* when absolutely necessary, and only with *trusted*, *verified entities* to prevent data misuse.",
+        "category": "most",
+        "badgeTitle": "DATA PROTECTION LAW",
+        "badgeText": "The 2020 Pakistan Personal Data Protection Bill mandates explicit consent before organizations can collect personal data."
+      },
+      {
+        "question": "What broad issues do legal challenges in computing systems typically cover?",
+        "answer": "Legal challenges cover *strict compliance issues* such as data protection, the enforcement of intellectual property rights, and adherence to relevant national laws.",
+        "category": "important",
+        "badgeTitle": "SCOPE OF LAW",
+        "badgeText": "This ensures that digital operations do not violate established legal frameworks."
+      },
+      {
+        "question": "What specific topics do ethical considerations in computing address?",
+        "answer": "Ethical considerations address the *moral implications* of technology, focusing on *privacy*, ensuring *fairness*, and evaluating the broader societal impacts of digital systems.",
+        "category": "important",
+        "badgeTitle": "MORAL FOCUS",
+        "badgeText": "It goes beyond just what is legal to what is morally right for society."
+      },
+      {
+        "question": "Who is responsible for setting the \"Terms of Use\" for a digital product or service?",
+        "answer": "These terms are strictly set by the *provider*, which can be a website operator, an app developer, or a software company.",
+        "category": "important",
+        "badgeTitle": "REQUIREMENT",
+        "badgeText": "They must be explicitly agreed upon by the user before access is granted."
+      },
+      {
+        "question": "How do Terms of Use create a \"fair and transparent relationship\"?",
+        "answer": "They establish fairness by ensuring that both the *provider* and the *user* completely understand their *rights* and their respective *obligations* to one another.",
+        "category": "important",
+        "badgeTitle": "MUTUAL BENEFIT",
+        "badgeText": "This prevents one-sided exploitation in digital agreements."
+      },
+      {
+        "question": "How do \"Clarity and Transparency\" in Terms of Use prevent misunderstandings?",
+        "answer": "They prevent confusion by explaining exactly what the *service provider will deliver*, under what specific *conditions*, and what user actions are strictly *not permitted*.",
+        "category": "important",
+        "badgeTitle": "USER ADVANTAGE",
+        "badgeText": "This empowers users to make fully informed decisions before committing to a service."
+      },
+      {
+        "question": "What specific details might a mobile payment app's Terms of Use contain regarding clarity?",
+        "answer": "A mobile payment app will clearly outline crucial operational limits such as *transaction limits*, *applicable fees*, and the exact process for reporting *unauthorized transactions*.",
+        "category": "important",
+        "badgeTitle": "FINANCIAL SECURITY",
+        "badgeText": "This ensures users know the financial boundaries of the application."
+      },
+      {
+        "question": "Why is it considered a good practice to periodically review Terms of Use?",
+        "answer": "Some online platforms frequently update their terms, making periodic reviews essential to stay informed about any *critical changes* to user rights or obligations.",
+        "category": "important",
+        "badgeTitle": "PROACTIVE HABIT",
+        "badgeText": "Assuming terms remain static can lead to unintentional violations."
+      },
+      {
+        "question": "What do ethical considerations dictate about the complexity of Terms of Use?",
+        "answer": "It is essential for companies to ensure their terms are *clear*, exceptionally *straightforward*, and absolutely not *overly complex* or deceptive.",
+        "category": "important",
+        "badgeTitle": "ETHICAL DESIGN",
+        "badgeText": "Burying important rules in confusing legal jargon is considered unethical."
+      },
+      {
+        "question": "What is the user's \"right to withdraw consent\"?",
+        "answer": "It is a fundamental personal right within terms of use that allows users to legally *revoke their permission* for a company to use their data or provide services.",
+        "category": "important",
+        "badgeTitle": "DATA AUTONOMY",
+        "badgeText": "This guarantees that user participation is always voluntary."
+      },
+      {
+        "question": "What exact details should be transparent when signing up for an online course?",
+        "answer": "The terms should clearly specify if a *certificate* will be awarded, exactly how *personal data* will be handled, and explicitly state if there are any *additional fees*.",
+        "category": "important",
+        "badgeTitle": "CONSUMER PROTECTION",
+        "badgeText": "Prevents hidden costs and false educational promises."
+      },
+      {
+        "question": "What are the severe consequences of privacy and security threats in the digital world?",
+        "answer": "These threats have the dangerous potential to fundamentally *compromise personal information*, *steal sensitive financial data*, and completely *undermine overall online security*.",
+        "category": "important",
+        "badgeTitle": "THREAT IMPACT",
+        "badgeText": "They affect both individuals and massive organizations alike."
+      },
+      {
+        "question": "How does a user typically get infected with \"Spyware\" on a mobile device?",
+        "answer": "Infection usually occurs when a user carelessly downloads a *free app* from an *unreliable source*, which then secretly installs the monitoring software.",
+        "category": "important",
+        "badgeTitle": "PREVENTION TIP",
+        "badgeText": "Only download applications from official, verified app stores."
+      },
+      {
+        "question": "What is the legitimate, helpful purpose of website \"Cookies\"?",
+        "answer": "Cookies are genuinely designed to help a website conveniently remember things like a user's *login details* and their specific *personal preferences*.",
+        "category": "important",
+        "badgeTitle": "USER CONVENIENCE",
+        "badgeText": "They prevent users from having to repeatedly log in to their favorite shopping sites."
+      },
+      {
+        "question": "How can \"Cookies\" be exploited to act as a privacy threat?",
+        "answer": "Cookies can be weaponized to continuously *track online activities*, such as specific products viewed, to aggressively display advertisements related to the user's interests.",
+        "category": "important",
+        "badgeTitle": "TRACKING MECHANISM",
+        "badgeText": "This creates a digital footprint of consumer behavior."
+      },
+      {
+        "question": "Give a real-world example of how a \"Phishing\" attack is executed.",
+        "answer": "An attacker sends a highly convincing *fake email* that visually mimics a legitimate bank, urgently asking the user to click a *malicious link* and enter account details.",
+        "category": "important",
+        "badgeTitle": "DECEPTION TACTIC",
+        "badgeText": "They rely on visual imitation and false urgency to steal data."
+      },
+      {
+        "question": "How can users visually guard against \"Pharming\" attacks on websites?",
+        "answer": "Users must meticulously check the website's address to ensure it is absolutely *correct* and *secure*, looking specifically for *\"https://\"* and a *padlock symbol* in the browser's address bar.",
+        "category": "important",
+        "badgeTitle": "VISUAL VERIFICATION",
+        "badgeText": "This confirms the connection is encrypted and authentic."
+      },
+      {
+        "question": "Why is relying on a single security tool insufficient for online protection?",
+        "answer": "Effective online security requires a *multi-layered approach* using multiple strategies—combining spam filters, antivirus software, and cookie management—to cover various threat types.",
+        "category": "important",
+        "badgeTitle": "DEFENSE STRATEGY",
+        "badgeText": "A combined defense provides significantly better protection against evolving online threats."
+      },
+      {
+        "question": "How has computing fundamentally improved global communication?",
+        "answer": "Computing has dramatically *revolutionized communication* by making it drastically *easier* and *faster* for people to instantly connect globally across vast distances.",
+        "category": "important",
+        "badgeTitle": "SOCIAL FACILITATION",
+        "badgeText": "Social media platforms enable both personal connections and massive global social movements."
+      },
+      {
+        "question": "How does computing technology actively drive national economic growth?",
+        "answer": "Computing drives growth by constantly creating *entirely new industries* and generating massive *new job opportunities* in the digital sector.",
+        "category": "important",
+        "badgeTitle": "BUSINESS TRANSFORMATION",
+        "badgeText": "E-commerce platforms allow traditional small businesses to reach national and international customers."
+      },
+      {
+        "question": "Why is critical evaluation of information necessary in the modern digital age?",
+        "answer": "The rapid spread of *misinformation* and *fake news* online makes digital literacy essential so people can critically evaluate the information they encounter.",
+        "category": "important",
+        "badgeTitle": "SOCIAL STABILITY",
+        "badgeText": "Without critical evaluation, fake news can easily lead to widespread social unrest and panic."
+      },
+      {
+        "question": "What severe privacy risk arises from the collection of vast amounts of personal data?",
+        "answer": "Without enforcement of proper regulations, collected personal data can be easily *misused*, leading to catastrophic *breaches of privacy* and systemic security failures.",
+        "category": "important",
+        "badgeTitle": "DATA LEAK EXAMPLE",
+        "badgeText": "The leakage of citizens' data from massive databases like NADRA."
+      },
+      {
+        "question": "What is an \"Internet in a Box\" project?",
+        "answer": "It is a technological initiative designed to provide comprehensive *offline educational resources* to remote areas that completely lack reliable *internet access*.",
+        "category": "important",
+        "badgeTitle": "EDUCATIONAL EQUITY",
+        "badgeText": "These projects demonstrate how technology can creatively bridge educational gaps in underserved regions."
+      },
+      {
+        "question": "How can good digital citizenship contribute to a broader digital environment?",
+        "answer": "By practicing responsible behaviors, individuals *protect themselves and others*, fiercely *respect the rights of others*, and actively contribute to a *safe and inclusive* digital space.",
+        "category": "important",
+        "badgeTitle": "COMMUNITY STANDARD",
+        "badgeText": "It requires avoiding bullying, harassment, and the spreading of false information."
+      },
+      {
+        "question": "What does responsible digital behavior regarding passwords entail?",
+        "answer": "It mandates the creation of *strong passwords* that are extremely difficult to guess, requiring a complex combination of *letters*, *numbers*, and *symbols*.",
+        "category": "important",
+        "badgeTitle": "SECURITY BASELINE",
+        "badgeText": "This prevents unauthorized access to personal online accounts."
+      },
+      {
+        "question": "What is the fundamental principle of the \"Ethical Use of Information\"?",
+        "answer": "It involves managing, utilizing, and handling digital data and online content in a manner that is fundamentally *fair* and strictly *lawful*.",
+        "category": "important",
+        "badgeTitle": "OPERATIONAL STANDARD",
+        "badgeText": "This covers everything from data sharing to intellectual property respect."
+      },
+      {
+        "question": "What does \"Respecting Copyright\" require from a user?",
+        "answer": "It absolutely requires that a user does not *copy* or *utilize* someone else's work in any capacity without obtaining *explicit*, *prior permission*.",
+        "category": "important",
+        "badgeTitle": "ACADEMIC RULE",
+        "badgeText": "Students must never copy text from online articles without properly citing the source."
+      },
+      {
+        "question": "How can a student actively \"Avoid Plagiarism\" in their work?",
+        "answer": "A student must consistently and properly *attribute ideas* and specific information directly to their *original authors* whenever utilizing outside sources.",
+        "category": "important",
+        "badgeTitle": "CITATION PRACTICE",
+        "badgeText": "This includes clearly mentioning the source of any direct quotes or borrowed concepts used in assignments."
+      },
+      {
+        "question": "Define \"Collaborative Problem Solving\" in a digital context.",
+        "answer": "It involves individuals actively *working together* using digital networks to strategically address complex challenges and successfully achieve *common goals*.",
+        "category": "important",
+        "badgeTitle": "SYNERGY",
+        "badgeText": "It leverages collective intelligence to find better solutions."
+      },
+      {
+        "question": "What does \"Human-Machine Collaboration\" involve?",
+        "answer": "It is the strategic process of *working with technology*—such as leveraging advanced software and digital tools—to heavily assist in tasks and solve problems.",
+        "category": "important",
+        "badgeTitle": "SKILL INTEGRATION",
+        "badgeText": "It involves combining analytical machine capabilities with nuanced human judgment for optimal results."
+      },
+      {
+        "question": "How do \"Readable Fonts\" visually contribute to digital accessibility?",
+        "answer": "Utilizing fonts that are *highly clear* and *large* makes digital content easily readable for all, specifically avoiding overly decorative styles that hinder comprehension.",
+        "category": "important",
+        "badgeTitle": "DESIGN STANDARD",
+        "badgeText": "Standard fonts like Arial or Times New Roman are universally recommended for accessibility."
+      },
+      {
+        "question": "Why is \"Alternative Text for Images\" a critical accessibility feature?",
+        "answer": "It provides explicit *text descriptions* for visual elements, ensuring that visually impaired users utilizing *screen readers* can fully understand the content.",
+        "category": "important",
+        "badgeTitle": "INCLUSIVITY RULE",
+        "badgeText": "All charts, graphs, and images in digital reports must include descriptive alt-text."
+      },
+      {
+        "question": "How does \"Direct Communication\" improve digital content creation?",
+        "answer": "It allows creators to *directly engage* with users to accurately understand their specific *needs* and *preferences*, allowing for highly targeted content improvements.",
+        "category": "important",
+        "badgeTitle": "FEEDBACK LOOP",
+        "badgeText": "Asking peers for input on a presentation and using that feedback to make structural adjustments."
+      },
+      {
+        "question": "Conceptually, why must a user fundamentally agree to the Terms of Use before utilizing a software product?",
+        "answer": "It establishes a *legal contract* ensuring the user explicitly accepts both their *rights and obligations*, while simultaneously protecting the provider's *intellectual property and liability*.",
+        "category": "conceptual",
+        "badgeTitle": "LEGAL PREREQUISITE",
+        "badgeText": "This agreement is mandatory; without it, the transaction or service provision cannot legally commence."
+      },
+      {
+        "question": "What specific percentage of phishing attacks are statistically carried out via email according to cybersecurity data?",
+        "answer": "Over *90%* of all phishing attacks are executed through deceptive *email communications*.",
+        "category": "conceptual",
+        "badgeTitle": "HIDDEN FACT",
+        "badgeText": "These emails are highly dangerous because they are designed to meticulously mimic legitimate organizations."
+      },
+      {
+        "question": "Where specifically can a citizen of Pakistan officially report an online scam, cyber attack, or digital harassment?",
+        "answer": "A Cyber Crime can be officially reported directly to the *NR3C-FIA* (National Response Centre for Cyber Crime) through their dedicated portal.",
+        "category": "conceptual",
+        "badgeTitle": "WEB PORTAL",
+        "badgeText": "The official reporting address is exactly [https://www.nr3c.gov.pk](https://www.nr3c.gov.pk)."
+      },
+      {
+        "question": "If a banking application crashes and a user misses a critical payment, what specific clause conceptually protects the bank from being sued for damages?",
+        "answer": "The *Limitations of Liability* clause specifically protects the provider by legally *capping their financial responsibility* for disruptions or indirect damages caused by service outages.",
+        "category": "conceptual",
+        "badgeTitle": "RISK MANAGEMENT",
+        "badgeText": "This clause is essential for software companies to avoid bankruptcy from unforeseen technical glitches."
+      },
+      {
+        "question": "On what conceptual grounds can a social media platform instantly delete a user's account without prior warning?",
+        "answer": "Under the *Termination of Service* clause, platforms retain the absolute right to suspend or terminate accounts that actively violate established *community standards*.",
+        "category": "conceptual",
+        "badgeTitle": "VIOLATION EXAMPLE",
+        "badgeText": "Instantly deleting an account for deliberately spreading hate speech or dangerous misinformation."
+      },
+      {
+        "question": "If a user's web browser suddenly starts showing bizarre pop-ups and tracking their keystrokes after downloading a free game, what exact type of threat is this?",
+        "answer": "This is a classic manifestation of *Spyware*, a malicious software that *secretly monitors* activities and steals data completely *without user knowledge*.",
+        "category": "conceptual",
+        "badgeTitle": "INFECTION VECTOR",
+        "badgeText": "This typically occurs when bypassing official stores to download unverified free applications."
+      },
+      {
+        "question": "Conceptually, how does the attacker's method of deception differ between Phishing and Pharming?",
+        "answer": "*Phishing* relies on tricking the user via *fake communication* (like an email) to click a link, whereas *Pharming* forcefully *redirects* the user to a fake site even if they type the *correct URL*.",
+        "category": "conceptual",
+        "badgeTitle": "THREAT LEVEL",
+        "badgeText": "Pharming is conceptually more dangerous because the user makes no initial mistake in navigation."
+      },
+      {
+        "question": "How can a seemingly harmless website feature designed for user convenience be conceptually weaponized to violate user privacy?",
+        "answer": "*Cookies*, while useful for saving logins, can be weaponized by third parties to secretly *track online activities* and build comprehensive profiles for *targeted advertisements*.",
+        "category": "conceptual",
+        "badgeTitle": "PRIVACY TRADE-OFF",
+        "badgeText": "Users trade behavioral privacy for browsing convenience."
+      },
+      {
+        "question": "Why is it technologically insufficient to rely solely on an antivirus program for complete online protection?",
+        "answer": "Effective online security fundamentally requires *multiple strategies*—because an antivirus cannot stop *phishing emails* (needs a spam filter) or prevent *data tracking* (needs cookie management).",
+        "category": "conceptual",
+        "badgeTitle": "DEFENSE IN DEPTH",
+        "badgeText": "A layered security approach covers various, distinct threat vectors simultaneously."
+      },
+      {
+        "question": "Conceptually, how does the \"Internet in a Box\" initiative function to overcome infrastructural limitations in remote areas?",
+        "answer": "It provides comprehensive *offline educational resources* pre-loaded onto a local network, successfully bridging the educational gap entirely *without requiring live internet access*.",
+        "category": "conceptual",
+        "badgeTitle": "DIGITAL EQUITY",
+        "badgeText": "This demonstrates how technological hardware can creatively bypass geographical network barriers."
+      },
+      {
+        "question": "If a student creates a fake social media profile to spread rumors about a classmate, which fundamental concept of computing ethics are they directly violating?",
+        "answer": "They are severely violating the core principles of *Digital Citizenship*, which mandates *responsible digital behavior*, respectful communication, and ensuring a *positive online experience* for everyone.",
+        "category": "conceptual",
+        "badgeTitle": "ETHICAL FAILURE",
+        "badgeText": "This behavior constitutes digital harassment and cyberbullying."
+      },
+      {
+        "question": "Why is a password like \"password123\" considered a severe security vulnerability conceptually?",
+        "answer": "It lacks computational complexity, making it extremely *easy to guess* by brute-force algorithms because it lacks a chaotic combination of *letters*, *numbers*, and *symbols*.",
+        "category": "conceptual",
+        "badgeTitle": "SECURITY PROTOCOL",
+        "badgeText": "Responsible digital behavior mandates the use of complex, non-dictionary passwords."
+      },
+      {
+        "question": "When entering credit card details on an e-commerce site, what precise visual indicators in the browser must a responsible digital citizen look for to avoid Pharming?",
+        "answer": "The user must explicitly verify that the website address starts with *\"https://\"* and features a secure *padlock symbol* directly in the browser's address bar.",
+        "category": "conceptual",
+        "badgeTitle": "ENCRYPTION VERIFICATION",
+        "badgeText": "This visual check confirms the site is legitimate and the data transmission is encrypted."
+      },
+      {
+        "question": "Conceptually, how does plagiarism structurally differ from standard copyright infringement in an academic setting?",
+        "answer": "*Plagiarism* is the ethical failure to properly *attribute ideas* to their original authors, whereas *copyright infringement* is the illegal act of copying a work *without obtaining permission*.",
+        "category": "conceptual",
+        "badgeTitle": "ACADEMIC INTEGRITY",
+        "badgeText": "You can technically plagiarize an open-source (non-copyrighted) idea by claiming it as your own."
+      },
+      {
+        "question": "In a complex data analysis scenario, what is the conceptual division of labor between the \"machine\" and the \"human\"?",
+        "answer": "In *Human-Machine Collaboration*, the machine executes the heavy computation using *data analysis tools*, while the human applies nuanced *human judgment* to interpret the data and *make decisions*.",
+        "category": "conceptual",
+        "badgeTitle": "SYNERGISTIC PROCESSING",
+        "badgeText": "This combines raw computational speed with contextual human logic."
+      },
+      {
+        "question": "According to standard legal frameworks tested in the exercises, which specific option is a universally included clause in Terms of Use agreements?",
+        "answer": "The *Termination of service* is a standard, essential clause included to protect the provider's right to manage user access.",
+        "category": "conceptual",
+        "badgeTitle": "EXERCISE CONCEPT",
+        "badgeText": "It dictates the end-of-life protocol for a user's account."
+      },
+      {
+        "question": "What is the primary legal utility of the \"Limitations of Liability\" clause for a software developer as highlighted in the chapter exercises?",
+        "answer": "Its primary utility is to explicitly *limit the company's liability*, protecting them from unlimited financial damages if the software fails or causes indirect harm.",
+        "category": "conceptual",
+        "badgeTitle": "LEGAL SHIELD",
+        "badgeText": "It prevents minor software bugs from resulting in massive lawsuits."
+      },
+      {
+        "question": "When evaluating an online information source, what is the crucial conceptual reason for identifying and understanding potential bias?",
+        "answer": "Understanding bias is vital for accurately *recognizing the source's agenda*, allowing the user to determine if the information is objective or maliciously skewed.",
+        "category": "conceptual",
+        "badgeTitle": "CRITICAL THINKING",
+        "badgeText": "This prevents users from being subtly manipulated by hidden propaganda."
+      },
+      {
+        "question": "Among the various societal shifts caused by computing, what is universally considered its most significant positive impact in the chapter exercises?",
+        "answer": "The most profound positive impact is the vastly *improved information accessibility*, which has democratized knowledge globally.",
+        "category": "conceptual",
+        "badgeTitle": "GLOBAL IMPACT",
+        "badgeText": "It breaks down historical geographic and economic barriers to learning."
+      },
+      {
+        "question": "Which specific behavioral practice is universally considered the gold standard for the ethical use of digital information?",
+        "answer": "The absolute gold standard is rigorously *respecting copyright* and actively *avoiding plagiarism* in all digital creations and communications.",
+        "category": "conceptual",
+        "badgeTitle": "CONTENT CREATION STANDARD",
+        "badgeText": "This ensures original creators are credited and compensated for their intellectual property."
+      },
+      {
+        "question": "What core behavior strictly defines responsible digital conduct when interacting in online communities or using shared networks?",
+        "answer": "A core tenet of responsible conduct is strictly *respecting online privacy*, ensuring you do not share or exploit the sensitive data of others.",
+        "category": "conceptual",
+        "badgeTitle": "DIGITAL EMPATHY",
+        "badgeText": "Treating others' digital data with the same security as your own physical property."
+      },
+      {
+        "question": "Why is the use of overly decorative, complex fonts considered a conceptual failure in digital accessibility design?",
+        "answer": "They severely hinder readability; accessible design requires the use of highly *clear and large* fonts like Arial to ensure the text is easily *readable for all* users, including those with visual impairments.",
+        "category": "conceptual",
+        "badgeTitle": "UNIVERSAL DESIGN",
+        "badgeText": "Prioritizing aesthetic complexity over basic legibility excludes vulnerable users."
+      },
+      {
+        "question": "How does the implementation of \"Alternative Text\" specifically translate visual data into an accessible format?",
+        "answer": "Alternative Text provides precise *text descriptions for images*, graphs, and charts so that *visually impaired users* utilizing screen reading software can fully *understand the visual content*.",
+        "category": "conceptual",
+        "badgeTitle": "ACCESSIBILITY REQUIREMENT",
+        "badgeText": "Without alt-text, an image is completely invisible and contextless to a screen reader."
+      },
+      {
+        "question": "Conceptually, why is \"Direct Communication\" superior to passive analytics when attempting to improve digital content accessibility?",
+        "answer": "Direct communication allows creators to actively *gather opinions* and directly *understand specific needs and preferences* from the users themselves, rather than guessing based on click-data.",
+        "category": "conceptual",
+        "badgeTitle": "ITERATIVE IMPROVEMENT",
+        "badgeText": "Direct user feedback leads to highly accurate and impactful design adjustments."
+      },
+      {
+        "question": "If a student fully rewrites an online article in their own words but fails to mention the original author, what exact ethical violation has occurred?",
+        "answer": "The student has committed *Plagiarism*, because even if the words are changed, failing to properly *attribute the foundational ideas* to the original author is a theft of intellectual effort.",
+        "category": "conceptual",
+        "badgeTitle": "CITATION RULE",
+        "badgeText": "Ideas must be cited, not just exact textual quotes."
+      },
+      {
+        "question": "Conceptually, how does digital \"Teamwork and Knowledge Sharing\" elevate the overall learning outcome of a group project?",
+        "answer": "By collaboratively *exchanging information*, sharing individual research findings, and debating insights, the team actively *broadens their collective understanding* far beyond individual capabilities.",
+        "category": "conceptual",
+        "badgeTitle": "EDUCATIONAL SYNERGY",
+        "badgeText": "The combined intellectual output is greater than the sum of its individual parts."
+      },
+      {
+        "question": "Why did the COVID-19 pandemic expose a critical societal vulnerability regarding digital literacy and computing impacts?",
+        "answer": "It revealed the deadly speed at which *misinformation and fake news* can spread on social media platforms, causing widespread *confusion*, *fear*, and *social unrest* when the public lacks critical evaluation skills.",
+        "category": "conceptual",
+        "badgeTitle": "REAL-WORLD CONSEQUENCE",
+        "badgeText": "A lack of digital literacy directly impacts public health and safety during a global crisis."
       }
     ],
     "8": [],

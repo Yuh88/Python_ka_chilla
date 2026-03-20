@@ -125,6 +125,32 @@
             <p class="auth-status-text" id="authStatusText" aria-live="polite"></p>
           </section>
 
+          <section class="exam-countdown-card" id="exam-countdown" aria-label="Exam Countdown Timer">
+            <div class="exam-countdown-header">
+              <h3 class="exam-countdown-title">Exam Countdown</h3>
+              <span class="exam-countdown-icon" aria-hidden="true">⏳</span>
+            </div>
+            <div class="exam-countdown-grid" id="examCountdownGrid" aria-live="polite">
+              <div class="exam-countdown-segment">
+                <span class="exam-countdown-value" id="examDays">00</span>
+                <span class="exam-countdown-label">d</span>
+              </div>
+              <div class="exam-countdown-segment">
+                <span class="exam-countdown-value" id="examHours">00</span>
+                <span class="exam-countdown-label">h</span>
+              </div>
+              <div class="exam-countdown-segment">
+                <span class="exam-countdown-value" id="examMinutes">00</span>
+                <span class="exam-countdown-label">m</span>
+              </div>
+              <div class="exam-countdown-segment">
+                <span class="exam-countdown-value" id="examSeconds">00</span>
+                <span class="exam-countdown-label">s</span>
+              </div>
+            </div>
+            <p class="exam-countdown-message hidden" id="examCountdownMessage"></p>
+          </section>
+
           <section class="leaderboard-card" aria-label="Top 3 Champions">
             <div class="leaderboard-card-header">
               <h3 class="leaderboard-card-title">Top 3 Champions</h3>
