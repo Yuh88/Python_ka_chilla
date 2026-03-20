@@ -1414,27 +1414,6 @@ const initializeNotesCraftApp = () => {
         }).filter((item) => item.text);
     };
 
-    const getChatUserIdFromMessageDoc = (docSnapshot, data = {}) => {
-        const parentCollection = docSnapshot && docSnapshot.ref ? docSnapshot.ref.parent : null;
-        const chatDocRef = parentCollection && parentCollection.parent ? parentCollection.parent : null;
-
-        if (chatDocRef && chatDocRef.id) {
-            return String(chatDocRef.id);
-        }
-
-        const senderId = String(data.senderId || '');
-        if (senderId && senderId !== ADMIN_CHANNEL_ID) {
-            return senderId;
-        }
-
-        const receiverId = String(data.receiverId || '');
-        if (receiverId && receiverId !== ADMIN_CHANNEL_ID) {
-            return receiverId;
-        }
-
-        return '';
-    };
-
     const startPrivateConversationListener = async (targetUserId = '') => {
         if (!currentAuthenticatedUser || !currentAuthenticatedUser.uid) return;
 
@@ -1496,6 +1475,20 @@ const initializeNotesCraftApp = () => {
             button.type = 'button';
             button.className = `private-chat-user-btn${entry.uid === activePrivateChatUserId ? ' active' : ''}`;
 
+            const avatar = document.createElement('img');
+            avatar.src = entry.photoURL || createCommentAvatarFallback(entry.name || 'S');
+            avatar.alt = `${entry.name || 'Student'} avatar`;
+            avatar.style.width = '28px';
+            avatar.style.height = '28px';
+            avatar.style.borderRadius = '999px';
+            avatar.style.objectFit = 'cover';
+            avatar.style.border = '1px solid rgba(148, 163, 184, 0.42)';
+            avatar.style.flexShrink = '0';
+
+            const metaWrap = document.createElement('div');
+            metaWrap.style.minWidth = '0';
+            metaWrap.style.flex = '1';
+
             const name = document.createElement('span');
             name.className = 'private-chat-user-name';
             name.textContent = entry.name || 'Student';
@@ -1504,8 +1497,13 @@ const initializeNotesCraftApp = () => {
             snippet.className = 'private-chat-user-snippet';
             snippet.textContent = entry.preview || 'Tap to open chat';
 
-            button.appendChild(name);
-            button.appendChild(snippet);
+            metaWrap.appendChild(name);
+            metaWrap.appendChild(snippet);
+            button.style.display = 'flex';
+            button.style.alignItems = 'center';
+            button.style.gap = '0.5rem';
+            button.appendChild(avatar);
+            button.appendChild(metaWrap);
             button.addEventListener('click', () => {
                 activePrivateChatUserId = entry.uid;
                 if (privateChatTitle) {
@@ -1520,7 +1518,7 @@ const initializeNotesCraftApp = () => {
     };
 
     const startAdminInboxListener = async () => {
-        if (!isCurrentUserAdmin()) return;
+        if (!currentAuthenticatedUser || !currentAuthenticatedUser.uid || !isCurrentUserAdmin()) return;
 
         if (adminInboxUnsubscribe) {
             adminInboxUnsubscribe();
@@ -1530,21 +1528,21 @@ const initializeNotesCraftApp = () => {
         try {
             const db = await initializeFirestoreCompat();
             adminInboxUnsubscribe = db
-                .collectionGroup('messages')
-                .where('receiverId', '==', ADMIN_CHANNEL_ID)
+                .collection('inbox')
                 .orderBy('timestamp', 'desc')
                 .onSnapshot((snapshot) => {
                     const latestByUser = new Map();
 
                     snapshot.docs.forEach((doc) => {
                         const data = doc.data() || {};
-                        const chatUserId = getChatUserIdFromMessageDoc(doc, data);
+                        const chatUserId = String(doc.id || '').trim();
                         if (!chatUserId || latestByUser.has(chatUserId)) return;
 
                         latestByUser.set(chatUserId, {
                             uid: chatUserId,
-                            name: String(data.senderName || data.senderEmail || data.senderId || 'Student'),
-                            preview: String(data.text || '').trim().slice(0, 52)
+                            name: String(data.displayName || data.email || 'Student'),
+                            photoURL: String(data.photoURL || ''),
+                            preview: String(data.lastMessage || '').trim().slice(0, 52)
                         });
                     });
 
@@ -1592,6 +1590,21 @@ const initializeNotesCraftApp = () => {
                     : new Date()
             });
 
+            const inboxPayload = {
+                lastMessage: messageText,
+                timestamp: firestoreFieldValue && typeof firestoreFieldValue.serverTimestamp === 'function'
+                    ? firestoreFieldValue.serverTimestamp()
+                    : new Date()
+            };
+
+            if (!adminMode) {
+                inboxPayload.displayName = String(currentAuthenticatedUser.displayName || getFirstName(currentAuthenticatedUser) || 'Student');
+                inboxPayload.email = String(currentAuthenticatedUser.email || '');
+                inboxPayload.photoURL = String(currentAuthenticatedUser.photoURL || '');
+            }
+
+            await db.collection('inbox').doc(chatUserId).set(inboxPayload, { merge: true });
+
             privateChatInput.value = '';
         } catch (error) {
             console.warn('Unable to send private message.', error);
@@ -1609,6 +1622,7 @@ const initializeNotesCraftApp = () => {
             return;
         }
 
+        setPrivateChatStatus('');
         const adminMode = isCurrentUserAdmin();
         privateChatModal.classList.remove('hidden');
 
