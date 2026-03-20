@@ -7232,7 +7232,855 @@ const siteData = {
         "badgeText": "Derived from $\\Delta K.E. / (K.E.)_i$."
       }
     ],
-    "3": [],
+    "3": [
+      {
+        "question": "What is circular motion?",
+        "answer": "It is the motion of material bodies where their *direction* is continuously changing, meaning their *velocities* are not constant.",
+        "category": "most",
+        "badgeTitle": "EXAMPLES",
+        "badgeText": "Satellites moving in circular orbits around the Earth, or a stone whirled around by a string."
+      },
+      {
+        "question": "Define one radian.",
+        "answer": "If the *length of the arc* is equal to the *radius* of the circle, then the angle drawn at the centre is called *one radian*.",
+        "category": "most",
+        "badgeTitle": "SI UNIT",
+        "badgeText": "It is the SI unit of angular measurement and its symbol is \"rad\"."
+      },
+      {
+        "question": "How is angular displacement defined for very small values?",
+        "answer": "For *very small values* of $\\Delta\\theta$, the angular displacement is considered a *vector quantity*.",
+        "category": "most",
+        "badgeTitle": "SIGN CONVENTION",
+        "badgeText": "It is assigned a positive sign when the sense of rotation is counter clock wise."
+      },
+      {
+        "question": "What is the right hand rule for angular displacement?",
+        "answer": "Grasp the *axis of rotation* in the right hand with fingers curling in the *direction of rotation*; the thumb points in the *direction of angular displacement*.",
+        "category": "most",
+        "badgeTitle": "DIRECTION",
+        "badgeText": "The direction associated with $\\Delta\\theta$ is along the axis of rotation."
+      },
+      {
+        "question": "What is the relationship between arc length and angular displacement in radians?",
+        "answer": "The arc length $S$ of a circle of radius $r$ which subtends an angle $\\theta$ at the centre is given by the equation $S=r\\theta$.",
+        "category": "most",
+        "badgeTitle": "CONDITION",
+        "badgeText": "The angle $\\theta$ must be measured in radian."
+      },
+      {
+        "question": "How many radians are in one complete revolution?",
+        "answer": "In one revolution, the distance covered is $S=2\\pi r$, which corresponds to an *angular displacement* of $2\\pi$ rad.",
+        "category": "most",
+        "badgeTitle": "DEGREE EQUIVALENT",
+        "badgeText": "1 revolution $=2\\pi$ rad $=360^{\\circ}$."
+      },
+      {
+        "question": "How many degrees are in one radian?",
+        "answer": "One radian is mathematically equivalent to $57.3^{\\circ}$.",
+        "category": "most",
+        "badgeTitle": "DERIVATION",
+        "badgeText": "$1~rad=\\frac{360^{\\circ}}{2\\pi}=57.3^{\\circ}$."
+      },
+      {
+        "question": "Define average angular velocity.",
+        "answer": "It is defined as the *rate* at which the *angular displacement* is changing with time, given by the *ratio* of angular displacement to the time interval.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$\\omega_{av}=\\frac{\\Delta\\theta}{\\Delta t}$."
+      },
+      {
+        "question": "What is instantaneous angular velocity?",
+        "answer": "It is the *limit* of the ratio $\\Delta\\theta/\\Delta t$ as the time interval $\\Delta t$ approaches to *zero*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$\\omega=Lim_{\\Delta t\\rightarrow0}\\frac{\\Delta\\theta}{\\Delta t}$."
+      },
+      {
+        "question": "What is the SI unit of angular velocity?",
+        "answer": "Angular velocity is measured in *radians per second*, which is its *SI unit*.",
+        "category": "most",
+        "badgeTitle": "ALTERNATIVE UNIT",
+        "badgeText": "It is also sometimes given in terms of revolution per minute (rpm)."
+      },
+      {
+        "question": "Define angular acceleration.",
+        "answer": "We define angular acceleration as the *rate of change* of *angular velocity*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$\\alpha_{av}=\\frac{\\omega_{f}-\\omega_{i}}{t_{f}-t_{i}}=\\frac{\\Delta\\omega}{\\Delta t}$."
+      },
+      {
+        "question": "What is instantaneous angular acceleration?",
+        "answer": "It is the *limit* of the ratio $\\frac{\\Delta\\omega}{\\Delta t}$ as $\\Delta t$ approaches *zero*.",
+        "category": "most",
+        "badgeTitle": "VECTOR NATURE",
+        "badgeText": "It is a vector quantity whose direction is along the axis of rotation."
+      },
+      {
+        "question": "How is the rotation of a rigid body described using a reference line?",
+        "answer": "The rotation of a rigid body can be described by the rotation of a *perpendicular reference line* dropped from a point on the body to the axis of rotation.",
+        "category": "most",
+        "badgeTitle": "PROPERTY",
+        "badgeText": "The line rotates with the same angular velocity and angular acceleration as the body."
+      },
+      {
+        "question": "What is the mathematical relationship between linear and angular velocities?",
+        "answer": "The magnitude of the *linear velocity* $v$ with which a point moves on the circumference is equal to the *product* of the *radius* $r$ and the *angular velocity* $\\omega$.",
+        "category": "most",
+        "badgeTitle": "EQUATION",
+        "badgeText": "$v=r\\omega$."
+      },
+      {
+        "question": "Why is linear velocity in circular motion also called tangential velocity?",
+        "answer": "Because the *direction* of the velocity is always along the *tangent* to the circle at that specific point.",
+        "category": "most",
+        "badgeTitle": "MAGNITUDE",
+        "badgeText": "The magnitude $v$ represents how fast the point is moving on the circumference of the circle."
+      },
+      {
+        "question": "What is the relation between linear and angular acceleration?",
+        "answer": "If the reference line is rotating with an angular acceleration $\\alpha$, a point at distance $r$ will have a *linear* or *tangential acceleration* $a_{t}$.",
+        "category": "most",
+        "badgeTitle": "EQUATION",
+        "badgeText": "$a_{t}=r\\alpha$."
+      },
+      {
+        "question": "Do all points on a rotating rigid body have the same linear speed?",
+        "answer": "No, points at *different distances* from the axis do not have the same speed or acceleration.",
+        "category": "most",
+        "badgeTitle": "CONSTANT VARIABLES",
+        "badgeText": "However, all points do have the same angular displacement, angular speed, and angular acceleration."
+      },
+      {
+        "question": "Under what condition do the equations of angular motion hold true?",
+        "answer": "The angular equations hold true only when the *axis of rotation is fixed*, so all angular vectors have the *same direction*.",
+        "category": "most",
+        "badgeTitle": "MANIPULATION",
+        "badgeText": "This allows them to be manipulated as scalars."
+      },
+      {
+        "question": "What are the three angular equations of motion for constant angular acceleration?",
+        "answer": "They are analogous to linear equations, replacing $S$, $v$, and $a$ with $\\theta$, $\\omega$, and $\\alpha$.",
+        "category": "most",
+        "badgeTitle": "EQUATIONS",
+        "badgeText": "$\\omega_{f}=\\omega_{i}+\\alpha t$, $2\\alpha\\theta=\\omega_{f}^{2}-\\omega_{i}^{2}$, and $\\theta=\\omega_{i}t+\\frac{1}{2}\\alpha t^{2}$."
+      },
+      {
+        "question": "Define centripetal force.",
+        "answer": "The force needed to *bend* the straight path of the particle into a circular path is called the *centripetal force*.",
+        "category": "most",
+        "badgeTitle": "FUNCTION",
+        "badgeText": "It changes the direction of velocity continuously at each point without altering the speed."
+      },
+      {
+        "question": "What is the direction of the centripetal force?",
+        "answer": "This force always *pulls* the object towards the *centre* of the circular path and is *perpendicular* to the tangential velocity at each point.",
+        "category": "most",
+        "badgeTitle": "ALTERNATIVE NAME",
+        "badgeText": "It is also referred to as a Centre seeking force."
+      },
+      {
+        "question": "What is the formula for centripetal force in terms of linear velocity?",
+        "answer": "For a body of mass $m$ moving with velocity $v$ in a path of radius $r$, the force is the *product* of mass and *centripetal acceleration*.",
+        "category": "most",
+        "badgeTitle": "EQUATION",
+        "badgeText": "$F_{c}=ma_{c}=\\frac{mv^{2}}{r}$."
+      },
+      {
+        "question": "What is the formula for centripetal force in terms of angular velocity?",
+        "answer": "Substituting $v=r\\omega$ into the linear equation gives the relationship based on *angular velocity*.",
+        "category": "most",
+        "badgeTitle": "EQUATION",
+        "badgeText": "$F_{c}=mr\\omega^{2}$."
+      },
+      {
+        "question": "In a vertical circle, how is tension calculated at the top point (Point A)?",
+        "answer": "At the top, the *vector sum* of the pull of the string (T) and the weight of the ball (w) provides the *centripetal force*.",
+        "category": "most",
+        "badgeTitle": "EQUATION",
+        "badgeText": "$T=m(\\frac{v^{2}}{r}-g)$."
+      },
+      {
+        "question": "What is the condition for tension to be zero at the top of a vertical circle?",
+        "answer": "If the ratio $\\frac{v^{2}}{r}$ is *equal* to $g$, then the tension $T$ will be *zero*.",
+        "category": "most",
+        "badgeTitle": "IMPLICATION",
+        "badgeText": "The required centripetal force is just equal to the weight."
+      },
+      {
+        "question": "What force provides the centripetal force for an object placed on a turntable?",
+        "answer": "For an object placed on a turntable, the *friction* is the *centripetal force*.",
+        "category": "most",
+        "badgeTitle": "CONSEQUENCE",
+        "badgeText": "If friction is insufficient, the object will move away from the centre."
+      },
+      {
+        "question": "Why are highway roads banked on quick turns?",
+        "answer": "Banked tracks are needed because *friction alone* cannot provide enough energy for *centripetal force* at high speeds.",
+        "category": "most",
+        "badgeTitle": "DESIGN",
+        "badgeText": "The outer edge of the track is kept slightly higher than the inner edge."
+      },
+      {
+        "question": "What are artificial satellites?",
+        "answer": "Satellites are objects that orbit in nearly *circular paths* around the Earth, held in orbit by the *gravitational pull*.",
+        "category": "most",
+        "badgeTitle": "STRAIGHT LINE",
+        "badgeText": "Without this pull, they would fly off in a straight line along the tangent to the orbit."
+      },
+      {
+        "question": "What is critical velocity for an artificial satellite?",
+        "answer": "It is the *minimum velocity* necessary to put a low flying satellite into *orbit* around the Earth.",
+        "category": "most",
+        "badgeTitle": "VALUE",
+        "badgeText": "The critical velocity is approximately $7.9~km~s^{-1}$."
+      },
+      {
+        "question": "How does altitude affect a satellite's required orbital speed and period?",
+        "answer": "The *higher* the satellite, the *slower* will be the required speed and the *longer* it will take to complete one revolution.",
+        "category": "most",
+        "badgeTitle": "REASON",
+        "badgeText": "Gravitational acceleration decreases inversely as the square of the distance from the centre."
+      },
+      {
+        "question": "What is the formula for the orbital velocity of a satellite?",
+        "answer": "Equating the *gravitational force* to the required *centripetal force* gives the orbital speed.",
+        "category": "most",
+        "badgeTitle": "EQUATION",
+        "badgeText": "$v=\\sqrt{\\frac{GM}{r}}$."
+      },
+      {
+        "question": "Does the mass of a satellite affect its orbit?",
+        "answer": "No, the *mass* of the satellite ($m_s$) *cancels out* in the derivation, showing that it is unimportant in describing the satellite's orbit.",
+        "category": "most",
+        "badgeTitle": "CONDITION",
+        "badgeText": "Any satellite at distance $r$ must have the specific orbital speed; any less will bring it tumbling back to the Earth."
+      },
+      {
+        "question": "Why do astronauts experience weightlessness in a satellite?",
+        "answer": "Everything inside the satellite experiences weightlessness because the satellite is *accelerating* towards the centre of the Earth as a *freely falling body*.",
+        "category": "most",
+        "badgeTitle": "SUPPORTING FORCE",
+        "badgeText": "The supporting force ($F_N$) acting on a body inside the satellite becomes zero."
+      },
+      {
+        "question": "How is artificial gravity created in a spaceship?",
+        "answer": "The spaceship is set into *rotation* around its own axis, pressing the astronaut towards the *outer rim*.",
+        "category": "most",
+        "badgeTitle": "EFFECT",
+        "badgeText": "The astronaut exerts a force on the 'floor' of the spaceship in much the same way as on the Earth."
+      },
+      {
+        "question": "What is the frequency required to create Earth-like artificial gravity?",
+        "answer": "Setting the *centripetal acceleration* equal to $g$ gives the frequency for artificial gravity like the Earth.",
+        "category": "most",
+        "badgeTitle": "EQUATION",
+        "badgeText": "$f=\\frac{1}{2\\pi}\\sqrt{\\frac{g}{R}}$."
+      },
+      {
+        "question": "Define Moment of Inertia.",
+        "answer": "The quantity $mr^{2}$ is known as the *moment of inertia* and plays the same role in angular motion as *mass* does in linear motion.",
+        "category": "most",
+        "badgeTitle": "SYMBOL",
+        "badgeText": "It is represented by $I$."
+      },
+      {
+        "question": "What does the moment of inertia of a rigid body depend on?",
+        "answer": "It depends not only on *mass* $m$ but also on $r^{2}$, meaning the *mass distribution* from the axis of rotation.",
+        "category": "most",
+        "badgeTitle": "EQUATION FOR RIGID BODY",
+        "badgeText": "$I=\\sum_{i=1}^{n}m_{i}{r_{i}}^{2}$."
+      },
+      {
+        "question": "What is the rotational analogue of Newton's second law?",
+        "answer": "By substituting *torque*, *moment of inertia*, and *angular acceleration*, we get the equation for rotation.",
+        "category": "most",
+        "badgeTitle": "EQUATION",
+        "badgeText": "$\\tau=I\\alpha$."
+      },
+      {
+        "question": "Define angular momentum of a particle.",
+        "answer": "The *angular momentum* $L$ of a particle relative to an origin is the *cross product* of its position vector $r$ and its *linear momentum* $p$.",
+        "category": "most",
+        "badgeTitle": "EQUATION",
+        "badgeText": "$L=r\\times p$."
+      },
+      {
+        "question": "What is the magnitude and SI unit of angular momentum?",
+        "answer": "The magnitude is $L=m~rv~sin~\\theta$, and the SI unit is $kg~m^{2}s^{-1}$ or *Js*.",
+        "category": "most",
+        "badgeTitle": "DIRECTION",
+        "badgeText": "It is perpendicular to the plane formed by $r$ and $p$, given by the right hand rule."
+      },
+      {
+        "question": "State the law of conservation of angular momentum.",
+        "answer": "If *no external torque* acts on a system, the *total angular momentum* of the system remains *constant*.",
+        "category": "most",
+        "badgeTitle": "MATHEMATICAL FORM",
+        "badgeText": "$I_{1}\\omega_{1}=I_{2}\\omega_{2}$."
+      },
+      {
+        "question": "How does a diver use the conservation of angular momentum?",
+        "answer": "After leaving the board, the diver *curls* his body to *decrease* his moment of inertia, which causes him to spin with a *large angular velocity*.",
+        "category": "most",
+        "badgeTitle": "LANDING",
+        "badgeText": "Stretching arms and legs outward increases inertia, resulting in a gentle speed for a smooth dive."
+      },
+      {
+        "question": "How does a force act when it alters only the speed of a moving body?",
+        "answer": "A force acting on a moving body *along the direction* of its velocity will change the *magnitude* of the velocity (speed) while keeping the *direction* unchanged.",
+        "category": "important",
+        "badgeTitle": "CONCEPT CONNECTION",
+        "badgeText": "This produces linear acceleration but no circular motion."
+      },
+      {
+        "question": "How does a force act when it alters only the direction of a moving body?",
+        "answer": "A *constant force* acting *perpendicular* to the velocity of a body moving in a circular path will change its *direction* continuously but its *speed* will remain the same.",
+        "category": "important",
+        "badgeTitle": "RESULTING MOTION",
+        "badgeText": "This produces a radial (centripetal) acceleration."
+      },
+      {
+        "question": "What orientation is chosen for the reference axes when describing circular motion?",
+        "answer": "The *z‑axis* is taken along the *axis of rotation* with the pivot 'O' as the origin, while the *x and y axes* are taken in the *plane of rotation*.",
+        "category": "important",
+        "badgeTitle": "VISUAL SETUP",
+        "badgeText": "Referencing a rigid body moving in a 3D coordinate plane."
+      },
+      {
+        "question": "Why is angular displacement considered a vector quantity only for infinitesimally small values?",
+        "answer": "For *very small values* of $\\Delta\\theta$, the angular displacement follows the *rules of vector addition*, making it a vector quantity.",
+        "category": "important",
+        "badgeTitle": "VECTOR PROPERTY",
+        "badgeText": "Large angular displacements do not commute and are therefore scalars."
+      },
+      {
+        "question": "What happens to the direction of angular velocity when the axis of rotation is fixed?",
+        "answer": "As the *axis of rotation is fixed*, the direction of $\\omega$ always remains the *same* and its magnitude can be manipulated as a *scalar*.",
+        "category": "important",
+        "badgeTitle": "MATHEMATICAL SIMPLIFICATION",
+        "badgeText": "This allows the use of simple algebraic kinematic equations for angular motion."
+      },
+      {
+        "question": "What is the physical significance of the reference line 'OP' in a rotating rigid body?",
+        "answer": "The line 'OP' is a *perpendicular* dropped from point P to the *axis of rotation*; the rotation of the entire rigid body is described by the rotation of this reference line.",
+        "category": "important",
+        "badgeTitle": "MOTION PROPERTY",
+        "badgeText": "The line OP rotates with the same angular velocity and acceleration as the rigid body."
+      },
+      {
+        "question": "In the limit as $\\Delta t \\rightarrow 0$, what does the arc length $P_1P_2$ represent?",
+        "answer": "As the time interval approaches zero, the length of the arc becomes *very small* and its direction represents the *direction of the tangent* to the circle at that point.",
+        "category": "important",
+        "badgeTitle": "GEOMETRICAL PROOF",
+        "badgeText": "This proves why linear velocity is always tangential."
+      },
+      {
+        "question": "Why is it necessary to have banked tracks on highway turns?",
+        "answer": "Turns taken so quickly that *friction alone cannot provide* enough energy for the required centripetal force require *banked tracks* to prevent vehicles from skidding.",
+        "category": "important",
+        "badgeTitle": "HIGHWAY DESIGN",
+        "badgeText": "The outer edge of the track is kept slightly higher than the inner edge."
+      },
+      {
+        "question": "What happens if the string snapping a whirling ball is suddenly broken?",
+        "answer": "The ball will not continue in a circular path but will follow a *straight line path* which is *tangent* to the circle at the point where the string snapped.",
+        "category": "important",
+        "badgeTitle": "NEWTON'S FIRST LAW",
+        "badgeText": "Inertia causes it to move in a straight line when the centripetal force is removed."
+      },
+      {
+        "question": "What provides the necessary centripetal force for an electron moving in a magnetic field?",
+        "answer": "A *normal* or *perpendicular magnetic force* compels a charged particle moving along a straight path to bend into a *circular path*.",
+        "category": "important",
+        "badgeTitle": "ATOMIC/SUBATOMIC EXAMPLE",
+        "badgeText": "This is a key example of centripetal force in electromagnetism."
+      },
+      {
+        "question": "What agency provides the centripetal force for a car taking a turn on a level road?",
+        "answer": "The necessary centripetal force is provided by the *friction* between the *tyres* and the *road*.",
+        "category": "important",
+        "badgeTitle": "HAZARD CONDITION",
+        "badgeText": "If the road is slippery, friction decreases, leading to skidding."
+      },
+      {
+        "question": "How does gravity behave for satellites at an altitude much greater than Earth's radius ($h >> R$)?",
+        "answer": "The *gravitational acceleration* decreases *inversely as the square of the distance* from the centre of the Earth, requiring a *slower orbital speed*.",
+        "category": "important",
+        "badgeTitle": "MATHEMATICAL RELATIONSHIP",
+        "badgeText": "Higher altitude = Slower speed and longer orbital period."
+      },
+      {
+        "question": "What happens if an artificial satellite's speed is less than the critical orbital speed?",
+        "answer": "Any speed *less than the required orbital speed* ($v = \\sqrt{GM/r}$) will cause the satellite to *fall out of orbit* and bring it tumbling back to the Earth.",
+        "category": "important",
+        "badgeTitle": "ORBITAL MECHANICS",
+        "badgeText": "The critical velocity is the absolute minimum speed required to maintain orbit."
+      },
+      {
+        "question": "How do we prove that the mass of a satellite does not affect its orbital velocity?",
+        "answer": "By equating *gravitational force* ($Gm_sM/r^2$) to *centripetal force* ($m_sv^2/r$), the *mass of the satellite* ($m_s$) *cancels out* on both sides of the equation.",
+        "category": "important",
+        "badgeTitle": "EQUATION IMPLICATION",
+        "badgeText": "$v = \\sqrt{GM/r}$ depends only on the Earth's mass and orbital radius."
+      },
+      {
+        "question": "Explain the concept of weightlessness inside a satellite using a spring balance.",
+        "answer": "A spring balance measures the *normal force* ($F_N$), but since the required centripetal force is perfectly provided by gravity ($Mg = Mv^2/r$), the resulting supporting normal force is *zero*.",
+        "category": "important",
+        "badgeTitle": "RESULTING STATE",
+        "badgeText": "$F_N = 0$ leaves the astronaut in a state of apparent weightlessness."
+      },
+      {
+        "question": "Why is extended weightlessness a problem for astronauts?",
+        "answer": "In a *gravity‑free space*, there is no force pushing the body, and extended exposure to weightlessness may severely affect the *performance and health* of the crew of the spaceships.",
+        "category": "important",
+        "badgeTitle": "SOLUTION",
+        "badgeText": "Artificial gravity is generated to counteract this."
+      },
+      {
+        "question": "How does a rotating spacecraft mimic gravity?",
+        "answer": "By setting the spaceship into *rotation* around its *central axis*, astronauts are pressed towards the *outer rim*, exerting a force on the floor similar to Earth's gravity.",
+        "category": "important",
+        "badgeTitle": "PHYSICS PRINCIPLE",
+        "badgeText": "The outer rim provides the necessary centripetal force via normal reaction."
+      },
+      {
+        "question": "In generating artificial gravity, what does the variable $R$ represent in the frequency formula?",
+        "answer": "The variable $R$ represents the *outer radius* of the spaceship that is rotating around its own central axis.",
+        "category": "important",
+        "badgeTitle": "FORMULA COMPONENT",
+        "badgeText": "Used in $f = \\frac{1}{2\\pi}\\sqrt{\\frac{g}{R}}$."
+      },
+      {
+        "question": "Why is the pivot point assumed to be frictionless when deriving the moment of inertia?",
+        "answer": "A *frictionless bearing* at the pivot point 'O' ensures that *no external resistive torque* opposes the applied force, allowing the pure rotational analogue of Newton's second law to be derived.",
+        "category": "important",
+        "badgeTitle": "IDEAL CONDITION",
+        "badgeText": "Ensures all applied force $F$ contributes to tangential acceleration $a_T$."
+      },
+      {
+        "question": "How do we transition from Newton's linear second law ($F=ma$) to its rotational analogue?",
+        "answer": "By substituting $a = r\\alpha$ into $F=ma$ to get $F=mr\\alpha$, and then multiplying both sides by $r$ to introduce *torque* ($\\tau = rF$), we derive $\\tau = mr^2\\alpha$.",
+        "category": "important",
+        "badgeTitle": "MATHEMATICAL SUBSTITUTION",
+        "badgeText": "This proves that $\\tau = I\\alpha$."
+      },
+      {
+        "question": "Why do most rigid bodies have complex moment of inertia calculations?",
+        "answer": "Because they have *different mass concentrations* at different distances from the axis of rotation, meaning their *mass distribution* is not uniform.",
+        "category": "important",
+        "badgeTitle": "CALCULATION METHOD",
+        "badgeText": "Requires summing up individual pieces: $I = \\sum m_i r_i^2$."
+      },
+      {
+        "question": "Why do all small pieces ($m_1, m_2, ... m_n$) of a rigid body share the same angular acceleration?",
+        "answer": "Because the body is *rigid*, all individual masses and particles maintain *fixed distances* from each other, resulting in them rotating with the *same angular acceleration* ($\\alpha$).",
+        "category": "important",
+        "badgeTitle": "KINEMATIC CONSTRAINT",
+        "badgeText": "Allows $\\alpha$ to be factored out of the summation in $\\tau = (\\sum m_i r_i^2)\\alpha$."
+      },
+      {
+        "question": "What is the condition for angular momentum ($L$) to be exactly $mrv$?",
+        "answer": "If a particle is moving in a *circle of radius $r$* with uniform angular velocity, the angle between the position vector ($r$) and tangential velocity ($v$) is exactly $90^\\circ$.",
+        "category": "important",
+        "badgeTitle": "TRIGONOMETRIC RESULT",
+        "badgeText": "Since $\\sin(90^\\circ) = 1$, the cross product simplifies to $L = mrv$."
+      },
+      {
+        "question": "How is the total angular momentum of a symmetric rigid body calculated?",
+        "answer": "By *summing* the angular momentum of each individual $i$-th particle ($m_i r_i^2 \\omega$) over all particles, which factors into the product of *total moment of inertia* ($I$) and *angular velocity* ($\\omega$).",
+        "category": "important",
+        "badgeTitle": "FINAL FORMULA",
+        "badgeText": "$L = I\\omega$."
+      },
+      {
+        "question": "What proves that the law of conservation of angular momentum is a fundamental principle of Physics?",
+        "answer": "Its *validity* has been verified across *all scales of the universe*, ranging from the massive cosmological level to the sub‑microscopic level.",
+        "category": "important",
+        "badgeTitle": "UNIVERSAL LAW",
+        "badgeText": "Applies equally to galaxies and subatomic particles."
+      },
+      {
+        "question": "What happens if a single isolated spinning body alters its moment of inertia?",
+        "answer": "According to the conservation law, if its moment of inertia $I_1$ changes to $I_2$, its *angular speed* ($\\omega_2$) automatically changes in *inverse proportion* so that total angular momentum remains constant.",
+        "category": "important",
+        "badgeTitle": "EQUATION",
+        "badgeText": "$I_1\\omega_1 = I_2\\omega_2$."
+      },
+      {
+        "question": "Why does the Earth's axis of rotation remain fixed in one direction relative to the universe?",
+        "answer": "Because the *major force* acting on it is the pull of the Sun, and it experiences *no other sizeable external torque* to alter its angular momentum direction.",
+        "category": "important",
+        "badgeTitle": "COSMIC CONSERVATION",
+        "badgeText": "An example of angular momentum conservation maintaining orientation."
+      },
+      {
+        "question": "How does a diver execute a somersault efficiently after jumping from a springboard?",
+        "answer": "The diver *curls* his body by rolling his arms and legs in, which *decreases* his moment of inertia and *drastically increases* his angular velocity for midair spins.",
+        "category": "important",
+        "badgeTitle": "PRACTICAL APPLICATION",
+        "badgeText": "Conservation of Angular Momentum in sports."
+      },
+      {
+        "question": "How does a diver achieve a smooth, gentle entry into the water?",
+        "answer": "Before touching the water surface, the diver *stretches out* his arms and legs, which *increases* his moment of inertia and *slows down* his angular velocity.",
+        "category": "important",
+        "badgeTitle": "SAFETY MECHANISM",
+        "badgeText": "Prevents dangerous high-speed rotational impacts with the water."
+      },
+      {
+        "question": "How does an ice skater increase their spinning speed?",
+        "answer": "An ice skater increases their angular velocity by *folding* their arms and bringing stretched legs *close to the body*, effectively *decreasing* their moment of inertia.",
+        "category": "important",
+        "badgeTitle": "KINETIC RESULT",
+        "badgeText": "Less inertia leads to faster spinning without additional torque."
+      },
+      {
+        "question": "What happens when a person on a rotating turntable draws heavy dumbbells inward?",
+        "answer": "As the hands are drawn *inward*, the moment of inertia *decreases*, causing the person's angular speed to *at once increase* due to conservation of angular momentum.",
+        "category": "important",
+        "badgeTitle": "LABORATORY EXPERIMENT",
+        "badgeText": "A classic demonstration of $I_1\\omega_1 = I_2\\omega_2$."
+      },
+      {
+        "question": "What surprising effect does the melting of Earth's polar ice caps have on our days?",
+        "answer": "As ice melts and water flows towards the *equator*, the mass distributes *further from the axis*, increasing Earth's moment of inertia and *decreasing* its angular velocity.",
+        "category": "important",
+        "badgeTitle": "GEOLOGICAL IMPACT",
+        "badgeText": "This causes the total duration of the day to slightly increase."
+      },
+      {
+        "question": "In terms of units, what is the significance of \"rev $min^{-1}$\" or RPM?",
+        "answer": "It is a common, *non‑SI unit* used to measure angular velocity, indicating how many *complete revolutions* a body makes in *one minute*.",
+        "category": "important",
+        "badgeTitle": "CONVERSION FACTOR",
+        "badgeText": "Must be multiplied by $2\\pi/60$ to convert to SI unit rad $s^{-1}$."
+      },
+      {
+        "question": "What is the vector direction of instantaneous angular acceleration?",
+        "answer": "The angular acceleration is a vector quantity whose direction is strictly *along the axis of rotation*.",
+        "category": "important",
+        "badgeTitle": "SIGN RULE",
+        "badgeText": "Pointing in the same direction as $\\omega$ if speeding up, and opposite if slowing down."
+      },
+      {
+        "question": "Under what specific condition will an artificial satellite fly off in a straight line?",
+        "answer": "If the *gravitational pull* is *suddenly removed*, the satellite would immediately fly off in a *straight line along the tangent* to its original circular orbit.",
+        "category": "important",
+        "badgeTitle": "NEWTONIAN MECHANICS",
+        "badgeText": "Centripetal force is solely responsible for bending the path."
+      },
+      {
+        "question": "Why is the orbital velocity of a satellite independent of its own mass?",
+        "answer": "Because the *gravitational force* pulling the satellite scales *proportionally* with the satellite's mass, exactly canceling out the mass requirement for its centripetal acceleration.",
+        "category": "important",
+        "badgeTitle": "EQUATION FACT",
+        "badgeText": "$v = \\sqrt{GM/r}$ lacks a lower-case $m$."
+      },
+      {
+        "question": "Why does the equation $T=m(v^2/r - g)$ imply tension can be zero?",
+        "answer": "If the satellite or ball reaches a specific *critical speed* where the required centripetal acceleration ($v^2/r$) exactly equals *gravity* ($g$), the string no longer needs to exert any pulling force (Tension).",
+        "category": "important",
+        "badgeTitle": "PHYSICAL STATE",
+        "badgeText": "Gravity alone handles the circular motion."
+      },
+      {
+        "question": "Why are equations of angular motion analogous to linear motion equations?",
+        "answer": "Because they are derived using *identical algebraic manipulation* of the basic kinematic definitions, simply replacing linear variables ($S, v, a$) with their angular counterparts ($\\theta, \\omega, \\alpha$).",
+        "category": "important",
+        "badgeTitle": "MATHEMATICAL SYMMETRY",
+        "badgeText": "Allows identical problem-solving strategies."
+      },
+      {
+        "question": "What is the SI unit for the moment of inertia?",
+        "answer": "Since moment of inertia is the product of *mass* and the *square of the distance* ($mr^2$), its SI unit is *kilogram metre squared* ($kg~m^2$).",
+        "category": "important",
+        "badgeTitle": "UNIT ANALYSIS",
+        "badgeText": "A fundamental unit for rotational dynamics."
+      },
+      {
+        "question": "How does the direction of total angular momentum ($L$) relate to angular velocity ($\\omega$) for a symmetric rigid body?",
+        "answer": "For a symmetric rigid body rotating about a *fixed axis* through its centre of mass, the direction of total angular momentum ($L$) is identically the *same* as the direction of the angular velocity ($\\omega$).",
+        "category": "important",
+        "badgeTitle": "VECTOR ALIGNMENT",
+        "badgeText": "$L$ and $\\omega$ both point along the axis of rotation."
+      },
+      {
+        "question": "What does a non-zero net external torque do to a spinning body?",
+        "answer": "An *external torque* will forcibly *change the orientation* of the axis of rotation or *alter* the total angular momentum of the system, violating the conservation state.",
+        "category": "important",
+        "badgeTitle": "DYNAMICAL EFFECT",
+        "badgeText": "Torque is to angular momentum what Force is to linear momentum."
+      },
+      {
+        "question": "In the context of artificial gravity, how does the frequency ($f$) relate to the time period ($t$) of the spaceship?",
+        "answer": "The frequency is the *inverse* of the time period ($f = 1/t$), dictating how many full rotations the spaceship must complete per second to maintain the $9.8 \\text{ m s}^{-2}$ acceleration.",
+        "category": "important",
+        "badgeTitle": "FORMULA SUBSTITUTION",
+        "badgeText": "Crucial for deriving $f = \\frac{1}{2\\pi}\\sqrt{g/R}$."
+      },
+      {
+        "question": "Why does an object moving in a circular path have a continuously changing velocity even if its speedometer reading remains constant?",
+        "answer": "Because *velocity* is a *vector quantity*, and in circular motion, the *direction* is continuously changing at every point along the curve.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPTUAL PRINCIPLE",
+        "badgeText": "Speed is scalar, but velocity includes direction."
+      },
+      {
+        "question": "How does a wheel laying out a tangential distance demonstrate the geometric relation between linear and angular displacement?",
+        "answer": "As the wheel turns through an angle $\\theta$, it rolls forward and lays out a tangential distance strictly equal to $S=r\\theta$.",
+        "category": "conceptual",
+        "badgeTitle": "VISUAL PROOF",
+        "badgeText": "Demonstrated in the \"Do You Know?\" margin note."
+      },
+      {
+        "question": "Why do passengers not fall down when they are completely upside down at the top of a roller coaster loop?",
+        "answer": "Because at the top of the loop, their *weight* provides the *necessary centripetal force* required to keep them moving in the circular path rather than pulling them straight down.",
+        "category": "conceptual",
+        "badgeTitle": "PHYSICS APPLICATION",
+        "badgeText": "Sensation of fear occurs, but physics prevents the fall."
+      },
+      {
+        "question": "What specific prediction did Isaac Newton make about artificial satellites 300 years ago in his book \"Principia Mathematica\"?",
+        "answer": "He predicted that if an object is *thrown horizontally* with a *particular speed* from a place which is *sufficiently high*, it will start revolving around the Earth.",
+        "category": "conceptual",
+        "badgeTitle": "HISTORICAL FACT",
+        "badgeText": "Found in the \"Do you know?\" section."
+      },
+      {
+        "question": "According to the \"Satellites Orbits\" diagram, what specific speed is required for an object to achieve an elliptical orbit around Earth?",
+        "answer": "An object must reach a speed of exactly *$30,000~km~h^{-1}$* to maintain an *elliptical orbit*.",
+        "category": "conceptual",
+        "badgeTitle": "DIAGRAM DATA",
+        "badgeText": "Located in the visual graphic on page 9."
+      },
+      {
+        "question": "According to the \"Satellites Orbits\" diagram, what is the required escape velocity to leave Earth's orbit entirely?",
+        "answer": "The *escape velocity* is *$11~km~s^{-1}$* or equivalently *$40,000~km~h^{-1}$*.",
+        "category": "conceptual",
+        "badgeTitle": "DIAGRAM DATA",
+        "badgeText": "Located in the visual graphic on page 9."
+      },
+      {
+        "question": "According to the \"Satellites Orbits\" diagram, what is the exact speed required for a standard circular orbit?",
+        "answer": "A steady *circular orbit* requires a speed of *$27,000~km~h^{-1}$*.",
+        "category": "conceptual",
+        "badgeTitle": "DIAGRAM DATA",
+        "badgeText": "Located in the visual graphic on page 9."
+      },
+      {
+        "question": "How is the Earth's global positioning system directly related to your mobile phone's startup?",
+        "answer": "The moment you switch on your mobile phone, your *exact location* can be *tracked immediately* by the *global positioning system*.",
+        "category": "conceptual",
+        "badgeTitle": "TID-BITS FACT",
+        "badgeText": "Modern application of satellite technology."
+      },
+      {
+        "question": "Who holds the record for becoming the first \"human satellite\" of the Earth, and in what year did this occur?",
+        "answer": "*Bruce McCandless* became the first *human satellite* in the year *1984*.",
+        "category": "conceptual",
+        "badgeTitle": "TID-BITS FACT",
+        "badgeText": "A historic milestone in space exploration."
+      },
+      {
+        "question": "What was the speed and altitude of Bruce McCandless when he stepped out of the space shuttle?",
+        "answer": "He stepped into space at a height of *100 km* above Hawaii with an *orbital speed* of *$29000~km~h^{-1}$*.",
+        "category": "conceptual",
+        "badgeTitle": "SPACE DATA",
+        "badgeText": "Extreme conditions of human orbit."
+      },
+      {
+        "question": "Why does your apparent weight only change at specific moments during an elevator ride?",
+        "answer": "Your weight slightly changes only when the *velocity* of the elevator *changes* (causing acceleration) at the *start and end* of a ride, not during the middle when velocity is constant.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPTUAL PRINCIPLE",
+        "badgeText": "Weight changes require a net vertical acceleration."
+      },
+      {
+        "question": "Why does water not spill out of a bucket that is rapidly whirled in a vertical circle, even when completely inverted at the top?",
+        "answer": "Because the water's *downward weight* perfectly provides the *required centripetal force* needed to maintain the circular path, preventing it from falling out of the bucket.",
+        "category": "conceptual",
+        "badgeTitle": "EVERYDAY PHYSICS",
+        "badgeText": "An application of $T = m(v^2/r - g)$."
+      },
+      {
+        "question": "How does the physical structure of a rotating space-ship provide artificial gravity to its inhabitants?",
+        "answer": "The *surface* of the rotating space-ship *pushes* on the object in contact with it, providing a *normal force* that acts as the centripetal force needed to keep the object moving.",
+        "category": "conceptual",
+        "badgeTitle": "MECHANISM",
+        "badgeText": "This upward push mimics the feeling of Earth's gravity."
+      },
+      {
+        "question": "Why must the linear equation ($F=ma$) be multiplied by radius ($r$) to derive the rotational equation of motion?",
+        "answer": "Because the turning effect is produced by *torque* ($\\tau$), it is mathematically required to *multiply both sides by $r$* to write the equation purely in terms of torque.",
+        "category": "conceptual",
+        "badgeTitle": "DERIVATION STEP",
+        "badgeText": "This leads directly to $\\tau = I\\alpha$."
+      },
+      {
+        "question": "If two solid cylinders have identically equal mass, which one will inherently possess a greater rotational inertia?",
+        "answer": "The cylinder with the *larger diameter* will always have the *greater rotational inertia*.",
+        "category": "conceptual",
+        "badgeTitle": "MASS DISTRIBUTION",
+        "badgeText": "Inertia depends heavily on how far mass is spread from the center."
+      },
+      {
+        "question": "What is the precise mathematical formula for the moment of inertia of a \"Thin Rod\" rotating about its center?",
+        "answer": "The moment of inertia for a thin rod of mass $m$ and length $L$ is *$\\frac{1}{12}mL^2$*.",
+        "category": "conceptual",
+        "badgeTitle": "TABLE REFERENCE",
+        "badgeText": "Essential for calculating standard geometries."
+      },
+      {
+        "question": "What is the precise mathematical formula for the moment of inertia of a solid \"Sphere\"?",
+        "answer": "The moment of inertia for a solid sphere of mass $m$ and radius $r$ is *$\\frac{2}{5}mr^2$*.",
+        "category": "conceptual",
+        "badgeTitle": "TABLE REFERENCE",
+        "badgeText": "Found in the geometrical shapes chart."
+      },
+      {
+        "question": "What is the precise mathematical formula for the moment of inertia of a \"Solid disc or cylinder\"?",
+        "answer": "The moment of inertia for a solid disc or cylinder is *$\\frac{1}{2}mr^2$*.",
+        "category": "conceptual",
+        "badgeTitle": "TABLE REFERENCE",
+        "badgeText": "Crucial formula for flywheel and pulley problems."
+      },
+      {
+        "question": "What is the precise mathematical formula for the moment of inertia of a \"Thin ring or Hoop\"?",
+        "answer": "The moment of inertia for a thin ring or hoop where all mass is at the outer edge is *$mr^2$*.",
+        "category": "conceptual",
+        "badgeTitle": "TABLE REFERENCE",
+        "badgeText": "Represents the maximum possible inertia for a given radius."
+      },
+      {
+        "question": "Why does a bicycle immediately fall when at rest, but remain perfectly upright and stable when moving?",
+        "answer": "When moving, the *angular momentum* of the spinning wheel strongly *resists* any tendency to change its orientation, keeping the bike stable.",
+        "category": "conceptual",
+        "badgeTitle": "GYROSCOPIC EFFECT",
+        "badgeText": "An everyday demonstration of angular momentum conservation."
+      },
+      {
+        "question": "Why does the speed of a ball tied to a string increase drastically as the string wraps tightly around a finger?",
+        "answer": "As the string wraps, the *radius of rotation decreases*, which *decreases* the moment of inertia; to conserve angular momentum, the *angular speed must increase*.",
+        "category": "conceptual",
+        "badgeTitle": "VISUAL EXAMPLE",
+        "badgeText": "A clear consequence of $I_1\\omega_1 = I_2\\omega_2$."
+      },
+      {
+        "question": "What hidden effect does the melting of polar ice caps have on the length of a day on Earth?",
+        "answer": "As melted water flows away toward the *equator*, the *moment of inertia* of Earth increases; due to conservation of angular momentum, the Earth's *angular velocity decreases*, causing the *duration of the day to increase*.",
+        "category": "conceptual",
+        "badgeTitle": "PLANETARY PHYSICS",
+        "badgeText": "A macro-scale application of rotational dynamics."
+      },
+      {
+        "question": "If a planet moves closer to the Sun in its elliptical orbit, why does its orbital velocity automatically increase?",
+        "answer": "As the *distance* to the Sun *decreases*, its *moment of inertia decreases*; to maintain a *constant angular momentum*, the *orbital velocity must automatically increase*.",
+        "category": "conceptual",
+        "badgeTitle": "KEPLER'S LAW CONCEPT",
+        "badgeText": "Found in the \"Point to Ponder\" section."
+      },
+      {
+        "question": "If the angular velocity of all particles in a rigid body is perfectly constant, is their linear velocity also constant?",
+        "answer": "No, because *linear velocity* depends directly on the *radius* ($v = r\\omega$), meaning particles at *different distances* from the axis will have *different linear velocities*.",
+        "category": "conceptual",
+        "badgeTitle": "CRQ 3.1 INSIGHT",
+        "badgeText": "Distinguishes angular consistency from linear variance."
+      },
+      {
+        "question": "Why do passengers in a car tend to fall to the right when the vehicle takes a sharp turn to the left?",
+        "answer": "Due to *inertia*, the passengers' bodies attempt to maintain their *original straight-line path* while the car itself *accelerates to the left* beneath them.",
+        "category": "conceptual",
+        "badgeTitle": "SHORT QUESTION 3.7 CONCEPT",
+        "badgeText": "A classic demonstration of Newton's First Law in a rotating frame."
+      },
+      {
+        "question": "What will be the time period of a simple pendulum inside an artificial satellite orbiting the Earth?",
+        "answer": "The time period will be *infinity*, because the satellite is in a state of *free fall*, making the *apparent gravity* ($g$) *zero*.",
+        "category": "conceptual",
+        "badgeTitle": "CRQ 3.4 INSIGHT",
+        "badgeText": "Since $T = 2\\pi\\sqrt{l/g}$, placing $g=0$ results in an undefined/infinite period."
+      },
+      {
+        "question": "What are the average velocity and average acceleration of a particle in uniform circular motion over exactly one complete revolution?",
+        "answer": "Both *average velocity* and *average acceleration* are *zero*, because after one full revolution, the *net displacement* is zero.",
+        "category": "conceptual",
+        "badgeTitle": "CRQ 3.7 INSIGHT",
+        "badgeText": "A tricky conceptual trap regarding \"average\" vs \"instantaneous\" values."
+      },
+      {
+        "question": "If a string can barely support a stationary heavy ball without breaking, why does it snap when whirled in a vertical circle?",
+        "answer": "Because when whirled, the *tension* at the *lowest point* must provide both the *upward centripetal force* ($mv^2/r$) and *counteract* the *downward weight* ($mg$), creating a *total force* that exceeds the string's limit.",
+        "category": "conceptual",
+        "badgeTitle": "CRQ 3.9 INSIGHT",
+        "badgeText": "Analyzes the point of maximum mechanical stress."
+      },
+      {
+        "question": "Why does a coasting rotating system slow down if water continuously drips into its attached beaker?",
+        "answer": "The *added water mass* steadily *increases* the system's *moment of inertia*; to satisfy the *conservation of angular momentum*, the system's *angular speed* must correspondingly *decrease*.",
+        "category": "conceptual",
+        "badgeTitle": "POINT TO PONDER CONCEPT",
+        "badgeText": "Inelastic collision principles applied to rotation."
+      },
+      {
+        "question": "How is the exact direction of angular momentum determined for a spinning sphere?",
+        "answer": "By using the *right-hand rule*: curling the fingers in the sense given by rotation, the *thumb points upward* along the rotational axis representing the *angular momentum*.",
+        "category": "conceptual",
+        "badgeTitle": "VISUAL DIAGRAM ANALYSIS",
+        "badgeText": "Explains the vectors in the rotating sphere figure."
+      },
+      {
+        "question": "Why does a force acting strictly along the direction of a body's velocity completely fail to produce circular motion?",
+        "answer": "Because such a *parallel force* will only *change the magnitude* of the velocity (speed) and *leaves the direction completely unchanged*.",
+        "category": "conceptual",
+        "badgeTitle": "VECTOR LIMITATION",
+        "badgeText": "Circular motion fundamentally requires a perpendicular force component."
+      },
+      {
+        "question": "Conceptually, why does the vector sum of Tension ($T$) and weight ($w$) furnish the required centripetal force at the top of a vertical circle?",
+        "answer": "Because at the highest point, *both forces act downward* along the radius, *directly towards the center* of the circular path, combining to pull the object inward.",
+        "category": "conceptual",
+        "badgeTitle": "FREE BODY DIAGRAM",
+        "badgeText": "Explains the setup of $T + w = mv^2/r$."
+      },
+      {
+        "question": "In the context of a satellite, what does the variable $F_N$ represent conceptually in the equation $F_c = mg - F_N$?",
+        "answer": "It represents the *supporting normal force* from the floor of the spacecraft, or the *physical tension* in a suspending spring balance.",
+        "category": "conceptual",
+        "badgeTitle": "WEIGHTLESSNESS PROOF",
+        "badgeText": "Proving $F_N = 0$ is how physics mathematically defines apparent weightlessness."
+      },
+      {
+        "question": "What does it mean conceptually when we state that the moment of inertia is the rotational analogue of mass?",
+        "answer": "It means that just as *mass resists linear acceleration*, *moment of inertia* serves as the *ultimate measure* of a rigid body's *resistance* to any change in its *rotational state*.",
+        "category": "conceptual",
+        "badgeTitle": "SHORT QUESTION 3.4 CONCEPT",
+        "badgeText": "Defining inertia across different motion domains."
+      },
+      {
+        "question": "Why does the law of conservation of angular momentum strictly hold true for a midair diver despite the strong downward pull of gravity?",
+        "answer": "Because *gravity acts perfectly uniformly* through the diver's *center of mass*, which means it has *no lever arm* and produces *zero external torque* to alter the spin.",
+        "category": "conceptual",
+        "badgeTitle": "ADVANCED MECHANICS",
+        "badgeText": "Explains why falling objects can still conserve internal momentum."
+      },
+      {
+        "question": "In the derivation of $L = I\\omega$, the text specifies a \"symmetric rigid body.\" Why is symmetry conceptually important here?",
+        "answer": "Symmetry ensures that the *total angular momentum vector* perfectly *aligns* with the *axis of rotation* and the *angular velocity vector*, allowing a simple *scalar multiplication*.",
+        "category": "conceptual",
+        "badgeTitle": "MATHEMATICAL CONSTRAINT",
+        "badgeText": "Asymmetric bodies cause wobbling and complex tensor calculations."
+      },
+      {
+        "question": "According to the text, what exact two physical factors does the moment of inertia of a body depend upon?",
+        "answer": "It depends strictly upon the *mass* of the body and *how that mass is distributed* about the *axis of rotation*.",
+        "category": "conceptual",
+        "badgeTitle": "CORE DEFINITION",
+        "badgeText": "The distinction between $m$ and $mr^2$."
+      }
+    ],
     "4": [],
     "5": [],
     "6": [],
