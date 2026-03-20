@@ -249,6 +249,10 @@ const initializeNotesCraftApp = () => {
     const commentsSection = document.getElementById('comments-section');
     const leaderboardTopThree = document.getElementById('leaderboardTopThree');
     const leaderboardEmptyState = document.getElementById('leaderboardEmptyState');
+    const profileSetupModal = document.getElementById('profileSetupModal');
+    const profileSetupNicknameInput = document.getElementById('profileSetupNicknameInput');
+    const profileSetupSaveBtn = document.getElementById('profileSetupSaveBtn');
+    const profileSetupError = document.getElementById('profileSetupError');
     const examCountdown = document.getElementById('exam-countdown');
     const examCountdownGrid = document.getElementById('examCountdownGrid');
     const examCountdownMessage = document.getElementById('examCountdownMessage');
@@ -284,6 +288,9 @@ const initializeNotesCraftApp = () => {
     let latestCommentsCache = [];
     let activeReplyTargetId = null;
     let isInitialCommentsSnapshot = true;
+    let pendingProfileSetupUid = '';
+    let isNewProfileDocument = false;
+    let isProfileSetupSubmitting = false;
 
     const ADMIN_EMAIL = 'johnythewithcher@gmail.com';
     const ADMIN_DISPLAY_NAME = 'Admin 👑';
@@ -917,6 +924,127 @@ const initializeNotesCraftApp = () => {
         };
     };
 
+    const normalizeLeaderboardNickname = (rawNickname) => {
+        const compact = String(rawNickname || '').replace(/\s+/g, ' ').trim();
+        return compact.slice(0, 24);
+    };
+
+    const setProfileSetupError = (message = '') => {
+        if (!profileSetupError) return;
+        profileSetupError.textContent = message;
+    };
+
+    const closeProfileSetupModal = () => {
+        if (!profileSetupModal) return;
+        profileSetupModal.classList.add('hidden');
+        setProfileSetupError('');
+    };
+
+    const openProfileSetupModal = (suggestedNickname = '') => {
+        if (!profileSetupModal || !profileSetupNicknameInput || !profileSetupSaveBtn) return;
+
+        const defaultNickname = normalizeLeaderboardNickname(suggestedNickname || '');
+        profileSetupNicknameInput.value = defaultNickname;
+        profileSetupModal.classList.remove('hidden');
+        profileSetupSaveBtn.disabled = false;
+        setProfileSetupError('');
+
+        queueMicrotask(() => {
+            profileSetupNicknameInput.focus();
+            profileSetupNicknameInput.select();
+        });
+    };
+
+    const saveLeaderboardNickname = async () => {
+        if (isProfileSetupSubmitting || !currentAuthenticatedUser || !currentAuthenticatedUser.uid) return;
+        if (pendingProfileSetupUid && currentAuthenticatedUser.uid !== pendingProfileSetupUid) return;
+
+        const nickname = normalizeLeaderboardNickname(profileSetupNicknameInput ? profileSetupNicknameInput.value : '');
+        if (nickname.length < 2) {
+            setProfileSetupError('Nickname must be at least 2 characters.');
+            return;
+        }
+
+        isProfileSetupSubmitting = true;
+        if (profileSetupSaveBtn) {
+            profileSetupSaveBtn.disabled = true;
+        }
+        setProfileSetupError('');
+
+        try {
+            const db = await initializeFirestoreCompat();
+            const payload = {
+                displayName: nickname,
+                photoURL: currentAuthenticatedUser.photoURL || ''
+            };
+
+            if (isNewProfileDocument) {
+                payload.total_points = 0;
+            }
+
+            if (firestoreFieldValue && typeof firestoreFieldValue.serverTimestamp === 'function') {
+                payload.updatedAt = firestoreFieldValue.serverTimestamp();
+            } else {
+                payload.updatedAt = new Date();
+            }
+
+            await db.collection('users_data').doc(currentAuthenticatedUser.uid).set(payload, { merge: true });
+
+            pendingProfileSetupUid = '';
+            isNewProfileDocument = false;
+            closeProfileSetupModal();
+            await loadLeaderboard();
+        } catch (error) {
+            console.warn('Unable to save leaderboard nickname.', error);
+            setProfileSetupError('Unable to save nickname right now. Please try again.');
+        } finally {
+            isProfileSetupSubmitting = false;
+            if (profileSetupSaveBtn) {
+                profileSetupSaveBtn.disabled = false;
+            }
+        }
+    };
+
+    const ensureUserProfileSetup = async (user) => {
+        if (!user || !user.uid || !profileSetupModal || !profileSetupNicknameInput) return;
+
+        try {
+            const db = await initializeFirestoreCompat();
+            const userDoc = await db.collection('users_data').doc(user.uid).get();
+            const data = userDoc.exists ? (userDoc.data() || {}) : {};
+            const storedDisplayName = typeof data.displayName === 'string' ? data.displayName.trim() : '';
+
+            if (userDoc.exists && storedDisplayName) {
+                pendingProfileSetupUid = '';
+                isNewProfileDocument = false;
+                closeProfileSetupModal();
+                return;
+            }
+
+            pendingProfileSetupUid = user.uid;
+            isNewProfileDocument = !userDoc.exists;
+            openProfileSetupModal(storedDisplayName || getFirstName(user));
+        } catch (error) {
+            console.warn('Unable to check profile setup state.', error);
+        }
+    };
+
+    const adminRemoveUser = async (uid) => {
+        if (!uid || !isCurrentUserAdmin()) return;
+        if (currentAuthenticatedUser && uid === currentAuthenticatedUser.uid) return;
+
+        const shouldDelete = window.confirm('Remove this user from leaderboard?');
+        if (!shouldDelete) return;
+
+        try {
+            const db = await initializeFirestoreCompat();
+            await db.collection('users_data').doc(uid).delete();
+            await loadLeaderboard();
+        } catch (error) {
+            console.warn('Unable to remove user from leaderboard.', error);
+        }
+    };
+
     const LEADERBOARD_STYLES = ['is-gold', 'is-silver', 'is-bronze'];
 
     const renderLeaderboard = (users = []) => {
@@ -962,6 +1090,18 @@ const initializeNotesCraftApp = () => {
             row.appendChild(rankBadge);
             row.appendChild(avatar);
             row.appendChild(meta);
+
+            if (isCurrentUserAdmin() && user.uid && (!currentAuthenticatedUser || user.uid !== currentAuthenticatedUser.uid)) {
+                const removeBtn = document.createElement('button');
+                removeBtn.type = 'button';
+                removeBtn.className = 'leaderboard-remove-btn';
+                removeBtn.setAttribute('aria-label', `Remove ${user.displayName || 'user'} from leaderboard`);
+                removeBtn.textContent = '🗑';
+                removeBtn.addEventListener('click', () => {
+                    adminRemoveUser(user.uid);
+                });
+                row.appendChild(removeBtn);
+            }
 
             leaderboardTopThree.appendChild(row);
         });
@@ -1126,7 +1266,9 @@ const initializeNotesCraftApp = () => {
 
             await db.collection('user_progress').doc(currentAuthenticatedUser.uid).set(payload, { merge: true });
 
-            const leaderboardPayload = buildLeaderboardIdentity(currentAuthenticatedUser);
+            const leaderboardPayload = {
+                photoURL: currentAuthenticatedUser.photoURL || ''
+            };
 
             if (firestoreFieldValue && typeof firestoreFieldValue.increment === 'function') {
                 leaderboardPayload.total_points = isDone
@@ -1179,11 +1321,15 @@ const initializeNotesCraftApp = () => {
                 if (currentAuthenticatedUser && currentAuthenticatedUser.uid) {
                     queueMicrotask(() => {
                         loadProgressFromFirestore(currentAuthenticatedUser.uid);
+                        ensureUserProfileSetup(currentAuthenticatedUser);
                     });
                 } else {
                     queueMicrotask(() => {
                         applyStoredCardStates();
                     });
+                    pendingProfileSetupUid = '';
+                    isNewProfileDocument = false;
+                    closeProfileSetupModal();
                 }
 
                 queueMicrotask(() => {
@@ -1281,6 +1427,21 @@ const initializeNotesCraftApp = () => {
                 setAuthStatus('Unable to log out right now. Please try again.', true);
             }
         });
+
+        if (profileSetupSaveBtn) {
+            profileSetupSaveBtn.addEventListener('click', () => {
+                saveLeaderboardNickname();
+            });
+        }
+
+        if (profileSetupNicknameInput) {
+            profileSetupNicknameInput.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter') {
+                    event.preventDefault();
+                    saveLeaderboardNickname();
+                }
+            });
+        }
     };
 
     const setFlashcardFabVisibility = (shouldShow) => {

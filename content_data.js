@@ -4543,7 +4543,218 @@ const siteData = {
         "badgeText": "A lack of digital literacy directly impacts public health and safety during a global crisis."
       }
     ],
-    "8": [],
+    "8": [
+      {
+        "question": "What is the definition of online research?",
+        "answer": "Online research is the activity of *finding information* on the internet about a particular topic.",
+        "category": "most",
+        "badgeTitle": "GOAL",
+        "badgeText": "The goal of online research is to collect correct, trustworthy, and current information that helps in understanding a topic or solving a problem."
+      },
+      {
+        "question": "Why is online research considered important in today's connected world?",
+        "answer": "Online research is important because it allows people to access a *wide range of information* quickly and easily.",
+        "category": "most",
+        "badgeTitle": "REAL-WORLD APPLICATION",
+        "badgeText": "It helps students complete homework, professionals stay updated, and everyone make informed decisions."
+      },
+      {
+        "question": "What does General Information Research involve?",
+        "answer": "General Information Research involves finding *basic information* on a topic.",
+        "category": "most",
+        "badgeTitle": "EXAMPLE TOOL",
+        "badgeText": "One can use search engines like Google to find articles, blog posts, or videos that provide general knowledge."
+      },
+      {
+        "question": "What is the focus of Academic Research?",
+        "answer": "Academic Research focuses on finding *scholarly information* for educational purposes.",
+        "category": "most",
+        "badgeTitle": "SOURCES",
+        "badgeText": "It involves searching for books, research papers, or articles from educational websites, libraries, or databases."
+      },
+      {
+        "question": "How is Market Research utilized?",
+        "answer": "Market Research is used by *businesses and entrepreneurs* to understand market trends, customer behavior, and competition.",
+        "category": "most",
+        "badgeTitle": "PURPOSE",
+        "badgeText": "It helps businesses make informed decisions about launching new products or services."
+      },
+      {
+        "question": "What is the main purpose of Fact-Checking Research?",
+        "answer": "Fact-Checking Research is used to *verify if the information is accurate*.",
+        "category": "most",
+        "badgeTitle": "METHOD",
+        "badgeText": "It involves checking multiple reliable sources to confirm the correctness of facts."
+      },
+      {
+        "question": "What is Health Research used for?",
+        "answer": "Health Research involves finding information related to *health issues*, medical treatments, or healthcare services.",
+        "category": "most",
+        "badgeTitle": "CATEGORY",
+        "badgeText": "It is one of the specific types of online research categorized by the kind of information needed."
+      },
+      {
+        "question": "How is Digital Literacy defined?",
+        "answer": "Digital literacy is the ability to use *digital tools*, such as computers, smartphones, and the internet, to find, understand, create, and share information.",
+        "category": "most",
+        "badgeTitle": "INCLUDED SKILLS",
+        "badgeText": "It involves using search engines, assessing if sources are reliable, and protecting personal information."
+      },
+      {
+        "question": "What does the \"Using Technology\" component of digital literacy entail?",
+        "answer": "Using technology involves *operating devices* like computers, tablets, and smartphones.",
+        "category": "most",
+        "badgeTitle": "KEY ABILITIES",
+        "badgeText": "It includes knowing how to open programs, use applications, and navigate websites."
+      },
+      {
+        "question": "What is meant by \"Searching for Information\" in digital literacy?",
+        "answer": "Searching for information means using search engines to find *data on the internet*.",
+        "category": "most",
+        "badgeTitle": "TECHNIQUE",
+        "badgeText": "This skill includes entering relevant keywords and refining search results to locate useful information."
+      },
+      {
+        "question": "What is the process of \"Evaluating Sources\"?",
+        "answer": "Evaluating sources involves checking if the information you find online is *reliable*.",
+        "category": "most",
+        "badgeTitle": "VERIFICATION",
+        "badgeText": "This includes looking at who created the content and whether it comes from a trustworthy source."
+      },
+      {
+        "question": "What does it mean to utilize digital resources?",
+        "answer": "Utilizing digital resources means effectively using *tools and information* available on the internet to support your work or learning.",
+        "category": "most",
+        "badgeTitle": "MATERIALS",
+        "badgeText": "It involves finding and using online materials, such as articles, videos, and websites, to help you achieve goals."
+      },
+      {
+        "question": "What is the function of online libraries and research databases?",
+        "answer": "Many libraries and research databases are available online, providing access to a *wealth of academic resources*.",
+        "category": "most",
+        "badgeTitle": "BENEFIT",
+        "badgeText": "These digital tools help you find reliable and scholarly information for your research projects."
+      },
+      {
+        "question": "What are Academic Journals?",
+        "answer": "Academic journals are collections of *articles written by experts* in various fields.",
+        "category": "most",
+        "badgeTitle": "ACCESSIBILITY",
+        "badgeText": "Students can access many academic journals online through school libraries, university portals, or open-access websites."
+      },
+      {
+        "question": "What makes an article \"peer-reviewed\"?",
+        "answer": "A peer-reviewed article has been *checked by other experts* before being published.",
+        "category": "most",
+        "badgeTitle": "SIGNIFICANCE",
+        "badgeText": "This rigorous review process makes them trustworthy sources of information."
+      },
+      {
+        "question": "How can one effectively navigate when looking for information online?",
+        "answer": "Effective navigation starts by using *specific keywords* related to your topic.",
+        "category": "most",
+        "badgeTitle": "ADVANCED TOOLS",
+        "badgeText": "You can also use advanced search options and filters to search by date, author, or subject to narrow your results."
+      },
+      {
+        "question": "How should one manage digital information once it is found?",
+        "answer": "Managing information involves saving and *organizing digital copies* of articles, taking notes on key points, and keeping track of sources for future reference.",
+        "category": "most",
+        "badgeTitle": "HELPFUL APPS",
+        "badgeText": "Using digital folders, note-taking apps, or reference managers helps you stay organized."
+      },
+      {
+        "question": "What are Research Ethics?",
+        "answer": "Research ethics are the *principles and guidelines* that researchers follow to ensure that their work is honest, respectful, and fair.",
+        "category": "most",
+        "badgeTitle": "PURPOSE",
+        "badgeText": "These ethics maintain the integrity of research and protect the rights and well-being of anyone involved in the study."
+      },
+      {
+        "question": "Why is Ethical Research considered important?",
+        "answer": "Ethical research is important because it ensures that the findings are *trustworthy* and that the rights of those involved are respected.",
+        "category": "most",
+        "badgeTitle": "PREVENTION",
+        "badgeText": "Following ethical guidelines helps researchers avoid causing harm, spreading misinformation, or being unfair to people or communities."
+      },
+      {
+        "question": "What is the principle of Informed Consent in research ethics?",
+        "answer": "Informed consent means you must always inform participants about the *purpose of your research* and obtain their permission before involving them in your study.",
+        "category": "most",
+        "badgeTitle": "KEY RULE",
+        "badgeText": "This ensures transparency and respect for the participants' willingness to join."
+      },
+      {
+        "question": "What does Confidentiality entail in research ethics?",
+        "answer": "Confidentiality means keeping *personal information* and responses of participants private.",
+        "category": "most",
+        "badgeTitle": "RESTRICTION",
+        "badgeText": "Researchers must not share this private information without permission."
+      },
+      {
+        "question": "How is Integrity defined within the key principles of research ethics?",
+        "answer": "Integrity requires a researcher to be *honest and transparent* in their research.",
+        "category": "most",
+        "badgeTitle": "PROHIBITED ACTIONS",
+        "badgeText": "Researchers must not falsify data, plagiarize, or misrepresent their findings."
+      },
+      {
+        "question": "What is Intellectual Property (IP)?",
+        "answer": "Intellectual Property refers to the *legal rights* that protect creations of the mind, such as inventions, literary and artistic works, designs, symbols, names, and images used in commerce.",
+        "category": "most",
+        "badgeTitle": "FUNCTION",
+        "badgeText": "These rights allow creators to control and profit from their work, ensuring they are recognized and rewarded for creativity and innovation."
+      },
+      {
+        "question": "What protection does a Patent provide?",
+        "answer": "A patent is an *exclusive right granted for an invention*, which provides a new way of doing something or offers a new technical solution to a problem.",
+        "category": "most",
+        "badgeTitle": "RESTRICTION",
+        "badgeText": "A patent prevents others from making, using, or selling the invention without the inventor's permission."
+      },
+      {
+        "question": "How does a Trademark function in commerce?",
+        "answer": "A trademark is a sign, logo, or name that *distinguishes the goods or services* of one company from those of others.",
+        "category": "most",
+        "badgeTitle": "CONSUMER BENEFIT",
+        "badgeText": "Trademarks help consumers identify the source of a product or service and are essential for building brand recognition."
+      },
+      {
+        "question": "What types of works are protected by Copyrights?",
+        "answer": "Copyright protects *literary and artistic works*, such as books, music, films, paintings, and software.",
+        "category": "most",
+        "badgeTitle": "CREATOR RIGHTS",
+        "badgeText": "It gives the creator the exclusive right to use, distribute, and license their work, and prevents others from copying it without permission."
+      },
+      {
+        "question": "What do Industrial Designs protect?",
+        "answer": "Industrial design rights protect the *visual design of objects* that are not purely utilitarian.",
+        "category": "most",
+        "badgeTitle": "CHARACTERISTICS",
+        "badgeText": "This includes the shape, configuration, and aesthetic aspects of a product that make it unique and appealing."
+      },
+      {
+        "question": "How does a Trade Secret differ from a patent?",
+        "answer": "A trade secret is *confidential information* that provides a business with a competitive edge, and unlike patents, trade secrets are not disclosed to the public.",
+        "category": "most",
+        "badgeTitle": "PROTECTION METHOD",
+        "badgeText": "Companies protect trade secrets through confidentiality agreements and other legal means."
+      },
+      {
+        "question": "Why is the protection of Intellectual Property important?",
+        "answer": "Intellectual property is important because it helps people *protect their ideas and creations* and ensures that only they can profit from them.",
+        "category": "most",
+        "badgeTitle": "IMPACT",
+        "badgeText": "This protection encourages people to keep coming up with new ideas and innovations, knowing they will be rewarded."
+      },
+      {
+        "question": "How can a creator protect their new brand name or logo?",
+        "answer": "A creator can protect a brand name, logo, or slogan by registering it as a *trademark*.",
+        "category": "most",
+        "badgeTitle": "PREVENTION",
+        "badgeText": "This action prevents others from using the registered trademark."
+      }
+    ],
     "9": []
   },
   "English": {

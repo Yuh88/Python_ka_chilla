@@ -3,6 +3,20 @@
 <head>
   <style>
     html, body { background-color: #0b0b0d !important; color: #ffffff; overflow-x: hidden; }
+    .profile-setup-modal { position: fixed; inset: 0; z-index: 1200; display: flex; align-items: center; justify-content: center; padding: 1rem; }
+    .profile-setup-modal.hidden { display: none !important; }
+    .profile-setup-backdrop { position: absolute; inset: 0; background: rgba(2, 6, 23, 0.72); backdrop-filter: blur(4px); }
+    .profile-setup-dialog { position: relative; width: min(420px, 100%); border-radius: 14px; border: 1px solid rgba(129, 140, 248, 0.45); background: linear-gradient(145deg, rgba(15, 23, 42, 0.96), rgba(30, 41, 59, 0.94)); box-shadow: 0 18px 44px rgba(2, 6, 23, 0.45); padding: 1rem; color: #e2e8f0; }
+    .profile-setup-title { margin: 0; font-size: 1rem; color: #f8fafc; }
+    .profile-setup-subtitle { margin: 0.45rem 0 0.8rem; font-size: 0.82rem; color: #94a3b8; line-height: 1.4; }
+    .profile-setup-label { display: block; margin: 0 0 0.38rem; font-size: 0.74rem; color: #cbd5e1; }
+    .profile-setup-input { width: 100%; border: 1px solid rgba(148, 163, 184, 0.5); background: rgba(15, 23, 42, 0.72); color: #f8fafc; border-radius: 10px; padding: 0.65rem 0.72rem; font-size: 0.9rem; outline: none; }
+    .profile-setup-input:focus { border-color: rgba(129, 140, 248, 0.75); box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2); }
+    .profile-setup-error { min-height: 1rem; margin: 0.45rem 0 0; font-size: 0.72rem; color: #fda4af; }
+    .profile-setup-save-btn { margin-top: 0.5rem; width: 100%; border: 1px solid rgba(129, 140, 248, 0.62); background: linear-gradient(135deg, rgba(79, 70, 229, 0.95), rgba(14, 165, 233, 0.88)); color: #ffffff; border-radius: 10px; padding: 0.62rem 0.8rem; font-size: 0.84rem; font-weight: 700; cursor: pointer; }
+    .profile-setup-save-btn:disabled { opacity: 0.72; cursor: wait; }
+    .leaderboard-remove-btn { margin-left: 0.45rem; width: 26px; height: 26px; border-radius: 8px; border: 1px solid rgba(251, 113, 133, 0.5); background: rgba(127, 29, 29, 0.28); color: #fecdd3; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; font-size: 0.74rem; line-height: 1; flex-shrink: 0; }
+    .leaderboard-remove-btn:hover { background: rgba(225, 29, 72, 0.26); border-color: rgba(253, 164, 175, 0.74); color: #ffe4e6; }
   </style>
   <script>
     (function () {
@@ -1490,6 +1504,18 @@ Schools organize these debates because <strong>storytelling makes arguments more
         <footer class="site-footer">
           <p>© 2026 NotesCraft. Developed with ♥️ by Muhammad Yousaf. | Join us in seeking blessings: Please recite a Durood Pak for the Ummah. | Good luck with your studies!</p>
         </footer>
+
+<div id="profileSetupModal" class="profile-setup-modal hidden" role="dialog" aria-modal="true" aria-labelledby="profileSetupTitle">
+  <div class="profile-setup-backdrop" aria-hidden="true"></div>
+  <div class="profile-setup-dialog">
+    <h3 id="profileSetupTitle" class="profile-setup-title">Set your Leaderboard Nickname</h3>
+    <p class="profile-setup-subtitle">Choose a display name for rankings. You can update it later from admin support if needed.</p>
+    <label class="profile-setup-label" for="profileSetupNicknameInput">Leaderboard Nickname</label>
+    <input id="profileSetupNicknameInput" class="profile-setup-input" type="text" maxlength="24" placeholder="Enter nickname">
+    <p id="profileSetupError" class="profile-setup-error" aria-live="polite"></p>
+    <button id="profileSetupSaveBtn" class="profile-setup-save-btn" type="button">Save Nickname</button>
+  </div>
+</div>
 
 <script defer src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
 <script defer src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
