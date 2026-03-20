@@ -260,6 +260,24 @@ const initializeNotesCraftApp = () => {
     const examHours = document.getElementById('examHours');
     const examMinutes = document.getElementById('examMinutes');
     const examSeconds = document.getElementById('examSeconds');
+    const adminAnnouncementPanel = document.getElementById('adminAnnouncementPanel');
+    const adminAnnouncementInput = document.getElementById('adminAnnouncementInput');
+    const adminAnnouncementSaveBtn = document.getElementById('adminAnnouncementSaveBtn');
+    const adminAnnouncementStatus = document.getElementById('adminAnnouncementStatus');
+    const globalAnnouncementBanner = document.getElementById('globalAnnouncementBanner');
+    const globalAnnouncementText = document.getElementById('globalAnnouncementText');
+    const messageAdminBtn = document.getElementById('messageAdminBtn');
+    const adminInboxBtn = document.getElementById('adminInboxBtn');
+    const privateChatModal = document.getElementById('privateChatModal');
+    const privateChatBackdrop = document.getElementById('privateChatBackdrop');
+    const privateChatCloseBtn = document.getElementById('privateChatCloseBtn');
+    const privateChatTitle = document.getElementById('privateChatTitle');
+    const adminInboxPanel = document.getElementById('adminInboxPanel');
+    const adminInboxList = document.getElementById('adminInboxList');
+    const privateChatMessages = document.getElementById('privateChatMessages');
+    const privateChatInput = document.getElementById('privateChatInput');
+    const privateChatSendBtn = document.getElementById('privateChatSendBtn');
+    const privateChatStatus = document.getElementById('privateChatStatus');
     const body = document.body;
     const themeStorageKey = 'notescraft_theme';
     const flashcardStorageKey = 'notescraft_flashcard_mode';
@@ -291,10 +309,20 @@ const initializeNotesCraftApp = () => {
     let pendingProfileSetupUid = '';
     let isNewProfileDocument = false;
     let isProfileSetupSubmitting = false;
+    let announcementUnsubscribe = null;
+    let latestAnnouncementText = '';
+    let adminInboxUnsubscribe = null;
+    let privateChatUnsubscribes = [];
+    let privateStreamA = [];
+    let privateStreamB = [];
+    let activePrivateChatUserId = '';
+    let isPrivateMessageSending = false;
 
     const ADMIN_EMAIL = 'johnythewithcher@gmail.com';
+    const ADMIN_EMAIL_TEMPLATE = 'APNA_GMAIL_YAHAN_LIKHO';
     const ADMIN_DISPLAY_NAME = 'Admin 👑';
     const UNBLOCKABLE_EMAIL = 'johnythewithcher@gmail.com';
+    const ADMIN_CHANNEL_ID = 'admin';
 
     const getInitialTheme = () => {
         try {
@@ -358,9 +386,93 @@ const initializeNotesCraftApp = () => {
     };
 
     const normalizeEmail = (emailValue) => String(emailValue || '').trim().toLowerCase();
-    const isAdminEmail = (emailValue) => normalizeEmail(emailValue) === ADMIN_EMAIL;
+    const isAdminEmail = (emailValue) => {
+        const normalized = normalizeEmail(emailValue);
+        const canonicalAdminEmail = normalizeEmail(ADMIN_EMAIL);
+        const templateEmail = normalizeEmail(ADMIN_EMAIL_TEMPLATE);
+        const templateLooksConfigured = templateEmail.includes('@');
+        return normalized === canonicalAdminEmail || (templateLooksConfigured && normalized === templateEmail);
+    };
     const isCurrentUserAdmin = () => Boolean(currentAuthenticatedUser && isAdminEmail(currentAuthenticatedUser.email));
     const isUnblockableEmail = (emailValue) => normalizeEmail(emailValue) === UNBLOCKABLE_EMAIL;
+
+    const setAdminAnnouncementStatus = (message = '', isError = false) => {
+        if (!adminAnnouncementStatus) return;
+        adminAnnouncementStatus.textContent = message;
+        adminAnnouncementStatus.classList.toggle('is-error', isError);
+    };
+
+    const setPrivateChatStatus = (message = '', isError = false) => {
+        if (!privateChatStatus) return;
+        privateChatStatus.textContent = message;
+        privateChatStatus.classList.toggle('is-error', isError);
+    };
+
+    const renderGlobalAnnouncement = (announcementText) => {
+        if (!globalAnnouncementBanner || !globalAnnouncementText) return;
+        const finalText = String(announcementText || '').trim();
+
+        if (!finalText) {
+            globalAnnouncementText.textContent = '';
+            globalAnnouncementBanner.classList.add('hidden');
+            return;
+        }
+
+        globalAnnouncementText.textContent = finalText;
+        globalAnnouncementBanner.classList.remove('hidden');
+    };
+
+    const toggleAdminUtilityPanels = (isAdmin) => {
+        if (adminAnnouncementPanel) {
+            adminAnnouncementPanel.classList.toggle('hidden', !isAdmin);
+        }
+        if (adminInboxBtn) {
+            adminInboxBtn.classList.toggle('hidden', !isAdmin);
+        }
+        if (messageAdminBtn) {
+            messageAdminBtn.classList.toggle('hidden', isAdmin || !currentAuthenticatedUser);
+        }
+    };
+
+    const getPrivateMessageTimestampMs = (timestampValue) => {
+        if (!timestampValue) return 0;
+        if (typeof timestampValue.toDate === 'function') {
+            const dateValue = timestampValue.toDate();
+            return dateValue instanceof Date ? dateValue.getTime() : 0;
+        }
+        if (timestampValue instanceof Date) {
+            return timestampValue.getTime();
+        }
+        return 0;
+    };
+
+    const formatPrivateMessageTime = (timestampValue) => {
+        const timestampMs = getPrivateMessageTimestampMs(timestampValue);
+        if (!timestampMs) return 'Now';
+        return new Intl.DateTimeFormat(undefined, {
+            hour: 'numeric',
+            minute: '2-digit'
+        }).format(new Date(timestampMs));
+    };
+
+    const clearPrivateConversationListeners = () => {
+        privateChatUnsubscribes.forEach((unsubscribe) => {
+            if (typeof unsubscribe === 'function') {
+                unsubscribe();
+            }
+        });
+        privateChatUnsubscribes = [];
+        privateStreamA = [];
+        privateStreamB = [];
+    };
+
+    const closePrivateChatModal = () => {
+        if (!privateChatModal) return;
+        privateChatModal.classList.add('hidden');
+        setPrivateChatStatus('');
+        clearPrivateConversationListeners();
+        activePrivateChatUserId = '';
+    };
 
     const formatCommentDate = (timestampValue) => {
         if (!timestampValue) return 'Just now';
@@ -1170,6 +1282,329 @@ const initializeNotesCraftApp = () => {
         return firestoreInitPromise;
     };
 
+    const startAnnouncementRealtimeListener = async () => {
+        if (announcementUnsubscribe) return;
+
+        try {
+            const db = await initializeFirestoreCompat();
+            announcementUnsubscribe = db.collection('settings').doc('announcement').onSnapshot(
+                (docSnapshot) => {
+                    const data = docSnapshot.exists ? (docSnapshot.data() || {}) : {};
+                    latestAnnouncementText = String(data.text || '').trim();
+                    renderGlobalAnnouncement(latestAnnouncementText);
+
+                    if (isCurrentUserAdmin() && adminAnnouncementInput && document.activeElement !== adminAnnouncementInput) {
+                        adminAnnouncementInput.value = latestAnnouncementText;
+                    }
+                },
+                (error) => {
+                    console.warn('Unable to subscribe announcement.', error);
+                }
+            );
+        } catch (error) {
+            console.warn('Unable to initialize announcement listener.', error);
+        }
+    };
+
+    const saveGlobalAnnouncement = async () => {
+        if (!isCurrentUserAdmin() || !adminAnnouncementInput || !adminAnnouncementSaveBtn) return;
+
+        const textValue = String(adminAnnouncementInput.value || '').trim();
+        adminAnnouncementSaveBtn.disabled = true;
+        setAdminAnnouncementStatus('Updating...');
+
+        try {
+            const db = await initializeFirestoreCompat();
+            const payload = {
+                text: textValue,
+                updatedBy: currentAuthenticatedUser ? currentAuthenticatedUser.uid : '',
+                updatedAt: firestoreFieldValue && typeof firestoreFieldValue.serverTimestamp === 'function'
+                    ? firestoreFieldValue.serverTimestamp()
+                    : new Date()
+            };
+
+            await db.collection('settings').doc('announcement').set(payload, { merge: true });
+            setAdminAnnouncementStatus('Announcement updated.');
+        } catch (error) {
+            console.warn('Unable to update announcement.', error);
+            setAdminAnnouncementStatus('Update failed. Try again.', true);
+        } finally {
+            adminAnnouncementSaveBtn.disabled = false;
+        }
+    };
+
+    const renderPrivateChatMessages = (messages = []) => {
+        if (!privateChatMessages) return;
+
+        privateChatMessages.innerHTML = '';
+
+        if (!messages.length) {
+            const emptyEl = document.createElement('div');
+            emptyEl.className = 'private-chat-empty';
+            emptyEl.textContent = isCurrentUserAdmin()
+                ? (activePrivateChatUserId ? 'No messages yet in this chat.' : 'Select a user from inbox to view chat.')
+                : 'No messages yet. Start your conversation with Admin.';
+            privateChatMessages.appendChild(emptyEl);
+            return;
+        }
+
+        const mySenderId = isCurrentUserAdmin()
+            ? ADMIN_CHANNEL_ID
+            : (currentAuthenticatedUser ? currentAuthenticatedUser.uid : '');
+
+        messages.forEach((messageEntry) => {
+            const bubble = document.createElement('div');
+            const isMine = messageEntry.senderId === mySenderId;
+            bubble.className = `private-chat-bubble${isMine ? ' mine' : ''}`;
+
+            const textEl = document.createElement('div');
+            textEl.textContent = messageEntry.text || '';
+
+            const metaEl = document.createElement('div');
+            metaEl.className = 'private-chat-meta';
+            metaEl.textContent = formatPrivateMessageTime(messageEntry.timestamp);
+
+            bubble.appendChild(textEl);
+            bubble.appendChild(metaEl);
+            privateChatMessages.appendChild(bubble);
+        });
+
+        privateChatMessages.scrollTop = privateChatMessages.scrollHeight;
+    };
+
+    const flushPrivateChatStreams = () => {
+        const mergedMap = new Map();
+        [...privateStreamA, ...privateStreamB].forEach((entry) => {
+            if (entry && entry.id) {
+                mergedMap.set(entry.id, entry);
+            }
+        });
+
+        const mergedMessages = [...mergedMap.values()].sort((first, second) => {
+            return getPrivateMessageTimestampMs(first.timestamp) - getPrivateMessageTimestampMs(second.timestamp);
+        });
+
+        renderPrivateChatMessages(mergedMessages);
+    };
+
+    const mapPrivateMessageDocs = (snapshot) => {
+        return snapshot.docs.map((doc) => {
+            const data = doc.data() || {};
+            return {
+                id: doc.id,
+                senderId: String(data.senderId || ''),
+                receiverId: String(data.receiverId || ''),
+                text: String(data.text || '').trim(),
+                timestamp: data.timestamp || null,
+                senderName: String(data.senderName || ''),
+                senderPhoto: String(data.senderPhoto || '')
+            };
+        }).filter((item) => item.text);
+    };
+
+    const startPrivateConversationListener = async (targetUserId = '') => {
+        if (!currentAuthenticatedUser || !currentAuthenticatedUser.uid) return;
+
+        clearPrivateConversationListeners();
+        setPrivateChatStatus('');
+
+        const isAdmin = isCurrentUserAdmin();
+        const partnerUid = isAdmin ? String(targetUserId || '').trim() : currentAuthenticatedUser.uid;
+
+        if (isAdmin && !partnerUid) {
+            renderPrivateChatMessages([]);
+            return;
+        }
+
+        activePrivateChatUserId = partnerUid;
+
+        try {
+            const db = await initializeFirestoreCompat();
+
+            const queryA = isAdmin
+                ? db.collection('private_messages').where('senderId', '==', partnerUid).where('receiverId', '==', ADMIN_CHANNEL_ID).orderBy('timestamp', 'asc')
+                : db.collection('private_messages').where('senderId', '==', currentAuthenticatedUser.uid).where('receiverId', '==', ADMIN_CHANNEL_ID).orderBy('timestamp', 'asc');
+
+            const queryB = isAdmin
+                ? db.collection('private_messages').where('senderId', '==', ADMIN_CHANNEL_ID).where('receiverId', '==', partnerUid).orderBy('timestamp', 'asc')
+                : db.collection('private_messages').where('senderId', '==', ADMIN_CHANNEL_ID).where('receiverId', '==', currentAuthenticatedUser.uid).orderBy('timestamp', 'asc');
+
+            const unsubscribeA = queryA.onSnapshot((snapshot) => {
+                privateStreamA = mapPrivateMessageDocs(snapshot);
+                flushPrivateChatStreams();
+            }, (error) => {
+                console.warn('Unable to load private chat stream A.', error);
+                setPrivateChatStatus('Unable to load chat. Please refresh.', true);
+            });
+
+            const unsubscribeB = queryB.onSnapshot((snapshot) => {
+                privateStreamB = mapPrivateMessageDocs(snapshot);
+                flushPrivateChatStreams();
+            }, (error) => {
+                console.warn('Unable to load private chat stream B.', error);
+                setPrivateChatStatus('Unable to load chat. Please refresh.', true);
+            });
+
+            privateChatUnsubscribes = [unsubscribeA, unsubscribeB];
+        } catch (error) {
+            console.warn('Unable to start private chat listener.', error);
+            setPrivateChatStatus('Unable to load chat right now.', true);
+        }
+    };
+
+    const renderAdminInboxUsers = (users = []) => {
+        if (!adminInboxList) return;
+        adminInboxList.innerHTML = '';
+
+        if (!users.length) {
+            const emptyNode = document.createElement('p');
+            emptyNode.className = 'private-chat-empty';
+            emptyNode.textContent = 'Inbox is empty.';
+            adminInboxList.appendChild(emptyNode);
+            return;
+        }
+
+        users.forEach((entry) => {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = `private-chat-user-btn${entry.uid === activePrivateChatUserId ? ' active' : ''}`;
+
+            const name = document.createElement('span');
+            name.className = 'private-chat-user-name';
+            name.textContent = entry.name || 'Student';
+
+            const snippet = document.createElement('span');
+            snippet.className = 'private-chat-user-snippet';
+            snippet.textContent = entry.preview || 'Tap to open chat';
+
+            button.appendChild(name);
+            button.appendChild(snippet);
+            button.addEventListener('click', () => {
+                activePrivateChatUserId = entry.uid;
+                if (privateChatTitle) {
+                    privateChatTitle.textContent = `Inbox · ${entry.name || 'Student'}`;
+                }
+                startPrivateConversationListener(entry.uid);
+                renderAdminInboxUsers(users);
+            });
+
+            adminInboxList.appendChild(button);
+        });
+    };
+
+    const startAdminInboxListener = async () => {
+        if (!isCurrentUserAdmin()) return;
+
+        if (adminInboxUnsubscribe) {
+            adminInboxUnsubscribe();
+            adminInboxUnsubscribe = null;
+        }
+
+        try {
+            const db = await initializeFirestoreCompat();
+            adminInboxUnsubscribe = db
+                .collection('private_messages')
+                .where('receiverId', '==', ADMIN_CHANNEL_ID)
+                .orderBy('timestamp', 'desc')
+                .onSnapshot((snapshot) => {
+                    const latestByUser = new Map();
+
+                    snapshot.docs.forEach((doc) => {
+                        const data = doc.data() || {};
+                        const senderId = String(data.senderId || '');
+                        if (!senderId || senderId === ADMIN_CHANNEL_ID) return;
+                        if (latestByUser.has(senderId)) return;
+
+                        latestByUser.set(senderId, {
+                            uid: senderId,
+                            name: String(data.senderName || 'Student'),
+                            preview: String(data.text || '').trim().slice(0, 52)
+                        });
+                    });
+
+                    renderAdminInboxUsers([...latestByUser.values()]);
+                }, (error) => {
+                    console.warn('Unable to load admin inbox.', error);
+                });
+        } catch (error) {
+            console.warn('Unable to initialize admin inbox listener.', error);
+        }
+    };
+
+    const sendPrivateMessage = async () => {
+        if (isPrivateMessageSending || !currentAuthenticatedUser || !currentAuthenticatedUser.uid || !privateChatInput || !privateChatSendBtn) return;
+
+        const messageText = String(privateChatInput.value || '').trim();
+        if (!messageText) return;
+
+        const adminMode = isCurrentUserAdmin();
+        const receiverId = adminMode ? activePrivateChatUserId : ADMIN_CHANNEL_ID;
+
+        if (!receiverId) {
+            setPrivateChatStatus('Select a user from inbox first.', true);
+            return;
+        }
+
+        isPrivateMessageSending = true;
+        privateChatSendBtn.disabled = true;
+        setPrivateChatStatus('');
+
+        try {
+            const db = await initializeFirestoreCompat();
+            await db.collection('private_messages').add({
+                senderId: adminMode ? ADMIN_CHANNEL_ID : currentAuthenticatedUser.uid,
+                receiverId,
+                text: messageText,
+                senderName: adminMode
+                    ? ADMIN_DISPLAY_NAME
+                    : String(currentAuthenticatedUser.displayName || getFirstName(currentAuthenticatedUser) || 'Student'),
+                senderPhoto: adminMode ? '' : String(currentAuthenticatedUser.photoURL || ''),
+                timestamp: firestoreFieldValue && typeof firestoreFieldValue.serverTimestamp === 'function'
+                    ? firestoreFieldValue.serverTimestamp()
+                    : new Date()
+            });
+
+            privateChatInput.value = '';
+        } catch (error) {
+            console.warn('Unable to send private message.', error);
+            setPrivateChatStatus('Message failed to send.', true);
+        } finally {
+            isPrivateMessageSending = false;
+            privateChatSendBtn.disabled = false;
+        }
+    };
+
+    const openPrivateChatModal = async (openInbox = false) => {
+        if (!privateChatModal) return;
+        if (!currentAuthenticatedUser || !currentAuthenticatedUser.uid) {
+            await requestGoogleSignIn();
+            return;
+        }
+
+        const adminMode = isCurrentUserAdmin();
+        privateChatModal.classList.remove('hidden');
+
+        if (adminInboxPanel) {
+            adminInboxPanel.classList.toggle('hidden', !adminMode);
+        }
+
+        if (privateChatTitle) {
+            privateChatTitle.textContent = adminMode ? 'Inbox 📩' : 'Message Admin';
+        }
+
+        if (adminMode) {
+            await startAdminInboxListener();
+            if (openInbox && activePrivateChatUserId) {
+                startPrivateConversationListener(activePrivateChatUserId);
+            } else {
+                renderPrivateChatMessages([]);
+            }
+        } else {
+            activePrivateChatUserId = currentAuthenticatedUser.uid;
+            await startPrivateConversationListener(currentAuthenticatedUser.uid);
+        }
+    };
+
     const syncAllProgressForUser = async (uid) => {
         if (!uid) return;
 
@@ -1313,6 +1748,17 @@ const initializeNotesCraftApp = () => {
                 setCommentsComposerVisibility(Boolean(currentAuthenticatedUser));
                 renderComments(latestCommentsCache);
                 setAuthStatus('');
+                toggleAdminUtilityPanels(isCurrentUserAdmin());
+
+                if (isCurrentUserAdmin()) {
+                    if (adminAnnouncementInput && document.activeElement !== adminAnnouncementInput) {
+                        adminAnnouncementInput.value = latestAnnouncementText;
+                    }
+                    startAdminInboxListener();
+                } else if (adminInboxUnsubscribe) {
+                    adminInboxUnsubscribe();
+                    adminInboxUnsubscribe = null;
+                }
 
                 if (isCurrentUserAdmin()) {
                     ensureAdminNotificationPermission();
@@ -1330,6 +1776,7 @@ const initializeNotesCraftApp = () => {
                     pendingProfileSetupUid = '';
                     isNewProfileDocument = false;
                     closeProfileSetupModal();
+                    closePrivateChatModal();
                 }
 
                 queueMicrotask(() => {
@@ -1389,12 +1836,15 @@ const initializeNotesCraftApp = () => {
         updateAuthUi(null);
         updateLoginIncentive(false);
         setAuthStatus('');
+        toggleAdminUtilityPanels(false);
+        renderGlobalAnnouncement(latestAnnouncementText);
 
         initializeFirestoreCompat().catch((error) => {
             console.warn('Firestore initialization failed.', error);
         });
 
         loadLeaderboard();
+        startAnnouncementRealtimeListener();
 
         initializeFirebaseAuth().catch(() => {
             setAuthStatus('Sign-in is unavailable right now. Please try again later.', true);
@@ -1427,6 +1877,51 @@ const initializeNotesCraftApp = () => {
                 setAuthStatus('Unable to log out right now. Please try again.', true);
             }
         });
+
+        if (adminAnnouncementSaveBtn) {
+            adminAnnouncementSaveBtn.addEventListener('click', () => {
+                saveGlobalAnnouncement();
+            });
+        }
+
+        if (messageAdminBtn) {
+            messageAdminBtn.addEventListener('click', () => {
+                openPrivateChatModal(false);
+            });
+        }
+
+        if (adminInboxBtn) {
+            adminInboxBtn.addEventListener('click', () => {
+                openPrivateChatModal(true);
+            });
+        }
+
+        if (privateChatCloseBtn) {
+            privateChatCloseBtn.addEventListener('click', () => {
+                closePrivateChatModal();
+            });
+        }
+
+        if (privateChatBackdrop) {
+            privateChatBackdrop.addEventListener('click', () => {
+                closePrivateChatModal();
+            });
+        }
+
+        if (privateChatSendBtn) {
+            privateChatSendBtn.addEventListener('click', () => {
+                sendPrivateMessage();
+            });
+        }
+
+        if (privateChatInput) {
+            privateChatInput.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' && !event.shiftKey) {
+                    event.preventDefault();
+                    sendPrivateMessage();
+                }
+            });
+        }
 
         if (profileSetupSaveBtn) {
             profileSetupSaveBtn.addEventListener('click', () => {

@@ -175,6 +175,18 @@
             <p id="leaderboardEmptyState" class="leaderboard-empty">No champions yet. Start marking questions done.</p>
           </section>
 
+          <section id="adminAnnouncementPanel" class="admin-announcement-panel hidden" aria-label="Admin announcement controls">
+            <p class="admin-announcement-title">Admin Broadcast</p>
+            <textarea id="adminAnnouncementInput" class="admin-announcement-input" rows="2" maxlength="240" placeholder="Write global announcement..."></textarea>
+            <button id="adminAnnouncementSaveBtn" class="admin-announcement-save" type="button">Update Announcement</button>
+            <p id="adminAnnouncementStatus" class="admin-announcement-status" aria-live="polite"></p>
+          </section>
+
+          <section class="sidebar-messaging-card" aria-label="Private messaging">
+            <button id="messageAdminBtn" class="sidebar-message-btn hidden" type="button">💬 Message Admin</button>
+            <button id="adminInboxBtn" class="sidebar-message-btn hidden" type="button">Inbox 📩</button>
+          </section>
+
           <div class="nav-item sidebar-home-item">
             <a href="#" class="nav-link sidebar-home-link" id="sidebarHomeLink">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10.5 12 3l9 7.5"></path><path d="M5 9.5V21h14V9.5"></path></svg>
@@ -337,6 +349,10 @@
 
             <!-- Subject Dashboard (Default Home View) -->
             <section id="subjectDashboardView" class="subject-dashboard-view">
+              <div id="globalAnnouncementBanner" class="global-announcement-banner hidden" aria-live="polite">
+                <span class="global-announcement-label">📣 Announcement</span>
+                <p id="globalAnnouncementText" class="global-announcement-text"></p>
+              </div>
               <div class="bismillah-banner" aria-label="Bismillah-ir-Rahman-ir-Rahim">
                 <p class="bismillah-arabic" dir="rtl" lang="ar">بسم الله الرحمن الرحيم</p>
                 <p class="bismillah-translit">Bismillah-ir-Rahman-ir-Rahim</p>
@@ -1514,6 +1530,30 @@ Schools organize these debates because <strong>storytelling makes arguments more
     <input id="profileSetupNicknameInput" class="profile-setup-input" type="text" maxlength="24" placeholder="Enter nickname">
     <p id="profileSetupError" class="profile-setup-error" aria-live="polite"></p>
     <button id="profileSetupSaveBtn" class="profile-setup-save-btn" type="button">Save Nickname</button>
+  </div>
+</div>
+
+<div id="privateChatModal" class="private-chat-modal hidden" role="dialog" aria-modal="true" aria-labelledby="privateChatTitle">
+  <div id="privateChatBackdrop" class="private-chat-backdrop" aria-hidden="true"></div>
+  <div class="private-chat-dialog">
+    <div class="private-chat-header">
+      <h3 id="privateChatTitle">Message Center</h3>
+      <button id="privateChatCloseBtn" class="private-chat-close" type="button" aria-label="Close chat">&times;</button>
+    </div>
+    <div class="private-chat-body">
+      <aside id="adminInboxPanel" class="private-chat-inbox hidden" aria-label="Inbox users">
+        <p class="private-chat-inbox-title">Users</p>
+        <div id="adminInboxList" class="private-chat-inbox-list"></div>
+      </aside>
+      <section class="private-chat-conversation" aria-label="Conversation">
+        <div id="privateChatMessages" class="private-chat-messages"></div>
+        <div class="private-chat-compose">
+          <textarea id="privateChatInput" class="private-chat-input" rows="2" maxlength="500" placeholder="Write your message..."></textarea>
+          <button id="privateChatSendBtn" class="private-chat-send" type="button">Send</button>
+        </div>
+        <p id="privateChatStatus" class="private-chat-status" aria-live="polite"></p>
+      </section>
+    </div>
   </div>
 </div>
 
