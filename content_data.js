@@ -8081,7 +8081,827 @@ const siteData = {
         "badgeText": "The distinction between $m$ and $mr^2$."
       }
     ],
-    "4": [],
+    "4": [
+      {
+        "question": "How is work calculated when a particle is acted upon by a variable force?",
+        "answer": "The total path is divided into $n$ short intervals of displacements where the force is considered approximately *constant*, and the work is the *sum* of the products of force components and displacements for all intervals.",
+        "category": "most",
+        "badgeTitle": "MATHEMATICAL EXPRESSION",
+        "badgeText": "$W_{total}=\\sum_{i=1}^{n}F_{i}\\cos\\theta_{i}\\Delta d_{i}$"
+      },
+      {
+        "question": "How is the exact result for work done by a variable force obtained?",
+        "answer": "The exact work done is obtained by taking the *limit* as the displacement intervals $\\Delta d$ approach *zero*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$W_{total}=\\lim_{\\Delta d\\rightarrow0}\\sum_{i=1}^{n}F_{i}\\cos\\theta_{i}\\Delta d_{i}$"
+      },
+      {
+        "question": "What does the graphical representation of work done by a variable force represent?",
+        "answer": "The work done by a variable force is equal to the *area under the curve* of the $F \\cos\\theta$ versus $d$ graph between two points.",
+        "category": "most",
+        "badgeTitle": "DIAGRAM REFERENCE",
+        "badgeText": "The shaded area under the curve in the force-displacement graph."
+      },
+      {
+        "question": "What defines a conservative force?",
+        "answer": "A force is *conservative* if the work done by it in moving an object between two points is *independent of the path* followed, or if the work done in a *closed path* is zero.",
+        "category": "most",
+        "badgeTitle": "EXAMPLES",
+        "badgeText": "Gravitational force, electrostatic force, and elastic spring force."
+      },
+      {
+        "question": "What is the work done by the gravitational force along a horizontal path?",
+        "answer": "The work done is *zero* because the weight of the object is *perpendicular* to the horizontal displacement ($\\theta = 90^\\circ$).",
+        "category": "most",
+        "badgeTitle": "CONCEPT",
+        "badgeText": "$\\cos(90^\\circ) = 0$, leading to zero work."
+      },
+      {
+        "question": "How does gravitational force behave when an object is moved over a closed path?",
+        "answer": "The total work done by the gravitational force along any *closed path* is exactly *zero*.",
+        "category": "most",
+        "badgeTitle": "IMPORTANT PROPERTY",
+        "badgeText": "This confirms that the gravitational field is a conservative field."
+      },
+      {
+        "question": "What defines a non-conservative force?",
+        "answer": "A force is *non-conservative* if the work done by it in moving an object between two points strictly *depends on the path* of motion.",
+        "category": "most",
+        "badgeTitle": "KEY CHARACTERISTIC",
+        "badgeText": "The total work done in a closed path is never zero."
+      },
+      {
+        "question": "Why is kinetic frictional force classified as a non-conservative force?",
+        "answer": "Frictional force always acts *opposite to motion*, doing *negative work*; therefore, a longer path results in a *greater amount of work* done against friction, making it path-dependent.",
+        "category": "most",
+        "badgeTitle": "EXAMPLES",
+        "badgeText": "Air resistance, tension in a string, and propulsion force of a rocket."
+      },
+      {
+        "question": "What is the definition of power in physics?",
+        "answer": "Power is defined as the measure of the *rate* at which *work is being done*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$P_{av}=\\frac{\\Delta W}{\\Delta t}$"
+      },
+      {
+        "question": "How is instantaneous power defined?",
+        "answer": "Instantaneous power is the limiting value of the ratio of work done to the time interval as the time interval $\\Delta t$ approaches *zero*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$P=\\lim_{\\Delta t\\rightarrow0}\\frac{\\Delta W}{\\Delta t}$"
+      },
+      {
+        "question": "What is the mathematical relationship between power, force, and velocity?",
+        "answer": "Power is equal to the *dot product* of the *applied force* and the *velocity* of the object.",
+        "category": "most",
+        "badgeTitle": "EXPRESSION",
+        "badgeText": "$P=F \\cdot v$"
+      },
+      {
+        "question": "What is the SI unit of power and how is it defined?",
+        "answer": "The SI unit of power is the *watt*, defined as one *joule* of work done in one *second*.",
+        "category": "most",
+        "badgeTitle": "COMMERCIAL UNIT",
+        "badgeText": "Kilowatt-hour (kWh) is often used for electrical energy."
+      },
+      {
+        "question": "What does one kilowatt-hour (kWh) represent in terms of energy?",
+        "answer": "One kilowatt-hour is the *work done* in one hour by an agency whose power is exactly *one kilowatt*.",
+        "category": "most",
+        "badgeTitle": "CONVERSION",
+        "badgeText": "$1 \\text{ kWh} = 3.6 \\times 10^6 \\text{ J} = 3.6 \\text{ MJ}$."
+      },
+      {
+        "question": "Define potential energy.",
+        "answer": "*Potential energy* is the energy possessed by a body because of its *position* in a force field or because of its *constrained state*.",
+        "category": "most",
+        "badgeTitle": "TYPES",
+        "badgeText": "Gravitational potential energy and elastic potential energy."
+      },
+      {
+        "question": "Define absolute gravitational potential energy.",
+        "answer": "It is the *work done* by the gravitational force in displacing an object from a certain *position* to *infinity* where the force of gravity becomes zero.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$U=-\\frac{GMm}{r}$"
+      },
+      {
+        "question": "Why does the equation $W = mgh$ fail over large distances from the Earth?",
+        "answer": "The formula $mgh$ assumes the gravitational force is nearly *constant*, but over large distances, the force varies *inversely* to the square of the distance.",
+        "category": "most",
+        "badgeTitle": "CORRECTION METHOD",
+        "badgeText": "The distance is divided into small steps $\\Delta r$ to keep the force constant within each step."
+      },
+      {
+        "question": "What does the negative sign in the absolute potential energy formula represent?",
+        "answer": "The negative sign indicates that the work has to be done *on the body* to move it against gravity, showing that the Earth's gravitational field is *attractive*.",
+        "category": "most",
+        "badgeTitle": "BEHAVIOR",
+        "badgeText": "As distance $r$ increases, the potential energy $U$ becomes less negative (it increases)."
+      },
+      {
+        "question": "What is the value of absolute potential energy on the surface of the Earth?",
+        "answer": "It is found by setting the distance $r$ equal to the *radius of the Earth* ($R$).",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$U_{g}=-\\frac{GMm}{R}$"
+      },
+      {
+        "question": "Define escape velocity.",
+        "answer": "The *initial velocity* of an object with which it goes out of the Earth's *gravitational field* and *never returns*.",
+        "category": "most",
+        "badgeTitle": "CONDITION",
+        "badgeText": "Initial kinetic energy must equal the increase in absolute potential energy."
+      },
+      {
+        "question": "How is escape velocity derived in terms of the Earth's mass and radius?",
+        "answer": "By equating the initial kinetic energy $\\frac{1}{2}mv_{esc}^{2}$ to the total work required to lift the body to infinity, which is $G\\frac{Mm}{R}$.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$v_{esc}=\\sqrt{\\frac{2GM}{R}}$"
+      },
+      {
+        "question": "How can the escape velocity formula be expressed using gravitational acceleration $g$?",
+        "answer": "By substituting the relation $g=\\frac{GM}{R^2}$ (or $gR=\\frac{GM}{R}$) into the escape velocity equation.",
+        "category": "most",
+        "badgeTitle": "SIMPLIFIED FORMULA",
+        "badgeText": "$v_{esc}=\\sqrt{2gR}$"
+      },
+      {
+        "question": "What is the approximate numerical value of escape velocity on Earth?",
+        "answer": "The escape velocity from the surface of the Earth is approximately *$11 \\text{ km s}^{-1}$* (or $11.2 \\text{ km s}^{-1}$).",
+        "category": "most",
+        "badgeTitle": "COMPARISON",
+        "badgeText": "The escape velocity on the Moon is much lower, at $2.4 \\text{ km s}^{-1}$."
+      },
+      {
+        "question": "State the work-energy theorem.",
+        "answer": "The theorem states that the *change in kinetic energy* of an object is equal to the *work done* on it by a net force.",
+        "category": "most",
+        "badgeTitle": "MATHEMATICAL FORM",
+        "badgeText": "$W = \\frac{1}{2}mv_{f}^{2}-\\frac{1}{2}mv_{i}^{2}$"
+      },
+      {
+        "question": "Is the work-energy theorem applicable for variable forces?",
+        "answer": "Yes, the theorem remains *valid* even if the applied force may *vary* from point to point along the path.",
+        "category": "most",
+        "badgeTitle": "APPLICATION",
+        "badgeText": "It applies for any direction of the force relative to the displacement."
+      },
+      {
+        "question": "Describe the energy state of a freely falling body at its maximum height.",
+        "answer": "At its maximum height before release, the body is at rest, meaning its *kinetic energy* is *zero* and its *potential energy* is at its *maximum* ($mgh$).",
+        "category": "most",
+        "badgeTitle": "EQUATION",
+        "badgeText": "Total Energy = $mgh + 0 = mgh$."
+      },
+      {
+        "question": "What happens to the potential and kinetic energy as a body falls downwards?",
+        "answer": "As the body falls, its height decreases causing a *loss* in potential energy, while its velocity increases resulting in a simultaneous *gain* in kinetic energy.",
+        "category": "most",
+        "badgeTitle": "PRINCIPLE",
+        "badgeText": "Loss in P.E. = Gain in K.E. (ignoring friction)"
+      },
+      {
+        "question": "What is the formula for the total energy of a falling body after it has dropped a distance $x$?",
+        "answer": "The potential energy becomes $mg(h-x)$ and the kinetic energy becomes $mgx$, making the total energy consistently equal to *$mgh$*.",
+        "category": "most",
+        "badgeTitle": "DERIVATION NOTE",
+        "badgeText": "K.E. is calculated using the velocity equation $v_{B}^{2}=2gx$."
+      },
+      {
+        "question": "How does air friction affect the interconversion of energy in a falling body?",
+        "answer": "If a frictional force $f$ is present, a part of the original potential energy is consumed doing *work against friction*, and only the remaining energy is converted into kinetic energy.",
+        "category": "most",
+        "badgeTitle": "EQUATION",
+        "badgeText": "$mgh = \\frac{1}{2}mv^{2} + fh$"
+      },
+      {
+        "question": "State the generalized energy equation for a body falling through a resistive medium.",
+        "answer": "The loss in potential energy equals the gain in kinetic energy *plus* the work done against the *frictional force*.",
+        "category": "most",
+        "badgeTitle": "FORMULA SUMMARY",
+        "badgeText": "Loss in P.E. = Gain in K.E. + Work done against friction."
+      },
+      {
+        "question": "State the generalized energy equation for a body projected upwards through a resistive medium.",
+        "answer": "The loss of kinetic energy is equal to the gain in potential energy *plus* the work done against the *frictional force*.",
+        "category": "most",
+        "badgeTitle": "FORMULA SUMMARY",
+        "badgeText": "Loss of K.E. = Gain in P.E. + Work done against friction."
+      },
+      {
+        "question": "At the exact moment just before a falling body strikes the Earth, what is its energy state?",
+        "answer": "The potential energy becomes *zero* and the kinetic energy reaches its *maximum* value, entirely equaling the original potential energy.",
+        "category": "most",
+        "badgeTitle": "EQUATION",
+        "badgeText": "$K.E = \\frac{1}{2}mv_{c}^{2} = mgh$"
+      },
+      {
+        "question": "How do we calculate the work done during the first small step $\\Delta r$ when deriving absolute potential energy?",
+        "answer": "The work is the product of the average gravitational force $G\\frac{Mm}{r_{1}r_{2}}$ and the negative displacement $-\\Delta r$.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$W_{1\\rightarrow 2}=-GMm(\\frac{1}{r_{1}}-\\frac{1}{r_{2}})$"
+      },
+      {
+        "question": "What geometric approximation is used for the radius squared ($r^2$) in the derivation of absolute potential energy?",
+        "answer": "Since $\\Delta r$ is very small, the term $(\\Delta r)^2$ is *neglected*, allowing $r^2$ to be approximated as the product of the initial and final radii, *$r_1 r_2$*.",
+        "category": "most",
+        "badgeTitle": "SIMPLIFICATION",
+        "badgeText": "$r^2 \\approx r_1^2 + r_1\\Delta r = r_1 r_2$."
+      },
+      {
+        "question": "What does the sum of all work intervals $W_{total} = W_{1\\rightarrow 2} + W_{2\\rightarrow 3} ... + W_{N-1\\rightarrow N}$ simplify to?",
+        "answer": "All intermediate terms cancel out, leaving only the terms containing the *initial position* $r_1$ and the *final position* $r_N$.",
+        "category": "most",
+        "badgeTitle": "FINAL STEP BEFORE INFINITY",
+        "badgeText": "$W_{total}=-GMm(\\frac{1}{r_{1}}-\\frac{1}{r_{N}})$"
+      },
+      {
+        "question": "What is the value of gravitational potential energy at an infinite distance from Earth?",
+        "answer": "At infinity, the distance $r$ is $\\infty$, making the term $\\frac{1}{\\infty}$ equal to *zero*, which means the potential energy is exactly *zero*.",
+        "category": "most",
+        "badgeTitle": "SIGNIFICANCE",
+        "badgeText": "It is the reference point where the Earth's gravitational force no longer has an effect."
+      },
+      {
+        "question": "If a constant force pushes an object but its velocity strictly decreases, what does the work-energy theorem imply about the work done?",
+        "answer": "If velocity decreases, the final kinetic energy is less than the initial, making the change in kinetic energy *negative*. Thus, the total work done on the object is *negative*.",
+        "category": "most",
+        "badgeTitle": "REASONING",
+        "badgeText": "Work is done by the object against an opposing force (like friction)."
+      },
+      {
+        "question": "Why is the force exerted by a spring considered a variable force?",
+        "answer": "The force exerted by a spring *increases* proportionally with the *amount of stretch*, making it continuously dependent on the object's displacement rather than remaining constant.",
+        "category": "important",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "Stretching a mechanical spring or a rubber band."
+      },
+      {
+        "question": "In the graphical calculation of work for a variable force, what happens if the displacement intervals are made infinitely small?",
+        "answer": "As the distance intervals approach *zero*, the summation of areas becomes an *exact result* for the total work done by the variable force.",
+        "category": "important",
+        "badgeTitle": "LIMIT CONDITION",
+        "badgeText": "$\\lim_{\\Delta d\\rightarrow0}$"
+      },
+      {
+        "question": "How do we calculate the work done for the first short interval $\\Delta d_1$ of a variable force?",
+        "answer": "It is calculated as the product of the *constant force component* acting along the displacement and the small *displacement interval* itself.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$\\Delta W_1 = F_1 \\cos\\theta_1 \\Delta d_1$"
+      },
+      {
+        "question": "How do you find the total work done from a force-displacement graph comprising both a rectangle and a triangle?",
+        "answer": "The total work is the direct *sum* of the *area of the rectangle* and the *area of the triangle* calculated from the area under the curve.",
+        "category": "important",
+        "badgeTitle": "APPLICATION METHOD",
+        "badgeText": "As demonstrated in Example 4.1."
+      },
+      {
+        "question": "When calculating work done by a variable force, why is the path divided into $n$ short intervals?",
+        "answer": "The path is divided so that the variable force can be assumed to remain approximately *constant* during each very *short interval*, allowing the standard work formula to be applied.",
+        "category": "important",
+        "badgeTitle": "CONCEPTUAL STEP",
+        "badgeText": "$F$ is assumed constant over $\\Delta d$."
+      },
+      {
+        "question": "What exactly constitutes the gravitational field of the Earth?",
+        "answer": "It is defined as the specific *space* around the Earth in which its *gravitational force* acts upon a body.",
+        "category": "important",
+        "badgeTitle": "KEY PROPERTY",
+        "badgeText": "It is a perfectly conservative field."
+      },
+      {
+        "question": "When moving an object horizontally in a gravitational field, why is the work done along the horizontal steps zero?",
+        "answer": "The force of gravity $mg$ acts straight down, which is exactly *perpendicular* to the horizontal *displacement*, making the work zero.",
+        "category": "important",
+        "badgeTitle": "MATHEMATICAL PROOF",
+        "badgeText": "$\\cos 90^\\circ = 0$."
+      },
+      {
+        "question": "In calculating work along a curved path in a gravitational field, what do the $\\Delta y$ elements represent?",
+        "answer": "They represent the *infinitesimal vertical displacements* during which the gravitational force actually performs work on the object.",
+        "category": "important",
+        "badgeTitle": "IMPORTANT RELATION",
+        "badgeText": "The sum of all vertical steps $\\sum \\Delta y = h$."
+      },
+      {
+        "question": "What is the sign of the product of $mg$ and $\\Delta y$ as a body is lifted upward against gravity?",
+        "answer": "The product is inherently *negative* because the upward displacement is directly *opposite* to the downward gravitational force.",
+        "category": "important",
+        "badgeTitle": "EQUATION",
+        "badgeText": "$W_{AB} = -mgh$"
+      },
+      {
+        "question": "Is the normal force considered conservative or non-conservative?",
+        "answer": "The normal force is classified strictly as a *non-conservative force* because any work it might do heavily depends on the *path* of motion.",
+        "category": "important",
+        "badgeTitle": "OTHER EXAMPLES",
+        "badgeText": "Air resistance, tension, and rocket propulsion."
+      },
+      {
+        "question": "Why is the concept of power introduced in physics alongside the concept of work?",
+        "answer": "Because the definition of work alone measures energy transfer but does not specify the *rate* or *time interval* in which that physical effort is accomplished.",
+        "category": "important",
+        "badgeTitle": "PRACTICAL APPLICATION",
+        "badgeText": "Measuring machine efficiency and output."
+      },
+      {
+        "question": "If work is expressed as a continuous function of time, which type of power is most appropriate to calculate?",
+        "answer": "The *instantaneous power*, which evaluates the rate of doing work at any specific, infinitesimally small *instant* in time.",
+        "category": "important",
+        "badgeTitle": "EQUATION",
+        "badgeText": "$P = \\lim_{\\Delta t\\rightarrow0}\\frac{\\Delta W}{\\Delta t}$"
+      },
+      {
+        "question": "How does the power equation $P = F \\cdot v$ arise from the basic definition of power?",
+        "answer": "By substituting work $\\Delta W = F \\cdot \\Delta d$ into the power formula and recognizing that the physical *ratio* $\\frac{\\Delta d}{\\Delta t}$ is exactly equal to *velocity*.",
+        "category": "important",
+        "badgeTitle": "DERIVATION STEP",
+        "badgeText": "$P = F \\cdot \\frac{\\Delta d}{\\Delta t}$"
+      },
+      {
+        "question": "What does the term \"watt second\" represent in physical measurements?",
+        "answer": "It is a commercial or practical unit of *work* or *electrical energy*, which is precisely equivalent to one *joule*.",
+        "category": "important",
+        "badgeTitle": "EQUIVALENCE",
+        "badgeText": "$1 \\text{ Ws} = 1 \\text{ J}$"
+      },
+      {
+        "question": "According to the \"For Your Information\" table, what is the approximate power of a Jumbo Jet Aircraft?",
+        "answer": "A Jumbo Jet operates at an massive approximate power of *$1.3 \\times 10^5$ W*.",
+        "category": "important",
+        "badgeTitle": "COMPARISON",
+        "badgeText": "Significantly higher than a car at $1.1 \\times 10^4$ W."
+      },
+      {
+        "question": "According to the text, what is the standard power consumption of a typical coloured TV?",
+        "answer": "A coloured TV typically consumes about *120 W* of electrical power.",
+        "category": "important",
+        "badgeTitle": "DATA SOURCE",
+        "badgeText": "Chapter 4 \"For Your Information\" table."
+      },
+      {
+        "question": "Give an example of a body possessing potential energy strictly due to its constrained state.",
+        "answer": "The energy permanently stored in a *compressed spring* or a stretched bow is due to its physically *constrained state*.",
+        "category": "important",
+        "badgeTitle": "TERMINOLOGY",
+        "badgeText": "This is known as Elastic Potential Energy."
+      },
+      {
+        "question": "According to the \"Do You Know?\" box, how does the energy from 10 days of sunlight compare to Earth's fossil fuels?",
+        "answer": "The solar energy reaching Earth in just *10 days* of sunlight is significantly *more* than the total energy stored in all the *fossil fuels* combined.",
+        "category": "important",
+        "badgeTitle": "ENVIRONMENTAL CONTEXT",
+        "badgeText": "Highlights the immense potential of solar energy."
+      },
+      {
+        "question": "Why do we specifically divide the distance from the Earth into small steps $\\Delta r$ when deriving absolute potential energy?",
+        "answer": "Because the Earth's gravitational force varies as the *inverse square* of the distance, and we mathematically require it to be approximately *constant* over each microscopic step.",
+        "category": "important",
+        "badgeTitle": "MATHEMATICAL NECESSITY",
+        "badgeText": "Required to accurately apply $W = F \\cdot d$."
+      },
+      {
+        "question": "What is the average radius $r$ representing the distance of the center of a step from the Earth's center?",
+        "answer": "It is mathematically taken as the *arithmetic mean* of the boundary distances $r_1$ and $r_2$, calculated as *$\\frac{r_1 + r_2}{2}$*.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$r = r_1 + \\frac{\\Delta r}{2}$"
+      },
+      {
+        "question": "What happens to the absolute potential energy of a body as it is moved infinitely far away from the Earth?",
+        "answer": "As the distance parameter $r$ approaches *infinity*, the mathematical term $\\frac{1}{r}$ becomes zero, forcing the absolute potential energy to become exactly *zero*.",
+        "category": "important",
+        "badgeTitle": "PHYSICAL MEANING",
+        "badgeText": "The body is completely free from the Earth's gravitational influence."
+      },
+      {
+        "question": "What is the exact amount of work required to completely remove an object of mass $m$ from Earth's gravitational field starting from its surface?",
+        "answer": "The required work must be *positive* and equal in absolute magnitude to *$G\\frac{Mm}{R}$*.",
+        "category": "important",
+        "badgeTitle": "PRINCIPLE",
+        "badgeText": "Energy required to make its final P.E. exactly zero."
+      },
+      {
+        "question": "What physical phenomenon causes a standard projectile to eventually return to the ground?",
+        "answer": "The continuous *downward action* of the *force of gravity* decelerates the object's upward climb until it eventually falls back.",
+        "category": "important",
+        "badgeTitle": "EXCEPTION",
+        "badgeText": "Unless the object is launched at or above escape velocity."
+      },
+      {
+        "question": "According to the escape speeds table, what is the escape velocity of Jupiter?",
+        "answer": "Jupiter possesses the highest listed planetary escape speed of *$61 \\text{ km s}^{-1}$*.",
+        "category": "important",
+        "badgeTitle": "COMPARISON",
+        "badgeText": "Extremely massive compared to Earth's $11.2 \\text{ km s}^{-1}$."
+      },
+      {
+        "question": "According to the escape speeds table, what is the escape velocity of the planet Mars?",
+        "answer": "The specific escape speed required to leave Mars is *$5.0 \\text{ km s}^{-1}$*.",
+        "category": "important",
+        "badgeTitle": "COMPARISON",
+        "badgeText": "Less than half of the escape velocity required on Earth."
+      },
+      {
+        "question": "What does a mathematically negative value for work indicate when applying the work-energy theorem?",
+        "answer": "It strongly indicates that the kinetic energy of the object will *decrease* because the applied net force is acting directly *opposite* to the direction of motion.",
+        "category": "important",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "Brakes being applied to a moving car."
+      },
+      {
+        "question": "In the work-energy theorem derivation, what is the formula for the uniform acceleration $a$ produced by a net force $F$ over distance $d$?",
+        "answer": "Using the third equation of motion, the acceleration is isolated as *$a = \\frac{1}{2d}(v_f^2 - v_i^2)$*.",
+        "category": "important",
+        "badgeTitle": "DERIVATION STEP",
+        "badgeText": "This is calculated right before substitution into Newton's second law ($F=ma$)."
+      },
+      {
+        "question": "In Example 4.4 featuring a motorcycle coasting down a slope, what force balances the normal force $F_N$?",
+        "answer": "The normal force is perfectly balanced by the *perpendicular component* of the motorcycle's total weight, which is mathematically *$mg \\cos 24^\\circ$*.",
+        "category": "important",
+        "badgeTitle": "DYNAMICS APPLICATION",
+        "badgeText": "Resolving vector forces on an inclined plane."
+      },
+      {
+        "question": "According to the chapter's \"Tid-bits\" box, how does daily human food energy intake roughly compare to petrol?",
+        "answer": "All the food energy a standard person eats in one single day contains approximately the same energy as a *$1/3$ litre* of liquid *petrol*.",
+        "category": "important",
+        "badgeTitle": "FUN FACT",
+        "badgeText": "Illustrates the stark difference in energy densities."
+      },
+      {
+        "question": "In the theoretical interconversion of P.E. and K.E., what is the total energy at a point exactly halfway down the fall?",
+        "answer": "The potential energy and kinetic energy are perfectly *equal*, and their mathematical sum remains identically constant at *$mgh$*.",
+        "category": "important",
+        "badgeTitle": "CONSERVATION PRINCIPLE",
+        "badgeText": "Total mechanical energy is conserved in the absence of friction."
+      },
+      {
+        "question": "When a freely falling body is subjected to air friction, what does the mathematical term $fh$ represent?",
+        "answer": "It directly represents the portion of the original potential energy strictly *used up* or dissipated in doing *work against friction*.",
+        "category": "important",
+        "badgeTitle": "ENERGY EQUATION",
+        "badgeText": "$P.E._{loss} = K.E._{gain} + fh$"
+      },
+      {
+        "question": "If an upward-moving body experiences heavy air resistance, what is the worded equation for its energy change?",
+        "answer": "The initial kinetic energy lost is equal to the *gain in potential energy* added to the *work done against* the resistive frictional force.",
+        "category": "important",
+        "badgeTitle": "FORMULA SUMMARY",
+        "badgeText": "Loss of K.E. = Gain in P.E. + Work done against friction."
+      },
+      {
+        "question": "(MCQ 4.1) A 1 kg mass has a potential energy of 1 joule relative to the ground when it is at what specific height?",
+        "answer": "Using the formula $mgh = 1$, the height is calculated as $1 / 9.8$, which accurately equals *0.102 m*.",
+        "category": "important",
+        "badgeTitle": "FORMULA APPLIED",
+        "badgeText": "$h = \\frac{P.E.}{mg}$"
+      },
+      {
+        "question": "(MCQ 4.3) A body sitting perfectly at rest may still possess which of the following physical quantities: speed, velocity, momentum, or energy?",
+        "answer": "A stationary body at rest may still possess *energy*, specifically *potential energy*, depending entirely on its relative position in a field.",
+        "category": "important",
+        "badgeTitle": "KEY CONCEPT",
+        "badgeText": "Speed, velocity, and momentum are all exactly zero at rest."
+      },
+      {
+        "question": "(MCQ 4.5) When a sports ball is thrown vertically upward and falls back down, which acting force is conservative?",
+        "answer": "The downward force of *gravity* acting continuously on the ball is the strictly *conservative force* in this entire scenario.",
+        "category": "important",
+        "badgeTitle": "CONTRAST",
+        "badgeText": "Any air resistance encountered is non-conservative."
+      },
+      {
+        "question": "(MCQ 4.6) According to the strict work-energy principle in linear motion, the total work done on a body is equal to what?",
+        "answer": "It is physically and mathematically equal to the *change in kinetic energy* of the body.",
+        "category": "important",
+        "badgeTitle": "THEOREM STATEMENT",
+        "badgeText": "$\\Delta K.E. = W$"
+      },
+      {
+        "question": "(MCQ 4.7) If the rated power of a lamp is 6 W, how much total energy does it give out in exactly 2 minutes?",
+        "answer": "Using $W = P \\times t$, the energy is $6 \\text{ W} \\times (2 \\times 60 \\text{ s}) = 720$, which equals *720 J*.",
+        "category": "important",
+        "badgeTitle": "CALCULATION",
+        "badgeText": "Power multiplied by time in standard SI units."
+      },
+      {
+        "question": "(MCQ 4.10) A body moves 10 m under a 5 N force doing precisely 25 J of work. What is the angle of the force?",
+        "answer": "Since $W = Fd \\cos\\theta \\implies 25 = 50 \\cos\\theta \\implies \\cos\\theta = 0.5$, the angle is exactly *$60^\\circ$*.",
+        "category": "important",
+        "badgeTitle": "MATHEMATICAL SOLVING",
+        "badgeText": "Taking the inverse cosine of 0.5."
+      },
+      {
+        "question": "(Short Q 4.1) Why is electrical power actively required at all when a heavy elevator is descending?",
+        "answer": "Power is strictly required to operate the *braking mechanisms* and control systems to safely dissipate the rapid *decrease in potential energy* and completely prevent a free fall.",
+        "category": "important",
+        "badgeTitle": "SAFETY APPLICATION",
+        "badgeText": "Ensuring a controlled and safe descent."
+      },
+      {
+        "question": "(Short Q 4.3) Will the total mechanical energy of a stone falling towards Earth in standard air be fully conserved?",
+        "answer": "*No*, it will not be strictly conserved because air friction acts as a *non-conservative force* that permanently dissipates some mechanical energy as heat.",
+        "category": "important",
+        "badgeTitle": "CONCEPT",
+        "badgeText": "Energy conservation in resistive mediums ($Loss P.E = Gain K.E + fh$)."
+      },
+      {
+        "question": "(Short Q 4.10) What is the mathematical effect on the kinetic energy of a body if its linear momentum suddenly becomes double?",
+        "answer": "Since kinetic energy is proportional to the *square of momentum* ($K.E. = p^2/2m$), doubling the momentum will cause the kinetic energy to become *four times* its original value.",
+        "category": "important",
+        "badgeTitle": "FORMULA LINK",
+        "badgeText": "$K.E. \\propto p^2$"
+      },
+      {
+        "question": "(Short Q 4.11) Does the international space station currently possess gravitational potential energy, kinetic energy, or both?",
+        "answer": "It strictly possesses *both*; it has immense *kinetic energy* due to its fast orbital velocity and significant *gravitational potential energy* due to its high altitude above the Earth.",
+        "category": "important",
+        "badgeTitle": "CONCEPT",
+        "badgeText": "Orbital mechanics and total mechanical energy."
+      },
+      {
+        "question": "(CRQ 4.1) What are the two strict physical conditions for a given force to be considered conservative?",
+        "answer": "The work done must be completely *independent of the path* followed between two points, and the total work done around any closed *loop or path* must be exactly *zero*.",
+        "category": "important",
+        "badgeTitle": "DEFINITIONAL CONDITIONS",
+        "badgeText": "Core traits of conservative fields."
+      },
+      {
+        "question": "(CRQ 4.4) If an opposing force reduces a moving ball's speed from $14 \\text{ m s}^{-1}$ to $6 \\text{ m s}^{-1}$, has that force done positive or negative work?",
+        "answer": "The force has absolutely done *negative work* because the resulting change in kinetic energy is negative, proving the force acted *opposite* to the displacement.",
+        "category": "important",
+        "badgeTitle": "WORK-ENERGY APPLICATION",
+        "badgeText": "Negative work removes kinetic energy from the system."
+      },
+      {
+        "question": "(CRQ 4.6) Why is the physical work done against sliding friction considered non-conservative in nature?",
+        "answer": "Because the total work done against friction *depends entirely on the path length*; a longer, winding path dissipates far more energy as heat, and work in a closed loop is never zero.",
+        "category": "important",
+        "badgeTitle": "KEY PROPERTY",
+        "badgeText": "Strict path dependency of energy loss."
+      },
+      {
+        "question": "Why is the work done on a rocket moving away from Earth analyzed as a variable force problem?",
+        "answer": "Because the *gravitational force* pulling on the rocket strictly varies as the *inverse square* of the distance from the Earth's center.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPT FOCUS",
+        "badgeText": "Inverse-square law application."
+      },
+      {
+        "question": "In the graphical analysis of a variable force, what specific geometric shape represents the work done in a single tiny interval?",
+        "answer": "The work is represented by a *shaded rectangle* with a mathematical area defined as *$F_i \\cos\\theta_i \\Delta d_i$*.",
+        "category": "conceptual",
+        "badgeTitle": "DIAGRAM REFERENCE",
+        "badgeText": "Figure 4.6 (Area approximation)."
+      },
+      {
+        "question": "What mathematical condition transforms the sum of rectangular areas into the exact continuous work done by a variable force?",
+        "answer": "The exact result is achieved by applying a *limit* where the displacement intervals $\\Delta d$ mathematically approach *zero*.",
+        "category": "conceptual",
+        "badgeTitle": "CALCULUS CONCEPT",
+        "badgeText": "$\\lim_{\\Delta d\\rightarrow 0}$"
+      },
+      {
+        "question": "How does the gravitational work along a straight diagonal path (Path 1) compare to a stepped rectangular path (Path 2)?",
+        "answer": "The total work done is exactly the *same* ($-mgh$) because the gravitational force is inherently *path-independent*.",
+        "category": "conceptual",
+        "badgeTitle": "KEY PROPERTY",
+        "badgeText": "Hallmark of a conservative field."
+      },
+      {
+        "question": "If an object is moved in a complete closed loop (e.g., from A to B and back to A) in a gravitational field, what is the net work done?",
+        "answer": "The total net work is precisely *zero* because the negative work done moving upward perfectly cancels the positive work done moving downward.",
+        "category": "conceptual",
+        "badgeTitle": "THEOREM",
+        "badgeText": "Closed-path integral of a conservative force."
+      },
+      {
+        "question": "Why does kinetic sliding friction completely fail the closed-path test for conservative forces?",
+        "answer": "Because friction always *opposes motion*, requiring continuous physical effort; thus, work in a closed loop accumulates and is *never zero*.",
+        "category": "conceptual",
+        "badgeTitle": "ENERGY IMPLICATION",
+        "badgeText": "Continuous energy dissipation."
+      },
+      {
+        "question": "Under what exact condition does the instantaneous power of an object perfectly equal its average power?",
+        "answer": "This occurs only when the rate of doing work remains absolutely *constant* over the entire observed time interval.",
+        "category": "conceptual",
+        "badgeTitle": "MATHEMATICAL CONDITION",
+        "badgeText": "When $\\frac{\\Delta W}{\\Delta t}$ does not fluctuate."
+      },
+      {
+        "question": "In the expression $P = F \\cdot v$, what does the mathematical dot product imply about the nature of power?",
+        "answer": "The dot product of the force and velocity vectors dictates that power is strictly a *scalar quantity*.",
+        "category": "conceptual",
+        "badgeTitle": "VECTOR ANALYSIS",
+        "badgeText": "Dot product yields scalars."
+      },
+      {
+        "question": "According to the \"For Your Information\" power table, what is the rated power of a standard pocket calculator?",
+        "answer": "A typical pocket calculator operates at an extremely low power of exactly *$7.5 \\times 10^{-4}$ W*.",
+        "category": "conceptual",
+        "badgeTitle": "DATA POINT",
+        "badgeText": "Practical scale of micro-electronics."
+      },
+      {
+        "question": "According to the text's table, how much power does a typical flash light utilizing two cells consume?",
+        "answer": "A two-cell flash light consumes exactly *1.5 W* of electrical power.",
+        "category": "conceptual",
+        "badgeTitle": "DATA POINT",
+        "badgeText": "Everyday device power metrics."
+      },
+      {
+        "question": "Which specific household device listed in the chapter's table consumes exactly $2 \\times 10^3$ W of power?",
+        "answer": "An *electric heater* operates exactly at this high power consumption level.",
+        "category": "conceptual",
+        "badgeTitle": "DATA POINT",
+        "badgeText": "High-draw thermal appliances."
+      },
+      {
+        "question": "In the definition of absolute potential energy, why is the reference point strictly chosen to be at infinity?",
+        "answer": "Because it is only at an *infinite distance* that the Earth's gravitational pull mathematically and physically becomes *zero*.",
+        "category": "conceptual",
+        "badgeTitle": "REFERENCE POINT",
+        "badgeText": "$U_{\\infty} = 0$"
+      },
+      {
+        "question": "During the derivation of absolute potential energy, what does the algebraic term $r = \\frac{r_1 + r_2}{2}$ represent?",
+        "answer": "It represents the *arithmetic mean* distance, precisely locating the *center of the step* between radii $r_1$ and $r_2$.",
+        "category": "conceptual",
+        "badgeTitle": "DERIVATION GEOMETRY",
+        "badgeText": "Midpoint approximation."
+      },
+      {
+        "question": "Why is the specific mathematical approximation $(\\Delta r)^2 \\ll r_1^2$ critical in deriving absolute potential energy?",
+        "answer": "It allows the infinitesimally small $(\\Delta r)^2$ term to be safely *neglected*, smoothly simplifying the radius squared ($r^2$) into the product *$r_1 r_2$*.",
+        "category": "conceptual",
+        "badgeTitle": "ALGEBRAIC SIMPLIFICATION",
+        "badgeText": "$r^2 \\approx r_1 r_2$"
+      },
+      {
+        "question": "What physical reality is indicated by the fact that the value of $U$ becomes \"less negative\" as distance $r$ increases?",
+        "answer": "It mathematically confirms that as an object is physically raised higher against gravity, its absolute potential energy actually *increases*.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPT",
+        "badgeText": "Moving towards a maximum value of zero."
+      },
+      {
+        "question": "What is the precise amount of positive work required to completely free a mass $m$ from Earth's gravity starting from the surface?",
+        "answer": "The required energy is exactly *$\\frac{GMm}{R}$*, which perfectly neutralizes the negative absolute potential energy holding it to Earth.",
+        "category": "conceptual",
+        "badgeTitle": "ENERGY REQUIREMENT",
+        "badgeText": "Overcoming the gravitational binding energy."
+      },
+      {
+        "question": "What striking fact is stated in the \"Do You Know?\" box regarding sunlight and Earth's fuel reserves?",
+        "answer": "The sheer volume of solar energy striking Earth in just *10 days* vastly exceeds the total energy stored in *all fossil fuels* combined.",
+        "category": "conceptual",
+        "badgeTitle": "ENVIRONMENTAL PERSPECTIVE",
+        "badgeText": "Scale of solar energy."
+      },
+      {
+        "question": "In the derivation of escape velocity, what happens to the body's final potential energy?",
+        "answer": "It mathematically approaches exactly *zero* because the body is theorized to successfully reach an *infinite distance* from Earth.",
+        "category": "conceptual",
+        "badgeTitle": "BOUNDARY CONDITION",
+        "badgeText": "Escape criteria."
+      },
+      {
+        "question": "Based on the table of escape speeds, which listed planet possesses the lowest escape velocity?",
+        "answer": "*Mercury* has the lowest planetary escape speed listed at exactly *$4.3 \\text{ km s}^{-1}$*.",
+        "category": "conceptual",
+        "badgeTitle": "PLANETARY DATA",
+        "badgeText": "Smallest major planet gravity."
+      },
+      {
+        "question": "According to the chapter's data table, what is the exact escape velocity required to leave the planet Neptune?",
+        "answer": "The escape speed for Neptune is listed precisely at *$25.4 \\text{ km s}^{-1}$*.",
+        "category": "conceptual",
+        "badgeTitle": "PLANETARY DATA",
+        "badgeText": "Gas giant gravity metrics."
+      },
+      {
+        "question": "What is the specific escape speed required to overcome the gravity of the planet Venus?",
+        "answer": "Venus requires an escape speed of *$10.4 \\text{ km s}^{-1}$*, which is fractionally lower than Earth's.",
+        "category": "conceptual",
+        "badgeTitle": "PLANETARY DATA",
+        "badgeText": "Sister-planet comparison."
+      },
+      {
+        "question": "How does the escape velocity of Uranus compare to the escape velocity of Saturn?",
+        "answer": "Uranus requires a noticeably *lower* escape speed ($22.4 \\text{ km s}^{-1}$) compared to the massive gravity of Saturn ($37.0 \\text{ km s}^{-1}$).",
+        "category": "conceptual",
+        "badgeTitle": "PLANETARY DATA",
+        "badgeText": "Mass-to-radius ratio effects."
+      },
+      {
+        "question": "In the formal derivation of the work-energy theorem, which specific kinematic equation is initially utilized?",
+        "answer": "The derivation strictly relies on the *third equation of motion*, which is mathematically expressed as *$2ad = v_f^2 - v_i^2$*.",
+        "category": "conceptual",
+        "badgeTitle": "MATHEMATICAL FOUNDATION",
+        "badgeText": "Linking kinematics to dynamics."
+      },
+      {
+        "question": "What does the \"Tid-bits\" margin box claim about the strict energy equivalent of your daily food intake?",
+        "answer": "It states that all the food a person eats in one single day contains roughly the same physical energy as a *$1/3$ litre of petrol*.",
+        "category": "conceptual",
+        "badgeTitle": "ANALOGY",
+        "badgeText": "Biological vs. chemical energy density."
+      },
+      {
+        "question": "When initially deriving the interconversion of P.E. and K.E. for a falling body, what major environmental assumption is made?",
+        "answer": "The theoretical derivation strictly assumes a perfect vacuum by completely *ignoring air friction* and drag.",
+        "category": "conceptual",
+        "badgeTitle": "IDEALIZED SYSTEM",
+        "badgeText": "Perfect mechanical energy conservation."
+      },
+      {
+        "question": "For a body falling from height $h$, how is its kinetic energy at an intermediate distance $x$ calculated without knowing the time elapsed?",
+        "answer": "By isolating $v^2$ using the third equation of motion ($v^2 = 2gx$), the kinetic energy algebraically simplifies straight to the spatial term *$mgx$*.",
+        "category": "conceptual",
+        "badgeTitle": "DERIVATION TRICK",
+        "badgeText": "Substituting $2gx$ into $\\frac{1}{2}mv^2$."
+      },
+      {
+        "question": "In a real-world resistive medium, what physical fate befalls the mechanical energy \"lost\" by a falling object?",
+        "answer": "The lost mechanical energy is strictly converted into *thermal energy* by doing continuous *work against friction* ($fh$).",
+        "category": "conceptual",
+        "badgeTitle": "THERMODYNAMIC REALITY",
+        "badgeText": "Energy dissipation."
+      },
+      {
+        "question": "What surprising historical fact is presented in the chapter's \"Tid-bits\" regarding global coal consumption?",
+        "answer": "It notes that humanity has burned more coal since the year *1945* than was utilized in the *whole of history* before that date.",
+        "category": "conceptual",
+        "badgeTitle": "HISTORICAL DATA",
+        "badgeText": "Exponential energy usage."
+      },
+      {
+        "question": "(MCQ 4.2) If an iron sphere and an aluminium sphere are dropped simultaneously, what physical property is identical when they are 10 m from the ground?",
+        "answer": "Because they are falling in the exact same gravitational field, they possess identical downward *accelerations* regardless of their mass difference.",
+        "category": "conceptual",
+        "badgeTitle": "PHYSICS PRINCIPLE",
+        "badgeText": "Independence of falling acceleration from mass."
+      },
+      {
+        "question": "(Short Q 4.1) Why must an engineering limit be placed on the maximum number of passengers in a descending elevator?",
+        "answer": "To strictly ensure that the massive *decrease in potential energy* does not completely overwhelm the safe dissipation capacity of the elevator's *braking motors*.",
+        "category": "conceptual",
+        "badgeTitle": "ENGINEERING SAFETY",
+        "badgeText": "Managing maximum kinetic loads."
+      },
+      {
+        "question": "(Short Q 4.2) If a crane raises a heavy body to a height $H$, what are the specific mathematical signs of the work done by the crane and by gravity?",
+        "answer": "The lifting crane inherently does *positive work* (force and motion align), while the Earth's gravity does strictly *negative work* (force opposes motion).",
+        "category": "conceptual",
+        "badgeTitle": "VECTOR ANALYSIS",
+        "badgeText": "Directionality of $F$ and $d$."
+      },
+      {
+        "question": "(Short Q 4.5) If a moving transport trolley drops leaking sand bags onto a frictionless track, what happens to the trolley's uniform speed?",
+        "answer": "The forward speed remains completely *unchanged* because the leaking sand simply carries away its own proportionate *momentum*, exerting no decelerating force on the trolley itself.",
+        "category": "conceptual",
+        "badgeTitle": "NEWTONIAN MECHANICS",
+        "badgeText": "No external horizontal force applied."
+      },
+      {
+        "question": "(CRQ 4.1) Aside from path independence, what is the strict second condition for a force to be officially classified as conservative?",
+        "answer": "The total physical work calculated over any complete *closed path* must integrate to exactly *zero*.",
+        "category": "conceptual",
+        "badgeTitle": "CORE DEFINITION",
+        "badgeText": "Mathematical criteria for conservative fields."
+      },
+      {
+        "question": "(CRQ 4.7) Does the invisible movement of atmospheric wind physically contain kinetic energy?",
+        "answer": "Yes, because wind is fundamentally a *moving air mass*, and any physical mass in motion intrinsically possesses measurable *kinetic energy*.",
+        "category": "conceptual",
+        "badgeTitle": "FLUID DYNAMICS",
+        "badgeText": "$K.E. = \\frac{1}{2}mv^2$ applied to gases."
+      },
+      {
+        "question": "(Comp Q 4.3) How does the textbook theoretically prove that the Earth's gravitational field is definitively conservative?",
+        "answer": "By geometrically showing that the mathematical work done along any stepped or highly *curved path* perfectly equals $-mgh$, exactly matching a direct *vertical path*.",
+        "category": "conceptual",
+        "badgeTitle": "PROOF METHOD",
+        "badgeText": "Breaking curves into infinitesimal $x$ and $y$ vectors."
+      },
+      {
+        "question": "(Num 4.4) What exact physical condition must be met at the highest point so that water does not spill from a bucket whirled in a vertical circle?",
+        "answer": "The downward weight of the water ($mg$) must be entirely provided by the required minimum *centripetal force* ($\\frac{mv^2}{r}$), keeping the water pinned to the bucket base.",
+        "category": "conceptual",
+        "badgeTitle": "CIRCULAR MOTION DYNAMICS",
+        "badgeText": "$v = \\sqrt{rg}$ threshold."
+      }
+    ],
     "5": [],
     "6": [],
     "7": [],
