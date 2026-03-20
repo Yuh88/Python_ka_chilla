@@ -8902,8 +8902,1305 @@ const siteData = {
         "badgeText": "$v = \\sqrt{rg}$ threshold."
       }
     ],
-    "5": [],
-    "6": [],
+    "5": [
+      {
+        "question": "What is meant by deformation in solids?",
+        "answer": "It is the *change in shape*, *length*, or *volume* produced when a body is subjected to some *external force*.",
+        "category": "most",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "Squeezing a soft rubber ball or stretching a rubber string."
+      },
+      {
+        "question": "How is a solid body brought into a state of stress?",
+        "answer": "Under the influence of an *external force*, distortion occurs because of the *displacement of atoms* from their equilibrium position, bringing the body into a *state of stress*.",
+        "category": "most",
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "The atoms are held by inter-atomic cohesive forces."
+      },
+      {
+        "question": "Define the term elasticity.",
+        "answer": "It is the *ability* of a body to *return* to its *original shape and dimensions* after the removal of the external applied force.",
+        "category": "most",
+        "badgeTitle": "CONDITION",
+        "badgeText": "This is provided the external applied force is not too great."
+      },
+      {
+        "question": "What is stress and how is it mathematically defined?",
+        "answer": "*Stress* is defined as the *force applied per unit area* to produce any change in the shape, volume, or length of a body.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "σ=F/A"
+      },
+      {
+        "question": "What is the SI unit of stress?",
+        "answer": "The SI unit of stress is *newton per square meter* (N m⁻²), which is given the name *pascal* (Pa).",
+        "category": "most",
+        "badgeTitle": "EQUIVALENCE",
+        "badgeText": "1 Pa=1 N m⁻²"
+      },
+      {
+        "question": "What are the three types of stress based on the deformation they cause?",
+        "answer": "The three types are *tensile stress* (changes length), *volume stress* (changes volume), and *shear stress* (changes shape).",
+        "category": "most",
+        "badgeTitle": "APPLICATION",
+        "badgeText": "Stretching a wire involves tensile stress."
+      },
+      {
+        "question": "Define strain in the context of one-dimensional deformation.",
+        "answer": "*Strain* is a measure of the *deformation* of a solid and is defined as the *fractional change in length* when stress is applied.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "ε=ΔL/L₀"
+      },
+      {
+        "question": "Why does strain have no units?",
+        "answer": "Because strain is the *ratio* of two *identical physical quantities* (such as lengths), it is *dimensionless* and has no units.",
+        "category": "most",
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "It solely represents a fractional or percentage change."
+      },
+      {
+        "question": "Define volumetric strain.",
+        "answer": "It is the *change in volume per unit original volume* when the applied stress changes the volume of a body.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "Volumetric strain = ΔV/V₀"
+      },
+      {
+        "question": "Define shear strain.",
+        "answer": "It is the strain produced when shear stress *slides one face* of a rigid body relative to the opposite face, mathematically defined as *displacement divided by distance*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "γ= Δx/y = tanθ (For small angles, γ=θ in radians)."
+      },
+      {
+        "question": "What is Young's Modulus?",
+        "answer": "It is defined as the *tensile stress* applied per *unit tensile strain* on a material.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "Y = (F/A) / (ΔL/L₀)"
+      },
+      {
+        "question": "What is the proportional limit in a stress-strain curve?",
+        "answer": "It is defined as the *greatest stress* that a material can endure without losing the *straight line proportionality* between stress and strain.",
+        "category": "most",
+        "badgeTitle": "HOOKE'S LAW",
+        "badgeText": "In this region, deformation is directly proportional to the load."
+      },
+      {
+        "question": "Define elastic limit or yield point.",
+        "answer": "It is the *maximum stress* at which a material *remains elastic*, meaning it will recover its original shape if the load is removed.",
+        "category": "most",
+        "badgeTitle": "SYMBOL",
+        "badgeText": "Usually denoted as σ₀ at the yield point."
+      },
+      {
+        "question": "Describe plastic deformation.",
+        "answer": "It is a kind of behavior where a specimen is *permanently changed* and does not recover its original shape or dimensions after the stress is increased *beyond the yield stress* and then removed.",
+        "category": "most",
+        "badgeTitle": "ALTERNATIVE TERM",
+        "badgeText": "Plasticity."
+      },
+      {
+        "question": "What is Ultimate Tensile Strength (UTS)?",
+        "answer": "It is the *maximum stress* that a material can withstand and can be regarded as the *nominal strength* of the material.",
+        "category": "most",
+        "badgeTitle": "SYMBOL",
+        "badgeText": "Represented as σₘ."
+      },
+      {
+        "question": "What happens at the fracture stress point?",
+        "answer": "Once the *Ultimate Tensile Strength* is crossed, the material eventually *breaks* or *ruptures* at a specific point corresponding to the *fracture stress*.",
+        "category": "most",
+        "badgeTitle": "SYMBOL",
+        "badgeText": "Represented as σ_f."
+      },
+      {
+        "question": "Differentiate between ductile and brittle substances based on their deformation behavior.",
+        "answer": "*Ductile* substances undergo *plastic deformation* until they break, whereas *brittle* substances break just after the *elastic limit* is reached.",
+        "category": "most",
+        "badgeTitle": "EXAMPLES",
+        "badgeText": "Lead and copper are ductile; glass and high carbon steel are brittle."
+      },
+      {
+        "question": "What is strain energy in a deformed material?",
+        "answer": "It is the *work done* against the *elastic restoring force*, stored as the *gain in potential energy* of the molecules due to their displacement from mean positions.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "W = ½ F Δx"
+      },
+      {
+        "question": "How can the work done to stretch a material be found from a graph?",
+        "answer": "The *area under* a *force-extension graph* represents the *work done* to stretch the material.",
+        "category": "most",
+        "badgeTitle": "EQUIVALENCE",
+        "badgeText": "This area is equal to the elastic potential energy stored in the material."
+      },
+      {
+        "question": "State the expression for strain energy per unit volume of a material.",
+        "answer": "The *strain energy per unit volume* is equal to *half* the product of *stress* and *strain*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "U = ½ × stress × strain"
+      },
+      {
+        "question": "State Archimedes' principle.",
+        "answer": "When an object is *totally or partially immersed* in a liquid, an *upthrust force* acts on it which is equal to the *weight of the liquid it displaces*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "Upthrust = ρgV"
+      },
+      {
+        "question": "What is the principle of floatation?",
+        "answer": "A *floating object* displaces a fluid having a *weight equal to the weight of the object*.",
+        "category": "most",
+        "badgeTitle": "CONDITION",
+        "badgeText": "An object floats if its weight is equal to or less than the upthrust."
+      },
+      {
+        "question": "Explain why a hot-air balloon rises in the mid-air.",
+        "answer": "The balloon rises because the *density* of the *hot air inside* is *less* than the surrounding air, making the *buoyant force* greater than its weight.",
+        "category": "most",
+        "badgeTitle": "APPLICATION",
+        "badgeText": "A direct application of Archimedes' principle in gases."
+      },
+      {
+        "question": "How does a submarine manage to float and dive?",
+        "answer": "It has a system of *tanks*; filling them with seawater *increases weight* beyond the upthrust to dive, and *emptying them reduces weight* to float.",
+        "category": "most",
+        "badgeTitle": "PRINCIPLE",
+        "badgeText": "Principle of floatation."
+      },
+      {
+        "question": "Define streamline or laminar flow.",
+        "answer": "A flow where *every particle passing a particular point moves along exactly the same path* as the particles that passed that point earlier.",
+        "category": "most",
+        "badgeTitle": "VISUAL",
+        "badgeText": "The smooth path followed is called a streamline, and they never cross."
+      },
+      {
+        "question": "Describe turbulent flow in fluids.",
+        "answer": "It is the *irregular* or *unsteady* flow of a fluid, occurring above a certain velocity, where there are *eddies and whirlpools* and particle paths continuously change.",
+        "category": "most",
+        "badgeTitle": "CHARACTERISTIC",
+        "badgeText": "The velocity of the fluid changes abruptly."
+      },
+      {
+        "question": "What are the three strict conditions for an ideal fluid?",
+        "answer": "An ideal fluid must be *non-viscous* (no internal friction), *incompressible* (constant density), and its flow must be *steady*.",
+        "category": "most",
+        "badgeTitle": "CONCEPT",
+        "badgeText": "This is a theoretical model used to simplify fluid dynamics."
+      },
+      {
+        "question": "Define the rate of flow of a fluid.",
+        "answer": "It is the *volume* of the fluid *passing through any section of pipe* per *unit time*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "Rate of flow = A × v (Area × velocity)."
+      },
+      {
+        "question": "State the equation of continuity.",
+        "answer": "The *product* of the *cross-sectional area* and the *fluid speed* at any point along a pipe is a *constant* for a steady flow of incompressible fluid.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "A₁v₁ = A₂v₂"
+      },
+      {
+        "question": "What physical law does the equation of continuity justify?",
+        "answer": "It justifies the *conservation of mass* of the fluid flowing through a pipe, meaning *mass flowing inward equals mass flowing outward*.",
+        "category": "most",
+        "badgeTitle": "MATHEMATICAL FORM",
+        "badgeText": "Δm₁ = Δm₂"
+      },
+      {
+        "question": "State Bernoulli's equation in terms of conservation of energy.",
+        "answer": "The *sum* of *pressure*, *kinetic energy per unit volume*, and *potential energy per unit volume* remains *constant* for an ideal fluid in steady flow.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "P + ½ρv² + ρgh = constant"
+      },
+      {
+        "question": "How does an aeroplane wing generate lift using Bernoulli's principle?",
+        "answer": "The wing deflects air to move *faster over the upper curved side*, creating *lower pressure*, while slower air below creates *higher pressure*, forcing the wing upward.",
+        "category": "most",
+        "badgeTitle": "DYNAMIC EFFECT",
+        "badgeText": "This upward force is called aerodynamic lift."
+      },
+      {
+        "question": "What is the Magnus effect in sports?",
+        "answer": "The *sideways curving force* generated when a *spinning ball* causes air to move faster on one side (creating low pressure) and slower on the other (creating high pressure).",
+        "category": "most",
+        "badgeTitle": "APPLICATION",
+        "badgeText": "The swing of a cricket ball or baseball."
+      },
+      {
+        "question": "State Torricelli's theorem.",
+        "answer": "The *speed of efflux* of a fluid from a small orifice is equal to the *velocity gained* by the fluid falling through the height distance under gravity.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "v₂ = √[2g(h₁ − h₂)]"
+      },
+      {
+        "question": "What is viscous drag or drag force?",
+        "answer": "It is a *retarding force* experienced by an object moving through a fluid, which *increases* as the *speed* of the object increases.",
+        "category": "most",
+        "badgeTitle": "CAUSE",
+        "badgeText": "Due to the internal friction or viscosity of the fluid."
+      },
+      {
+        "question": "State Stokes' law for a sphere moving in a fluid.",
+        "answer": "The *drag force* on a sphere of radius r moving slowly with speed v through a fluid of viscosity η is *6πηrv*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "F = 6πηrv"
+      },
+      {
+        "question": "Define terminal velocity in fluid dynamics.",
+        "answer": "The *constant maximum speed* attained by a falling body when the *upward drag force* becomes exactly equal in magnitude to its *downward weight*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "v_t = (2gr²ρ)/(9η)"
+      },
+      {
+        "question": "How does a paint sprayer or atomizer work?",
+        "answer": "*High-speed air* from a squeezed bulb blows over a narrow tube, causing a *fall of pressure*; the higher *atmospheric pressure* in the bottle then pushes the liquid up.",
+        "category": "most",
+        "badgeTitle": "APPLICATION OF",
+        "badgeText": "Bernoulli's principle."
+      },
+      {
+        "question": "What determines the equilibrium position of atoms in a solid?",
+        "answer": "It depends on the *strength* of the *inter-atomic cohesive force* between them.",
+        "category": "important",
+        "badgeTitle": "EFFECT",
+        "badgeText": "Under external force, these atoms are displaced."
+      },
+      {
+        "question": "When is a solid body said to be in a state of stress?",
+        "answer": "When *distortion* occurs due to the *displacement of atoms* from their equilibrium position under the influence of an *external force*.",
+        "category": "important",
+        "badgeTitle": "RESTORATION",
+        "badgeText": "After force removal, atoms return to equilibrium."
+      },
+      {
+        "question": "What are the results of mechanical tests on materials usually expressed in?",
+        "answer": "They are usually expressed in terms of *stress* and *strain*, which are defined in terms of applied force and deformation.",
+        "category": "important",
+        "badgeTitle": "APPLICATION",
+        "badgeText": "Helps in plotting the stress-strain curve."
+      },
+      {
+        "question": "Differentiate between tensile strain and compressive strain.",
+        "answer": "*Tensile strain* is produced due to tensile stress (elongation), whereas *compressive strain* is produced as a result of compressive stress (compression).",
+        "category": "important",
+        "badgeTitle": "DIMENSION",
+        "badgeText": "Both have no units."
+      },
+      {
+        "question": "How is shear strain mathematically related to the angle of deformation?",
+        "answer": "Shear strain γ is equal to the *tangent* of the angle θ, which for small angles measured in radians, is *approximately equal to θ*.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "γ=tanθ≅θ"
+      },
+      {
+        "question": "How is the stress-strain curve typically generated in a mechanical testing machine?",
+        "answer": "A metal wire is *extended* at a specified *deformation rate*, and stresses generated are continuously *measured* and *plotted* automatically.",
+        "category": "important",
+        "badgeTitle": "DEVICE",
+        "badgeText": "Usually plotted on an X-Y chart recorder."
+      },
+      {
+        "question": "What does the region OA represent in a typical stress-strain curve?",
+        "answer": "It represents the *initial stage* of deformation where stress is increased *linearly* with the strain, obeying *Hooke's law*.",
+        "category": "important",
+        "badgeTitle": "LIMIT",
+        "badgeText": "It ends at the proportional limit."
+      },
+      {
+        "question": "Describe the region from point A to point B on a stress-strain curve.",
+        "answer": "In this region, stress and strain are *not proportional*, but the material is still *elastic* and will return to its original length if the load is removed.",
+        "category": "important",
+        "badgeTitle": "KEY POINT",
+        "badgeText": "Point B is the yield point."
+      },
+      {
+        "question": "What happens if stress is applied between the yield point and the ultimate tensile strength?",
+        "answer": "The material undergoes *plasticity* or *plastic deformation*, meaning it becomes *permanently changed* and does not recover its original shape.",
+        "category": "important",
+        "badgeTitle": "REGION",
+        "badgeText": "This is represented by the curve from B to C."
+      },
+      {
+        "question": "What causes strain energy to be stored in a deformed material?",
+        "answer": "When a body is deformed, *work is done* against the *elastic restoring force*, which is stored as the *potential energy* of the molecules.",
+        "category": "important",
+        "badgeTitle": "MECHANISM",
+        "badgeText": "Due to the displacement of molecules from their mean positions."
+      },
+      {
+        "question": "Why does the applied stretching force increase uniformly from zero to F within the elastic limit?",
+        "answer": "Because the *extension* is *directly proportional* to the stretching force according to *Hooke's law*.",
+        "category": "important",
+        "badgeTitle": "CALCULATION",
+        "badgeText": "This makes the average force equal to ½ F."
+      },
+      {
+        "question": "State the alternative form of elastic potential energy in terms of spring constant.",
+        "answer": "The strained energy stored is equal to *half* the product of the *spring constant* and the *square of the extension*.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "E = ½ k Δx²"
+      },
+      {
+        "question": "Write the equation for strain energy per unit volume in terms of Young's modulus.",
+        "answer": "The strain energy per unit volume is equal to *half* the product of *Young's modulus* and the *square* of the fractional change in length.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "U = ½ Y × (ΔL/L)²"
+      },
+      {
+        "question": "What causes the apparent loss of weight in an object kept inside a liquid?",
+        "answer": "The apparent loss of weight is caused by the *upward force* acting on the object, known as the *upthrust* of the liquid.",
+        "category": "important",
+        "badgeTitle": "OBSERVATION",
+        "badgeText": "Noticed by Archimedes over two thousand years ago."
+      },
+      {
+        "question": "How is the net upthrust force related to the pressure at the top and bottom of an immersed cylinder?",
+        "answer": "The upthrust is the *difference* between the *upward force* due to pressure at the bottom and the *downward force* due to pressure at the top.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "Net Force F = F₂ − F₁ = ρgA(h₂ − h₁)"
+      },
+      {
+        "question": "Under what exact condition does an object sink in a fluid?",
+        "answer": "An object *sinks* if its *weight* is *greater* than the *upthrust force* acting on it.",
+        "category": "important",
+        "badgeTitle": "CONTRAST",
+        "badgeText": "It floats if weight is equal or less than upthrust."
+      },
+      {
+        "question": "Why does a wooden block float on water despite its solid structure?",
+        "answer": "It floats because the *weight* of an *equal volume* of water is *greater* than the weight of the block.",
+        "category": "important",
+        "badgeTitle": "PRINCIPLE",
+        "badgeText": "A floating body displaces water equal to its own weight."
+      },
+      {
+        "question": "What does the tangent to any point on a streamline indicate?",
+        "answer": "The *tangent* to any point on a streamline gives the *direction of flow* of a fluid at that specific point.",
+        "category": "important",
+        "badgeTitle": "RULE",
+        "badgeText": "Different streamlines cannot cross each other."
+      },
+      {
+        "question": "What happens if two streamlines were to cross each other in a fluid flow?",
+        "answer": "The particles would go *in one or in the other direction*, meaning the flow would not be *steady* and would become *turbulent*.",
+        "category": "important",
+        "badgeTitle": "CONCLUSION",
+        "badgeText": "Hence, streamlines never cross in steady flow."
+      },
+      {
+        "question": "Define steady flow in terms of the overall flow pattern.",
+        "answer": "If the *overall flow pattern* does not *change with time*, where every particle follows the *same flow line* as its previous particle, it is a *steady flow*.",
+        "category": "important",
+        "badgeTitle": "SYNONYM",
+        "badgeText": "Laminar or streamline flow."
+      },
+      {
+        "question": "What are the two units used to measure the rate of flow of a fluid?",
+        "answer": "In SI units, it is measured in *cubic metre per second* (m³ s⁻¹), and sometimes it is also measured in *litres per second* (L s⁻¹).",
+        "category": "important",
+        "badgeTitle": "FORMULA EQUIVALENCE",
+        "badgeText": "Volume / Time."
+      },
+      {
+        "question": "How is the mass of fluid flowing into a tube calculated in time Δt?",
+        "answer": "It is calculated as the *product* of *cross-sectional area*, *velocity*, *time interval*, and *density* of the fluid.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "Δm₁ = A₁ v₁ Δt × ρ₁"
+      },
+      {
+        "question": "Why is density considered constant in the equation of continuity for an ideal fluid?",
+        "answer": "Because an ideal fluid is *incompressible*, meaning its *density* does *not change* with pressure or location during steady flow.",
+        "category": "important",
+        "badgeTitle": "RESULT",
+        "badgeText": "ρ₁ = ρ₂ cancels out from the equation."
+      },
+      {
+        "question": "In the derivation of Bernoulli's equation, why is the work done at the lower end (W₂) taken as negative?",
+        "answer": "It is taken as negative because this work is done *against* the fluid force acting in the *opposite direction* of the flow.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "W₂ = −P₂ A₂ Δx₂"
+      },
+      {
+        "question": "How is the total work done on a fluid volume related to pressure in Bernoulli's derivation?",
+        "answer": "The total work done is equal to the *pressure difference* multiplied by the *volume* of the fluid moving through the pipe.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "W = (P₁ − P₂) V"
+      },
+      {
+        "question": "How is the work done by the fluid utilized according to the law of conservation of energy?",
+        "answer": "A part of the work is utilized in changing the fluid's *kinetic energy* and a part is used in changing its *gravitational potential energy*.",
+        "category": "important",
+        "badgeTitle": "EQUATION",
+        "badgeText": "W = ΔK.E. + ΔP.E."
+      },
+      {
+        "question": "How does a filter pump utilize Bernoulli's principle to draw in air?",
+        "answer": "A *constriction* in the center makes the water jet flow *faster*, causing a *drop in pressure*, which draws air in from the side tube.",
+        "category": "important",
+        "badgeTitle": "RESULT",
+        "badgeText": "Air and water are expelled together."
+      },
+      {
+        "question": "Explain the function of a Venturi duct in a car's carburetor.",
+        "answer": "*Fast-moving air* through the duct creates *low pressure*, which draws *petrol vapours* from a tiny inlet into the air stream for the cylinders.",
+        "category": "important",
+        "badgeTitle": "PURPOSE",
+        "badgeText": "To feed the correct mixture of air and petrol."
+      },
+      {
+        "question": "What is the Venturi relation equation derived from Bernoulli's principle for horizontal pipes?",
+        "answer": "Assuming v₁ is *very slow* compared to v₂, the pressure difference is equal to *half* the product of *density* and the *square of the higher velocity*.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "P₁ − P₂ = ½ ρ v₂²"
+      },
+      {
+        "question": "In Torricelli's theorem, why is the velocity of the top surface of water (v₁) taken as approximately zero?",
+        "answer": "Because the orifices are so *small* that the efflux speeds are *much larger* than the rate at which the large top surface moves down.",
+        "category": "important",
+        "badgeTitle": "ASSUMPTION",
+        "badgeText": "v₁ ≈ 0"
+      },
+      {
+        "question": "What happens if the orifice in a Torricelli tank is pointed upwards?",
+        "answer": "The *kinetic energy* of the efflux would allow the fluid to rise to the *original level* of the water tank.",
+        "category": "important",
+        "badgeTitle": "REAL-WORLD FACTOR",
+        "badgeText": "Viscous energy losses would slightly alter this height."
+      },
+      {
+        "question": "How is fluid friction described in moving fluids?",
+        "answer": "It is described in terms of the *viscosity* of the fluid, which measures *how much force is required* to slide one layer over another.",
+        "category": "important",
+        "badgeTitle": "SYMBOL",
+        "badgeText": "Denoted by the Greek letter η."
+      },
+      {
+        "question": "What effect does the small viscosity of air have on a high-speed car?",
+        "answer": "Even small viscosity causes a *large retarding force* or *drag force* on the car as it travels at high speed.",
+        "category": "important",
+        "badgeTitle": "PHENOMENON",
+        "badgeText": "Drag force increases with the object's speed."
+      },
+      {
+        "question": "Is the drag force always simply proportional to the speed of the object?",
+        "answer": "No, at *high speeds*, the force is *no longer simply proportional* to the speed, making exact calculations difficult.",
+        "category": "important",
+        "badgeTitle": "CONDITION",
+        "badgeText": "Stokes' law applies strictly to objects moving slowly."
+      },
+      {
+        "question": "Describe the initial motion of a water droplet falling through air before terminal velocity is reached.",
+        "answer": "The droplet *accelerates rapidly* under the *overpowering force of gravity*, while the upward *air drag increases* with its speed.",
+        "category": "important",
+        "badgeTitle": "EQUATION",
+        "badgeText": "Net force = Weight - Drag force."
+      },
+      {
+        "question": "What is the volume of the spherical droplet used in the derivation of terminal velocity?",
+        "answer": "The volume of the sphere is *four-thirds times pi times the cube of its radius*.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "V = ⁴⁄₃ π r³"
+      },
+      {
+        "question": "In Bernoulli's equation, what does the term ρgh represent?",
+        "answer": "It represents the *gravitational potential energy per unit volume* of the flowing fluid.",
+        "category": "important",
+        "badgeTitle": "ROLE",
+        "badgeText": "Accounts for changes in fluid height during steady flow."
+      },
+      {
+        "question": "Who originally developed the concept of Young's Modulus before it was named after Thomas Young?",
+        "answer": "The concept was originally developed in 1727 by the scientist *Leonhard Euler*.",
+        "category": "conceptual",
+        "badgeTitle": "HISTORICAL FACT",
+        "badgeText": "Mentioned in the \"For Your Information\" box."
+      },
+      {
+        "question": "According to the elastic constants table, which materials possess a Young's Modulus of exactly zero?",
+        "answer": "Both *Water* and *Mercury* have a Young's Modulus of zero, as they are liquids and cannot sustain linear stretching.",
+        "category": "conceptual",
+        "badgeTitle": "TABLE INSIGHT",
+        "badgeText": "Liquids lack tensile strength."
+      },
+      {
+        "question": "Why is the shear modulus for water and mercury listed as zero in standard elastic constant tables?",
+        "answer": "Because *fluids cannot resist shear stress* and will simply flow when subjected to it, rendering their shear modulus zero.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPTUAL TRUTH",
+        "badgeText": "Only solid structures maintain shear rigidity."
+      },
+      {
+        "question": "Which material listed in the elastic constants table possesses the highest Young's Modulus?",
+        "answer": "*Diamond* has the highest Young's Modulus at *1120×10⁹ N m⁻²*, indicating it is exceptionally stiff and hard to stretch.",
+        "category": "conceptual",
+        "badgeTitle": "DATA POINT",
+        "badgeText": "Extracted from Table 5.1."
+      },
+      {
+        "question": "Among the given materials, bone possesses a shear modulus of 80×10⁹ N m⁻². How does this compare to its Young's Modulus?",
+        "answer": "The shear modulus of bone is *surprisingly higher* than its Young's Modulus, which is only 15×10⁹ N m⁻².",
+        "category": "conceptual",
+        "badgeTitle": "COMPARATIVE FACT",
+        "badgeText": "Highlights the unique mechanical structure of bone."
+      },
+      {
+        "question": "If a steel rod and a rubber band are subjected to the exact same force, which one will be stretched more and why?",
+        "answer": "The *rubber band* will be stretched more because its *Young's modulus* is *significantly lower* than that of steel.",
+        "category": "conceptual",
+        "badgeTitle": "BRAIN TEASER",
+        "badgeText": "A lower modulus translates to greater fractional deformation for an identical stress."
+      },
+      {
+        "question": "In a stress-strain curve, what precisely defines the proportional limit (σₚ)?",
+        "answer": "It is the *greatest stress* a material can endure without losing the precise *straight line proportionality* between stress and strain.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPTUAL BOUNDARY",
+        "badgeText": "Beyond this point, Hooke's Law fails."
+      },
+      {
+        "question": "Why does the stress-strain curve bend between the proportional limit (A) and the yield point (B)?",
+        "answer": "Because in this specific region, *stress and strain are not strictly proportional*, even though the material remains entirely elastic and will recover its shape.",
+        "category": "conceptual",
+        "badgeTitle": "SUBTLE DISTINCTION",
+        "badgeText": "Elasticity does not inherently guarantee linear proportionality."
+      },
+      {
+        "question": "What does the \"nominal strength\" of a ductile material refer to in industrial terms?",
+        "answer": "The nominal strength refers to the *Ultimate Tensile Strength (UTS)*, which is the *absolute maximum stress* the material can withstand.",
+        "category": "conceptual",
+        "badgeTitle": "SYNONYM",
+        "badgeText": "Maximum load-bearing capacity before necking begins."
+      },
+      {
+        "question": "Name three brittle metals mentioned in the text that break just after the elastic limit is reached.",
+        "answer": "*Beryllium*, *Bismuth*, and *Chromium* are explicit examples of brittle metals that fracture with virtually no plastic deformation.",
+        "category": "conceptual",
+        "badgeTitle": "HIDDEN EXAMPLES",
+        "badgeText": "Often overlooked compared to common brittle items like glass."
+      },
+      {
+        "question": "How does the geometric area under a force-extension graph relate to stored energy?",
+        "answer": "The area under the graph physically represents the *total work done* to stretch the material, which strictly equates to its *stored elastic potential energy*.",
+        "category": "conceptual",
+        "badgeTitle": "GEOMETRIC PROOF",
+        "badgeText": "Area of triangle OPQ = ½ FΔx."
+      },
+      {
+        "question": "Why is the factor ½ F used instead of F when calculating the work done to stretch a spring?",
+        "answer": "Because the stretching force *increases uniformly from zero to F*, making the *average force* exerted over the distance equal to ½ F.",
+        "category": "conceptual",
+        "badgeTitle": "MATHEMATICAL LOGIC",
+        "badgeText": "This average applies only within the Hooke's law limit."
+      },
+      {
+        "question": "Why does a massive ship made of heavy steel float on water while a small solid rock sinks instantly?",
+        "answer": "The ship's *hollow hull* displaces a *massive volume of water* whose total weight is equal to or greater than the ship's weight, generating sufficient upthrust.",
+        "category": "conceptual",
+        "badgeTitle": "BRAIN TEASER",
+        "badgeText": "The solid rock displaces less water weight than its own heavy mass."
+      },
+      {
+        "question": "What specific physical parameter is represented by the term \"A×h\" in the upthrust derivation equation?",
+        "answer": "It represents the *volume (V)* of the solid cylinder, which mathematically equals the *volume of the liquid displaced*.",
+        "category": "conceptual",
+        "badgeTitle": "VARIABLE BREAKDOWN",
+        "badgeText": "Upthrust = ρgV."
+      },
+      {
+        "question": "When Archimedes discovered his buoyancy principle, what historical anecdote is associated with his eventual death?",
+        "answer": "He was *killed by a Roman soldier* in Syracuse after he *stubbornly refused to leave his mathematical work*.",
+        "category": "conceptual",
+        "badgeTitle": "HISTORICAL NOTE",
+        "badgeText": "Extracted from the \"For Your Information\" box."
+      },
+      {
+        "question": "How does a hot-air balloon pilot actively initiate the vertical ascent of the balloon?",
+        "answer": "The pilot increases the balloon's *buoyant force* by *varying (increasing) the quantity of hot air*, making its internal density less than surrounding air.",
+        "category": "conceptual",
+        "badgeTitle": "OPERATIONAL MECHANISM",
+        "badgeText": "Direct application of Archimedes' principle to atmospheric gases."
+      },
+      {
+        "question": "How is the principle of floatation applied when a submarine needs to remain partially above the water surface?",
+        "answer": "Its internal *ballast tanks* are *emptied of seawater*, ensuring the weight of the displaced water remains *greater* than the submarine's total adjusted weight.",
+        "category": "conceptual",
+        "badgeTitle": "ENGINEERING APPLICATION",
+        "badgeText": "Making it act hydrodynamically like a standard floating ship."
+      },
+      {
+        "question": "In Example 5.3, why must the combined weight of the balloon, hydrogen, and extra contents not exceed the weight of the displaced air?",
+        "answer": "Because the *maximum upthrust (F)* is fixed by the volume of displaced air, and for liftoff, the *total downward forces* must be *strictly balanced* by it.",
+        "category": "conceptual",
+        "badgeTitle": "EQUILIBRIUM CONDITION",
+        "badgeText": "w + w₁ + w₂ = F."
+      },
+      {
+        "question": "What happens to the path of individual fluid particles if two fluid streamlines were to cross each other?",
+        "answer": "Particles at the intersection would have a *choice to go in one or the other direction*, destroying the orderly path and making the flow *unsteady or turbulent*.",
+        "category": "conceptual",
+        "badgeTitle": "PHYSICAL IMPOSSIBILITY",
+        "badgeText": "Streamlines can never intersect in a steady, laminar flow."
+      },
+      {
+        "question": "How do Formula One racing cars and marine dolphins utilize the concept of fluid dynamics?",
+        "answer": "Both feature a *highly streamlined design/body* to assist their movement by drastically *minimizing fluid resistance* (air or water drag).",
+        "category": "conceptual",
+        "badgeTitle": "REAL-WORLD EXAMPLES",
+        "badgeText": "Visual concepts from the \"For Your Information\" box."
+      },
+      {
+        "question": "Who first translated Euler's complex continuity equation for incompressible fluids into English, and in what year?",
+        "answer": "It was translated by *C. Truesdell* from English in the year *1954* (the equation was originally obtained by Euler in 1752).",
+        "category": "conceptual",
+        "badgeTitle": "HISTORICAL FACT",
+        "badgeText": "Found in the \"Interesting Fact\" side margin box."
+      },
+      {
+        "question": "How does the mathematical continuity equation strictly justify the physical conservation of mass?",
+        "answer": "By proving that the *mass flowing into a pipe* (Δm₁) strictly *equals* the *mass flowing out* (Δm₂) in the same time interval, mathematically stated as A₁v₁ρ₁ = A₂v₂ρ₂.",
+        "category": "conceptual",
+        "badgeTitle": "FUNDAMENTAL PRINCIPLE",
+        "badgeText": "Mass cannot be mysteriously created or destroyed inside the pipe."
+      },
+      {
+        "question": "What happens to the speed and cross-sectional area of a stream of water as it falls from a tap?",
+        "answer": "As the water falls, its *speed increases* due to gravity, and consequently, its *cross-sectional area decreases* proportionally as mandated by the continuity equation.",
+        "category": "conceptual",
+        "badgeTitle": "TIDBITS BOX",
+        "badgeText": "Visualized as a narrowing, tapered stream of water."
+      },
+      {
+        "question": "Name three practical, real-world systems where the equation of continuity is actively applied in engineering or biology.",
+        "answer": "It is applied to *blood flow* in arteries and veins, *water flow* in rivers and pipes, and *air flow* in duct and ventilation systems.",
+        "category": "conceptual",
+        "badgeTitle": "APPLICATIONS",
+        "badgeText": "Sourced from the \"For Your Information\" list."
+      },
+      {
+        "question": "How does the curved trajectory of a baseball relate to Bernoulli's principle?",
+        "answer": "The *spinning ball drags air*, creating *faster moving air (lower pressure)* on one side and *slower moving air (higher pressure)* on the other, generating a sideways deflection force.",
+        "category": "conceptual",
+        "badgeTitle": "BRAIN TEASER & PHENOMENON",
+        "badgeText": "This curving action is specifically known as the Magnus effect."
+      },
+      {
+        "question": "In Bernoulli's work derivation, why is the work W₁ positive but the work W₂ strictly negative?",
+        "answer": "W₁ is positive because the fluid behind *does work on the volume in the direction of motion*, while W₂ is negative because work is done *against the resisting fluid force ahead*.",
+        "category": "conceptual",
+        "badgeTitle": "SIGN CONVENTION",
+        "badgeText": "W = P₁A₁Δx₁ − P₂A₂Δx₂."
+      },
+      {
+        "question": "What simple predictive rule of thumb for horizontal pipes is directly derived from Bernoulli's Equation?",
+        "answer": "It dictates a simple inverse relationship: in a horizontal pipe, *\"where speed is high, the pressure will be low.\"*",
+        "category": "conceptual",
+        "badgeTitle": "INTERESTING INFORMATION BOX",
+        "badgeText": "P + ½ρv² = constant."
+      },
+      {
+        "question": "What exact pressure mechanism causes the liquid to rise up the narrow tube in a paint sprayer or perfume atomizer?",
+        "answer": "*High-speed air* from the nozzle creates a *fall of pressure* above the tube, allowing the comparatively *higher atmospheric pressure* inside the bottle reservoir to physically push the liquid up.",
+        "category": "conceptual",
+        "badgeTitle": "PRESSURE DIFFERENTIAL",
+        "badgeText": "A classic demonstration of Bernoulli's principle."
+      },
+      {
+        "question": "Why does a laboratory filter pump passively draw air in from its side tube?",
+        "answer": "A deliberate *constriction* in the center makes the tap water jet flow *much faster*, causing a *drop in pressure* that literally vacuums air in from the side tube.",
+        "category": "conceptual",
+        "badgeTitle": "DEVICE MECHANISM",
+        "badgeText": "The entrained air and water mix and are expelled together."
+      },
+      {
+        "question": "In the Venturi relation mathematical derivation, why is the velocity v₁ entirely neglected on the right-hand side?",
+        "answer": "Because the wider area A₁ is *much larger* than A₂, making v₁ *extremely small* compared to v₂, so its squared value becomes *statistically negligible*.",
+        "category": "conceptual",
+        "badgeTitle": "APPROXIMATION",
+        "badgeText": "P₁ − P₂ ≈ ½ ρ v₂²."
+      },
+      {
+        "question": "How does Torricelli's theorem compare the horizontal efflux speed of a fluid to a vertically falling solid object?",
+        "answer": "It states the efflux speed is *mathematically the same* as the speed of a ball that falls freely through the exact same height difference (h₁ − h₂).",
+        "category": "conceptual",
+        "badgeTitle": "KINEMATIC ANALOGY",
+        "badgeText": "Both are governed by v = √(2gh)."
+      },
+      {
+        "question": "According to the \"Viscosities of Liquids and Gases\" table, which listed substance is the most resistant to flow at 30°C?",
+        "answer": "*Glycerin* is the most viscous substance listed, possessing a high viscosity coefficient of *6.29×10⁻³ Ns m⁻²*.",
+        "category": "conceptual",
+        "badgeTitle": "DATA POINT",
+        "badgeText": "It is nearly eight times thicker than pure water."
+      },
+      {
+        "question": "How does the kinematic viscosity of air compare to that of acetone at 30°C?",
+        "answer": "Air has a *very low viscosity* of 0.019×10⁻³ Ns m⁻², making it *significantly less viscous* and easier to shear than liquid acetone (0.295×10⁻³ Ns m⁻²).",
+        "category": "conceptual",
+        "badgeTitle": "DATA COMPARISON",
+        "badgeText": "Confirms gases exhibit far less internal friction than liquids."
+      },
+      {
+        "question": "Why does sticking your hand out of a fast-moving car window require considerable muscular force to hold it steady?",
+        "answer": "Because even the *incredibly small viscosity* of atmospheric air generates a *surprisingly large retarding drag force* against your hand at very high speeds.",
+        "category": "conceptual",
+        "badgeTitle": "EVERYDAY EXAMPLE",
+        "badgeText": "Demonstrates that fluid friction scales dramatically with relative velocity."
+      },
+      {
+        "question": "How does a tall industrial chimney utilize fluid dynamics to improve its drafting efficiency?",
+        "answer": "Being *tall* and exposed to *faster upper air currents* reduces the pressure at the top, which acts as a *vacuum* and naturally forces an upward flow of smoke from the higher-pressure base.",
+        "category": "conceptual",
+        "badgeTitle": "DO YOU KNOW? BOX",
+        "badgeText": "Bernoulli's effect aiding natural convection drafts."
+      },
+      {
+        "question": "What is the critical dynamic condition for a falling object to finally achieve its terminal velocity?",
+        "answer": "Terminal velocity is reached precisely when the magnitude of the *upward drag force* becomes *exactly equal* to the *downward weight*, rendering the net accelerating force strictly zero.",
+        "category": "conceptual",
+        "badgeTitle": "DYNAMIC EQUILIBRIUM",
+        "badgeText": "Acceleration ceases, and speed maxes out."
+      },
+      {
+        "question": "In the terminal velocity formula vₜ = (2gr²ρ)/(9η), what is the mathematical relationship between the terminal speed and the sphere's physical radius?",
+        "answer": "The terminal velocity is *directly proportional to the square of the radius* (r²) of the falling spherical body.",
+        "category": "conceptual",
+        "badgeTitle": "DEPENDENCY RULE",
+        "badgeText": "This explains why larger heavy drops fall significantly faster than tiny mist droplets."
+      },
+      {
+        "question": "Why do skydivers' parachutes successfully prevent a person from impacting the ground at a lethal terminal velocity?",
+        "answer": "They deploy to create a *massive large surface area* which *maximizes air resistance (drag)*, perfectly counteracting the force of gravity at a *much lower, safer descent speed*.",
+        "category": "conceptual",
+        "badgeTitle": "TIDBITS BOX",
+        "badgeText": "Form drag manipulations save lives by lowering the vₜ threshold."
+      }
+    ],
+    "6": [
+      {
+        "question": "How is an ideal gas defined according to thermodynamic principles?",
+        "answer": "A gas that strictly obeys the *kinetic theory of gases* is termed an *ideal gas*.",
+        "category": "most",
+        "badgeTitle": "EQUATION OF STATE",
+        "badgeText": "The ideal gas equation is given by $PV=nRT$, where $P$ represents pressure, $V$ is volume, $n$ is number of moles, $R$ is universal gas constant, and $T$ is temperature."
+      },
+      {
+        "question": "Under what specific conditions does a real gas approximate ideal behavior?",
+        "answer": "For a real gas to behave like an ideal gas, it must be subjected to *low pressure* and *high temperature*.",
+        "category": "most",
+        "badgeTitle": "REASONING",
+        "badgeText": "Under these conditions, the density of the gas is low, placing molecules at a large distance from each other, which makes intermolecular forces negligible."
+      },
+      {
+        "question": "How does gas density relate to pressure and temperature for an ideal gas?",
+        "answer": "The *density* of a gas is *directly proportional* to its *pressure* and *inversely proportional* to its *temperature*.",
+        "category": "most",
+        "badgeTitle": "MATHEMATICAL RELATION",
+        "badgeText": "$\\rho \\propto \\frac{P}{T}$ or $\\rho = \\frac{PM}{RT}$, where $M$ is constant."
+      },
+      {
+        "question": "What is the Boltzmann constant and how is it derived?",
+        "answer": "The term $\\frac{R}{N_A}$, representing the *universal gas constant* divided by *Avogadro's number*, is termed the *Boltzmann constant* $k_B$.",
+        "category": "most",
+        "badgeTitle": "STANDARD VALUE",
+        "badgeText": "$k_B = 1.38 \\times 10^{-23} J K^{-1}$."
+      },
+      {
+        "question": "How is the ideal gas equation expressed in terms of the Boltzmann constant?",
+        "answer": "By substituting the number of moles with the ratio of total particles to Avogadro's number, the ideal gas equation transforms to include the *Boltzmann constant*.",
+        "category": "most",
+        "badgeTitle": "ALTERNATE FORMULA",
+        "badgeText": "$PV = Nk_BT$."
+      },
+      {
+        "question": "State Boyle's Law regarding the behavior of gases.",
+        "answer": "For a fixed mass of an ideal gas, the *pressure* $P$ exerted by a gas varies *inversely* with *volume* $V$ occupied by the gas at *constant temperature*.",
+        "category": "most",
+        "badgeTitle": "FORMULA FORM",
+        "badgeText": "$P_1V_1 = P_2V_2$."
+      },
+      {
+        "question": "State Charles' Law and identify its constant parameter.",
+        "answer": "The *volume* of a given mass of gas at *constant pressure* is *directly proportional* to the *absolute temperature*.",
+        "category": "most",
+        "badgeTitle": "FORMULA FORM",
+        "badgeText": "$\\frac{V_1}{T_1} = \\frac{V_2}{T_2}$."
+      },
+      {
+        "question": "State Gay-Lussac's Law for ideal gases.",
+        "answer": "For a fixed mass of an ideal gas, the *pressure* exerted by a gas varies *directly* with *absolute temperature* of the gas at *constant volume*.",
+        "category": "most",
+        "badgeTitle": "FORMULA FORM",
+        "badgeText": "$\\frac{P_1}{T_1} = \\frac{P_2}{T_2}$."
+      },
+      {
+        "question": "Define the state of thermal equilibrium between two bodies.",
+        "answer": "When two bodies are at the *same temperature*, there is no driving force for *heat transfer* between them, and thus they remain in *thermal equilibrium*.",
+        "category": "most",
+        "badgeTitle": "UNDERLYING CONCEPT",
+        "badgeText": "The thermal energy (related to kinetic energy of particles) of each body is equal."
+      },
+      {
+        "question": "What constitutes the internal energy of a substance?",
+        "answer": "The *sum* of all forms of *molecular energies* (both *kinetic* and *potential*) of a substance is termed as its *internal energy*.",
+        "category": "most",
+        "badgeTitle": "STATE FUNCTION CONCEPT",
+        "badgeText": "Internal energy does not depend on the path taken but depends only on the initial and final states of the system."
+      },
+      {
+        "question": "Why does the internal energy of an ideal gas depend only on its temperature?",
+        "answer": "The molecules of an ideal gas are mere mass points that exert *no forces* on one another, meaning *potential energy* is zero, so the internal energy is generally the *translational kinetic energy* of its molecules.",
+        "category": "most",
+        "badgeTitle": "KINETIC THEORY FORMULA",
+        "badgeText": "$<\\frac{1}{2}mv^2> = \\frac{3}{2}k_BT$."
+      },
+      {
+        "question": "What is the sign convention for work done in a thermodynamic system?",
+        "answer": "*Work done by the system* on its environment is considered *positive*, while *work done on the system* by the environment is taken as *negative*.",
+        "category": "most",
+        "badgeTitle": "HEAT CONVENTION",
+        "badgeText": "Heat entering the system is positive $(+Q)$, and heat leaving is negative $(-Q)$."
+      },
+      {
+        "question": "How is the mechanical work done by an expanding gas calculated?",
+        "answer": "When a gas expands through a small volume change $\\Delta V$ at a *constant pressure* $P$, the work done $W$ by the gas is the *product* of *pressure* and the *change in volume*.",
+        "category": "most",
+        "badgeTitle": "STANDARD FORMULA",
+        "badgeText": "$W = P\\Delta V$."
+      },
+      {
+        "question": "How can work done be visually determined from a pressure-volume diagram?",
+        "answer": "The work done can be calculated by finding the *area of the curve* under the *P-V graph*.",
+        "category": "most",
+        "badgeTitle": "DIAGRAM REFERENCE",
+        "badgeText": "It is equivalent to the area representing constant pressure expansion from $V_1$ to $V_2$."
+      },
+      {
+        "question": "State the First Law of Thermodynamics.",
+        "answer": "In any thermodynamic process, when *heat* $Q$ is added to a system, this energy appears as an *increase in the internal energy* $\\Delta U$ stored in the system plus the *work* $W$ done by the system on its surroundings.",
+        "category": "most",
+        "badgeTitle": "MATHEMATICAL STATEMENT",
+        "badgeText": "$Q = \\Delta U + W$."
+      },
+      {
+        "question": "What fundamental physical principle is the First Law of Thermodynamics based upon?",
+        "answer": "The underlying principle of the first law of thermodynamics is the *conservation of energy*, affirming that *energy is a conserved quantity* in isolated systems.",
+        "category": "most",
+        "badgeTitle": "CORE ASSERTION",
+        "badgeText": "While energy can change from one form to another, the total amount of energy remains constant over time."
+      },
+      {
+        "question": "How does human metabolism demonstrate the First Law of Thermodynamics?",
+        "answer": "Energy transforming processes within an organism (metabolism) follow the first law where *work done* results in a *decrease in internal energy*, which is subsequently maintained by the *food consumed*.",
+        "category": "most",
+        "badgeTitle": "FORMULA APPLICATION",
+        "badgeText": "$\\Delta U = Q - W$ applies directly to the human body."
+      },
+      {
+        "question": "Define an isothermal process in thermodynamics.",
+        "answer": "An *isothermal process* is one which is carried out at *constant temperature*, fulfilling the condition for the application of *Boyle's law*.",
+        "category": "most",
+        "badgeTitle": "FIRST LAW APPLICATION",
+        "badgeText": "Since $\\Delta U = 0$ for an ideal gas at constant temperature, the first law reduces to $Q = W$."
+      },
+      {
+        "question": "Why must an isothermal process take place slowly?",
+        "answer": "Since the *transfer of heat* from one place to another requires time, the expansion or compression must take place *slowly* to keep the temperature of the gas *constant*.",
+        "category": "most",
+        "badgeTitle": "GRAPH IDENTITY",
+        "badgeText": "The curve representing this process is called an isotherm."
+      },
+      {
+        "question": "Define an adiabatic process.",
+        "answer": "An *adiabatic process* is one in which *no heat* enters or leaves the system.",
+        "category": "most",
+        "badgeTitle": "FIRST LAW APPLICATION",
+        "badgeText": "Because $\\Delta Q = 0$, the first law of thermodynamics gives $W = -\\Delta U$."
+      },
+      {
+        "question": "What effect does an adiabatic expansion have on the temperature of a gas?",
+        "answer": "During an adiabatic expansion, if the gas does *external work*, it is done at the expense of the *internal energy* of its molecules, and hence the *temperature* of the gas *falls*.",
+        "category": "most",
+        "badgeTitle": "REAL-WORLD EXAMPLE",
+        "badgeText": "The rapid escape of air from a burst tyre."
+      },
+      {
+        "question": "What effect does an adiabatic compression have on gas temperature?",
+        "answer": "An adiabatic compression causes the *temperature* of the gas to *rise* because of the *work done on the gas*.",
+        "category": "most",
+        "badgeTitle": "REAL-WORLD EXAMPLE",
+        "badgeText": "Cloud formation in the atmosphere."
+      },
+      {
+        "question": "What is the mathematical relationship between pressure and volume during an adiabatic process?",
+        "answer": "As the temperature does not remain constant, the relationship is defined by a specific constant involving the *ratio of molar specific heats*.",
+        "category": "most",
+        "badgeTitle": "ADIABATIC FORMULA",
+        "badgeText": "$PV^\\gamma = Constant$, where $\\gamma$ is the ratio of molar specific heat at constant pressure to constant volume."
+      },
+      {
+        "question": "How is a reversible process defined?",
+        "answer": "A *reversible process* is one which can be *retraced* in exactly reverse order, without producing any *change in the surroundings*.",
+        "category": "most",
+        "badgeTitle": "PROCESS REQUIREMENT",
+        "badgeText": "Thermal and mechanical effects at each stage must be exactly reversed to restore original conditions."
+      },
+      {
+        "question": "What characterizes an irreversible process?",
+        "answer": "If a process *cannot be retraced* in the backward direction by reversing the controlling factors, it is an *irreversible process*.",
+        "category": "most",
+        "badgeTitle": "COMMON CAUSES",
+        "badgeText": "Changes that occur suddenly, involve friction, or dissipate energy through conduction, convection, or radiation."
+      },
+      {
+        "question": "State Lord Kelvin's statement of the Second Law of Thermodynamics.",
+        "answer": "It is *impossible* to devise a process which may convert *heat*, extracted from a *single reservoir*, entirely into *work* without leaving any change in the working system.",
+        "category": "most",
+        "badgeTitle": "CONSEQUENCE",
+        "badgeText": "Two bodies at different temperatures (a source and a sink) are essential for the conversion of heat into work."
+      },
+      {
+        "question": "Why can't we extract useful mechanical work from the massive heat stored in oceans?",
+        "answer": "According to the second law of thermodynamics, there is *no reservoir* available at a temperature *lower* than the ocean or atmosphere to which heat may be *expelled*.",
+        "category": "most",
+        "badgeTitle": "KEY PRINCIPLE",
+        "badgeText": "A single heat reservoir cannot be made to perform work."
+      },
+      {
+        "question": "What are the four distinct steps comprising a Carnot cycle?",
+        "answer": "The Carnot cycle consists of *isothermal expansion*, *adiabatic expansion*, *isothermal compression*, and *adiabatic compression*.",
+        "category": "most",
+        "badgeTitle": "INTERNAL ENERGY STATE",
+        "badgeText": "As the working substance returns to the initial state after the cycle, the change in its internal energy $\\Delta U = 0$."
+      },
+      {
+        "question": "How is the efficiency of a Carnot engine determined mathematically?",
+        "answer": "The efficiency $\\eta$ is defined as the *ratio* of *work output* to *energy input*, which directly depends on the *absolute temperatures* of the hot and cold reservoirs.",
+        "category": "most",
+        "badgeTitle": "EFFICIENCY FORMULA",
+        "badgeText": "$\\eta = 1 - \\frac{T_2}{T_1}$."
+      },
+      {
+        "question": "What does Carnot's theorem state regarding heat engines?",
+        "answer": "*No heat engine* can be *more efficient* than a *Carnot engine* operating between the same two temperatures.",
+        "category": "most",
+        "badgeTitle": "SUB-THEOREM",
+        "badgeText": "All Carnot engines operating between the same two temperatures have the same efficiency, irrespective of the nature of the working substance."
+      },
+      {
+        "question": "Why is a 100% efficient heat engine practically impossible?",
+        "answer": "Maximum efficiency can never be 100% unless the *cold reservoir* is at *absolute zero temperature* $(T_2 = 0 K)$, and such reservoirs are *not available*.",
+        "category": "most",
+        "badgeTitle": "REAL-WORLD FACTOR",
+        "badgeText": "All real heat engines are less efficient due to friction and other heat losses."
+      },
+      {
+        "question": "How does a refrigerator operate in relation to a heat engine?",
+        "answer": "A refrigerator operates in a *cyclic process* but in *reverse* as that of the heat engine, where *work is done on the system* to absorb heat from a cold reservoir and give it off to a hot reservoir.",
+        "category": "most",
+        "badgeTitle": "GOVERNING PRINCIPLE",
+        "badgeText": "It works on the basis of the Clausius statement of the second law of thermodynamics."
+      },
+      {
+        "question": "What is the coefficient of performance of a refrigerator?",
+        "answer": "The *ratio* of *heat removed* from the low-temperature reservoir $(Q_c)$ to the *work done* $(W)$ is called the *co-efficient of performance*.",
+        "category": "most",
+        "badgeTitle": "FORMULA FORM",
+        "badgeText": "$E = \\frac{Q_c}{W} = \\frac{Q_c}{Q_H - Q_c}$."
+      },
+      {
+        "question": "How is entropy defined quantitatively in thermodynamics?",
+        "answer": "If a system undergoes a *reversible process* absorbing heat $\\Delta Q$ at *absolute temperature* $T$, the increase in the state variable called *entropy* $S$ is the *ratio* of heat absorbed to temperature.",
+        "category": "most",
+        "badgeTitle": "MATHEMATICAL FORM",
+        "badgeText": "$\\Delta S = \\frac{\\Delta Q}{T}$."
+      },
+      {
+        "question": "State the Second Law of Thermodynamics in terms of entropy.",
+        "answer": "If a system undergoes a *natural process*, it will go in the direction that causes the *entropy of the system plus the environment* to *increase*.",
+        "category": "most",
+        "badgeTitle": "PHYSICAL MEANING",
+        "badgeText": "A natural process tends to proceed towards a state of greater molecular disorder."
+      },
+      {
+        "question": "What is meant by the \"degradation of energy\" in the context of entropy?",
+        "answer": "An increase in entropy means *degradation of energy* from a *higher level* where more work can be extracted to a *lower level* at which less or no useful work can be done.",
+        "category": "most",
+        "badgeTitle": "UNIVERSAL LAW",
+        "badgeText": "When all systems are taken together as the universe, the entropy of the universe always increases."
+      },
+      {
+        "question": "What is the condition regarding potential energy for a real gas to behave like an ideal gas?",
+        "answer": "For a real gas to behave ideally, the *potential energy* of the gas molecules must be *negligible*, meaning the molecules possess only *kinetic energy*.",
+        "category": "important",
+        "badgeTitle": "MOLECULAR SPACING",
+        "badgeText": "This occurs at low pressure and high temperature where molecules are far apart."
+      },
+      {
+        "question": "How is the number of moles mathematically expressed in terms of mass for the ideal gas law?",
+        "answer": "The number of moles $n$ is calculated by *dividing the mass* of the gas by its *molar mass*.",
+        "category": "important",
+        "badgeTitle": "FORMULA FORM",
+        "badgeText": "$n = \\frac{m}{M}$."
+      },
+      {
+        "question": "What is the relationship between the universal gas constant, Avogadro's number, and the Boltzmann constant?",
+        "answer": "The *Boltzmann constant* $k_B$ is mathematically defined as the *ratio* of the *universal gas constant* $R$ to *Avogadro's number* $N_A$.",
+        "category": "important",
+        "badgeTitle": "STANDARD VALUE",
+        "badgeText": "$k_B = 1.38 \\times 10^{-23} J K^{-1}$."
+      },
+      {
+        "question": "How do you formulate the ideal gas equation to reflect the total number of individual molecules rather than moles?",
+        "answer": "By substituting $n = \\frac{N}{N_A}$ into $PV=nRT$, the equation transforms to incorporate the *total number of particles* $N$ and the *Boltzmann constant* $k_B$.",
+        "category": "important",
+        "badgeTitle": "ALTERNATE EQUATION",
+        "badgeText": "$PV = Nk_BT$."
+      },
+      {
+        "question": "What graphical shape represents Boyle's law on a pressure-volume diagram?",
+        "answer": "The inverse relationship between pressure and volume at constant temperature produces a *curved line* known as an *isotherm*.",
+        "category": "important",
+        "badgeTitle": "GRAPHICAL COORDINATES",
+        "badgeText": "Plotted as $P$ on the y-axis against $V$ on the x-axis."
+      },
+      {
+        "question": "Who formulated the law relating the volume and temperature of a gas at constant pressure, and when?",
+        "answer": "This relationship was formulated in 1870 by the French Physicist *Jacques Charles*.",
+        "category": "important",
+        "badgeTitle": "PROPORTIONALITY",
+        "badgeText": "$V \\propto T$."
+      },
+      {
+        "question": "How is Gay-Lussac's Law represented mathematically for two different states of a gas?",
+        "answer": "For a fixed mass at constant volume, the *ratio* of *initial pressure* to *initial temperature* is exactly equal to the *ratio* of *final pressure* to *final temperature*.",
+        "category": "important",
+        "badgeTitle": "FORMULA FORM",
+        "badgeText": "$\\frac{P_1}{T_1} = \\frac{P_2}{T_2}$."
+      },
+      {
+        "question": "What happens to the net heat flow between a hot coffee cup and a metal spoon once they reach the same temperature?",
+        "answer": "Once they reach the same temperature, there is *no net heat flow* between the coffee and the spoon, establishing *thermal equilibrium*.",
+        "category": "important",
+        "badgeTitle": "EQUILIBRIUM CONDITION",
+        "badgeText": "The thermal energy of each body becomes equal."
+      },
+      {
+        "question": "For an ideal gas system, the internal energy is primarily associated with which specific type of energy?",
+        "answer": "Because ideal gas molecules exert *no forces* on one another, their internal energy is generally strictly their *translational kinetic energy*.",
+        "category": "important",
+        "badgeTitle": "DEPENDENCY",
+        "badgeText": "It is directly proportional to the gas's absolute temperature."
+      },
+      {
+        "question": "Besides translational energy, what other complex forms of energy does a diatomic gas molecule possess?",
+        "answer": "A diatomic gas molecule has both *rotational energy* and *vibrational energy* associated with the spring‑like bond between its atoms.",
+        "category": "important",
+        "badgeTitle": "INTERNAL ENERGY CONTRIBUTION",
+        "badgeText": "These contribute to the total sum of all molecular energies."
+      },
+      {
+        "question": "Why is internal energy considered similar to gravitational potential energy?",
+        "answer": "Internal energy is a *state function*, meaning it depends only on the *initial and final states* of the system and *not on the path* taken, just like gravitational potential energy.",
+        "category": "important",
+        "badgeTitle": "IMPORTANT VALUE",
+        "badgeText": "Only the change in internal energy ($\\Delta U$) is practically important."
+      },
+      {
+        "question": "In the equation $W = P\\Delta V$, what physical constraint must be applied to the system's pressure?",
+        "answer": "The equation $W = P\\Delta V$ assumes that the *pressure* $P$ remains *constant* while the gas expands very slowly through volume $\\Delta V$.",
+        "category": "important",
+        "badgeTitle": "GEOMETRICAL DERIVATION",
+        "badgeText": "Derived from $F = PA$ and $W = F\\Delta y$."
+      },
+      {
+        "question": "On a pressure-volume graph, what physical quantity does the area under a constant pressure line represent?",
+        "answer": "The *rectangular area* enclosed under the P-V curve directly calculates the *work done* by or on the gas.",
+        "category": "important",
+        "badgeTitle": "VISUAL PROOF",
+        "badgeText": "Area = base $\\times$ height = $\\Delta V \\times P$."
+      },
+      {
+        "question": "According to thermodynamic sign conventions, how is heat leaving a system represented?",
+        "answer": "If heat energy is *expelled* or *leaves* the system, it is considered a *negative quantity* $(-Q)$.",
+        "category": "important",
+        "badgeTitle": "CONTRASTING CONVENTION",
+        "badgeText": "Heat entering the system is strictly positive $(+Q)$."
+      },
+      {
+        "question": "Why does the handle of a bicycle pump become hot when pumped rapidly?",
+        "answer": "Rapid pumping performs *mechanical work* on the trapped gas, which raises its *internal energy* and consequently registers as a *rise in temperature*.",
+        "category": "important",
+        "badgeTitle": "PROCESS TYPE",
+        "badgeText": "This is a practical example of the First Law of Thermodynamics."
+      },
+      {
+        "question": "How does the first law of thermodynamics explain the maintenance of human body temperature?",
+        "answer": "In human metabolism, *work done* results in a *decrease in internal energy*, so the body's internal energy (temperature) must be maintained by the *chemical energy* from the food we eat.",
+        "category": "important",
+        "badgeTitle": "BIOLOGICAL APPLICATION",
+        "badgeText": "$\\Delta U = Q - W$ applies to living organisms."
+      },
+      {
+        "question": "Why does the internal energy of an ideal gas remain strictly constant during an isothermal expansion?",
+        "answer": "Because the potential energy of ideal gas molecules is zero, internal energy depends only on *temperature*; since temperature is *constant* in an isothermal process, the *change in internal energy* ($\\Delta U$) is *zero*.",
+        "category": "important",
+        "badgeTitle": "ENERGY BALANCE",
+        "badgeText": "Any heat added is entirely converted into work ($Q = W$)."
+      },
+      {
+        "question": "Why must an isothermal expansion or compression be carried out extremely slowly?",
+        "answer": "Because the *transfer of heat* between the system and its surroundings requires *time*, the process must be *slow* to ensure the temperature of the gas remains perfectly *constant*.",
+        "category": "important",
+        "badgeTitle": "CONSEQUENCE OF SPEED",
+        "badgeText": "Rapid processes become adiabatic instead."
+      },
+      {
+        "question": "What is the value of heat exchange ($\\Delta Q$) in a perfectly insulated cylinder undergoing rapid compression?",
+        "answer": "In a perfectly insulated cylinder, the process is *adiabatic*, meaning *no heat enters or leaves*, making $\\Delta Q$ exactly *zero*.",
+        "category": "important",
+        "badgeTitle": "FIRST LAW RESULT",
+        "badgeText": "Work done equals the negative change in internal energy ($W = -\\Delta U$)."
+      },
+      {
+        "question": "Why does an expanding gas cool down if it is not supplied with external heat?",
+        "answer": "In an *adiabatic expansion*, the gas does *external work* at the expense of the *internal energy* of its own molecules, causing its *temperature* to *fall*.",
+        "category": "important",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "The rapid escape of air from a burst tyre."
+      },
+      {
+        "question": "What type of thermodynamic process characterizes the rapid expansion and compression of air as a sound wave passes?",
+        "answer": "The passage of a sound wave causes rapid, localized pressure changes *without time for heat exchange*, classifying it as an *adiabatic process*.",
+        "category": "important",
+        "badgeTitle": "ATMOSPHERIC EXAMPLE",
+        "badgeText": "Cloud formation is another atmospheric adiabatic process."
+      },
+      {
+        "question": "In the adiabatic equation $PV^\\gamma = \\text{constant}$, what does the symbol $\\gamma$ represent?",
+        "answer": "The symbol $\\gamma$ is the *ratio* of the *molar specific heat* of the gas at constant pressure to the *molar specific heat* at constant volume.",
+        "category": "important",
+        "badgeTitle": "CURVE STEEPNESS",
+        "badgeText": "This factor makes the adiabat curve steeper than an isotherm."
+      },
+      {
+        "question": "What happens to the internal energy of a working substance when it completes a perfectly reversible cycle?",
+        "answer": "Because a cycle brings the system *exactly back* to its initial condition, the *net change* in its internal energy is exactly *zero* ($\\Delta U = 0$).",
+        "category": "important",
+        "badgeTitle": "WORK RELATION",
+        "badgeText": "Net work done equals net heat absorbed ($W = Q_1 - Q_2$)."
+      },
+      {
+        "question": "Why are processes involving friction or sudden explosions classified as irreversible?",
+        "answer": "These processes *cannot be retraced* in the backward direction because they involve the *permanent dissipation* of energy (via conduction, convection, radiation) or occur *too suddenly* to reverse controlling factors.",
+        "category": "important",
+        "badgeTitle": "PRACTICAL REALITY",
+        "badgeText": "No actual change in nature is completely reversible."
+      },
+      {
+        "question": "What specific limitation of the First Law of Thermodynamics led to the formulation of the Second Law?",
+        "answer": "The first law states *heat can be converted to work* but is *silent about the conditions* under which this conversion takes place or the *direction of heat flow*.",
+        "category": "important",
+        "badgeTitle": "SECOND LAW PURPOSE",
+        "badgeText": "It dictates the circumstances and limits of converting heat into useful work."
+      },
+      {
+        "question": "In practice, what percentage of available heat energy is roughly converted into mechanical work by a diesel engine?",
+        "answer": "It has been observed that diesel engines convert roughly *35 to 40%* of available heat energy into useful work.",
+        "category": "important",
+        "badgeTitle": "PETROL ENGINE COMPARISON",
+        "badgeText": "Petrol engines are even less efficient, converting only about 25%."
+      },
+      {
+        "question": "Why can we not run a ship's engine by simply extracting thermal energy directly from the massive heat of the ocean?",
+        "answer": "According to the Second Law, converting heat to work requires a *source* and a *sink*; there is *no reservoir* available at a *lower temperature* than the ocean to expel the excess heat into.",
+        "category": "important",
+        "badgeTitle": "KELVIN'S STATEMENT",
+        "badgeText": "Heat from a single reservoir cannot be converted entirely into work."
+      },
+      {
+        "question": "During which specific step of the Carnot cycle does the gas actively absorb heat from the high-temperature source?",
+        "answer": "The gas absorbs heat $Q_1$ from the hot reservoir during the first step, which is an *isothermal expansion* at temperature $T_1$.",
+        "category": "important",
+        "badgeTitle": "P-V DIAGRAM",
+        "badgeText": "Represented by the curve AB."
+      },
+      {
+        "question": "What thermodynamic event occurs in the Carnot cycle immediately after the initial isothermal expansion?",
+        "answer": "The gas is allowed to expand *adiabatically* until its temperature drops from the hot reservoir temperature $T_1$ to the cold reservoir temperature $T_2$.",
+        "category": "important",
+        "badgeTitle": "P-V DIAGRAM",
+        "badgeText": "Represented by the curve BC."
+      },
+      {
+        "question": "Why is the theoretical efficiency of a Carnot engine completely independent of the nature of the working substance?",
+        "answer": "Carnot's theorem dictates that efficiency depends *strictly on the absolute temperatures* of the hot and cold reservoirs, making the *working fluid irrelevant* to maximum efficiency.",
+        "category": "important",
+        "badgeTitle": "EFFICIENCY FORMULA",
+        "badgeText": "$\\eta = 1 - \\frac{T_2}{T_1}$."
+      },
+      {
+        "question": "According to Carnot's theorem, why are all practical, real-world heat engines mathematically less efficient than the ideal Carnot engine?",
+        "answer": "No practical heat engine can be *perfectly reversible*, and energy dissipation through *friction* and *heat loss* is inevitable.",
+        "category": "important",
+        "badgeTitle": "THEOREM LIMIT",
+        "badgeText": "The Carnot cycle establishes the absolute upper limit on efficiency."
+      },
+      {
+        "question": "In a refrigerator, what role does external mechanical work play in the heat transfer process?",
+        "answer": "*External work* is done on the system (usually by a compressor) to forcefully *extract heat* $Q_C$ from a low‑temperature reservoir and *throw it* into a high‑temperature reservoir.",
+        "category": "important",
+        "badgeTitle": "ENERGY BALANCE",
+        "badgeText": "The heat rejected to the hot room is $Q_H = Q_C + W$."
+      },
+      {
+        "question": "What does a higher co-efficient of performance indicate about a refrigerator's practical operation?",
+        "answer": "A better refrigerator (higher COP) removes a *greater amount of heat* from the freezer using a *smaller expenditure* of mechanical or electrical work.",
+        "category": "important",
+        "badgeTitle": "MATHEMATICAL DEFINITION",
+        "badgeText": "$E = \\frac{Q_C}{W}$."
+      },
+      {
+        "question": "What thermodynamic state variable did Rudolph Clausius introduce to quantify the Second Law of Thermodynamics?",
+        "answer": "Clausius introduced the concept of *entropy* ($S$) in 1856 to provide a *quantitative variable* describing the state of a system's molecular disorder.",
+        "category": "important",
+        "badgeTitle": "MATHEMATICAL DEFINITION",
+        "badgeText": "$\\Delta S = \\frac{\\Delta Q}{T}$."
+      },
+      {
+        "question": "How does the free expansion of a gas into a vacuum affect the randomness and entropy of its molecules?",
+        "answer": "Free expansion *increases* the gas's *disorder* because the molecules have *greater randomness of position* after expanding, leading to a definitive *increase in entropy*.",
+        "category": "important",
+        "badgeTitle": "UNIVERSAL PRINCIPLE",
+        "badgeText": "Natural processes always proceed toward greater disorder."
+      },
+      {
+        "question": "What does the term \"degradation of energy\" mean when mixing hot and cold water?",
+        "answer": "While total energy is conserved, the increase in entropy means energy is *degraded* from an orderly form (separated hot/cold) to a less orderly form (warm water), *losing the opportunity* to convert that heat into useful work.",
+        "category": "important",
+        "badgeTitle": "FINAL OUTCOME",
+        "badgeText": "The energy eventually ends up entirely as unavailable thermal energy."
+      }
+    ],
     "7": [],
     "8": [],
     "9": [
