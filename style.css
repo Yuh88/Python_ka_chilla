@@ -349,6 +349,135 @@ a {
     color: #fda4af;
 }
 
+.leaderboard-card {
+    margin: 0 0.75rem 1rem;
+    padding: 0.9rem;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    background: rgba(30, 41, 59, 0.56);
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.28);
+}
+
+.leaderboard-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.leaderboard-card-title {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #f8fafc;
+}
+
+.leaderboard-card-icon {
+    font-size: 1rem;
+}
+
+.leaderboard-card-subtitle {
+    margin: 0.2rem 0 0.7rem;
+    font-size: 0.72rem;
+    color: #94a3b8;
+}
+
+.leaderboard-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.leaderboard-entry {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.48rem 0.52rem;
+    border-radius: 10px;
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    background: rgba(15, 23, 42, 0.62);
+}
+
+.leaderboard-entry.is-gold {
+    border-color: rgba(250, 204, 21, 0.5);
+    background: linear-gradient(135deg, rgba(250, 204, 21, 0.2), rgba(15, 23, 42, 0.72));
+}
+
+.leaderboard-entry.is-silver {
+    border-color: rgba(203, 213, 225, 0.52);
+    background: linear-gradient(135deg, rgba(203, 213, 225, 0.2), rgba(15, 23, 42, 0.72));
+}
+
+.leaderboard-entry.is-bronze {
+    border-color: rgba(251, 146, 60, 0.5);
+    background: linear-gradient(135deg, rgba(251, 146, 60, 0.2), rgba(15, 23, 42, 0.72));
+}
+
+.leaderboard-rank-badge {
+    width: 2rem;
+    min-width: 2rem;
+    height: 2rem;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #0f172a;
+    background: #e2e8f0;
+}
+
+.leaderboard-entry.is-gold .leaderboard-rank-badge {
+    background: #facc15;
+}
+
+.leaderboard-entry.is-silver .leaderboard-rank-badge {
+    background: #cbd5e1;
+}
+
+.leaderboard-entry.is-bronze .leaderboard-rank-badge {
+    background: #fb923c;
+}
+
+.leaderboard-avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 999px;
+    object-fit: cover;
+    border: 1px solid rgba(226, 232, 240, 0.55);
+    flex-shrink: 0;
+}
+
+.leaderboard-meta {
+    min-width: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.leaderboard-name {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #f8fafc;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.leaderboard-points {
+    font-size: 0.72rem;
+    color: #cbd5e1;
+}
+
+.leaderboard-empty {
+    margin: 0.65rem 0 0;
+    font-size: 0.72rem;
+    color: #94a3b8;
+}
+
 
 
 .nav-item {
@@ -1275,6 +1404,11 @@ body, .sidebar, .topbar, .question-card, .search-container, .card-footer, .theme
     }
 
     .auth-optin-card {
+        margin: 0 0.55rem 0.9rem;
+        padding: 0.75rem;
+    }
+
+    .leaderboard-card {
         margin: 0 0.55rem 0.9rem;
         padding: 0.75rem;
     }

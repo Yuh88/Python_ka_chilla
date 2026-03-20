@@ -247,6 +247,8 @@ const initializeNotesCraftApp = () => {
     const postCommentBtn = document.getElementById('post-comment-btn');
     const commentsList = document.getElementById('comments-list');
     const commentsSection = document.getElementById('comments-section');
+    const leaderboardTopThree = document.getElementById('leaderboardTopThree');
+    const leaderboardEmptyState = document.getElementById('leaderboardEmptyState');
     const body = document.body;
     const themeStorageKey = 'notescraft_theme';
     const flashcardStorageKey = 'notescraft_flashcard_mode';
@@ -897,6 +899,67 @@ const initializeNotesCraftApp = () => {
         return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
     };
 
+    const buildLeaderboardIdentity = (user) => {
+        const displayName = user && (user.displayName || user.email)
+            ? String(user.displayName || user.email).trim()
+            : 'User';
+
+        return {
+            displayName: displayName || 'User',
+            photoURL: user && typeof user.photoURL === 'string' ? user.photoURL : ''
+        };
+    };
+
+    const LEADERBOARD_STYLES = ['is-gold', 'is-silver', 'is-bronze'];
+
+    const renderLeaderboard = (users = []) => {
+        if (!leaderboardTopThree || !leaderboardEmptyState) return;
+
+        leaderboardTopThree.textContent = '';
+
+        const topThreeUsers = Array.isArray(users) ? users.slice(0, 3) : [];
+        const hasUsers = topThreeUsers.length > 0;
+        leaderboardEmptyState.classList.toggle('hidden', hasUsers);
+
+        if (!hasUsers) {
+            return;
+        }
+
+        topThreeUsers.forEach((user, index) => {
+            const row = document.createElement('li');
+            row.className = `leaderboard-entry ${LEADERBOARD_STYLES[index] || ''}`.trim();
+
+            const rankBadge = document.createElement('span');
+            rankBadge.className = 'leaderboard-rank-badge';
+            rankBadge.textContent = `#${index + 1}`;
+
+            const avatar = document.createElement('img');
+            avatar.className = 'leaderboard-avatar';
+            avatar.src = user.photoURL || buildFallbackAvatar(user.displayName || 'User');
+            avatar.alt = `${user.displayName || 'User'} profile photo`;
+
+            const meta = document.createElement('div');
+            meta.className = 'leaderboard-meta';
+
+            const name = document.createElement('span');
+            name.className = 'leaderboard-name';
+            name.textContent = user.displayName || 'User';
+
+            const points = document.createElement('span');
+            points.className = 'leaderboard-points';
+            points.textContent = `${Number(user.total_points || 0)} points`;
+
+            meta.appendChild(name);
+            meta.appendChild(points);
+
+            row.appendChild(rankBadge);
+            row.appendChild(avatar);
+            row.appendChild(meta);
+
+            leaderboardTopThree.appendChild(row);
+        });
+    };
+
     const animateAuthSwapIn = (element) => {
         if (!element || typeof element.animate !== 'function') return;
         element.animate(
@@ -1008,6 +1071,35 @@ const initializeNotesCraftApp = () => {
         }
     };
 
+    const loadLeaderboard = async () => {
+        try {
+            const db = await initializeFirestoreCompat();
+            const leaderboardSnapshot = await db
+                .collection('users_data')
+                .orderBy('total_points', 'desc')
+                .limit(10)
+                .get();
+
+            const topUsers = leaderboardSnapshot.docs.map((doc, index) => {
+                const data = doc.data() || {};
+                return {
+                    rank: index + 1,
+                    uid: doc.id,
+                    displayName: data.displayName || 'User',
+                    photoURL: data.photoURL || '',
+                    total_points: Number(data.total_points || 0)
+                };
+            });
+
+            renderLeaderboard(topUsers);
+            return topUsers;
+        } catch (error) {
+            console.warn('Unable to load leaderboard data.', error);
+            renderLeaderboard([]);
+            return [];
+        }
+    };
+
     const syncSingleProgressChange = async (questionId, isDone) => {
         if (!currentAuthenticatedUser || !currentAuthenticatedUser.uid || !questionId) return;
 
@@ -1026,6 +1118,25 @@ const initializeNotesCraftApp = () => {
             }
 
             await db.collection('user_progress').doc(currentAuthenticatedUser.uid).set(payload, { merge: true });
+
+            const leaderboardPayload = buildLeaderboardIdentity(currentAuthenticatedUser);
+
+            if (firestoreFieldValue && typeof firestoreFieldValue.increment === 'function') {
+                leaderboardPayload.total_points = isDone
+                    ? firestoreFieldValue.increment(10)
+                    : firestoreFieldValue.increment(-10);
+            } else {
+                leaderboardPayload.total_points = isDone ? 10 : -10;
+            }
+
+            if (firestoreFieldValue && typeof firestoreFieldValue.serverTimestamp === 'function') {
+                leaderboardPayload.updatedAt = firestoreFieldValue.serverTimestamp();
+            } else {
+                leaderboardPayload.updatedAt = new Date();
+            }
+
+            await db.collection('users_data').doc(currentAuthenticatedUser.uid).set(leaderboardPayload, { merge: true });
+            await loadLeaderboard();
         } catch (error) {
             console.warn('Unable to sync progress change to Firestore.', error);
         }
@@ -1067,6 +1178,10 @@ const initializeNotesCraftApp = () => {
                         applyStoredCardStates();
                     });
                 }
+
+                queueMicrotask(() => {
+                    loadLeaderboard();
+                });
             });
 
             firebaseAuthInstance = {
@@ -1125,6 +1240,8 @@ const initializeNotesCraftApp = () => {
         initializeFirestoreCompat().catch((error) => {
             console.warn('Firestore initialization failed.', error);
         });
+
+        loadLeaderboard();
 
         initializeFirebaseAuth().catch(() => {
             setAuthStatus('Sign-in is unavailable right now. Please try again later.', true);
