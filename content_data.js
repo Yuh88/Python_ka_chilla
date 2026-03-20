@@ -4753,6 +4753,482 @@ const siteData = {
         "category": "most",
         "badgeTitle": "PREVENTION",
         "badgeText": "This action prevents others from using the registered trademark."
+      },
+      {
+        "question": "What are the specific characteristics of information collected through successful online research?",
+        "answer": "The gathered information must be *correct*, *trustworthy*, and *current*.",
+        "category": "important",
+        "badgeTitle": "PRIMARY GOAL",
+        "badgeText": "To help in understanding a topic or solving a problem effectively."
+      },
+      {
+        "question": "Why has searching for online information become an exceptionally valuable skill in the modern era?",
+        "answer": "It is valuable because almost everything in today's world is *connected to the internet*, allowing quick and easy access to a wide range of information.",
+        "category": "important",
+        "badgeTitle": "DAILY APPLICATION",
+        "badgeText": "It assists professionals in staying updated and helps everyone make informed decisions."
+      },
+      {
+        "question": "How do students specifically benefit from conducting online research on a daily basis?",
+        "answer": "Online research directly helps students to *complete their homework* and educational tasks.",
+        "category": "important",
+        "badgeTitle": "EDUCATIONAL SUPPORT",
+        "badgeText": "It provides immediate access to general and academic knowledge bases."
+      },
+      {
+        "question": "What kinds of online content are typically consumed during General Information Research?",
+        "answer": "Users typically consume basic information formats such as *articles*, *blog posts*, or *videos*.",
+        "category": "important",
+        "badgeTitle": "COMMON TOOL",
+        "badgeText": "Search engines like Google are primarily used for this purpose."
+      },
+      {
+        "question": "Where do researchers typically look for scholarly information during Academic Research?",
+        "answer": "They search for resources like books and research papers from *educational websites*, *libraries*, or *databases*.",
+        "category": "important",
+        "badgeTitle": "ACADEMIC FOCUS",
+        "badgeText": "This ensures the information is suitable for educational purposes."
+      },
+      {
+        "question": "What critical business decisions are supported by conducting Market Research?",
+        "answer": "It helps businesses make informed decisions about *launching new products* or *services*.",
+        "category": "important",
+        "badgeTitle": "KEY METRICS",
+        "badgeText": "Entrepreneurs use it to understand market trends, customer behavior, and competition."
+      },
+      {
+        "question": "What specific actions must be taken during Fact-Checking Research to verify accuracy?",
+        "answer": "It involves checking *multiple reliable sources* to confirm the correctness of facts.",
+        "category": "important",
+        "badgeTitle": "CORE PURPOSE",
+        "badgeText": "To verify if the initially found information is actually accurate."
+      },
+      {
+        "question": "What specific digital tools are mentioned as being essential for practicing digital literacy?",
+        "answer": "Digital literacy requires the use of tools such as *computers*, *smartphones*, and the *internet*.",
+        "category": "important",
+        "badgeTitle": "PRACTICAL SKILL",
+        "badgeText": "It is the ability to find, understand, create, and share information using these devices."
+      },
+      {
+        "question": "In the context of \"Using Technology,\" what software skill is necessary for a student writing a school report?",
+        "answer": "The student must know how to use *word processing software* to type and format their report.",
+        "category": "important",
+        "badgeTitle": "BASIC OPERATION",
+        "badgeText": "This falls under knowing how to open programs and use applications."
+      },
+      {
+        "question": "What specific technique is utilized to refine search results when \"Searching for Information\"?",
+        "answer": "This skill includes entering *relevant keywords* and refining search results to locate useful information.",
+        "category": "important",
+        "badgeTitle": "SEARCH EFFICIENCY",
+        "badgeText": "It prevents the user from being overwhelmed by unrelated data."
+      },
+      {
+        "question": "What is a practical example of utilizing specific keywords for agricultural research in Punjab?",
+        "answer": "Farmers might use specific terms like *\"modern irrigation techniques for wheat\"* to find relevant data on Google.",
+        "category": "important",
+        "badgeTitle": "TARGETED SEARCH",
+        "badgeText": "This yields highly specific results rather than general farming advice."
+      },
+      {
+        "question": "What two factors must be checked to properly evaluate the reliability of an online source?",
+        "answer": "You must look at *who created the content* and whether it comes from a *trustworthy source*.",
+        "category": "important",
+        "badgeTitle": "EVALUATION PROCESS",
+        "badgeText": "This ensures the information is credible and safe to use."
+      },
+      {
+        "question": "Approximately what portion of the global population currently utilizes the internet?",
+        "answer": "*More than half* of the world's population currently uses the internet.",
+        "category": "important",
+        "badgeTitle": "GLOBAL CONTEXT",
+        "badgeText": "This massive scale makes online research a powerful tool for education."
+      },
+      {
+        "question": "What types of online materials are considered part of utilizing \"digital resources\"?",
+        "answer": "Utilizing digital resources involves finding and using online materials such as *articles*, *videos*, and *websites*.",
+        "category": "important",
+        "badgeTitle": "RESOURCE GOAL",
+        "badgeText": "These materials are used to support work, learning, and help achieve specific goals."
+      },
+      {
+        "question": "What is the primary benefit of using online libraries and research databases?",
+        "answer": "They provide access to a *wealth of academic resources* in today's digital age.",
+        "category": "important",
+        "badgeTitle": "ACADEMIC SUPPORT",
+        "badgeText": "They are vital for finding reliable and scholarly information for research projects."
+      },
+      {
+        "question": "How can students easily access academic journals for their educational needs?",
+        "answer": "Students can access them online through *school libraries*, *university portals*, or *open-access websites*.",
+        "category": "important",
+        "badgeTitle": "ACCESSIBILITY",
+        "badgeText": "This breaks down physical barriers to high-level academic content."
+      },
+      {
+        "question": "What specific features do online databases offer to help narrow down broad search results?",
+        "answer": "Many online libraries and databases offer *filters* to help search by *date*, *author*, or *subject*.",
+        "category": "important",
+        "badgeTitle": "NAVIGATION STRATEGY",
+        "badgeText": "This is a key part of effective online navigation alongside using specific keywords."
+      },
+      {
+        "question": "What tools should be used for managing digital information effectively once it is found?",
+        "answer": "Researchers should use *digital folders*, *note-taking apps*, or *reference managers*.",
+        "category": "important",
+        "badgeTitle": "ORGANIZATION",
+        "badgeText": "These tools help you stay organized and make the research process smoother."
+      },
+      {
+        "question": "What specific tasks are involved in the effective management of found digital resources?",
+        "answer": "You must *save and organize* digital copies, *take notes* on key points, and *keep track* of sources for future reference.",
+        "category": "important",
+        "badgeTitle": "WORKFLOW STEP",
+        "badgeText": "This happens immediately after useful resources have been found."
+      },
+      {
+        "question": "Do universities in Pakistan offer free access to academic journals?",
+        "answer": "Yes, many universities in Pakistan provide *free access* to thousands of academic journals and research papers online.",
+        "category": "important",
+        "badgeTitle": "STUDENT ADVANTAGE",
+        "badgeText": "This allows finding high-quality information without leaving home."
+      },
+      {
+        "question": "Who exactly benefits from the protection provided by strict research ethics?",
+        "answer": "Research ethics protect the rights and well-being of the *participants*, the *research community*, and *society at large*.",
+        "category": "important",
+        "badgeTitle": "ETHICAL SCOPE",
+        "badgeText": "It ensures research is honest, respectful, and fair to all involved."
+      },
+      {
+        "question": "In a survey about classmates' social media habits, what does the principle of confidentiality mandate?",
+        "answer": "It requires researchers to ensure that participants' *responses are kept confidential* and personal information is not shared without permission.",
+        "category": "important",
+        "badgeTitle": "PRIVACY PROTECTION",
+        "badgeText": "This is a practical application of keeping data secure."
+      },
+      {
+        "question": "What negative outcomes do researchers actively avoid by following ethical guidelines?",
+        "answer": "They avoid *causing harm*, *spreading misinformation*, or *being unfair* to the people or communities they study.",
+        "category": "important",
+        "badgeTitle": "TRUST BUILDING",
+        "badgeText": "This maintains the integrity of the research field."
+      },
+      {
+        "question": "How does conducting ethical research impact the final published results of a study?",
+        "answer": "It directly contributes to the *credibility and reliability* of the results, making sure the research is valuable to others.",
+        "category": "important",
+        "badgeTitle": "SCIENTIFIC VALUE",
+        "badgeText": "Unethical research produces untrustworthy findings."
+      },
+      {
+        "question": "What does the research principle of \"Respect for Participants\" guarantee?",
+        "answer": "It guarantees that researchers will *treat all participants with respect* and ensure the research does not *harm them* in any way.",
+        "category": "important",
+        "badgeTitle": "CORE PRINCIPLE",
+        "badgeText": "This is one of the four key principles of research ethics outlined in the chapter."
+      },
+      {
+        "question": "Why were comprehensive ethical guidelines in research originally developed over the years?",
+        "answer": "They were developed to *protect participants* and ensure that research contributes *positively to society*.",
+        "category": "important",
+        "badgeTitle": "GREATER GOOD",
+        "badgeText": "Following these builds trust and contributes to the greater good."
+      },
+      {
+        "question": "What specific rights does a patent grant to a Pakistani engineer who invents a new solar panel?",
+        "answer": "A patent ensures that *only he can manufacture and sell* this solar panel in Pakistan for a certain number of years.",
+        "category": "important",
+        "badgeTitle": "LEGAL MONOPOLY",
+        "badgeText": "It provides a temporary exclusive right for the technical solution."
+      },
+      {
+        "question": "Give a real-world example of a trademark actively used in Pakistan as mentioned in the text.",
+        "answer": "The *logo of National Foods* is a trademark that helps customers instantly recognize the brand on spices and sauces.",
+        "category": "important",
+        "badgeTitle": "BRAND IDENTITY",
+        "badgeText": "It distinguishes their goods from those of other companies."
+      },
+      {
+        "question": "What exclusive rights does copyright law provide to a Pakistani author of a novel?",
+        "answer": "It ensures that only the author has the exclusive right to *publish*, *sell*, or *adapt* the novel into a movie.",
+        "category": "important",
+        "badgeTitle": "CREATIVE PROTECTION",
+        "badgeText": "It prevents others from copying or using it without permission."
+      },
+      {
+        "question": "What specific aspects of a product are protected under Industrial Design rights?",
+        "answer": "It protects the visual design, including the *shape*, *configuration*, and *aesthetic aspects* of a product.",
+        "category": "important",
+        "badgeTitle": "NON-UTILITARIAN",
+        "badgeText": "This applies to aspects that make a product visually unique, like a water bottle's shape."
+      },
+      {
+        "question": "What is a well-known example of a Trade Secret in the Pakistani beverage industry?",
+        "answer": "The *recipe for Pakola*, a famous Pakistani soft drink, is a trade secret where only a few people know the exact ingredients.",
+        "category": "important",
+        "badgeTitle": "COMPETITIVE EDGE",
+        "badgeText": "It is confidential information not disclosed to the public."
+      },
+      {
+        "question": "How do companies legally protect their trade secrets from being disclosed to competitors?",
+        "answer": "They protect trade secrets through *confidentiality agreements* and other legal means.",
+        "category": "important",
+        "badgeTitle": "INFORMATION SECURITY",
+        "badgeText": "This is required because trade secrets are not publicly registered like patents."
+      },
+      {
+        "question": "What is the name of the official organization responsible for registering intellectual property in Pakistan?",
+        "answer": "The organization is the *Intellectual Property Organization of Pakistan (IPO Pakistan)*.",
+        "category": "important",
+        "badgeTitle": "REGULATORY BODY",
+        "badgeText": "It registers and protects IP rights, ensuring creators are rewarded."
+      },
+      {
+        "question": "According to the exercise questions, what is the primary importance of being specific when formulating a research question?",
+        "answer": "Being specific is important to *clearly define what you want to find* and *avoid vagueness*.",
+        "category": "important",
+        "badgeTitle": "RESEARCH FOUNDATION",
+        "badgeText": "This ensures the research process is focused and efficient."
+      },
+      {
+        "question": "Based on the multiple-choice exercise, what is the essential skill required for evaluating online sources?",
+        "answer": "The essential skill is *checking if the content is from a trusted entity*.",
+        "category": "important",
+        "badgeTitle": "DIGITAL LITERACY APPLICATION",
+        "badgeText": "This directly ties back to the digital literacy skill of evaluating sources."
+      },
+      {
+        "question": "According to the learning outcomes, what dual impact of online research must a student be able to explain?",
+        "answer": "Students must explain its impact on both *academic* and *professional work*.",
+        "category": "conceptual",
+        "badgeTitle": "CORE OUTCOME",
+        "badgeText": "This highlights that digital literacy spans beyond schooling into career applications."
+      },
+      {
+        "question": "What specific advanced search techniques are highlighted in the chapter's student learning outcomes?",
+        "answer": "The outcomes emphasize using *Boolean operators* and *search filters*.",
+        "category": "conceptual",
+        "badgeTitle": "ADVANCED SKILL",
+        "badgeText": "These tools are necessary to find relevant information effectively rather than browsing randomly."
+      },
+      {
+        "question": "The chapter aims to teach students not just to use digital content, but to ensure what two critical safety aspects?",
+        "answer": "Students must apply skills for ensuring *online safety* and *privacy*.",
+        "category": "conceptual",
+        "badgeTitle": "DIGITAL RESPONSIBILITY",
+        "badgeText": "This is a key, often overlooked component of overall digital literacy."
+      },
+      {
+        "question": "How does mastering online research and digital literacy impact the way a researcher handles digital content?",
+        "answer": "It enables them to perform *rigorous research* while ensuring *proper use* and *protection* of digital content.",
+        "category": "conceptual",
+        "badgeTitle": "ETHICAL APPLICATION",
+        "badgeText": "It combines technical search skills with legal and ethical awareness."
+      },
+      {
+        "question": "Why would an entrepreneur specifically choose Market Research over General Information Research before launching a product?",
+        "answer": "Because Market Research specifically helps understand *market trends*, *customer behavior*, and *competition* rather than just basic facts.",
+        "category": "conceptual",
+        "badgeTitle": "STRATEGIC CHOICE",
+        "badgeText": "It is targeted toward business viability and financial decision-making."
+      },
+      {
+        "question": "In what scenario does Fact-Checking Research become an absolute necessity?",
+        "answer": "When there is a need to *verify if the information is accurate* by cross-referencing multiple reliable sources.",
+        "category": "conceptual",
+        "badgeTitle": "INFORMATION INTEGRITY",
+        "badgeText": "This prevents the spread of misinformation and validates claims."
+      },
+      {
+        "question": "Which specific type of online research would one conduct to find the latest treatments for a medical condition?",
+        "answer": "*Health Research* involves finding information related to medical treatments and healthcare services.",
+        "category": "conceptual",
+        "badgeTitle": "SPECIFIC APPLICATION",
+        "badgeText": "This is a specialized subset of online searching distinct from academic or market research."
+      },
+      {
+        "question": "Why is understanding how to operate a tablet considered a foundational part of digital literacy?",
+        "answer": "Because *using technology*, which includes operating devices and navigating websites, is the foundational first step of digital literacy.",
+        "category": "conceptual",
+        "badgeTitle": "HARDWARE FOUNDATION",
+        "badgeText": "Without hardware operation skills, software and internet research cannot occur."
+      },
+      {
+        "question": "How does evaluating sources prevent a student from using misinformation in their school report?",
+        "answer": "It forces the student to check if the *creator is known* and whether the content comes from a *trustworthy source*.",
+        "category": "conceptual",
+        "badgeTitle": "CRITICAL THINKING",
+        "badgeText": "It acts as a filter against biased, unverified, or false internet data."
+      },
+      {
+        "question": "Based on the chapter's \"DO YOU KNOW?\" section, what statistic highlights the massive scale of the internet?",
+        "answer": "*More than half* of the world's population uses the internet.",
+        "category": "conceptual",
+        "badgeTitle": "STATISTICAL FACT",
+        "badgeText": "This highlights why digital literacy is a globally relevant skill."
+      },
+      {
+        "question": "According to a specific \"DO YOU KNOW?\" box, how can students in Pakistan access high-quality research papers without paying?",
+        "answer": "Many universities in Pakistan provide *free access* to thousands of academic journals and research papers online.",
+        "category": "conceptual",
+        "badgeTitle": "HIDDEN GEM",
+        "badgeText": "This points to institutional digital libraries that bypass typical paywalls."
+      },
+      {
+        "question": "What is the main message about ethical guidelines mentioned in the \"DO YOU KNOW?\" section on page 5?",
+        "answer": "Being an ethical researcher means more than just following rules; it's about being *honest*, *fair*, and *respectful* in all activities.",
+        "category": "conceptual",
+        "badgeTitle": "ETHICAL MINDSET",
+        "badgeText": "It emphasizes internal moral character over simple rule compliance."
+      },
+      {
+        "question": "What specific national organization is highlighted in a side box as responsible for protecting creators in Pakistan?",
+        "answer": "Pakistan has its own *Intellectual Property Organization (IPO)*.",
+        "category": "conceptual",
+        "badgeTitle": "NATIONAL CONTEXT",
+        "badgeText": "This localized information grounds the legal concepts in the country's actual framework."
+      },
+      {
+        "question": "In Class Activity 1, what final step is required after finding and evaluating three sources of information?",
+        "answer": "The activity requires writing a *short summary* and *including the links* to the sources.",
+        "category": "conceptual",
+        "badgeTitle": "PRACTICAL APPLICATION",
+        "badgeText": "This teaches students how to properly cite and aggregate found digital data."
+      },
+      {
+        "question": "What specific agricultural query is used as an example to demonstrate \"Searching for Information\"?",
+        "answer": "It uses the example of farmers in Punjab searching for *\"modern irrigation techniques for wheat\"*.",
+        "category": "conceptual",
+        "badgeTitle": "CONTEXTUAL EXAMPLE",
+        "badgeText": "This shows how niche, localized queries yield better results than broad searches."
+      },
+      {
+        "question": "Why are \"open-access websites\" mentioned alongside university portals in the text?",
+        "answer": "They are *alternative digital platforms* where students can freely access academic journals online.",
+        "category": "conceptual",
+        "badgeTitle": "RESOURCE ALTERNATIVE",
+        "badgeText": "They provide peer-reviewed data to those without direct university affiliations."
+      },
+      {
+        "question": "How does the \"peer-review\" process fundamentally change the value of an academic article?",
+        "answer": "It ensures the work has been *rigorously checked by other experts* before publication, elevating it to a highly trustworthy source.",
+        "category": "conceptual",
+        "badgeTitle": "QUALITY ASSURANCE",
+        "badgeText": "This is the gold standard for academic validation."
+      },
+      {
+        "question": "How does the principle of \"Informed Consent\" directly affect the start of any research involving human participants?",
+        "answer": "It strictly requires researchers to *explain the purpose* of the research and *obtain permission* before involving them in the study.",
+        "category": "conceptual",
+        "badgeTitle": "PROCEDURAL PREREQUISITE",
+        "badgeText": "Research cannot legally or ethically begin without this step."
+      },
+      {
+        "question": "If a researcher alters their data to make their findings look better, which specific ethical principle have they violated?",
+        "answer": "They have explicitly violated the principle of *Integrity*, which forbids falsifying data or misrepresenting findings.",
+        "category": "conceptual",
+        "badgeTitle": "ETHICAL VIOLATION",
+        "badgeText": "This destroys the credibility of the entire research project."
+      },
+      {
+        "question": "What is the conceptual difference between plagiarism and falsifying data under the Integrity principle?",
+        "answer": "*Plagiarism* is stealing others' work without credit, while *falsifying data* is inventing or altering the actual research results.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPT DIFFERENTIATION",
+        "badgeText": "Both are failures of integrity, but involve different mechanisms of dishonesty."
+      },
+      {
+        "question": "In the textbook's social media study habits example, what must be done with the collected data to maintain ethics?",
+        "answer": "The student responses must be kept *confidential* and personal information cannot be shared without permission.",
+        "category": "conceptual",
+        "badgeTitle": "SCENARIO APPLICATION",
+        "badgeText": "This demonstrates privacy rights in a relatable school setting."
+      },
+      {
+        "question": "Why can't a company patent a \"trade secret\" like the exact recipe for Pakola?",
+        "answer": "Patents must be *disclosed to the public*, whereas trade secrets lose all legal value and competitive edge if they are not kept strictly confidential.",
+        "category": "conceptual",
+        "badgeTitle": "LEGAL DISTINCTION",
+        "badgeText": "A patent is a public monopoly; a trade secret is a private monopoly."
+      },
+      {
+        "question": "If a designer creates a highly efficient but ugly machine part, would it be protected under Industrial Designs?",
+        "answer": "No, Industrial Design rights protect the *visual design* and *aesthetic aspects* of objects that are not purely utilitarian.",
+        "category": "conceptual",
+        "badgeTitle": "EDGE CASE",
+        "badgeText": "The utilitarian function would require a patent, not a design right."
+      },
+      {
+        "question": "What specific intellectual property right protects the actual written code of a newly developed software program?",
+        "answer": "*Copyrights* protect literary and artistic works, which explicitly includes software.",
+        "category": "conceptual",
+        "badgeTitle": "SPECIFIC IP TYPE",
+        "badgeText": "Software is legally treated similarly to a written book or novel."
+      },
+      {
+        "question": "How does a trademark act as a tool for consumer protection rather than just company protection?",
+        "answer": "It helps consumers *securely identify the source* of a product, ensuring they get the genuine brand they recognize and trust.",
+        "category": "conceptual",
+        "badgeTitle": "DUAL BENEFIT",
+        "badgeText": "It prevents marketplace confusion and counterfeit deception."
+      },
+      {
+        "question": "According to the text, how does Intellectual Property law drive future progress in society?",
+        "answer": "It ensures creators are *recognized and rewarded*, which encourages people to keep coming up with *new ideas and innovations*.",
+        "category": "conceptual",
+        "badgeTitle": "SOCIETAL IMPACT",
+        "badgeText": "It provides the financial incentive necessary for continuous human advancement."
+      },
+      {
+        "question": "Where exactly must a Pakistani inventor go to formally apply for a patent for a new invention?",
+        "answer": "They must formally apply through the *Intellectual Property Organization of Pakistan (IPO Pakistan)*.",
+        "category": "conceptual",
+        "badgeTitle": "PROCEDURAL FACT",
+        "badgeText": "This is the explicit bureaucratic step required to secure the right."
+      },
+      {
+        "question": "What legal tool is specifically mentioned to protect Trade Secrets within a company's workforce?",
+        "answer": "Companies protect them by forcing employees to sign *confidentiality agreements* and using other legal means.",
+        "category": "conceptual",
+        "badgeTitle": "LEGAL MECHANISM",
+        "badgeText": "Because there is no public registration, private contracts are the only defense."
+      },
+      {
+        "question": "According to the final exercise section, what is the specific function of the Boolean operator \"NOT\"?",
+        "answer": "The *\"NOT\"* operator is used to *exclude a term* from search results.",
+        "category": "conceptual",
+        "badgeTitle": "ADVANCED SEARCH CONCEPT",
+        "badgeText": "It is a filtering tool used to narrow down broad search returns."
+      },
+      {
+        "question": "Based on the exercise questions, what is the direct consequence of not giving proper credit in research?",
+        "answer": "Failing to give proper credit is considered *plagiarism*, which violates the essential components of ethical research.",
+        "category": "conceptual",
+        "badgeTitle": "ETHICAL CONSEQUENCE",
+        "badgeText": "It is a severe academic offense related to the \"Integrity\" principle."
+      },
+      {
+        "question": "In the context of formulating a research question (from the exercises), why is \"vagueness\" considered a negative trait?",
+        "answer": "Because a clear question needs to *clearly define what you want to find*, making the overall research focused and actionable.",
+        "category": "conceptual",
+        "badgeTitle": "METHODOLOGY CONCEPT",
+        "badgeText": "A vague question leads to an unfocused and ineffective search process."
+      },
+      {
+        "question": "Which of the following is conceptually excluded from the category of intellectual property according to the chapter's MCQs: Patents, Trademarks, Copyrights, or Physical Properties?",
+        "answer": "*Physical Properties* fall strictly outside the category of intellectual property.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPT EXCLUSION",
+        "badgeText": "IP strictly covers \"creations of the mind,\" not tangible real estate or physical goods."
+      },
+      {
+        "question": "According to the chapter's final subjective questions, what broad impact could unethical practices have beyond the immediate study?",
+        "answer": "Unethical practices could negatively affect the *trust of the wider research community* and *society*.",
+        "category": "conceptual",
+        "badgeTitle": "BROADER CONSEQUENCE",
+        "badgeText": "A single unethical study can damage the public's perception of all scientific research."
       }
     ],
     "9": []
