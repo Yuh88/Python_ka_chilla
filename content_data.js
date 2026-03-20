@@ -10199,6 +10199,251 @@ const siteData = {
         "category": "important",
         "badgeTitle": "FINAL OUTCOME",
         "badgeText": "The energy eventually ends up entirely as unavailable thermal energy."
+      },
+      {
+        "question": "Why is the study of thermodynamics considered crucially important for modern technology?",
+        "answer": "Thermodynamics plays a *key role* in technology because almost all the *raw energy* available for human use is eventually liberated and utilized in the form of *heat*.",
+        "category": "conceptual",
+        "badgeTitle": "UNDERLYING CONCEPT",
+        "badgeText": "It governs the macroscopic behavior of systems through temperature, pressure, and volume."
+      },
+      {
+        "question": "How does the density equation ρ = PM/RT mathematically prove when a real gas behaves ideally?",
+        "answer": "The equation shows that density is *lowest* at *low pressure* and *high temperature*, which physically places gas molecules at a *large distance* from each other, rendering *intermolecular forces negligible*.",
+        "category": "conceptual",
+        "badgeTitle": "PROPORTIONALITY",
+        "badgeText": "Density (ρ) is inversely proportional to Temperature (T)."
+      },
+      {
+        "question": "According to the \"For Your Information\" margin note, what three specific conditions force a real gas to approach ideal behavior?",
+        "answer": "A real gas acts ideally under *low pressure*, *high temperature*, and when its *potential energy (P.E.)* becomes *negligible*.",
+        "category": "conceptual",
+        "badgeTitle": "KINETIC RESULT",
+        "badgeText": "The molecules essentially possess only Kinetic Energy (K.E.)."
+      },
+      {
+        "question": "On the Charles' Law graph (Fig 6.2), what is the physical significance of the straight line extending to −273°C?",
+        "answer": "This x‑intercept represents *absolute zero*, the theoretical temperature at which the *volume of an ideal gas* would completely shrink to *zero*.",
+        "category": "conceptual",
+        "badgeTitle": "GRAPHICAL EXTRAPOLATION",
+        "badgeText": "The line must be extrapolated because real gases liquefy before reaching this temperature."
+      },
+      {
+        "question": "According to the \"Do You Know?\" side box, what complex mechanical analogy describes the vibrational energy within a diatomic molecule?",
+        "answer": "A diatomic gas molecule contains *vibrational energy* that behaves as if there is a *spring‑like bond* continuously oscillating between its two atoms.",
+        "category": "conceptual",
+        "badgeTitle": "ENERGY TYPES",
+        "badgeText": "They possess translational, rotational, and vibrational energies simultaneously."
+      },
+      {
+        "question": "According to the text's \"For Your Information\" box, why is internal energy fundamentally compared to gravitational potential energy?",
+        "answer": "Internal energy is a *function of state*, meaning it relies strictly on the *initial and final states* of the system rather than the *path taken*, exactly like gravitational potential energy.",
+        "category": "conceptual",
+        "badgeTitle": "PRACTICAL TAKEAWAY",
+        "badgeText": "Only the change (ΔU) is practically important, not absolute values."
+      },
+      {
+        "question": "In Fig 6.4, when a downward applied force F compresses a gas via a piston, what is the thermodynamic result?",
+        "answer": "The constant downward force equals PA, and when the piston is displaced downward by distance Δy, *downward work* is effectively *done on the gas*.",
+        "category": "conceptual",
+        "badgeTitle": "ENERGY TRANSFER",
+        "badgeText": "This mechanical work transfers energy into the gaseous system."
+      },
+      {
+        "question": "On the P‑V graph in Fig 6.5, what specific thermodynamic parameter is represented by the perfectly horizontal line from point B to C?",
+        "answer": "A horizontal line from left to right indicates an expansion happening at an *absolutely constant pressure*.",
+        "category": "conceptual",
+        "badgeTitle": "AREA REPRESENTATION",
+        "badgeText": "The shaded rectangular area directly beneath this line represents the mechanical work done (PΔV)."
+      },
+      {
+        "question": "According to the margin's sign convention guide, how are the mathematical signs strictly assigned when the environment does work on a system and extracts heat from it?",
+        "answer": "*Work done on the system* is considered *negative* (−W), and *heat leaving* or extracted from the system is considered *negative* (−Q).",
+        "category": "conceptual",
+        "badgeTitle": "OPPOSITE SCENARIO",
+        "badgeText": "Heat in is +Q, work by the system is +W."
+      },
+      {
+        "question": "In the Thermocouple experiment (Fig 6.6), why does rapidly pushing the blocked bicycle pump cause a temperature spike?",
+        "answer": "The rapid push exerts a force that does *mechanical work* directly on the trapped air, forcing its *internal energy* to rapidly rise without any external heat source.",
+        "category": "conceptual",
+        "badgeTitle": "FIRST LAW APPLICATION",
+        "badgeText": "This is an adiabatic manifestation where W = −ΔU."
+      },
+      {
+        "question": "How does the First Law of Thermodynamics technically define human \"metabolism\"?",
+        "answer": "Metabolism represents the *energy transforming processes* within a human organism, where the *chemical energy* from food offsets the internal energy lost by the body performing daily work.",
+        "category": "conceptual",
+        "badgeTitle": "EQUATION LINK",
+        "badgeText": "The equation ΔU = Q − W applies directly to biological survival."
+      },
+      {
+        "question": "From the \"Brain Teaser!\" box: Why exactly does the internal energy of an ideal gas remain perfectly constant during an isothermal expansion?",
+        "answer": "An ideal gas lacks potential energy, so its internal energy relies entirely on the *average kinetic energy* of its molecules; since K.E. depends solely on *temperature*, which is held *constant*, internal energy cannot change.",
+        "category": "conceptual",
+        "badgeTitle": "NET RESULT",
+        "badgeText": "ΔU = 0."
+      },
+      {
+        "question": "Why must the expansion or compression in an isothermal process occur extremely slowly?",
+        "answer": "Because the *transfer of heat* between the system and its surroundings naturally requires *time*, moving too fast would disrupt the *thermal equilibrium* and alter the constant temperature.",
+        "category": "conceptual",
+        "badgeTitle": "CONTRARY PROCESS",
+        "badgeText": "Doing it too fast makes it an adiabatic process."
+      },
+      {
+        "question": "Why is an adiabat curve visibly steeper than an isotherm curve on a P‑V diagram (Fig 6.7b)?",
+        "answer": "In an adiabatic process, pressure drops *faster* because it is affected by both the increase in volume and a simultaneous *decrease in temperature*, governed by the exponent factor γ.",
+        "category": "conceptual",
+        "badgeTitle": "MATHEMATICAL CONSTANT",
+        "badgeText": "It follows PV^γ = Constant."
+      },
+      {
+        "question": "What is the thermodynamic reason a burst tire's valve feels noticeably cold immediately after the air escapes?",
+        "answer": "The high‑pressure air undergoes a *rapid adiabatic expansion*, doing external work on the atmosphere at the strict expense of its own *internal energy*, causing its temperature to *aggressively fall*.",
+        "category": "conceptual",
+        "badgeTitle": "REAL-WORLD EXAMPLE",
+        "badgeText": "Cloud formation in the atmosphere happens via the same expansion principle."
+      },
+      {
+        "question": "Why is the slow, controlled evaporation or liquification of a substance considered practically reversible?",
+        "answer": "Because these phase changes can be *perfectly retraced*; slightly increasing or decreasing the pressure or temperature allows the substance to *reverse the operation* without permanent changes to surroundings.",
+        "category": "conceptual",
+        "badgeTitle": "EQUILIBRIUM STATUS",
+        "badgeText": "Thermal and mechanical equilibrium are maintained at every micro‑stage."
+      },
+      {
+        "question": "Why is an explosion considered the ultimate example of a highly irreversible process?",
+        "answer": "An explosion occurs *suddenly* and involves *massive dissipation* of energy through uncontrolled friction, conduction, convection, and radiation that *cannot be mechanically reversed*.",
+        "category": "conceptual",
+        "badgeTitle": "ONE-WAY PROCESS",
+        "badgeText": "The controlling factors cannot be retraced backward."
+      },
+      {
+        "question": "In the \"Tidbits\" margin visual, what specific impossible scenario is depicted by the crossed-out heat engine diagram?",
+        "answer": "It depicts a machine extracting heat from a *single hot reservoir* at temperature T and converting that heat *entirely into useful work* without rejecting any heat to a cold sink.",
+        "category": "conceptual",
+        "badgeTitle": "LAW VIOLATION",
+        "badgeText": "This directly violates the Kelvin statement of the Second Law."
+      },
+      {
+        "question": "According to the \"Interesting Information\" box, how does a waterfall serve as a perfect conceptual analogy for a heat engine?",
+        "answer": "Just as water must fall from a *high potential* to a *low potential* to turn a mechanical wheel, heat must naturally flow from a *high temperature* to a *low temperature* to produce useful work.",
+        "category": "conceptual",
+        "badgeTitle": "ENERGY FLOW",
+        "badgeText": "Without a \"drop\" in state, no kinetic energy can be harnessed."
+      },
+      {
+        "question": "Looking at the Carnot efficiency equation (η = 1 − T₂/T₁), how does raising the hot reservoir temperature theoretically maximize efficiency?",
+        "answer": "Raising *T₁* makes the fraction *mathematically smaller*, subtracting less from 1, which brings the total efficiency percentage *much closer to 100%*.",
+        "category": "conceptual",
+        "badgeTitle": "PRACTICAL LIMITATION",
+        "badgeText": "T₂ cannot realistically be lowered to absolute zero."
+      },
+      {
+        "question": "In the Carnot cycle's P‑V diagram (Fig 6.9), why does the net work done equal the physical area enclosed by path ABCDA?",
+        "answer": "The enclosed area represents the net mathematical difference between the *positive expansion work* done by the gas and the *negative compression work* done on the gas to complete the loop.",
+        "category": "conceptual",
+        "badgeTitle": "CYCLE PROPERTY",
+        "badgeText": "Internal energy change for the full loop is zero."
+      },
+      {
+        "question": "According to Carnot's theorem, why does swapping the working substance from steam to helium not change the theoretical maximum efficiency?",
+        "answer": "Carnot proved that *all reversible engines* operating between the same two temperatures have the *exact same efficiency*, making it entirely *independent of the nature* of the working substance.",
+        "category": "conceptual",
+        "badgeTitle": "DETERMINING FACTOR",
+        "badgeText": "Efficiency relies exclusively on reservoir temperatures."
+      },
+      {
+        "question": "Why must a Carnot cycle reject heat (Q₂) to a cold sink during its third step instead of just re-compressing the hot gas?",
+        "answer": "Rejecting heat lowers the gas's *internal pressure and temperature*, meaning *significantly less mechanical work* is required to compress it back to its original state, ensuring a *net positive work output*.",
+        "category": "conceptual",
+        "badgeTitle": "ENGINE SURVIVAL",
+        "badgeText": "If it compressed while hot, input work would equal output work (zero net gain)."
+      },
+      {
+        "question": "How does a refrigerator seemingly defy the natural flow of heat without violating the Clausius statement?",
+        "answer": "A refrigerator moves heat from cold to hot *not spontaneously*, but by utilizing *external mechanical work* (from a compressor), which explicitly satisfies the Second Law.",
+        "category": "conceptual",
+        "badgeTitle": "ENERGY IMBALANCE",
+        "badgeText": "Total heat rejected to the room is greater than heat pulled from the fridge (Q_H = Q_C + W)."
+      },
+      {
+        "question": "Conceptually, what makes one refrigerator objectively \"better\" (higher COP) than another?",
+        "answer": "A superior refrigerator extracts a *greater amount of heat* from the cold interior using a *relatively smaller expenditure* of mechanical or electrical work input.",
+        "category": "conceptual",
+        "badgeTitle": "RATIO MEANING",
+        "badgeText": "COP is the direct ratio of Heat Removed to Work Done."
+      },
+      {
+        "question": "From the \"Brain Teaser!\" box: Why does a brand new, sorted deck of cards become irreversibly disordered when shuffled?",
+        "answer": "Shuffling pushes the system toward a state of *vastly greater probability and randomness*, conceptually mirroring the natural thermodynamic law that isolated systems always evolve toward *maximum entropy*.",
+        "category": "conceptual",
+        "badgeTitle": "STATISTICAL REALITY",
+        "badgeText": "There are vastly more disordered card combinations than ordered ones."
+      },
+      {
+        "question": "Why does the free expansion of a gas into a larger vacuum result in an entropy increase despite zero heat being added?",
+        "answer": "Because the molecules *spread out* and achieve a *significantly greater randomness of position* within the new volume, causing their physical and molecular disorder to *measurably increase*.",
+        "category": "conceptual",
+        "badgeTitle": "SECOND LAW EVIDENCE",
+        "badgeText": "Natural processes proceed toward greater molecular disorder."
+      },
+      {
+        "question": "Why is the energy of a warm body of water considered \"degraded\" compared to an unmixed system of separate hot and cold water?",
+        "answer": "While the total joules remain identical, the warm water *lacks a temperature gradient*, meaning its internal energy can *no longer be systematically converted* into useful work.",
+        "category": "conceptual",
+        "badgeTitle": "ULTIMATE FATE",
+        "badgeText": "This represents energy devolving from an orderly, useful form to a disorderly, useless form."
+      },
+      {
+        "question": "If a refrigerator locally decreases the entropy of water by freezing it into ice cubes, what must simultaneously happen to the universe's total entropy?",
+        "answer": "The refrigerator rejects a *massive amount of heated exhaust* into the room, meaning the entropy of the surrounding environment must *increase by a greater magnitude*, ensuring the universe's net entropy *always rises*.",
+        "category": "conceptual",
+        "badgeTitle": "UNIVERSAL LAW",
+        "badgeText": "Entropy of the universe can never decrease."
+      },
+      {
+        "question": "During an isothermal expansion where the volume doubles, what definitively happens to the internal energy of the enclosed gas?",
+        "answer": "Because the process maintains a strict *constant temperature*, the internal energy of the ideal gas definitively *remains the same*.",
+        "category": "conceptual",
+        "badgeTitle": "FIRST LAW CHECK",
+        "badgeText": "All heat added transforms 100% into work."
+      },
+      {
+        "question": "When a gas expands forcefully against a piston due to the addition of external heat, what are the formal signs of the thermodynamic variables involved?",
+        "answer": "The *work* is *positive* because it is done by the expanding system, and the *heat* is *positive* because it was absorbed into the system.",
+        "category": "conceptual",
+        "badgeTitle": "EXPANSION RULE",
+        "badgeText": "Volume increase always equals positive work by the gas."
+      },
+      {
+        "question": "What is the precise, final mathematical change in the entropy of a system that undergoes a completely reversible cyclic process?",
+        "answer": "Because the system eventually returns *perfectly to its exact initial state* with no net degradation, the change in entropy of the system is exactly *zero*.",
+        "category": "conceptual",
+        "badgeTitle": "STATE VARIABLE PROPERTY",
+        "badgeText": "Like internal energy, cyclic entropy change is nil."
+      },
+      {
+        "question": "In an adiabatic process, what specific thermodynamic exchange is forcefully prevented from occurring?",
+        "answer": "An adiabatic barrier entirely prevents the *exchange of heat energy* between the system and its surrounding environment.",
+        "category": "conceptual",
+        "badgeTitle": "EQUATION FACT",
+        "badgeText": "Therefore, ΔQ = 0."
+      },
+      {
+        "question": "How do Lord Kelvin and Rudolf Clausius's statements of the Second Law conceptually mirror each other as two sides of the same coin?",
+        "answer": "Kelvin rules out the *perfect, spontaneous conversion of heat into work* (from one source), while Clausius rules out the *spontaneous flow of heat from cold to hot* (without external work).",
+        "category": "conceptual",
+        "badgeTitle": "UNIFIED REALITY",
+        "badgeText": "Both dictate the absolute limits of natural thermodynamic directionality."
+      },
+      {
+        "question": "What is the theoretical \"Heat Death of the Universe\" based strictly on thermodynamic entropy principles?",
+        "answer": "It is the hypothetical final state where all energy is *universally degraded* into a uniform, lukewarm thermal baseline, universal entropy reaches its *absolute maximum*, and *no further useful work* can ever be extracted.",
+        "category": "conceptual",
+        "badgeTitle": "COSMIC END",
+        "badgeText": "The universe achieves total thermal equilibrium."
       }
     ],
     "7": [],
