@@ -178,7 +178,10 @@
           <section id="adminAnnouncementPanel" class="admin-announcement-panel hidden" aria-label="Admin announcement controls">
             <p class="admin-announcement-title">Admin Broadcast</p>
             <textarea id="adminAnnouncementInput" class="admin-announcement-input" rows="2" maxlength="240" placeholder="Write global announcement..."></textarea>
-            <button id="adminAnnouncementSaveBtn" class="admin-announcement-save" type="button">Update Announcement</button>
+            <div class="admin-announcement-actions">
+              <button id="adminAnnouncementSaveBtn" class="admin-announcement-save" type="button">Update Announcement</button>
+              <button id="adminAnnouncementDeleteBtn" class="admin-announcement-delete" type="button">Delete Announcement</button>
+            </div>
             <p id="adminAnnouncementStatus" class="admin-announcement-status" aria-live="polite"></p>
           </section>
 

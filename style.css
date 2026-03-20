@@ -584,8 +584,15 @@ a {
     box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.2);
 }
 
-.admin-announcement-save {
+.admin-announcement-actions {
     margin-top: 0.52rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.45rem;
+    align-items: center;
+}
+
+.admin-announcement-save {
     width: 100%;
     border: 1px solid rgba(14, 165, 233, 0.58);
     border-radius: 10px;
@@ -598,6 +605,29 @@ a {
 }
 
 .admin-announcement-save:disabled {
+    opacity: 0.7;
+    cursor: wait;
+}
+
+.admin-announcement-delete {
+    border: 1px solid rgba(251, 113, 133, 0.56);
+    border-radius: 10px;
+    background: rgba(127, 29, 29, 0.35);
+    color: #fecdd3;
+    padding: 0.5rem 0.72rem;
+    font-size: 0.74rem;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.admin-announcement-delete:hover {
+    background: rgba(225, 29, 72, 0.25);
+    border-color: rgba(253, 164, 175, 0.78);
+    color: #ffe4e6;
+}
+
+.admin-announcement-delete:disabled {
     opacity: 0.7;
     cursor: wait;
 }

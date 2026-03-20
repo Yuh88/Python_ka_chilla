@@ -263,6 +263,7 @@ const initializeNotesCraftApp = () => {
     const adminAnnouncementPanel = document.getElementById('adminAnnouncementPanel');
     const adminAnnouncementInput = document.getElementById('adminAnnouncementInput');
     const adminAnnouncementSaveBtn = document.getElementById('adminAnnouncementSaveBtn');
+    const adminAnnouncementDeleteBtn = document.getElementById('adminAnnouncementDeleteBtn');
     const adminAnnouncementStatus = document.getElementById('adminAnnouncementStatus');
     const globalAnnouncementBanner = document.getElementById('globalAnnouncementBanner');
     const globalAnnouncementText = document.getElementById('globalAnnouncementText');
@@ -314,7 +315,6 @@ const initializeNotesCraftApp = () => {
     let adminInboxUnsubscribe = null;
     let privateChatUnsubscribes = [];
     let privateStreamA = [];
-    let privateStreamB = [];
     let activePrivateChatUserId = '';
     let isPrivateMessageSending = false;
 
@@ -322,7 +322,7 @@ const initializeNotesCraftApp = () => {
     const ADMIN_EMAIL_TEMPLATE = 'APNA_GMAIL_YAHAN_LIKHO';
     const ADMIN_DISPLAY_NAME = 'Admin 👑';
     const UNBLOCKABLE_EMAIL = 'johnythewithcher@gmail.com';
-    const ADMIN_CHANNEL_ID = 'admin';
+    const ADMIN_CHANNEL_ID = 'admin_email';
 
     const getInitialTheme = () => {
         try {
@@ -463,7 +463,6 @@ const initializeNotesCraftApp = () => {
         });
         privateChatUnsubscribes = [];
         privateStreamA = [];
-        privateStreamB = [];
     };
 
     const closePrivateChatModal = () => {
@@ -1143,7 +1142,6 @@ const initializeNotesCraftApp = () => {
 
     const adminRemoveUser = async (uid) => {
         if (!uid || !isCurrentUserAdmin()) return;
-        if (currentAuthenticatedUser && uid === currentAuthenticatedUser.uid) return;
 
         const shouldDelete = window.confirm('Remove this user from leaderboard?');
         if (!shouldDelete) return;
@@ -1203,7 +1201,7 @@ const initializeNotesCraftApp = () => {
             row.appendChild(avatar);
             row.appendChild(meta);
 
-            if (isCurrentUserAdmin() && user.uid && (!currentAuthenticatedUser || user.uid !== currentAuthenticatedUser.uid)) {
+            if (isCurrentUserAdmin() && user.uid) {
                 const removeBtn = document.createElement('button');
                 removeBtn.type = 'button';
                 removeBtn.className = 'leaderboard-remove-btn';
@@ -1306,12 +1304,25 @@ const initializeNotesCraftApp = () => {
         }
     };
 
-    const saveGlobalAnnouncement = async () => {
+    const setAnnouncementButtonsBusy = (isBusy) => {
+        if (adminAnnouncementSaveBtn) {
+            adminAnnouncementSaveBtn.disabled = isBusy;
+        }
+        if (adminAnnouncementDeleteBtn) {
+            adminAnnouncementDeleteBtn.disabled = isBusy;
+        }
+    };
+
+    const saveGlobalAnnouncement = async (forcedText = null) => {
         if (!isCurrentUserAdmin() || !adminAnnouncementInput || !adminAnnouncementSaveBtn) return;
 
-        const textValue = String(adminAnnouncementInput.value || '').trim();
-        adminAnnouncementSaveBtn.disabled = true;
-        setAdminAnnouncementStatus('Updating...');
+        const isDeleteOperation = typeof forcedText === 'string';
+        const textValue = isDeleteOperation
+            ? forcedText
+            : String(adminAnnouncementInput.value || '').trim();
+
+        setAnnouncementButtonsBusy(true);
+        setAdminAnnouncementStatus(isDeleteOperation ? 'Deleting...' : 'Updating...');
 
         try {
             const db = await initializeFirestoreCompat();
@@ -1324,13 +1335,20 @@ const initializeNotesCraftApp = () => {
             };
 
             await db.collection('settings').doc('announcement').set(payload, { merge: true });
-            setAdminAnnouncementStatus('Announcement updated.');
+            if (adminAnnouncementInput && isDeleteOperation) {
+                adminAnnouncementInput.value = '';
+            }
+            setAdminAnnouncementStatus(isDeleteOperation ? 'Announcement deleted.' : 'Announcement updated.');
         } catch (error) {
             console.warn('Unable to update announcement.', error);
-            setAdminAnnouncementStatus('Update failed. Try again.', true);
+            setAdminAnnouncementStatus(isDeleteOperation ? 'Delete failed. Try again.' : 'Update failed. Try again.', true);
         } finally {
-            adminAnnouncementSaveBtn.disabled = false;
+            setAnnouncementButtonsBusy(false);
         }
+    };
+
+    const deleteGlobalAnnouncement = async () => {
+        await saveGlobalAnnouncement('');
     };
 
     const renderPrivateChatMessages = (messages = []) => {
@@ -1373,18 +1391,11 @@ const initializeNotesCraftApp = () => {
     };
 
     const flushPrivateChatStreams = () => {
-        const mergedMap = new Map();
-        [...privateStreamA, ...privateStreamB].forEach((entry) => {
-            if (entry && entry.id) {
-                mergedMap.set(entry.id, entry);
-            }
-        });
-
-        const mergedMessages = [...mergedMap.values()].sort((first, second) => {
+        const orderedMessages = [...privateStreamA].sort((first, second) => {
             return getPrivateMessageTimestampMs(first.timestamp) - getPrivateMessageTimestampMs(second.timestamp);
         });
 
-        renderPrivateChatMessages(mergedMessages);
+        renderPrivateChatMessages(orderedMessages);
     };
 
     const mapPrivateMessageDocs = (snapshot) => {
@@ -1397,9 +1408,31 @@ const initializeNotesCraftApp = () => {
                 text: String(data.text || '').trim(),
                 timestamp: data.timestamp || null,
                 senderName: String(data.senderName || ''),
+                senderEmail: String(data.senderEmail || ''),
                 senderPhoto: String(data.senderPhoto || '')
             };
         }).filter((item) => item.text);
+    };
+
+    const getChatUserIdFromMessageDoc = (docSnapshot, data = {}) => {
+        const parentCollection = docSnapshot && docSnapshot.ref ? docSnapshot.ref.parent : null;
+        const chatDocRef = parentCollection && parentCollection.parent ? parentCollection.parent : null;
+
+        if (chatDocRef && chatDocRef.id) {
+            return String(chatDocRef.id);
+        }
+
+        const senderId = String(data.senderId || '');
+        if (senderId && senderId !== ADMIN_CHANNEL_ID) {
+            return senderId;
+        }
+
+        const receiverId = String(data.receiverId || '');
+        if (receiverId && receiverId !== ADMIN_CHANNEL_ID) {
+            return receiverId;
+        }
+
+        return '';
     };
 
     const startPrivateConversationListener = async (targetUserId = '') => {
@@ -1409,43 +1442,37 @@ const initializeNotesCraftApp = () => {
         setPrivateChatStatus('');
 
         const isAdmin = isCurrentUserAdmin();
-        const partnerUid = isAdmin ? String(targetUserId || '').trim() : currentAuthenticatedUser.uid;
+        const chatUserId = isAdmin ? String(targetUserId || '').trim() : currentAuthenticatedUser.uid;
 
-        if (isAdmin && !partnerUid) {
+        if (!chatUserId) {
             renderPrivateChatMessages([]);
             return;
         }
 
-        activePrivateChatUserId = partnerUid;
+        activePrivateChatUserId = chatUserId;
 
         try {
             const db = await initializeFirestoreCompat();
 
-            const queryA = isAdmin
-                ? db.collection('private_messages').where('senderId', '==', partnerUid).where('receiverId', '==', ADMIN_CHANNEL_ID).orderBy('timestamp', 'asc')
-                : db.collection('private_messages').where('senderId', '==', currentAuthenticatedUser.uid).where('receiverId', '==', ADMIN_CHANNEL_ID).orderBy('timestamp', 'asc');
+            const messagesQuery = db
+                .collection('chats')
+                .doc(chatUserId)
+                .collection('messages')
+                .orderBy('timestamp', 'asc');
 
-            const queryB = isAdmin
-                ? db.collection('private_messages').where('senderId', '==', ADMIN_CHANNEL_ID).where('receiverId', '==', partnerUid).orderBy('timestamp', 'asc')
-                : db.collection('private_messages').where('senderId', '==', ADMIN_CHANNEL_ID).where('receiverId', '==', currentAuthenticatedUser.uid).orderBy('timestamp', 'asc');
-
-            const unsubscribeA = queryA.onSnapshot((snapshot) => {
-                privateStreamA = mapPrivateMessageDocs(snapshot);
+            const unsubscribe = messagesQuery.onSnapshot((snapshot) => {
+                privateStreamA = mapPrivateMessageDocs(snapshot).filter((entry) => {
+                    const userToAdmin = entry.senderId === chatUserId && entry.receiverId === ADMIN_CHANNEL_ID;
+                    const adminToUser = entry.senderId === ADMIN_CHANNEL_ID && entry.receiverId === chatUserId;
+                    return userToAdmin || adminToUser;
+                });
                 flushPrivateChatStreams();
             }, (error) => {
-                console.warn('Unable to load private chat stream A.', error);
+                console.warn('Unable to load private chat stream.', error);
                 setPrivateChatStatus('Unable to load chat. Please refresh.', true);
             });
 
-            const unsubscribeB = queryB.onSnapshot((snapshot) => {
-                privateStreamB = mapPrivateMessageDocs(snapshot);
-                flushPrivateChatStreams();
-            }, (error) => {
-                console.warn('Unable to load private chat stream B.', error);
-                setPrivateChatStatus('Unable to load chat. Please refresh.', true);
-            });
-
-            privateChatUnsubscribes = [unsubscribeA, unsubscribeB];
+            privateChatUnsubscribes = [unsubscribe];
         } catch (error) {
             console.warn('Unable to start private chat listener.', error);
             setPrivateChatStatus('Unable to load chat right now.', true);
@@ -1503,7 +1530,7 @@ const initializeNotesCraftApp = () => {
         try {
             const db = await initializeFirestoreCompat();
             adminInboxUnsubscribe = db
-                .collection('private_messages')
+                .collectionGroup('messages')
                 .where('receiverId', '==', ADMIN_CHANNEL_ID)
                 .orderBy('timestamp', 'desc')
                 .onSnapshot((snapshot) => {
@@ -1511,13 +1538,12 @@ const initializeNotesCraftApp = () => {
 
                     snapshot.docs.forEach((doc) => {
                         const data = doc.data() || {};
-                        const senderId = String(data.senderId || '');
-                        if (!senderId || senderId === ADMIN_CHANNEL_ID) return;
-                        if (latestByUser.has(senderId)) return;
+                        const chatUserId = getChatUserIdFromMessageDoc(doc, data);
+                        if (!chatUserId || latestByUser.has(chatUserId)) return;
 
-                        latestByUser.set(senderId, {
-                            uid: senderId,
-                            name: String(data.senderName || 'Student'),
+                        latestByUser.set(chatUserId, {
+                            uid: chatUserId,
+                            name: String(data.senderName || data.senderEmail || data.senderId || 'Student'),
                             preview: String(data.text || '').trim().slice(0, 52)
                         });
                     });
@@ -1538,9 +1564,10 @@ const initializeNotesCraftApp = () => {
         if (!messageText) return;
 
         const adminMode = isCurrentUserAdmin();
-        const receiverId = adminMode ? activePrivateChatUserId : ADMIN_CHANNEL_ID;
+        const chatUserId = adminMode ? String(activePrivateChatUserId || '').trim() : currentAuthenticatedUser.uid;
+        const receiverId = adminMode ? chatUserId : ADMIN_CHANNEL_ID;
 
-        if (!receiverId) {
+        if (!chatUserId || !receiverId) {
             setPrivateChatStatus('Select a user from inbox first.', true);
             return;
         }
@@ -1551,13 +1578,14 @@ const initializeNotesCraftApp = () => {
 
         try {
             const db = await initializeFirestoreCompat();
-            await db.collection('private_messages').add({
+            await db.collection('chats').doc(chatUserId).collection('messages').add({
                 senderId: adminMode ? ADMIN_CHANNEL_ID : currentAuthenticatedUser.uid,
                 receiverId,
                 text: messageText,
                 senderName: adminMode
                     ? ADMIN_DISPLAY_NAME
                     : String(currentAuthenticatedUser.displayName || getFirstName(currentAuthenticatedUser) || 'Student'),
+                senderEmail: String(currentAuthenticatedUser.email || ''),
                 senderPhoto: adminMode ? '' : String(currentAuthenticatedUser.photoURL || ''),
                 timestamp: firestoreFieldValue && typeof firestoreFieldValue.serverTimestamp === 'function'
                     ? firestoreFieldValue.serverTimestamp()
@@ -1595,7 +1623,7 @@ const initializeNotesCraftApp = () => {
         if (adminMode) {
             await startAdminInboxListener();
             if (openInbox && activePrivateChatUserId) {
-                startPrivateConversationListener(activePrivateChatUserId);
+                await startPrivateConversationListener(activePrivateChatUserId);
             } else {
                 renderPrivateChatMessages([]);
             }
@@ -1881,6 +1909,12 @@ const initializeNotesCraftApp = () => {
         if (adminAnnouncementSaveBtn) {
             adminAnnouncementSaveBtn.addEventListener('click', () => {
                 saveGlobalAnnouncement();
+            });
+        }
+
+        if (adminAnnouncementDeleteBtn) {
+            adminAnnouncementDeleteBtn.addEventListener('click', () => {
+                deleteGlobalAnnouncement();
             });
         }
 
