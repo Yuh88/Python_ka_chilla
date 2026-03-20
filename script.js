@@ -1148,7 +1148,20 @@ const initializeNotesCraftApp = () => {
 
         try {
             const db = await initializeFirestoreCompat();
-            await db.collection('users_data').doc(uid).delete();
+            const usersDataRef = db.collection('users_data').doc(uid);
+            const userProgressRef = db.collection('user_progress').doc(uid);
+            const batch = db.batch();
+
+            batch.delete(usersDataRef);
+            batch.set(userProgressRef, {
+                completedQuestionIds: [],
+                resetByAdmin: true,
+                updatedAt: firestoreFieldValue && typeof firestoreFieldValue.serverTimestamp === 'function'
+                    ? firestoreFieldValue.serverTimestamp()
+                    : new Date()
+            }, { merge: true });
+
+            await batch.commit();
             await loadLeaderboard();
         } catch (error) {
             console.warn('Unable to remove user from leaderboard.', error);
@@ -1653,7 +1666,8 @@ const initializeNotesCraftApp = () => {
         try {
             const db = await initializeFirestoreCompat();
             const payload = {
-                completedQuestionIds: Array.from(completedQuestionIds)
+                completedQuestionIds: Array.from(completedQuestionIds),
+                resetByAdmin: false
             };
 
             if (firestoreFieldValue && typeof firestoreFieldValue.serverTimestamp === 'function') {
@@ -1676,8 +1690,11 @@ const initializeNotesCraftApp = () => {
             const docSnapshot = await db.collection('user_progress').doc(uid).get();
             const data = docSnapshot.exists ? docSnapshot.data() : {};
             const remoteIds = Array.isArray(data.completedQuestionIds) ? data.completedQuestionIds : [];
+            const resetByAdmin = Boolean(data.resetByAdmin);
 
-            const mergedSet = new Set([...completedQuestionIds, ...remoteIds]);
+            const mergedSet = resetByAdmin
+                ? new Set(remoteIds)
+                : new Set([...completedQuestionIds, ...remoteIds]);
             completedQuestionIds.clear();
             mergedSet.forEach((id) => completedQuestionIds.add(id));
             saveStorageSet(STORAGE_KEYS.completed, completedQuestionIds);
@@ -1686,7 +1703,7 @@ const initializeNotesCraftApp = () => {
                 applyStoredCardStates();
             });
 
-            const needsRemoteMerge = mergedSet.size !== remoteIds.length;
+            const needsRemoteMerge = !resetByAdmin && mergedSet.size !== remoteIds.length;
             if (needsRemoteMerge) {
                 await syncAllProgressForUser(uid);
             }
@@ -1741,27 +1758,31 @@ const initializeNotesCraftApp = () => {
                 payload.updatedAt = new Date();
             }
 
+            payload.resetByAdmin = false;
+
             await db.collection('user_progress').doc(currentAuthenticatedUser.uid).set(payload, { merge: true });
 
-            const leaderboardPayload = {
-                photoURL: currentAuthenticatedUser.photoURL || ''
-            };
+            const usersDataRef = db.collection('users_data').doc(currentAuthenticatedUser.uid);
 
-            if (firestoreFieldValue && typeof firestoreFieldValue.increment === 'function') {
-                leaderboardPayload.total_points = isDone
-                    ? firestoreFieldValue.increment(10)
-                    : firestoreFieldValue.increment(-10);
-            } else {
-                leaderboardPayload.total_points = isDone ? 10 : -10;
-            }
+            await db.runTransaction(async (transaction) => {
+                const usersDataSnapshot = await transaction.get(usersDataRef);
+                const usersData = usersDataSnapshot.exists ? (usersDataSnapshot.data() || {}) : {};
+                const currentPoints = Math.max(0, Number(usersData.total_points || 0));
+                const nextPoints = isDone
+                    ? currentPoints + 10
+                    : Math.max(0, currentPoints - 10);
 
-            if (firestoreFieldValue && typeof firestoreFieldValue.serverTimestamp === 'function') {
-                leaderboardPayload.updatedAt = firestoreFieldValue.serverTimestamp();
-            } else {
-                leaderboardPayload.updatedAt = new Date();
-            }
+                const leaderboardPayload = {
+                    photoURL: currentAuthenticatedUser.photoURL || '',
+                    total_points: nextPoints,
+                    updatedAt: firestoreFieldValue && typeof firestoreFieldValue.serverTimestamp === 'function'
+                        ? firestoreFieldValue.serverTimestamp()
+                        : new Date()
+                };
 
-            await db.collection('users_data').doc(currentAuthenticatedUser.uid).set(leaderboardPayload, { merge: true });
+                transaction.set(usersDataRef, leaderboardPayload, { merge: true });
+            });
+
             await loadLeaderboard();
         } catch (error) {
             console.warn('Unable to sync progress change to Firestore.', error);
