@@ -15580,7 +15580,820 @@ const siteData = {
         "badgeText": "The universe has no definitive, motionless backdrop; everything is purely relative to everything else."
       }
     ],
-    "12": []
+    "12": [
+      {
+        "question": "What are the two types of particles that comprise the atomic nucleus?",
+        "answer": "The atomic nucleus comprises two types of particles: *protons* and *neutrons*.",
+        "category": "most",
+        "badgeTitle": "TERMINOLOGY",
+        "badgeText": "Now we can say that the nucleus has two types of particles (neutrons and protons) called nucleons."
+      },
+      {
+        "question": "What is the charge and mass of a proton?",
+        "answer": "The proton has a *positive charge* of the same magnitude as that of the electron ($1.6\\times10^{-19}$ C) and its *mass* is $1.67\\times10^{-27}$ kg.",
+        "category": "most",
+        "badgeTitle": "SIMPLEST ATOM",
+        "badgeText": "A proton is the nucleus of the simplest atom, hydrogen, called a protium."
+      },
+      {
+        "question": "Who confirmed the existence of the neutron and what is its electrical state?",
+        "answer": "The existence of the neutron was pointed out in *1932* by *James Chadwick*, and it is *electrically neutral* as its name suggested.",
+        "category": "most",
+        "badgeTitle": "MASS COMPARISON",
+        "badgeText": "Its mass is nearly the same as that of a proton."
+      },
+      {
+        "question": "How are the atomic number and mass number defined for a nucleus?",
+        "answer": "The number of *protons* in a nucleus is called the *atomic number* represented by Z, and the *total number of nucleons* is the *atomic mass number* represented by A.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "It is written as $N=A-Z$, where N represents the neutron number."
+      },
+      {
+        "question": "What is the unified mass scale (u) used for indicating atomic mass?",
+        "answer": "By definition, *1u* is exactly *one‑twelfth the mass of a carbon atom* ($1u=1.6606\\times10^{-27}$ kg = 931 MeV).",
+        "category": "most",
+        "badgeTitle": "UNIT APPLICATION",
+        "badgeText": "To indicate the mass of atomic particles, instead of kilogram, unified mass scale (u) is generally used."
+      },
+      {
+        "question": "What are isotopes?",
+        "answer": "Nuclei that contain the *same number of protons* but *different numbers of neutrons* are called *isotopes*.",
+        "category": "most",
+        "badgeTitle": "EXAMPLES",
+        "badgeText": "Isotopes of carbon are ${}_{6}^{12}C$, ${}_{6}^{13}C$, and ${}_{6}^{14}C$."
+      },
+      {
+        "question": "What governs all interactions in the universe?",
+        "answer": "Despite the apparent complexity within the universe, all interactions in the universe are governed by the *four basic forces* known as *fundamental forces*.",
+        "category": "most",
+        "badgeTitle": "CLASSIFICATION",
+        "badgeText": "The four fundamental forces are gravity, electromagnetism, weak nuclear force, and strong nuclear force."
+      },
+      {
+        "question": "What are the defining characteristics of the gravitational force?",
+        "answer": "It is the *weakest* of the four but it is a *long‑range force*, arising due to the *gravitational interaction* between the bodies.",
+        "category": "most",
+        "badgeTitle": "ATOMIC LEVEL EFFECT",
+        "badgeText": "However, on an atomic level, this force is considered to be negligibly weak."
+      },
+      {
+        "question": "What phenomena are governed by the electromagnetic force?",
+        "answer": "The electromagnetic force is responsible for *electric field* and *magnetic field* interactions.",
+        "category": "most",
+        "badgeTitle": "RELATIVE STRENGTH",
+        "badgeText": "Like the gravitational force, the electromagnetic force follows an inverse square law but is much stronger than gravity."
+      },
+      {
+        "question": "Why is the strong nuclear force essential inside an atomic nucleus?",
+        "answer": "If we only consider the forces of electromagnetism and gravity, the nucleus should fly off in different directions, implying another force must act as an *attractive force* to hold the nuclei together.",
+        "category": "most",
+        "badgeTitle": "RANGE",
+        "badgeText": "They only exist inside the nucleus, so we call them short-range forces."
+      },
+      {
+        "question": "What specific processes are weak nuclear forces responsible for?",
+        "answer": "Weak nuclear forces are responsible for *radioactive decay*, particularly the *beta decay* and interactions involving *neutrinos*.",
+        "category": "most",
+        "badgeTitle": "IDENTITY CHANGE",
+        "badgeText": "Unlike the other fundamental forces, the weak force can change the identity of particles."
+      },
+      {
+        "question": "What is an anti-particle?",
+        "answer": "The *rest masses* of the anti‑particles are the *same* as that of their corresponding particles but with *opposite charges*.",
+        "category": "most",
+        "badgeTitle": "PREDICTION",
+        "badgeText": "It was predicted by Paul Dirac in 1928 that the fundamental particles have their anti-particles."
+      },
+      {
+        "question": "What is a positron and when was it discovered?",
+        "answer": "A *positron* is the *anti‑particle of an electron*, discovered by *Anderson* in *1932* in a cloud chamber experiment.",
+        "category": "most",
+        "badgeTitle": "SYMBOL REPRESENTATION",
+        "badgeText": "It is represented by $e^{+}$."
+      },
+      {
+        "question": "What occurs during the phenomenon of pair production?",
+        "answer": "*Pair production* occurs when a *gamma ray photon* (high energy photon) passes nearby an atomic nucleus, and as a result, an *electron‑positron pair* is emitted.",
+        "category": "most",
+        "badgeTitle": "CONSERVATION REQUIREMENT",
+        "badgeText": "The presence of a third particle, such as a nucleus, is necessary to conserve linear momentum."
+      },
+      {
+        "question": "What is the minimum energy required for pair production to occur?",
+        "answer": "The minimum energy of a photon for pair production must be equal to the *sum of the rest mass energies* of the created particles, which is $2m_{0}c^{2}=1.02$ MeV.",
+        "category": "most",
+        "badgeTitle": "EXCESS ENERGY HANDLING",
+        "badgeText": "A photon with energy greater than 1.02 MeV creates an electron-positron pair and the excess energy goes into the kinetic energies of the particles."
+      },
+      {
+        "question": "How does the annihilation of matter function?",
+        "answer": "When an *electron* and a *positron* interact to each other they *annihilate into two gamma ray photons*, which is the opposite process of pair production.",
+        "category": "most",
+        "badgeTitle": "EQUATION",
+        "badgeText": "The reaction can be written as $e^{-}+e^{+}\\rightarrow\\gamma+\\gamma$."
+      },
+      {
+        "question": "What defines natural radioactivity?",
+        "answer": "Nuclei whose *atomic numbers are greater than 82* are found naturally *unstable*, and these nuclei *spontaneously emit radiations*; this is known as *natural radioactivity*.",
+        "category": "most",
+        "badgeTitle": "RADIATION TYPES",
+        "badgeText": "These radiations are of three types, a-particles, b-particles and y-radiations."
+      },
+      {
+        "question": "How are artificial radioactive isotopes produced?",
+        "answer": "This occurs when a *stable element* is *bombarded with high‑energy particles* (such as neutrons, protons, alpha particles, or gamma rays), causing it to become *unstable and emit radiation*.",
+        "category": "most",
+        "badgeTitle": "TERMINOLOGY",
+        "badgeText": "This is called artificial radioactivity and radioactive isotopes are named radioisotopes or radionuclides."
+      },
+      {
+        "question": "How do alpha and beta particles behave when passing through an electric field?",
+        "answer": "*Alpha particles* deflect towards the *negative terminal* (showing positive charge), while *beta particles* deflect towards the *positive terminal* (showing negative charge).",
+        "category": "most",
+        "badgeTitle": "DEFLECTION DEGREE",
+        "badgeText": "The deflection of b-particles is more than the a-particles, proving that they are lighter particles."
+      },
+      {
+        "question": "What are the key properties of gamma radiations?",
+        "answer": "*Gamma radiations* pass through the electric field *without deflection*, showing they have *no charge*, and are *electromagnetic radiations* consisting of photons.",
+        "category": "most",
+        "badgeTitle": "CHARACTERISTICS",
+        "badgeText": "They move with the speed of light with the highest penetrating power but the lowest ionization power."
+      },
+      {
+        "question": "What causes an unstable nucleus to undergo alpha decay?",
+        "answer": "If the nucleus has *more protons* than the number of neutrons, the *electrostatic force of repulsion* becomes *greater* than the *strong nuclear force of attraction*, causing the nucleus to emit *alpha particles*.",
+        "category": "most",
+        "badgeTitle": "ALPHA PARTICLE COMPOSITION",
+        "badgeText": "An a-particle is equivalent to a helium (He) nucleus which consists of two protons and two neutrons."
+      },
+      {
+        "question": "How do the atomic and mass numbers change during alpha decay?",
+        "answer": "The *atomic number Z decreases by two* while its *mass number A decreases by four*.",
+        "category": "most",
+        "badgeTitle": "GENERAL FORMULA",
+        "badgeText": "Alpha decay can be written in general as ${}_{Z}^{A}X \\rightarrow {}_{Z-2}^{A-4}X + {}_{2}^{4}He$."
+      },
+      {
+        "question": "What is the disintegration energy (Q-value) in alpha decay?",
+        "answer": "It is the *difference in mass‑energy* between the *original nuclide* and the *total mass‑energy of the decay products*.",
+        "category": "most",
+        "badgeTitle": "MASS OBSERVATION",
+        "badgeText": "It is experimentally found that the mass of the parent nucleus is greater than the total mass of the daughter nucleus and the mass of the a-particle."
+      },
+      {
+        "question": "What triggers beta-minus ($\\beta^{-}$) decay in nuclides?",
+        "answer": "Some nuclides have a *neutron‑to‑proton ratio* ($N/P$) that is *too large* and are the source of $\\beta^{-}$‑decay.",
+        "category": "most",
+        "badgeTitle": "DECAY OUTPUT",
+        "badgeText": "In this process, a neutron in the nucleus decays into a proton and an electron, plus another particle called antineutrino."
+      },
+      {
+        "question": "What is the process of beta-plus ($\\beta^{+}$) decay?",
+        "answer": "Nuclides that have a *neutron‑to‑proton ratio* ($N/P$) *too small* for stability decay by emitting a *positron* instead of an electron.",
+        "category": "most",
+        "badgeTitle": "INTERNAL MECHANISM",
+        "badgeText": "In this process, a proton in the nucleus decays into a neutron and a positron, plus a neutrino."
+      },
+      {
+        "question": "Why do beta particles exhibit a continuous energy spectrum?",
+        "answer": "In the case of b-particle emission, *energy is shared* between the b-particle and the *anti‑neutrino* in *varying proportions*.",
+        "category": "most",
+        "badgeTitle": "ENERGY RANGE",
+        "badgeText": "Thus in b-decay, the energy of an electron or a positron may range from zero to a maximum value."
+      },
+      {
+        "question": "What characterizes a fundamental particle?",
+        "answer": "By the term *fundamental particle*, we mean a particle that has *no internal structure*, which means it is *indivisible*.",
+        "category": "most",
+        "badgeTitle": "CURRENT EXAMPLES",
+        "badgeText": "Presently, the fundamental constituents of matter are considered to be quarks and leptons."
+      },
+      {
+        "question": "How are particles classified based on their spin property?",
+        "answer": "*Half‑spin particles* obey Pauli's exclusion principle and are called *fermions*, while particles with *zero or whole number spin* do not obey this principle and are called *bosons*.",
+        "category": "most",
+        "badgeTitle": "PARTICLE EXAMPLES",
+        "badgeText": "Electrons, protons, and neutrons are fermions, whereas photons and mesons like pions are bosons."
+      },
+      {
+        "question": "What is the primary difference between hadrons and leptons regarding fundamental forces?",
+        "answer": "Particles that *experience the strong force* are known as *hadrons*, while those that *do not*, are called *leptons*.",
+        "category": "most",
+        "badgeTitle": "LEPTON BEHAVIOR",
+        "badgeText": "The leptons interact only through weak or electromagnetic interactions."
+      },
+      {
+        "question": "How do baryons and mesons differ in their composition?",
+        "answer": "*Baryons* are made of an *odd number of quarks* (usually three quarks), and *mesons* are made up of an *even number of quarks* (usually one quark and one antiquark).",
+        "category": "most",
+        "badgeTitle": "HADRON SUBDIVISION",
+        "badgeText": "Hadrons are composite subatomic particles that can be further divided into these two broad categories."
+      },
+      {
+        "question": "Who proposed the quark theory and what were the original three flavors?",
+        "answer": "In *1964*, *M. Gell‑Mann* and *George Zweig* proposed that hadrons are made up of more fundamental entities called quarks; the three originally proposed were *up*, *down*, and *strange*.",
+        "category": "most",
+        "badgeTitle": "ADDITIONAL FLAVORS",
+        "badgeText": "The other three quarks are called charm, bottom, and top."
+      },
+      {
+        "question": "What is the specific quark composition of a proton and a neutron?",
+        "answer": "The proton has a quark composition of *uud* (charge +1), while the neutron has a quark composition of *udd* (charge 0).",
+        "category": "most",
+        "badgeTitle": "BARYON CATEGORY",
+        "badgeText": "Each baryon consists of three quarks."
+      },
+      {
+        "question": "What does quantum chromodynamics (QCD) describe about quarks?",
+        "answer": "QCD is the theory indicating that the *strong force* acts between the *colour charges* of quarks rather than electric charges.",
+        "category": "most",
+        "badgeTitle": "COLOUR FLAVORS",
+        "badgeText": "Each flavor of quark can have one of three colours, usually designated red, green, and blue."
+      },
+      {
+        "question": "How is beta-minus decay explained at the quark level?",
+        "answer": "A neutron converts into a proton by changing a *down quark* into an *up quark*, expressed as $d \\rightarrow u + {}_{-1}^{0}e + \\overline{v}$.",
+        "category": "most",
+        "badgeTitle": "PARTICLE COMPOSITION CHANGE",
+        "badgeText": "A neutron with composition udd can convert into a proton with composition uud."
+      },
+      {
+        "question": "What is the fundamental role of the Higgs boson?",
+        "answer": "Its crucial role is that it provides an *explanation* for how the other particles get *mass* by interacting with the *Higgs field*.",
+        "category": "most",
+        "badgeTitle": "DISCOVERY DATE",
+        "badgeText": "The Higgs boson is a special particle discovered in 2012 at large hadron collider at CERN."
+      },
+      {
+        "question": "What is the nucleus of the simplest hydrogen atom called?",
+        "answer": "A *proton* is the nucleus of the simplest atom, hydrogen, called a *protium*.",
+        "category": "important",
+        "badgeTitle": "CONCEPT DEFINITION",
+        "badgeText": "A hydrogen nucleus consists of a single proton."
+      },
+      {
+        "question": "How does the magnitude of a proton's charge compare to that of an electron?",
+        "answer": "The proton has a *positive charge* of the *same magnitude* as that of the *electron*.",
+        "category": "important",
+        "badgeTitle": "VALUE",
+        "badgeText": "1.6×10⁻¹⁹ C."
+      },
+      {
+        "question": "What exactly does the symbol X represent in the general nuclear notation?",
+        "answer": "In the notation ${}_{Z}^{A}X$, *X* is the *chemical symbol* for the *element*.",
+        "category": "important",
+        "badgeTitle": "NOTATION STANDARD",
+        "badgeText": "This is commonly used to specify given nuclei."
+      },
+      {
+        "question": "What is the mass of a single proton when measured in the unified mass scale?",
+        "answer": "In the unified mass scale, the mass of a proton is *1.007276 u*.",
+        "category": "important",
+        "badgeTitle": "MASS MEASUREMENT",
+        "badgeText": "To indicate the mass of atomic particles, instead of kilogram, unified mass scale (u) is generally used."
+      },
+      {
+        "question": "What is the exact mass of a neutron in the unified mass scale?",
+        "answer": "The mass of a neutron is *1.008665 u* in this unit.",
+        "category": "important",
+        "badgeTitle": "MASS COMPARISON",
+        "badgeText": "It is slightly heavier than a proton."
+      },
+      {
+        "question": "What is the mass of an electron expressed in unified mass units?",
+        "answer": "The mass of an electron is *0.00055 u*.",
+        "category": "important",
+        "badgeTitle": "PARTICLE PROPERTY",
+        "badgeText": "This highlights how significantly lighter an electron is compared to nucleons."
+      },
+      {
+        "question": "Which specific isotopes of carbon are considered stable?",
+        "answer": "Amongst the isotopes of carbon, ${}_{6}^{12}C$ and ${}_{6}^{13}C$ are *stable*.",
+        "category": "important",
+        "badgeTitle": "ISOTOPE VARIANT",
+        "badgeText": "Nuclei that contain the same number of protons but different numbers of neutrons are called isotopes."
+      },
+      {
+        "question": "What does the unstable carbon-14 isotope decay into?",
+        "answer": "The unstable ${}_{6}^{14}C$ decays into *nitrogen* along with the emission of *β* and *neutrino* particles.",
+        "category": "important",
+        "badgeTitle": "RADIOACTIVE EXAMPLE",
+        "badgeText": "This is a primary example of radioactive beta decay in isotopes."
+      },
+      {
+        "question": "According to Newton's law, what two factors determine the gravitational force between two bodies?",
+        "answer": "The gravitational force is *proportional to the product of their masses* and *inversely proportional to the square of the distance* between them.",
+        "category": "important",
+        "badgeTitle": "FORMULA PRINCIPLE",
+        "badgeText": "It is an attractive force and arises due to the gravitational interaction between the bodies."
+      },
+      {
+        "question": "Who formulated the equations that unified electricity and magnetism?",
+        "answer": "*James Clerk Maxwell* (1861) formulated a set of *four fundamental equations* that unified electricity and magnetism into electromagnetism.",
+        "category": "important",
+        "badgeTitle": "HISTORICAL CONTRIBUTION",
+        "badgeText": "These describe how electric and magnetic fields interact."
+      },
+      {
+        "question": "What did Maxwell's equations reveal about electric and magnetic fields?",
+        "answer": "These equations showed that electric and magnetic fields are *not separate forces* but are *two aspects* of a *single electromagnetic force*.",
+        "category": "important",
+        "badgeTitle": "UNIFICATION CONCEPT",
+        "badgeText": "It governs a vast range of phenomena from atomic structure to light propagation."
+      },
+      {
+        "question": "How do protons behave within the nucleus under the influence of strong and electromagnetic forces?",
+        "answer": "Protons *attract each other* via the *strong nuclear force* at the same time they *repel each other* via the *electric force*.",
+        "category": "important",
+        "badgeTitle": "FORCE INTERACTION",
+        "badgeText": "A neutron, being electrically neutral, can attract other neutrons or protons via the strong nuclear force."
+      },
+      {
+        "question": "What role does the weak nuclear force play in stellar phenomena?",
+        "answer": "The weak force can *change the identity of particles*, making it essential for processes like *nuclear fusion in stars*.",
+        "category": "important",
+        "badgeTitle": "ASTROPHYSICS APPLICATION",
+        "badgeText": "It is also responsible for the decay of unstable atomic nuclei."
+      },
+      {
+        "question": "How is an anti-particle generally represented in physics notation?",
+        "answer": "Usually, the anti-particle is represented by a *letter with a bar over it*, e.g., anti-proton is represented by $\\bar{p}$.",
+        "category": "important",
+        "badgeTitle": "NOTATION STANDARD",
+        "badgeText": "Similarly, antineutrino is represented by $\\bar{v}$."
+      },
+      {
+        "question": "What are cosmic rays and where do they originate?",
+        "answer": "The *cosmic rays* are *high‑energy particles* coming from outer space with unknown sources, possibly the sun or other stars.",
+        "category": "important",
+        "badgeTitle": "PARTICLE SOURCE",
+        "badgeText": "These particles consist mostly of protons, neutrons and heavier nuclei."
+      },
+      {
+        "question": "What happens when cosmic rays interact with Earth's atmosphere?",
+        "answer": "When these particles interact with the atoms of the gases of the Earth's atmosphere, they produce *showers of secondary particles* which rain down on us.",
+        "category": "important",
+        "badgeTitle": "ATMOSPHERIC INTERACTION",
+        "badgeText": "This is a natural source of subatomic particles constantly bombarding Earth."
+      },
+      {
+        "question": "What variety of particles are emitted when Uranium-235 undergoes fission?",
+        "answer": "When nuclei of unstable radioactive element ${}^{235}U$ undergo fission reactions, they emit particles such as *neutrons*, *neutrinos*, *α‑particles*, *photons*, *electrons*, and *positrons*.",
+        "category": "important",
+        "badgeTitle": "FISSION PRODUCTS",
+        "badgeText": "This occurs in nuclear reactors."
+      },
+      {
+        "question": "Why can pair production not occur in a vacuum?",
+        "answer": "Pair production can happen only in the presence of an *external object* like an *atomic nucleus* which can experience some recoil during the collision.",
+        "category": "important",
+        "badgeTitle": "CONSERVATION LAW",
+        "badgeText": "This is necessary to conserve the energy and the momentum at the same time."
+      },
+      {
+        "question": "What defines the disintegration energy or Q-value of a nuclear decay?",
+        "answer": "The *difference in mass‑energy* between the *parent nucleus* and the *total mass‑energy of the decay products* is called the *disintegration energy Q*.",
+        "category": "important",
+        "badgeTitle": "ENERGY DIFFERENCE",
+        "badgeText": "The total mass-energy (E=mc²) of the decay products is less than the mass-energy of the original nuclide."
+      },
+      {
+        "question": "At what speed are alpha particles typically emitted from a nucleus?",
+        "answer": "The α‑particles are emitted at *high speeds*, typically a *few percent of the speed of light*.",
+        "category": "important",
+        "badgeTitle": "KINEMATIC PROPERTY",
+        "badgeText": "Despite this speed, they have the lowest penetrating power."
+      },
+      {
+        "question": "Why can alpha particles only travel several centimeters in the air?",
+        "answer": "α‑particles can travel only *several centimetres in the air* due to their *large mass*.",
+        "category": "important",
+        "badgeTitle": "PENETRATION LIMITATION",
+        "badgeText": "A paper can completely absorb them."
+      },
+      {
+        "question": "What is the maximum speed that beta particles can achieve?",
+        "answer": "The β‑particles are fast-moving electrons and move with speeds up to *0.9995 of the speed of light*.",
+        "category": "important",
+        "badgeTitle": "KINEMATIC PROPERTY",
+        "badgeText": "Their deflection in an electric field is more than α‑particles because they are much lighter."
+      },
+      {
+        "question": "Are the beta particles emitted in β-decay just regular orbital electrons?",
+        "answer": "The β‑particles are *not the orbital electrons* but they are *created within the nucleus* at the moment of emission.",
+        "category": "important",
+        "badgeTitle": "PARTICLE ORIGIN",
+        "badgeText": "However, they are indistinguishable from orbital electrons once emitted."
+      },
+      {
+        "question": "Why is the neutrino incredibly difficult to observe when passing through matter?",
+        "answer": "Both the *neutrino* and the *anti‑neutrino* have *zero charge* and *very small mass*, which is why they are very difficult to observe.",
+        "category": "important",
+        "badgeTitle": "PARTICLE PROPERTY",
+        "badgeText": "The neutrino was first proposed by Wolfgang Pauli in 1930."
+      },
+      {
+        "question": "Provide an example of beta-minus decay involving Thorium.",
+        "answer": "An example is the isotope of thorium, which is unstable and decays into protactinium by beta emission.",
+        "category": "important",
+        "badgeTitle": "NUCLEAR EQUATION",
+        "badgeText": "${}_{90}^{234}Th \\rightarrow {}_{91}^{234}Pa + {}_{-1}^{0}e + \\bar{v}$"
+      },
+      {
+        "question": "Provide an example of a beta-plus decay involving Neon.",
+        "answer": "An example is the decay of Neon into Fluorine by emitting a positron and a neutrino.",
+        "category": "important",
+        "badgeTitle": "NUCLEAR EQUATION",
+        "badgeText": "${}_{10}^{19}Ne \\rightarrow {}_{9}^{19}F + {}_{+1}^{0}e + v$"
+      },
+      {
+        "question": "What visual evidence proves that alpha particles have discrete energies?",
+        "answer": "When the *number of α‑particles* is plotted against *kinetic energy*, there are *distinct spikes* that appear on the graph.",
+        "category": "important",
+        "badgeTitle": "GRAPHICAL REPRESENTATION",
+        "badgeText": "Every emitted α‑particle has the same sharply defined kinetic energy for a particular radionuclide."
+      },
+      {
+        "question": "What strange particles are created when a pion (π⁻) collides with a proton?",
+        "answer": "When a pion (π⁻) collides with a proton, two strange particles *k⁰* and *Λ⁰* are created.",
+        "category": "important",
+        "badgeTitle": "REACTION EQUATION",
+        "badgeText": "π⁻ + p → k⁰ + Λ⁰"
+      },
+      {
+        "question": "What property makes charged subatomic particles act like tiny magnets?",
+        "answer": "All particles *spin on their axes* and the *spin of charged particles* makes them *tiny magnets*.",
+        "category": "important",
+        "badgeTitle": "MAGNETIC PROPERTY",
+        "badgeText": "The characteristic spin of electrons, protons, and neutrons is 1/2."
+      },
+      {
+        "question": "What is Pauli's exclusion principle regarding fermions?",
+        "answer": "Half‑spin particles obey the *Pauli's exclusion principle* which says that *only one particle of a kind* can occupy a *given quantum state*.",
+        "category": "important",
+        "badgeTitle": "QUANTUM RULE",
+        "badgeText": "These particles are called \"fermions\"."
+      },
+      {
+        "question": "What are baryons defined as in the classification of particles?",
+        "answer": "The *nucleons* and the heavier particles such as *Λ⁰* and *k⁰* which decay to nucleons are called *baryons* (heavy).",
+        "category": "important",
+        "badgeTitle": "PARTICLE FAMILY",
+        "badgeText": "Baryons are made of an odd number of quarks."
+      },
+      {
+        "question": "Which fundamental force do leptons strictly NOT interact with?",
+        "answer": "The leptons interact only through *weak or electromagnetic interactions*, meaning they *do not experience the strong force*.",
+        "category": "important",
+        "badgeTitle": "INTERACTION LIMIT",
+        "badgeText": "No experiments have yet been able to reveal any internal structure for the leptons."
+      },
+      {
+        "question": "What are the three pairs of particles in the lepton family?",
+        "answer": "The six known leptons are grouped as three pairs: *Electron*, *Muon*, and *Tau*, along with their *associated neutrinos*.",
+        "category": "important",
+        "badgeTitle": "LEPTON GROUPING",
+        "badgeText": "Each pair includes a charged particle, its associated neutrino, and corresponding anti-particles."
+      },
+      {
+        "question": "Which specific quarks carry a fractional charge of +2/3?",
+        "answer": "The *up*, *charm*, and *top* quarks have a *charge quantum number of +2/3*.",
+        "category": "important",
+        "badgeTitle": "CHARGE DISTRIBUTION",
+        "badgeText": "This is a fraction of the previously thought smallest charge 'e' on an electron."
+      },
+      {
+        "question": "Which specific quarks carry a fractional charge of −1/3?",
+        "answer": "The *down*, *strange*, and *bottom* quarks have a *charge quantum number of −1/3*.",
+        "category": "important",
+        "badgeTitle": "CHARGE DISTRIBUTION",
+        "badgeText": "Quarks never appear on their own; they are always combined."
+      },
+      {
+        "question": "How does the quantum chromodynamics (QCD) theory describe the colour of hadrons?",
+        "answer": "Baryons are made up of *three quarks (one of each colour)* and mesons consist of a *quark‑antiquark pair (a colour and its anticolour)*, making both *colourless or white*.",
+        "category": "important",
+        "badgeTitle": "COLOUR COMBINATION",
+        "badgeText": "Each quark is assumed to carry a colour charge: red, green, or blue."
+      },
+      {
+        "question": "How is the pion (π⁺) meson composed in terms of quarks?",
+        "answer": "A π⁺ meson consists of an *up‑quark (u)* and an *antidown quark ($\\bar{d}$)*.",
+        "category": "important",
+        "badgeTitle": "QUARK COMPOSITION",
+        "badgeText": "The charge adds nicely to +1 (+2/3+1/3=+1)."
+      },
+      {
+        "question": "What is the half-life of a free neutron outside the nucleus?",
+        "answer": "A neutron is stable only inside a nucleus; free neutrons decay with a half‑life of *900 s*.",
+        "category": "important",
+        "badgeTitle": "STABILITY DATA",
+        "badgeText": "This decay process yields a proton, electron, and antineutrino."
+      },
+      {
+        "question": "What particles are exchanged to mediate the electromagnetic force?",
+        "answer": "Electromagnetic interactions occur when two positively charged particles send and receive (exchange) *photons*.",
+        "category": "important",
+        "badgeTitle": "FORCE CARRIER",
+        "badgeText": "The photons are said to \"carry\" the force between charged particles."
+      },
+      {
+        "question": "What particles act as carriers for the strong nuclear force between quarks?",
+        "answer": "Attraction between two quarks in an atomic nucleus occurs when two quarks send and receive *gluons*.",
+        "category": "important",
+        "badgeTitle": "FORCE CARRIER",
+        "badgeText": "This force holds the quarks together to form hadrons."
+      },
+      {
+        "question": "What bosons are responsible for carrying the weak nuclear force?",
+        "answer": "The *W⁺*, *W⁻*, and *Z⁰* are the bosons that are the carriers of the weak nuclear force.",
+        "category": "important",
+        "badgeTitle": "FORCE CARRIER",
+        "badgeText": "Gravitons are the theoretical carriers of the gravitational force."
+      },
+      {
+        "question": "What are the names of some important particle accelerators used to study high-energy physics?",
+        "answer": "*Linear Accelerators*, *Cyclotrons*, and *Betatrons* are important particle accelerators.",
+        "category": "conceptual",
+        "badgeTitle": "INFORMATIONAL BOX",
+        "badgeText": "A particle accelerator is a huge machine that accelerates charged particles approaching the speed of light."
+      },
+      {
+        "question": "Who discovered the antiproton and when were they awarded the Nobel Prize for this discovery?",
+        "answer": "*Segre and Chamberlain* discovered the antiproton using a particle accelerator in *1955* and were awarded the Nobel Prize in *1959*.",
+        "category": "conceptual",
+        "badgeTitle": "HISTORICAL FACT",
+        "badgeText": "This discovery followed the earlier discoveries of the positron by Anderson."
+      },
+      {
+        "question": "Why is the presence of a heavy atomic nucleus absolutely necessary for pair production to occur?",
+        "answer": "The presence of a *third particle*, such as a *nucleus*, is necessary to *conserve linear momentum* by experiencing recoil during the collision.",
+        "category": "conceptual",
+        "badgeTitle": "ENVIRONMENTAL CONSTRAINT",
+        "badgeText": "The pair production cannot take place in a vacuum or space."
+      },
+      {
+        "question": "What happens if a gamma ray photon has an energy greater than 1.02 MeV during pair production?",
+        "answer": "A photon with energy greater than 1.02 MeV creates an *electron‑positron pair* and the *excess energy* goes into the *kinetic energies* of the created particles.",
+        "category": "conceptual",
+        "badgeTitle": "ENERGY DISTRIBUTION",
+        "badgeText": "The minimum energy is strictly reserved for the rest mass of the pair."
+      },
+      {
+        "question": "What is the approximate relative strength of the weak nuclear force compared to the strong nuclear force?",
+        "answer": "The weak nuclear force has an approximate relative strength of *$10^{-13}$* compared to the strong nuclear force.",
+        "category": "conceptual",
+        "badgeTitle": "TABLE 12.1 DATA",
+        "badgeText": "It operates at a range of $<10^{-18}$ m."
+      },
+      {
+        "question": "What is the effective range of the strong nuclear force?",
+        "answer": "The strong nuclear force acts over an extremely short range of *$<10^{-15}$ m*.",
+        "category": "conceptual",
+        "badgeTitle": "TABLE 12.1 DATA",
+        "badgeText": "It is the strongest of all four fundamental forces."
+      },
+      {
+        "question": "Which of the three radioactive radiations has the highest ionization power?",
+        "answer": "The *α‑particles* have the highest ionization power, creating about *$10^{4}$ ion pairs/mm* in air.",
+        "category": "conceptual",
+        "badgeTitle": "TABLE 12.2 DATA",
+        "badgeText": "Conversely, they have the lowest penetrating power."
+      },
+      {
+        "question": "What type of material and thickness is required to significantly absorb gamma rays?",
+        "answer": "Gamma rays are highly penetrating and require *1‑10 cm of lead sheet* to be absorbed.",
+        "category": "conceptual",
+        "badgeTitle": "TABLE 12.2 DATA",
+        "badgeText": "Alpha particles, in contrast, can be absorbed by just a piece of paper."
+      },
+      {
+        "question": "What is the approximate speed of gamma rays compared to the speed of light?",
+        "answer": "Gamma ($\\gamma$) rays are electromagnetic waves and travel at exactly the *speed of light*, which is *$3\\times10^{8} ms^{-1}$*.",
+        "category": "conceptual",
+        "badgeTitle": "TABLE 12.2 DATA",
+        "badgeText": "They are emitted from excited nuclei."
+      },
+      {
+        "question": "Why does beta decay exhibit a continuous energy spectrum on a graph rather than discrete spikes?",
+        "answer": "In $\\beta$‑decay, the total energy is *shared in varying proportions* between the emitted $\\beta$‑particle and the *anti‑neutrino* (or neutrino).",
+        "category": "conceptual",
+        "badgeTitle": "ENERGY CONSERVATION",
+        "badgeText": "The sum of their energies remains constant, allowing the beta particle to have a continuous range from zero to a maximum value."
+      },
+      {
+        "question": "What are the three specific types of neutrinos associated with the lepton family?",
+        "answer": "The three neutrinos are the *Electron neutrino* ($v_{e}$), *Muon neutrino* ($v_{\\mu}$), and *Tau neutrino* ($v_{\\tau}$).",
+        "category": "conceptual",
+        "badgeTitle": "LEPTON CLASSIFICATION",
+        "badgeText": "Each charged lepton pairs with its own specific flavor of neutrino."
+      },
+      {
+        "question": "Who first proposed the theoretical existence of the neutrino, and in what year?",
+        "answer": "The neutrino was first proposed by *Wolfgang Pauli* in *1930*.",
+        "category": "conceptual",
+        "badgeTitle": "THEORETICAL PREDICTION",
+        "badgeText": "This was proposed specifically to obey energy conservation in beta decay."
+      },
+      {
+        "question": "Who experimentally detected the neutrino and where was the experiment conducted?",
+        "answer": "The neutrino was detected by *F. Reines* and *C. L. Cowan* in *1953* in a *high‑power nuclear reactor*.",
+        "category": "conceptual",
+        "badgeTitle": "NOBEL RECOGNITION",
+        "badgeText": "F. Reines received the Nobel Prize in 1995 for this discovery."
+      },
+      {
+        "question": "How do you mathematically calculate the charge quantum number of a neutron using its quarks?",
+        "answer": "A neutron consists of *one up quark ($+2/3$)* and *two down quarks ($-1/3$ each)*, yielding a charge of: $q(udd) = \\frac{2}{3} + (-\\frac{1}{3}) + (-\\frac{1}{3}) = 0$.",
+        "category": "conceptual",
+        "badgeTitle": "PARTICLE COMPOSITION",
+        "badgeText": "This perfectly aligns with the neutron's neutral electrical state."
+      },
+      {
+        "question": "How do you calculate the charge quantum number of a $\\pi^{+}$ meson?",
+        "answer": "A $\\pi^{+}$ meson consists of an *up‑quark (u, $+2/3$)* and an *antidown quark ($\\overline{d}$, $+1/3$)*, yielding a charge of: $q(u\\overline{d}) = \\frac{2}{3} + \\frac{1}{3} = +1$.",
+        "category": "conceptual",
+        "badgeTitle": "MESON PAIRING",
+        "badgeText": "Mesons are always composed of a quark-antiquark pair."
+      },
+      {
+        "question": "Why are hadrons (like protons and neutrons) considered \"colourless\" or \"white\" in quantum chromodynamics?",
+        "answer": "Baryons contain *three quarks, one of each colour* (red, green, blue), and when combined, these colours form *white (colourless)*.",
+        "category": "conceptual",
+        "badgeTitle": "QCD PRINCIPLE",
+        "badgeText": "Mesons achieve this by pairing a colour with its exact anticolour."
+      },
+      {
+        "question": "Why do particles like photons have zero rest mass according to the standard theories?",
+        "answer": "Particles like photons *do not interact with the Higgs field*, and hence, their rest mass is considered *zero*.",
+        "category": "conceptual",
+        "badgeTitle": "MASS GENERATION",
+        "badgeText": "The W and Z bosons interact strongly with this field and gain significant mass."
+      },
+      {
+        "question": "What is the approximate mass of the Higgs boson discovered at CERN?",
+        "answer": "The Higgs boson has a mass of around *125 giga‑electron‑volts (GeV)*.",
+        "category": "conceptual",
+        "badgeTitle": "DECAY PROPERTY",
+        "badgeText": "It decays rapidly into other particles after its creation."
+      },
+      {
+        "question": "Specifically, what happens to the quark structure of a nucleon during beta-minus decay?",
+        "answer": "A neutron internally changes into a proton by converting a *down quark (d)* into an *up quark (u)*.",
+        "category": "conceptual",
+        "badgeTitle": "SUBATOMIC EQUATION",
+        "badgeText": "$d \\rightarrow u + {}_{-1}^{0}e + \\overline{v}$."
+      },
+      {
+        "question": "According to experimental observations, what is believed to be the primary cause of the matter and antimatter asymmetry in the universe?",
+        "answer": "The experimental results explain that the matter and antimatter asymmetry is indeed due to the *violation of the conservation of baryon number*.",
+        "category": "conceptual",
+        "badgeTitle": "COSMIC MYSTERY",
+        "badgeText": "This leads to an imbalanced number of baryons compared to anti-baryons."
+      },
+      {
+        "question": "What differentiates \"fermions\" from \"bosons\" in terms of statistical behavior?",
+        "answer": "*Half‑spin particles (fermions)* strictly obey *Pauli's exclusion principle*, while particles with *zero or whole number spin (bosons)* obey *Bose‑Einstein statistics*.",
+        "category": "conceptual",
+        "badgeTitle": "QUANTUM STATES",
+        "badgeText": "Bosons do not obey the exclusion principle."
+      },
+      {
+        "question": "Why is the lambda particle ($\\Lambda^{\\circ}$) classified as a baryon?",
+        "answer": "The $\\Lambda^{\\circ}$ is classified as a baryon because it is a *heavier particle* that *ultimately decays to nucleons*.",
+        "category": "conceptual",
+        "badgeTitle": "PARTICLE GROUPING",
+        "badgeText": "Baryons consist of three quarks."
+      },
+      {
+        "question": "What happens to the \"left over\" mass during high-energy particle collisions at CERN?",
+        "answer": "According to Einstein's equation, *some mass is changed to electromagnetic radiation*, and the left over mass *appears in the form of new sub‑atomic particles*.",
+        "category": "conceptual",
+        "badgeTitle": "ENERGY-MASS EQUIVALENCE",
+        "badgeText": "This is how new, exotic particles are artificially created."
+      },
+      {
+        "question": "What is the mass of a top quark expressed in $MeV/c^{2}$?",
+        "answer": "The mass of a top quark is extremely heavy at *175000 $MeV/c^{2}$*.",
+        "category": "conceptual",
+        "badgeTitle": "TABLE 12.4 DATA",
+        "badgeText": "It is the heaviest of all the six quark flavors."
+      },
+      {
+        "question": "What do different isotopes of a given element always have in common, and how do they differ?",
+        "answer": "Isotopes of a given element have the *same atomic number (Z)* (number of protons) but *differ in their mass number (A)* (number of neutrons).",
+        "category": "conceptual",
+        "badgeTitle": "CHEMICAL IDENTITY",
+        "badgeText": "The number of protons determines the chemical element."
+      },
+      {
+        "question": "Why must a neutrino (or antineutrino) be released during beta/positron emission?",
+        "answer": "A neutrino is emitted to *conserve energy and momentum*; it carries away the *variable kinetic energy* that accounts for the continuous energy spectrum of beta particles.",
+        "category": "conceptual",
+        "badgeTitle": "CONSERVATION LAW",
+        "badgeText": "Without the neutrino, the laws of conservation would be violated."
+      },
+      {
+        "question": "Can pair production occur for a photon having an energy of 20 keV? Explain briefly.",
+        "answer": "No, pair production cannot occur because *20 keV is much less than the threshold energy of 1.02 MeV* required to create the rest masses of an electron and positron.",
+        "category": "conceptual",
+        "badgeTitle": "ENERGY DEFICIT",
+        "badgeText": "The photon lacks sufficient mass-energy equivalence."
+      },
+      {
+        "question": "What is the fundamental difference between a beta particle and an ordinary orbital electron?",
+        "answer": "The fundamental difference is their *origin*; an orbital electron *orbits the nucleus*, whereas a beta particle is *created within the nucleus* at the exact moment of radioactive decay.",
+        "category": "conceptual",
+        "badgeTitle": "PHYSICAL INDISTINGUISHABILITY",
+        "badgeText": "Once outside the nucleus, they are physically identical."
+      },
+      {
+        "question": "How do a proton and a neutron theoretically convert into each other?",
+        "answer": "They convert into each other through beta decay by *altering their quark composition* via the *weak nuclear force*.",
+        "category": "conceptual",
+        "badgeTitle": "QUARK FLAVOR CHANGE",
+        "badgeText": "A down quark changes to an up quark (or vice versa)."
+      },
+      {
+        "question": "Why does an alpha emitter emit a tightly bound alpha particle instead of four separate nucleons?",
+        "answer": "Emitting an alpha particle releases the *maximum disintegration energy* because the alpha particle is *extremely stable and tightly bound*, requiring less energy to eject as a whole than separating four nucleons.",
+        "category": "conceptual",
+        "badgeTitle": "BINDING ENERGY",
+        "badgeText": "The high binding energy of the helium nucleus makes this decay favorable."
+      },
+      {
+        "question": "Determine the rest mass energy of an electron in MeV if its rest mass is 0.00055 u.",
+        "answer": "Since $1u = 931 MeV$, the rest mass energy is calculated as *$0.00055 \\times 931 = $ 0.51 MeV*.",
+        "category": "conceptual",
+        "badgeTitle": "NUMERICAL CONVERSION",
+        "badgeText": "This is exactly half the energy required for pair production."
+      },
+      {
+        "question": "Uranium-238 (${}^{238}U$) is an alpha emitter. What is the mass number (A) and charge number (Z) of the daughter nucleus?",
+        "answer": "An alpha particle removes 4 from mass and 2 from charge, resulting in a daughter nucleus with *A = 234* and *Z = 90* (Thorium).",
+        "category": "conceptual",
+        "badgeTitle": "DECAY MATHEMATICS",
+        "badgeText": "${}_{92}^{238}U \\rightarrow {}_{90}^{234}Th + {}_{2}^{4}He$."
+      },
+      {
+        "question": "Polonium-218 (${}^{218}Po$) is a beta minus emitter. What will be the mass number (A) and charge number (Z) of the daughter nucleus?",
+        "answer": "Beta‑minus decay increases the atomic number by 1 and leaves the mass number unchanged, resulting in *A = 218* and *Z = 85*.",
+        "category": "conceptual",
+        "badgeTitle": "DECAY MATHEMATICS",
+        "badgeText": "The neutron turns into a proton."
+      },
+      {
+        "question": "Which specific pair of particles is known to undergo an annihilation reaction?",
+        "answer": "An *electron and a positron* undergo annihilation to produce two gamma ray photons.",
+        "category": "conceptual",
+        "badgeTitle": "MATTER-ANTIMATTER INTERACTION",
+        "badgeText": "Proton-antiproton pairs can also annihilate."
+      },
+      {
+        "question": "Which decay mechanism causes a change in the atomic number of a nucleus but its mass number remains exactly the same?",
+        "answer": "*$\\beta$‑decay* (both beta‑minus and beta‑plus) changes the atomic number while keeping the mass number constant.",
+        "category": "conceptual",
+        "badgeTitle": "ISOBARIC TRANSITION",
+        "badgeText": "A neutron simply swaps with a proton or vice versa."
+      },
+      {
+        "question": "What is the exact sequence of quarks that composes a proton?",
+        "answer": "A proton is composed of *two up quarks and one down quark*, typically ordered as *uud*.",
+        "category": "conceptual",
+        "badgeTitle": "HADRON STRUCTURE",
+        "badgeText": "This is the stable configuration for a proton."
+      },
+      {
+        "question": "How many individual quarks compose a single neutron?",
+        "answer": "A neutron is composed of *exactly 3 quarks* (one up quark and two down quarks).",
+        "category": "conceptual",
+        "badgeTitle": "BARYON RULE",
+        "badgeText": "All baryons are made of exactly three quarks."
+      },
+      {
+        "question": "Which specific radiation type possesses the highest penetrating power?",
+        "answer": "*$\\gamma$‑rays* possess the highest penetrating power, capable of passing through several centimeters of solid lead.",
+        "category": "conceptual",
+        "badgeTitle": "ELECTROMAGNETIC NATURE",
+        "badgeText": "They have no mass and no charge, allowing them to traverse matter easily."
+      },
+      {
+        "question": "What term is used for the strongly attractive particles that have masses mostly less than nucleons but more than electrons?",
+        "answer": "These \"midsized\" particles are known as *mesons* (or pions).",
+        "category": "conceptual",
+        "badgeTitle": "HISTORICAL DISCOVERY",
+        "badgeText": "They were discovered in the late 1960s."
+      },
+      {
+        "question": "What term is used for the weakly interacting particles that belong to the same mass range but do not experience the strong force?",
+        "answer": "These particles are called *muons*, which are classified under the *lepton family*.",
+        "category": "conceptual",
+        "badgeTitle": "PARTICLE DISTINCTION",
+        "badgeText": "Muons do not interact strongly with nucleons."
+      }
+    ]
   },
   "Islamiyat": {
     "Baab 1": {
