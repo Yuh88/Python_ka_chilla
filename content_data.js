@@ -10446,7 +10446,330 @@ const siteData = {
         "badgeText": "The universe achieves total thermal equilibrium."
       }
     ],
-    "7": [],
+    "7": [
+      {
+        "question": "State the principle of superposition of waves.",
+        "answer": "The resultant displacement of a particle acted upon simultaneously by two waves is the *algebraic sum* of their *individual displacements*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "y = y₁ + y₂"
+      },
+      {
+        "question": "What is the resultant displacement if two overlapping waves have the exact same phase?",
+        "answer": "If two waves overlap and have the same phase, their displacements are *added together*, and if their amplitudes are equal (y₁ = y₂), the resultant displacement will be *y = 2y₁*.",
+        "category": "most",
+        "badgeTitle": "PHASE EFFECT",
+        "badgeText": "This leads to a larger combined wave pattern."
+      },
+      {
+        "question": "Describe the resultant displacement when two overlapping waves cross each other with an opposite phase.",
+        "answer": "When waves cross with an opposite phase, they *subtract*, resulting in a displacement of *y = y₁ − y₂*.",
+        "category": "most",
+        "badgeTitle": "SPECIAL CASE",
+        "badgeText": "If amplitudes are equal, they cancel each other completely, making y = 0."
+      },
+      {
+        "question": "How is the principle of superposition represented mathematically for multiple (n) waves?",
+        "answer": "The resultant wave function y(x,t) is the *algebraic sum* of all *individual wave functions*: y(x,t) = y₁(x,t) + y₂(x,t) + … + yₙ(x,t).",
+        "category": "most",
+        "badgeTitle": "CONDITION",
+        "badgeText": "This principle exclusively applies to linear waves or waves with small displacements."
+      },
+      {
+        "question": "Name three fundamental physical phenomena that result from the principle of superposition of waves.",
+        "answer": "The superposition principle directly leads to *interference* (same frequency, same direction), *beats* (slightly different frequencies, same direction), and *stationary waves* (equal frequency, opposite directions).",
+        "category": "most",
+        "badgeTitle": "MODERN APPLICATION",
+        "badgeText": "Noise-canceling headphones are built entirely on this superposition principle."
+      },
+      {
+        "question": "How do noise-cancelling headphones process and utilize ambient noise signals?",
+        "answer": "Built-in *microphones* capture ambient noise, which is sent to a *processing unit* to generate an *\"anti-noise\" signal*.",
+        "category": "most",
+        "badgeTitle": "CANCELLATION MECHANISM",
+        "badgeText": "This anti-noise signal is the exact opposite in amplitude and phase to the original noise, superposing with it to cancel it out."
+      },
+      {
+        "question": "What is the precise definition of wave interference?",
+        "answer": "*Interference* is the phenomenon resulting from the *superposition* of two waves that possess the *same frequency* and are travelling in the *same direction*.",
+        "category": "most",
+        "badgeTitle": "DEMONSTRATION SETUP",
+        "badgeText": "Can be visually and acoustically observed using an Audio Generator and a Cathode Ray Oscilloscope."
+      },
+      {
+        "question": "What are \"coherent sources\" in the context of producing an interference pattern?",
+        "answer": "*Coherent sources* are sources of waves that *vibrate perfectly in phase*, such as two separate speakers driven by the exact same audio generator.",
+        "category": "most",
+        "badgeTitle": "EXPERIMENTAL IMPORTANCE",
+        "badgeText": "Coherency is fundamentally required to produce stable constructive and destructive regions."
+      },
+      {
+        "question": "Describe the strict conditions necessary for constructive interference to take place.",
+        "answer": "Constructive interference occurs exclusively when the *path difference* (ΔS) between two waves is an *integral multiple* of the *wavelength*, causing the waves' displacements to add up.",
+        "category": "most",
+        "badgeTitle": "MATHEMATICAL CONDITION",
+        "badgeText": "ΔS = nλ, where n = 0, ±1, ±2, ±3…."
+      },
+      {
+        "question": "Define destructive interference and describe its mechanical interactions.",
+        "answer": "Destructive interference happens when a wave's *compression meets a rarefaction*, causing the overlapping displacements to *perfectly cancel* each other's effect.",
+        "category": "most",
+        "badgeTitle": "MATHEMATICAL CONDITION",
+        "badgeText": "The required path difference must be an odd integral multiple of half the wavelength: ΔS = (2n+1)λ/2."
+      },
+      {
+        "question": "How is the speed of sound related to frequency and wavelength in progressive waves?",
+        "answer": "The *wave speed* v is the direct *product* of the *frequency* (f) and the *wavelength* (λ) of the travelling progressive wave.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "v = fλ."
+      },
+      {
+        "question": "In a sound interference experiment, what visual indicator on a CRO represents constructive interference?",
+        "answer": "Constructive interference is physically indicated by a *large resultant displacement* displayed natively on the CRO screen.",
+        "category": "most",
+        "badgeTitle": "ACOUSTIC CORRELATION",
+        "badgeText": "This large wave display perfectly correlates with hearing a tone of maximum loudness."
+      },
+      {
+        "question": "What physical properties dictate the speed of stationary waves set up on a stretched string?",
+        "answer": "The wave speed v relies exclusively on the *tension* (F) applied to the string and the *mass per unit length* (m) of the string material.",
+        "category": "most",
+        "badgeTitle": "SPEED EQUATION",
+        "badgeText": "v = √(F/m)."
+      },
+      {
+        "question": "What is the specific formula for calculating the fundamental frequency (first harmonic) of a vibrating string?",
+        "answer": "The fundamental frequency (f₁) is calculated by taking the *wave speed over twice the length*, yielding: f₁ = (1/2l) √(F/m).",
+        "category": "most",
+        "badgeTitle": "VIBRATION MODE",
+        "badgeText": "This frequency corresponds to the simplest configuration where the string vibrates in a single loop."
+      },
+      {
+        "question": "How does the string's frequency alter when it is plucked precisely at one quarter of its total length?",
+        "answer": "Plucking at one quarter length forces the string to vibrate in *two loops*, establishing a *second harmonic* where the overall frequency becomes strictly *double* that of the fundamental frequency.",
+        "category": "most",
+        "badgeTitle": "HARMONIC RELATIONSHIP",
+        "badgeText": "f₂ = 2f₁."
+      },
+      {
+        "question": "What is the fundamental concept behind the \"Quantization of Frequencies\" in stationary waves?",
+        "answer": "It describes the phenomenon where *mandatory quantum jumps* exist between allowable resonance frequencies; stationary waves can only form at a *discrete harmonic series* of frequencies (fₙ = nf₁).",
+        "category": "most",
+        "badgeTitle": "PHYSICAL CONSEQUENCE",
+        "badgeText": "Any forced waves that do not match this strict harmonic series are rapidly damped out."
+      },
+      {
+        "question": "By what two primary physical methods can the fundamental frequency of a stringed instrument be changed?",
+        "answer": "The frequency can be altered either by mechanically *varying the tension* (via tuning pegs) or by dynamically *changing the length* of the vibrating portion of the string.",
+        "category": "most",
+        "badgeTitle": "UNDERLYING PRINCIPLE",
+        "badgeText": "Frequency is inversely proportional to string length and directly proportional to the square root of its tension."
+      },
+      {
+        "question": "What is the technical definition of \"harmonics\" within a resonating system?",
+        "answer": "*Harmonics* represent the *complete set* of all possible allowable standing waves within a system, featuring frequencies that are *strictly integer multiples* of the foundational frequency (f₁, 2f₁, 3f₁, …, nf₁).",
+        "category": "most",
+        "badgeTitle": "NOMENCLATURE",
+        "badgeText": "The lowest allowable frequency in this series is titled the fundamental or first harmonic."
+      },
+      {
+        "question": "What is an organ pipe and what wave mechanism generates its sound?",
+        "answer": "An *organ pipe* is a specific wind instrument that naturally produces sound via the establishment of *stationary longitudinal waves* trapped in an *air column*.",
+        "category": "most",
+        "badgeTitle": "PIPE ANATOMY",
+        "badgeText": "It is formed of a hollow long tube that can either be open at both ends or restricted with one closed end."
+      },
+      {
+        "question": "Why does the open end of an organ pipe always act as an acoustic antinode?",
+        "answer": "At an open end, the enclosed air molecules possess *complete freedom of motion*, forcing this boundary to constantly behave as an *antinode*.",
+        "category": "most",
+        "badgeTitle": "DISPLACEMENT PROFILE",
+        "badgeText": "This translates to an area of maximum particle displacement."
+      },
+      {
+        "question": "Why does the closed end of a hollow organ pipe strictly act as an acoustic node?",
+        "answer": "The solid closed boundary enforces a *node* because the necessary *physical movement* of air molecules is *totally restricted* at this point.",
+        "category": "most",
+        "badgeTitle": "STATIONARY WAVE PROPERTY",
+        "badgeText": "In wave mechanics, nodes are defined as points exhibiting zero displacement amplitude."
+      },
+      {
+        "question": "State the fundamental frequency formula and harmonic capacity for an organ pipe open at both ends.",
+        "answer": "For an open pipe, the fundamental frequency is the *wave speed divided by twice the length*: f₁ = v/(2l).",
+        "category": "most",
+        "badgeTitle": "HARMONIC QUALITY",
+        "badgeText": "Such pipes are exceptionally richer in sound because they support all integral multiples of the harmonic series."
+      },
+      {
+        "question": "State the wavelength formula for calculating the nth mode of vibration in an open-ended pipe.",
+        "answer": "The wavelength λₙ for the nth mode is *twice the pipe length divided by the number of active loops*: λₙ = 2l/n.",
+        "category": "most",
+        "badgeTitle": "ALLOWED INTEGERS",
+        "badgeText": "In an open pipe, n can be any sequence integer: 1,2,3…."
+      },
+      {
+        "question": "What is the base fundamental frequency formula for an organ pipe that is closed at one end?",
+        "answer": "The baseline fundamental frequency (f₁) is mathematically defined as the *wave speed divided by four times the pipe length*: f₁ = v/(4l).",
+        "category": "most",
+        "badgeTitle": "VIBRATION PROFILE",
+        "badgeText": "This foundational mode consists exactly of one node and one corresponding antinode."
+      },
+      {
+        "question": "What unique restriction exists regarding the harmonic frequencies present in a closed organ pipe?",
+        "answer": "A pipe closed at one end is heavily restricted and produces *only odd harmonics*, limiting its allowable resonance frequencies to f₁, 3f₁, 5f₁, etc.",
+        "category": "most",
+        "badgeTitle": "GENERAL EQUATION",
+        "badgeText": "fₙ = n(v/(4l)) where n exclusively equals 1,3,5…."
+      },
+      {
+        "question": "What components make up the apparatus used to demonstrate stationary waves via microwaves?",
+        "answer": "The laboratory setup necessitates a *microwave source* (the transmitter), an *adjustable probe detector*, and a *flat metal reflector* strategically placed in a straight line.",
+        "category": "most",
+        "badgeTitle": "EXPERIMENTAL METRIC",
+        "badgeText": "The stationary wavelength is derived by physically moving the detector to measure the distance between any two consecutive antinodes."
+      },
+      {
+        "question": "Define the physical phenomenon known as diffraction of waves.",
+        "answer": "*Diffraction* refers to the physical *bending* of waves around the sharp edges or corners of physical obstacles, or their *radial spreading* out after passing beyond a barrier gap.",
+        "category": "most",
+        "badgeTitle": "PRIMARY CONDITION",
+        "badgeText": "It manifests most profoundly when the physical gap or obstacle size is dimensionally comparable to the incident wave's wavelength."
+      },
+      {
+        "question": "How does the magnitude of a wave's wavelength influence its potential for diffraction?",
+        "answer": "Wavelength dictates diffraction spread; the *longer* the wavelength, the *greater* the spreading or bending of the wave around obstacles.",
+        "category": "most",
+        "badgeTitle": "EVERYDAY EXAMPLE",
+        "badgeText": "This principle explains why humans can easily hear sound waves bending around doorframes and corners."
+      },
+      {
+        "question": "Describe the specific relationship between an obstacle's gap width and the resulting diffraction spread in a ripple tank.",
+        "answer": "When a physical *gap width is relatively small* compared to the water wavelength, significant diffraction creates a *wide semicircular wave pattern*; as the gap width increases, diffraction decreases and waves remain mostly parallel.",
+        "category": "most",
+        "badgeTitle": "VISUAL TAKEAWAY",
+        "badgeText": "Small gap width heavily correlates to increased wave diffraction."
+      },
+      {
+        "question": "How does crystal structure provide a practical demonstration of X-ray wave diffraction?",
+        "answer": "Highly energetic X-rays demonstrably diffract through atomic crystals because the physical *spacing* between the regular arrays of atoms *perfectly matches* the order of the X-ray's incredibly short wavelength.",
+        "category": "most",
+        "badgeTitle": "PHYSICS SIGNIFICANCE",
+        "badgeText": "This structural phenomenon provides foundational proof that X-rays exhibit wave-like behavior."
+      },
+      {
+        "question": "Provide the strict definition of \"beats\" in acoustic wave mechanics.",
+        "answer": "*Beats* are objectively defined as the *periodic variation* of sound oscillating between maximum and minimum loudness, generated strictly when two overlapping waves possess *slightly different frequencies* whilst travelling in the identical direction.",
+        "category": "most",
+        "badgeTitle": "MATHEMATICAL EXTRACTION",
+        "badgeText": "The total number of beats heard per second mathematically equals the difference between the two source frequencies."
+      },
+      {
+        "question": "What mechanical technique is used to alter a tuning fork's frequency during a beats experiment?",
+        "answer": "By physically *loading* a tuning fork with a dense material like wax or plasticene, its *oscillating mass increases*, causing its natural frequency to be *lowered* slightly.",
+        "category": "most",
+        "badgeTitle": "EXPERIMENTAL PURPOSE",
+        "badgeText": "This is deliberately done to introduce a minor frequency mismatch to actively generate an observable beat note."
+      },
+      {
+        "question": "At what specific frequency divergence threshold do acoustic beats become completely unrecognizable to a human listener?",
+        "answer": "When the absolute *difference* between the frequencies of two sounding waves is *more than 10 Hz*, the individual beats blend together and become incredibly difficult to distinctly recognize.",
+        "category": "most",
+        "badgeTitle": "BIOLOGICAL LIMIT",
+        "badgeText": "The human auditory system cannot separate rapid amplitude pulsations beyond this 10 Hz threshold."
+      },
+      {
+        "question": "Define the physical intensity (I) of a progressive wave.",
+        "answer": "*Intensity* is strictly defined as the measurable amount of *energy transmitted per unit area per unit time* traveling precisely in the direction of the progressive wave's propagation.",
+        "category": "most",
+        "badgeTitle": "SI UNIT",
+        "badgeText": "It is universally measured in watts per square meter (Wm⁻²)."
+      },
+      {
+        "question": "Describe the mathematical dependency between a mechanical wave's physical intensity and its displacement amplitude.",
+        "answer": "The calculated intensity I of any mechanical wave is *directly proportional* to the *square of the amplitude A* of the displaced medium's particles.",
+        "category": "most",
+        "badgeTitle": "PROPORTIONALITY EQUATION",
+        "badgeText": "I = kA², where k represents a constant reliant upon the physical properties of both the wave and the medium itself."
+      },
+      {
+        "question": "State the definition of the Doppler Effect in modern physics.",
+        "answer": "The *Doppler Effect* characterizes the *apparent change* in the frequency (or pitch) of waves generated by the *relative motion* occurring between the emitting source of the waves and the stationary or moving observer.",
+        "category": "most",
+        "badgeTitle": "HISTORICAL DISCOVERY",
+        "badgeText": "This core effect was originally identified by John Doppler while meticulously analyzing the shifted frequency of light emitted from celestial stars."
+      },
+      {
+        "question": "Mechanically, why does an observer hear a higher frequency when a sound source moves directly towards them?",
+        "answer": "As the mobile source advances towards the observer, successive wave crests are dynamically *compressed* into a continually shorter space, causing the *wavelength to decrease* and the rate of wave arrival (apparent frequency) to *increase*.",
+        "category": "most",
+        "badgeTitle": "DOPPLER SHIFT NOTATION",
+        "badgeText": "This quantifiable decrease in wavelength is denoted as the Doppler shift: Δλ = u_s / f."
+      },
+      {
+        "question": "Write the exact formula determining the apparent frequency heard when a sound source directly approaches a stationary listener.",
+        "answer": "The compressed apparent frequency f_c is formulated as *f_c = [v/(v − u_s)] f*, where u_s is the source's forward velocity and v is the static speed of sound.",
+        "category": "most",
+        "badgeTitle": "AUDITORY CONSEQUENCE",
+        "badgeText": "Since the multiplicative fraction evaluates greater than 1, the observed sound pitch definitively increases (f_c > f)."
+      },
+      {
+        "question": "Explain the mechanical wave expansion that occurs when a sound source drives away from a stationary observer.",
+        "answer": "As the emitting source rapidly recedes, the subsequent wave fronts are *spatially expanded* over a much larger trailing distance, directly causing an *increase in wavelength*.",
+        "category": "most",
+        "badgeTitle": "AUDITORY CONSEQUENCE",
+        "badgeText": "This expansion causes less waves to hit the ear per second, meaning the perceived pitch of the sound noticeably decreases (f_D < f)."
+      },
+      {
+        "question": "Explain how modern RADAR systems exploit the Doppler Effect to dynamically track aircraft.",
+        "answer": "RADAR antennas constantly transmit tracking radio waves; if an aircraft is *closing in*, the wavelength of the reflected wave *compresses* and is shorter, whereas if the aircraft recedes, the reflected wavelength is *larger*.",
+        "category": "most",
+        "badgeTitle": "DATA EXTRACTION",
+        "badgeText": "Computers leverage this precise frequency shift to instantly calculate both the elevation and radial speed of the target."
+      },
+      {
+        "question": "What does the acronym SONAR represent and what is its primary operational medium?",
+        "answer": "SONAR stands for *Sound Navigation And Ranging*, defining a sophisticated technological technique for pinpointing the presence of underwater objects strictly via *acoustical echo*.",
+        "category": "most",
+        "badgeTitle": "DOPPLER INTEGRATION",
+        "badgeText": "It actively utilizes \"Doppler detection\" based on relative speeds to provide an accurate indication of a submerged target's speed."
+      },
+      {
+        "question": "How do astronomers practically apply the Doppler shift to calculate the velocity of distant celestial bodies?",
+        "answer": "Astronomers mathematically compare the exact *line spectrum* of light originating from a star against light from a static laboratory source to measure the definitive *Doppler shift*, enabling the calculation of the star's speed relative to Earth.",
+        "category": "most",
+        "badgeTitle": "OBSERVATIONAL OUTCOMES",
+        "badgeText": "These measurements manifest visually as either cosmological red shifts or blue shifts."
+      },
+      {
+        "question": "What cosmological reality does an observed \"red shift\" in a star's light spectrum prove?",
+        "answer": "An identified red shift confirms that a target star is *moving away* from the Earth, proven by the fact that its emitted light waves are *stretched* to a longer wavelength sliding towards the red spectrum end.",
+        "category": "most",
+        "badgeTitle": "MACRO CONCLUSION",
+        "badgeText": "These sustained red shift measurements allowed astronomers to prove that all distant galaxies are continuously moving away from us."
+      },
+      {
+        "question": "Under what exact physical condition does an astronomer record a \"blue shift\" from a stellar object?",
+        "answer": "A stark blue shift occurs strictly when stars are *actively moving towards* the Earth, compressing their emitted light waves into a *shorter wavelength* and shifting their visible spectrum heavily to the blue end.",
+        "category": "most",
+        "badgeTitle": "SPECTROSCOPIC PROOF",
+        "badgeText": "The spectral absorption lines visibly appear much closer together than they would if the star remained at rest."
+      },
+      {
+        "question": "Describe the operational mechanism of a police radar speed trap utilizing microwaves.",
+        "answer": "The speed trap transmitter emits *high-frequency microwaves* in short bursts that bounce off passing vehicles; internal computers then measure the resulting *Doppler shift* embedded within the reflected microwaves to calculate vehicle speed.",
+        "category": "most",
+        "badgeTitle": "DETECTION LOGIC",
+        "badgeText": "Any reflection directly caused by a moving obstacle fundamentally guarantees the return microwaves will be Doppler shifted."
+      },
+      {
+        "question": "Name an advanced medical diagnostic application that relies entirely on the Doppler Effect.",
+        "answer": "*Doppler echocardiography* represents a non‑invasive application that measures internal *blood flow velocity* to actively detect dangerous cardiac abnormalities, such as valve stenosis or abnormal regurgitation.",
+        "category": "most",
+        "badgeTitle": "ADDITIONAL UTILITY",
+        "badgeText": "It is also vital for analyzing cardiac output and highly optimizing artificial pacemaker settings."
+      }
+    ],
     "8": [],
     "9": [
       {
