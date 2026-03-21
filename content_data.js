@@ -11722,6 +11722,622 @@ const siteData = {
         "category": "most",
         "badgeTitle": "LOCATION",
         "badgeText": "Cascina near Pisa, Italy."
+      },
+      {
+        "question": "What is the fundamental difference in behavior between longitudinal and transverse waves regarding polarization?",
+        "answer": "*Polarization* is a property exhibited by *transverse waves only* and *does not occur* for *longitudinal waves* like sound.",
+        "category": "important",
+        "badgeTitle": "KEY DISTINCTION",
+        "badgeText": "Longitudinal waves cannot be restricted to a single plane of vibration."
+      },
+      {
+        "question": "How are the vibrations oriented in unpolarized light emitted by an incandescent bulb?",
+        "answer": "The electrical vibrations of unpolarized light from an incandescent bulb are *randomly oriented in space*.",
+        "category": "important",
+        "badgeTitle": "DIAGRAM REFERENCE",
+        "badgeText": "Depicted as arrows pointing in all possible directions perpendicular to propagation."
+      },
+      {
+        "question": "What happens to the electric field vectors of unpolarized light when it passes through a polarizing filter?",
+        "answer": "Only the *electric field vector parallel* to the axis of the filter *passes*, while all other vectors are *blocked*.",
+        "category": "important",
+        "badgeTitle": "RESULTING STATE",
+        "badgeText": "The emerging light is plane-polarized."
+      },
+      {
+        "question": "In the two-polaroid experiment, what is the role of the first polaroid?",
+        "answer": "The first polaroid acts as a *polarizer* to convert incident *unpolarized light* into *plane-polarized light*.",
+        "category": "important",
+        "badgeTitle": "FUNCTION",
+        "badgeText": "It restricts vibrations to a single plane."
+      },
+      {
+        "question": "What happens to the intensity of light if the analyzer is slowly rotated from a parallel to a perpendicular position?",
+        "answer": "The light emerging out of the second polaroid gets *dimmer and dimmer* until it *disappears completely*.",
+        "category": "important",
+        "badgeTitle": "OBSERVATION",
+        "badgeText": "This proves the transverse nature of light."
+      },
+      {
+        "question": "How did Malus describe the polarization of light by reflection?",
+        "answer": "Malus stated that *polarized light* is obtained when *ordinary light* is reflected by a *plane sheet of glass*.",
+        "category": "important",
+        "badgeTitle": "DISCOVERY YEAR",
+        "badgeText": "1808."
+      },
+      {
+        "question": "What happens when light reflected from a table surface is viewed through a rotated polaroid?",
+        "answer": "The reflected light becomes *darker at a certain angle*, showing that it is *partially plane polarized*.",
+        "category": "important",
+        "badgeTitle": "EVERYDAY EXAMPLE",
+        "badgeText": "Glare reduction."
+      },
+      {
+        "question": "What is the specific geometric condition between reflected and refracted rays at the polarizing angle?",
+        "answer": "At the polarizing angle, the *reflected beam* and the *refracted beam* are at a *right angle* (90°) to each other.",
+        "category": "important",
+        "badgeTitle": "EQUATION",
+        "badgeText": "θₚ + θᵣ = 90°."
+      },
+      {
+        "question": "State Brewster's law mathematically for two different media (where medium 1 is not air).",
+        "answer": "The tangent of the polarizing angle is equal to the *ratio* of the *refractive index of medium 2* to the *refractive index of medium 1*.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "tanθₚ = n₂/n₁."
+      },
+      {
+        "question": "In the derivation of Malus's Law, how is the incident amplitude A₀ resolved?",
+        "answer": "It is resolved into two components: *A₀ cosθ* parallel to the analyzer axis and *A₀ sinθ* perpendicular to it.",
+        "category": "important",
+        "badgeTitle": "VECTOR RESOLUTION",
+        "badgeText": "Based on the angle θ between polarizer and analyzer."
+      },
+      {
+        "question": "Why does the component A₀ sinθ not contribute to the transmitted light in an analyzer?",
+        "answer": "The component A₀ sinθ is *perpendicular* to the transmission axis and is *absorbed* in the analyzer.",
+        "category": "important",
+        "badgeTitle": "TRANSMITTED COMPONENT",
+        "badgeText": "Only A₀ cosθ passes through."
+      },
+      {
+        "question": "How is the intensity of light related to its amplitude in the context of Malus's Law?",
+        "answer": "The *intensity I* is the *square of the amplitude A*.",
+        "category": "important",
+        "badgeTitle": "MATHEMATICAL RELATION",
+        "badgeText": "I = A²."
+      },
+      {
+        "question": "What happens to polarized light passing through an analyzer if the angle between their axes is exactly 0°?",
+        "answer": "The intensity transmitted is *equal to the initial light intensity I₀* because *cos²(0°)=1*.",
+        "category": "important",
+        "badgeTitle": "CONDITION",
+        "badgeText": "Maximum transmission."
+      },
+      {
+        "question": "Why does a crossed polarizer setup (θ=90°) result in zero light transmission?",
+        "answer": "Because the *cosine of 90° is zero*, the transmitted intensity equation *I = I₀ cos²(90°)* yields *zero*, meaning light is extinguished completely.",
+        "category": "important",
+        "badgeTitle": "APPLICATION",
+        "badgeText": "Used to completely block glare or test polarization."
+      },
+      {
+        "question": "How is polarization essential in the field of Optics and Photonics?",
+        "answer": "It is essential for applications like *polarized sunglasses*, *LCD screens*, and *optical communication systems*.",
+        "category": "important",
+        "badgeTitle": "PRACTICAL USE",
+        "badgeText": "Modulating light for displays and data transmission."
+      },
+      {
+        "question": "What role does polarization play in Imaging and Microscopy?",
+        "answer": "Polarization *enhances image quality* by *reducing glare* and *improving contrast*.",
+        "category": "important",
+        "badgeTitle": "SPECIFIC BENEFIT",
+        "badgeText": "Crucial for detailed medical and biological imaging."
+      },
+      {
+        "question": "How is polarization utilized in Medical Applications?",
+        "answer": "It is used in *cancer diagnosis*, *tissue imaging*, and *laser surgery* by distinguishing between different tissue types.",
+        "category": "important",
+        "badgeTitle": "DIAGNOSTIC TOOL",
+        "badgeText": "Leverages optical properties of biological tissues."
+      },
+      {
+        "question": "In sky photography, what is the primary purpose of fitting a camera with a polaroid?",
+        "answer": "Polarizers are used to *reduce glare and haze* produced by the scattering of light by atmospheric molecules.",
+        "category": "important",
+        "badgeTitle": "VISUAL EFFECT",
+        "badgeText": "Creates a brighter, detailed image with enhanced contrast."
+      },
+      {
+        "question": "How do polarizers assist in the stress analysis of materials?",
+        "answer": "By analyzing *changes in polarized light* passing through a stressed material, researchers can determine *stress patterns* and identify potential weaknesses.",
+        "category": "important",
+        "badgeTitle": "PHENOMENON",
+        "badgeText": "Interference patterns or fringes are formed."
+      },
+      {
+        "question": "What is the technical term for the technique used to analyze stress patterns using polarized light?",
+        "answer": "This technique is known as *\"photoelasticity\"* and is widely used in engineering and quality control.",
+        "category": "important",
+        "badgeTitle": "APPLICATION FIELD",
+        "badgeText": "Materials science for plastics, metals, and glass."
+      },
+      {
+        "question": "What is the simplest analogy used to explain Gravitational Waves?",
+        "answer": "*Throwing a stone into a pond* creates ripples (GWs) on the water surface (spacetime) that travel outward.",
+        "category": "important",
+        "badgeTitle": "INFORMATION CARRIED",
+        "badgeText": "Reveals the stone's presence and properties."
+      },
+      {
+        "question": "How does Einstein's general theory of relativity describe gravity?",
+        "answer": "Gravity is not a force, but a *curvature of spacetime* caused by *massive bodies* wrapping the space around them.",
+        "category": "important",
+        "badgeTitle": "ANALOGY",
+        "badgeText": "Like a dent in a mattress."
+      },
+      {
+        "question": "What cosmic event was responsible for the first detected gravitational waves in 2015 according to the text's initial mention?",
+        "answer": "The first detected gravitational waves were produced from *two colliding neutron stars*.",
+        "category": "important",
+        "badgeTitle": "MILESTONE",
+        "badgeText": "Confirmed Einstein's 1916 prediction."
+      },
+      {
+        "question": "What generates Continuous Gravitational Waves?",
+        "answer": "They are produced when a *single massive object spins* with a constant rate, such as a *neutron star* or *white dwarf binary system*.",
+        "category": "important",
+        "badgeTitle": "SIGNAL TYPE",
+        "badgeText": "Constant frequency and amplitude."
+      },
+      {
+        "question": "What characterizes Compact Binary Inspiral Gravitational Waves?",
+        "answer": "They are characterized by a *gradual increase in frequency and amplitude* as compact objects orbit each other.",
+        "category": "important",
+        "badgeTitle": "SOURCES",
+        "badgeText": "Binary black holes or a neutron star and black hole."
+      },
+      {
+        "question": "What are Stochastic Gravitational Waves?",
+        "answer": "They are *weak*, *random signals* produced by the *superposition* of many weak gravitational wave sources.",
+        "category": "important",
+        "badgeTitle": "DETECTION DIFFICULTY",
+        "badgeText": "They are the most difficult to detect."
+      },
+      {
+        "question": "Why don't the masses and accelerations of objects on Earth produce detectable gravitational waves?",
+        "answer": "The *masses* and *accelerations* on Earth are *too small* to generate waves with a big enough amplitude for our instruments.",
+        "category": "important",
+        "badgeTitle": "REQUIREMENT",
+        "badgeText": "Requires massive astrophysical objects."
+      },
+      {
+        "question": "What physical properties do gravitational waves reveal about a binary system?",
+        "answer": "They carry information about the system's *mass*, *spin*, and *merger dynamics*.",
+        "category": "important",
+        "badgeTitle": "SPEED",
+        "badgeText": "These waves move at the speed of light."
+      },
+      {
+        "question": "What happens to the intensity of gravitational waves as they propagate through the universe?",
+        "answer": "The waves *propagate freely*, *weakening in intensity* as they distance themselves from the source.",
+        "category": "important",
+        "badgeTitle": "PROPAGATION",
+        "badgeText": "Unbound by the binary system's gravity."
+      },
+      {
+        "question": "What does an eccentricity (ϵ) value of 0 represent in orbital dynamics?",
+        "answer": "An eccentricity of *ϵ = 0* represents a *circular orbit*.",
+        "category": "important",
+        "badgeTitle": "CONCEPT",
+        "badgeText": "A measure of deviation from a perfect circle."
+      },
+      {
+        "question": "What orbital trajectory corresponds to an eccentricity greater than 1 (ϵ>1)?",
+        "answer": "An eccentricity of *ϵ > 1* corresponds to a *hyperbolic trajectory*.",
+        "category": "important",
+        "badgeTitle": "CONCEPT",
+        "badgeText": "Open orbit where the object escapes."
+      },
+      {
+        "question": "What type of trajectory is represented by an eccentricity exactly equal to 1 (ϵ=1)?",
+        "answer": "An eccentricity of *ϵ = 1* represents a *parabolic trajectory*.",
+        "category": "important",
+        "badgeTitle": "CONCEPT",
+        "badgeText": "Boundary between closed and open orbits."
+      },
+      {
+        "question": "What does an eccentricity between 0 and 1 (0<ϵ<1) indicate?",
+        "answer": "It indicates an *elliptical orbit*.",
+        "category": "important",
+        "badgeTitle": "CONCEPT",
+        "badgeText": "Standard closed orbit of planets and binary systems."
+      },
+      {
+        "question": "What is the specific function of the Beam Splitter in a gravitational wave interferometer?",
+        "answer": "It *divides the incoming LASER beam* into *two perpendicular beams* that travel down the arms of the interferometer.",
+        "category": "important",
+        "badgeTitle": "COMPONENT",
+        "badgeText": "Central to creating the interference paths."
+      },
+      {
+        "question": "What is the purpose of Photodetectors in an interferometer?",
+        "answer": "They *measure the returning beams* to detect any *tiny phase shifts* caused by changes in arm length.",
+        "category": "important",
+        "badgeTitle": "ROLE",
+        "badgeText": "Translates the optical interference pattern into a measurable signal."
+      },
+      {
+        "question": "How do the Arm Cavities enhance the sensitivity of the LIGO detector?",
+        "answer": "The arm cavities *enhance the LASER light* by forcing it to *bounce back and forth multiple times*, increasing sensitivity to tiny distance changes.",
+        "category": "important",
+        "badgeTitle": "ADVANTAGE",
+        "badgeText": "Amplifies the phase shift effect."
+      },
+      {
+        "question": "What specifically causes a phase shift between the two beams in a GW interferometer?",
+        "answer": "A *passing gravitational wave* causes a *tiny disturbance* in the *distance between the mirrors* in the two arms.",
+        "category": "important",
+        "badgeTitle": "MECHANISM",
+        "badgeText": "Stretches one arm while compressing the other."
+      },
+      {
+        "question": "How is the presence of a gravitational wave finally sensed by the interferometer system?",
+        "answer": "The *tiny phase shift* alters the *recombined interference pattern*, which is then measured by the *photodetector*.",
+        "category": "important",
+        "badgeTitle": "RESULT",
+        "badgeText": "Converts spacetime ripples into optical data."
+      },
+      {
+        "question": "How long did it take for the first detected gravitational waves to reach the LIGO detector?",
+        "answer": "It took *1.3 billion years* for the waves to arrive at the LIGO detector in the USA.",
+        "category": "important",
+        "badgeTitle": "SOURCE EVENT",
+        "badgeText": "Collision between two black holes."
+      },
+      {
+        "question": "Who received the Nobel Prize in 2017 for the observation of Gravitational Waves?",
+        "answer": "*Rainer Weiss*, *Barry C. Barish*, and *Kip S. Thorne* received the Nobel prize for their work.",
+        "category": "important",
+        "badgeTitle": "RECOGNITION",
+        "badgeText": "Acknowledged the monumental achievement of LIGO."
+      },
+      {
+        "question": "Who is Dr. Nergis Mavalvala?",
+        "answer": "She is a *Pakistani-American Astrophysicist* at MIT known for her *crucial work on gravitational waves* as part of the detection team.",
+        "category": "important",
+        "badgeTitle": "NOTABLE FACT",
+        "badgeText": "A prominent team member belonging to Pakistan."
+      },
+      {
+        "question": "What is the arm length of the Virgo gravitational wave observatory?",
+        "answer": "Virgo is an interferometer with two arms of *3 km* each.",
+        "category": "important",
+        "badgeTitle": "COMPARISON",
+        "badgeText": "LIGO has 4 km arms."
+      },
+      {
+        "question": "After what is the Virgo Observatory named?",
+        "answer": "It is named after the *Virgo constellation*, which is visible in the night sky during March, April, and May.",
+        "category": "important",
+        "badgeTitle": "CONTEXT",
+        "badgeText": "Located near Pisa, Italy."
+      },
+      {
+        "question": "What is a Light Year (LY)?",
+        "answer": "A *Light Year* is the *distance which light travels in one year*, approximately equal to *9.5 billion km*.",
+        "category": "important",
+        "badgeTitle": "UNIT",
+        "badgeText": "Used for vast astronomical distances."
+      },
+      {
+        "question": "What is the approximate distance to the Virgo cluster of galaxies?",
+        "answer": "The Virgo cluster is about *50 million Light Years (mLYs)* away and contains about *1,500 galaxies*.",
+        "category": "important",
+        "badgeTitle": "COSMIC SCALE",
+        "badgeText": "Highlights the vast reach of gravitational wave astronomy."
+      },
+      {
+        "question": "What is the polarization state of light reflected from the smooth surface of water?",
+        "answer": "Light reflected from the smooth surface of water is *partially polarized*.",
+        "category": "conceptual",
+        "badgeTitle": "PONDER UPON BOX",
+        "badgeText": "Direction is parallel to the surface."
+      },
+      {
+        "question": "How are transverse waves on a string visually classified based on their plane of vibration?",
+        "answer": "They are classified as being polarized in either a *vertical plane* or a *horizontal plane*.",
+        "category": "conceptual",
+        "badgeTitle": "FIGURE 8.1 CAPTION",
+        "badgeText": "Visual proof of transverse mechanical wave orientation."
+      },
+      {
+        "question": "What do the mutually perpendicular lines with arrows indicate in the unpolarized light beam diagram?",
+        "answer": "The lines with arrows indicate the *electric vibrations* of the light waves.",
+        "category": "conceptual",
+        "badgeTitle": "FIGURE 8.5a DETAIL",
+        "badgeText": "Represents random spatial orientation before entering a polarizer."
+      },
+      {
+        "question": "What is the specific refractive index of crown glass mentioned in the polarization ray diagram?",
+        "answer": "The refractive index of crown glass is given as *n=1.52*.",
+        "category": "conceptual",
+        "badgeTitle": "FIGURE 8.6 DIAGRAM",
+        "badgeText": "Used alongside an incident angle of 57°."
+      },
+      {
+        "question": "What is the fundamental angle relationship between the angle of polarization and the angle of refraction that forms the basis of Brewster's law?",
+        "answer": "The sum of the *polarizing angle* and the *angle of refraction* is exactly *90°*.",
+        "category": "conceptual",
+        "badgeTitle": "MATHEMATICAL DERIVATION",
+        "badgeText": "θₚ + θᵣ = 90°."
+      },
+      {
+        "question": "In which specific biological structures is Malus's law practically applied to study polarization?",
+        "answer": "Malus's law is used to study the polarization of light by *cell membranes* in biological systems.",
+        "category": "conceptual",
+        "badgeTitle": "INTERESTING INFORMATION BOX",
+        "badgeText": "Cross-disciplinary application of physical optics."
+      },
+      {
+        "question": "If light strikes glass with a refractive index of √3 at the polarizing angle, what is the resulting angle of refraction?",
+        "answer": "The angle of refraction of the wave of light will be *30°*.",
+        "category": "conceptual",
+        "badgeTitle": "HIDDEN EXAMPLE 8.1",
+        "badgeText": "Derived from θ_B = 60° subtracted from 90°."
+      },
+      {
+        "question": "Which specific amplitude component of plane polarized light is explicitly absorbed when it strikes an analyzer at an angle θ?",
+        "answer": "The component *A₀ sinθ* is *completely absorbed* in the analyzer.",
+        "category": "conceptual",
+        "badgeTitle": "FIGURE 8.7b DETAIL",
+        "badgeText": "Only the cosine component transmits."
+      },
+      {
+        "question": "Can an analyzer function independently as a standard polarizer?",
+        "answer": "Yes, an analyzer is *inherently a polarizer* that is simply placed *after* an initial polarizer in a sequence.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPTUAL CLARIFICATION",
+        "badgeText": "The term \"analyzer\" denotes its position, not a different physical makeup."
+      },
+      {
+        "question": "What visual representation occurs when light attempts to pass through \"crossed polarizers\"?",
+        "answer": "A *vertically polarized light wave* is *entirely blocked* by a horizontal polarizer, resulting in *no light transmission*.",
+        "category": "conceptual",
+        "badgeTitle": "FOR YOUR INFORMATION BOX",
+        "badgeText": "3D schematic representation."
+      },
+      {
+        "question": "What is the expected polarization state of unpolarized light after it passes through a foggy atmosphere and is scattered?",
+        "answer": "The scattered light becomes *partially or fully plane polarized* depending on the viewing angle.",
+        "category": "conceptual",
+        "badgeTitle": "BRAIN TEASER",
+        "badgeText": "Atmospheric scattering acts as a natural polarizing agent."
+      },
+      {
+        "question": "What is the calculated refractive index of a medium if its polarizing angle is precisely 54.5°?",
+        "answer": "The refractive index of the medium is *1.4*.",
+        "category": "conceptual",
+        "badgeTitle": "HIDDEN EXAMPLE 8.2",
+        "badgeText": "Calculated using n = tan(54.5°)."
+      },
+      {
+        "question": "If polarized light with an initial intensity of 75 Wm⁻² passes through an analyzer at 30°, what is the emerging intensity?",
+        "answer": "The emerging intensity drops to *56.25 Wm⁻²*.",
+        "category": "conceptual",
+        "badgeTitle": "HIDDEN EXAMPLE 8.3",
+        "badgeText": "Calculated using Malus's law 75 × (0.866)²."
+      },
+      {
+        "question": "How does a polarized light amplitude of 5 units change when passing through a polarizer aligned at 60°?",
+        "answer": "The amplitude of the wave reduces to *2.5 units*.",
+        "category": "conceptual",
+        "badgeTitle": "HIDDEN EXAMPLE 8.4",
+        "badgeText": "Calculated using A = A₀ cos(60°)."
+      },
+      {
+        "question": "How does polarization specifically aid the field of astronomy according to the text?",
+        "answer": "It helps analyze cosmic phenomena, such as the *polarization of light from distant stars* or the *cosmic microwave background radiation*.",
+        "category": "conceptual",
+        "badgeTitle": "APPLICATION FIELD",
+        "badgeText": "Extends beyond Earth-based optics."
+      },
+      {
+        "question": "In the diagram demonstrating the action of polarized sunglasses, which specific light waves do the glasses block?",
+        "answer": "The sunglasses block the light waves *vibrating parallel to the highway*.",
+        "category": "conceptual",
+        "badgeTitle": "FIGURE ACTION OF SUNGLASSES",
+        "badgeText": "Targets the source of horizontal glare."
+      },
+      {
+        "question": "In the same sunglasses diagram, which specific waves are allowed to successfully pass through to the eye?",
+        "answer": "Only the waves *vibrating perpendicular to the highway* are allowed to pass.",
+        "category": "conceptual",
+        "badgeTitle": "FIGURE ACTION OF SUNGLASSES",
+        "badgeText": "Enhances visual clarity for drivers."
+      },
+      {
+        "question": "Where was Albert Einstein born and what was his primary professional title?",
+        "answer": "He was a *German-born Theoretical Physicist*.",
+        "category": "conceptual",
+        "badgeTitle": "BIOGRAPHY BOX",
+        "badgeText": "Contextual background for the predictor of GWs."
+      },
+      {
+        "question": "What were the birth and death years of Albert Einstein as noted in the marginal text?",
+        "answer": "Albert Einstein lived from *1879 to 1955*.",
+        "category": "conceptual",
+        "badgeTitle": "BIOGRAPHY BOX",
+        "badgeText": "Historical timeline."
+      },
+      {
+        "question": "Who is Dr. Nergis Mavalvala and what is her specific field of expertise?",
+        "answer": "She is a *Pakistani-American Astrophysicist* at MIT known for her *work on gravitational waves*.",
+        "category": "conceptual",
+        "badgeTitle": "BIOGRAPHY BOX",
+        "badgeText": "Highlighting a key scientist in the LIGO detection team."
+      },
+      {
+        "question": "Do ordinary vehicles and airplanes produce gravitational waves?",
+        "answer": "Yes, *every physical object that accelerates* produces gravitational waves, including vehicles and airplanes.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPTUAL CAVEAT",
+        "badgeText": "Their masses are just too small to be detected by instruments."
+      },
+      {
+        "question": "What specific type of binary system is explicitly cited as producing continuous gravitational waves?",
+        "answer": "*White dwarf binary systems* are cited as sources that produce continuous GWs.",
+        "category": "conceptual",
+        "badgeTitle": "TYPES OF GWS DETAIL",
+        "badgeText": "Exhibits constant rate spinning."
+      },
+      {
+        "question": "What specific cosmic structures are mentioned as producing burst gravitational waves, alongside supernovae?",
+        "answer": "Burst GWs are produced by violent events like supernovae, *gamma-ray bursts*, or *cosmic strings*.",
+        "category": "conceptual",
+        "badgeTitle": "TYPES OF GWS DETAIL",
+        "badgeText": "High-energy, short-duration phenomena."
+      },
+      {
+        "question": "What does the acronym EGO stand for in the context of the Virgo observatory?",
+        "answer": "It stands for the *European Gravitational Observatory*.",
+        "category": "conceptual",
+        "badgeTitle": "LOCATION CONTEXT",
+        "badgeText": "Based in Cascina near Pisa, Italy."
+      },
+      {
+        "question": "What specific orbital trajectory is defined by an eccentricity value strictly between 0 and 1 (0<ϵ<1)?",
+        "answer": "It defines an *elliptical orbit*.",
+        "category": "conceptual",
+        "badgeTitle": "TABLE/MARGIN CONCEPT",
+        "badgeText": "The standard path for most binary systems."
+      },
+      {
+        "question": "What specific orbit type is defined by an eccentricity exactly equal to 1 (ϵ=1)?",
+        "answer": "An eccentricity of 1 represents a *parabolic trajectory*.",
+        "category": "conceptual",
+        "badgeTitle": "TABLE/MARGIN CONCEPT",
+        "badgeText": "A measure of deviation from a perfect circle."
+      },
+      {
+        "question": "What is the typical, minute amplitude order of gravitational waves when they finally pass through Earth?",
+        "answer": "The amplitude is extremely small, typically of the order of *10⁻²¹ to 10⁻¹² metres*.",
+        "category": "conceptual",
+        "badgeTitle": "HIDDEN GW FACT",
+        "badgeText": "Requires highly sensitive interferometers to detect."
+      },
+      {
+        "question": "What is the exact internal function of a Fabry-Perot cavity within a gravitational wave detector?",
+        "answer": "It consists of *two mirrors facing each other* designed strictly to *enhance the path length* of the laser.",
+        "category": "conceptual",
+        "badgeTitle": "INTERFEROMETER COMPONENT",
+        "badgeText": "Multiplies the distance the light travels to increase phase shift sensitivity."
+      },
+      {
+        "question": "Why is the specific term \"recycling\" used for the power mirror in LIGO?",
+        "answer": "Because it *continually reflects LASER light* that has already travelled through the instrument *back into the interferometer*.",
+        "category": "conceptual",
+        "badgeTitle": "INTERFEROMETER COMPONENT",
+        "badgeText": "Maximizes laser power efficiency."
+      },
+      {
+        "question": "On what exact historical date were the universe's gravitational waves observed for the very first time?",
+        "answer": "They were first observed on *14 September 2015* by LIGO.",
+        "category": "conceptual",
+        "badgeTitle": "HISTORICAL MILESTONE",
+        "badgeText": "100 years after Einstein's prediction."
+      },
+      {
+        "question": "During which three specific months is the Virgo constellation visible in the night sky?",
+        "answer": "It is visible during the months of *March*, *April*, and *May*.",
+        "category": "conceptual",
+        "badgeTitle": "NAMING ORIGIN",
+        "badgeText": "The namesake of the Virgo observatory."
+      },
+      {
+        "question": "What is the exact numerical equivalent of one Light Year (LY) in kilometers as stated in the text?",
+        "answer": "The approximate value of one Light Year is *9.5 billion km*.",
+        "category": "conceptual",
+        "badgeTitle": "COSMIC DISTANCES",
+        "badgeText": "The distance light travels in one Earth year."
+      },
+      {
+        "question": "How many galaxies approximately make up the Virgo cluster?",
+        "answer": "The Virgo cluster is a group of about *1,500 galaxies*.",
+        "category": "conceptual",
+        "badgeTitle": "VIRGO CLUSTER DETAILS",
+        "badgeText": "Located about 50 million Light Years away."
+      },
+      {
+        "question": "In the basic Michelson's Interferometer block diagram, what component immediately follows the LASER source?",
+        "answer": "The LASER beam immediately encounters the *Power recycling mirror* before reaching the beam splitter.",
+        "category": "conceptual",
+        "badgeTitle": "FIGURE 8.9 STRUCTURAL FLOW",
+        "badgeText": "First stage of beam conditioning."
+      },
+      {
+        "question": "What is the general effect on the intensity of unpolarized light when it passes through a single primary polarizer?",
+        "answer": "The intensity of the light *inherently decreases* (specifically dropping by half, though the text emphasizes the decrease).",
+        "category": "conceptual",
+        "badgeTitle": "MCQ 8.3 CONCEPT EXTRACTION",
+        "badgeText": "Due to blocking all vectors except one plane."
+      },
+      {
+        "question": "What is the mathematical effect of increasing the angle (from 0° to 90°) between the light wave and the analyzer?",
+        "answer": "As the angle increases towards 90°, the *intensity decreases*.",
+        "category": "conceptual",
+        "badgeTitle": "MCQ 8.7 CONCEPT EXTRACTION",
+        "badgeText": "Based on the cosine squared function."
+      },
+      {
+        "question": "What specific angle is required between the direction of polarized light and a polaroid filter to reduce its intensity by exactly 85%?",
+        "answer": "An angle of *67.5°* is required.",
+        "category": "conceptual",
+        "badgeTitle": "NUMERICAL 8.4 TRICK",
+        "badgeText": "Because cos²(67.5°) ≈ 0.15 (leaving 15% transmitted)."
+      },
+      {
+        "question": "Through what exact angle must a polarizing sheet be rotated from a parallel position for the transmitted intensity to drop by exactly half?",
+        "answer": "It must be rotated by *45°*.",
+        "category": "conceptual",
+        "badgeTitle": "NUMERICAL 8.6 TRICK",
+        "badgeText": "Because cos²(45°) = 0.5."
+      },
+      {
+        "question": "At what specific angle of incidence will light reflected from the surface of water be completely plane polarized?",
+        "answer": "It will be completely polarized at an angle of *53°*.",
+        "category": "conceptual",
+        "badgeTitle": "NUMERICAL 8.8 TRICK",
+        "badgeText": "This represents Brewster's angle for water."
+      },
+      {
+        "question": "If a polarizer and an analyzer have their transmission axes aligned at precisely 60°, what exact fraction of the initial intensity emerges?",
+        "answer": "The fraction that emerges is *0.25* (or one‑fourth) of the initial intensity.",
+        "category": "conceptual",
+        "badgeTitle": "NUMERICAL 8.10 TRICK",
+        "badgeText": "Because cos(60°) = 0.5, and squared it becomes 0.25."
+      },
+      {
+        "question": "If a passing gravitational wave has a theoretical wavelength of 3000 km, what is its calculated frequency?",
+        "answer": "The frequency would be *100 Hz*.",
+        "category": "conceptual",
+        "badgeTitle": "NUMERICAL 8.11 TRICK",
+        "badgeText": "Using v = fλ, assuming it moves at the speed of light (c)."
+      },
+      {
+        "question": "What specific astronomical event is identified as a primary source for generating strongly detectable gravitational waves?",
+        "answer": "A *binary black hole merger* is a primary source.",
+        "category": "conceptual",
+        "badgeTitle": "MCQ 8.13 CONCEPT EXTRACTION",
+        "badgeText": "The exact event that triggered the 2015 LIGO detection."
+      },
+      {
+        "question": "In the context of sky photography, what physical interaction causes the \"haze\" that polarizers are designed to reduce?",
+        "answer": "Haze is produced by the *scattering of light by small particles of molecules* present in the atmosphere.",
+        "category": "conceptual",
+        "badgeTitle": "HIDDEN TEXT DETAIL",
+        "badgeText": "The root cause of atmospheric visual degradation."
       }
     ],
     "9": [
@@ -12678,7 +13294,288 @@ const siteData = {
         "badgeText": "Oxides of manganese, nickel, cobalt, copper, iron."
       }
     ],
-    "10": [],
+    "10": [
+      {
+        "question": "What is the primary focus of the study of electromagnetism?",
+        "answer": "Electromagnetism is a key area of physics that studies how *electric charges* and *magnetic fields* interact.",
+        "category": "most",
+        "badgeTitle": "HISTORICAL CONTEXT",
+        "badgeText": "In 1820, Hans Christian Orsted found that electricity and magnetism are correlated."
+      },
+      {
+        "question": "What is a lodestone and what are its key properties?",
+        "answer": "Lodestone, or magnetite (Fe₃O₄), is a *natural mineral* that can *attract metals* like iron and steel.",
+        "category": "most",
+        "badgeTitle": "SIGNIFICANCE",
+        "badgeText": "It aligns with the Earth's magnetic poles, leading to the invention of the compass."
+      },
+      {
+        "question": "What happens when a current-carrying conductor is placed in a magnetic field?",
+        "answer": "It has been observed experimentally that a current-carrying conductor placed in a magnetic field *experiences a force*.",
+        "category": "most",
+        "badgeTitle": "REASON",
+        "badgeText": "A current-carrying conductor experiences a force due to the interaction between its own magnetic field and the external magnetic field."
+      },
+      {
+        "question": "How does a straight conductor behave when placed perpendicular to a uniform magnetic field?",
+        "answer": "The magnetic field produced by the current and the external uniform magnetic field *reinforce* each other on one side of the conductor and *cancel* each other on the other side.",
+        "category": "most",
+        "badgeTitle": "DIRECTION OF MOVEMENT",
+        "badgeText": "Consequently, the conductor moves towards the side where the field is weaker, making the force perpendicular to both the conductor and the magnetic field."
+      },
+      {
+        "question": "State Fleming's left-hand rule.",
+        "answer": "Position your left hand such that the *first finger* points in the direction of the *magnetic field*, the *second finger* points in the direction of *current*, the *thumb* will then point in the direction of *force*.",
+        "category": "most",
+        "badgeTitle": "APPLICATION",
+        "badgeText": "It is used to predict the direction of the force experienced by a current-carrying conductor in a magnetic field."
+      },
+      {
+        "question": "How can the right-hand rule be used to find the direction of magnetic force on a conductor?",
+        "answer": "*Curl fingers* of your right hand from *current* to *magnetic field* through a small angle; the *stretched thumb* will indicate the direction of *force*.",
+        "category": "most",
+        "badgeTitle": "ALTERNATIVE",
+        "badgeText": "This is an alternative to Fleming's left-hand rule for finding the direction of force."
+      },
+      {
+        "question": "What factors determine the magnitude of the magnetic force on a current-carrying conductor?",
+        "answer": "The magnitude of the force is *directly proportional* to the *current I* in the conductor, the *length L* of the conductor, and the *strength* of the *external magnetic field B*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "F = k B I L, where in SI units, the value of k = 1, making it F = B I L."
+      },
+      {
+        "question": "Define magnetic induction (B).",
+        "answer": "The magnetic strength is *numerically equal* to the *force* exerted on a conductor of *length one metre* carrying *one ampere current*, placed *perpendicular* to the magnetic field.",
+        "category": "most",
+        "badgeTitle": "FORMULA & UNIT",
+        "badgeText": "B = F/(I L) and the SI unit of B is the tesla (T)."
+      },
+      {
+        "question": "What is the SI unit of magnetic induction and how is it derived?",
+        "answer": "The SI unit of magnetic induction (B) is *tesla (T)*, which is defined as *1 T = 1 N A⁻¹ m⁻¹*.",
+        "category": "most",
+        "badgeTitle": "NATURE OF QUANTITY",
+        "badgeText": "It may be noted that magnetic induction is a vector quantity, and its direction is that of the magnetic field."
+      },
+      {
+        "question": "How do you calculate the magnetic force when the conductor is placed at an angle θ to the magnetic field?",
+        "answer": "When placed at an angle θ, you must use the *component of length L* perpendicular to B, which is *L sinθ*.",
+        "category": "most",
+        "badgeTitle": "EQUATION",
+        "badgeText": "The force equation becomes F = B I L sinθ."
+      },
+      {
+        "question": "Under what conditions is the magnetic force on a current-carrying conductor maximum or zero?",
+        "answer": "The force will be *maximum (B I L)* when the conductor is *perpendicular* to the field (θ = 90°), and it will be *zero* when the conductor is *along* the field (θ = 0°).",
+        "category": "most",
+        "badgeTitle": "VECTOR FORM",
+        "badgeText": "In vector form, the force is written as F = I L × B."
+      },
+      {
+        "question": "Describe the nature of the Earth's magnetic field.",
+        "answer": "The Earth's magnetic field is approximately that of a *dipole*, like a *fictitious bar magnet*.",
+        "category": "most",
+        "badgeTitle": "POLE ALIGNMENT",
+        "badgeText": "The south magnetic pole is towards the geographic north pole and the north magnetic pole is towards the geographic south pole."
+      },
+      {
+        "question": "How do you determine the force acting on a 20.0 cm wire carrying 10.0 A at a 40° angle in a 0.30 T magnetic field?",
+        "answer": "By substituting the values into the equation *F = I L B sinθ*.",
+        "category": "most",
+        "badgeTitle": "CALCULATION",
+        "badgeText": "F = 10.0 A × 0.30 T × 0.20 m × sin40° = 0.39 N."
+      },
+      {
+        "question": "Define magnetic flux.",
+        "answer": "The magnetic flux through a patch of area A is the *number of magnetic lines* passing through this area.",
+        "category": "most",
+        "badgeTitle": "VECTOR DEFINITION",
+        "badgeText": "The magnetic flux Φ_B through a plane element of area A in a uniform magnetic field B is given by the dot product of B and A."
+      },
+      {
+        "question": "What is vector area in the context of magnetic flux?",
+        "answer": "Note that A is a *vector* whose *magnitude* is the area of the element and whose *direction* is along the *normal* to the surface of the element.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "Φ_B = B · A = B A cosθ."
+      },
+      {
+        "question": "When is the magnetic flux through a surface considered maximum?",
+        "answer": "When the field is directed *along the normal* to the area, the angle θ is *zero* (cos0° = 1) and the flux is *maximum*, equal to *B A*.",
+        "category": "most",
+        "badgeTitle": "DIAGRAM REFERENCE",
+        "badgeText": "The field lines cross the surface completely perpendicularly."
+      },
+      {
+        "question": "When is the magnetic flux through a surface considered zero?",
+        "answer": "When the field is *parallel* to the plane of the area, the angle between the field and normal to the area is *90°* (cos90° = 0), so the flux is *zero*.",
+        "category": "most",
+        "badgeTitle": "MATHEMATICAL PROOF",
+        "badgeText": "Φ_B = B A cos(90°) = 0."
+      },
+      {
+        "question": "How is magnetic flux calculated for a curved surface?",
+        "answer": "The curved surface is *divided* into a number of *small surface elements*, each assumed *plane*, and the flux is the *sum* of the contributions from all elements.",
+        "category": "most",
+        "badgeTitle": "APPLICATION",
+        "badgeText": "This utilizes the standard flux formula Φ_B = B · A iteratively."
+      },
+      {
+        "question": "What is the SI unit of magnetic flux?",
+        "answer": "From the definition of tesla, the unit of magnetic flux is *N m A⁻¹*, which is called the *weber (Wb)*.",
+        "category": "most",
+        "badgeTitle": "QUANTITY TYPE",
+        "badgeText": "Equation (10.6) shows that Φ_B is a scalar quantity."
+      },
+      {
+        "question": "What is another name for magnetic induction based on flux?",
+        "answer": "The magnetic induction B is the *flux per unit area* of a surface perpendicular to B, hence, it is also called *magnetic flux density*.",
+        "category": "most",
+        "badgeTitle": "UNIT REPRESENTATION",
+        "badgeText": "Its unit can be represented as Wb m⁻²."
+      },
+      {
+        "question": "How does a magnetic strip on an ATM card work?",
+        "answer": "A magnetic strip on the card contains *millions of tiny magnetic domains* held together by a resin binder.",
+        "category": "most",
+        "badgeTitle": "OPERATION",
+        "badgeText": "The machine reads the information encoded on the magnetic strip and makes access to your account."
+      },
+      {
+        "question": "What force does a charged particle experience when moving across a magnetic field?",
+        "answer": "Experiments show that a charged particle *does experience a force* when it *moves across* a magnetic field.",
+        "category": "most",
+        "badgeTitle": "BASIS OF OBSERVATION",
+        "badgeText": "We can calculate this force by examining the behaviour of a current-carrying conductor in a magnetic field."
+      },
+      {
+        "question": "What is the fundamental property of magnetic field lines?",
+        "answer": "Like electric field lines, magnetic field lines also *never cross each other* but instead *push apart* of each other.",
+        "category": "most",
+        "badgeTitle": "VISUAL REPRESENTATION",
+        "badgeText": "They form distinct, non-intersecting pathways of force."
+      },
+      {
+        "question": "How is current defined in the context of charges moving through a conductor?",
+        "answer": "The motion of charged particles produces a current I in the conductor, which is given by *I = Q/t = Nq/t*.",
+        "category": "most",
+        "badgeTitle": "VARIABLES",
+        "badgeText": "Where Q is the total charge flowing in time t."
+      },
+      {
+        "question": "What is the formula for the magnetic force acting on a single charged particle?",
+        "answer": "Therefore the force on a single particle will be *F = q v × B*.",
+        "category": "most",
+        "badgeTitle": "MAGNITUDE FORMULA",
+        "badgeText": "If θ is the angle between B and v, the magnitude of force F is given by F = q v B sinθ."
+      },
+      {
+        "question": "Under what specific conditions is the magnetic force on a moving charge maximum or zero?",
+        "answer": "The force is *maximum* when B is *perpendicular* to v (θ = 90°), and force is *zero* when B is in the *direction* of v (θ = 0°).",
+        "category": "most",
+        "badgeTitle": "DIRECTION DETERMINATION",
+        "badgeText": "The direction of force can be known by applying Fleming's left-hand rule or right-hand rule."
+      },
+      {
+        "question": "How does the deflection of a positively charged particle differ from a negatively charged one in a magnetic field?",
+        "answer": "A *positively charged particle* experiences a force in the *upward* direction, while a *negatively charged particle* is *deflected downward* by the force acting on it.",
+        "category": "most",
+        "badgeTitle": "TRAJECTORY",
+        "badgeText": "Both are deflected along a curved path."
+      },
+      {
+        "question": "In a uniform magnetic field, what happens to an electron entering perpendicularly?",
+        "answer": "Since the force acts *perpendicular* to velocity v, this force provides *centripetal force* to the electron to keep it in a *circle* of radius r.",
+        "category": "most",
+        "badgeTitle": "EQUATION",
+        "badgeText": "e v B = m v²/r, which simplifies to r = m v/(e B)."
+      },
+      {
+        "question": "What is motional emf?",
+        "answer": "The emf induced by the *motion* of a conductor across a *magnetic field* is called *motional emf*.",
+        "category": "most",
+        "badgeTitle": "EXPERIMENTAL BASIS",
+        "badgeText": "When a conductor moves across a magnetic field, an electromotive force (emf) is induced between its ends, acting similar to a battery."
+      },
+      {
+        "question": "Describe the physical mechanism behind the creation of motional emf.",
+        "answer": "When a rod moves, charges experience a *magnetic force F = q v B*, causing them to migrate and create a *concentration of charge* at one end and a *deficiency* at the other.",
+        "category": "most",
+        "badgeTitle": "EQUILIBRIUM STATE",
+        "badgeText": "This redistribution creates an electrostatic field E; the system quickly reaches equilibrium where q E = q v B."
+      },
+      {
+        "question": "What is the mathematical formula for the magnitude of motional emf?",
+        "answer": "The motional emf ε is equal to the *potential difference ΔV*, giving the magnitude equation *ε = v B L*.",
+        "category": "most",
+        "badgeTitle": "VECTOR CONSIDERATION",
+        "badgeText": "If the angle between v and B is θ, then ε = − v B L sinθ."
+      },
+      {
+        "question": "State Faraday's law of electromagnetic induction.",
+        "answer": "The average emf induced in a conducting coil of N loops is equal to the *negative* of the *rate* at which the *magnetic flux* through the coil is *changing with time*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "ε = − N (ΔΦ/Δt)."
+      },
+      {
+        "question": "What does the negative sign in Faraday's Law indicate?",
+        "answer": "The minus sign indicates that the *direction* of the induced emf is such that it *opposes the change* in flux.",
+        "category": "most",
+        "badgeTitle": "UNDERLYING PRINCIPLE",
+        "badgeText": "This relates to energy conservation, though Lenz's law handles the specific directionality."
+      },
+      {
+        "question": "What is the first major factor affecting the magnitude of induced EMF?",
+        "answer": "The *Rate of Change of Magnetic Flux*; Faraday's law suggests that *faster changes* in magnetic flux result in *greater induced emf*.",
+        "category": "most",
+        "badgeTitle": "DIRECT RELATIONSHIP",
+        "badgeText": "Higher ΔΦ/Δt yields higher ε."
+      },
+      {
+        "question": "How does the physical structure of a coil affect the induced EMF?",
+        "answer": "The *Number of Turns of the Coil*; induced emf is *proportional* to the number of turns of the coil, so *more turns* result in a *greater induced emf*.",
+        "category": "most",
+        "badgeTitle": "MULTIPLIER EFFECT",
+        "badgeText": "Represented by the variable 'N' in the Faraday equation."
+      },
+      {
+        "question": "How does relative speed influence electromagnetic induction?",
+        "answer": "The *speed* of the coil (or conductor) through a magnetic field affects the magnitude of induced emf; *faster speed* increases the rate of change of magnetic flux, resulting in an *increase* in the induced emf.",
+        "category": "most",
+        "badgeTitle": "MOTIONAL CONTEXT",
+        "badgeText": "Directly observable in the motional emf equation where velocity 'v' is a key variable."
+      },
+      {
+        "question": "What are ferrofluids and what are they made of?",
+        "answer": "Ferrofluid is a unique material that exhibits both *liquid* and *magnetic* properties, essentially a *colloidal suspension* of *magnetic particles* in a carrier fluid (like oil or water).",
+        "category": "most",
+        "badgeTitle": "COMPOSITION DETAILS",
+        "badgeText": "Typically made of iron oxide particles ground to the nano-scale (approx 10 nanometres) and coated with a surfactant."
+      },
+      {
+        "question": "What keeps the nano-particles in a ferrofluid evenly dispersed?",
+        "answer": "They are coated with a *surfactant* that *reduces surface tension*, which prevents the particles from *clumping together*.",
+        "category": "most",
+        "badgeTitle": "FLUID DYNAMICS",
+        "badgeText": "The viscosity of the fluid, the nanometre size of the particles, and their constant movement prevent settling."
+      },
+      {
+        "question": "How does a ferrofluid behave in the presence of a magnetic field?",
+        "answer": "The particles are *temporarily magnetized* and the fluid becomes a *magnet*, forming structures within the fluid causing it to *act more like a solid*.",
+        "category": "most",
+        "badgeTitle": "SPIKE FORMATION",
+        "badgeText": "They align along magnetic field lines, creating chain-like structures or spikes where magnetic forces overcome gravity and surface tension."
+      },
+      {
+        "question": "What is the primary function and operating principle of a seismometer?",
+        "answer": "A seismometer *detects earthquakes* by using *electromagnetic induction* to convert *ground motion* into *electrical signals*.",
+        "category": "most",
+        "badgeTitle": "MECHANISM",
+        "badgeText": "A weight attached to a magnet moves inside a coil of wire during ground movement; the changing magnetic flux induces an emf and electric current according to Faraday's law."
+      }
+    ],
     "11": [],
     "12": []
   },
