@@ -11393,7 +11393,337 @@ const siteData = {
         "badgeText": "The core relative motion principle remains identical despite entirely different wave natures and propagation mediums."
       }
     ],
-    "8": [],
+    "8": [
+      {
+        "question": "What does physical optics deal with in the context of polarization?",
+        "answer": "Physical optics deals with the *behaviour of light waves* and their *interaction with matter*.",
+        "category": "most",
+        "badgeTitle": "CORE CONCEPT",
+        "badgeText": "Focuses on wave properties rather than just rays."
+      },
+      {
+        "question": "What do the phenomena of interference and diffraction prove about light?",
+        "answer": "These effects definitively prove the *wave nature* of light.",
+        "category": "most",
+        "badgeTitle": "LIMITATION",
+        "badgeText": "They do not specify whether the waves are longitudinal or transverse."
+      },
+      {
+        "question": "Which phenomenon confirms that light waves are transverse?",
+        "answer": "*Polarization* of light suggests that the light waves are *transverse* in character.",
+        "category": "most",
+        "badgeTitle": "WAVE CHARACTERISTIC",
+        "badgeText": "Restricts vibrations to specific planes."
+      },
+      {
+        "question": "How do particles vibrate in a transverse mechanical wave?",
+        "answer": "The vibrations of the particles are *perpendicular* to the *direction of propagation* of the waves.",
+        "category": "most",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "Waves produced in a stretched string."
+      },
+      {
+        "question": "What is the plane of polarization?",
+        "answer": "It is the plane containing the *direction of vibration* of the particles and the *direction of propagation* of the wave.",
+        "category": "most",
+        "badgeTitle": "ORIENTATION",
+        "badgeText": "Vibrations can be oriented along vertical, horizontal, or any other direction."
+      },
+      {
+        "question": "What is the composition of a light wave produced by an oscillating charge?",
+        "answer": "It consists of a *periodic variation* of the *electric field vector E* accompanied by the *magnetic field vector B* at right angle to each other.",
+        "category": "most",
+        "badgeTitle": "NATURE",
+        "badgeText": "Electromagnetic transverse wave."
+      },
+      {
+        "question": "How is unpolarized light defined?",
+        "answer": "Ordinary light that has *components of vibration in all possible planes* is called *unpolarized light*.",
+        "category": "most",
+        "badgeTitle": "EXAMPLES",
+        "badgeText": "Sunlight, incandescent bulbs, fluorescent bulbs, candle fire."
+      },
+      {
+        "question": "What is polarization of light?",
+        "answer": "*Polarization* is the process by which the *electric and magnetic vibrations* of light waves are *restricted to a single plane* of vibration.",
+        "category": "most",
+        "badgeTitle": "CONDITION",
+        "badgeText": "It is exhibited by transverse waves only."
+      },
+      {
+        "question": "Does polarization occur in sound waves?",
+        "answer": "No, *polarization does not occur* for *longitudinal waves* such as sound waves.",
+        "category": "most",
+        "badgeTitle": "KEY PROPERTY",
+        "badgeText": "It requires transverse wave characteristics to block specific planes."
+      },
+      {
+        "question": "What are the three methods to make unpolarized light polarized?",
+        "answer": "*Passing light through a polarizing filter*, using a *polarizing beam splitter*, or employing certain *optical crystals or materials*.",
+        "category": "most",
+        "badgeTitle": "COMMON MATERIALS",
+        "badgeText": "Polaroid sheets, calcite, quartz."
+      },
+      {
+        "question": "How does a polarizing filter work?",
+        "answer": "When unpolarized light passes through, only the *electric field vector* that is *parallel to the axis* of polarized filter can pass, while all other vectors are blocked.",
+        "category": "most",
+        "badgeTitle": "RESULT",
+        "badgeText": "The emergent light becomes plane polarized."
+      },
+      {
+        "question": "What happens when unpolarized light is incident on a single sheet of polaroid (polarizer)?",
+        "answer": "The *transmitted light* will be *plane polarized*.",
+        "category": "most",
+        "badgeTitle": "INITIAL STATE",
+        "badgeText": "Ordinary incandescent bulb light has randomly oriented vibrations."
+      },
+      {
+        "question": "What happens when a second polaroid (analyzer) has its axis parallel to the first polaroid?",
+        "answer": "The light is *transmitted* through the second polaroid and appears *brightest* when the axes are *parallel*.",
+        "category": "most",
+        "badgeTitle": "ALIGNMENT",
+        "badgeText": "Axes of both polaroids are in the same direction."
+      },
+      {
+        "question": "What is the result if the analyzer is rotated so its axis is mutually perpendicular to the polarizer?",
+        "answer": "The light emerging out of the second polaroid gets *dimmer and dimmer* and *disappears completely*.",
+        "category": "most",
+        "badgeTitle": "SIGNIFICANCE",
+        "badgeText": "This experiment definitively proves light waves are transverse."
+      },
+      {
+        "question": "Who discovered that polarized light can be obtained by reflection?",
+        "answer": "*Malus* discovered in *1808* that polarized light is obtained when ordinary light is reflected by a plane sheet of glass.",
+        "category": "most",
+        "badgeTitle": "METHOD",
+        "badgeText": "Light bouncing back from a surface."
+      },
+      {
+        "question": "What is the most suitable angle of incidence for glass to produce plane-polarized reflected light?",
+        "answer": "The most suitable angle of incidence is about *57°* for glass, at which the reflected ray becomes *plane polarized*.",
+        "category": "most",
+        "badgeTitle": "VERIFICATION",
+        "badgeText": "Reflected light is extinguished at one position when viewed through a rotated polaroid."
+      },
+      {
+        "question": "Define polarizing angle.",
+        "answer": "The particular *angle of incidence* on a transparent medium when the reflected light is *almost plane polarized* is called the *polarizing angle*.",
+        "category": "most",
+        "badgeTitle": "GEOMETRIC CONDITION",
+        "badgeText": "Reflected and refracted beams are at right angles."
+      },
+      {
+        "question": "State Brewster's law.",
+        "answer": "The *tangent* of the *angle of polarization* is numerically equal to the *refractive index* of the medium when the first medium is air.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$\\tan \\theta_{p} = n$."
+      },
+      {
+        "question": "In Brewster's Law, what is the angle between the reflected and refracted rays at the polarizing angle?",
+        "answer": "The reflected beam and refracted beam are at a *right angle* (90°) to each other.",
+        "category": "most",
+        "badgeTitle": "EQUATION",
+        "badgeText": "$\\theta_{p} + \\theta_{r} = 90^{\\circ}$."
+      },
+      {
+        "question": "State Malus's law.",
+        "answer": "The *intensity* of plane polarized light after passing through an analyzer is *directly proportional* to the *square of the cosine* of the angle between the transmission axis of the analyzer and polarizer.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$I = I_{0} \\cos^{2}\\theta$."
+      },
+      {
+        "question": "What does $I_{0}$ represent in Malus's Law equation?",
+        "answer": "$I_{0}$ is the *intensity of the incident polarized light* after passing through a *polarizer*.",
+        "category": "most",
+        "badgeTitle": "CONTEXT",
+        "badgeText": "It is the initial intensity before entering the analyzer."
+      },
+      {
+        "question": "What is the function of an analyzer in polarization?",
+        "answer": "An *analyzer* is a polarizer placed *after* a primary polarizer used to *further reduce* the intensity of light and *adjust it* by changing its angle.",
+        "category": "most",
+        "badgeTitle": "EFFECT",
+        "badgeText": "Rotation affects the transmitted intensity."
+      },
+      {
+        "question": "What happens to the amplitude of polarized light when it strikes an analyzer at an angle $\\theta$?",
+        "answer": "The incident amplitude $A_{0}$ is *resolved into two components*, and only the component *$A_{0} \\cos \\theta$* passes through, while $A_{0} \\sin \\theta$ is *absorbed*.",
+        "category": "most",
+        "badgeTitle": "TRANSMITTED AMPLITUDE",
+        "badgeText": "$A = A_{0} \\cos \\theta$."
+      },
+      {
+        "question": "Under Malus's law, what happens when the angle $\\theta = 0^{\\circ}$?",
+        "answer": "The transmitted intensity $I$ is *equal* to the initial intensity $I_{0}$.",
+        "category": "most",
+        "badgeTitle": "MEANING",
+        "badgeText": "Maximum light transmission occurs through the analyzer."
+      },
+      {
+        "question": "Under Malus's law, what occurs when the angle $\\theta = 90^{\\circ}$?",
+        "answer": "The intensity $I = 0$, meaning the light is *extinguished completely* and no light passes through the analyzer.",
+        "category": "most",
+        "badgeTitle": "CONDITION",
+        "badgeText": "Crossed polarizers."
+      },
+      {
+        "question": "What are polaroids in the context of crystalline materials?",
+        "answer": "Certain *transparent crystalline materials* like tourmaline and calcite crystals that have *high directionality* in crystal structure and *confine vibrations* to one plane.",
+        "category": "most",
+        "badgeTitle": "FUNCTION",
+        "badgeText": "They act as polarizing filters."
+      },
+      {
+        "question": "Name some natural phenomena that can polarize light.",
+        "answer": "Light can be polarized naturally by *reflection*, *refraction*, and *scattering*.",
+        "category": "most",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "Glare from smooth surfaces like water."
+      },
+      {
+        "question": "How are polaroids utilized in sky photography?",
+        "answer": "Polarizers *reduce glare and haze* produced by the scattering of light by atmospheric particles, creating a *brighter detailed image*.",
+        "category": "most",
+        "badgeTitle": "BENEFIT",
+        "badgeText": "Improves overall image quality and contrast."
+      },
+      {
+        "question": "What is photoelasticity?",
+        "answer": "It is a technique where *polarized light* is shone through transparent materials to analyze *stress patterns* and *optical properties* based on interference.",
+        "category": "most",
+        "badgeTitle": "APPLICATION",
+        "badgeText": "Used in engineering, materials science, and quality control."
+      },
+      {
+        "question": "How does polarization assist in medical applications?",
+        "answer": "Polarization is used in *cancer diagnosis*, *tissue imaging*, and *laser surgery* by distinguishing between different tissue types.",
+        "category": "most",
+        "badgeTitle": "ADVANTAGE",
+        "badgeText": "Enhances image quality and contrast in microscopy."
+      },
+      {
+        "question": "Define Gravitational Waves (GWs).",
+        "answer": "Gravitational waves are *ripples in the fabric of spacetime*, produced by *violent cosmic events*, that travel at the *speed of light*.",
+        "category": "most",
+        "badgeTitle": "FUNCTION",
+        "badgeText": "They carry information about their source."
+      },
+      {
+        "question": "According to Einstein, what is gravity?",
+        "answer": "Gravity is not a force, but a *curvature of spacetime* caused by *massive bodies*.",
+        "category": "most",
+        "badgeTitle": "ANALOGY",
+        "badgeText": "Like a dent in a mattress wrapping the space around it."
+      },
+      {
+        "question": "When were gravitational waves first predicted and first detected?",
+        "answer": "They were initially predicted by *Albert Einstein* in *1916* and were first detected in *2015*.",
+        "category": "most",
+        "badgeTitle": "SOURCE OF FIRST DETECTION",
+        "badgeText": "Two colliding black holes."
+      },
+      {
+        "question": "What is a Binary System (BS) in astrophysics?",
+        "answer": "A system consisting of *two compact objects* (like black holes or neutron stars) that are *orbiting each other* and emitting *gravitational waves*.",
+        "category": "most",
+        "badgeTitle": "SIGNIFICANCE",
+        "badgeText": "Their mergers are among the most intense cosmic events."
+      },
+      {
+        "question": "What happens to the gravitational intensity as masses in a binary system orbit and accelerate?",
+        "answer": "Their *gravitational intensity fluctuates*, generating *waves* that radiate outward in all directions.",
+        "category": "most",
+        "badgeTitle": "PROPAGATION",
+        "badgeText": "They travel freely through spacetime at the speed of light."
+      },
+      {
+        "question": "What produces Continuous Gravitational Waves?",
+        "answer": "They are produced when a *single massive object spins* with a constant rate, such as a *neutron star* or *white dwarf binary system*.",
+        "category": "most",
+        "badgeTitle": "CHARACTERISTICS",
+        "badgeText": "They have the same frequency and amplitude."
+      },
+      {
+        "question": "What are Compact Binary Inspirational Gravitational Waves?",
+        "answer": "Waves produced when a *binary system* (like binary black holes or neutron stars) *orbit each other*, characterized by a *gradual increase in frequency and amplitude*.",
+        "category": "most",
+        "badgeTitle": "SOURCES",
+        "badgeText": "Binary neutron stars, binary black holes."
+      },
+      {
+        "question": "What cosmic events are responsible for Burst Gravitational Waves?",
+        "answer": "They are produced by *violent events* like *supernovae*, *gamma-ray bursts*, or *cosmic strings*.",
+        "category": "most",
+        "badgeTitle": "CLASSIFICATION",
+        "badgeText": "Short-duration, highly energetic events."
+      },
+      {
+        "question": "Describe Stochastic Gravitational Waves.",
+        "answer": "They are *weak*, *random signals* produced by the *superposition* of many weak gravitational wave sources, like *distant binary systems*.",
+        "category": "most",
+        "badgeTitle": "DETECTION",
+        "badgeText": "They are the most difficult type to detect."
+      },
+      {
+        "question": "Why can't we detect gravitational waves produced by objects on Earth?",
+        "answer": "The *masses* and *acceleration* of objects on Earth are *too small* to make gravitational waves big enough to be detected.",
+        "category": "most",
+        "badgeTitle": "REQUIREMENT",
+        "badgeText": "Needs extreme cosmic masses and events."
+      },
+      {
+        "question": "What is an interferometer in gravitational wave detection?",
+        "answer": "A very sensitive detection device that uses the *interference of LASER beams* to measure *tiny changes in distance* between mirrors caused by passing gravitational waves.",
+        "category": "most",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "LIGO and Virgo."
+      },
+      {
+        "question": "What does the acronym LIGO stand for?",
+        "answer": "*LASER Interferometer Gravitational Wave Observatory*.",
+        "category": "most",
+        "badgeTitle": "SCALE",
+        "badgeText": "It is 1000 times larger than a conventional interferometer."
+      },
+      {
+        "question": "What are the key differences between LIGO and a conventional interferometer?",
+        "answer": "LIGO is *1000 times larger* and uses *LASER light*, whereas a conventional interferometer uses a *normal light source*.",
+        "category": "most",
+        "badgeTitle": "ARM LENGTH",
+        "badgeText": "LIGO has 4 km arms."
+      },
+      {
+        "question": "What is the function of the power recycling mirror in a GW interferometer?",
+        "answer": "It *continually reflects LASER light* that has already travelled through the instrument *back into the interferometer* to enhance intensity.",
+        "category": "most",
+        "badgeTitle": "COMPONENT",
+        "badgeText": "Basic part of a GW Interferometer."
+      },
+      {
+        "question": "What role does the Fabry Perot cavity play in an interferometer?",
+        "answer": "It consists of *two mirrors facing each other* designed to *enhance the path length* of the laser beam.",
+        "category": "most",
+        "badgeTitle": "ENHANCEMENT",
+        "badgeText": "Increases the sensitivity of the detector."
+      },
+      {
+        "question": "How does a passing gravitational wave affect the interferometer's operation?",
+        "answer": "It causes a *tiny disturbance* in the *distance between the mirrors*, resulting in a *phase shift* between the two recombining laser beams.",
+        "category": "most",
+        "badgeTitle": "MEASUREMENT",
+        "badgeText": "This alters the interference pattern measured by a photodetector."
+      },
+      {
+        "question": "What is Virgo in the context of gravitational wave astronomy?",
+        "answer": "*Virgo* is a large-scale gravitational wave observatory functioning as an interferometer with two arms of *3 km*.",
+        "category": "most",
+        "badgeTitle": "LOCATION",
+        "badgeText": "Cascina near Pisa, Italy."
+      }
+    ],
     "9": [
       {
         "question": "What is the magnitude of the smallest amount of free charge discovered?",
