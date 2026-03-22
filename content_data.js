@@ -8414,8 +8414,1214 @@ const siteData = {
         "badgeText": "The Ripple Effect"
       }
     ],
-    "6": [],
-    "8": [],
+    "6": [
+      {
+        "question": "Who is the author of the poem \"The Echoing Green\"?",
+        "answer": "The poem is written by *William Blake*, who was a famous *English poet* and *painter*.",
+        "category": "most",
+        "badgeTitle": "AUTHOR INTRODUCTION",
+        "badgeText": "Literary and Visual Artist"
+      },
+      {
+        "question": "What was the lifespan of the poet William Blake?",
+        "answer": "William Blake was born in the year *1757* and died in *1827*.",
+        "category": "most",
+        "badgeTitle": "HISTORICAL FACT",
+        "badgeText": "Poet's Timeline"
+      },
+      {
+        "question": "What is William Blake uniquely known for in his work?",
+        "answer": "He is known for combining his *poetry* with *illustrations*, creating a beautiful blend of *visual* and *literary art*.",
+        "category": "most",
+        "badgeTitle": "ARTISTIC STYLE",
+        "badgeText": "Blend of Arts"
+      },
+      {
+        "question": "What are the main themes reflected in \"The Echoing Green\"?",
+        "answer": "The poem mainly reflects the themes of *innocence*, the beauty of *nature*, and the *cycles of life*.",
+        "category": "most",
+        "badgeTitle": "CORE THEMES",
+        "badgeText": "Poem Analysis"
+      },
+      {
+        "question": "What does the poet express about children in this poem?",
+        "answer": "The poet expresses the pure *joy* and *innocence* of children's early *life experiences*.",
+        "category": "most",
+        "badgeTitle": "EMOTIONAL TONE",
+        "badgeText": "Childhood Joy"
+      },
+      {
+        "question": "What effect does the rising sun have in the first stanza?",
+        "answer": "The rising *sun* brings light and makes the *skies happy*, starting a beautiful morning.",
+        "category": "most",
+        "badgeTitle": "NATURE IMAGERY",
+        "badgeText": "Morning Scene"
+      },
+      {
+        "question": "Why do the merry bells ring in the poem?",
+        "answer": "The merry bells ring cheerfully to *welcome* the beautiful season of *Spring*.",
+        "category": "most",
+        "badgeTitle": "SEASONAL CELEBRATION",
+        "badgeText": "Spring Arrival"
+      },
+      {
+        "question": "Which specific birds are mentioned by the poet in the first stanza?",
+        "answer": "The poet specifically mentions the *sky‑lark* and the *thrush* singing in the bushes.",
+        "category": "most",
+        "badgeTitle": "NATURE DETAILS",
+        "badgeText": "Birds of the Bush"
+      },
+      {
+        "question": "What do the birds do when the bells ring?",
+        "answer": "The birds sing *louder* around the area to match the *cheerful sound* of the ringing bells.",
+        "category": "most",
+        "badgeTitle": "HARMONIOUS SOUNDS",
+        "badgeText": "Nature's Music"
+      },
+      {
+        "question": "Where are the sports of the children seen?",
+        "answer": "The sports and games of the children are seen playing on the beautiful *Echoing Green*.",
+        "category": "most",
+        "badgeTitle": "PLAYGROUND SETTING",
+        "badgeText": "The Green Field"
+      },
+      {
+        "question": "Who is sitting under the oak tree?",
+        "answer": "An elderly man named *Old John*, who has *white hair*, is sitting under the oak tree.",
+        "category": "most",
+        "badgeTitle": "CHARACTER DETAIL",
+        "badgeText": "The Elder Figure"
+      },
+      {
+        "question": "How does Old John react to his worries?",
+        "answer": "Old John simply *laughs away* his *care* and worries while watching the children play.",
+        "category": "most",
+        "badgeTitle": "CHARACTER ATTITUDE",
+        "badgeText": "Joyful Old Age"
+      },
+      {
+        "question": "Who is Old John sitting with under the tree?",
+        "answer": "Old John is sitting comfortably among the other *old folk* of the community.",
+        "category": "most",
+        "badgeTitle": "COMMUNITY SCENE",
+        "badgeText": "Gathering of Elders"
+      },
+      {
+        "question": "What is the reaction of the old folk to the children's sports?",
+        "answer": "The old folk *laugh* happily at the children's *play* because it reminds them of the past.",
+        "category": "most",
+        "badgeTitle": "ELDERS' REACTION",
+        "badgeText": "Generational Joy"
+      },
+      {
+        "question": "What do the old folk remember when they see the children playing?",
+        "answer": "They remember their own *youth‑time* and say they used to have the same *joys* when they were *girls and boys*.",
+        "category": "most",
+        "badgeTitle": "NOSTALGIA",
+        "badgeText": "Remembering Youth"
+      },
+      {
+        "question": "Where did the old folk used to play in their youth?",
+        "answer": "Just like the current children, the old folk used to play on the very same *Echoing Green*.",
+        "category": "most",
+        "badgeTitle": "SETTING CONTINUITY",
+        "badgeText": "The Shared Green"
+      },
+      {
+        "question": "What happens to the little ones as the day ends?",
+        "answer": "The little children become *weary* and tired, and they can no longer be *merry* or playful.",
+        "category": "most",
+        "badgeTitle": "PHYSICAL STATE",
+        "badgeText": "End of Energy"
+      },
+      {
+        "question": "What natural event marks the end of the children's sports?",
+        "answer": "The descending or setting of the *sun* marks the official *end* of their daily *sports*.",
+        "category": "most",
+        "badgeTitle": "EVENING TIME",
+        "badgeText": "Sunset"
+      },
+      {
+        "question": "Where do the children go when they are tired?",
+        "answer": "The many *sisters* and *brothers* gather round the *laps* of their caring *mothers*.",
+        "category": "most",
+        "badgeTitle": "FAMILY BOND",
+        "badgeText": "Maternal Comfort"
+      },
+      {
+        "question": "What are the children compared to at the end of the poem?",
+        "answer": "The resting children are beautifully compared to *birds* safe in their *nest*.",
+        "category": "most",
+        "badgeTitle": "SIMILE",
+        "badgeText": "Birds in a Nest"
+      },
+      {
+        "question": "What happens to the \"Echoing Green\" at the very end of the poem?",
+        "answer": "As the sports stop and night falls, it changes from an Echoing Green to a *darkening Green*.",
+        "category": "most",
+        "badgeTitle": "ATMOSPHERE SHIFT",
+        "badgeText": "Nightfall"
+      },
+      {
+        "question": "What is the central idea of William Blake's poem?",
+        "answer": "The central idea is the joyful and *harmonious relationship* between beautiful *nature* and *human life*.",
+        "category": "most",
+        "badgeTitle": "CORE CONCEPT",
+        "badgeText": "Harmony"
+      },
+      {
+        "question": "How is the progression of the day used in the central idea?",
+        "answer": "The progression of the day, from bright morning to calm evening, reflects the complete *cycle of life*.",
+        "category": "most",
+        "badgeTitle": "SYMBOLISM",
+        "badgeText": "Life Cycle"
+      },
+      {
+        "question": "What does the word 'descend' mean in the context of the poem?",
+        "answer": "The word descend means to *slope downwards*, referring to the sun setting in the evening.",
+        "category": "most",
+        "badgeTitle": "VOCABULARY",
+        "badgeText": "Glossary Definition"
+      },
+      {
+        "question": "How does the glossary define the word 'thrush'?",
+        "answer": "A thrush is a type of *bird* that has a *brown back* and brown spots on its chest.",
+        "category": "most",
+        "badgeTitle": "VOCABULARY",
+        "badgeText": "Glossary Definition"
+      },
+      {
+        "question": "What activities are taking place on the echoing green?",
+        "answer": "Children are playing joyful *sports*, birds are *singing*, and old folk are *laughing* and sharing memories.",
+        "category": "most",
+        "badgeTitle": "EXERCISE Q1",
+        "badgeText": "Textual Comprehension"
+      },
+      {
+        "question": "How does Blake portray the relationship between nature and human life?",
+        "answer": "Blake portrays it as perfectly *harmonious*, where human happiness and nature's beauty *complement* each other.",
+        "category": "most",
+        "badgeTitle": "EXERCISE Q2",
+        "badgeText": "Deep Analysis"
+      },
+      {
+        "question": "What role do the 'old folk' play in the scene described?",
+        "answer": "The old folk act as a bridge to the *past*, showing the passage of time and adding *wisdom* to the joyful scene.",
+        "category": "most",
+        "badgeTitle": "EXERCISE Q3",
+        "badgeText": "Character Role"
+      },
+      {
+        "question": "What is the significance of the shift from lively activity to quietness?",
+        "answer": "The shift perfectly symbolizes the natural transition from active *youth* to the peaceful rest of *old age*.",
+        "category": "most",
+        "badgeTitle": "EXERCISE Q4",
+        "badgeText": "Thematic Shift"
+      },
+      {
+        "question": "How does the imagery contribute to the tone of the poem?",
+        "answer": "The bright imagery of the morning creates a *cheerful* tone, while the sunset imagery creates a *peaceful* and calm mood.",
+        "category": "most",
+        "badgeTitle": "EXERCISE Q6",
+        "badgeText": "Literary Devices"
+      },
+      {
+        "question": "In what ways does the poem reflect the passage of time?",
+        "answer": "The passage of time is shown through the sun *rising* and *setting*, and the contrast between energetic *children* and resting *elders*.",
+        "category": "most",
+        "badgeTitle": "EXERCISE Q7",
+        "badgeText": "Theme Exploration"
+      },
+      {
+        "question": "What is the mood of the skies when the sun first arises?",
+        "answer": "The rising sun brings light and makes the skies feel *happy*.",
+        "category": "important",
+        "badgeTitle": "TEXTUAL DETAIL",
+        "badgeText": "Morning Atmosphere"
+      },
+      {
+        "question": "Which specific season is welcomed by the ringing of the merry bells?",
+        "answer": "The merry bells are ringing cheerfully to welcome the beautiful season of *Spring*.",
+        "category": "important",
+        "badgeTitle": "TEXTUAL DETAIL",
+        "badgeText": "Seasonal Setting"
+      },
+      {
+        "question": "Where are the birds, like the sky-lark and thrush, sitting while they sing?",
+        "answer": "These singing birds are sitting in the *bush*.",
+        "category": "important",
+        "badgeTitle": "TEXTUAL DETAIL",
+        "badgeText": "Birds' Location"
+      },
+      {
+        "question": "What causes the birds to sing \"louder around\" the green?",
+        "answer": "The birds sing louder to match the *cheerful sound* of the ringing bells.",
+        "category": "important",
+        "badgeTitle": "TEXTUAL DETAIL",
+        "badgeText": "Nature's Harmony"
+      },
+      {
+        "question": "What physical feature of Old John is specifically mentioned by the poet?",
+        "answer": "The poet specifically mentions that Old John has *white hair*.",
+        "category": "important",
+        "badgeTitle": "CHARACTER DESCRIPTION",
+        "badgeText": "Old John's Appearance"
+      },
+      {
+        "question": "Where exactly are Old John and the other elderly people sitting?",
+        "answer": "They are sitting comfortably in the shade *under the oak* tree.",
+        "category": "important",
+        "badgeTitle": "SETTING DETAIL",
+        "badgeText": "The Resting Place"
+      },
+      {
+        "question": "How does Old John deal with his life's worries and cares?",
+        "answer": "Old John does not worry; instead, he simply *laughs away care* while watching the children.",
+        "category": "important",
+        "badgeTitle": "CHARACTER ATTITUDE",
+        "badgeText": "Joyful Perspective"
+      },
+      {
+        "question": "What does the laughter of the old folk indicate about their mood?",
+        "answer": "Their laughter shows they are very *happy* and enjoy watching the children *play*.",
+        "category": "important",
+        "badgeTitle": "EMOTIONAL RESPONSE",
+        "badgeText": "Elders' Joy"
+      },
+      {
+        "question": "How do the old folk describe their own past experiences on the green?",
+        "answer": "They recall that they had the exact same *joys* when they were little *girls and boys*.",
+        "category": "important",
+        "badgeTitle": "NOSTALGIA",
+        "badgeText": "Memories of Youth"
+      },
+      {
+        "question": "What physical feeling causes the little children to stop being merry?",
+        "answer": "The children stop playing because they become very tired and *weary* at the end of the day.",
+        "category": "important",
+        "badgeTitle": "PHYSICAL STATE",
+        "badgeText": "Exhaustion"
+      },
+      {
+        "question": "What exact word does the poet use to describe the sun going down?",
+        "answer": "The poet uses the word \"*descend*\" to describe the sun setting in the evening.",
+        "category": "important",
+        "badgeTitle": "VOCABULARY APPLICATION",
+        "badgeText": "Evening Transition"
+      },
+      {
+        "question": "Who do the tired sisters and brothers gather around for comfort?",
+        "answer": "The tired children gather round the loving *laps* of their caring *mothers*.",
+        "category": "important",
+        "badgeTitle": "FAMILY DYNAMICS",
+        "badgeText": "Maternal Comfort"
+      },
+      {
+        "question": "What does the simile \"Like birds in their nest\" represent in the poem?",
+        "answer": "It represents the children finding ultimate *safety* and *rest* with their mothers at night.",
+        "category": "important",
+        "badgeTitle": "LITERARY DEVICE",
+        "badgeText": "Simile Explanation"
+      },
+      {
+        "question": "What is the final state of the playing field at the very end of the day?",
+        "answer": "As the sun sets and play stops, it becomes a quiet and *darkening Green*.",
+        "category": "important",
+        "badgeTitle": "ATMOSPHERE SHIFT",
+        "badgeText": "The Night's Arrival"
+      },
+      {
+        "question": "How does the poem highlight the wisdom of the elderly characters?",
+        "answer": "It shows their wisdom through their peaceful presence and reflective *memories* of their own *youth*.",
+        "category": "important",
+        "badgeTitle": "THEME EXPLORATION",
+        "badgeText": "Wisdom of Age"
+      },
+      {
+        "question": "What does the bright morning symbolize in the central idea of the text?",
+        "answer": "The bright morning beautifully symbolizes the active, fresh, and energetic start of *youth*.",
+        "category": "important",
+        "badgeTitle": "SYMBOLIC MEANING",
+        "badgeText": "Morning and Youth"
+      },
+      {
+        "question": "What does the calm evening symbolize according to the central idea?",
+        "answer": "The calm evening symbolizes the later, peaceful stages of life and the rest found in *old age*.",
+        "category": "important",
+        "badgeTitle": "SYMBOLIC MEANING",
+        "badgeText": "Evening and Age"
+      },
+      {
+        "question": "How is the word \"cheerful\" defined in the chapter's glossary?",
+        "answer": "Cheerful means being very *happy*, and showing it clearly by the way that you *behave*.",
+        "category": "important",
+        "badgeTitle": "GLOSSARY DEFINITION",
+        "badgeText": "Vocabulary Focus"
+      },
+      {
+        "question": "What is the meaning of the word \"folk\" as given in the textbook?",
+        "answer": "The word folk simply refers to *people in general*.",
+        "category": "important",
+        "badgeTitle": "GLOSSARY DEFINITION",
+        "badgeText": "Vocabulary Focus"
+      },
+      {
+        "question": "What does it mean when the children are described as \"weary\"?",
+        "answer": "Weary means being *very tired*, especially after playing or doing something for a *long time*.",
+        "category": "important",
+        "badgeTitle": "GLOSSARY DEFINITION",
+        "badgeText": "Vocabulary Focus"
+      },
+      {
+        "question": "How is the word \"youth\" defined in the reading material's glossary?",
+        "answer": "Youth is the time of life when a person is *young*, especially before becoming an *adult*.",
+        "category": "important",
+        "badgeTitle": "GLOSSARY DEFINITION",
+        "badgeText": "Vocabulary Focus"
+      },
+      {
+        "question": "What does the word \"merry\" mean according to the provided glossary?",
+        "answer": "The word merry simply means to be very *happy and cheerful*.",
+        "category": "important",
+        "badgeTitle": "GLOSSARY DEFINITION",
+        "badgeText": "Vocabulary Focus"
+      },
+      {
+        "question": "How does the \"echoing\" of the green symbolize continuity between different generations?",
+        "answer": "The joyful shouts of today's playing children perfectly *echo* the identical shouts of the *elders* from their past.",
+        "category": "important",
+        "badgeTitle": "EXERCISE Q5",
+        "badgeText": "Continuity of Life"
+      },
+      {
+        "question": "What modern environmental issues are mentioned that could threaten such green spaces?",
+        "answer": "The text mentions that problems like *global warming*, *deforestation*, and *pollution* can put nature at risk.",
+        "category": "important",
+        "badgeTitle": "ENVIRONMENTAL THEME",
+        "badgeText": "Modern Context"
+      },
+      {
+        "question": "Why is the environment in the poem considered a healthy and thriving one?",
+        "answer": "It is thriving because it features beautiful *flourishing trees*, vibrant *birdlife*, and a safe space for the *community*.",
+        "category": "important",
+        "badgeTitle": "TEXTUAL ANALYSIS",
+        "badgeText": "Environmental Health"
+      },
+      {
+        "question": "What clear images of community life do you notice in the poem?",
+        "answer": "We see energetic *children playing* together and wise *elders sitting* peacefully and sharing stories.",
+        "category": "important",
+        "badgeTitle": "WHILE-READING",
+        "badgeText": "Community Observation"
+      },
+      {
+        "question": "How does Blake describe the connection between the children and the natural world?",
+        "answer": "The children and nature share a *joyful* and deeply *harmonious relationship* full of pure energy.",
+        "category": "important",
+        "badgeTitle": "THEMATIC ANALYSIS",
+        "badgeText": "Man and Nature"
+      },
+      {
+        "question": "Why is this poem considered a beautiful celebration of innocence?",
+        "answer": "It celebrates innocence by focusing entirely on the pure, untroubled *happiness* of young *children*.",
+        "category": "important",
+        "badgeTitle": "CORE CONCEPT",
+        "badgeText": "Theme of Innocence"
+      },
+      {
+        "question": "How do the mothers' actions contrast with the children's daytime activities?",
+        "answer": "While the children were highly *active* all day, the mothers now provide quiet, gentle *rest*.",
+        "category": "important",
+        "badgeTitle": "CHARACTER CONTRAST",
+        "badgeText": "Rest vs. Action"
+      },
+      {
+        "question": "What does the change from an \"Echoing\" to a \"darkening\" green tell us about time?",
+        "answer": "It shows the inevitable *passage of time*, moving from a lively, noisy day into a quiet, peaceful *night*.",
+        "category": "important",
+        "badgeTitle": "SYMBOLIC SHIFT",
+        "badgeText": "The Flow of Time"
+      },
+      {
+        "question": "What feelings usually come to mind when thinking of a green park?",
+        "answer": "Thinking of a green park usually brings wonderful feelings of *peace*, deep *joy*, and fresh *energy*.",
+        "category": "conceptual",
+        "badgeTitle": "PRE-READING",
+        "badgeText": "Personal Connection"
+      },
+      {
+        "question": "Why are green spaces like parks important for people's lives?",
+        "answer": "Green spaces are extremely important for human *happiness*, mental *well‑being*, and staying *physically healthy*.",
+        "category": "conceptual",
+        "badgeTitle": "PRE-READING",
+        "badgeText": "Environmental Value"
+      },
+      {
+        "question": "Why is William Blake described as a \"visionary\" artist?",
+        "answer": "He is called visionary because he uniquely blended his creative *poetry* with his own beautiful *illustrations*.",
+        "category": "conceptual",
+        "badgeTitle": "AUTHOR INSIGHT",
+        "badgeText": "Unique Artistic Talent"
+      },
+      {
+        "question": "How does the rising sun conceptually affect the sky in the poem?",
+        "answer": "The rising sun takes away the dark night and physically makes the morning skies look bright and *happy*.",
+        "category": "conceptual",
+        "badgeTitle": "IMAGERY ANALYSIS",
+        "badgeText": "The Power of Light"
+      },
+      {
+        "question": "What is the conceptual link between the ringing bells and the singing birds?",
+        "answer": "Both the bells and the birds create a beautifully combined, joyful *music* to actively celebrate the *Spring*.",
+        "category": "conceptual",
+        "badgeTitle": "THEMATIC HARMONY",
+        "badgeText": "Nature and Man"
+      },
+      {
+        "question": "Why is the playing field specifically called the \"Echoing\" Green?",
+        "answer": "It is called echoing because the loud, joyful *sounds* of playing children *reflect* and bounce across the open field.",
+        "category": "conceptual",
+        "badgeTitle": "TITLE SIGNIFICANCE",
+        "badgeText": "The Power of Sound"
+      },
+      {
+        "question": "How would global warming negatively affect the scene in the poem?",
+        "answer": "Global warming could destroy the beautiful *trees* and make the green field completely dry and *lifeless*.",
+        "category": "conceptual",
+        "badgeTitle": "WHILE-READING BOX",
+        "badgeText": "Environmental Threat"
+      },
+      {
+        "question": "What negative impact would deforestation have on the \"Echoing Green\"?",
+        "answer": "Cutting down trees would brutally remove the cooling shade for the *elders* and destroy the homes of the singing *birds*.",
+        "category": "conceptual",
+        "badgeTitle": "WHILE-READING BOX",
+        "badgeText": "Loss of Nature"
+      },
+      {
+        "question": "Why does Old John choose to sit specifically \"under the oak\" tree?",
+        "answer": "The strong oak tree provides cooling *shade* and perfectly symbolizes the deep *roots* and enduring strength of the elders.",
+        "category": "conceptual",
+        "badgeTitle": "SYMBOLIC LOCATION",
+        "badgeText": "The Oak Tree"
+      },
+      {
+        "question": "How does the presence of \"white hair\" add deeper meaning to the poem?",
+        "answer": "The white hair visually represents the elders' advanced *age*, their long life experience, and their gained *wisdom*.",
+        "category": "conceptual",
+        "badgeTitle": "CHARACTER SYMBOLISM",
+        "badgeText": "Sign of Aging"
+      },
+      {
+        "question": "Why do the elders laugh instead of being annoyed by the children's loud noise?",
+        "answer": "They do not find it annoying; instead, they feel deep *joy* because the noise brings back their own childhood *memories*.",
+        "category": "conceptual",
+        "badgeTitle": "PSYCHOLOGICAL INSIGHT",
+        "badgeText": "Generational Joy"
+      },
+      {
+        "question": "What does the specific phrase \"laugh away care\" conceptually mean?",
+        "answer": "It means to temporarily forget all of life's daily *worries* and problems by fully enjoying a pure, *happy moment*.",
+        "category": "conceptual",
+        "badgeTitle": "PHRASE MEANING",
+        "badgeText": "Escaping Worries"
+      },
+      {
+        "question": "Why do the energetic little ones eventually become \"weary\"?",
+        "answer": "They become weary because playing active *sports* all day long completely drains their physical *energy*.",
+        "category": "conceptual",
+        "badgeTitle": "CAUSE AND EFFECT",
+        "badgeText": "Physical Exhaustion"
+      },
+      {
+        "question": "How does the descending sun control the children's daily actions?",
+        "answer": "The setting sun brings darkness, signaling to the children that it is naturally time to *stop playing* and go *home*.",
+        "category": "conceptual",
+        "badgeTitle": "NATURE'S CLOCK",
+        "badgeText": "Sunset Signal"
+      },
+      {
+        "question": "What is the conceptual similarity between the human mothers and the bird nests?",
+        "answer": "Both the mothers' laps and the bird nests provide a warm, secure, and completely *safe place* for resting at night.",
+        "category": "conceptual",
+        "badgeTitle": "DEEP COMPARISON",
+        "badgeText": "Ultimate Protection"
+      },
+      {
+        "question": "Why does the green change its name from \"echoing\" to \"darkening\"?",
+        "answer": "It becomes darkening because the *sun* has set and all the noisy children have left the field to go to *sleep*.",
+        "category": "conceptual",
+        "badgeTitle": "ATMOSPHERIC CHANGE",
+        "badgeText": "The Silence of Night"
+      },
+      {
+        "question": "How do the images of the sitting elders perfectly reflect the theme of age?",
+        "answer": "Sitting quietly and just watching others play shows the physical *slowdown* and peaceful reflection that comes with *old age*.",
+        "category": "conceptual",
+        "badgeTitle": "WHILE-READING BOX",
+        "badgeText": "Reflection of Aging"
+      },
+      {
+        "question": "How does the poem conceptually link a human lifetime to a single day?",
+        "answer": "The bright morning represents energetic *youth*, while the fading evening beautifully represents the quiet rest of *old age*.",
+        "category": "conceptual",
+        "badgeTitle": "CENTRAL IDEA",
+        "badgeText": "The Day as a Lifetime"
+      },
+      {
+        "question": "What is the conceptual meaning of a \"harmonious relationship\" in the text?",
+        "answer": "It means humans and nature exist together peacefully, fully supporting each other's *happiness* and natural *beauty*.",
+        "category": "conceptual",
+        "badgeTitle": "THEME EXPLORATION",
+        "badgeText": "Perfect Balance"
+      },
+      {
+        "question": "Why is the shift to complete quietness at the end of the poem significant?",
+        "answer": "It peacefully highlights the inevitable end of the day, reflecting the calm *acceptance* of life's final *stages*.",
+        "category": "conceptual",
+        "badgeTitle": "EXERCISE Q4 INSIGHT",
+        "badgeText": "Acceptance of Endings"
+      },
+      {
+        "question": "How does the poem reflect the unbreakable cycles of the natural world?",
+        "answer": "It shows the continuous, repeating cycle of the *sun rising* to bring life, and later *setting* to bring necessary rest.",
+        "category": "conceptual",
+        "badgeTitle": "EXERCISE Q8 INSIGHT",
+        "badgeText": "Nature's Rhythm"
+      },
+      {
+        "question": "What is the subtle difference between being \"cheerful\" and being \"merry\" in the glossary?",
+        "answer": "Both mean happy, but cheerful is showing it clearly in your *behavior*, while merry often involves lively *celebration*.",
+        "category": "conceptual",
+        "badgeTitle": "VOCABULARY NUANCE",
+        "badgeText": "Glossary Comparison"
+      },
+      {
+        "question": "Why might Blake have capitalized words like \"Spring\" and \"Green\" in his poem?",
+        "answer": "He likely capitalized them to highlight them as major, living *characters* that bring incredible joy to the entire *community*.",
+        "category": "conceptual",
+        "badgeTitle": "GRAMMAR/STYLE CONCEPT",
+        "badgeText": "Importance of Nature"
+      },
+      {
+        "question": "How does pollution act as a hidden threat to the \"Echoing Green\"?",
+        "answer": "Pollution can easily poison the fresh air and ruin the *healthy environment* that the young children desperately need to *play*.",
+        "category": "conceptual",
+        "badgeTitle": "MODERN APPLICATION",
+        "badgeText": "Protecting the Green"
+      },
+      {
+        "question": "What invisible string connects the \"girls & boys\" of the past to the present children?",
+        "answer": "They are intimately connected by the shared historical *experience* of playing joyful sports on the exact same *field*.",
+        "category": "conceptual",
+        "badgeTitle": "HISTORICAL CONNECTION",
+        "badgeText": "Shared Experiences"
+      },
+      {
+        "question": "What does the sturdy oak tree symbolize for the resting old folk?",
+        "answer": "The strong oak tree beautifully symbolizes *protection*, endurance, and acts as a sheltering umbrella for the *elderly* generation.",
+        "category": "conceptual",
+        "badgeTitle": "HIDDEN SYMBOLISM",
+        "badgeText": "Strength in Age"
+      },
+      {
+        "question": "Why are the children's daily activities referred to as \"sports\" instead of just \"games\"?",
+        "answer": "The word \"sports\" strongly implies active, physical *energy* and lively movement that perfectly suits the vibrant season of *spring*.",
+        "category": "conceptual",
+        "badgeTitle": "WORD CHOICE ANALYSIS",
+        "badgeText": "Energy of Youth"
+      },
+      {
+        "question": "How does the overall mood of the poem physically change from beginning to end?",
+        "answer": "The mood shifts very smoothly from highly *energetic* and beautifully loud to perfectly *peaceful* and deeply quiet.",
+        "category": "conceptual",
+        "badgeTitle": "STRUCTURAL ANALYSIS",
+        "badgeText": "Shifting Tones"
+      },
+      {
+        "question": "If the echoing green represents active life, what does the \"darkening\" conceptually represent?",
+        "answer": "The darkening green conceptually represents the quiet closing of a life cycle, bringing the ultimate, peaceful *rest* of *death*.",
+        "category": "conceptual",
+        "badgeTitle": "DEEP METAPHOR",
+        "badgeText": "The Final Rest"
+      },
+      {
+        "question": "Why is the memory of the elders so crucial to the poem's meaning?",
+        "answer": "Their memories prove that the cycle of joy is *unbroken*, passing seamlessly from one *generation* to the next.",
+        "category": "conceptual",
+        "badgeTitle": "CORE MEANING",
+        "badgeText": "Unbroken Cycles"
+      }
+    ],
+    "8": [
+      {
+        "question": "How much of the human body and the earth's surface is made up of water?",
+        "answer": "The human body consists of about *60%* water. At the same time, water covers approximately *70 percent* of our planet.",
+        "category": "most",
+        "badgeTitle": "VITAL STATISTIC",
+        "badgeText": "The abundance of water in life forms."
+      },
+      {
+        "question": "What percentage of the earth's water is fresh and available for use?",
+        "answer": "Only *3%* of the earth's water is fresh water. Out of this extremely small amount, only *one third* is readily available for human use.",
+        "category": "most",
+        "badgeTitle": "RESOURCE SCARCITY",
+        "badgeText": "The limited supply of usable freshwater."
+      },
+      {
+        "question": "What factors are currently threatening our clean water resources?",
+        "answer": "The changing patterns of *climate* and continuous *human activity* are posing major threats to our clean water resources. We are also consuming water much *faster* than it precipitates back to the ground.",
+        "category": "most",
+        "badgeTitle": "HUMAN IMPACT",
+        "badgeText": "The negative effects of modern consumption."
+      },
+      {
+        "question": "Why is clean water considered strictly vital for daily human life?",
+        "answer": "Clean water is strictly vital because we need it for safe *drinking*, *cooking*, proper *sanitation*, and maintaining basic *hygiene*. It is considered a major cornerstone for public health and environmental sustainability.",
+        "category": "most",
+        "badgeTitle": "DAILY NECESSITY",
+        "badgeText": "Basic human needs dependent on water."
+      },
+      {
+        "question": "What harmful elements can be found in contaminated water?",
+        "answer": "Contaminated water can hold dangerous *bacteria*, *viruses*, harmful *parasites*, and toxic *chemicals*. These hidden elements are the primary cause of many severe health issues.",
+        "category": "most",
+        "badgeTitle": "HEALTH HAZARD",
+        "badgeText": "Microscopic dangers in unclean water."
+      },
+      {
+        "question": "Which severe diseases are directly caused by drinking contaminated water?",
+        "answer": "Drinking dirty water can cause dangerous waterborne diseases such as *cholera*, *typhoid*, *dysentery*, and *hepatitis*. These illnesses can have very severe and sometimes fatal consequences.",
+        "category": "most",
+        "badgeTitle": "WATERBORNE DISEASES",
+        "badgeText": "Common infections from polluted sources."
+      },
+      {
+        "question": "Who are the most vulnerable populations when it comes to waterborne diseases?",
+        "answer": "The groups most at risk from these severe diseases include young *children*, *pregnant women*, and the *elderly people*. Their conditions make them highly susceptible to fatal infections.",
+        "category": "most",
+        "badgeTitle": "AT-RISK GROUPS",
+        "badgeText": "Protecting the weak in society."
+      },
+      {
+        "question": "What is the annual death toll from diarrhea according to the World Health Organization?",
+        "answer": "The WHO reports that around *829,000 people* die every single year from diarrhea. This is mainly caused by drinking *contaminated water*, poor sanitation, and bad hand hygiene.",
+        "category": "most",
+        "badgeTitle": "MORTALITY RATE",
+        "badgeText": "The fatal consequences of poor sanitation."
+      },
+      {
+        "question": "How many people globally lack access to safe drinking and sanitation services?",
+        "answer": "Worldwide, around *2.2 billion* people do not have safe drinking water services. Furthermore, a massive *4.2 billion* people lack access to safely managed sanitation services.",
+        "category": "most",
+        "badgeTitle": "GLOBAL CRISIS",
+        "badgeText": "The massive scale of water deprivation."
+      },
+      {
+        "question": "Why do many children tragically die before reaching their fifth birthday?",
+        "answer": "Many young children lose their lives early due to a strict lack of access to *clean water* and proper *sanitation*. They are highly vulnerable to illnesses spread in contaminated areas.",
+        "category": "most",
+        "badgeTitle": "CHILD MORTALITY",
+        "badgeText": "The tragic cost of unsafe environments."
+      },
+      {
+        "question": "What simple daily practice can significantly improve overall public health?",
+        "answer": "Regular *handwashing* using clean water and *soap* can easily prevent the spread of dangerous infections. This simple daily habit greatly improves the overall public health of a community.",
+        "category": "most",
+        "badgeTitle": "DISEASE PREVENTION",
+        "badgeText": "Basic hygiene for community safety."
+      },
+      {
+        "question": "How do water ecosystems like rivers and lakes depend on clean water?",
+        "answer": "Natural bodies like rivers, lakes, and wetlands strictly depend on clean water to support *diverse wildlife* and various *plant species*. Without it, the delicate balance of nature is completely disrupted.",
+        "category": "most",
+        "badgeTitle": "ECOSYSTEM SURVIVAL",
+        "badgeText": "Nature's reliance on pure water."
+      },
+      {
+        "question": "What are the major causes of water pollution mentioned in the text?",
+        "answer": "The text highlights pollution originating from *industrial activities*, *agricultural runoff*, and *improper waste disposal*. These careless practices degrade and harm all aquatic life.",
+        "category": "most",
+        "badgeTitle": "POLLUTION SOURCES",
+        "badgeText": "Human activities destroying aquatic habitats."
+      },
+      {
+        "question": "Which dangerous pollutants can accumulate in water bodies and pose environmental risks?",
+        "answer": "Harmful pollutants such as *heavy metals*, toxic *chemicals*, and agricultural *pesticides* can easily accumulate in water bodies. These create massive risks for both the environment and human health.",
+        "category": "most",
+        "badgeTitle": "TOXIC ACCUMULATION",
+        "badgeText": "Chemical threats in water systems."
+      },
+      {
+        "question": "How does inadequate access to clean water affect agricultural productivity?",
+        "answer": "Inadequate clean water directly hinders agricultural productivity because farmers cannot properly maintain *irrigation*, *livestock watering*, and general *crop production*. This struggle leads to major farming failures.",
+        "category": "most",
+        "badgeTitle": "FOOD SECURITY",
+        "badgeText": "The link between farming and water supply."
+      },
+      {
+        "question": "What are the economic consequences of farmers struggling to grow crops due to water scarcity?",
+        "answer": "When farmers cannot grow crops, it leads to severe *food shortages* and a sudden increase in *food prices*. This negatively affects both local and global economic markets.",
+        "category": "most",
+        "badgeTitle": "ECONOMIC HARDSHIP",
+        "badgeText": "Market instability from agricultural failure."
+      },
+      {
+        "question": "What kind of economic burden do governments face regarding poor water quality?",
+        "answer": "Governments face a substantial economic burden from the high costs of treating *waterborne diseases*. They also have to spend massive amounts of money managing *water pollution*.",
+        "category": "most",
+        "badgeTitle": "FINANCIAL DRAIN",
+        "badgeText": "The hidden costs of contaminated water."
+      },
+      {
+        "question": "How does investing in clean water infrastructure benefit a community?",
+        "answer": "Making solid investments in clean water infrastructure not only greatly improves overall *public health* but also strongly fosters *economic stability* and continuous growth. It is a necessary step for development.",
+        "category": "most",
+        "badgeTitle": "INFRASTRUCTURE BENEFITS",
+        "badgeText": "Long-term gains from proper funding."
+      },
+      {
+        "question": "Which factors are heavily exacerbating the issues of water scarcity in developing countries?",
+        "answer": "The issues of severe water scarcity are made much worse by rapid *population growth*, ongoing *climate change*, and extreme *pollution*. These factors put a huge strain on highly limited resources.",
+        "category": "most",
+        "badgeTitle": "EXACERBATING FACTORS",
+        "badgeText": "Amplifiers of the water crisis."
+      },
+      {
+        "question": "How exactly does climate change negatively alter freshwater availability?",
+        "answer": "Climate change can drastically alter normal *precipitation patterns* around the globe. This abnormal change directly leads to severe *droughts* and significantly reduces the availability of freshwater resources.",
+        "category": "most",
+        "badgeTitle": "CLIMATE IMPACT",
+        "badgeText": "Weather changes destroying water supplies."
+      },
+      {
+        "question": "Who must work together to effectively address global water challenges?",
+        "answer": "A collaborative effort is required from *governments*, active *policymakers*, *international organizations*, and local *communities*. They must unite to successfully improve water infrastructure and sustainable use.",
+        "category": "most",
+        "badgeTitle": "COLLABORATIVE EFFORT",
+        "badgeText": "Unity required for global solutions."
+      },
+      {
+        "question": "What are some effective community-based initiatives to improve access to clean drinking water?",
+        "answer": "Local communities can start highly effective initiatives such as *rainwater harvesting*, *water conservation*, and proper *watershed management*. These play a crucial role in providing safe, clean drinking water.",
+        "category": "most",
+        "badgeTitle": "LOCAL INITIATIVES",
+        "badgeText": "Grassroots methods for water saving."
+      },
+      {
+        "question": "Why is education considered a key component in improving water access and quality?",
+        "answer": "Education empowers individuals by teaching them the importance of proper *sanitation practices* and active *pollution prevention*. It highly motivates them to take real action and protect their local water sources.",
+        "category": "most",
+        "badgeTitle": "POWER OF AWARENESS",
+        "badgeText": "Knowledge as a tool for preservation."
+      },
+      {
+        "question": "What specific physical initiatives can have a profound impact on underserved areas?",
+        "answer": "Supporting physical initiatives like building fresh *wells* and constructing new *water treatment facilities* helps underserved areas greatly. This brings a profound positive impact on their public health and overall quality of life.",
+        "category": "most",
+        "badgeTitle": "TARGETED SUPPORT",
+        "badgeText": "Helping communities in strict need."
+      },
+      {
+        "question": "What is the main cause and effect relationship regarding water usage mentioned early in the text?",
+        "answer": "The main cause is that humans are actively using water at a *rate faster* than it falls back to the ground. The dangerous effect is that our vital *clean resources* of water are being severely threatened.",
+        "category": "most",
+        "badgeTitle": "CONSUMPTION IMBALANCE",
+        "badgeText": "Using more than nature replaces."
+      },
+      {
+        "question": "What is the overarching theme of the \"Clean Water\" lesson regarding achieving global prosperity?",
+        "answer": "The lesson emphasizes that ensuring universal access to clean water is not just a basic public health issue, but a critical step toward achieving true *global prosperity* and complete human *well‑being*.",
+        "category": "most",
+        "badgeTitle": "CORE THEME",
+        "badgeText": "Water as the foundation of a successful world."
+      },
+      {
+        "question": "What crucial role does water play inside the human body?",
+        "answer": "Water constitutes about *60%* of the human body and plays a *crucial role* in safely maintaining various normal *bodily functions*.",
+        "category": "important",
+        "badgeTitle": "INTERNAL MECHANISM",
+        "badgeText": "The biological necessity of hydration."
+      },
+      {
+        "question": "What specific part of the earth's water supports all life on land?",
+        "answer": "Only *one third* of the *3% freshwater* is readily available for use, and this extremely *small fraction* strictly supports all life on land.",
+        "category": "important",
+        "badgeTitle": "FRAGILE BALANCE",
+        "badgeText": "The tiny margin of life‑sustaining water."
+      },
+      {
+        "question": "Besides human beings, who else is suffering from the mistreatment of water?",
+        "answer": "Because we mistreat our limited water, not only are human beings at risk, but the *whole ecosystem* is also actively *suffering*.",
+        "category": "important",
+        "badgeTitle": "ENVIRONMENTAL HARM",
+        "badgeText": "The widespread damage of human negligence."
+      },
+      {
+        "question": "How do current human patterns affect the global climate?",
+        "answer": "Dangerous human patterns of consumption and heavy pollution are *drastically affecting* the overall rate of global *climate change*.",
+        "category": "important",
+        "badgeTitle": "GLOBAL IMPACT",
+        "badgeText": "Human actions driving severe weather shifts."
+      },
+      {
+        "question": "What can understanding the challenges associated with clean water foster among people?",
+        "answer": "It can easily foster a much greater *appreciation* for this precious resource and deeply *inspire efforts* to ensure its global availability for all.",
+        "category": "important",
+        "badgeTitle": "POSITIVE AWARENESS",
+        "badgeText": "Turning knowledge into helpful action."
+      },
+      {
+        "question": "What happens to communities living in areas where water is extremely scarce?",
+        "answer": "In these dry areas, people are sadly *less likely* to practise *good hygiene*, which directly leads to much *higher rates* of severe illness.",
+        "category": "important",
+        "badgeTitle": "HYGIENE CRISIS",
+        "badgeText": "The domino effect of dry regions."
+      },
+      {
+        "question": "How do industrial activities specifically disrupt delicate natural ecosystems?",
+        "answer": "Heavy pollution from industries can quickly degrade aquatic life, leading to massive declines in *fish populations* and the complete *loss of habitat* for other species.",
+        "category": "important",
+        "badgeTitle": "AQUATIC DESTRUCTION",
+        "badgeText": "Factories destroying underwater homes."
+      },
+      {
+        "question": "How does inadequate waste management complicate the environmental situation?",
+        "answer": "Inadequate waste management allows dangerous pollutants to deeply *accumulate* in water bodies, posing major, long‑term risks to the *environment* and public health.",
+        "category": "important",
+        "badgeTitle": "TOXIC BUILD‑UP",
+        "badgeText": "The deadly result of improper garbage disposal."
+      },
+      {
+        "question": "Why is clean water strictly vital for the survival of livestock?",
+        "answer": "Farmers heavily rely on clean water for daily *livestock watering*. Without it, they cannot successfully raise animals, leading to major *economic hardships*.",
+        "category": "important",
+        "badgeTitle": "ANIMAL FARMING",
+        "badgeText": "Water's role in the meat and dairy supply."
+      },
+      {
+        "question": "What kind of approach is required to properly address global water challenges?",
+        "answer": "Addressing these huge challenges strictly requires a *multifaceted approach* that strongly incorporates *sustainable solutions* and active community engagement.",
+        "category": "important",
+        "badgeTitle": "COMPLEX SOLUTIONS",
+        "badgeText": "Tackling the problem from all sides."
+      },
+      {
+        "question": "What are the specific environmental challenges faced by arid and semi-arid regions?",
+        "answer": "In these extremely dry regions, water sources are highly *limited*, making it terribly difficult to simply meet the daily needs of *growing populations*.",
+        "category": "important",
+        "badgeTitle": "DESERTIFICATION",
+        "badgeText": "The struggle of living in dry climates."
+      },
+      {
+        "question": "How can investments in technology help solve the modern water crisis?",
+        "answer": "Continuous investments in *purification technologies* and modern research can help scientists easily develop highly *innovative solutions* for safe water treatment.",
+        "category": "important",
+        "badgeTitle": "SCIENTIFIC PROGRESS",
+        "badgeText": "Using engineering to clean water."
+      },
+      {
+        "question": "What specific actions can proper education empower regular individuals to take?",
+        "answer": "Education empowers individuals to easily take positive action, fully *protect* their local water sources, and practice safe, proper *sanitation*.",
+        "category": "important",
+        "badgeTitle": "EMPOWERMENT",
+        "badgeText": "Teaching people to save themselves."
+      },
+      {
+        "question": "According to the lesson, what is the exact definition of \"fundamental\" in the context of water?",
+        "answer": "In the context of the lesson, the word \"fundamental\" means highly *essential* or strictly *necessary* for the very *survival* of all life forms.",
+        "category": "important",
+        "badgeTitle": "VOCABULARY FOCUS",
+        "badgeText": "Understanding core lesson terms."
+      },
+      {
+        "question": "What is the contextual meaning of the word \"mistreat\" regarding natural water?",
+        "answer": "In the lesson, to \"mistreat\" water means to carelessly *abuse* it or wrongly use it without any proper *conservation* or respect.",
+        "category": "important",
+        "badgeTitle": "VOCABULARY FOCUS",
+        "badgeText": "The harsh reality of human behavior."
+      },
+      {
+        "question": "How is the word \"vital\" used when describing clean water for daily drinking?",
+        "answer": "The word \"vital\" is used to strongly emphasize that clean water is strictly *essential* and absolutely *indispensable* for living a healthy life.",
+        "category": "important",
+        "badgeTitle": "VOCABULARY FOCUS",
+        "badgeText": "Highlighting absolute necessity."
+      },
+      {
+        "question": "What does \"incidence\" refer to in the context of spreading waterborne diseases?",
+        "answer": "The word \"incidence\" refers to the frequent *occurrence* or the rising rate at which these dangerous diseases *happen* within a community.",
+        "category": "important",
+        "badgeTitle": "VOCABULARY FOCUS",
+        "badgeText": "Measuring the spread of illness."
+      },
+      {
+        "question": "What does it mean when the text says pollution can \"disrupt\" delicate ecosystems?",
+        "answer": "To \"disrupt\" means to terribly *disturb* or forcefully interrupt the natural, normal *balance* of the delicate environment.",
+        "category": "important",
+        "badgeTitle": "VOCABULARY FOCUS",
+        "badgeText": "Breaking the chain of nature."
+      },
+      {
+        "question": "What is the exact meaning of \"implications\" regarding the availability of clean water?",
+        "answer": "The word \"implications\" deeply refers to the major *consequences* or the highly significant *effects* that water availability has on the economy.",
+        "category": "important",
+        "badgeTitle": "VOCABULARY FOCUS",
+        "badgeText": "The hidden results of water loss."
+      },
+      {
+        "question": "Why are young children specifically described as \"vulnerable\" to waterborne diseases?",
+        "answer": "Children are \"vulnerable\" because their bodies are highly *susceptible* and completely *unprotected* against dangerous, microscopic infections.",
+        "category": "important",
+        "badgeTitle": "VOCABULARY FOCUS",
+        "badgeText": "Identifying the weakest victims."
+      },
+      {
+        "question": "What is the direct cause mentioned in the text for higher rates of illness and disease?",
+        "answer": "The direct cause is that in areas where water is scarce, people are terribly *less likely* to safely practise *good hygiene*.",
+        "category": "important",
+        "badgeTitle": "CAUSE AND EFFECT",
+        "badgeText": "The link between dirt and disease."
+      },
+      {
+        "question": "How does the cause-and-effect relationship of poor hygiene support the author's main argument?",
+        "answer": "It perfectly supports the argument by proving that a strict lack of clean water directly *destroys public health* and heavily demands immediate global *intervention*.",
+        "category": "important",
+        "badgeTitle": "CRITICAL THINKING",
+        "badgeText": "Analyzing the writer's purpose."
+      },
+      {
+        "question": "According to the final paragraph, what is a critical step towards global prosperity?",
+        "answer": "Ensuring safe, *clean water* for every single person is an absolutely *critical step* towards achieving true global prosperity and total well‑being.",
+        "category": "important",
+        "badgeTitle": "FINAL CONCLUSION",
+        "badgeText": "The ultimate goal for humanity."
+      },
+      {
+        "question": "What specific actions heavily advocate for protecting water sources in the core theme?",
+        "answer": "The theme strongly advocates for increased *education*, higher public *awareness*, and smart, sustainable *practices* to fully protect water sources.",
+        "category": "important",
+        "badgeTitle": "CORE THEME ANALYSIS",
+        "badgeText": "Summarizing the message."
+      },
+      {
+        "question": "How do modern agricultural practices heavily complicate the issue of water contamination?",
+        "answer": "Unsafe agricultural practices, like the heavy use of chemical *pesticides*, create dangerous runoff that directly *pollutes* nearby clean water bodies.",
+        "category": "important",
+        "badgeTitle": "FARMING DANGERS",
+        "badgeText": "How growing food can poison water."
+      },
+      {
+        "question": "Why is safely managed sanitation strictly considered just as important as safe drinking water?",
+        "answer": "Safe sanitation safely removes *harmful waste*, completely stopping dangerous *bacteria and viruses* from naturally entering the main drinking supply.",
+        "category": "important",
+        "badgeTitle": "WASTE MANAGEMENT",
+        "badgeText": "The invisible shield of public health."
+      },
+      {
+        "question": "Why is water generally considered essential for daily human life?",
+        "answer": "Water is essential because almost every single daily activity involves its use. Our bodies need it to maintain basic *bodily functions*, and we strictly rely on it to *survive*.",
+        "category": "conceptual",
+        "badgeTitle": "DAILY DEPENDENCY",
+        "badgeText": "The inescapable need for hydration."
+      },
+      {
+        "question": "Do all people around the globe have equal access to clean water?",
+        "answer": "No, access is definitely *not universal*. Many regions, especially in developing countries, deeply struggle with extreme *water scarcity* and dangerous *contamination*.",
+        "category": "conceptual",
+        "badgeTitle": "GLOBAL INEQUALITY",
+        "badgeText": "The unfair distribution of basic resources."
+      },
+      {
+        "question": "How does a sudden water shortage usually affect a normal daily routine?",
+        "answer": "A water shortage heavily disrupts daily routines by making it impossible to perform basic *cooking*, safely drink, or properly maintain personal *hygiene* and sanitation.",
+        "category": "conceptual",
+        "badgeTitle": "DAILY DISRUPTION",
+        "badgeText": "The immediate halt of normal life."
+      },
+      {
+        "question": "How do reckless human activities directly impact the natural availability of clean water?",
+        "answer": "Human activities wildly increase *climate change* and create massive pollution through *industrial waste* and bad agricultural runoff, which actively destroy fresh water.",
+        "category": "conceptual",
+        "badgeTitle": "HUMAN DESTRUCTION",
+        "badgeText": "Our direct role in ruining nature."
+      },
+      {
+        "question": "Why must governments and local communities deeply collaborate on water challenges?",
+        "answer": "They must collaborate because solving these massive issues strictly requires a *multifaceted approach*. Working together ensures better *infrastructure* and truly sustainable water use.",
+        "category": "conceptual",
+        "badgeTitle": "UNITED FRONT",
+        "badgeText": "Teamwork for survival."
+      },
+      {
+        "question": "Why is proper education actively considered a key component in improving water quality?",
+        "answer": "Education is key because it successfully *empowers individuals* to understand the high importance of sanitation. It teaches them how to actively *prevent pollution*.",
+        "category": "conceptual",
+        "badgeTitle": "KNOWLEDGE IS POWER",
+        "badgeText": "Learning to save the environment."
+      },
+      {
+        "question": "Why is it important to carefully distinguish between fact and opinion when reading informational texts?",
+        "answer": "Distinguishing these helps a reader fully grasp the true *evidence‑based* reality of a crisis, rather than just believing personal *biases* or generalized statements.",
+        "category": "conceptual",
+        "badgeTitle": "CRITICAL READING",
+        "badgeText": "Finding the truth in texts."
+      },
+      {
+        "question": "What specific community-based initiatives are mentioned in the text for improving water access?",
+        "answer": "The text specifically mentions local initiatives like *rainwater harvesting*, daily *water conservation*, and proper *watershed management*.",
+        "category": "conceptual",
+        "badgeTitle": "GRASSROOTS ACTION",
+        "badgeText": "Small steps for huge changes."
+      },
+      {
+        "question": "How exactly can investing in clean water infrastructure contribute to overall global prosperity?",
+        "answer": "Such investments actively reduce the heavy cost of diseases and strongly foster *economic stability*. Healthy people safely lead to a much more *prosperous world*.",
+        "category": "conceptual",
+        "badgeTitle": "ECONOMIC HEALTH",
+        "badgeText": "The financial gain of pure water."
+      },
+      {
+        "question": "What is the severe effect of humans using water at a rate faster than it precipitates?",
+        "answer": "The severe effect is that our highly vital *clean resources* are actively being threatened, leading to dangerous global *scarcity*.",
+        "category": "conceptual",
+        "badgeTitle": "DEPLETION RATE",
+        "badgeText": "Draining the earth dry."
+      },
+      {
+        "question": "How does the fact that we use water too fast support the author's main argument?",
+        "answer": "It perfectly proves the author's strong argument that human behavior is highly *unsustainable* and strictly demands immediate *conservation efforts*.",
+        "category": "conceptual",
+        "badgeTitle": "AUTHOR'S LOGIC",
+        "badgeText": "Proving the need for change."
+      },
+      {
+        "question": "What is the hidden mathematical reality about the fresh water available for land life?",
+        "answer": "While the earth is 70% water, only *3%* is fresh. Shockingly, only *one third* of that tiny 3% is actually available for all land life to safely use.",
+        "category": "conceptual",
+        "badgeTitle": "SHOCKING STATISTICS",
+        "badgeText": "The terrifying reality of numbers."
+      },
+      {
+        "question": "Why are human beings not the only ones strictly at risk due to water misuse?",
+        "answer": "We are not alone because rivers and lakes completely depend on clean water. Because of our pollution, the delicate *aquatic life* and the entire *ecosystem* are deeply suffering.",
+        "category": "conceptual",
+        "badgeTitle": "SHARED PLANET",
+        "badgeText": "How our mistakes hurt animals."
+      },
+      {
+        "question": "How does contaminated water act as a hidden harbor for invisible danger?",
+        "answer": "It secretly acts as a harbor because it safely holds dangerous, invisible *bacteria*, deadly *viruses*, and harmful *chemicals* that look completely normal to the naked eye.",
+        "category": "conceptual",
+        "badgeTitle": "INVISIBLE KILLERS",
+        "badgeText": "The hidden threat in a glass."
+      },
+      {
+        "question": "According to the WHO, what three specific combined factors cause deadly diarrhea?",
+        "answer": "The WHO states that diarrhea is fatally caused by a deadly combination of contaminated *drinking water*, poor *sanitation*, and a terrible lack of *hand hygiene*.",
+        "category": "conceptual",
+        "badgeTitle": "LETHAL COMBINATION",
+        "badgeText": "The trinity of poor health."
+      },
+      {
+        "question": "What is the exact difference in the number of people lacking safe drinking water versus safe sanitation?",
+        "answer": "A massive *2.2 billion* people completely lack safe drinking water, while an even larger *4.2 billion* people lack access to safely managed sanitation services.",
+        "category": "conceptual",
+        "badgeTitle": "DATA COMPARISON",
+        "badgeText": "The massive gap in global facilities."
+      },
+      {
+        "question": "Why are wetlands specifically mentioned as ecosystems that depend heavily on clean water?",
+        "answer": "Wetlands are specifically mentioned because they strictly support highly *diverse wildlife* and unique *plant species* that cannot simply survive in polluted environments.",
+        "category": "conceptual",
+        "badgeTitle": "NATURE'S NURSERIES",
+        "badgeText": "Protecting vital natural zones."
+      },
+      {
+        "question": "How does agricultural runoff secretly degrade the delicate underwater environment?",
+        "answer": "Agricultural runoff contains heavy *pesticides* that wash into lakes. These chemicals silently *accumulate* in water bodies, permanently destroying natural habitats.",
+        "category": "conceptual",
+        "badgeTitle": "FARMING FALLOUT",
+        "badgeText": "The toxic wash from crop fields."
+      },
+      {
+        "question": "What is the hidden economic link between a lack of water and global market prices?",
+        "answer": "Without water, local crops quickly fail, creating massive *food shortages*. This sudden lack of food immediately causes market prices to *increase globally*.",
+        "category": "conceptual",
+        "badgeTitle": "SUPPLY AND DEMAND",
+        "badgeText": "How dry farms make food expensive."
+      },
+      {
+        "question": "Why is water access uniquely difficult in arid and semi-arid regions compared to other places?",
+        "answer": "In arid regions, natural water sources are already strictly *limited*. When combined with rapid *population growth*, meeting daily basic needs becomes nearly impossible.",
+        "category": "conceptual",
+        "badgeTitle": "DESERT SURVIVAL",
+        "badgeText": "The extreme challenge of dry lands."
+      },
+      {
+        "question": "What specific type of scientific research does the author suggest to manage the water crisis?",
+        "answer": "The author strongly suggests investing in modern research for new *purification technologies* to develop highly *innovative solutions* for safe water treatment.",
+        "category": "conceptual",
+        "badgeTitle": "SCIENCE TO THE RESCUE",
+        "badgeText": "Inventing our way out of the crisis."
+      },
+      {
+        "question": "How does building simple wells have a profound hidden impact on a community's quality of life?",
+        "answer": "Building wells gives a community direct access to clean water, which instantly stops deadly *diseases* and completely transforms their overall *public health*.",
+        "category": "conceptual",
+        "badgeTitle": "LIFE-CHANGING STRUCTURES",
+        "badgeText": "The power of accessible wells."
+      },
+      {
+        "question": "What is the ultimate conceptual link between clean water and global well-being at the end of the lesson?",
+        "answer": "The lesson concludes that clean water is not just a health issue; it is the absolute *fundamental resource* needed to guarantee true global *prosperity*.",
+        "category": "conceptual",
+        "badgeTitle": "ULTIMATE TRUTH",
+        "badgeText": "Water is wealth."
+      },
+      {
+        "question": "How do changing precipitation patterns directly create severe, long-lasting droughts?",
+        "answer": "When climate change heavily alters normal rain cycles, areas receive far *less rain* than normal, severely reducing *freshwater resources* and causing droughts.",
+        "category": "conceptual",
+        "badgeTitle": "WEATHER CHAOS",
+        "badgeText": "The dry spell of climate change."
+      },
+      {
+        "question": "What happens when people are properly educated and physically empowered to protect their water sources?",
+        "answer": "When actively empowered, regular individuals will take direct, *meaningful action* to safely protect their community and firmly strictly stop *pollution*.",
+        "category": "conceptual",
+        "badgeTitle": "COMMUNITY ACTION",
+        "badgeText": "The result of good teaching."
+      },
+      {
+        "question": "Why is the economic burden of waterborne diseases a major problem for local governments?",
+        "answer": "It is a major problem because governments must waste massive funds on *medical treatments* instead of using that money to build better *infrastructure*.",
+        "category": "conceptual",
+        "badgeTitle": "FINANCIAL TRAP",
+        "badgeText": "Wasting money on preventable sickness."
+      },
+      {
+        "question": "How do heavy metals uniquely pose a long-term risk to the natural environment?",
+        "answer": "Unlike normal waste, heavy metals continuously *accumulate* inside water bodies over time, causing permanent toxic damage to both *human health* and nature.",
+        "category": "conceptual",
+        "badgeTitle": "PERMANENT POISON",
+        "badgeText": "The lasting damage of industrial metals."
+      },
+      {
+        "question": "Why is proper waste disposal just as critical as stopping industrial pollution?",
+        "answer": "Improper waste easily leaches into the ground, completely *degrading* pure aquatic life and thoroughly *disrupting* the delicate natural ecosystems.",
+        "category": "conceptual",
+        "badgeTitle": "TRASH TROUBLE",
+        "badgeText": "The deadly journey of garbage."
+      },
+      {
+        "question": "How does the text describe the extremely small fraction of freshwater that humans actually use?",
+        "answer": "The text clearly states that this highly precious, small fraction is actively *mistreated* by humans, strictly threatening the very *survival* of all land life.",
+        "category": "conceptual",
+        "badgeTitle": "HUMAN CARELESSNESS",
+        "badgeText": "Wasting our most precious drop."
+      }
+    ],
     "10": [],
     "11": [],
     "13": [],
