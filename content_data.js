@@ -5893,8 +5893,1305 @@ const siteData = {
     ]
   },
   "English": {
-    "1": [],
-    "2": [],
+    "1": [
+      {
+        "question": "Where is the sacred city of Makkah located?",
+        "answer": "Makkah is located in the *south‑western region of Hijaz*, surrounded by *arid hills*.",
+        "category": "most",
+        "badgeTitle": "GEOGRAPHICAL SIGNIFICANCE",
+        "badgeText": "It is the birthplace of Hazrat Muhammad, the last Rasool of Allah."
+      },
+      {
+        "question": "When and into which noble clan was Rasoolullah born?",
+        "answer": "He was born in *571 A.D.* into the *noble and highly esteemed clan of Quraish*.",
+        "category": "most",
+        "badgeTitle": "HISTORICAL CONTEXT",
+        "badgeText": "He is known as the benefactor of humanity."
+      },
+      {
+        "question": "What was the state of the world when Rasoolullah appeared?",
+        "answer": "The world was *engulfed in ignorance* and *moral decay*.",
+        "category": "most",
+        "badgeTitle": "SOCIETAL CONDITION",
+        "badgeText": "The social fabric of society was torn by idolatry, tribal arrogance, and widespread injustice."
+      },
+      {
+        "question": "How old was Rasoolullah when his parents passed away?",
+        "answer": "His father, *Hazrat Abdullah*, passed away *before his birth*, and his mother, *Hazrat Amina*, died when he was only *six years old*.",
+        "category": "most",
+        "badgeTitle": "EARLY TRAGEDY",
+        "badgeText": "He was orphaned at such a tender age."
+      },
+      {
+        "question": "Who were the early guardians of Rasoolullah after his parents' death?",
+        "answer": "He was first taken in by his grandfather, *Hazrat Abdul Muttalib*, and thereafter by his paternal uncle, *Hazrat Abu Talib*.",
+        "category": "most",
+        "badgeTitle": "STEADFAST GUARDIAN",
+        "badgeText": "His paternal uncle took responsibility for his upbringing throughout his youth."
+      },
+      {
+        "question": "What exceptional traits characterized Rasoolullah as a young man?",
+        "answer": "He was known for his *truthfulness*, *humility*, *generosity*, and *sense of justice*.",
+        "category": "most",
+        "badgeTitle": "BUSINESS DEALINGS",
+        "badgeText": "He engaged in trade with honesty and fairness, reflecting integrity and gentleness."
+      },
+      {
+        "question": "What titles were bestowed upon Rasoolullah by the people of Makkah?",
+        "answer": "The people bestowed upon him the titles *Al‑Sadiq (The Truthful)* and *Al‑Amin (The Trustworthy)*.",
+        "category": "most",
+        "badgeTitle": "CORE REASON",
+        "badgeText": "These were earned due to the universal respect his qualities commanded."
+      },
+      {
+        "question": "What was the purpose of the pact known as Hilf al-Fudul?",
+        "answer": "It was a *pact* formed by the tribes of Makkah to *defend the oppressed* and *uphold justice*.",
+        "category": "most",
+        "badgeTitle": "LIFELONG COMMITMENT",
+        "badgeText": "Rasoolullah declared that even after the advent of Islam, he would still honour such a cause."
+      },
+      {
+        "question": "How did Rasoolullah resolve the dispute during the reconstruction of the Ka'bah?",
+        "answer": "He provided a *wise arbitration* when the Quraish disputed over who would place the *Hajr‑e‑Aswad (Black Stone)*.",
+        "category": "most",
+        "badgeTitle": "CONFLICT RESOLUTION",
+        "badgeText": "His impartial and insightful solution prevented conflict and earned admiration from all quarters."
+      },
+      {
+        "question": "What were the defining qualities of Hazrat Khadijah?",
+        "answer": "She was a woman of *outstanding virtue*, *intellect*, and *business acumen*.",
+        "category": "most",
+        "badgeTitle": "COMMERCIAL SUCCESS",
+        "badgeText": "She had inherited her father’s prosperous trade and managed it with great success."
+      },
+      {
+        "question": "Why did Hazrat Khadijah entrust Rasoolullah with a trade expedition to Syria?",
+        "answer": "She entrusted him upon hearing of his *integrity in business dealings*.",
+        "category": "most",
+        "badgeTitle": "MARRIAGE PROPOSAL",
+        "badgeText": "Deeply impressed by his honesty, graceful conduct, and upright character, she later proposed marriage."
+      },
+      {
+        "question": "How did Hazrat Khadijah support Rasoolullah's early divine mission?",
+        "answer": "She stood beside him as his *first supporter*, providing *emotional and financial support*.",
+        "category": "most",
+        "badgeTitle": "CRUCIAL TIMING",
+        "badgeText": "This support was vital during the most challenging early years of his mission."
+      },
+      {
+        "question": "Why did Rasoolullah retreat to the Cave of Hira?",
+        "answer": "Approaching the age of forty, he became *deeply saddened and concerned* by the *moral decay and injustice* in Makkan society.",
+        "category": "most",
+        "badgeTitle": "SPIRITUAL PRACTICE",
+        "badgeText": "He sought solitude and reflection through frequent meditative retreats."
+      },
+      {
+        "question": "Describe the event of the first revelation in the Cave of Hira.",
+        "answer": "During the month of *Ramadan*, *Hazrat Jibraeel* appeared before him and commanded him to *\"Read!\"*",
+        "category": "most",
+        "badgeTitle": "FIRST VERSES",
+        "badgeText": "The revelation consisted of the first verses of Surah Al‑‘Alaq (96:1‑5)."
+      },
+      {
+        "question": "What was the socio-political impact of the revelation of the Qur'an?",
+        "answer": "It initiated a *radical transformation* in the *socio‑political and moral fabric* of Arabia.",
+        "category": "most",
+        "badgeTitle": "NEW FOUNDATIONS",
+        "badgeText": "It laid foundations for a society based on truth, equality, accountability, and compassion."
+      },
+      {
+        "question": "How did the call to Tauhid challenge existing Makkan traditions?",
+        "answer": "Belief in the *Oneness of Allah* challenged deep‑rooted practices of *idolatry*, *class privilege*, and *social injustice*.",
+        "category": "most",
+        "badgeTitle": "OPPOSITION",
+        "badgeText": "The Quraish viewed the message as a threat to their traditions and authority."
+      },
+      {
+        "question": "What hardships did early Muslims face from the Quraish?",
+        "answer": "They faced *relentless persecution*, *economic boycotts*, and *social ostracism*.",
+        "category": "most",
+        "badgeTitle": "PROPHETIC RESILIENCE",
+        "badgeText": "Despite this, Rasoolullah remained unwavered and preached with patience, wisdom, and resilience."
+      },
+      {
+        "question": "What is the historical significance of the Hijrah?",
+        "answer": "The *migration to Madinah*, known as the Hijrah, was a *decisive turning point* in Islamic history.",
+        "category": "most",
+        "badgeTitle": "DIVINE COMMAND",
+        "badgeText": "He was divinely commanded to migrate as oppression grew unbearable."
+      },
+      {
+        "question": "What principles were introduced by the Charter of Madinah?",
+        "answer": "It introduced principles of governance rooted in *civic equality*, *religious freedom*, and the *rule of law*.",
+        "category": "most",
+        "badgeTitle": "REVOLUTIONARY MODEL",
+        "badgeText": "It united diverse communities, guaranteeing protection for all citizens regardless of faith or ethnicity."
+      },
+      {
+        "question": "What was the outcome of the Battle of Badr?",
+        "answer": "It resulted in a *remarkable Muslim victory* that reinforced the *legitimacy* of Rasoolullah’s mission.",
+        "category": "most",
+        "badgeTitle": "MILITARY MILESTONES",
+        "badgeText": "This was the first major battle resulting from the growing strength of the Muslim community."
+      },
+      {
+        "question": "How was the Conquest of Makkah executed in 8 AH?",
+        "answer": "The event was *astonishingly bloodless* and marked by the *exemplary mercy* of Rasoolullah.",
+        "category": "most",
+        "badgeTitle": "GENERAL AMNESTY",
+        "badgeText": "He declared general amnesty, forgiving even his most ardent enemies who had persecuted him."
+      },
+      {
+        "question": "What was the spiritual effect of the general amnesty in Makkah?",
+        "answer": "This *unmatched act of compassion* transformed hearts, marking a *spiritual awakening across Arabia*.",
+        "category": "most",
+        "badgeTitle": "TRUE TRIUMPH",
+        "badgeText": "It was a victory of spirit—the triumph of forgiveness over vengeance."
+      },
+      {
+        "question": "How is Rasoolullah described in Surah Al-Anbiya (21:107)?",
+        "answer": "The verse states: *\"And We have not sent you, [O Muhammad], except as a mercy to the worlds\"*.",
+        "category": "most",
+        "badgeTitle": "QURANIC REFLECTION",
+        "badgeText": "His unmatched compassion truly reflected this Qur’anic description."
+      },
+      {
+        "question": "When and where did Rasoolullah deliver his final sermon?",
+        "answer": "In the *tenth year of Hijrah*, during *Hajjat‑ul‑Wida (Farewell Pilgrimage)*, he delivered it on the *plain of Arafat*.",
+        "category": "most",
+        "badgeTitle": "HISTORIC GATHERING",
+        "badgeText": "People from every corner of Arabia gathered to accompany him."
+      },
+      {
+        "question": "What was the core message of the final sermon regarding equality?",
+        "answer": "He proclaimed no superiority of an Arab over a non‑Arab, or a white person over a black person, except through *piety and righteous action*.",
+        "category": "most",
+        "badgeTitle": "ETHICAL CORE",
+        "badgeText": "This profound address affirmed universal human dignity."
+      },
+      {
+        "question": "What was the ultimate achievement of Rasoolullah's divine mission?",
+        "answer": "He delivered the *final message of Allah*, established a *community of believers*, and modelled a life balancing *faith with justice, mercy, and truth*.",
+        "category": "most",
+        "badgeTitle": "LASTING LEGACY",
+        "badgeText": "His life is a shining example of moral excellence for all of mankind."
+      },
+      {
+        "question": "Why did the writer focus on values like mercy, justice, and equality in the text?",
+        "answer": "To illustrate how Rasoolullah laid the foundation for a *just, inclusive, and compassionate society*.",
+        "category": "most",
+        "badgeTitle": "LITERARY PURPOSE",
+        "badgeText": "The intention is to offer lessons for leaders and communities across time."
+      },
+      {
+        "question": "What specific moral decay existed in pre-Islamic Arabia?",
+        "answer": "The society was plagued by *idolatry*, *tribal arrogance*, *widespread injustice*, and *ignorance*.",
+        "category": "most",
+        "badgeTitle": "DIVINE YEARNING",
+        "badgeText": "Humanity appeared to be silently yearning for enlightenment and divine guidance."
+      },
+      {
+        "question": "What does the term \"idolatry\" mean as highlighted in the glossary?",
+        "answer": "It refers to the practice of *worshipping statues as gods*.",
+        "category": "most",
+        "badgeTitle": "SOCIETAL CHALLENGE",
+        "badgeText": "The call to Tauhid directly challenged these deep‑rooted practices."
+      },
+      {
+        "question": "What is the definition of \"acumen\" as used to describe Hazrat Khadijah?",
+        "answer": "It means the ability to *understand and decide things quickly and well*.",
+        "category": "most",
+        "badgeTitle": "BUSINESS APPLICATION",
+        "badgeText": "She used this acumen to manage her inherited trade with great success."
+      },
+      {
+        "question": "How is \"ostracism\" defined in the context of Makkan opposition?",
+        "answer": "It is the act of *deliberately not including somebody* in a group or activity; the *state of not being included*.",
+        "category": "most",
+        "badgeTitle": "SOCIAL TACTIC",
+        "badgeText": "The Quraish used social ostracism alongside economic boycotts against early Muslims."
+      },
+      {
+        "question": "What does \"legitimacy\" signify regarding the Battle of Badr?",
+        "answer": "It refers to the quality of being based on a *fair or acceptable reason*.",
+        "category": "most",
+        "badgeTitle": "MISSION VALIDATION",
+        "badgeText": "The remarkable victory reinforced the legitimacy of Rasoolullah’s mission."
+      },
+      {
+        "question": "What specific moral conditions existed in Arabia before the advent of Islam?",
+        "answer": "The society was characterized by *ignorance*, *moral decay*, *idolatry*, *tribal arrogance*, and *widespread injustice*.",
+        "category": "important",
+        "badgeTitle": "PRE-ISLAMIC ERA",
+        "badgeText": "Humanity appeared to be silently yearning for the dawn of enlightenment and divine guidance."
+      },
+      {
+        "question": "Who is explicitly referred to as the benefactor of humanity in the text?",
+        "answer": "*Rasoolullah* is known as the *benefactor of humanity*.",
+        "category": "important",
+        "badgeTitle": "NOBLE TITLE",
+        "badgeText": "He appeared at a time when the world was engulfed in ignorance."
+      },
+      {
+        "question": "For how long did Hazrat Abdul Muttalib care for the orphaned Rasoolullah?",
+        "answer": "He lovingly cared for him until his own passing *two years later*.",
+        "category": "important",
+        "badgeTitle": "EARLY GUARDIANSHIP",
+        "badgeText": "Rasoolullah was taken in by his grandfather after his mother passed away when he was six."
+      },
+      {
+        "question": "How did Rasoolullah conduct his trade in his early years?",
+        "answer": "He engaged in trade with *honesty* and *fairness*.",
+        "category": "important",
+        "badgeTitle": "BUSINESS ETHICS",
+        "badgeText": "His interactions reflected integrity and gentleness."
+      },
+      {
+        "question": "What did Rasoolullah's interactions with others reflect during his youth?",
+        "answer": "His interactions reflected *integrity* and *gentleness*.",
+        "category": "important",
+        "badgeTitle": "EXCEPTIONAL CHARACTER",
+        "badgeText": "Despite the challenges of orphanhood, he grew into a young man of exceptional character."
+      },
+      {
+        "question": "What specific pledge did the tribes of Makkah make in Hilf al-Fudul?",
+        "answer": "They formed a pact to *defend the oppressed* and *uphold justice*.",
+        "category": "important",
+        "badgeTitle": "NOBLE ALLIANCE",
+        "badgeText": "Rasoolullah declared that even after the advent of Islam, he would still honour such a cause."
+      },
+      {
+        "question": "What was the nature of the dispute among the Quraish during the reconstruction of the Ka'bah?",
+        "answer": "They disputed regarding who would have the *honour of placing the Hajr‑e‑Aswad (Black Stone)*.",
+        "category": "important",
+        "badgeTitle": "TRIBAL CONFLICT",
+        "badgeText": "His impartial and insightful solution prevented conflict."
+      },
+      {
+        "question": "What qualities of Hazrat Khadijah are highlighted in the text?",
+        "answer": "She is described as a woman of *outstanding virtue*, *intellect*, and *business acumen*.",
+        "category": "important",
+        "badgeTitle": "PROMINENT FIGURE",
+        "badgeText": "She had inherited her father's prosperous trade and managed it with great success."
+      },
+      {
+        "question": "Through whom did Hazrat Khadijah send the marriage proposal to Rasoolullah?",
+        "answer": "She proposed marriage through the family of *Hazrat Abu Talib*.",
+        "category": "important",
+        "badgeTitle": "BLESSED UNION",
+        "badgeText": "She was deeply impressed by his honesty, graceful conduct, and upright character."
+      },
+      {
+        "question": "On what foundation was the marriage of Rasoolullah and Hazrat Khadijah built?",
+        "answer": "Their union was built on *mutual respect* and *affection*.",
+        "category": "important",
+        "badgeTitle": "MARITAL HARMONY",
+        "badgeText": "She stood beside him as his first supporter."
+      },
+      {
+        "question": "At what age did Rasoolullah become deeply concerned by the moral decay of Makkan society?",
+        "answer": "He became deeply saddened and concerned as he *approached the age of forty*.",
+        "category": "important",
+        "badgeTitle": "SPIRITUAL RETREAT",
+        "badgeText": "He would frequently retreat to the Cave of Hira, seeking solitude and reflection."
+      },
+      {
+        "question": "How did Rasoolullah respond to Hazrat Jibraeel's first command to read?",
+        "answer": "He responded, *\"I cannot read.\"*",
+        "category": "important",
+        "badgeTitle": "THE FIRST REVELATION",
+        "badgeText": "This occurred during one of his meditative retreats in the month of Ramadan."
+      },
+      {
+        "question": "According to Surah Al-'Alaq (96:1-5), from what did Allah create man?",
+        "answer": "He created man from a *clot (of congealed blood)*.",
+        "category": "important",
+        "badgeTitle": "DIVINE CREATION",
+        "badgeText": "These were the very first verses revealed to Rasoolullah."
+      },
+      {
+        "question": "What did Allah teach man according to the first revealed verses?",
+        "answer": "He taught the *use of the pen* and taught man *that which he knew not*.",
+        "category": "important",
+        "badgeTitle": "DIVINE KNOWLEDGE",
+        "badgeText": "The verses declare that thy Lord is the Most Bountiful."
+      },
+      {
+        "question": "What specific social practices did the call to Tauhid challenge?",
+        "answer": "It challenged deep‑rooted practices of *idolatry*, *class privilege*, and *social injustice*.",
+        "category": "important",
+        "badgeTitle": "SOCIAL TRANSFORMATION",
+        "badgeText": "It laid the foundations for a society based on truth, equality, accountability, and compassion."
+      },
+      {
+        "question": "How did the Quraish perceive the message of Islam?",
+        "answer": "They viewed his message as a *threat to their traditions and authority*.",
+        "category": "important",
+        "badgeTitle": "MAKKAN OPPOSITION",
+        "badgeText": "The same Quraish who once admired him now became his staunch opponents."
+      },
+      {
+        "question": "What attributes did Rasoolullah display while preaching Islam despite persecution?",
+        "answer": "He remained unwavered and preached with *patience*, *wisdom*, and *resilience*.",
+        "category": "important",
+        "badgeTitle": "PROPHETIC RESOLVE",
+        "badgeText": "The Muslims faced relentless persecution, economic boycotts, and social ostracism."
+      },
+      {
+        "question": "Under whose guidance was the Charter of Madinah crafted?",
+        "answer": "It was crafted under the *guidance of Rasoolullah*.",
+        "category": "important",
+        "badgeTitle": "FIRST ISLAMIC SOCIETY",
+        "badgeText": "It introduced principles of governance rooted in civic equality, religious freedom, and the rule of law."
+      },
+      {
+        "question": "What did the Charter of Madinah guarantee for all citizens?",
+        "answer": "It guaranteed *protection for all citizens regardless of faith or ethnicity*.",
+        "category": "important",
+        "badgeTitle": "MODEL OF COEXISTENCE",
+        "badgeText": "It united diverse communities into a revolutionary model of coexistence and justice."
+      },
+      {
+        "question": "In what year did the Conquest of Makkah take place?",
+        "answer": "The Conquest of Makkah took place in *8 AH*.",
+        "category": "important",
+        "badgeTitle": "HISTORICAL MILESTONE",
+        "badgeText": "This event followed earlier military encounters, culminating from growing Muslim strength."
+      },
+      {
+        "question": "How is the Conquest of Makkah described in terms of casualties?",
+        "answer": "The event was *astonishingly bloodless*.",
+        "category": "important",
+        "badgeTitle": "EXEMPLARY MERCY",
+        "badgeText": "It was a victory not merely of land, but of spirit."
+      },
+      {
+        "question": "Whom did Rasoolullah forgive during the Conquest of Makkah?",
+        "answer": "He declared general amnesty, forgiving even his *most ardent enemies* who had persecuted him.",
+        "category": "important",
+        "badgeTitle": "TRIUMPH OF FORGIVENESS",
+        "badgeText": "This marked the triumph of forgiveness over vengeance."
+      },
+      {
+        "question": "What was the broader impact of Rasoolullah's unmatched act of compassion in Makkah?",
+        "answer": "It transformed the *hearts of the people* and marked a *spiritual awakening across Arabia*.",
+        "category": "important",
+        "badgeTitle": "SPIRITUAL LIBERATION",
+        "badgeText": "It achieved far more than just the political liberation of Makkah."
+      },
+      {
+        "question": "What was the state of Islam's spread by the tenth year of Hijrah?",
+        "answer": "Islam had spread *across the Arabian Peninsula*.",
+        "category": "important",
+        "badgeTitle": "RAPID EXPANSION",
+        "badgeText": "People from every corner of Arabia gathered to accompany him for Hajj."
+      },
+      {
+        "question": "What is the alternate name given to the Farewell Pilgrimage?",
+        "answer": "It is known as *Hajjat‑ul‑Wida*.",
+        "category": "important",
+        "badgeTitle": "FINAL GATHERING",
+        "badgeText": "Rasoolullah announced his intention to perform this in the tenth year of Hijrah."
+      },
+      {
+        "question": "According to the final sermon, what is the only criterion for superiority among people?",
+        "answer": "A person has superiority over another only through *piety and righteous action*.",
+        "category": "important",
+        "badgeTitle": "UNIVERSAL EQUALITY",
+        "badgeText": "He explicitly stated an Arab has no superiority over a non‑Arab, nor a white over a black."
+      },
+      {
+        "question": "What core concepts did Rasoolullah's modeled way of life balance?",
+        "answer": "He modeled a way of life that balanced *faith with justice*, *mercy*, and *truth*.",
+        "category": "important",
+        "badgeTitle": "COMMUNITY FOUNDATION",
+        "badgeText": "With this, his divine mission reached its fulfilment."
+      },
+      {
+        "question": "What is the central theme of the entire text?",
+        "answer": "The theme revolves around the *life and mission of Rasoolullah*, focusing on his *exemplary character*, *leadership*, and the *transformative impact of his teachings*.",
+        "category": "important",
+        "badgeTitle": "CORE SUBJECT",
+        "badgeText": "It illustrates how he laid the foundation for a just, inclusive, and compassionate society."
+      },
+      {
+        "question": "What does the word \"benefactor\" mean as defined in the glossary?",
+        "answer": "A person who offers *support*, *help*, or *assistance*, often in the form of financial aid or teachings, guiding and uplifting those in need.",
+        "category": "important",
+        "badgeTitle": "VOCABULARY FOCUS",
+        "badgeText": "Rasoolullah is hailed as the benefactor of humanity."
+      },
+      {
+        "question": "How is the term \"radical\" defined in the glossary?",
+        "answer": "It means relating to the *most basic and important parts* of something; *complete and detailed*.",
+        "category": "important",
+        "badgeTitle": "VOCABULARY FOCUS",
+        "badgeText": "The revelation brought a radical transformation to Arabia."
+      },
+      {
+        "question": "What is the meaning of \"solitude\" as mentioned in the text's vocabulary?",
+        "answer": "It is the state of *being alone*, especially when you find this *pleasant*.",
+        "category": "important",
+        "badgeTitle": "VOCABULARY FOCUS",
+        "badgeText": "Rasoolullah sought solitude in the Cave of Hira."
+      },
+      {
+        "question": "Define the term \"vengeance\" according to the chapter's glossary.",
+        "answer": "It is the act of *punishing or harming somebody in return* for what they have done to you, your family, or friends.",
+        "category": "important",
+        "badgeTitle": "VOCABULARY FOCUS",
+        "badgeText": "The Conquest of Makkah was a triumph of forgiveness over vengeance."
+      },
+      {
+        "question": "What social and moral problems are identified in the pre-reading section as existing in pre-Islamic Arabia?",
+        "answer": "The society faced intense moral decay, characterized specifically by *idolatry*, *tribal arrogance*, and *widespread injustice*.",
+        "category": "conceptual",
+        "badgeTitle": "PRE-READING FOCUS",
+        "badgeText": "These problems highlight the desperate need for enlightenment and divine guidance."
+      },
+      {
+        "question": "Based on the \"While-reading\" prompts, what was the community's response to Rasoolullah's exceptional character?",
+        "answer": "The people responded with *universal respect*, bestowing upon him the prestigious titles of *Al‑Sadiq (The Truthful)* and *Al‑Amin (The Trustworthy)*.",
+        "category": "conceptual",
+        "badgeTitle": "SOCIETAL RECOGNITION",
+        "badgeText": "This was a direct result of his truthfulness, humility, and sense of justice."
+      },
+      {
+        "question": "How does the text answer the \"While-reading\" question regarding Rasoolullah's practical concern for justice in early adulthood?",
+        "answer": "He demonstrated this by actively participating in *Hilf al‑Fudul* (a pact to defend the oppressed) and by providing *wise arbitration* during the reconstruction of the Ka‘bah.",
+        "category": "conceptual",
+        "badgeTitle": "PRACTICAL EXAMPLES",
+        "badgeText": "These early events proved his inherent commitment to fairness and conflict resolution."
+      },
+      {
+        "question": "What is the profound significance of the first revelation as highlighted in the \"While-reading\" section?",
+        "answer": "It marked the exact *beginning of his mission* as the last Rasool of Allah and immediately initiated a *radical transformation* in Arabia.",
+        "category": "conceptual",
+        "badgeTitle": "SPIRITUAL AWAKENING",
+        "badgeText": "It brought both deep spiritual awakening and socio-political change."
+      },
+      {
+        "question": "What specific instructional strategy is suggested in the \"For the Teacher\" box to improve student comprehension?",
+        "answer": "The teacher is advised to start by *reading a passage aloud* to the class to strictly model *correct pronunciation*, *appropriate pitch*, and *voice variation*.",
+        "category": "conceptual",
+        "badgeTitle": "PEDAGOGICAL APPROACH",
+        "badgeText": "This helps students understand how expressive voice can directly convey meaning."
+      },
+      {
+        "question": "What is the overarching central theme of the entire text as defined in the end-of-chapter notes?",
+        "answer": "The theme exclusively revolves around the *life and mission of Rasoolullah*, with a sharp focus on his *exemplary character*, *leadership*, and the *transformative impact of his teachings*.",
+        "category": "conceptual",
+        "badgeTitle": "CORE SUBJECT",
+        "badgeText": "It illustrates how he laid the eternal foundation for an inclusive and compassionate society."
+      },
+      {
+        "question": "According to the Critical Thinking section, how does Rasoolullah's life continue to inspire people across different cultures today?",
+        "answer": "His life serves as a *shining example of moral excellence* that completely *transcends all barriers of time, place, and culture*.",
+        "category": "conceptual",
+        "badgeTitle": "LASTING LEGACY",
+        "badgeText": "He modeled a balanced way of life combining faith with justice, mercy, and truth."
+      },
+      {
+        "question": "Why was Rasoolullah's involvement in Hilf al-Fudul considered a critical test of his character?",
+        "answer": "It highlighted his profound, lifelong *commitment to justice* and defending the oppressed, an alliance he proudly stated he would *still honour* even after the advent of Islam.",
+        "category": "conceptual",
+        "badgeTitle": "PRE-PROPHETIC JUSTICE",
+        "badgeText": "It proved his unshakable moral compass long before his divine mission began."
+      },
+      {
+        "question": "Why does the text emphasize that Hazrat Khadijah's support was crucial during the early years of his mission?",
+        "answer": "She stood beside him as his absolute *first supporter*, providing indispensable *emotional and financial support* during the most deeply challenging and highly persecuted early years.",
+        "category": "conceptual",
+        "badgeTitle": "FOUNDATIONAL BACKING",
+        "badgeText": "Their powerful union was heavily built on mutual respect and affection."
+      },
+      {
+        "question": "How did the Charter of Madinah create a revolutionary new system of governance?",
+        "answer": "It introduced groundbreaking principles strictly rooted in *civic equality*, *religious freedom*, and the absolute *rule of law*.",
+        "category": "conceptual",
+        "badgeTitle": "INCLUSIVE SOCIETY",
+        "badgeText": "It guaranteed absolute protection for all citizens regardless of their faith or ethnicity."
+      },
+      {
+        "question": "Why was the Hijrah (migration) to Madinah deemed a decisive turning point in Islamic history?",
+        "answer": "It was the exact moment that allowed for the official *establishment of the first Islamic society*, shifting Muslims from extreme persecution to a structured, sovereign community.",
+        "category": "conceptual",
+        "badgeTitle": "COURSE OF HISTORY",
+        "badgeText": "It changed the trajectory of the divine mission from survival to governance."
+      },
+      {
+        "question": "What is the writer's underlying intention behind focusing heavily on values like mercy and equality?",
+        "answer": "The intention is to clearly showcase the *ethical core of Islam* and present a revolutionary, timeless model of *coexistence and justice* for leaders and communities.",
+        "category": "conceptual",
+        "badgeTitle": "AUTHOR'S PERSPECTIVE",
+        "badgeText": "These universal values offer profound lessons across all eras."
+      },
+      {
+        "question": "How does the final sermon serve as a universal call for moral integrity and equality?",
+        "answer": "It explicitly affirmed *universal human dignity* by entirely stripping away racial and ethnic superiority, stating superiority comes *only* through *piety and righteous action*.",
+        "category": "conceptual",
+        "badgeTitle": "UNIVERSAL EQUALITY",
+        "badgeText": "He declared that an Arab has no superiority over a non‑Arab, nor a white over a black."
+      },
+      {
+        "question": "How did the declaration of general amnesty during the Conquest of Makkah demonstrate Rasoolullah's magnanimity?",
+        "answer": "By forgiving even his *most ardent enemies* who brutally persecuted him, he showcased a grand vision for a *unified society* and achieved a total triumph of forgiveness over vengeance.",
+        "category": "conceptual",
+        "badgeTitle": "TRIUMPH OF SPIRIT",
+        "badgeText": "It marked a massive spiritual awakening rather than just political liberation."
+      },
+      {
+        "question": "What specific geographic and topographic features describe the exact location of Rasoolullah's birthplace?",
+        "answer": "It is strategically located in the *south‑western region of Hijaz*, completely surrounded by harsh, *arid hills*.",
+        "category": "conceptual",
+        "badgeTitle": "SACRED GEOGRAPHY",
+        "badgeText": "This isolated, rugged environment housed the sacred city of Makkah."
+      },
+      {
+        "question": "What exact Arabic terminology is used in the text to denote the Farewell Pilgrimage?",
+        "answer": "The text officially refers to it as *Hajjat‑ul‑Wida*.",
+        "category": "conceptual",
+        "badgeTitle": "TENTH YEAR OF HIJRAH",
+        "badgeText": "This was the monumental event where he delivered his final, unifying sermon."
+      },
+      {
+        "question": "Which specific Hadith collection and reference number is cited for the final sermon quote?",
+        "answer": "The profound quote regarding human equality is meticulously referenced from *Musnad Ahmad, 23489*.",
+        "category": "conceptual",
+        "badgeTitle": "SOURCE REFERENCE",
+        "badgeText": "This establishes the firm historical and theological authenticity of the spoken words."
+      },
+      {
+        "question": "What specific Quranic Surah and exact verse numbers are quoted regarding the very first revelation in Hira?",
+        "answer": "The revealed verses are directly cited from *Surah Al‑‘Alaq, 96:1‑5*.",
+        "category": "conceptual",
+        "badgeTitle": "DIVINE COMMAND",
+        "badgeText": "These specific verses emphasize mankind’s creation from a clot and the divine teaching of the pen."
+      },
+      {
+        "question": "Which specific Quranic Surah explicitly describes Rasoolullah as an ultimate \"mercy to the worlds\"?",
+        "answer": "This divine description is found in *Surah Al‑Anbiya, 21:107*.",
+        "category": "conceptual",
+        "badgeTitle": "DIVINE VALIDATION",
+        "badgeText": "This perfectly aligned with his unmatched act of compassion during the historically bloodless conquest of Makkah."
+      },
+      {
+        "question": "What specific social issue does the phrase \"class privilege\" refer to in the context of the call to Tauhid?",
+        "answer": "The call to Tauhid directly and aggressively challenged the *deep‑rooted practices* of *class privilege* and entrenched social injustice heavily maintained by the Quraish.",
+        "category": "conceptual",
+        "badgeTitle": "SOCIO-POLITICAL SHIFT",
+        "badgeText": "It dismantled the toxic tribal arrogance of pre‑Islamic Arabia."
+      },
+      {
+        "question": "What does the phrase \"astonishingly bloodless\" imply about the monumental Conquest of Makkah?",
+        "answer": "It implies that the massive capture of the city was miraculously achieved *without warfare, conflict, or loss of life*, contrary to standard historical conquests.",
+        "category": "conceptual",
+        "badgeTitle": "EXEMPLARY MERCY",
+        "badgeText": "This was exclusively due to the general amnesty famously declared by Rasoolullah."
+      },
+      {
+        "question": "In the context of the chapter's critical exercises, what noun form of the word \"idol\" accurately describes the pre-Islamic society?",
+        "answer": "The society was deeply marked by widespread *idolatry*.",
+        "category": "conceptual",
+        "badgeTitle": "GRAMMAR IN CONTEXT",
+        "badgeText": "This precise term highlights the institutionalized worship of statues that caused societal decay."
+      },
+      {
+        "question": "How does the text define the word \"resilience\" in the context of the early Muslim struggles against the Quraish?",
+        "answer": "Rasoolullah continued to fiercely preach the message of Islam with *patience*, *wisdom*, and *resilience* despite enduring severe, relentless persecution.",
+        "category": "conceptual",
+        "badgeTitle": "CHARACTER TRAIT",
+        "badgeText": "This highlights his unbreakable mental, emotional, and spiritual fortitude."
+      },
+      {
+        "question": "What is the precise contextual meaning of the phrase \"fabric of society\" as tested in the multiple-choice section?",
+        "answer": "It metaphorically refers to the fundamental *structure* of the society, not literal clothing or physical material.",
+        "category": "conceptual",
+        "badgeTitle": "METAPHORICAL USAGE",
+        "badgeText": "The text poignantly states this vital fabric was \"torn by idolatry\"."
+      },
+      {
+        "question": "According to the critical fill-in-the-blanks exercise, what specific conduct of Rasoolullah deeply impressed Hazrat Khadijah?",
+        "answer": "She was deeply *impressed* by his highly *honest and graceful conduct* demonstrated during the Syrian trade expedition.",
+        "category": "conceptual",
+        "badgeTitle": "PROFESSIONAL INTEGRITY",
+        "badgeText": "This unmatched commercial integrity led directly to her proposing marriage."
+      },
+      {
+        "question": "Based on the detailed text, what specific demographic gathered at the plain of Arafat to hear the final sermon?",
+        "answer": "People traveling from *every single corner of Arabia* gathered in massive numbers to accompany him.",
+        "category": "conceptual",
+        "badgeTitle": "MASS ASSEMBLAGE",
+        "badgeText": "This unprecedented gathering signifies the complete, victorious spread of Islam across the entire peninsula."
+      },
+      {
+        "question": "What does the emotive phrase \"silently yearning\" suggest about the general state of humanity in pre-Islamic times?",
+        "answer": "It strongly suggests that despite being engulfed in ignorance, humanity held a *strong and emotional desire* for the *dawn of enlightenment and divine guidance*.",
+        "category": "conceptual",
+        "badgeTitle": "SPIRITUAL VOID",
+        "badgeText": "It highlights the desperate, unspoken need for divine intervention in a corrupted world."
+      },
+      {
+        "question": "What unique and perfect combination of societal traits did Rasoolullah's established governance model balance?",
+        "answer": "He expertly modeled a supreme way of life that perfectly balanced *faith with justice*, *mercy*, and *truth*.",
+        "category": "conceptual",
+        "badgeTitle": "HOLISTIC LEADERSHIP",
+        "badgeText": "This flawless equilibrium is exactly what makes his life a transcendent, shining example for all mankind."
+      },
+      {
+        "question": "How is the sacred \"Black Stone\" officially referred to using the text's original Arabic terminology?",
+        "answer": "It is explicitly referred to as the *Hajr‑e‑Aswad*.",
+        "category": "conceptual",
+        "badgeTitle": "SACRED RELIC",
+        "badgeText": "The high honour of its placement was a major, volatile source of tribal dispute perfectly resolved by Rasoolullah’s wise arbitration."
+      }
+    ],
+    "2": [
+      {
+        "question": "Where and when did Quaid-e-Azam deliver the speech \"Responsibility of the Youth in Nation-Building\"?",
+        "answer": "The speech consists of excerpts delivered at the *Dhaka University Convocation* on *24th March 1948*.",
+        "category": "most",
+        "badgeTitle": "HISTORICAL CONTEXT",
+        "badgeText": "This address was directed towards the young graduates entering a newly independent nation."
+      },
+      {
+        "question": "Why did Quaid-e-Azam state that he could not prepare a formal Convocation Address?",
+        "answer": "He explained to the *Vice‑Chancellor* that there were so many *calls on him* that he could not possibly prepare a formal address on an *academic level* regarding great subjects like arts, history, philosophy, and science.",
+        "category": "most",
+        "badgeTitle": "SPEAKER'S PRIORITY",
+        "badgeText": "This highlights his heavy administrative and national responsibilities over formal academic formalities."
+      },
+      {
+        "question": "How did Quaid-e-Azam define his duty as a Mussalman in the opening of his speech?",
+        "answer": "He stated that whatever he had been able to do was merely as a *measure of duty* incumbent upon every *Mussalman* to serve his people *honestly* and *selflessly*.",
+        "category": "most",
+        "badgeTitle": "CORE VALUE",
+        "badgeText": "Selfless service and moral obligation to the nation."
+      },
+      {
+        "question": "In what capacity did Quaid-e-Azam address the students at the convocation?",
+        "answer": "He clarified that he was not speaking to them as the *Head of the State*, but rather as a *friend* and as one who has always held them in *affection*.",
+        "category": "most",
+        "badgeTitle": "TONE REFLECTION",
+        "badgeText": "A personal, encouraging, and visionary tone to connect directly with the youth."
+      },
+      {
+        "question": "What revolutionary change did Quaid-e-Azam refer to regarding the students' entry into practical life?",
+        "answer": "He referred to the *birth of Pakistan*, noting that unlike their predecessors, the students were leaving the University to enter life under a *sovereign, Independent State* of their own.",
+        "category": "most",
+        "badgeTitle": "HISTORICAL SHIFT",
+        "badgeText": "Breaking the shackles of slavery to finally become a free people."
+      },
+      {
+        "question": "How did Quaid-e-Azam define the nature of the newly formed government to the graduates?",
+        "answer": "He emphasized that the *State* is their own, and the *Government* is of the people, *responsible to the people*, and working for the *good of the State*.",
+        "category": "most",
+        "badgeTitle": "DEMOCRATIC IDEAL",
+        "badgeText": "A self‑governing body strictly accountable to its citizens."
+      },
+      {
+        "question": "What does Quaid-e-Azam mean by his stern warning that \"freedom does not mean license\"?",
+        "answer": "He meant that freedom does not give individuals the right to behave just as they *please* and do what they *like*, irrespective of the *interests of other people* or of the *State*.",
+        "category": "most",
+        "badgeTitle": "CIVIC RESPONSIBILITY",
+        "badgeText": "It should not be mistaken for lawlessness; freedom comes with the duty to act as a united and disciplined nation."
+      },
+      {
+        "question": "What is the critical difference between the \"militant spirit\" and the \"constructive spirit\" mentioned in the text?",
+        "answer": "The *militant spirit* was required in the days when they were *fighting for freedom*, whereas the *constructive spirit* is now required to build, organize, and run the *sovereign state*.",
+        "category": "most",
+        "badgeTitle": "KEY COMPARISON",
+        "badgeText": "Promoting constructive efforts over mere protest or rebellion."
+      },
+      {
+        "question": "Why does Quaid-e-Azam assert that it is easier to go to jail than to run a government?",
+        "answer": "He explains that the *attainment of freedom* through fighting is less complex, but it is far more *difficult to construct* and manage the immense administrative responsibilities of running a *Government*.",
+        "category": "most",
+        "badgeTitle": "PRACTICAL CHALLENGE",
+        "badgeText": "Transitioning from revolutionary activism to disciplined governance."
+      },
+      {
+        "question": "What early catastrophic event did enemies use to try and destroy Pakistan at its inception?",
+        "answer": "The enemies utilized the *Punjab and Delhi holocaust*, where thousands were mercilessly *butchered* and millions were *uprooted* from their homes.",
+        "category": "most",
+        "badgeTitle": "INITIAL CRISIS",
+        "badgeText": "A deliberate, violent attempt to weaken and destroy the new State."
+      },
+      {
+        "question": "How massive was the refugee influx into the Punjab shortly after independence?",
+        "answer": "Over *fifty lakhs* of these unfortunate refugees arrived in the Punjab within a matter of *weeks*.",
+        "category": "most",
+        "badgeTitle": "ADMINISTRATIVE BURDEN",
+        "badgeText": "Providing care and rehabilitation for people stricken in body and soul."
+      },
+      {
+        "question": "What was the outcome of the severe refugee crisis on the newly established State of Pakistan?",
+        "answer": "Instead of being destroyed as enemies had hoped, Pakistan *survived the shock* of that upheaval and emerged *stronger*, more *chastened*, and better *equipped* than ever.",
+        "category": "most",
+        "badgeTitle": "NATIONAL RESILIENCE",
+        "badgeText": "The devastating crisis ironically reinforced the nation's foundational strength."
+      },
+      {
+        "question": "What specific economic and military difficulties were imposed by India following independence?",
+        "answer": "India caused severe difficulties by *withholding cash balances*, denying Pakistan's share of *military equipment*, and instituting an almost complete *economic blockade* of the Province.",
+        "category": "most",
+        "badgeTitle": "HOSTILE TACTICS",
+        "badgeText": "Deliberate financial and military resource deprivation to cripple the state."
+      },
+      {
+        "question": "How did Quaid-e-Azam advise students to view the hostile actions of the Indian Dominion?",
+        "answer": "He stated that *right‑thinking men* in India deplore these happenings and their attitude will *change*, but he stressed the absolute necessity of *continued vigilance* on Pakistan's part.",
+        "category": "most",
+        "badgeTitle": "STRATEGIC ADVICE",
+        "badgeText": "Remain intensely alert to external threats while hoping for a shift in adversarial mindsets."
+      },
+      {
+        "question": "According to Quaid-e-Azam, what should be the main, undivided occupation of the university students?",
+        "answer": "Their main occupation should be to devote their attention *solely to their studies* in fairness to *themselves*, *their parents*, and the *State*.",
+        "category": "most",
+        "badgeTitle": "PRIMARY DUTY",
+        "badgeText": "Focused academic education as the foundational tool for national service."
+      },
+      {
+        "question": "Why is devoting attention solely to studies crucial for both the individual students and the State?",
+        "answer": "It deeply equips them for the *battle of life*, makes them an *asset* and source of *strength* to the State, and assists in solving great *social and economic problems*.",
+        "category": "most",
+        "badgeTitle": "ULTIMATE GOAL",
+        "badgeText": "Enabling the nation to rapidly reach its destined goal among the most progressive nations."
+      },
+      {
+        "question": "What is the first hidden threat Quaid-e-Azam warned the youth to beware of?",
+        "answer": "He explicitly warned them to be vigilant and extremely beware of the *fifth columnists* operating actively among them.",
+        "category": "most",
+        "badgeTitle": "INTERNAL THREAT",
+        "badgeText": "Hidden traitors and saboteurs seeking to undermine the nation from within."
+      },
+      {
+        "question": "What is the second toxic element the youth must guard against in society?",
+        "answer": "They must aggressively guard against and weed out *selfish people* who only wish to *exploit* the youth so that they themselves may *swim* (succeed).",
+        "category": "most",
+        "badgeTitle": "SOCIAL WARNING",
+        "badgeText": "Critical protection against manipulative individuals aiming to use students for personal gain."
+      },
+      {
+        "question": "How should the youth identify and support the true servants of the State?",
+        "answer": "They must learn to carefully judge who are really *true*, *honest*, and *unselfish servants* of the State, who genuinely wish to serve the people with *heart and soul*.",
+        "category": "most",
+        "badgeTitle": "LEADERSHIP QUALITY",
+        "badgeText": "Recognizing pure integrity and dedicated, selfless public service."
+      },
+      {
+        "question": "What specific traditional \"rut\" did Quaid-e-Azam heavily criticize the students for blindly following?",
+        "answer": "He criticized the deeply ingrained mindset where thousands of graduates are thrown out of the University and all they think and *hanker for is Government service*.",
+        "category": "most",
+        "badgeTitle": "COLONIAL MENTALITY",
+        "badgeText": "A restricted, uncreative ambition focused solely on securing bureaucratic jobs."
+      },
+      {
+        "question": "According to the Vice-Chancellor's statement referenced by Quaid-e-Azam, what was the primary object of the old education system?",
+        "answer": "The main object of the old education system was really to systematically produce *well‑trained, well‑equipped clerks* to initially staff the *Civil Service* under the British rule.",
+        "category": "most",
+        "badgeTitle": "SYSTEMIC FLAW",
+        "badgeText": "An education structure designed for administrative subservience rather than leadership or innovation."
+      },
+      {
+        "question": "How did Quaid-e-Azam illustrate the grim economic reality of government servants?",
+        "answer": "He starkly pointed out that an *M.A. earns less than a taxi driver*, and most so‑called Government servants live in a more *miserable manner* than many menial servants employed by well‑to‑do people.",
+        "category": "most",
+        "badgeTitle": "ECONOMIC REALITY",
+        "badgeText": "Exposing the false prestige of clerical jobs contrasted with their actual impoverished living conditions."
+      },
+      {
+        "question": "Why is it practically impossible and dangerous for all graduates to compete for Government service?",
+        "answer": "The Government simply *cannot absorb thousands*, and those who inevitably fail will be deeply *demoralized*, *disgruntled*, and ready to be *exploited* by persons with their own axes to grind.",
+        "category": "most",
+        "badgeTitle": "SOCIAL CONSEQUENCE",
+        "badgeText": "Widespread frustration leading to severe political and social instability."
+      },
+      {
+        "question": "What dynamic alternative career avenues did Quaid-e-Azam strongly urge the youth to explore?",
+        "answer": "He vigorously urged them to divert their attention to *technical education*, *banking*, *commerce*, *trade*, and *law*, emphasizing that new industries and commercial firms were rapidly opening.",
+        "category": "most",
+        "badgeTitle": "ECONOMIC DIVERSIFICATION",
+        "badgeText": "Embracing manual work and specialized commercial fields for true prosperity."
+      },
+      {
+        "question": "How did Quaid-e-Azam use the compelling example of a young man in banking to inspire the youth?",
+        "answer": "He cited a young man who left Government service for a *banking corporation* on two hundred rupees, and within just *four years*, rapidly rose to become a Manager drawing *fifteen hundred rupees* a month.",
+        "category": "most",
+        "badgeTitle": "SUCCESS STORY",
+        "badgeText": "Concrete proof that commerce and industry offer far more prosperity and rapid opportunities to rise than a stagnant clerkship."
+      },
+      {
+        "question": "How does the text define the overarching central theme regarding youth and the newly formed state?",
+        "answer": "The central theme fundamentally revolves around *nation‑building* through *responsible citizenship* and *purposeful education*, aggressively encouraging youth to move away from the colonial mentality of seeking only government jobs.",
+        "category": "most",
+        "badgeTitle": "CORE MESSAGE",
+        "badgeText": "Using higher education not just for personal gain, but to purposefully serve the developing nation with absolute sincerity and broad vision."
+      },
+      {
+        "question": "Based on the text's exercises, what stark warning does Quaid-e-Azam give about the early days of Pakistan?",
+        "answer": "The early days were described as extremely *challenging but full of hope*, specifically marked by severe, violent tests like the *Punjab and Delhi riots*, which the enemies incorrectly hoped would kill Pakistan at its very *inception*.",
+        "category": "most",
+        "badgeTitle": "HISTORICAL CONTEXT",
+        "badgeText": "Surviving the initial brutal shock definitively proved the new nation's core resilience."
+      },
+      {
+        "question": "What does the phrase \"axes to grind\" imply in the context of unemployed, disgruntled youth?",
+        "answer": "It implies that frustrated youth who fail to secure limited government jobs are easily *exploited* by selfish individuals who have their own *hidden motives* or manipulative personal interests to secretly advance.",
+        "category": "most",
+        "badgeTitle": "POLITICAL EXPLOITATION",
+        "badgeText": "The critical danger of leaving an educated, demoralized class without economic alternatives."
+      },
+      {
+        "question": "How vividly does Quaid-e-Azam describe the actual working conditions of standard government clerks?",
+        "answer": "He describes them as being permanently trapped in a repetitive *circle of clerkship*, exhaustingly working from morning till evening in most *dingy* and highly *uncomfortable conditions*.",
+        "category": "most",
+        "badgeTitle": "HARSH REALITY",
+        "badgeText": "Completely stripping away the societal glamour falsely associated with government desk jobs."
+      },
+      {
+        "question": "What is the relationship between the concept of \"responsible citizenship\" and \"career diversification\" in the speech?",
+        "answer": "Responsible citizenship means stepping out of the colonial *rut* to achieve national *economic self‑reliance*; this is achieved through career diversification by actively entering *commerce*, *industry*, and *technical fields* which directly builds a progressively stronger nation.",
+        "category": "most",
+        "badgeTitle": "ULTIMATE PURPOSE",
+        "badgeText": "Transforming individual economic success in private sectors into collective, robust national development."
+      },
+      {
+        "question": "To whom did Quaid-e-Azam specifically express his gratitude at the beginning of his address?",
+        "answer": "He thanked the *Vice‑Chancellor* for the *flattering terms* in which he had referred to him.",
+        "category": "important",
+        "badgeTitle": "ACKNOWLEDGMENT",
+        "badgeText": "Expressing formal gratitude despite his informal approach to the speech."
+      },
+      {
+        "question": "How did Quaid-e-Azam describe the transition point of the graduating students' lives?",
+        "answer": "He noted that many had come to the end of their *scholastic career* and now stand at the *threshold of life*.",
+        "category": "important",
+        "badgeTitle": "LIFE MILESTONE",
+        "badgeText": "Marking the shift from academic preparation to practical, real‑world application."
+      },
+      {
+        "question": "What specific \"shackles\" did Quaid-e-Azam declare had been completely broken upon the birth of Pakistan?",
+        "answer": "He declared that they had definitively broken the *shackles of slavery*, finally becoming a *free people*.",
+        "category": "important",
+        "badgeTitle": "HISTORICAL LIBERATION",
+        "badgeText": "The end of British colonial rule and the dawn of independent sovereignty."
+      },
+      {
+        "question": "How did the speech describe the operational mandate and accountability of the newly formed government?",
+        "answer": "He emphasized that the Government is *of the people*, strictly responsible *to the people*, and entirely working for the *good of the State*.",
+        "category": "important",
+        "badgeTitle": "DEMOCRATIC FRAMEWORK",
+        "badgeText": "A government designed for public welfare rather than imperial control."
+      },
+      {
+        "question": "What dire physical and emotional condition were the millions of refugees in when they arrived in Punjab?",
+        "answer": "The refugees arrived deeply unfortunate, heavily *stricken in body* and *in soul*.",
+        "category": "important",
+        "badgeTitle": "HUMANITARIAN CRISIS",
+        "badgeText": "The immense human suffering caused by the brutal partition violence."
+      },
+      {
+        "question": "What could the immense logistical problem of refugee rehabilitation have potentially done to a nation?",
+        "answer": "Quaid-e-Azam noted that these problems might well have *destroyed many a well‑established State*.",
+        "category": "important",
+        "badgeTitle": "MAGNITUDE OF CRISIS",
+        "badgeText": "Highlighting the sheer scale of the disaster that the newborn nation faced."
+      },
+      {
+        "question": "Instead of being destroyed by the initial upheaval, what three positive qualities did Pakistan gain?",
+        "answer": "Pakistan survived the shock and emerged *stronger*, more *chastened*, and *better equipped* than ever.",
+        "category": "important",
+        "badgeTitle": "NATIONAL RESILIENCE",
+        "badgeText": "Forging immense strength and maturity through early, severe adversity."
+      },
+      {
+        "question": "Besides withholding cash balances, what other critical military resource did India deny Pakistan?",
+        "answer": "India deliberately withheld Pakistan’s legitimate share of *military equipment*.",
+        "category": "important",
+        "badgeTitle": "HOSTILE TACTICS",
+        "badgeText": "Attempts to leave the new state defenseless and economically crippled."
+      },
+      {
+        "question": "What drastic economic measure was instituted against the Province shortly after independence?",
+        "answer": "The institution of an almost complete *economic blockade* of the Province.",
+        "category": "important",
+        "badgeTitle": "ECONOMIC WARFARE",
+        "badgeText": "A deliberate strategy to suffocate the newly independent state’s economy."
+      },
+      {
+        "question": "Who did Quaid-e-Azam believe would ultimately deplore the hostile happenings initiated by the Indian Dominion?",
+        "answer": "He expressed confidence that all *right‑thinking men* in the *Indian Dominion* would deplore these unjust happenings.",
+        "category": "important",
+        "badgeTitle": "DIPLOMATIC OPTIMISM",
+        "badgeText": "A belief in fundamental human fairness despite severe political hostility."
+      },
+      {
+        "question": "In fairness to whom must the university students devote their attention solely to their studies?",
+        "answer": "They must do so in fairness to *themselves*, their *parents*, and indeed in fairness to the *State*.",
+        "category": "important",
+        "badgeTitle": "TRIPARTITE DUTY",
+        "badgeText": "Education is framed as a profound responsibility owed to self, family, and country."
+      },
+      {
+        "question": "What major national challenges can well-equipped graduates assist the State in solving?",
+        "answer": "They can directly assist the State in solving the great *social and economic problems* that confront it.",
+        "category": "important",
+        "badgeTitle": "PRACTICAL APPLICATION",
+        "badgeText": "Using higher education as a direct tool for national problem‑solving."
+      },
+      {
+        "question": "What specific term did Quaid-e-Azam use to describe hidden traitors within the nation?",
+        "answer": "He warned the youth to fiercely beware of the *fifth columnists* secretly operating among them.",
+        "category": "important",
+        "badgeTitle": "INTERNAL SUBVERSION",
+        "badgeText": "Enemies operating from within to sabotage national unity and progress."
+      },
+      {
+        "question": "What metaphor is used to describe how manipulative individuals use the youth for their own benefit?",
+        "answer": "Selfish people simply wish to *exploit* the youth so that they themselves may *swim* (succeed) while others struggle.",
+        "category": "important",
+        "badgeTitle": "SOCIAL WARNING",
+        "badgeText": "Cautioning against political or social manipulation by opportunistic individuals."
+      },
+      {
+        "question": "Under the old colonial education system, what did thousands of students \"hanker for\" upon graduation?",
+        "answer": "All they would think and *hanker for* was securing *Government service*.",
+        "category": "important",
+        "badgeTitle": "COLONIAL AMBITION",
+        "badgeText": "A deliberately limited career aspiration instilled by British educational policies."
+      },
+      {
+        "question": "Who mainly staffed the upper echelons of the Civil Service before the Indian element was gradually introduced?",
+        "answer": "The Civil Service was initially and mainly staffed by the *British*.",
+        "category": "important",
+        "badgeTitle": "HISTORICAL CONTEXT",
+        "badgeText": "The systemic exclusion of locals from high administrative power during colonial rule."
+      },
+      {
+        "question": "What was the primary psychological goal of the old British educational principle?",
+        "answer": "To artificially create a *mentality* and a *state of mind* where an average graduate’s highest ambition was merely to look for a *job in Government*.",
+        "category": "important",
+        "badgeTitle": "PSYCHOLOGICAL CONDITIONING",
+        "badgeText": "Training the local population for administrative subservience, not leadership."
+      },
+      {
+        "question": "What did a graduate falsely believe they had achieved if they successfully secured a government job under the old system?",
+        "answer": "They mistakenly thought they had definitively *reached their height* of success.",
+        "category": "important",
+        "badgeTitle": "FALSE PRESTIGE",
+        "badgeText": "The illusion of grand achievement attached to low‑level clerical positions."
+      },
+      {
+        "question": "Why does Quaid-e-Azam strongly argue against the mindset that physical work is beneath educated youth?",
+        "answer": "He explicitly asserts that there is absolutely *no shame* in doing honest *manual work and labour*.",
+        "category": "important",
+        "badgeTitle": "DIGNITY OF LABOR",
+        "badgeText": "Breaking the elitist stigma attached to non‑clerical, physical professions."
+      },
+      {
+        "question": "In what specific educational field is there an \"immense scope\" because the nation badly needs qualified professionals?",
+        "answer": "There is immense scope and critical need for *technical education* to produce technically qualified people.",
+        "category": "important",
+        "badgeTitle": "INDUSTRIAL NEED",
+        "badgeText": "Shifting focus from mere arts and administration to applied sciences and technical skills."
+      },
+      {
+        "question": "What are some examples of the new commercial opportunities rapidly opening up in free Pakistan?",
+        "answer": "Vast opportunities in new *industries*, new *banks*, new *insurance companies*, and expanding *commercial firms*.",
+        "category": "important",
+        "badgeTitle": "ECONOMIC EXPANSION",
+        "badgeText": "The rapid growth of the private sector demanding a new, diverse workforce."
+      },
+      {
+        "question": "How does Quaid-e-Azam contrast the potential life in commerce and industry with the life of a government clerk?",
+        "answer": "He guarantees they will be *far more happy*, *prosperous*, and have far more *opportunities to rise* compared to a stagnant clerkship.",
+        "category": "important",
+        "badgeTitle": "CAREER TRAJECTORY",
+        "badgeText": "The dynamic, rewarding nature of the private sector versus bureaucratic stagnation."
+      },
+      {
+        "question": "In the provided anecdote about the young banking manager, what was his starting salary just four years prior?",
+        "answer": "He bravely started in a banking corporation on a modest salary of *two hundred rupees*.",
+        "category": "important",
+        "badgeTitle": "HUMBLE BEGINNINGS",
+        "badgeText": "Willingness to start small in a promising, non‑governmental sector."
+      },
+      {
+        "question": "Why was the young man in the anecdote able to secure his initial job and rapidly rise in the banking corporation?",
+        "answer": "Because he had proactively and specifically *studied the subject of banking*.",
+        "category": "important",
+        "badgeTitle": "TARGETED EDUCATION",
+        "badgeText": "The direct, lucrative benefit of pursuing specialized, market‑relevant education."
+      },
+      {
+        "question": "According to the text's theme, what is the core, ultimate purpose of education in the context of nation-building?",
+        "answer": "To use education not just for personal gain, but to purposefully serve the nation with *sincerity*, *selflessness*, and broad *vision*.",
+        "category": "important",
+        "badgeTitle": "ALTRUISTIC GOAL",
+        "badgeText": "Merging personal career success with the broader necessity of national development."
+      },
+      {
+        "question": "What specific phrase does Quaid-e-Azam use to describe the uncreative, repetitive path that students must abandon?",
+        "answer": "He repeatedly warns them against blindly *following the rut* of the old colonial mindset.",
+        "category": "important",
+        "badgeTitle": "BREAKING HABITS",
+        "badgeText": "The urgent need to discard outdated, restrictive traditions of seeking employment."
+      },
+      {
+        "question": "Based on the MCQs in the exercise, what was the primary warning Quaid-e-Azam gave regarding the concept of freedom?",
+        "answer": "He strongly warned that freedom should not be tragically mistaken for *lawlessness* or \"license.\"",
+        "category": "important",
+        "badgeTitle": "CIVIC DUTY",
+        "badgeText": "True independence requires strict self‑discipline and immense respect for the rule of law."
+      },
+      {
+        "question": "According to the exercise's glossary, what does the term \"blockade\" mean in the context of India's actions?",
+        "answer": "The aggressive action of *surrounding or closing a place* to actively stop people or goods from coming in or out.",
+        "category": "important",
+        "badgeTitle": "ECONOMIC STRANGULATION",
+        "badgeText": "A hostile tactic aimed at paralyzing the new nation’s trade and survival."
+      },
+      {
+        "question": "Based on the MCQs, what is the overall identifying tone of Quaid-e-Azam's entire message to the university students?",
+        "answer": "The tone of the historic speech is fundamentally *encouraging* and *visionary*.",
+        "category": "important",
+        "badgeTitle": "LEADERSHIP STYLE",
+        "badgeText": "Inspiring the youth to look beyond immediate struggles toward a prosperous, self‑reliant future."
+      },
+      {
+        "question": "According to the reading comprehension questions, how does the idea of responsible citizenship connect directly with career diversification?",
+        "answer": "A truly responsible citizen avoids burdening the state for a job; instead, they diversify into commerce to actively build the nation’s *economic self‑reliance*.",
+        "category": "important",
+        "badgeTitle": "STRATEGIC SYNERGY",
+        "badgeText": "Personal career choices directly impacting the macroeconomic survival of the state."
+      },
+      {
+        "question": "Why does Quaid-e-Azam's initial explanation about his lack of a formal academic address reveal his true national priorities?",
+        "answer": "It reveals that his immediate priority is the *practical survival and administration* of the new state, prioritizing *urgent national calls* over traditional academic formalities.",
+        "category": "conceptual",
+        "badgeTitle": "IMPLICIT PRIORITY",
+        "badgeText": "Valuing pragmatic leadership and crisis management over ceremonial intellectualism in a newborn country."
+      },
+      {
+        "question": "How does addressing the students as a \"friend\" rather than \"Head of State\" strategically alter the expectations placed upon the graduates?",
+        "answer": "It shifts the dynamic from a *dictated authoritative command* to a shared, *personal moral obligation*, encouraging the youth to internalize their duties out of *affection and mutual respect*.",
+        "category": "conceptual",
+        "badgeTitle": "PSYCHOLOGICAL STRATEGY",
+        "badgeText": "Building trust to ensure the youth willingly adopt the heavy responsibilities of nation‑building."
+      },
+      {
+        "question": "What deep conceptual inference can be drawn about Pakistan's foundational strength based on its survival of the Punjab and Delhi holocaust?",
+        "answer": "The inference is that the nation's core foundation is incredibly *resilient and indestructible*, as surviving an upheaval meant to *kill it at its inception* only forged it to be *stronger and more chastened*.",
+        "category": "conceptual",
+        "badgeTitle": "TRIAL BY FIRE",
+        "badgeText": "Extreme early adversity serving as the ultimate stress test for national sovereignty."
+      },
+      {
+        "question": "Based on the \"While-reading\" questions, what specific detrimental effect does the blind pursuit of government jobs have on the youth's mindset?",
+        "answer": "It creates a stagnant *colonial mentality* that heavily limits their *growth, ambition, and vision*, reducing them to mere seekers of *subservient clerical roles* rather than innovative leaders.",
+        "category": "conceptual",
+        "badgeTitle": "MENTAL CONDITIONING",
+        "badgeText": "The psychological damage of an education system designed to produce followers, not creators."
+      },
+      {
+        "question": "How does the transition from a \"militant spirit\" to a \"constructive spirit\" fundamentally redefine patriotism for the new generation?",
+        "answer": "Patriotism is no longer defined by *agitation, fighting, or going to jail*; it is newly defined by *discipline, unity, and the difficult administrative work* required to actively run a Government.",
+        "category": "conceptual",
+        "badgeTitle": "EVOLUTION OF DUTY",
+        "badgeText": "Shifting energy from destructive rebellion against oppressors to constructive civic duty for the state."
+      },
+      {
+        "question": "What is the conceptual meaning behind the phrase \"broken the shackles of slavery\" in the context of the students' future careers?",
+        "answer": "It means the youth are no longer forced to serve an *imperial master's administrative machine*; their career efforts now directly contribute to their *own sovereign State* and its people.",
+        "category": "conceptual",
+        "badgeTitle": "ECONOMIC EMANCIPATION",
+        "badgeText": "Career success now equates to national empowerment rather than colonial enrichment."
+      },
+      {
+        "question": "How does Quaid-e-Azam conceptually differentiate between true \"freedom\" and dangerous \"license\"?",
+        "answer": "True freedom involves *responsible, disciplined action* for the State's good, whereas \"license\" is the selfish, *lawless behavior* of doing whatever one pleases regardless of the *interests of other people*.",
+        "category": "conceptual",
+        "badgeTitle": "PHILOSOPHICAL DISTINCTION",
+        "badgeText": "Liberty constrained by civic morality versus destructive absolute anarchy."
+      },
+      {
+        "question": "What is the central historical irony highlighted by Quaid-e-Azam when comparing the struggle for freedom versus post-independence governance?",
+        "answer": "The irony is that it is actually *easier to fight, rebel, and go to jail* to attain freedom than it is to undertake the highly complex, tedious task of *constructing and running a Government*.",
+        "category": "conceptual",
+        "badgeTitle": "REALITY CHECK",
+        "badgeText": "Dispelling the romanticized notion that the hardest part of nationhood ends with independence."
+      },
+      {
+        "question": "Why does Quaid-e-Azam conceptually mention \"right-thinking men in the Indian Dominion\" when discussing India's aggressively hostile actions?",
+        "answer": "To maintain a highly *diplomatic and balanced perspective*, acknowledging that the hostile actions are driven by a specific *attitude of mind* rather than an absolute condemnation of the entire neighboring populace.",
+        "category": "conceptual",
+        "badgeTitle": "NUANCED STATESMANSHIP",
+        "badgeText": "Projecting moral superiority and long‑term diplomatic hope amidst immediate existential threats."
+      },
+      {
+        "question": "Conceptually, how did the enemies' thwarted desire to prevent Pakistan's establishment directly trigger the massive refugee crisis?",
+        "answer": "Having failed politically, enemies pivoted to *demographic and violent sabotage*, systematically uprooting millions to deliberately overwhelm and *destroy the well‑established administrative capacity* of the new State.",
+        "category": "conceptual",
+        "badgeTitle": "WEAPONIZED DISPLACEMENT",
+        "badgeText": "Using a massive humanitarian disaster as a calculated tool of state destruction."
+      },
+      {
+        "question": "In the context of the speech, what does the term \"chastened\" imply about Pakistan's state after the initial bloody upheavals?",
+        "answer": "It implies that the nation has been *subdued, disciplined, and matured* through severe suffering, stripping away naive complacency and leaving a *hardened, realistic resolve*.",
+        "category": "conceptual",
+        "badgeTitle": "PSYCHOLOGICAL MATURATION",
+        "badgeText": "The sober realization of the brutal realities of maintaining independence."
+      },
+      {
+        "question": "How did the \"withholding of cash balances\" act as a conceptual \"economic blockade\" against the newly formed state?",
+        "answer": "By illegally denying the new state its rightful *financial lifeblood*, it was a deliberate strategy to instantly *paralyze the government's ability* to function, pay staff, or manage the refugee crisis.",
+        "category": "conceptual",
+        "badgeTitle": "FINANCIAL WARFARE",
+        "badgeText": "Strangulation of the state apparatus through deliberate resource deprivation."
+      },
+      {
+        "question": "How does Quaid-e-Azam deeply link the concept of \"fairness to parents\" with the broader concept of \"fairness to the State\"?",
+        "answer": "Both parents and the State deeply invest resources in the youth's education; therefore, failing to study is a simultaneous *betrayal of familial sacrifice* and a *dereliction of national duty*.",
+        "category": "conceptual",
+        "badgeTitle": "INTERCONNECTED OBLIGATIONS",
+        "badgeText": "Personal academic diligence viewed as a fundamental societal debt."
+      },
+      {
+        "question": "What is the underlying conceptual danger of \"fifth columnists\" that makes them the very first threat Quaid-e-Azam emphatically warns against?",
+        "answer": "Their primary danger lies in their *invisibility and internal proximity*; they are hidden traitors who systematically breed distrust and destroy the nation's *unity and disciplined constructive spirit* from within.",
+        "category": "conceptual",
+        "badgeTitle": "COVERT SABOTAGE",
+        "badgeText": "Internal betrayal being vastly more lethal to a fragile state than open external warfare."
+      },
+      {
+        "question": "What conceptual imagery is evoked when Quaid-e-Azam warns against manipulative people who exploit the youth \"so that they may swim\"?",
+        "answer": "It evokes a parasitic survival scenario where selfish individuals use the *energy and numbers of disgruntled youth* as a buoyancy aid, effectively *drowning the youth's prospects* to keep themselves afloat politically or socially.",
+        "category": "conceptual",
+        "badgeTitle": "PARASITIC EXPLOITATION",
+        "badgeText": "The grim reality of opportunistic leadership preying on vulnerable demographics."
+      },
+      {
+        "question": "Based on the critical thinking exercises, what specific psychological \"state of mind\" did the colonial education system deliberately engineer regarding the B.A. or M.A. degree?",
+        "answer": "It engineered a completely *subservient psychology* where higher degrees were not viewed as tools for innovation or leadership, but merely as *mandatory qualifications* to securely seek a low‑level *job in Government*.",
+        "category": "conceptual",
+        "badgeTitle": "INSTITUTIONAL BRAINWASHING",
+        "badgeText": "Systemic suppression of entrepreneurial and independent thought."
+      },
+      {
+        "question": "Why does Quaid-e-Azam conceptually compare the miserable earnings of an M.A. degree holder to the earnings of a taxi driver?",
+        "answer": "To aggressively shatter the *false social prestige* associated with clerical degrees, proving that practical, independent labor often yields far better *economic reality and survival* than a hollow bureaucratic title.",
+        "category": "conceptual",
+        "badgeTitle": "STATUS VS. REALITY",
+        "badgeText": "Exposing the deep economic fallacy of the colonial educational hierarchy."
+      },
+      {
+        "question": "What does the critical metaphor \"following the rut\" imply about the thinking skills of the youth under the old system?",
+        "answer": "It implies that the youth are acting like unthinking machines, blindly moving along a *deeply worn, pre‑determined groove* of seeking clerkships without exercising any *independent critical thought* about new opportunities.",
+        "category": "conceptual",
+        "badgeTitle": "INTELLECTUAL PARALYSIS",
+        "badgeText": "The danger of societal momentum dictating career choices in a changed world."
+      },
+      {
+        "question": "Conceptually, why is it structurally \"impossible\" for the Government to absorb the thousands of university graduates?",
+        "answer": "A government's administrative capacity is finite; artificially expanding the *bureaucracy to provide jobs* would drain national resources, contradicting the goal of building a *strong, progressive, and self‑reliant State*.",
+        "category": "conceptual",
+        "badgeTitle": "MACROECONOMIC CONSTRAINT",
+        "badgeText": "The mathematical impossibility of the public sector serving as the primary employer."
+      },
+      {
+        "question": "How does the inevitable failure to secure government jobs lead to the youth being conceptually \"demoralized\" and \"disgruntled\"?",
+        "answer": "Because their entire *educational conditioning and singular ambition* was focused on that one path; failing to achieve it leaves them without alternative skills, destroying their *self‑worth and hope*.",
+        "category": "conceptual",
+        "badgeTitle": "PSYCHOLOGICAL COLLAPSE",
+        "badgeText": "The devastating impact of a monopolistic career mindset meeting systemic rejection."
+      },
+      {
+        "question": "What does the idiom \"axes to grind\" signify regarding the manipulative elements targeting unemployed youth?",
+        "answer": "It signifies that these exploiters have their own *ulterior, hidden motives*—often political agitation or personal vengeance—and they aggressively use the *frustrated energy of the disgruntled youth* as a weapon.",
+        "category": "conceptual",
+        "badgeTitle": "VULNERABLE DEMOGRAPHICS",
+        "badgeText": "Unemployed intellectuals becoming the raw material for societal destabilization."
+      },
+      {
+        "question": "How does Quaid-e-Azam conceptually dismantle the colonial stigma deeply surrounding \"manual work and labour\"?",
+        "answer": "He explicitly removes the \"shame\" associated with it, elevating it from a menial task to a highly dignified, *essential component of nation‑building* that provides vast opportunities outside the *dingy circle of clerkship*.",
+        "category": "conceptual",
+        "badgeTitle": "CULTURAL PARADIGM SHIFT",
+        "badgeText": "Redefining social status based on national utility rather than bureaucratic titles."
+      },
+      {
+        "question": "Conceptually, why is \"technical education\" presented as the direct structural antidote to the \"circle of clerkship\"?",
+        "answer": "Clerkships only maintain existing administrative systems, whereas technical education directly creates *new industries, commerce, and infrastructure*, physically and economically *building the sovereign State* from the ground up.",
+        "category": "conceptual",
+        "badgeTitle": "APPLIED KNOWLEDGE",
+        "badgeText": "Shifting the educational focus from paper management to tangible value creation."
+      },
+      {
+        "question": "How does the specific anecdote of the banking manager conceptually prove that private sector growth outpaces bureaucratic promotion?",
+        "answer": "It demonstrates that in specialized fields like banking, *merit and applied knowledge* lead to rapid financial and positional leaps (two hundred to fifteen hundred in four years), which is entirely impossible in the rigid, seniority‑based *Government service*.",
+        "category": "conceptual",
+        "badgeTitle": "MERITOCRATIC VELOCITY",
+        "badgeText": "The dynamic, accelerated rewards of the free market versus static government hierarchies."
+      },
+      {
+        "question": "How does the central theme of the text conceptually link \"purposeful education\" directly with \"nation-building\"?",
+        "answer": "Purposeful education shifts students away from selfish, guaranteed government jobs towards taking bold risks in *commerce and industry*, which directly builds the economic *infrastructure and self‑reliance* the new nation desperately needs.",
+        "category": "conceptual",
+        "badgeTitle": "SYMBIOTIC PROGRESS",
+        "badgeText": "Individual entrepreneurial risk serving as the engine for collective national wealth."
+      },
+      {
+        "question": "Based on the comprehension exercises, how do the concepts of \"responsible citizenship\" and \"economic self-reliance\" conceptually interact?",
+        "answer": "A responsible citizen understands they must not passively drain state resources by demanding a government job; instead, they achieve *economic self‑reliance* by creating value in the private sector, thereby actively *strengthening the State's economy*.",
+        "category": "conceptual",
+        "badgeTitle": "ACTIVE CONTRIBUTION",
+        "badgeText": "Citizenship defined by contributing to the economic pie rather than just taking a slice."
+      },
+      {
+        "question": "When Quaid-e-Azam mentions the \"miserable manner\" of government servants, what implicit illusion is he systematically trying to shatter for the students?",
+        "answer": "He is shattering the deeply held, generational illusion that a government desk job guarantees *comfort, dignity, and a superior social standing*, exposing it instead as a path to *poverty and dingy conditions*.",
+        "category": "conceptual",
+        "badgeTitle": "DECONSTRUCTING MYTH",
+        "badgeText": "Using harsh socio‑economic truth to break decades of systemic colonial conditioning."
+      },
+      {
+        "question": "Conceptually, why was the historical introduction of the \"Indian element\" into the British Civil Service progressive but ultimately completely insufficient for a free state?",
+        "answer": "While it allowed local participation, the core *mentality and structural principle* remained exactly the same: producing subservient clerks to blindly execute orders, rather than developing visionary *leaders and independent creators*.",
+        "category": "conceptual",
+        "badgeTitle": "SYSTEMIC FLAW",
+        "badgeText": "Changing the personnel without changing the fundamentally restrictive architecture of the system."
+      },
+      {
+        "question": "How does the strategic shift from a \"stern\" warning about fifth columnists to an \"encouraging\" tone about banking opportunities conceptually balance the entire speech?",
+        "answer": "It perfectly balances the immediate requirement for strict *national security and vigilance* with the inspiring need for *economic ambition and hopeful vision*, providing a complete roadmap for survival and subsequent prosperity.",
+        "category": "conceptual",
+        "badgeTitle": "RHETORICAL BALANCE",
+        "badgeText": "Marrying the harsh realities of state preservation with the optimistic potential of free enterprise."
+      },
+      {
+        "question": "Conceptually, how does the critical requirement of \"vigilance\" (from the glossary) apply equally to both external threats like blockades and internal threats like exploiters?",
+        "answer": "\"Vigilance\" demands a constant, highly active state of *intellectual and political alertness*; it requires the youth to see through both the overt *economic strangulation* by external enemies and the covert *manipulative agendas* of internal selfish actors.",
+        "category": "conceptual",
+        "badgeTitle": "UNIVERSAL DEFENSE MECHANISM",
+        "badgeText": "Critical thinking as the primary shield against both geopolitical and domestic subversion."
+      },
+      {
+        "question": "How does the speaker's argument conceptually evolve from addressing past \"shackles of slavery\" to warning against future \"circles of clerkship\"?",
+        "answer": "It powerfully demonstrates that while physical and political slavery has ended, the *psychological and economic slavery* of the colonial mindset (the circle of clerkship) must still be actively defeated to achieve *true, holistic independence*.",
+        "category": "conceptual",
+        "badgeTitle": "CONTINUAL LIBERATION",
+        "badgeText": "True freedom requires breaking both external political chains and internal mental limitations."
+      },
+      {
+        "question": "Ultimately, what is the core conceptual difference between the \"old system of education\" and the demands of a \"sovereign, Independent State\" as outlined in the text?",
+        "answer": "The old system was designed to seamlessly create *dependent, unthinking cogs* for a foreign machine; the sovereign state absolutely demands *independent, highly technical, and economically diversified innovators* to build the machine itself.",
+        "category": "conceptual",
+        "badgeTitle": "PARADIGM OF SOVEREIGNTY",
+        "badgeText": "The shift from passive administration to active, visionary creation."
+      }
+    ],
     "3": [],
     "5": [],
     "6": [],
