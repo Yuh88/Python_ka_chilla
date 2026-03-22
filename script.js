@@ -2517,6 +2517,20 @@ const initializeNotesCraftApp = () => {
         }
     };
 
+    const clearRenderedQuestionContent = () => {
+        const paneMost = document.getElementById('tab-most-important');
+        const paneImportant = document.getElementById('tab-important');
+        const paneConceptual = document.getElementById('tab-conceptual');
+
+        if (paneMost) paneMost.innerHTML = '';
+        if (paneImportant) paneImportant.innerHTML = '';
+        if (paneConceptual) paneConceptual.innerHTML = '';
+
+        if (questionsFeed) {
+            questionsFeed.querySelectorAll('.question-card').forEach((card) => card.remove());
+        }
+    };
+
     const playViewTransition = (direction) => {
         if (!contentAreaView || direction === 'none') return;
         contentAreaView.classList.remove('view-transition-forward', 'view-transition-back');
@@ -2702,6 +2716,8 @@ const initializeNotesCraftApp = () => {
 
     const showSubjectDashboard = () => {
         activeSubject = null;
+        activeChapter = null;
+        clearRenderedQuestionContent();
         renderWelcomeSection();
         setFlashcardFabVisibility(false);
         setCommentsSectionVisibility(false);
@@ -2718,6 +2734,8 @@ const initializeNotesCraftApp = () => {
 
     const showChapterSelection = (subjectName) => {
         activeSubject = subjectName;
+        activeChapter = null;
+        clearRenderedQuestionContent();
         setFlashcardFabVisibility(false);
         setCommentsSectionVisibility(false);
         showElement(chapterSelectionView);
@@ -2805,6 +2823,7 @@ const initializeNotesCraftApp = () => {
             runSearchFilter();
             runFlashcardSync();
         } else {
+            clearRenderedQuestionContent();
             setFlashcardFabVisibility(false);
             setCommentsSectionVisibility(false);
             hideElement(tabNavigation);

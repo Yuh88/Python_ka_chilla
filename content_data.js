@@ -9622,10 +9622,3045 @@ const siteData = {
         "badgeText": "Wasting our most precious drop."
       }
     ],
-    "10": [],
-    "11": [],
-    "13": [],
-    "14": []
+    "10": [
+      {
+        "question": "Who is the author of the short story \"The Punishment of Shahpesh, the Persian, on Khipil, the Builder\"?",
+        "answer": "The story was written by the English novelist and poet *George Meredith*.",
+        "category": "most",
+        "badgeTitle": "LITERARY ERA",
+        "badgeText": "He was a prominent writer during the nineteenth century who used a witty and ironic style."
+      },
+      {
+        "question": "Why did short stories become a highly popular literary medium in the nineteenth century?",
+        "answer": "They became popular because *literacy rates increased* and printed *periodicals flourished* during this era.",
+        "category": "most",
+        "badgeTitle": "WRITER'S FOCUS",
+        "badgeText": "Authors used this accessible medium to explore human nature and moral dilemmas."
+      },
+      {
+        "question": "What is the specific cultural background and narrative setting of this short story?",
+        "answer": "The story is firmly set in a *Persian context*.",
+        "category": "most",
+        "badgeTitle": "STORY TRADITION",
+        "badgeText": "It relies heavily on the tradition of moral storytelling commonly found in Middle Eastern literature."
+      },
+      {
+        "question": "What important architectural task did King Shahpesh assign to Khipil?",
+        "answer": "Shahpesh strictly commanded Khipil to be the *builder* of his grand new *palace*.",
+        "category": "most",
+        "badgeTitle": "TIME ELAPSED",
+        "badgeText": "The construction work lingered slowly for four years before the King inspected it."
+      },
+      {
+        "question": "What was Khipil doing when the King arrived at the riverside to inspect the construction?",
+        "answer": "Khipil was comfortably sitting on a *marble slab*, reciting entertaining *adventures and anecdotes* to his workers.",
+        "category": "most",
+        "badgeTitle": "WORKERS' CONDITION",
+        "badgeText": "The masons and slaves were resting indolently like a pleased flock of sheep."
+      },
+      {
+        "question": "How did Khipil boastfully describe the site he had chosen for the King's palace?",
+        "answer": "He praised it as a magnificent *site of vantage* that completely dominated *earth, air, and water*.",
+        "category": "most",
+        "badgeTitle": "KHIPIL'S CLAIM",
+        "badgeText": "He confidently claimed the palace would fill foreign kings with the distraction of envy."
+      },
+      {
+        "question": "In the King's metaphor about the farm servant, what was the servant's fundamental failure?",
+        "answer": "The farm servant had completely *neglected to sow seeds* during the critical *seedtime*.",
+        "category": "most",
+        "badgeTitle": "METAPHORICAL MEANING",
+        "badgeText": "This metaphor directly highlights Khipil's failure to actually build the palace despite his eloquent claims."
+      },
+      {
+        "question": "What did the lazy farm servant display to prove the supposed richness of his land?",
+        "answer": "Instead of valuable crops, he proudly displayed an *abundance of weeds* to his master.",
+        "category": "most",
+        "badgeTitle": "DECEPTIVE TALK",
+        "badgeText": "He used continuous singing and sweet words to cover up his total negligence."
+      },
+      {
+        "question": "What was the actual physical condition of the palace when Khipil gave the King a tour?",
+        "answer": "The palace was a mess of *unfinished saloons*, completely *roofless rooms*, and poorly *chipped columns*.",
+        "category": "most",
+        "badgeTitle": "KING'S REACTION",
+        "badgeText": "Shahpesh cleverly feigned admiration and sarcastically praised the perfection of his craft."
+      },
+      {
+        "question": "Why did Khipil abruptly stop walking ahead of the King on the marble terrace?",
+        "answer": "He stopped because he suddenly encountered a *wide gap* in the incomplete palace structure.",
+        "category": "most",
+        "badgeTitle": "KHIPIL'S FEAR",
+        "badgeText": "Below the dangerous gap was deep water, and Khipil did not know the motion of swimming."
+      },
+      {
+        "question": "How did Shahpesh forcefully compel the hesitant Khipil to cross the dangerous gap?",
+        "answer": "Shahpesh ruthlessly ordered his guard to point their *arrows* directly at Khipil's body.",
+        "category": "most",
+        "badgeTitle": "THE FALL",
+        "badgeText": "Terrified for his life, Khipil stepped forward hurriedly and was immediately swallowed by the water."
+      },
+      {
+        "question": "What sarcastic remark did Shahpesh make after Khipil was pulled trembling from the water?",
+        "answer": "He mockingly called the sudden drop an *apt contrivance for a bath*.",
+        "category": "most",
+        "badgeTitle": "MOCK REWARD",
+        "badgeText": "He declared it would be Khipil's daily reward whenever much talking fatigued him."
+      },
+      {
+        "question": "What special privilege did Shahpesh pretend to offer Khipil in the grand hall of state?",
+        "answer": "He gave Khipil permission to sit in the royal *marble chair* of the King's own *throne*.",
+        "category": "most",
+        "badgeTitle": "THE CATCH",
+        "badgeText": "The chair was not yet executed by the builders; it did not actually exist."
+      },
+      {
+        "question": "How did Khipil respond to the King's command to sit in the non-existent throne chair?",
+        "answer": "Out of intense fear, Khipil bent his body into a stressful *sitting posture* over the empty space.",
+        "category": "most",
+        "badgeTitle": "PRETEND ACTION",
+        "badgeText": "He made a desperate pretense to sit, eyeing the King in conspiracy to amuse his master."
+      },
+      {
+        "question": "What strict, life-threatening condition did the King place on Khipil while he \"sat\" in the invisible chair?",
+        "answer": "Khipil was ordered to rigidly remain in that painful sitting posture until the *hour of noon*.",
+        "category": "most",
+        "badgeTitle": "DEADLY THREAT",
+        "badgeText": "If he moved left or right, he would be instantly transfixed with twenty-five arrows."
+      },
+      {
+        "question": "How did the masons and ordinary people react to seeing Khipil's invisible chair punishment?",
+        "answer": "When they saw him sitting on nothing and *trembling* with fear, they *laughed* uncontrollably.",
+        "category": "most",
+        "badgeTitle": "PUBLIC HUMILIATION",
+        "badgeText": "They rolled on the floor in amusement, creating echoing laughter that was a thousandfold."
+      },
+      {
+        "question": "What was the actual condition of the noble pleasure gardens Khipil had supposedly planted?",
+        "answer": "The gardens were a barren *desert*, choked full of *weeds and nettles* with completely *dry fountains*.",
+        "category": "most",
+        "badgeTitle": "ABSENCE OF LIFE",
+        "badgeText": "There was absolutely no tree or actual beautiful flowers to be seen anywhere."
+      },
+      {
+        "question": "What painful task did the King command Khipil to perform in the ruined, weed-filled garden?",
+        "answer": "He ordered Khipil to forcefully pluck a handful of stinging *nettles* and deeply smell their *perfume*.",
+        "category": "most",
+        "badgeTitle": "PHYSICAL AGONY",
+        "badgeText": "Khipil sniffed them continuously until his nose became fiercely reddened and uncontrollably itchy."
+      },
+      {
+        "question": "How did the King cleverly respond when Khipil desperately wanted to rub his severely itching nose?",
+        "answer": "The King explicitly forbade him, stating it was illegal to *chafe* his own nose with his own hand.",
+        "category": "most",
+        "badgeTitle": "CRUEL RULE",
+        "badgeText": "He sarcastically commanded that only a willing neighbour was permitted to safely chafe him."
+      },
+      {
+        "question": "What happened when Khipil begged his neighbours to chafe his painful, burning nose?",
+        "answer": "The neighbours maliciously rubbed him in sensitive parts that *abhorred* it, completely ignoring his nose.",
+        "category": "most",
+        "badgeTitle": "UNFULFILLED DESIRE",
+        "badgeText": "Khipil was left suffering with a devouring eagerness and raging thirst for soothing solace."
+      },
+      {
+        "question": "How did Shahpesh severely punish Khipil using the incomplete, fully dry water fountains?",
+        "answer": "Khipil was left *gasping without water* for three full days and three agonizing nights.",
+        "category": "most",
+        "badgeTitle": "MOCK HONOUR",
+        "badgeText": "He was ironically compelled to drink the dusty drought of the dry fountain as a royal \"honour\"."
+      },
+      {
+        "question": "How was Khipil physically transformed into a bizarre garden decoration by the cruel King?",
+        "answer": "He was forced to stand for *seven days and nights* with permanently stretched arms holding heavy *pomegranates*.",
+        "category": "most",
+        "badgeTitle": "HUMAN TREE",
+        "badgeText": "The King proudly presented him to the gathered court as a wondrous new pomegranate shoot."
+      },
+      {
+        "question": "What positive, corrective effect did Khipil's severe punishment have on the people of Shahpesh's kingdom?",
+        "answer": "The terrified people immediately stopped trying to win honours by acting as lazy *gabblers and idlers*.",
+        "category": "most",
+        "badgeTitle": "BUSINESS IMPACT",
+        "badgeText": "They fully realized the severe danger of using the tongue as a constructor instead of doing real work."
+      },
+      {
+        "question": "What famous, mocking title was permanently given to those who were punished exactly like Khipil?",
+        "answer": "They were forever said to firmly belong to the disgraceful *\"Palace of the Wagging Tongue\"*.",
+        "category": "most",
+        "badgeTitle": "SYMBOLIC MEANING",
+        "badgeText": "This symbolic title perfectly represented people who valued empty words and chatter over actual physical deeds."
+      },
+      {
+        "question": "What is the overarching central theme and primary moral of George Meredith's classic story?",
+        "answer": "The story is a brilliant, *timeless satire* heavily highlighting the utter foolishness of valuing *words over deeds*.",
+        "category": "most",
+        "badgeTitle": "WARNING",
+        "badgeText": "It serves as a sharp warning that mere speech without true responsibility inevitably leads to public disgrace."
+      },
+      {
+        "question": "How does Shahpesh's specific leadership style powerfully manifest in his unique punishment of Khipil?",
+        "answer": "Shahpesh relies heavily on sharp *irony and mock-honour* rather than using direct, traditional execution.",
+        "category": "most",
+        "badgeTitle": "EXPOSING NEGLIGENCE",
+        "badgeText": "He successfully uses deep sarcasm to systematically expose Khipil's extreme, pretentious idleness."
+      },
+      {
+        "question": "What does the terribly incomplete, ruined setting of the palace beautifully symbolize in the story?",
+        "answer": "The broken, unfinished, roofless palace perfectly reflects Khipil's profound professional *incompetence*.",
+        "category": "most",
+        "badgeTitle": "IDLE CONSEQUENCES",
+        "badgeText": "It permanently stands as a striking physical manifestation of the empty, disastrous results of idle talk."
+      },
+      {
+        "question": "What specific personality trait makes Khipil a hopelessly loquacious character according to the text's theme summary?",
+        "answer": "He constantly uses smooth *eloquence and flattery* to completely hide his deep, ongoing laziness.",
+        "category": "most",
+        "badgeTitle": "DECEPTIVE NATURE",
+        "badgeText": "His highly impressive words consistently betray a total, undeniable lack of true productivity."
+      },
+      {
+        "question": "How does Shahpesh majestically describe himself when rejecting Khipil's misery about the painful chafing?",
+        "answer": "Shahpesh poetically compares the great *magnanimity of monarchs* to refreshing rain that falls and the bright sun that shines.",
+        "category": "most",
+        "badgeTitle": "GRACE AS CHASTISEMENT",
+        "badgeText": "He strictly tells Khipil he is but a useless weed, and the King's supposed grace is actually his strict chastisement."
+      },
+      {
+        "question": "What strict measure did the King take to ensure Khipil actually gave the painful nettle nosegay to his mistress?",
+        "answer": "The King deliberately set a strict, watchful *guard* upon Khipil to forcefully execute the humiliating orders.",
+        "category": "most",
+        "badgeTitle": "AFTERMATH",
+        "badgeText": "Khipil later returned pale and deeply saddened, having been aggressively received with wrath and shame."
+      },
+      {
+        "question": "How does the quoted poet in the text accurately describe the mental state of moving towards a dreaded, guaranteed punishment?",
+        "answer": "The poet vividly describes it as walking draggingly, clearly knowing a *dreadful strength behind* you.",
+        "category": "most",
+        "badgeTitle": "IMMINENT DOOM",
+        "badgeText": "The terrified person walks forward helplessly facing a terrible, dark fate before them."
+      },
+      {
+        "question": "What was the King's true, hidden intention while he constantly pretended to heap massive favours on Khipil?",
+        "answer": "The King was actively, secretly, and ceaselessly *persecuting Khipil* under a thin veil of kindness.",
+        "category": "most",
+        "badgeTitle": "HIDDEN CRUELTY",
+        "badgeText": "Every single supposed honour and public favour was actually a highly agonizing punishment in disguise."
+      },
+      {
+        "question": "Before Khipil's highly public punishment, what was the sad state of business and daily affairs in the kingdom?",
+        "answer": "Business affairs had *languished* severely due to the popular trend of excessive, idle talking.",
+        "category": "most",
+        "badgeTitle": "STAGNATION",
+        "badgeText": "The usually flowing currents of business had tragically turned into unproductive, stagnant pools."
+      },
+      {
+        "question": "What highly practical poetic advice is given at the very end of the story for those who truly desire splendid fruits?",
+        "answer": "The wise poet advises people to leave the blooming flower of things and aggressively *dig among the roots*.",
+        "category": "most",
+        "badgeTitle": "PRACTICAL MEANING",
+        "badgeText": "This clearly means one must actively do the hard foundational work instead of just engaging in endless talking."
+      },
+      {
+        "question": "How does Khipil's core character fundamentally and physically change from the beginning to the end of the Persian tale?",
+        "answer": "He dramatically transforms from a relaxed, boasting storyteller to someone who looks completely *battered and terrified*.",
+        "category": "most",
+        "badgeTitle": "FINAL STATE",
+        "badgeText": "His once-active tongue eventually drooped mournfully like a silent, heavy bell, showing his total defeat."
+      },
+      {
+        "question": "What specific themes did nineteenth-century writers like George Meredith explore in their short stories?",
+        "answer": "They deeply explored *human nature*, highly complex *moral dilemmas*, and evolving *social values*.",
+        "category": "important",
+        "badgeTitle": "LITERARY FOCUS",
+        "badgeText": "This era marked rapid social, cultural, and intellectual changes."
+      },
+      {
+        "question": "Between which specific years of King Shahpesh's reign did the construction of the palace linger?",
+        "answer": "The construction work lingered slowly from the *first year* of his reign all the way to his *fourth year*.",
+        "category": "important",
+        "badgeTitle": "WASTED TIME",
+        "badgeText": "This long delay proved Khipil's extreme laziness and lack of commitment."
+      },
+      {
+        "question": "How did Khipil entertain the masons and slaves while sitting on the marble slab?",
+        "answer": "He was actively *reciting adventures* to them, cleverly interspersed with *anecdotes* and *poetic instances*.",
+        "category": "important",
+        "badgeTitle": "IDLE WORKERS",
+        "badgeText": "The workers stretched lazily around him with humorous enjoyment instead of working."
+      },
+      {
+        "question": "What did Shahpesh specifically say he desired to do when he asked Khipil to show him the palace?",
+        "answer": "Shahpesh stated he deeply desired to *gratify his sight* with the magnificent fairness of the palace.",
+        "category": "important",
+        "badgeTitle": "KING'S REQUEST",
+        "badgeText": "This was a direct test to see the actual progress of the four-year project."
+      },
+      {
+        "question": "Who did King Shahpesh quote to mockingly praise Khipil's choice of the building site?",
+        "answer": "He sarcastically quoted the profound wisdom of a poet named *Ebn Busrac*.",
+        "category": "important",
+        "badgeTitle": "FALSE PRAISE",
+        "badgeText": "The King used this quote to pretend he admired the empty site."
+      },
+      {
+        "question": "According to Ebn Busrac's wisdom, what do men rear for Virtue when she fails to appear?",
+        "answer": "Men will build a *gorgeous mansion* for Virtue to loudly hear her praises, even if she never speaks a word.",
+        "category": "important",
+        "badgeTitle": "POETIC MEANING",
+        "badgeText": "This poem highlights how people create grand illusions to cover up a lack of real substance."
+      },
+      {
+        "question": "How did Khipil react initially when Shahpesh praised the \"perfection of his craft\" amidst the ruined building?",
+        "answer": "Khipil was completely *bewildered* by the King's highly unexpected and positive words.",
+        "category": "important",
+        "badgeTitle": "UNEXPECTED REACTION",
+        "badgeText": "He expected anger but received feigned admiration for his negligence."
+      },
+      {
+        "question": "What specific architectural features were half-erected or chipped in Khipil's incomplete palace?",
+        "answer": "The King saw *half-erected obelisks* and terribly *pierced and chipped columns*.",
+        "category": "important",
+        "badgeTitle": "PALACE CONDITION",
+        "badgeText": "The entire structure was a clear disaster of unfinished saloons and imperfect courts."
+      },
+      {
+        "question": "How did Khipil feel when Shahpesh first commanded him to walk ahead of him on the marble terrace?",
+        "answer": "Khipil was initially *heightened with the honour* of being told to precede the mighty King.",
+        "category": "important",
+        "badgeTitle": "SHORT-LIVED JOY",
+        "badgeText": "This proud feeling quickly vanished when he encountered the dangerous gap."
+      },
+      {
+        "question": "What logic did Shahpesh use to deny the existence of any gap or incomplete part in the palace?",
+        "answer": "He argued that a palace occupying a builder for *four years* could absolutely have no part incomplete.",
+        "category": "important",
+        "badgeTitle": "KING'S TRAP",
+        "badgeText": "He used Khipil's own timeline against him to force him into the water."
+      },
+      {
+        "question": "What physical condition was Khipil in immediately after being drawn out of the deep water?",
+        "answer": "He was *violently trembling*, and his teeth were *loudly chattering* from fear and cold.",
+        "category": "important",
+        "badgeTitle": "NARROW ESCAPE",
+        "badgeText": "He only received succour (help) when he rose to the surface for the second time."
+      },
+      {
+        "question": "What did Khipil claim about the execution of the marble chair when the King asked him to sit in it?",
+        "answer": "Khipil nervously admitted that the royal chair was *not yet executed* or built.",
+        "category": "important",
+        "badgeTitle": "FAILED EXCUSE",
+        "badgeText": "He tried to avoid the punishment by finally stating the truth about his lazy work."
+      },
+      {
+        "question": "How did Shahpesh threaten Khipil if he proved to be just a \"talkative one\" instead of a real builder?",
+        "answer": "He threatened that Khipil would be *cut down to just the length of his measure* strictly on the ground.",
+        "category": "important",
+        "badgeTitle": "DEATH THREAT",
+        "badgeText": "This implies Khipil would be killed and laid flat if he did not sit."
+      },
+      {
+        "question": "Why did the guards' arrows secretly sway while they were aiming at the sitting Khipil?",
+        "answer": "The arrows swayed because the guards were *silently shaking with laughter* at Khipil's ridiculous posture.",
+        "category": "important",
+        "badgeTitle": "HIDDEN AMUSEMENT",
+        "badgeText": "Even the strict bodyguards could not fully control their immense amusement."
+      },
+      {
+        "question": "What did Shahpesh declare about Khipil's exaltation after the chair punishment ended?",
+        "answer": "He stated Khipil had been *exalted above men* because his punishment perfectly matched what he had built for his master.",
+        "category": "important",
+        "badgeTitle": "POETIC JUSTICE",
+        "badgeText": "The King ensured the punishment perfectly mirrored the crime of empty building."
+      },
+      {
+        "question": "What specific physical state was Khipil in after pretending to sit in the chair until noon?",
+        "answer": "He was *incredibly cramped* and looked highly *pitiable* to see.",
+        "category": "important",
+        "badgeTitle": "PHYSICAL PAIN",
+        "badgeText": "Holding a fake sitting posture for hours caused severe muscle agony."
+      },
+      {
+        "question": "What did the King ask Khipil to tell him about the handful of plucked nettles?",
+        "answer": "The King cruelly asked Khipil to tell him about their *sweet perfume* and *refreshing fragrance*.",
+        "category": "important",
+        "badgeTitle": "SENSORY TORTURE",
+        "badgeText": "Nettles sting the skin, making sniffing them a highly painful experience."
+      },
+      {
+        "question": "How is a \"nosegay\" accurately defined according to the chapter's glossary?",
+        "answer": "A nosegay is simply defined as a *small bunch of flowers*.",
+        "category": "important",
+        "badgeTitle": "IRONY",
+        "badgeText": "The King forced Khipil to present a painful bunch of nettles as a romantic nosegay."
+      },
+      {
+        "question": "In the King's recited poem about flowers, what is the lover beguiled from by the breath of flowers?",
+        "answer": "The lover is successfully beguiled strictly from the *sense of pain* and lulled into an *odorous sloth*.",
+        "category": "important",
+        "badgeTitle": "MOCKING CONTRAST",
+        "badgeText": "The poem is about relief from pain, while Khipil is experiencing intense burning."
+      },
+      {
+        "question": "Why did Khipil feel the King's poetic quotation was slightly incomplete regarding his situation?",
+        "answer": "He complained that the beautiful poem totally ignored the *desperate delight of chafing an itchy nose*.",
+        "category": "important",
+        "badgeTitle": "DESPERATE NEED",
+        "badgeText": "Khipil's only thought was finding relief for his fiercely reddened nose."
+      },
+      {
+        "question": "What did Shahpesh tell Khipil to do if he desired the chafing of his nettled nose?",
+        "answer": "He told him that what is refused to his own hand is *freely permitted to his neighbour*.",
+        "category": "important",
+        "badgeTitle": "CRUEL LOOPHOLE",
+        "badgeText": "He forced Khipil to suffer the humiliation of begging others for physical relief."
+      },
+      {
+        "question": "How did Khipil look and sound when he returned to the King after presenting the nosegay to his mistress?",
+        "answer": "He was noticeably *pale and saddened*, and his heavy tongue gave forth only *mournful sounds*.",
+        "category": "important",
+        "badgeTitle": "COMPLETE DEFEAT",
+        "badgeText": "He looked exactly like a helpless man battered with many severe beatings."
+      },
+      {
+        "question": "How did Khipil make his petition to his neighbours when he desperately needed chafing?",
+        "answer": "He approached them *highly civilly* and with *desperate imploring*, begging for the solace of chafing.",
+        "category": "important",
+        "badgeTitle": "DESPERATION",
+        "badgeText": "His need to scratch his nose became a raging, devouring thirst."
+      },
+      {
+        "question": "How did the King cleverly compare Khipil to a weed when explaining his \"magnanimity\"?",
+        "answer": "He said his royal grace fertilizes richness, but since Khipil is just a *weed*, that same grace encourages *rankness and chastisement*.",
+        "category": "important",
+        "badgeTitle": "ROYAL JUSTIFICATION",
+        "badgeText": "The King justified his torture by blaming Khipil's poor, weed-like nature."
+      },
+      {
+        "question": "What specific fruits was Khipil forced to hold in his stretched hands for seven days?",
+        "answer": "He was forced to firmly hold a *fresh pomegranate* in each outstretched hand.",
+        "category": "important",
+        "badgeTitle": "LIVING STATUE",
+        "badgeText": "He was made to perfectly imitate the hard branches of a fruit-bearing tree."
+      },
+      {
+        "question": "Why did the people of the court wildly applaud the King's wisdom after seeing Khipil as a tree?",
+        "answer": "They applauded because they realized the King knew exactly how to *properly punish offences in coin*.",
+        "category": "important",
+        "badgeTitle": "FITTING PUNISHMENT",
+        "badgeText": "He gave Khipil a punishment that perfectly matched his highly specific crimes."
+      },
+      {
+        "question": "What happens to a nation or person that \"runneth to seed in gabble\" according to the text?",
+        "answer": "According to the poet's strict wisdom, there is a *heavy, unavoidable doom* upon such people.",
+        "category": "important",
+        "badgeTitle": "WARNING",
+        "badgeText": "Endless talking without productive action guarantees failure and ultimate destruction."
+      },
+      {
+        "question": "What is the exact meaning of the word \"loquacious\" as used to describe Khipil in the text?",
+        "answer": "Loquacious simply means *talking a lot* or being *excessively talkative*.",
+        "category": "important",
+        "badgeTitle": "CHARACTER FLAW",
+        "badgeText": "This was Khipil's main fault; he used continuous chatter to hide his laziness."
+      },
+      {
+        "question": "What does the word \"transfix\" mean in the context of the King's threat to Khipil?",
+        "answer": "It means to make somebody completely *unable to move* because they are heavily *surprised or deeply afraid*.",
+        "category": "important",
+        "badgeTitle": "CONTEXTUAL THREAT",
+        "badgeText": "The King meant he would pin Khipil in place with twenty-five deadly arrows."
+      },
+      {
+        "question": "How is an \"obelisk\" accurately defined in the chapter's vocabulary section?",
+        "answer": "It is a *tall, pointed stone column* with four sides, usually put up in memory of a person or event.",
+        "category": "important",
+        "badgeTitle": "PALACE DETAILS",
+        "badgeText": "Half-erected obelisks were prominently seen in Khipil's ruined, incomplete palace."
+      },
+      {
+        "question": "What is the precise meaning of the word \"contrived\" as mentioned in the glossary?",
+        "answer": "It means something *planned in advance* that is definitely *not natural* or highly realistic.",
+        "category": "important",
+        "badgeTitle": "ARTIFICIAL DESIGN",
+        "badgeText": "Khipil's gardens and fountains were poorly contrived and totally non-functional."
+      },
+      {
+        "question": "What happened to Khipil's business affairs before his punishment began?",
+        "answer": "His business affairs had severely *languished* and completely *lost all their productive energy*.",
+        "category": "important",
+        "badgeTitle": "ECONOMIC IMPACT",
+        "badgeText": "The culture of lazy talking had ruined the active flow of normal business."
+      },
+      {
+        "question": "According to the Exercise MCQ section, what was Khipil's core crime?",
+        "answer": "His main crime was that he *completely did not build the palace* as the King commanded.",
+        "category": "important",
+        "badgeTitle": "CORE FAILURE",
+        "badgeText": "Despite having four years, he totally neglected his primary professional responsibility."
+      },
+      {
+        "question": "According to the Exercise MCQ section, how did Shahpesh specifically punish Khipil?",
+        "answer": "He strictly made Khipil heavily *sit surrounded by guards holding loaded arrows*.",
+        "category": "important",
+        "badgeTitle": "PSYCHOLOGICAL TORTURE",
+        "badgeText": "This caused intense physical pain and extreme mental terror simultaneously."
+      },
+      {
+        "question": "According to the Exercise MCQ section, why was Khipil deeply hesitant to step forward into the gap?",
+        "answer": "He hesitated because the water was *deep* and he absolutely *could not swim*.",
+        "category": "important",
+        "badgeTitle": "EXPOSED WEAKNESS",
+        "badgeText": "The King forced him into his biggest fear to expose his architectural failure."
+      },
+      {
+        "question": "What is the definition of an \"anecdote\" as used in the description of Khipil's storytelling?",
+        "answer": "An anecdote is a *very short, interesting or funny story* about a real person or a real event.",
+        "category": "important",
+        "badgeTitle": "DISTRACTION TACTIC",
+        "badgeText": "Khipil used these short stories to keep his workers happy and completely lazy."
+      },
+      {
+        "question": "What does the archaic word \"hath\" accurately mean in the context of the poem?",
+        "answer": "It is simply an old, classical English use for the word *\"has\"*.",
+        "category": "important",
+        "badgeTitle": "POETIC STYLE",
+        "badgeText": "The author uses older vocabulary to give the Persian tale a classic, historical feel."
+      },
+      {
+        "question": "How is the word \"mason\" defined in relation to the workers resting around Khipil?",
+        "answer": "A mason is a *skilled person* who actively *builds using stone* or works deeply with stone.",
+        "category": "important",
+        "badgeTitle": "WASTED TALENT",
+        "badgeText": "Khipil had skilled workers available but allowed them to stretch lazily instead of working."
+      },
+      {
+        "question": "How does the specific setting of the unfinished palace function symbolically in the story?",
+        "answer": "The ruined, roofless setting perfectly symbolizes Khipil's *deep professional incompetence* and *continuous laziness*.",
+        "category": "conceptual",
+        "badgeTitle": "HIDDEN MEANING",
+        "badgeText": "It acts as a permanent physical reflection of the disastrous consequences of idle talk over real action."
+      },
+      {
+        "question": "What does King Shahpesh's farm servant metaphor truly reveal about his perspective on Khipil's work?",
+        "answer": "It reveals the King fully knows Khipil produced *absolutely no real results* despite his continuous, loud boasting.",
+        "category": "conceptual",
+        "badgeTitle": "CLEVER COMPARISON",
+        "badgeText": "He correctly views Khipil just like the lazy servant who displayed useless weeds instead of valuable crops."
+      },
+      {
+        "question": "How does King Shahpesh cleverly use sarcasm and irony in his unique leadership style?",
+        "answer": "Instead of immediate anger, he uses *sharp mock-honour and fake praise* to psychologically trap his lazy servant.",
+        "category": "conceptual",
+        "badgeTitle": "EXPOSING TRUTH",
+        "badgeText": "This ironic style slowly and highly publicly exposes Khipil's pretentious idleness to the entire royal court."
+      },
+      {
+        "question": "How does Khipil's character emotionally evolve from the beginning to the end of the text?",
+        "answer": "He starts as a relaxed, boasting storyteller but gradually becomes *deeply fearful and completely resigned to his fate*.",
+        "category": "conceptual",
+        "badgeTitle": "LOST CONFIDENCE",
+        "badgeText": "By the end, he is utterly pale, saddened, and his tongue droops like a mournful heavy bell."
+      },
+      {
+        "question": "Why did the author include classical story-telling techniques like embedded poetry and fables?",
+        "answer": "These elements *deeply enrich the text* and heavily contribute to the overall effectiveness of the story.",
+        "category": "conceptual",
+        "badgeTitle": "LITERARY STYLE",
+        "badgeText": "They perfectly match the traditional Middle Eastern literature style of carefully conveying complex moral lessons."
+      },
+      {
+        "question": "Why do writers often use humour, wit, and satire to comment on serious issues?",
+        "answer": "Satire makes harsh realities *easier to understand* and serves as a highly engaging method of story-telling.",
+        "category": "conceptual",
+        "badgeTitle": "SOCIAL CRITIQUE",
+        "badgeText": "It allows writers to safely criticize foolishness, political laziness, and failing social norms."
+      },
+      {
+        "question": "What is the deeper, symbolic meaning of the specific phrase \"punish offences in coin\"?",
+        "answer": "It means giving a *specialized punishment* that perfectly and exactly matches the specific nature of the crime.",
+        "category": "conceptual",
+        "badgeTitle": "POETIC JUSTICE",
+        "badgeText": "Since Khipil built empty illusions, his punishments were also entirely based on painful, invisible illusions."
+      },
+      {
+        "question": "How does Khipil's initial position on the \"marble slab\" symbolically expose his true character?",
+        "answer": "He is comfortably sitting directly on the *exact building materials* he should be actively using for construction.",
+        "category": "conceptual",
+        "badgeTitle": "MISUSED RESOURCES",
+        "badgeText": "This instantly shows he proudly turns hard work and valuable resources into personal comfort and laziness."
+      },
+      {
+        "question": "What does the peaceful metaphor of the \"pleased flocks\" and the \"shepherd\" represent in the opening scene?",
+        "answer": "It represents Khipil acting as a *bad leader* who slowly guides his workers into completely indolent feeding and deep laziness.",
+        "category": "conceptual",
+        "badgeTitle": "CORRUPT INFLUENCE",
+        "badgeText": "Instead of building, the workers are happily paralyzed by his highly entertaining, continuous anecdotes."
+      },
+      {
+        "question": "Why does King Shahpesh specifically pretend he sees \"no distinction\" between complete and incomplete parts of the palace?",
+        "answer": "He intentionally uses *absolute fake logic* to trap Khipil in his own lies about being a completely perfect builder.",
+        "category": "conceptual",
+        "badgeTitle": "FORCED CONFESSION",
+        "badgeText": "He forces Khipil to either publicly admit his failure or walk directly into the dangerous deep water."
+      },
+      {
+        "question": "What is the psychological significance of Shahpesh securely surrounding Khipil with bodyguards holding bent bows?",
+        "answer": "It powerfully demonstrates the King's *absolute, terrifying control* over Khipil without ever touching him directly.",
+        "category": "conceptual",
+        "badgeTitle": "MENTAL TERROR",
+        "badgeText": "It forces Khipil to strictly punish himself by desperately holding a highly painful, freezing sitting posture."
+      },
+      {
+        "question": "Why did the gathered crowd's loud laughter make Khipil's punishment much worse?",
+        "answer": "The echoing laughter added *severe, totally public humiliation* to his already intense, cramping physical pain.",
+        "category": "conceptual",
+        "badgeTitle": "LOST RESPECT",
+        "badgeText": "The exact same masons who once enjoyed his stories now happily rolled on the floor loudly mocking his downfall."
+      },
+      {
+        "question": "What does the specific poetic phrase \"knowing a dreadful strength behind\" mean for Khipil's mental state?",
+        "answer": "It shows he is *completely trapped and pushed* by the King's unstoppable, highly dangerous royal authority.",
+        "category": "conceptual",
+        "badgeTitle": "INEVITABLE FATE",
+        "badgeText": "He is forcefully pushed forward into a guaranteed, highly painful and terrifying dark fate before him."
+      },
+      {
+        "question": "Why does the King specifically command Khipil to carefully smell the nettles instead of just holding them?",
+        "answer": "Smelling forcefully brings the stinging, dangerous plants *directly against his highly sensitive, unprotected nose*.",
+        "category": "conceptual",
+        "badgeTitle": "SENSORY IRONY",
+        "badgeText": "It successfully turns the expected pleasant experience of a garden's sweet perfume into immediate physical agony."
+      },
+      {
+        "question": "What is the deep cruelty in the poem the King happily recites about being \"lulled in odorous sloth\"?",
+        "answer": "The poem vividly describes deep, peaceful relaxation from beautiful flowers, which is the *exact opposite of Khipil's situation*.",
+        "category": "conceptual",
+        "badgeTitle": "CRUEL CONTRAST",
+        "badgeText": "Khipil is experiencing extreme, burning pain while the King poetically talks about pure innocence and beauty."
+      },
+      {
+        "question": "Why is the King's \"permission\" for neighbours to chafe Khipil actually a brilliant psychological punishment?",
+        "answer": "It *completely strips away Khipil's dignity* by strictly forcing him to pitifully beg others for basic physical relief.",
+        "category": "conceptual",
+        "badgeTitle": "CRUEL BETRAYAL",
+        "badgeText": "It predictably results in the neighbours purposefully hurting him in parts that strictly abhorred the chafing."
+      },
+      {
+        "question": "What is the symbolic meaning of Khipil's tongue finally drooping \"like the tongue of a heavy bell\"?",
+        "answer": "It perfectly symbolizes the *complete defeat and absolute silencing* of his once highly active, loquacious nature.",
+        "category": "conceptual",
+        "badgeTitle": "LOST POWER",
+        "badgeText": "His primary weapon—his clever, fast-talking tongue—has been violently turned into an instrument of heavy mourning."
+      },
+      {
+        "question": "Why does Shahpesh refer to his royal grace as \"the sun that shineth\" while deliberately calling Khipil a weed?",
+        "answer": "He implies that a good king's grace makes good things grow, but it only *powerfully encourages terrible rankness in bad people*.",
+        "category": "conceptual",
+        "badgeTitle": "TWISTED LOGIC",
+        "badgeText": "He successfully uses this philosophy to entirely justify his endless, highly cruel chastisement of Khipil."
+      },
+      {
+        "question": "What is the conceptual significance of violently turning Khipil into a \"wondrous pomegranate shoot\"?",
+        "answer": "Since Khipil completely failed to plant real trees in the gardens, he is brutally forced to *physically become the tree himself*.",
+        "category": "conceptual",
+        "badgeTitle": "PHYSICAL MOCKERY",
+        "badgeText": "It physically locks his body into the exact agricultural work he totally neglected to actually do."
+      },
+      {
+        "question": "What critical social warning is strongly hidden in the concept of a society that \"runneth to seed in gabble\"?",
+        "answer": "It directly warns that a society completely focused on endless talking instead of hard work is *permanently cursed with inevitable doom*.",
+        "category": "conceptual",
+        "badgeTitle": "NATIONAL STAGNATION",
+        "badgeText": "It causes all useful business and progress to violently turn into completely useless, stagnant pools."
+      },
+      {
+        "question": "What does the poet truly mean by advising ambitious people to \"dig among the roots\" to become rich?",
+        "answer": "It means one must quietly and diligently do the *highly difficult, unseen foundational work* required for real success.",
+        "category": "conceptual",
+        "badgeTitle": "ACTION VS TALK",
+        "badgeText": "It is a strict command to completely abandon superficial talking for actual, heavily solid effort."
+      },
+      {
+        "question": "Why is the specific phrase \"Palace of the Wagging Tongue\" a perfectly fitting eternal legacy for Khipil?",
+        "answer": "It heavily highlights that the *only thing Khipil truly constructed* during those four years was endless, completely useless conversation.",
+        "category": "conceptual",
+        "badgeTitle": "ETERNAL MOCKERY",
+        "badgeText": "It forever cements his historical reputation as an ultimate, foolish babbler rather than a master builder."
+      },
+      {
+        "question": "How does Khipil continuously use the specific word \"Surely\" as a desperate defensive psychological mechanism?",
+        "answer": "He desperately uses it to *forcefully project fake confidence and agreement* when he is actually deeply, hopelessly cornered.",
+        "category": "conceptual",
+        "badgeTitle": "VERBAL SHIELD",
+        "badgeText": "He heavily relies on agreeable words to desperately try and soften the King's highly dangerous, silent wrath."
+      },
+      {
+        "question": "What key information is deliberately established in the very first sentence (exposition) of the short story?",
+        "answer": "It instantly establishes the *strict power dynamic*: Shahpesh is the absolute commander, and Khipil is solely his servant builder.",
+        "category": "conceptual",
+        "badgeTitle": "CORE CONFLICT",
+        "badgeText": "This immediately sets up the fundamental, totally unfulfilled professional responsibility that deeply drives the entire plot."
+      },
+      {
+        "question": "How does Khipil's specific response \"To hear is to obey\" beautifully highlight his extreme, dangerous hypocrisy?",
+        "answer": "He proudly speaks the *ultimate, classic words of loyalty*, yet his actual physical actions show total, undeniable disobedience and laziness.",
+        "category": "conceptual",
+        "badgeTitle": "EMPTY WORDS",
+        "badgeText": "It perfectly encapsulates the entire core theme of dangerous, highly pretentious idle talk."
+      },
+      {
+        "question": "Why is George Meredith's specific literary style perfectly suited for telling this Persian tale?",
+        "answer": "His *highly witty and ironic style* perfectly matches the King's preferred method of using deep sarcasm for severe punishment.",
+        "category": "conceptual",
+        "badgeTitle": "THEMATIC MATCH",
+        "badgeText": "It makes the complex moral lesson about responsibility highly engaging and deeply, profoundly thought-provoking."
+      },
+      {
+        "question": "What does Khipil's total failure to build the royal \"chair\" specifically symbolize regarding royal power?",
+        "answer": "By entirely failing to build the throne, Khipil has *symbolically failed to properly support and respect* the King's supreme royal authority.",
+        "category": "conceptual",
+        "badgeTitle": "FITTING PUNISHMENT",
+        "badgeText": "Therefore, the King cruelly forces Khipil to bear the highly painful weight of that missing authority strictly on his own legs."
+      },
+      {
+        "question": "How does the specific, repeated mention of \"four years\" mathematically increase Khipil's ultimate guilt?",
+        "answer": "It completely and permanently *eliminates any valid excuse* regarding a total lack of sufficient time to actually finish the construction.",
+        "category": "conceptual",
+        "badgeTitle": "UNDENIABLE GUILT",
+        "badgeText": "It heavily proves his highly incomplete courts are solely the direct result of prolonged, intensely intentional negligence."
+      },
+      {
+        "question": "What is the fundamental conceptual difference between a \"constructor\" and a \"commentator\" in the story's climax?",
+        "answer": "A constructor *actively creates real, physical value*, while a commentator only continuously provides useless, highly empty opinions.",
+        "category": "conceptual",
+        "badgeTitle": "SOCIAL DISEASE",
+        "badgeText": "The entire kingdom was severely failing because absolutely everyone wanted the highly easy job of talking rather than building."
+      },
+      {
+        "question": "Why does Shahpesh deliberately pretend to be a \"happy lover\" while actively watching Khipil suffer with the nettles?",
+        "answer": "It is a *highly advanced, cruel form of psychological torture* specifically designed to maximize Khipil's total mental distress.",
+        "category": "conceptual",
+        "badgeTitle": "CRUEL DETACHMENT",
+        "badgeText": "The King's fake, poetic joy heavily contrasts with Khipil's true pain, showing absolute, unfeeling royal dominance."
+      },
+      {
+        "question": "How does the specific concept of \"clemency\" violently become a weapon in the hands of King Shahpesh?",
+        "answer": "He cleverly and entirely disguises his *highly cruel, deeply humiliating orders* as beautiful acts of royal mercy and forgiveness.",
+        "category": "conceptual",
+        "badgeTitle": "TRAP OF GRACE",
+        "badgeText": "This strictly prevents Khipil from openly rebelling, as he must continuously thank the powerful King for his own active torture."
+      },
+      {
+        "question": "What is the deeper, darker significance of the neighbours vigorously chafing Khipil in parts that \"abhorred it\"?",
+        "answer": "It clearly shows that society will *maliciously and quickly turn against a fallen, highly disgraced figure* when given the free opportunity.",
+        "category": "conceptual",
+        "badgeTitle": "LOSS OF STATUS",
+        "badgeText": "Khipil has completely lost his highly comfortable social standing and is now a helpless target for public, physical abuse."
+      },
+      {
+        "question": "How does Khipil's initial, highly arrogant boast about occupying \"the tongues of travellers\" ironically come true?",
+        "answer": "He successfully becomes a highly famous story, but *strictly as a foolish, highly disgraced warning* rather than a great, respected builder.",
+        "category": "conceptual",
+        "badgeTitle": "IRONY OF FAME",
+        "badgeText": "His terrible, legendary punishment successfully creates the infamous, eternal \"Palace of the Wagging Tongue\"."
+      },
+      {
+        "question": "What does the specific phrase \"freshened with brooks\" metaphorically highlight about Khipil's active storytelling?",
+        "answer": "It directly highlights how *highly soothing, deeply pleasant, and incredibly distracting* his fake words were to the lazy workers.",
+        "category": "conceptual",
+        "badgeTitle": "LULLABY OF LAZINESS",
+        "badgeText": "His entertaining stories acted exactly like a refreshing stream that successfully lulled everyone into an odorous sloth."
+      },
+      {
+        "question": "Why did the King carefully and strictly appoint a specific \"time for him to return\" after the painful nosegay presentation?",
+        "answer": "It securely guaranteed the King could *personally witness and heavily mock* the guaranteed, highly miserable aftermath of the mission.",
+        "category": "conceptual",
+        "badgeTitle": "CALCULATED CRUELTY",
+        "badgeText": "The King highly carefully structures the entire punishment to continuously ensure maximum, perfectly scheduled humiliation."
+      },
+      {
+        "question": "How does the specific word \"conspiracy\" perfectly describe Khipil's desperate fake sitting posture?",
+        "answer": "Khipil desperately tries to mentally frame his highly painful punishment as a *shared, highly secret joke* between him and the powerful King.",
+        "category": "conceptual",
+        "badgeTitle": "DESPERATE ATTEMPT",
+        "badgeText": "He vainly hopes that pretending it is just a fun game will successfully stop the deadly, loaded arrows."
+      },
+      {
+        "question": "What is the highly critical lesson regarding \"responsibility and results\" highlighted entirely in the theme section?",
+        "answer": "The absolute core lesson is that holding any position strictly requires *delivering actual results*, not just offering impressive, empty speeches.",
+        "category": "conceptual",
+        "badgeTitle": "TIMELESS RULE",
+        "badgeText": "This highly strict rule regarding duty is considered completely relevant in both ancient Persia and the entire present day."
+      }
+    ],
+    "11": [
+      {
+        "question": "Who is the author of the poem \"Those Winter Sundays\"?",
+        "answer": "The poem is written by *Robert Hayden*, an American poet who lived from 1913 to 1980.",
+        "category": "most",
+        "badgeTitle": "BACKGROUND",
+        "badgeText": "Known for reflective and emotional poetry."
+      },
+      {
+        "question": "What are the main subjects of Robert Hayden's poetry?",
+        "answer": "His poetry is known for being reflective and emotional, mainly focusing on *family, history, and African American experiences*.",
+        "category": "most",
+        "badgeTitle": "POETIC STYLE",
+        "badgeText": "Celebrated for emotional depth and vivid imagery."
+      },
+      {
+        "question": "How did Robert Hayden's childhood influence his poetry?",
+        "answer": "He grew up in a foster home in Detroit that was marked by *hardship*. This difficult childhood inspired many of his poems, including this one.",
+        "category": "most",
+        "badgeTitle": "INSPIRATION",
+        "badgeText": "Personal struggle shaped his themes."
+      },
+      {
+        "question": "What significant national title did Robert Hayden achieve?",
+        "answer": "He became the first *African American Consultant in Poetry to the Library of Congress*, which is also known as the U.S. Poet Laureate.",
+        "category": "most",
+        "badgeTitle": "ACHIEVEMENT",
+        "badgeText": "A historic milestone in American literature."
+      },
+      {
+        "question": "Name some of the famous works written by Robert Hayden.",
+        "answer": "His famous works include *Middle Passage, Frederick Douglass*, and the poem *Those Winter Sundays*.",
+        "category": "most",
+        "badgeTitle": "NOTABLE WORKS",
+        "badgeText": "Classics of African American literature."
+      },
+      {
+        "question": "What did the father do early on Sunday mornings?",
+        "answer": "Even on Sundays, the father got up early and dressed in the blueblack cold to *warm up the house*.",
+        "category": "most",
+        "badgeTitle": "SACRIFICE",
+        "badgeText": "He did this despite his tiredness."
+      },
+      {
+        "question": "Describe the physical condition of the father's hands.",
+        "answer": "The father had *cracked hands that ached* from labor. This was due to his hard work in the harsh weekday weather.",
+        "category": "most",
+        "badgeTitle": "HARD WORK",
+        "badgeText": "A symbol of his tough physical labor."
+      },
+      {
+        "question": "How did the family react to the father making the fires blaze?",
+        "answer": "The speaker notes that *no one ever thanked him* for making the banked fires blaze and warming the house.",
+        "category": "most",
+        "badgeTitle": "INGRATITUDE",
+        "badgeText": "The father's efforts were taken for granted."
+      },
+      {
+        "question": "What sounds did the speaker hear upon waking up?",
+        "answer": "The speaker would wake up and hear the *cold splintering and breaking* as the fire began to warm the house.",
+        "category": "most",
+        "badgeTitle": "IMAGERY",
+        "badgeText": "Represents the harshness of winter yielding to warmth."
+      },
+      {
+        "question": "When would the father call the speaker?",
+        "answer": "The father would call his child *only when the rooms were warm*.",
+        "category": "most",
+        "badgeTitle": "CARE",
+        "badgeText": "Protecting the child from the freezing cold."
+      },
+      {
+        "question": "Why did the speaker rise and dress slowly?",
+        "answer": "The speaker dressed slowly because he was *fearing the chronic angers of that house*.",
+        "category": "most",
+        "badgeTitle": "TENSION",
+        "badgeText": "Indicates an emotionally difficult environment."
+      },
+      {
+        "question": "How did the speaker speak to his father?",
+        "answer": "The speaker admits to speaking *indifferently* to him, failing to show appreciation for the man who had driven out the cold.",
+        "category": "most",
+        "badgeTitle": "REGRET",
+        "badgeText": "The speaker shows remorse for his cold behavior."
+      },
+      {
+        "question": "What extra task did the father do for the speaker besides warming the house?",
+        "answer": "In addition to fighting the cold, the father also *polished the speaker's good shoes*.",
+        "category": "most",
+        "badgeTitle": "HIDDEN LOVE",
+        "badgeText": "Small, unnoticed acts of care."
+      },
+      {
+        "question": "What does the speaker ask himself at the end of the poem?",
+        "answer": "The speaker repeatedly asks, *\"What did I know\"* about love's austere and lonely offices.",
+        "category": "most",
+        "badgeTitle": "REALIZATION",
+        "badgeText": "Understanding the silent duties of parental love."
+      },
+      {
+        "question": "How is imagery used to describe the cold in the poem?",
+        "answer": "The poet uses vivid phrases like *\"blueblack cold\"* and *\"cracked hands that ached\"* to create a strong sensory experience of the harsh winter.",
+        "category": "most",
+        "badgeTitle": "LITERARY DEVICE",
+        "badgeText": "Highlights the harsh conditions."
+      },
+      {
+        "question": "What do winter and fire symbolize in the poem?",
+        "answer": "Winter symbolizes the *family's emotional distance*, while the fire represents the *father's love and warmth*.",
+        "category": "most",
+        "badgeTitle": "SYMBOLISM",
+        "badgeText": "Contrasting natural elements."
+      },
+      {
+        "question": "Give an example of alliteration from the poem.",
+        "answer": "The phrase *\"weekday weather\"* is an example of alliteration, repeating consonant sounds to add rhythm and emphasis.",
+        "category": "most",
+        "badgeTitle": "POETIC TECHNIQUE",
+        "badgeText": "Enhances the flow of the poem."
+      },
+      {
+        "question": "What is the effect of repetition in the last stanza?",
+        "answer": "Repeating *\"What did I know\"* strongly highlights the speaker's deep regret and his growing understanding of his father's sacrifices.",
+        "category": "most",
+        "badgeTitle": "EMOTION",
+        "badgeText": "Emphasizes the sorrow of realization."
+      },
+      {
+        "question": "Explain the metaphor \"love's austere and lonely offices.\"",
+        "answer": "This metaphor compares parental love to *difficult, strict, and unappreciated duties or jobs that one does alone*.",
+        "category": "most",
+        "badgeTitle": "METAPHOR",
+        "badgeText": "Duty equated with silent affection."
+      },
+      {
+        "question": "How does the tone of the poem change?",
+        "answer": "The tone shifts from being *neutral and descriptive* at the start to becoming *highly reflective and regretful* by the end.",
+        "category": "most",
+        "badgeTitle": "TONE SHIFT",
+        "badgeText": "Shows the speaker's emotional growth."
+      },
+      {
+        "question": "Why is the poem written in Free Verse?",
+        "answer": "It lacks a consistent rhyme scheme or meter, which gives the poem a *very natural, conversational style*.",
+        "category": "most",
+        "badgeTitle": "FORM",
+        "badgeText": "Enhances the realism of the memory."
+      },
+      {
+        "question": "What is the main theme of \"Those Winter Sundays\"?",
+        "answer": "The central theme is *unspoken parental love*, highlighting how a father's quiet, selfless sacrifices often go completely unnoticed and unappreciated.",
+        "category": "most",
+        "badgeTitle": "CORE THEME",
+        "badgeText": "Love shown through action, not words."
+      },
+      {
+        "question": "How does the poem portray the expression of true love?",
+        "answer": "The poem reveals that true love is often shown through *actions rather than affectionate words*, remaining silent, enduring, and unacknowledged.",
+        "category": "most",
+        "badgeTitle": "MESSAGE",
+        "badgeText": "Actions speak louder than words."
+      },
+      {
+        "question": "What does the phrase \"chronic angers\" suggest about the household?",
+        "answer": "It hints at an *underlying tension* in the household, adding depth to the emotional distance between the father and the child.",
+        "category": "most",
+        "badgeTitle": "CONFLICT",
+        "badgeText": "A stressful home environment."
+      },
+      {
+        "question": "Who is the central figure in the poem besides the speaker?",
+        "answer": "The central figure in the poem, apart from the speaker, is the *speaker's father*.",
+        "category": "most",
+        "badgeTitle": "MAIN CHARACTER",
+        "badgeText": "The subject of the speaker's memory."
+      },
+      {
+        "question": "What time of day does the father wake up, and what does he do first?",
+        "answer": "The father wakes up *early in the morning* to light the fire and warm the freezing house.",
+        "category": "most",
+        "badgeTitle": "DAILY ROUTINE",
+        "badgeText": "His first act of love every day."
+      },
+      {
+        "question": "What do you think is Robert Hayden's attitude towards the father's sacrifices?",
+        "answer": "Hayden looks back with *deep respect, realization, and remorse*, recognizing that his father's hard work was a silent form of enduring love.",
+        "category": "most",
+        "badgeTitle": "ATTITUDE",
+        "badgeText": "Appreciation mixed with guilt."
+      },
+      {
+        "question": "How does the speaker's viewpoint change from childhood to adulthood?",
+        "answer": "As a child, he was *indifferent and ungrateful*, but as an adult, he is *filled with regret* and understands the depth of his father's silent devotion.",
+        "category": "most",
+        "badgeTitle": "CHARACTER ARC",
+        "badgeText": "Maturation and realization."
+      },
+      {
+        "question": "Is the poet critical of his younger self? Why?",
+        "answer": "Yes, the poet is highly critical, repeatedly asking *\"What did I know\"* to express his remorse for failing to recognize his father's love.",
+        "category": "most",
+        "badgeTitle": "SELF-CRITICISM",
+        "badgeText": "Acknowledging childhood ignorance."
+      },
+      {
+        "question": "Find an example of personification in the poem and explain its effect.",
+        "answer": "The phrase *\"cold splintering, breaking\"* personifies the cold, making it seem like a solid, aggressive enemy that the father's fire defeats.",
+        "category": "most",
+        "badgeTitle": "PERSONIFICATION",
+        "badgeText": "Gives the cold physical qualities."
+      },
+      {
+        "question": "Explain the significance of the title \"Those Winter Sundays\" and its plural form.",
+        "answer": "The plural *\"Sundays\"* shows that this sacrifice was a *continuous, repetitive routine*, highlighting the father's unending devotion week after week.",
+        "category": "most",
+        "badgeTitle": "TITLE SIGNIFICANCE",
+        "badgeText": "Emphasizes consistency."
+      },
+      {
+        "question": "Why does the speaker use the term \"blueblack cold\"?",
+        "answer": "The term *\"blueblack cold\"* is used as vivid imagery to describe the extreme, bitter freezing temperatures of the dark winter morning.",
+        "category": "most",
+        "badgeTitle": "IMAGERY",
+        "badgeText": "Visualizing extreme temperatures."
+      },
+      {
+        "question": "Where was the poet Robert Hayden born?",
+        "answer": "Robert Hayden was born in *Detroit*, where he grew up in a foster home.",
+        "category": "important",
+        "badgeTitle": "ORIGIN",
+        "badgeText": "His early life experiences shaped his writing."
+      },
+      {
+        "question": "Where did Robert Hayden receive his education?",
+        "answer": "He was educated at *Detroit City College* and the *University of Michigan*.",
+        "category": "important",
+        "badgeTitle": "EDUCATION",
+        "badgeText": "His academic background helped him become a U.S. Poet Laureate."
+      },
+      {
+        "question": "What specific day of the week is focused on in the poem?",
+        "answer": "The poem focuses specifically on *Sundays*, which is usually a day of rest.",
+        "category": "important",
+        "badgeTitle": "SETTING",
+        "badgeText": "Emphasizes the father's continuous, unbroken routine."
+      },
+      {
+        "question": "Why did the father's hands ache in the poem?",
+        "answer": "His hands ached from *heavy labor* in the harsh weekday weather.",
+        "category": "important",
+        "badgeTitle": "PHYSICAL TOLL",
+        "badgeText": "Shows the painful reality of his daily work."
+      },
+      {
+        "question": "What does the phrase \"banked fires\" mean?",
+        "answer": "It means to *pile coal or wood on a fire* so that it burns slowly for a long time to keep the house warm.",
+        "category": "important",
+        "badgeTitle": "VOCABULARY",
+        "badgeText": "A specific method of heating a home."
+      },
+      {
+        "question": "What did the speaker hear when he woke up?",
+        "answer": "The speaker would wake up and hear the *cold splintering and breaking*.",
+        "category": "important",
+        "badgeTitle": "AUDITORY IMAGERY",
+        "badgeText": "The sound of the house expanding as it warms up."
+      },
+      {
+        "question": "Why did the speaker rise and dress \"slowly\"?",
+        "answer": "The speaker dressed slowly because he was *reluctant*, fearing the chronic angers present in that house.",
+        "category": "important",
+        "badgeTitle": "HESITATION",
+        "badgeText": "Shows a lack of excitement to start the day."
+      },
+      {
+        "question": "What does the word \"chronic\" mean in the context of the poem?",
+        "answer": "\"Chronic\" means something *lasting a long time and difficult to solve*, referring to the ongoing tension in the home.",
+        "category": "important",
+        "badgeTitle": "VOCABULARY",
+        "badgeText": "Indicates a persistent negative atmosphere."
+      },
+      {
+        "question": "What does it mean to speak \"indifferently\"?",
+        "answer": "It means speaking in a way that *shows you are not interested or do not care* about somebody or something.",
+        "category": "important",
+        "badgeTitle": "ATTITUDE",
+        "badgeText": "The child's lack of warmth toward the father."
+      },
+      {
+        "question": "Who exactly had \"driven out the cold\" in the house?",
+        "answer": "The *father* had driven out the cold by waking up early and lighting the fire.",
+        "category": "important",
+        "badgeTitle": "ACTION",
+        "badgeText": "The father's role as the protector."
+      },
+      {
+        "question": "What does the word \"austere\" mean as used in the poem?",
+        "answer": "\"Austere\" means something that is *simple and plain, strict, and without any decorations*.",
+        "category": "important",
+        "badgeTitle": "VOCABULARY",
+        "badgeText": "Describes the harsh, unglamorous nature of the father's love."
+      },
+      {
+        "question": "What is the meaning of \"offices\" in the phrase \"lonely offices\"?",
+        "answer": "In this context, \"offices\" refers to the *duties, tasks, or services* of love that the father performed.",
+        "category": "important",
+        "badgeTitle": "DUTY",
+        "badgeText": "Acts of service done out of responsibility."
+      },
+      {
+        "question": "What does the word \"blaze\" mean in the glossary?",
+        "answer": "\"Blaze\" means to *burn brightly and strongly*.",
+        "category": "important",
+        "badgeTitle": "VOCABULARY",
+        "badgeText": "The result of the father's effort with the fire."
+      },
+      {
+        "question": "How is the word \"splinter\" defined in the chapter?",
+        "answer": "It means to *break, or to make something break, into small, thin, sharp pieces*.",
+        "category": "important",
+        "badgeTitle": "VOCABULARY",
+        "badgeText": "Used metaphorically to describe the breaking cold."
+      },
+      {
+        "question": "Why did the father's sacrifices mostly go unnoticed?",
+        "answer": "They went unnoticed because the child *expected them*, and the father's love was shown through *quiet actions rather than affectionate words*.",
+        "category": "important",
+        "badgeTitle": "SILENT LOVE",
+        "badgeText": "Love expressed through routine chores."
+      },
+      {
+        "question": "How does the poem prove that love is an action?",
+        "answer": "It proves this by showing the father braving the cold to make the fire and polish his son's shoes *without asking for thanks*.",
+        "category": "important",
+        "badgeTitle": "PROOF OF CONCEPT",
+        "badgeText": "Deeds matter more than words."
+      },
+      {
+        "question": "What is the contrast presented in the poem?",
+        "answer": "The poem contrasts the *warmth of the father's love* with the *cold of the winter* and the family's emotional distance.",
+        "category": "important",
+        "badgeTitle": "LITERARY DEVICE",
+        "badgeText": "Highlights opposing forces."
+      },
+      {
+        "question": "How does the phrase \"chronic angers\" add meaning to the poem?",
+        "answer": "It reveals that the home was *tense and unhappy*, which makes the father's selfless devotion even more powerful and meaningful.",
+        "category": "important",
+        "badgeTitle": "HOUSEHOLD DYNAMIC",
+        "badgeText": "Love existing despite conflict."
+      },
+      {
+        "question": "What exactly did the father put on in the cold?",
+        "answer": "He got up early and *put his clothes on* in the freezing temperatures.",
+        "category": "important",
+        "badgeTitle": "DETAIL",
+        "badgeText": "A simple but difficult morning task."
+      },
+      {
+        "question": "Did anyone assist the father with the morning fire?",
+        "answer": "No, he did it *completely alone*, and *no one ever thanked him* for his efforts.",
+        "category": "important",
+        "badgeTitle": "ISOLATION",
+        "badgeText": "Emphasizes the lonely nature of his task."
+      },
+      {
+        "question": "What kind of shoes did the father polish for the speaker?",
+        "answer": "The father polished the speaker's *\"good shoes\"*, likely meant for Sunday church or special occasions.",
+        "category": "important",
+        "badgeTitle": "EXTRA CARE",
+        "badgeText": "Going above and beyond basic needs."
+      },
+      {
+        "question": "What is the core emotion of the adult speaker looking back?",
+        "answer": "The adult speaker is filled with *remorse and regret* for failing to recognize his father's devotion.",
+        "category": "important",
+        "badgeTitle": "REFLECTION",
+        "badgeText": "The pain of late realization."
+      },
+      {
+        "question": "What was the condition of the rooms before the father called the speaker?",
+        "answer": "The father waited until the rooms were *warm* before calling his child to wake up.",
+        "category": "important",
+        "badgeTitle": "PROTECTION",
+        "badgeText": "Shielding the child from discomfort."
+      },
+      {
+        "question": "What kind of style does the poem's free verse create?",
+        "answer": "By not having a strict rhyme scheme, it creates a *natural, conversational style*.",
+        "category": "important",
+        "badgeTitle": "STRUCTURE EFFECT",
+        "badgeText": "Makes the memory feel authentic and raw."
+      },
+      {
+        "question": "Why is the father's love described as \"lonely\"?",
+        "answer": "It is lonely because he performed his difficult duties *completely alone*, without any help, praise, or acknowledgment from his family.",
+        "category": "important",
+        "badgeTitle": "UNAPPRECIATED",
+        "badgeText": "The solitary burden of parenthood."
+      },
+      {
+        "question": "How is the word \"cracked\" defined in the glossary?",
+        "answer": "It means something that is *damaged with lines in its surface* but is not completely broken.",
+        "category": "important",
+        "badgeTitle": "VOCABULARY",
+        "badgeText": "Describes the father's worn-out skin."
+      },
+      {
+        "question": "How is the word \"ache\" defined in the glossary?",
+        "answer": "\"Ache\" is defined as *feeling a continuous pain that is not severe*.",
+        "category": "important",
+        "badgeTitle": "VOCABULARY",
+        "badgeText": "The dull pain from constant physical labor."
+      },
+      {
+        "question": "Does the father ever speak in the poem?",
+        "answer": "The father does not have any dialogue; he only *\"calls\"* the speaker when the house is warm, showing his quiet nature.",
+        "category": "important",
+        "badgeTitle": "SILENT CHARACTER",
+        "badgeText": "His actions speak for him."
+      },
+      {
+        "question": "What does the phrase \"What did I know, what did I know\" indicate?",
+        "answer": "The repetition indicates the speaker's *intense guilt and ignorance* during his childhood regarding his father's love.",
+        "category": "important",
+        "badgeTitle": "REPETITION",
+        "badgeText": "A powerful expression of sorrow."
+      },
+      {
+        "question": "How does the poem define unspoken parental love?",
+        "answer": "It defines it as love that is *silent, enduring, and often completely unacknowledged* by the children receiving it.",
+        "category": "important",
+        "badgeTitle": "CORE CONCEPT",
+        "badgeText": "The main lesson of the poem."
+      },
+      {
+        "question": "What does the poem suggest about the relationship between the speaker and his father?",
+        "answer": "It suggests there was a *significant emotional distance and lack of communication* between them when the speaker was young.",
+        "category": "important",
+        "badgeTitle": "RELATIONSHIP",
+        "badgeText": "Strained but supported by silent love."
+      },
+      {
+        "question": "Why did the poet write about family and hardship?",
+        "answer": "The poet's *own experience growing up in a foster home* marked by hardship directly inspired these themes in his poetry.",
+        "category": "important",
+        "badgeTitle": "BIOGRAPHICAL LINK",
+        "badgeText": "Art imitating real life."
+      },
+      {
+        "question": "Why does the speaker use the word \"too\" in the very first line, \"Sundays too\"?",
+        "answer": "The word \"too\" implies that the father worked hard on weekdays as well, meaning Sunday was supposed to be his only day of rest, yet he still *sacrificed it*.",
+        "category": "conceptual",
+        "badgeTitle": "HIDDEN MEANING",
+        "badgeText": "Emphasizes the father's non-stop dedication."
+      },
+      {
+        "question": "Based on the pre-reading section, why do some acts of family love often go unnoticed?",
+        "answer": "They go unnoticed because they become *daily routines* that children take for granted, expecting these comforts without realizing the hard work behind them.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPTUAL THINKING",
+        "badgeText": "Taking regular blessings for granted."
+      },
+      {
+        "question": "How does the poem show that the father was likely a working-class man?",
+        "answer": "The text mentions his *cracked hands that ached* from manual labor in the harsh outdoor weekday weather, indicating a tough, physical job.",
+        "category": "conceptual",
+        "badgeTitle": "CHARACTER ANALYSIS",
+        "badgeText": "The physical toll of earning a living."
+      },
+      {
+        "question": "What does the specific term \"banked fires\" suggest about the father's method of loving?",
+        "answer": "To \"bank\" a fire means to build it so it burns slowly for a long time. This mirrors the father's love, which is *steady, enduring, and long-lasting*.",
+        "category": "conceptual",
+        "badgeTitle": "GLOSSARY APPLICATION",
+        "badgeText": "Linking vocabulary to the main theme."
+      },
+      {
+        "question": "How does the father's act of \"polishing shoes\" differ from making the fire?",
+        "answer": "Making a fire was a basic need for survival and warmth, but polishing shoes was an *extra, gentle act of care* done purely out of love and pride for his son.",
+        "category": "conceptual",
+        "badgeTitle": "DEEPER ANALYSIS",
+        "badgeText": "Going beyond basic parental duties."
+      },
+      {
+        "question": "Why is the pain in the father's hands described specifically as an \"ache\" in the glossary?",
+        "answer": "An \"ache\" is a *continuous, dull pain* rather than a sharp one, showing that the father's suffering was a constant, everyday burden he silently carried.",
+        "category": "conceptual",
+        "badgeTitle": "VOCABULARY NUANCE",
+        "badgeText": "Highlighting enduring pain."
+      },
+      {
+        "question": "How does the contrast between warm and cold function as a deeper symbol in the text?",
+        "answer": "The cold represents the harsh world and the family's emotional distance, while the warmth represents the *father's quiet, protective love* fighting against it.",
+        "category": "conceptual",
+        "badgeTitle": "SYMBOLIC CONTRAST",
+        "badgeText": "The battle between elements and emotions."
+      },
+      {
+        "question": "Why does the poet personify the cold as \"splintering\" and \"breaking\"?",
+        "answer": "It makes the cold seem like a *solid, aggressive enemy* that is physically shattering and being defeated by the warmth of the father's fire.",
+        "category": "conceptual",
+        "badgeTitle": "LITERARY DEVICE",
+        "badgeText": "Giving physical power to an invisible feeling."
+      },
+      {
+        "question": "How does the lack of a rhyme scheme (Free Verse) enhance the poem's meaning?",
+        "answer": "Free verse makes the poem sound like a *genuine, raw memory* being spoken aloud, creating a very honest and conversational style without forced rhythm.",
+        "category": "conceptual",
+        "badgeTitle": "POETIC FORM",
+        "badgeText": "Adds emotional authenticity to the regret."
+      },
+      {
+        "question": "What role does \"regret\" play in the overarching theme of the poem?",
+        "answer": "Regret is the *driving force* of the poem; the adult speaker is looking back with deep remorse because he is now old enough to understand the unappreciated sacrifices.",
+        "category": "conceptual",
+        "badgeTitle": "CORE THEME",
+        "badgeText": "The pain of realization coming too late."
+      },
+      {
+        "question": "Why did the father wait until the rooms were entirely warm before calling his child?",
+        "answer": "He wanted to *bear the brunt of the freezing cold* himself so that his child could wake up directly into a comfortable, safe environment.",
+        "category": "conceptual",
+        "badgeTitle": "PROTECTIVE LOVE",
+        "badgeText": "Shielding the child from discomfort."
+      },
+      {
+        "question": "What does the phrase \"weekday weather\" imply about the father's daily life?",
+        "answer": "It implies that the father *worked outdoors in harsh conditions* all week long, making his choice to wake up early on Sunday even more heroic.",
+        "category": "conceptual",
+        "badgeTitle": "SETTING THE SCENE",
+        "badgeText": "The relentless nature of his labor."
+      },
+      {
+        "question": "How does the poem's shift in tone affect the reader's understanding of the speaker?",
+        "answer": "The shift from a neutral description to a deeply regretful tone helps the reader feel the speaker's *emotional growth and profound sense of guilt*.",
+        "category": "conceptual",
+        "badgeTitle": "TONE ANALYSIS",
+        "badgeText": "Guiding the reader's emotional journey."
+      },
+      {
+        "question": "In the context of the poem, why are the duties of love described as \"austere\"?",
+        "answer": "\"Austere\" means simple, plain, and without decoration. The father's love wasn't shown with hugs or gifts, but through *strict, basic survival duties*.",
+        "category": "conceptual",
+        "badgeTitle": "VOCABULARY APPLICATION",
+        "badgeText": "Defining the exact nature of the love."
+      },
+      {
+        "question": "What does the glossary definition of \"indifferently\" reveal about the child's attitude?",
+        "answer": "It reveals that the child showed *absolutely no interest or care* towards the father, completely ignoring the effort it took to warm the house.",
+        "category": "conceptual",
+        "badgeTitle": "CHARACTER FLAW",
+        "badgeText": "The selfishness of youth."
+      },
+      {
+        "question": "How does the repetition of \"What did I know\" act as a turning point in the poem?",
+        "answer": "It marks the exact moment the speaker shifts from just remembering the past to *actively judging and questioning* his own childhood ignorance.",
+        "category": "conceptual",
+        "badgeTitle": "REPETITION EFFECT",
+        "badgeText": "A powerful expression of self-reproach."
+      },
+      {
+        "question": "What is the significance of the title mentioning \"Winter\" specifically?",
+        "answer": "\"Winter\" represents the *harshest, most difficult season*, making the father's protective actions and the home's emotional coldness much more extreme.",
+        "category": "conceptual",
+        "badgeTitle": "TITLE ANALYSIS",
+        "badgeText": "Setting the thematic backdrop."
+      },
+      {
+        "question": "How does the poet use the symbol of fire to convey complex emotions?",
+        "answer": "The fire is not just physical heat; it symbolizes the father's *burning devotion, unspoken affection*, and his active effort to create comfort for his family.",
+        "category": "conceptual",
+        "badgeTitle": "SYMBOLISM",
+        "badgeText": "Heat as a metaphor for love."
+      },
+      {
+        "question": "Is the poet critical of his younger self? What evidence shows this?",
+        "answer": "Yes, he is highly critical. He points out his own indifference and repeats *\"What did I know\"* to shame himself for his lack of understanding.",
+        "category": "conceptual",
+        "badgeTitle": "TEXTUAL EVIDENCE",
+        "badgeText": "The adult judging the child."
+      },
+      {
+        "question": "What specific textual evidence shows the speaker's viewpoint changing from childhood to adulthood?",
+        "answer": "As a child, he spoke *\"indifferently\"* to his father, but as an adult, he recognizes his father's actions as *\"love's austere and lonely offices\"*.",
+        "category": "conceptual",
+        "badgeTitle": "PERSPECTIVE SHIFT",
+        "badgeText": "The evolution of understanding."
+      },
+      {
+        "question": "How might Robert Hayden's childhood in a foster home relate to the \"chronic angers\" in the poem?",
+        "answer": "Hayden grew up in a foster home marked by hardship, which likely inspired the *tense, stressful, and angry atmosphere* described in the poem's household.",
+        "category": "conceptual",
+        "badgeTitle": "BIOGRAPHICAL CONTEXT",
+        "badgeText": "Art reflecting personal history."
+      },
+      {
+        "question": "What does the phrase \"driven out the cold\" suggest about the father's role as a protector?",
+        "answer": "It frames the father as a *quiet warrior* who actively fights and banishes the physical hardships of the world to keep his family safe.",
+        "category": "conceptual",
+        "badgeTitle": "HEROIC IMAGERY",
+        "badgeText": "Elevating a simple chore."
+      },
+      {
+        "question": "How does physical labor translate into emotional expression in this poem?",
+        "answer": "Because the father lacks affectionate words, he uses his tired body and physical labor—like chopping wood and shining shoes—as his *only language of love*.",
+        "category": "conceptual",
+        "badgeTitle": "THEMATIC CONNECTION",
+        "badgeText": "Actions replacing spoken words."
+      },
+      {
+        "question": "Why does the glossary define \"office\" differently than its usual meaning of a workplace?",
+        "answer": "Here, \"office\" means a *duty, task, or service*. It frames the father's parental love as a solemn responsibility and an almost religious duty.",
+        "category": "conceptual",
+        "badgeTitle": "VOCABULARY NUANCE",
+        "badgeText": "Exploring older definitions of words."
+      },
+      {
+        "question": "What is the tragic irony of the speaker speaking \"indifferently\" to his father?",
+        "answer": "The irony is that the father is performing acts of intense, fiery love, while the son is responding with *freezing, cold emotional indifference*.",
+        "category": "conceptual",
+        "badgeTitle": "IRONY",
+        "badgeText": "The mismatch of emotional output."
+      },
+      {
+        "question": "What does the poem teach the reader about taking daily routines for granted?",
+        "answer": "It teaches that the quietest, most repetitive routines (like cooking or cleaning) are often the *strongest proofs of unacknowledged, selfless love*.",
+        "category": "conceptual",
+        "badgeTitle": "MORAL LESSON",
+        "badgeText": "Finding beauty in the mundane."
+      },
+      {
+        "question": "How does the vivid imagery of \"cracked hands\" immediately evoke empathy from the reader?",
+        "answer": "It forces the reader to visualize physical damage and pain, immediately making us feel *sympathy and respect* for the father's silent suffering.",
+        "category": "conceptual",
+        "badgeTitle": "IMAGERY EFFECT",
+        "badgeText": "Creating a visceral emotional response."
+      },
+      {
+        "question": "What makes the father's love specifically \"lonely\" according to the poem's themes?",
+        "answer": "It is lonely because he receives *no thanks, no help, and no emotional warmth* in return; he carries the burden of loving his family entirely by himself.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPTUAL ANALYSIS",
+        "badgeText": "The isolation of silent caregivers."
+      },
+      {
+        "question": "How does the definition of \"chronic\" (lasting a long time) explain the child's fear?",
+        "answer": "Since the angers were \"chronic\" (constant and long-lasting), the child lived in *perpetual anxiety*, making him reluctant to leave his bed and face the day.",
+        "category": "conceptual",
+        "badgeTitle": "PSYCHOLOGICAL INSIGHT",
+        "badgeText": "The impact of a toxic environment."
+      },
+      {
+        "question": "What is Robert Hayden's ultimate conclusion about true love by the end of the poem?",
+        "answer": "His conclusion is that true love does not need to be loud or cheerful; it can be *silent, tough, duty-bound, and proven through thankless sacrifice*.",
+        "category": "conceptual",
+        "badgeTitle": "FINAL MESSAGE",
+        "badgeText": "Redefining the nature of affection."
+      },
+      {
+        "question": "Based on the multiple-choice questions, who is explicitly the central figure besides the speaker?",
+        "answer": "The central figure focused on in the poem is explicitly the *speaker's father*.",
+        "category": "conceptual",
+        "badgeTitle": "EXERCISE FACT",
+        "badgeText": "Confirming the core character."
+      },
+      {
+        "question": "According to the exercises, what does the father do first before anything else on a Sunday morning?",
+        "answer": "He *wakes up early in the morning* to first light the fire and warm the house.",
+        "category": "conceptual",
+        "badgeTitle": "EXERCISE FACT",
+        "badgeText": "Confirming the sequence of events."
+      }
+    ],
+    "13": [
+      {
+        "question": "Who is the poet of the poem \"Ruba'iyat\" and what are his dates of birth and death?",
+        "answer": "The poem \"Ruba'iyat\" is written by *Allama Muhammad Iqbal*. He was born in *1877* and passed away in *1938*. He is widely known as the visionary philosopher-poet of Pakistan.",
+        "category": "most",
+        "badgeTitle": "POET INTRODUCTION",
+        "badgeText": "Historical Fact"
+      },
+      {
+        "question": "What is the poetic structure of the poem \"Ruba'iyat\" according to the text?",
+        "answer": "The poem strictly follows the *classical ruba'i or quatrain form*. It is a traditional Persian poetic structure that consists of exactly *three stanzas*, with each having *four lines*.",
+        "category": "most",
+        "badgeTitle": "POETIC STRUCTURE",
+        "badgeText": "Literary Form"
+      },
+      {
+        "question": "What specific rhyme scheme is used in Allama Muhammad Iqbal's poem?",
+        "answer": "The poem uses a carefully structured *modified AABA rhyme scheme*. This specific rhyming pattern is considered highly typical of *ruba'iyat poetry*.",
+        "category": "most",
+        "badgeTitle": "RHYME SCHEME",
+        "badgeText": "Poetic Device"
+      },
+      {
+        "question": "How does Allama Iqbal define true \"faith\" in the very first stanza of the poem?",
+        "answer": "He defines faith by directly comparing it to *Hazrat Abraham (AS) standing at the stake*. He states that true faith means being completely *self-honoring* and entirely *God-drunk*.",
+        "category": "most",
+        "badgeTitle": "THEME OF FAITH",
+        "badgeText": "Core Concept"
+      },
+      {
+        "question": "What does the powerful metaphor \"Abraham at the stake\" symbolize in the poem?",
+        "answer": "This metaphor deeply symbolizes *unwavering devotion* and the *ultimate trial of belief*. It perfectly shows Hazrat Abraham's readiness to endure burning fire for God Almighty.",
+        "category": "most",
+        "badgeTitle": "METAPHORICAL MEANING",
+        "badgeText": "Symbolism"
+      },
+      {
+        "question": "According to the poet, what condition is considered \"worse than slavery\" in this modern age?",
+        "answer": "Allama Iqbal clearly states that *having no faith* is absolutely worse than slavery. Without true faith, people become spiritually bound and captivated by *the age's way*.",
+        "category": "most",
+        "badgeTitle": "CONDITION OF FAITHLESSNESS",
+        "badgeText": "Social Critique"
+      },
+      {
+        "question": "What does the poet mean by using the unique phrase \"God-drunk\"?",
+        "answer": "The phrase \"God-drunk\" means being *fully intoxicated with divine love*. It represents a pure state of being *completely and utterly absorbed in devotion* to Allah.",
+        "category": "most",
+        "badgeTitle": "PARADOX AND MEANING",
+        "badgeText": "Glossary Definition"
+      },
+      {
+        "question": "Explain the literary paradox present in the term \"God-drunk\".",
+        "answer": "It is a paradox because it blends the *negative concept of intoxication* with the *highly positive idea of divine ecstasy*. It powerfully emphasizes a total and pure absorption in faith.",
+        "category": "most",
+        "badgeTitle": "POETIC PARADOX",
+        "badgeText": "Literary Analysis"
+      },
+      {
+        "question": "What does the glossary say about the specific word \"self-honouring\"?",
+        "answer": "It means *actively maintaining one's personal dignity and self-respect*. A self-honouring individual strictly upholds these traits through *following noble principles*.",
+        "category": "most",
+        "badgeTitle": "VOCABULARY REFERENCE",
+        "badgeText": "Word Meaning"
+      },
+      {
+        "question": "What blends with \"Islam's fire\" according to the second stanza of the poem?",
+        "answer": "The *beautiful music of strange lands* successfully blends directly with Islam's fire. The poet states that the nation's overall harmony depends completely upon this blend.",
+        "category": "most",
+        "badgeTitle": "CULTURAL SYNTHESIS",
+        "badgeText": "Stanza 2 Analysis"
+      },
+      {
+        "question": "What does the phrase \"Islam's fire\" represent in the context of global civilizations?",
+        "answer": "\"Islam's fire\" deeply represents the *pure divine inspiration* of the religion. It is the spiritual source from which Islamic civilization draws its *true strength and harmony*.",
+        "category": "most",
+        "badgeTitle": "SYMBOLISM OF FIRE",
+        "badgeText": "Thematic Insight"
+      },
+      {
+        "question": "How does Allama Muhammad Iqbal describe the \"soul of Europe\" in his verses?",
+        "answer": "He strongly describes the soul of Europe as being *totally empty of concord*. This means their modern society completely lacks *true harmony or agreement and unity of hearts*.",
+        "category": "most",
+        "badgeTitle": "CRITIQUE OF THE WEST",
+        "badgeText": "Philosophical View"
+      },
+      {
+        "question": "What is meant by the critical phrase \"whose civilization to no Makkah bends\"?",
+        "answer": "It implies that European civilization *strictly and proudly rejects divine guidance*. They completely refuse to *submit or bow down* to any true spiritual authority.",
+        "category": "most",
+        "badgeTitle": "SPIRITUAL EMPTINESS",
+        "badgeText": "Western Society"
+      },
+      {
+        "question": "What does the specific word \"concord\" mean in the context of Europe's soul?",
+        "answer": "The word \"concord\" directly translates to *harmony or agreement*. In the poem's context, it signifies a *deep unity of hearts and purpose* that Europe completely lacks.",
+        "category": "most",
+        "badgeTitle": "GLOSSARY DEFINITION",
+        "badgeText": "Textual Vocabulary"
+      },
+      {
+        "question": "According to stanza three, what extremely important quality has departed from modern Muslims?",
+        "answer": "The poet sadly laments that *Love's madness* has completely departed from them. Because of this tragic loss, the Muslim's *spiritual blood runs thin*.",
+        "category": "most",
+        "badgeTitle": "LOSS OF PASSION",
+        "badgeText": "Stanza 3 Analysis"
+      },
+      {
+        "question": "What does the phrase \"Love's madness\" mean in the context of this poem?",
+        "answer": "It refers to an *intense passion or zeal* for the religion. It acts as a clever *oxymoron* that beautifully reframes madness as a deeply sacred passion.",
+        "category": "most",
+        "badgeTitle": "OXYMORON AND FERVOUR",
+        "badgeText": "Religious Zeal"
+      },
+      {
+        "question": "What physiological metaphor is used by the poet to describe Muslim decline?",
+        "answer": "The poet uses the striking metaphor that *in the Muslim's veins, the blood runs thin*. This directly represents their *deeply weakened spiritual vitality*.",
+        "category": "most",
+        "badgeTitle": "PHYSIOLOGICAL METAPHOR",
+        "badgeText": "Poetic Device"
+      },
+      {
+        "question": "List three visible symptoms of the modern Muslims' spiritual condition mentioned in stanza three.",
+        "answer": "Their *unified ranks are broken*, their *inner hearts are perplexed*, and their *daily prayers are cold*. They have absolutely no true feeling *deeper than the skin*.",
+        "category": "most",
+        "badgeTitle": "SYMPTOMS OF DECLINE",
+        "badgeText": "Textual Evidence"
+      },
+      {
+        "question": "What is meant by the phrase \"ranks broken\" in the context of Muslim society?",
+        "answer": "It serves as a powerful metaphor for the *tragic loss of Muslim solidarity*. It shows that their historically *ordered lines or unity* have been completely shattered.",
+        "category": "most",
+        "badgeTitle": "METAPHOR FOR DISUNITY",
+        "badgeText": "Societal Breakdown"
+      },
+      {
+        "question": "How does the text define the core concept of \"Khudi\" (selfhood) presented by Iqbal?",
+        "answer": "It is a powerful philosophical call for Muslims to *totally awaken from colonial subjugation*. It urges them to fight materialist decay by *deeply re-discovering their Islamic identity*.",
+        "category": "most",
+        "badgeTitle": "PHILOSOPHY OF KHUDI",
+        "badgeText": "Core Concept"
+      },
+      {
+        "question": "How did Allama Muhammad Iqbal view true faith in his deep philosophical thought?",
+        "answer": "He strongly believed true faith was *absolutely never passive nor ritualistic*. Instead, it must be a *highly dynamic, passionate force* that is fully capable of transforming societies.",
+        "category": "most",
+        "badgeTitle": "NATURE OF TRUE FAITH",
+        "badgeText": "Philosophical View"
+      },
+      {
+        "question": "What is the first main theme deeply explored in this poem?",
+        "answer": "The first theme *contrasts the nature of true faith with modern spiritual bankruptcy*. It uses Hazrat Abraham's unwavering devotion to powerfully show that *lack of faith is slavery*.",
+        "category": "most",
+        "badgeTitle": "FIRST MAJOR THEME",
+        "badgeText": "Textual Analysis"
+      },
+      {
+        "question": "What is the second major theme regarding civilizations explored in the poem?",
+        "answer": "It reveals a *massive and fundamental clash between civilizations*. It highlights that European society is spiritually hollow, while true Islamic civilization runs on *divine inspiration*.",
+        "category": "most",
+        "badgeTitle": "SECOND MAJOR THEME",
+        "badgeText": "Cultural Clash"
+      },
+      {
+        "question": "What is the third important theme concerning modern Muslim societies?",
+        "answer": "The third theme deeply *laments the tragic decline of Muslim societies*. It heavily mourns their *loss of spiritual passion*, which has reduced them to a completely superficial existence.",
+        "category": "most",
+        "badgeTitle": "THIRD MAJOR THEME",
+        "badgeText": "Muslim Decline"
+      },
+      {
+        "question": "What does the impactful phrase \"no feeling deeper than the skin\" signify?",
+        "answer": "It shows that the spiritual connection of modern Muslims has become *purely superficial*. Their religious practices are *empty* and completely lack true spiritual passion and unity.",
+        "category": "most",
+        "badgeTitle": "SUPERFICIAL FAITH",
+        "badgeText": "Spiritual Emptiness"
+      },
+      {
+        "question": "According to the poet, why is European civilization fundamentally flawed despite its material progress?",
+        "answer": "It is flawed because it remains *entirely spiritually hollow* and completely disconnected. The poet notes it is totally *\"empty of concord\"* and openly rejects true divine authority.",
+        "category": "most",
+        "badgeTitle": "FLAW IN WESTERN SOCIETY",
+        "badgeText": "Western Critique"
+      },
+      {
+        "question": "What does the word \"perplexed\" mean when describing the modern hearts of Muslims?",
+        "answer": "The word \"perplexed\" means being *deeply confused or troubled*. It strongly reflects their *inner spiritual turmoil* and complete lack of firm religious conviction.",
+        "category": "most",
+        "badgeTitle": "GLOSSARY DEFINITION",
+        "badgeText": "Emotional State"
+      },
+      {
+        "question": "What is meant by the literary word \"Ruba'iyat\"?",
+        "answer": "It is a *specific and classical poetic form* consisting entirely of *quatrains or 4-line stanzas*. This classic poetry style has its deep origins in rich Persian literature.",
+        "category": "most",
+        "badgeTitle": "LITERARY FORM",
+        "badgeText": "Vocabulary"
+      },
+      {
+        "question": "What kind of lasting legacy did Allama Muhammad Iqbal craft through his works?",
+        "answer": "He expertly crafted a *highly revolutionary intellectual legacy*. He boldly spread this profound message primarily through his *famous Persian and Urdu works*.",
+        "category": "most",
+        "badgeTitle": "POET'S LEGACY",
+        "badgeText": "Historical Context"
+      },
+      {
+        "question": "How does Iqbal's poetry act as both a \"mirror\" and a \"roadmap\"?",
+        "answer": "It acts as a strict mirror by *openly exposing Muslim decline*. Simultaneously, it perfectly serves as a roadmap for their *ultimate revival through self-realization and spiritual vigour*.",
+        "category": "most",
+        "badgeTitle": "PURPOSE OF POETRY",
+        "badgeText": "Critical Evaluation"
+      },
+      {
+        "question": "What basic difference does the poem highlight between Islamic and European civilizations?",
+        "answer": "The poem highlights that *Islamic civilization* is fully based on pure divine inspiration. On the other hand, *European civilization* heavily relies on material progress but remains completely spiritually hollow.",
+        "category": "important",
+        "badgeTitle": "CIVILIZATIONAL CLASH",
+        "badgeText": "Theme Analysis"
+      },
+      {
+        "question": "Who is actively captivating the minds of people in the present time according to the poet?",
+        "answer": "According to the poet, the *modern age's way* or the *materialistic Western lifestyle* is deeply captivating people. It is making them completely forget their true Islamic identity.",
+        "category": "important",
+        "badgeTitle": "MODERN CAPTIVATION",
+        "badgeText": "Textual Meaning"
+      },
+      {
+        "question": "On what crucial element does the true harmony of the Muslim nation depend?",
+        "answer": "The nation's true harmony completely depends on how well the *music of strange lands* carefully blends with the pure and powerful *spark of Islam's fire*.",
+        "category": "important",
+        "badgeTitle": "NATIONAL HARMONY",
+        "badgeText": "Stanza 2 Detail"
+      },
+      {
+        "question": "What tragic change has occurred in the daily prayers of modern Muslims?",
+        "answer": "The poet sadly observes that the daily prayers of modern Muslims have become *completely cold*. They are now performed as *mere empty rituals* without any true spiritual passion.",
+        "category": "important",
+        "badgeTitle": "EMPTY RITUALS",
+        "badgeText": "Stanza 3 Detail"
+      },
+      {
+        "question": "What does the direct comparison of faith to Hazrat Abraham at the stake truly show?",
+        "answer": "This powerful comparison clearly shows that true faith requires a person to *bravely face the ultimate trial of belief*. It proves that true devotion demands *ultimate sacrifice* for Allah Almighty.",
+        "category": "important",
+        "badgeTitle": "WHILE-READING QUESTION",
+        "badgeText": "Concept Explanation"
+      },
+      {
+        "question": "What is the deeper meaning behind the phrase \"Islam's fire blends\"?",
+        "answer": "It means that *modern knowledge or foreign ideas* must strictly align and blend carefully with the *core spiritual values of Islam*. This unique balance creates true national strength.",
+        "category": "important",
+        "badgeTitle": "WHILE-READING QUESTION",
+        "badgeText": "Metaphorical Meaning"
+      },
+      {
+        "question": "What exactly happens to Muslims when they completely lose \"Love's madness\"?",
+        "answer": "When they tragically lose this sacred passion, their *spiritual blood runs thin*. They instantly suffer from *severe disunity*, their *ranks are broken*, and their *inner hearts become deeply perplexed*.",
+        "category": "important",
+        "badgeTitle": "WHILE-READING QUESTION",
+        "badgeText": "Spiritual Consequence"
+      },
+      {
+        "question": "What is the very first powerful metaphor introduced by Allama Iqbal in the opening lines?",
+        "answer": "The opening uses a highly powerful metaphor by directly comparing *faith* to Hazrat Abraham's strict *willingness to endure the burning fire* for the sake of God.",
+        "category": "important",
+        "badgeTitle": "OPENING METAPHOR",
+        "badgeText": "Poetic Device"
+      },
+      {
+        "question": "What does Hazrat Abraham's absolute willingness to endure the fire beautifully symbolize?",
+        "answer": "It beautifully symbolizes a Muslim's *unwavering devotion* and *pure steadfastness*. It represents *passing the ultimate trial of belief* without showing any fear or hesitation.",
+        "category": "important",
+        "badgeTitle": "SYMBOLISM OF FIRE",
+        "badgeText": "Character Example"
+      },
+      {
+        "question": "How does the specific phrase \"God-drunk\" act as a striking paradox in the poem?",
+        "answer": "It is a striking paradox because it mixes the *typically negative idea of intoxication* with the *highly positive state of pure divine ecstasy* and religious devotion.",
+        "category": "important",
+        "badgeTitle": "LITERARY PARADOX",
+        "badgeText": "Textual Analysis"
+      },
+      {
+        "question": "Why is the phrase \"Love's madness\" considered an oxymoronic expression by critics?",
+        "answer": "It is oxymoronic because it cleverly *reframes the negative word madness as a deeply sacred passion*. It describes the *intense religious fervour* that modern Muslims have sadly lost.",
+        "category": "important",
+        "badgeTitle": "OXYMORONIC EXPRESSION",
+        "badgeText": "Literary Device"
+      },
+      {
+        "question": "Whom is the poet directly addressing when he boldly says, \"Hear me\"?",
+        "answer": "The poet is directly addressing the *modern Muslims* who are deeply captivated by the age's way. He acts as a warner using the literary device of *apostrophe* to grab their attention.",
+        "category": "important",
+        "badgeTitle": "DIRECT ADDRESS",
+        "badgeText": "Poetic Technique"
+      },
+      {
+        "question": "From what specific negative conditions did Allama Iqbal urgently want to awaken Muslims?",
+        "answer": "He urgently wanted to totally awaken them from the *dark sleep of colonial subjugation*. He also desperately wanted to save them from ongoing and *destructive materialist decay*.",
+        "category": "important",
+        "badgeTitle": "POET'S MISSION",
+        "badgeText": "Historical Context"
+      },
+      {
+        "question": "What specific critiques did Allama Iqbal frequently present in his revolutionary poetry?",
+        "answer": "He presented deeply scathing critiques of *modern Western civilization*. He strongly argued that despite their amazing technological advancements, their society was *entirely spiritually hollow*.",
+        "category": "important",
+        "badgeTitle": "CRITIQUE OF THE WEST",
+        "badgeText": "Poet's Philosophy"
+      },
+      {
+        "question": "How does the poet sharply contrast Western emptiness with the core of Islam?",
+        "answer": "He sharply contrasts the *spiritual emptiness of the West* with Islam's *pure and transcendent unity*. He firmly believes Islam provides the true divine inspiration that the West totally lacks.",
+        "category": "important",
+        "badgeTitle": "PHILOSOPHICAL CONTRAST",
+        "badgeText": "Textual Theme"
+      },
+      {
+        "question": "How does the poem powerfully compare the lack of faith to the concept of physical bondage?",
+        "answer": "The poem clearly states that having *absolutely no faith* is a massive spiritual tragedy. The poet declares that this faithlessness is *much worse than slavery* or any physical bondage.",
+        "category": "important",
+        "badgeTitle": "THEME OF SLAVERY",
+        "badgeText": "Core Concept"
+      },
+      {
+        "question": "What is the true condition of European society despite all its modern material progress?",
+        "answer": "Despite huge material progress, European society remains *totally disconnected* and *completely empty of concord*. It has absolutely no true spiritual center or unity of hearts.",
+        "category": "important",
+        "badgeTitle": "CONDITION OF EUROPE",
+        "badgeText": "Social Observation"
+      },
+      {
+        "question": "According to the text's glossary, what is the exact meaning of the word \"captivate\"?",
+        "answer": "The word \"captivate\" literally means to *completely charm or dominate someone's full attention*. In the poem, it refers to the *materialistic West* fully dominating the Muslim mindset.",
+        "category": "important",
+        "badgeTitle": "VOCABULARY CHECK",
+        "badgeText": "Word Meaning"
+      },
+      {
+        "question": "What does the highly important word \"stake\" refer to in the first stanza of the poem?",
+        "answer": "The word \"stake\" directly refers to a *wooden post used for execution*. Here, it specifically means the *huge fire* prepared to burn Allah's Nabi, Hazrat Abraham (AS).",
+        "category": "important",
+        "badgeTitle": "HISTORICAL REFERENCE",
+        "badgeText": "Vocabulary Meaning"
+      },
+      {
+        "question": "What does the specific word \"bends\" imply when discussing European civilization?",
+        "answer": "In this specific context, the word \"bends\" strongly implies that European civilization *totally refuses to submit or bow down* to any true spiritual authority or supreme divine law.",
+        "category": "important",
+        "badgeTitle": "ACTION WORD MEANING",
+        "badgeText": "Textual Interpretation"
+      },
+      {
+        "question": "Describe the core concept of faith being \"God-drunk\" in simple, clear words.",
+        "answer": "Being \"God-drunk\" simply means being *completely and utterly intoxicated with divine love*. It is a pure state where a true believer is *fully absorbed in devotion* to Almighty Allah.",
+        "category": "important",
+        "badgeTitle": "EXERCISE QUESTION 1",
+        "badgeText": "Comprehension"
+      },
+      {
+        "question": "Why does Allama Iqbal firmly claim that having no faith is \"worse than slavery\"?",
+        "answer": "He claims this because physical slavery only *traps the human body*. However, a lack of faith *completely traps and destroys the human soul*, making a person a helpless slave to worldly desires.",
+        "category": "important",
+        "badgeTitle": "EXERCISE QUESTION 2",
+        "badgeText": "Critical Thinking"
+      },
+      {
+        "question": "How does the poet effectively contrast the \"music of strange lands\" with \"Islam's fire\"?",
+        "answer": "The \"music of strange lands\" perfectly represents *foreign, materialistic European culture*. Conversely, \"Islam's fire\" represents the *pure, spiritual passion* and the *unifying divine truth* of the Muslim faith.",
+        "category": "important",
+        "badgeTitle": "EXERCISE QUESTION 3",
+        "badgeText": "Concept Comparison"
+      },
+      {
+        "question": "Which specific textual phrases clearly show Iqbal's strict view of Europe as spiritually empty?",
+        "answer": "The clear and striking phrases *\"Empty of concord\"* and *\"to no Makkah bends\"* strongly prove his deep view that European civilization is completely devoid of true spiritual guidance.",
+        "category": "important",
+        "badgeTitle": "EXERCISE QUESTION 4",
+        "badgeText": "Textual Evidence"
+      },
+      {
+        "question": "How does the poet vividly portray the modern spiritual condition of contemporary Muslims?",
+        "answer": "He portrays their current condition as tragic, stating *their blood runs thin* and *their unified ranks are broken*. Their *daily prayers are totally cold*, and their religious faith is merely superficial.",
+        "category": "important",
+        "badgeTitle": "EXERCISE QUESTION 5",
+        "badgeText": "Contemporary Condition"
+      },
+      {
+        "question": "Identify two highly powerful metaphors used directly in the poem to describe Muslim decline.",
+        "answer": "The two key metaphors are *\"blood runs thin\"*, showing a huge loss of spiritual vitality, and *\"ranks broken\"*, which perfectly illustrates the complete loss of solid Muslim solidarity.",
+        "category": "important",
+        "badgeTitle": "EXERCISE QUESTION 6",
+        "badgeText": "Literary Metaphors"
+      },
+      {
+        "question": "How does the beautiful concept of \"Love's madness\" relate to Iqbal's central idea of Khudi?",
+        "answer": "\"Love's madness\" is the *intense, driving sacred passion* absolutely required to fully awaken one's selfhood. Without this passionate force, true *Khudi* or spiritual self-realization is entirely impossible.",
+        "category": "important",
+        "badgeTitle": "EXERCISE QUESTION 7",
+        "badgeText": "Philosophical Connection"
+      },
+      {
+        "question": "Do you agree with Allama Iqbal's strict diagnosis of modern spiritual problems? Why?",
+        "answer": "Yes, his strict diagnosis is absolutely correct. Modern society focuses heavily on *material progress* but severely lacks *inner peace*, proving that human hearts truly remain *perplexed* without strong faith.",
+        "category": "important",
+        "badgeTitle": "EXERCISE QUESTION 8",
+        "badgeText": "Critical Evaluation"
+      },
+      {
+        "question": "According to the multiple-choice section, what is the primary representation of \"Abraham at the stake\"?",
+        "answer": "It primarily represents a true believer's *absolutely unwavering faith in God (Allah Almighty)* during the most extreme and difficult trials of life.",
+        "category": "important",
+        "badgeTitle": "MCQ 1 REFERENCE",
+        "badgeText": "Key Concept"
+      },
+      {
+        "question": "What does the striking phrase \"blood runs thin\" metaphorically represent in the poem's deep context?",
+        "answer": "It metaphorically represents a *massive and tragic loss of spiritual vitality*. It clearly shows that modern Muslims have tragically lost the *strong, warm passion* for their religion.",
+        "category": "important",
+        "badgeTitle": "MCQ 5 REFERENCE",
+        "badgeText": "Metaphorical Meaning"
+      },
+      {
+        "question": "Identify and clearly explain the main literary device used in \"Faith is like Abraham at the stake\".",
+        "answer": "The main literary device used here is a *direct simile*. The poet deliberately uses the specific word *\"like\"* to directly compare the strong nature of true faith with Hazrat Abraham's great test.",
+        "category": "important",
+        "badgeTitle": "LITERARY DEVICE TABLE",
+        "badgeText": "Simile Identification"
+      },
+      {
+        "question": "Exactly how many total lines make up the complete poem \"Ruba'iyat\" in this chapter?",
+        "answer": "The complete poem consists of exactly *12 lines*. It is divided into three separate stanzas, with each stanza containing exactly four lines.",
+        "category": "conceptual",
+        "badgeTitle": "POETIC STRUCTURE",
+        "badgeText": "Hidden Detail"
+      },
+      {
+        "question": "What is the historical origin of the specific \"Ruba'iyat\" poetic form used by Allama Iqbal?",
+        "answer": "The \"Ruba'iyat\" is a highly classical poetic form that originally comes from *rich Persian literature*. It is structured in four-line verses known as quatrains.",
+        "category": "conceptual",
+        "badgeTitle": "LITERARY ORIGIN",
+        "badgeText": "Conceptual Detail"
+      },
+      {
+        "question": "Why does the poet directly address the readers with the bold phrase, \"Hear me\"?",
+        "answer": "The poet uses this direct address, known as *apostrophe*, to strictly warn modern Muslims. He wants to wake up those who are blindly captivated by this age's way.",
+        "category": "conceptual",
+        "badgeTitle": "POETIC APOSTROPHE",
+        "badgeText": "Hidden Gem"
+      },
+      {
+        "question": "How does the text conceptually define a condition that is \"worse than physical bondage\"?",
+        "answer": "The text conceptually defines *spiritual bankruptcy and a total lack of faith* as being far worse than any form of physical slavery or worldly bondage.",
+        "category": "conceptual",
+        "badgeTitle": "THEME OF SLAVERY",
+        "badgeText": "Conceptual Deep Dive"
+      },
+      {
+        "question": "What specific literary device is used in the phrase \"soul of Europe\"?",
+        "answer": "The specific literary device used here is *personification*. The poet treats the entire continent of Europe as if it is a living human being with a deeply empty soul.",
+        "category": "conceptual",
+        "badgeTitle": "TABLE OF LITERARY DEVICES",
+        "badgeText": "Identification Concept"
+      },
+      {
+        "question": "According to the \"About the Poet\" section, what exactly is the philosophy of \"Khudi\"?",
+        "answer": "\"Khudi\" simply means *true selfhood or self-realization*. It is a powerful call for Muslims to deeply re-discover their Islamic identity to defeat modern materialist decay.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPT OF KHUDI",
+        "badgeText": "Philosophical Foundation"
+      },
+      {
+        "question": "In what two major languages did Allama Muhammad Iqbal craft his revolutionary poetry?",
+        "answer": "He expertly crafted his massive intellectual and revolutionary legacy primarily through his famous *Persian and Urdu* works.",
+        "category": "conceptual",
+        "badgeTitle": "POET'S BACKGROUND",
+        "badgeText": "Historical Fact"
+      },
+      {
+        "question": "Why did Allama Iqbal strongly criticize the \"ritualistic\" approach to faith?",
+        "answer": "He criticized it because he firmly believed true faith should *never be purely passive nor ritualistic*. Instead, it must be a highly dynamic, passionate force for real change.",
+        "category": "conceptual",
+        "badgeTitle": "NATURE OF TRUE FAITH",
+        "badgeText": "Conceptual Clarity"
+      },
+      {
+        "question": "What does the phrase \"to no Makkah bends\" conceptually imply about Western laws?",
+        "answer": "It strongly implies that modern European civilization *proudly rejects divine guidance*. They completely refuse to bow down to any higher, true spiritual authority.",
+        "category": "conceptual",
+        "badgeTitle": "WESTERN CRITIQUE",
+        "badgeText": "Conceptual Meaning"
+      },
+      {
+        "question": "Why is the specific term \"God-drunk\" considered a positive religious state in this poem?",
+        "answer": "While drunkenness is normally bad, being \"God-drunk\" is highly positive because it shows a believer is *completely absorbed in devotion* and filled with pure divine love.",
+        "category": "conceptual",
+        "badgeTitle": "TRICKY PARADOX",
+        "badgeText": "Conceptual Analysis"
+      },
+      {
+        "question": "According to the glossary, what is required to be truly \"self-honouring\"?",
+        "answer": "To be truly self-honouring, a person must strictly maintain their *inner dignity and self-respect*. They can only do this by following high and noble principles.",
+        "category": "conceptual",
+        "badgeTitle": "GLOSSARY CONCEPT",
+        "badgeText": "Deep Meaning"
+      },
+      {
+        "question": "What happens to the Muslim \"ranks\" when they tragically lose their spiritual passion?",
+        "answer": "When they lose their passion, their *unified ranks are broken*. This is a powerful metaphor showing the complete collapse of their ordered lines and strong Muslim solidarity.",
+        "category": "conceptual",
+        "badgeTitle": "METAPHOR FOR DISUNITY",
+        "badgeText": "Hidden Concept"
+      },
+      {
+        "question": "Is the poet completely rejecting the \"music of strange lands\" in the second stanza?",
+        "answer": "No, he is not totally rejecting it. He says foreign knowledge can exist, but the nation's survival and harmony depends entirely on *successfully blending it with Islam's fire*.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPTUAL INTERPRETATION",
+        "badgeText": "Tricky Question"
+      },
+      {
+        "question": "Identify the specific literary device used in the line: \"Faith is like Abraham at the stake\".",
+        "answer": "The literary device used in this line is a *direct simile*. It clearly uses the specific word \"like\" to compare strong faith to Hazrat Abraham's fiery test.",
+        "category": "conceptual",
+        "badgeTitle": "LITERARY DEVICES TABLE",
+        "badgeText": "Technical Concept"
+      },
+      {
+        "question": "Identify the main literary device in the line: \"The Muslim's veins the blood runs thin\".",
+        "answer": "This line uses a *powerful physiological metaphor*. It compares the physical thinning of blood to the massive loss of the Muslims' spiritual vitality and energy.",
+        "category": "conceptual",
+        "badgeTitle": "LITERARY DEVICES TABLE",
+        "badgeText": "Technical Concept"
+      },
+      {
+        "question": "Identify the exact literary device in the line: \"No feeling deeper than the skin\".",
+        "answer": "This is a *strong metaphor and an idiom*. It perfectly highlights the completely superficial existence of modern Muslims who lack true, deep religious passion.",
+        "category": "conceptual",
+        "badgeTitle": "LITERARY DEVICES TABLE",
+        "badgeText": "Technical Concept"
+      },
+      {
+        "question": "How does Iqbal cleverly contrast the \"vigour of true faith\" in the beginning with the end of the poem?",
+        "answer": "He starts by showing the intense vigour of true faith through Abraham's fiery test, but ends by showing the *deeply weakened spiritual vitality* of modern, perplexed Muslims.",
+        "category": "conceptual",
+        "badgeTitle": "THEMATIC CONTRAST",
+        "badgeText": "Deep Structure"
+      },
+      {
+        "question": "What specific word does the poet use to describe the state of modern Muslims' daily prayers?",
+        "answer": "He strictly and sadly describes their daily prayers as being *completely cold*. This means they perform them without any true warmth or spiritual connection.",
+        "category": "conceptual",
+        "badgeTitle": "HIDDEN GEM",
+        "badgeText": "Textual Detail"
+      },
+      {
+        "question": "According to the thematic summary, what is the core \"clash\" presented in the poem?",
+        "answer": "The core clash is the massive fundamental difference between civilizations. It pits *Europe's spiritually hollow society* directly against *Islam's pure and transcendent unity*.",
+        "category": "conceptual",
+        "badgeTitle": "THEME BREAKDOWN",
+        "badgeText": "Core Concept"
+      },
+      {
+        "question": "Why does true faith demand being completely \"self-honouring\"?",
+        "answer": "True faith demands it because submitting only to Allah Almighty frees a person from worldly slavery. This directly preserves a believer's *true dignity and self-respect*.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPTUAL LINK",
+        "badgeText": "Philosophy of Faith"
+      },
+      {
+        "question": "How does the glossary clearly define the specific poetic use of the word \"madness\"?",
+        "answer": "In this specific poetic context, the glossary defines \"madness\" as an *intense passion or zeal*. It refers strictly to a high level of pure religious fervour.",
+        "category": "conceptual",
+        "badgeTitle": "GLOSSARY DEEP DIVE",
+        "badgeText": "Tricky Definition"
+      },
+      {
+        "question": "How does Iqbal's poetry serve as a practical \"roadmap\" for modern Muslim societies?",
+        "answer": "It serves as a roadmap by urgently calling them to fully awaken. It guides them toward *ultimate revival through true self-realization and renewed spiritual vigour*.",
+        "category": "conceptual",
+        "badgeTitle": "CRITICAL EVALUATION",
+        "badgeText": "Poet's Goal"
+      },
+      {
+        "question": "What does the literal physical element of the \"stake\" represent spiritually?",
+        "answer": "The literal wooden stake and burning fire represent the *incredibly harsh trials of belief*. It shows that true devotion requires facing ultimate, life-threatening tests for God.",
+        "category": "conceptual",
+        "badgeTitle": "SYMBOLIC TRANSLATION",
+        "badgeText": "Hidden Meaning"
+      },
+      {
+        "question": "According to the final theme paragraph, what have modern Muslims been tragically reduced to?",
+        "answer": "Because they have completely lost their pure spiritual passion, modern Muslims have been tragically reduced to a *completely empty and superficial existence*.",
+        "category": "conceptual",
+        "badgeTitle": "FINAL ANALYSIS",
+        "badgeText": "Conceptual Summary"
+      },
+      {
+        "question": "How does the poem use \"Sensory & Thermal Imagery\" in its verses?",
+        "answer": "It uses strong thermal imagery by mentioning the *burning fire of Islam and the stake*, contrasting it sharply with the *absolutely cold prayers* of modern Muslims.",
+        "category": "conceptual",
+        "badgeTitle": "POETIC TECHNIQUES",
+        "badgeText": "Deep Device Application"
+      },
+      {
+        "question": "What does the phrase \"this age's way\" perfectly symbolize in the modern context?",
+        "answer": "It perfectly symbolizes the *highly attractive but completely hollow materialistic lifestyle* of the modern Western world that successfully captivates weak minds.",
+        "category": "conceptual",
+        "badgeTitle": "SYMBOLIC MEANING",
+        "badgeText": "Hidden Gem"
+      },
+      {
+        "question": "Why does the poet say the inner hearts of modern Muslims are deeply \"perplexed\"?",
+        "answer": "Their hearts are \"perplexed\" because they are *totally torn between modern worldly desires and their religion*. This leaves them completely confused and troubled without inner peace.",
+        "category": "conceptual",
+        "badgeTitle": "EMOTIONAL ANALYSIS",
+        "badgeText": "Conceptual Insight"
+      }
+    ],
+    "14": [
+      {
+        "question": "Who is the author of the play \"The End of the Beginning\"?",
+        "answer": "The play is written by *Seán O'Casey*, who lived from 1880 to 1964.",
+        "category": "most",
+        "badgeTitle": "PLAYWRIGHT DETAIL",
+        "badgeText": "He was an Irish dramatist known for blending humour and social commentary."
+      },
+      {
+        "question": "What is the specific genre of this play?",
+        "answer": "It is a *one-act Irish farcical comedy*.",
+        "category": "most",
+        "badgeTitle": "LITERARY TECHNIQUE",
+        "badgeText": "Farcical comedy uses exaggerated situations and clumsy mistakes to deliver a serious message."
+      },
+      {
+        "question": "What are the central themes explored in the play?",
+        "answer": "The play primarily explores *gender roles, domestic life, and the journey from overconfidence to humility*.",
+        "category": "most",
+        "badgeTitle": "CORE MESSAGE",
+        "badgeText": "It emphasizes that skill is determined by experience, not gender."
+      },
+      {
+        "question": "Describe the character of Darry Berrill.",
+        "answer": "Darry is a *middle-aged, overconfident farmer*.",
+        "category": "most",
+        "badgeTitle": "CHARACTER FLAW",
+        "badgeText": "He greatly underestimates the challenges and difficulty of household chores."
+      },
+      {
+        "question": "Describe the character of Lizzie Berrill.",
+        "answer": "Lizzie is Darry's *practical and competent wife*.",
+        "category": "most",
+        "badgeTitle": "CHARACTER STRENGTH",
+        "badgeText": "She manages both domestic and farm duties with great efficiency."
+      },
+      {
+        "question": "Who is Barry Derrill in the play?",
+        "answer": "Barry is Darry's *well-meaning but inept friend*.",
+        "category": "most",
+        "badgeTitle": "STORY ROLE",
+        "badgeText": "His involvement only exacerbates (worsens) the household chaos."
+      },
+      {
+        "question": "What is the physical setting of the play?",
+        "answer": "The play is set in a *simple and modest rural Irish cottage* during the early 20th century.",
+        "category": "most",
+        "badgeTitle": "STAGE LAYOUT",
+        "badgeText": "It features a small kitchen with basic furniture, a fireplace, and a gramophone."
+      },
+      {
+        "question": "What is Darry's initial complaint to his wife at the start of the play?",
+        "answer": "Darry complains that his shaving water is *\"dead cold\"*.",
+        "category": "most",
+        "badgeTitle": "CONTEXTUAL DETAIL",
+        "badgeText": "He is standing at the door with his chin covered in lather."
+      },
+      {
+        "question": "What claim does Darry make about Lizzie's household work?",
+        "answer": "Darry claims he could do all her work *three times over* and still be looking for something to do.",
+        "category": "most",
+        "badgeTitle": "DARRY'S VIEW",
+        "badgeText": "He calls her work a \"sinecure\" compared to his sweating in the fields."
+      },
+      {
+        "question": "What does Lizzie predict would happen if Darry did her chores?",
+        "answer": "Lizzie predicts he would be *picked up dead out of the middle of the debris*.",
+        "category": "most",
+        "badgeTitle": "HUMOROUS COMPARISON",
+        "badgeText": "She says he would be as dead \"as a mackerel\"."
+      },
+      {
+        "question": "What physical task does Lizzie go out to do?",
+        "answer": "Lizzie leaves the house to *mow the meadow*.",
+        "category": "most",
+        "badgeTitle": "VISUAL DETAIL",
+        "badgeText": "She takes a broad-brimmed hat, old gloves, and a whip before leaving."
+      },
+      {
+        "question": "What garment does Lizzie tell Darry to put on?",
+        "answer": "She violently pulls off her *jazz-coloured overall* and tells Darry to wear it.",
+        "category": "most",
+        "badgeTitle": "SYMBOLIC ACTION",
+        "badgeText": "This represents the swapping of their traditional gender roles."
+      },
+      {
+        "question": "Who is Alice Lanigan and why does Lizzie dislike her?",
+        "answer": "Alice is a woman Darry was chattering to; Lizzie believes she is *goading Darry to nag about housework*.",
+        "category": "most",
+        "badgeTitle": "LIZZIE'S OBSERVATION",
+        "badgeText": "Lizzie thinks Alice deliberately moulds her body posture to captivate men."
+      },
+      {
+        "question": "What physical limitation does Barry Derrill have?",
+        "answer": "Barry is so *near-sighted* that he cannot see the sky unless the moon is shining.",
+        "category": "most",
+        "badgeTitle": "VISUAL PROP",
+        "badgeText": "He wears wide-rimmed, thick-lensed spectacles."
+      },
+      {
+        "question": "What is the first item Darry damages in the house?",
+        "answer": "Darry damages a *large alarm clock*.",
+        "category": "most",
+        "badgeTitle": "MECHANISM FAILURE",
+        "badgeText": "He tries to wind it too hard, and a strong spring breaks and darts out."
+      },
+      {
+        "question": "What activity does Darry attempt using the gramophone?",
+        "answer": "Darry attempts to do *physical exercises (callisthenics)* by following the gramophone's audio directions.",
+        "category": "most",
+        "badgeTitle": "PHYSICAL STRUGGLE",
+        "badgeText": "He is too slow, clumsy, and out of breath to keep up with the music."
+      },
+      {
+        "question": "What musical instrument does Barry bring to the house?",
+        "answer": "Barry brings a *mandolin* under his arm.",
+        "category": "most",
+        "badgeTitle": "SHARED GOAL",
+        "badgeText": "They plan to practice a song for the Town Hall concert."
+      },
+      {
+        "question": "Why do Darry and Barry struggle to exercise together?",
+        "answer": "They fail to keep the proper rhythm; *Darry misses beats while Barry sets the gramophone too fast*.",
+        "category": "most",
+        "badgeTitle": "COMEDIC EFFECT",
+        "badgeText": "Their lack of coordination makes the exercise frantic and exhausting."
+      },
+      {
+        "question": "What is the name of the song Darry and Barry sing together?",
+        "answer": "They sing a song featuring the line, *\"Down where the bees are hummin' an' the wild flowers gaily growing\"*.",
+        "category": "most",
+        "badgeTitle": "SONG THEME",
+        "badgeText": "It is about a handsome man and maiden strolling and meditating on life."
+      },
+      {
+        "question": "What sounds interrupt the men and remind Darry of his chores?",
+        "answer": "Darry hears the *rattling whirr of the mowing machine* and the *Town Hall clock striking*.",
+        "category": "most",
+        "badgeTitle": "REALIZATION",
+        "badgeText": "He realizes time is passing and he has not started the housework."
+      },
+      {
+        "question": "What chore do Darry and Barry attempt to do first in the kitchen?",
+        "answer": "They attempt to *wash and wipe the unwashed delf (crockery/dishes)*.",
+        "category": "most",
+        "badgeTitle": "CLUMSY MISTAKE",
+        "badgeText": "Barry swings his arm while singing and knocks a jug onto the floor."
+      },
+      {
+        "question": "Why does Darry rush out of the house abruptly?",
+        "answer": "Darry rushes out to *give fodder to the lamb*.",
+        "category": "most",
+        "badgeTitle": "ACCIDENT RESULT",
+        "badgeText": "He hits his nose hard on the concrete because he didn't bend low enough."
+      },
+      {
+        "question": "What does Darry ask Barry to fetch to stop his nosebleed?",
+        "answer": "Darry asks for *something cold, like a block of ice*, to put down the back of his neck.",
+        "category": "most",
+        "badgeTitle": "BARRY'S CONFUSION",
+        "badgeText": "Barry has no idea where to find a block of ice in the house."
+      },
+      {
+        "question": "Where does Darry send Barry to find the key for the big shed?",
+        "answer": "He sends Barry *upstairs* to find the key hanging over the mantelpiece in the dark room.",
+        "category": "most",
+        "badgeTitle": "CONSEQUENCE",
+        "badgeText": "Barry knocks over a washhand-stand in the darkness."
+      },
+      {
+        "question": "How does Barry injure his own hand upstairs?",
+        "answer": "Barry *severely cuts his fingers* on Darry's scattered razor-blades left on the mantelpiece.",
+        "category": "most",
+        "badgeTitle": "FIRST AID",
+        "badgeText": "Darry has to tie a handkerchief around Barry's wounded fingers."
+      },
+      {
+        "question": "How does Barry break a window pane?",
+        "answer": "While sweeping up scattered spuds (potatoes), Barry accidentally *pushes the broom-handle through the window*.",
+        "category": "most",
+        "badgeTitle": "BARRY'S EXCUSE",
+        "badgeText": "He claims he never even felt the handle touching the glass."
+      },
+      {
+        "question": "Why hasn't Darry stabled the heifer yet?",
+        "answer": "Darry claims he must *clean out the cowhouse first* before stabling her.",
+        "category": "most",
+        "badgeTitle": "ANIMAL LOCATION",
+        "badgeText": "The heifer is currently grazing on the bank at the back of the house."
+      },
+      {
+        "question": "What ridiculous plan do they devise to keep the heifer safe?",
+        "answer": "They *tie a rope around the heifer's neck, drop it down the chimney, and tie the other end to a chair* in the room.",
+        "category": "most",
+        "badgeTitle": "INTENDED PURPOSE",
+        "badgeText": "They believe if the heifer wanders, the moving chair will warn them."
+      },
+      {
+        "question": "Why does Darry climb on a chair in the middle of the room?",
+        "answer": "Darry climbs the chair to *fix a replacement light bulb* because the room has gone dark.",
+        "category": "most",
+        "badgeTitle": "OUTCOME",
+        "badgeText": "There is a flash, and the room becomes darker than ever."
+      },
+      {
+        "question": "Where does Darry go to get oil for the lamps?",
+        "answer": "Darry goes into the *lumber room* where a drum of oil is kept.",
+        "category": "most",
+        "badgeTitle": "DISASTER",
+        "badgeText": "He turns the tap too much, drops the key in the rubbish, and cannot stop the oil flow."
+      },
+      {
+        "question": "What happens when Barry tries to get the old lamps?",
+        "answer": "Barry climbs up unsupported shelves in the dark; *the shelves collapse under his weight*.",
+        "category": "most",
+        "badgeTitle": "LOSS OF VISION",
+        "badgeText": "During the fall, Barry's spectacles are sent flying."
+      },
+      {
+        "question": "What happens to the oil while Darry helps Barry pull the rope?",
+        "answer": "The oil *flows completely out of the drum and down the sink* unnoticed.",
+        "category": "most",
+        "badgeTitle": "RESULT",
+        "badgeText": "They are left with not a single drop of oil."
+      },
+      {
+        "question": "What catastrophic event occurs at the climax of the play?",
+        "answer": "*The heifer pulls the rope outside, dragging Darry entirely up the chimney*.",
+        "category": "most",
+        "badgeTitle": "FINAL IMAGE",
+        "badgeText": "Darry falls back down the chimney, exhausted and covered in soot, just as Lizzie returns."
+      },
+      {
+        "question": "What is Lizzie's reaction when she returns from mowing the meadow?",
+        "answer": "Lizzie is *completely horrified* and cries out, asking what has happened.",
+        "category": "most",
+        "badgeTitle": "DARRY'S BLAME",
+        "badgeText": "Darry immediately blames her, asking \"can you do nothin' right!\"."
+      },
+      {
+        "question": "What was Darry's attitude towards housework before attempting it?",
+        "answer": "He was *extremely confident and arrogant* about his abilities.",
+        "category": "most",
+        "badgeTitle": "REALITY CHECK",
+        "badgeText": "His struggle exposes his complete ignorance and lack of experience."
+      },
+      {
+        "question": "What literary technique highlights the absurdity of Darry's attempts?",
+        "answer": "The playwright uses *farce* to emphasize the absurdity of the situation.",
+        "category": "most",
+        "badgeTitle": "DEFINITION",
+        "badgeText": "Farce involves highly exaggerated, improbable situations and clumsy physical comedy."
+      },
+      {
+        "question": "What ultimate lesson is learned through Darry's overconfidence?",
+        "answer": "The play teaches the *importance of humility and valuing the difficult nature of domestic work*.",
+        "category": "most",
+        "badgeTitle": "KEY CONCLUSION",
+        "badgeText": "It proves that competence comes from actual experience, not gender."
+      },
+      {
+        "question": "What did Darry attempt to do while Lizzie was away?",
+        "answer": "Darry attempted to *complete the household chores*.",
+        "category": "most",
+        "badgeTitle": "LIST OF CHORES",
+        "badgeText": "These included feeding animals, washing delf, and stabling the heifer."
+      },
+      {
+        "question": "What specific task was Lizzie doing while the men ruined the house?",
+        "answer": "Lizzie was *successfully operating the mowing machine* out in the meadow.",
+        "category": "most",
+        "badgeTitle": "CONTRAST",
+        "badgeText": "Her efficiency highlights the incompetence of the men indoors."
+      },
+      {
+        "question": "How does Darry explain missing beats while exercising to Barry?",
+        "answer": "Darry falsely claims he is missing beats because he is *trying to foster Barry into the right balance*.",
+        "category": "most",
+        "badgeTitle": "EXCUSE",
+        "badgeText": "He refuses to admit his own physical inability to keep up."
+      },
+      {
+        "question": "Why does Barry refuse to look for the lost oil tap key?",
+        "answer": "Barry argues that without his glasses in the dark, he *might let the lamp fall and set the house on fire*.",
+        "category": "most",
+        "badgeTitle": "CURRENT STATE",
+        "badgeText": "He is terrified after nearly destroying himself on the shelves."
+      },
+      {
+        "question": "What word does Darry hate hearing Barry repeat during the emergency?",
+        "answer": "Darry moans with resentment whenever Barry uses the phrase *\"expedite matters\"*.",
+        "category": "most",
+        "badgeTitle": "IRONY",
+        "badgeText": "Their rushing around to \"expedite matters\" directly causes the destruction of the kitchen."
+      },
+      {
+        "question": "According to Lizzie, what is the danger of associating with Alice Lanigan?",
+        "answer": "Lizzie claims Alice *makes mechanical toys out of Darry and Barry*.",
+        "category": "most",
+        "badgeTitle": "MANIPULATION",
+        "badgeText": "She believes Alice uses flattery to control them."
+      },
+      {
+        "question": "What item does Darry put on to \"show the world\" how housework is done?",
+        "answer": "Darry puts on *Lizzie's woman's overall*.",
+        "category": "most",
+        "badgeTitle": "PHYSICAL COMEDY",
+        "badgeText": "He struggles to figure out the front, back, top, and bottom of the garment."
+      },
+      {
+        "question": "How does Darry refer to Barry after Barry knocks over the jug?",
+        "answer": "Darry yells and calls Barry a *\"snaky-arm'd candle-power-ey'd elephant\"*.",
+        "category": "most",
+        "badgeTitle": "FRUSTRATION",
+        "badgeText": "Darry threatens to put a safety curtain around Barry to stop him breaking things."
+      },
+      {
+        "question": "How is the kitchen described in the stage layout of the play?",
+        "answer": "The kitchen is described as a *big, comfortable*, but *simple and modest* room.",
+        "category": "important",
+        "badgeTitle": "SETTING DETAIL",
+        "badgeText": "It features steep stairs that look almost like a ladder leading to an upper room."
+      },
+      {
+        "question": "What specific items hang on the wall near the dresser?",
+        "answer": "A *whip* hangs to the right of the dresser, and a *mandolin* hangs to the left.",
+        "category": "important",
+        "badgeTitle": "PROP SIGNIFICANCE",
+        "badgeText": "The mandolin is later used by Barry during their disastrous attempt to play music."
+      },
+      {
+        "question": "What is written on the large red card hanging on the back wall?",
+        "answer": "The phrase *\"Do It Now\"* is written in white letters on the card.",
+        "category": "important",
+        "badgeTitle": "IRONIC ELEMENT",
+        "badgeText": "This is deeply ironic because Darry constantly delays doing his actual chores."
+      },
+      {
+        "question": "Where is the lumber room located in the kitchen?",
+        "answer": "The lumber room is located *to the right of the huge fireplace*.",
+        "category": "important",
+        "badgeTitle": "PLOT LOCATION",
+        "badgeText": "This is where Darry goes to fetch the oil drum and creates a massive spill."
+      },
+      {
+        "question": "How does Darry compare Lizzie's house work to his field work?",
+        "answer": "Darry calls her house work a *\"sinecure\" (easy job)* compared to his *sweating in the fields*.",
+        "category": "important",
+        "badgeTitle": "DARRY'S ARROGANCE",
+        "badgeText": "He believes he could do all her work three times over and still be bored."
+      },
+      {
+        "question": "Why does Darry say it is a miracle his trousers stay up?",
+        "answer": "He complains that there is *only one button* at the back and front keeping his trousers up.",
+        "category": "important",
+        "badgeTitle": "LIZZIE'S DUTIES",
+        "badgeText": "He blames Lizzie for not doing the sewing and mending."
+      },
+      {
+        "question": "How does Lizzie describe Alice Lanigan's behavior?",
+        "answer": "Lizzie says Alice *deliberately moulds her body posture* like the Lady of Shalott to *captivate men*.",
+        "category": "important",
+        "badgeTitle": "CHARACTER CONFLICT",
+        "badgeText": "Lizzie believes Alice is manipulating Darry into complaining about his wife."
+      },
+      {
+        "question": "What personal detail does Lizzie reveal about Alice Lanigan's child?",
+        "answer": "Lizzie mentions that Alice has a kid who *has never had a pat on the head from a father*.",
+        "category": "important",
+        "badgeTitle": "SOCIAL COMMENTARY",
+        "badgeText": "She uses this to warn Darry about getting involved with Alice."
+      },
+      {
+        "question": "What does Lizzie say Barry Derrill cannot see without the moon?",
+        "answer": "She says Barry is so near-sighted that he *cannot see the sky unless the moon is shining*.",
+        "category": "important",
+        "badgeTitle": "FORESHADOWING",
+        "badgeText": "This extreme bad vision leads to Barry causing multiple disasters in the house."
+      },
+      {
+        "question": "What is Lizzie's final prayer before leaving to mow the meadow?",
+        "answer": "She prays to God that when she comes back, she will at least *find the four walls standing*.",
+        "category": "important",
+        "badgeTitle": "COMEDIC TRUTH",
+        "badgeText": "Her sarcastic worry almost becomes a reality by the end of the play."
+      },
+      {
+        "question": "What time does the distant Town Hall clock strike just after Lizzie leaves?",
+        "answer": "The clock strikes *eight o'clock* as Darry begins his time alone.",
+        "category": "important",
+        "badgeTitle": "TIME MARKER",
+        "badgeText": "The clock chimes throughout the play to show how much time Darry is wasting."
+      },
+      {
+        "question": "Where does Darry find the records to play on the gramophone?",
+        "answer": "He takes the records from *behind the chest of drawers*.",
+        "category": "important",
+        "badgeTitle": "DISTRACTION",
+        "badgeText": "Instead of working, he immediately decides to do physical exercises."
+      },
+      {
+        "question": "What physical preparations does Darry make before starting his exercises?",
+        "answer": "Darry *takes off his waistcoat*, *loosens his braces*, *strokes his thighs*, and *tries to push his belly back*.",
+        "category": "important",
+        "badgeTitle": "CHARACTER ACTION",
+        "badgeText": "This highlights his unfitness and comedic vanity."
+      },
+      {
+        "question": "What are the first instructions given by the gramophone?",
+        "answer": "The voice says to *lie on the back*, *put hands behind the head*, and *keep feet together*.",
+        "category": "important",
+        "badgeTitle": "EXERCISE STEPS",
+        "badgeText": "It then tells him to bend the right knee towards the chest."
+      },
+      {
+        "question": "Why does Darry shift the gramophone indicator to \"Slow\"?",
+        "answer": "He is *blowing and panting* because the original music is *too quick* for him to follow.",
+        "category": "important",
+        "badgeTitle": "PHYSICAL FAILURE",
+        "badgeText": "Even on slow, he finds it impossible to keep proper time with the music."
+      },
+      {
+        "question": "What does Barry suggest Darry should do to improve his exercise?",
+        "answer": "Barry tells him *the rhythm is too slow* and he needs to *tense his muscles*.",
+        "category": "important",
+        "badgeTitle": "UNHELPFUL ADVICE",
+        "badgeText": "Barry thinks Darry is just not tuned into the movements properly."
+      },
+      {
+        "question": "What does Darry suggest is the proper clothing for callisthenics?",
+        "answer": "Darry tells Barry that to do the exercises properly, one should be wearing *shorts*.",
+        "category": "important",
+        "badgeTitle": "IRONY",
+        "badgeText": "Neither of them are dressed for exercise, nor are they fit enough to do them."
+      },
+      {
+        "question": "What happens when Barry puts the gramophone indicator to \"Fast\"?",
+        "answer": "The fast tempo forces them to exercise in a *frantic way* until Darry becomes *completely exhausted*.",
+        "category": "important",
+        "badgeTitle": "BARRY'S VIGOR",
+        "badgeText": "Barry manages to keep going manfully while Darry gives up."
+      },
+      {
+        "question": "What tune does Darry hum to try and set the rhythm for Barry?",
+        "answer": "Darry hums the tune of *\"Coming thro' the Rye\"*.",
+        "category": "important",
+        "badgeTitle": "MUSICAL ELEMENT",
+        "badgeText": "He uses \"Dah th' diddy\" sounds to try and force Barry into his slower pace."
+      },
+      {
+        "question": "What specific song do Darry and Barry practice for the Town Hall concert?",
+        "answer": "They practice a song about a handsome man and maiden strolling, with the chorus *\"Down where the bees are hummin'\"*.",
+        "category": "important",
+        "badgeTitle": "PERFORMANCE PREP",
+        "badgeText": "They even practice walking in a semicircle and bowing before singing."
+      },
+      {
+        "question": "What argument do Darry and Barry have before they start singing?",
+        "answer": "They fiercely argue over whether they are supposed to *step to the left or the right* when bowing.",
+        "category": "important",
+        "badgeTitle": "LACK OF COORDINATION",
+        "badgeText": "They end up marching in opposite directions anyway."
+      },
+      {
+        "question": "In their song, what does the moon murmur when it looks down?",
+        "answer": "The moon murmurs, *\"I feel hot, 'n fear a storm is brewing\"*.",
+        "category": "important",
+        "badgeTitle": "POETIC DETAIL",
+        "badgeText": "The song features high and edifying talk between the man and the maiden."
+      },
+      {
+        "question": "What continuous sound from outside reminds Darry of his uncompleted chores?",
+        "answer": "The *steady, rattling whirr of the mowing machine* can be heard from the meadow.",
+        "category": "important",
+        "badgeTitle": "CONTRAST",
+        "badgeText": "It proves that Lizzie is working hard while Darry is playing around."
+      },
+      {
+        "question": "What legal term does Darry use when Barry claims Darry influenced his bad behavior?",
+        "answer": "Darry warns Barry that there is such a thing in the world as a *\"libel\"*.",
+        "category": "important",
+        "badgeTitle": "DEFENSIVE ATTITUDE",
+        "badgeText": "Darry refuses to take the blame for wasting time on music and exercises."
+      },
+      {
+        "question": "Why does Darry accuse Barry of having the \"hands of a gorilla\"?",
+        "answer": "Barry is unable to wind the clock, and when Darry opens it, the *broken spring darts out*.",
+        "category": "important",
+        "badgeTitle": "MISPLACED BLAME",
+        "badgeText": "Darry broke the clock earlier but blames Barry for tearing at it."
+      },
+      {
+        "question": "Why does Barry hold the dishes so close to his spectacles?",
+        "answer": "Barry is *severely near-sighted* and must peer *very closely* to see what he is wiping.",
+        "category": "important",
+        "badgeTitle": "DANGEROUS ACTION",
+        "badgeText": "This leads him to blindly swing his arm and smash a jug on the floor."
+      },
+      {
+        "question": "What spilled item does Barry sweep into a corner near the door?",
+        "answer": "Barry tries to sweep up *spuds (potatoes)* that Darry dropped when running inside.",
+        "category": "important",
+        "badgeTitle": "SECONDARY ACCIDENT",
+        "badgeText": "While sweeping, Barry shoves the broom handle right through the window pane."
+      },
+      {
+        "question": "Why does Darry refuse to install a light switch in the upstairs shed?",
+        "answer": "Darry angrily states they *cannot have a switch in every corner* of the room just to suit Barry.",
+        "category": "important",
+        "badgeTitle": "RESULT",
+        "badgeText": "Barry is forced to search for the shed key in pitch darkness."
+      },
+      {
+        "question": "What heavy item does Barry knock over while in the dark upstairs room?",
+        "answer": "Barry accidentally knocks over the *washhand-stand*, causing a loud crash.",
+        "category": "important",
+        "badgeTitle": "DARRY'S REACTION",
+        "badgeText": "Darry yells that Barry will pull the whole house asunder (apart)."
+      },
+      {
+        "question": "How does Barry seriously injure his fingers in the dark room?",
+        "answer": "He cuts his fingers on *Darry's scattered razor-blades* left in heaps on the mantelpiece.",
+        "category": "important",
+        "badgeTitle": "EXAGGERATION",
+        "badgeText": "Barry claims a thin thread of flesh is the only thing keeping his fingers attached."
+      },
+      {
+        "question": "What time does the clock strike when they realize the heifer is still outside?",
+        "answer": "The Town Hall clock strikes *ten o'clock*.",
+        "category": "important",
+        "badgeTitle": "WASTED TIME",
+        "badgeText": "They have wasted two hours doing nothing but breaking things."
+      },
+      {
+        "question": "Why is Barry worried about the heifer grazing on the bank in the dark?",
+        "answer": "Barry fears the heifer might *wander to the edge of the bank* and *tumble off*.",
+        "category": "important",
+        "badgeTitle": "PROBLEM SOLVING",
+        "badgeText": "This forces them to come up with the ridiculous plan to tie her to the chimney."
+      },
+      {
+        "question": "What physical symptom prevents Darry from going outside to fetch the heifer himself?",
+        "answer": "Darry's nose *starts pumping blood again* every time he tries to sit up from the floor.",
+        "category": "important",
+        "badgeTitle": "LIMITATION",
+        "badgeText": "This forces him to rely on the near-sighted and clumsy Barry."
+      },
+      {
+        "question": "What happens when Barry puts his head into the fireplace to catch the rope?",
+        "answer": "The smoke from the chimney makes Barry *cough heavily*.",
+        "category": "important",
+        "badgeTitle": "COMEDIC SETUP",
+        "badgeText": "He successfully catches the rope so they can tie it to a chair."
+      },
+      {
+        "question": "What happens to the room after Darry tries to fix the light bulb?",
+        "answer": "There is a *sudden flash*, and the room becomes *completely darker than ever*.",
+        "category": "important",
+        "badgeTitle": "ELECTRICAL FAILURE",
+        "badgeText": "Darry's assumption that it was the \"right voltage\" proves completely wrong."
+      },
+      {
+        "question": "What container does Darry use to carry the oil from the lumber room?",
+        "answer": "Darry uses a *can that has a long snout on it* to transfer the oil.",
+        "category": "important",
+        "badgeTitle": "THE MISTAKE",
+        "badgeText": "He turns the tap too much, drops the key, and causes a massive oil leak."
+      },
+      {
+        "question": "Why does Barry climb the shelves in the shed at the back of the yard?",
+        "answer": "He climbs the shelves because the *old lamps are on the top shelf* and he has *nothing to stand on*.",
+        "category": "important",
+        "badgeTitle": "DISASTER",
+        "badgeText": "The poorly fixed shelves collapse entirely, crushing him under pots and tools."
+      },
+      {
+        "question": "What vital item does Barry lose when the shelves collapse on him?",
+        "answer": "Barry loses his *spectacles* which are sent flying during the fall.",
+        "category": "important",
+        "badgeTitle": "BLINDNESS",
+        "badgeText": "This leaves him completely blind and helpless in the dark."
+      },
+      {
+        "question": "Why doesn't Barry want to use a match to look for the lost tap key?",
+        "answer": "Without his glasses, Barry is afraid he will *drop the lamp and set the house on fire*.",
+        "category": "important",
+        "badgeTitle": "ABSOLUTE CHAOS",
+        "badgeText": "Darry realizes there will be a \"panorama of ruin\" for Lizzie to see."
+      },
+      {
+        "question": "What happens to the oil drum while Darry is pulled into the fireplace?",
+        "answer": "Darry leaves the drum in the sink, and the oil *flows completely down the drain* unnoticed.",
+        "category": "important",
+        "badgeTitle": "TOTAL LOSS",
+        "badgeText": "When Barry checks it later, not a single drop is left."
+      },
+      {
+        "question": "According to the \"Reading and Critical Thinking\" section, what is the play critiquing?",
+        "answer": "The play critiques *traditional gender roles and stereotypes*, especially concerning *domestic work*.",
+        "category": "important",
+        "badgeTitle": "CORE THEME",
+        "badgeText": "It challenges the assumption that women's work is inherently easier."
+      },
+      {
+        "question": "According to the exercise section, what determines skill in household tasks?",
+        "answer": "The play emphasizes the importance of *experience over gender*.",
+        "category": "important",
+        "badgeTitle": "AUTHOR'S MESSAGE",
+        "badgeText": "Darry fails not because he is a man, but because he has zero practical experience."
+      },
+      {
+        "question": "In the context of the play's themes, what does Darry's overconfidence serve as?",
+        "answer": "Darry's overconfidence serves as a *lesson for the audience about pride and arrogance*.",
+        "category": "important",
+        "badgeTitle": "MORAL CHECK",
+        "badgeText": "His failures highlight the need for humility and respect for domestic duties."
+      },
+      {
+        "question": "According to the MCQs, what is the primary literary technique used in this text?",
+        "answer": "The primary literary technique used to highlight the absurdity is *farce*.",
+        "category": "important",
+        "badgeTitle": "LITERARY DEVICE",
+        "badgeText": "Farce uses highly exaggerated, ridiculous situations for comedic effect."
+      },
+      {
+        "question": "According to the MCQs, how does Darry feel about doing the housework before he attempts it?",
+        "answer": "Before attempting the chores, Darry feels *extremely confident*.",
+        "category": "important",
+        "badgeTitle": "CHARACTER ARC",
+        "badgeText": "This confidence shatters completely when he realizes the true difficulty of the tasks."
+      },
+      {
+        "question": "What does the constant sound of Lizzie's mowing machine represent?",
+        "answer": "It represents *Lizzie's steady competence and hard work* outside the house.",
+        "category": "important",
+        "badgeTitle": "SYMBOLIC CONTRAST",
+        "badgeText": "It acts as a background contrast to the lazy destruction happening inside by the men."
+      },
+      {
+        "question": "What is the significance of the play's title, \"The End of the Beginning\"?",
+        "answer": "It refers to Darry's warning to Lizzie that his taking over is only the *\"beginning of things\"*.",
+        "category": "important",
+        "badgeTitle": "IRONIC ENDING",
+        "badgeText": "By the time Lizzie returns, his reign is already at a disastrous \"end\"."
+      },
+      {
+        "question": "Why are the stairs in the kitchen described as being almost like a ladder?",
+        "answer": "The *steep stairs* highlight the *modest and simple nature* of the rural Irish cottage setting.",
+        "category": "conceptual",
+        "badgeTitle": "ARCHITECTURAL DETAIL",
+        "badgeText": "This rustic design makes it harder to navigate, adding to the comedic chaos later."
+      },
+      {
+        "question": "What is the significance of the electric bulb hanging from the centre of the ceiling?",
+        "answer": "It represents a *touch of modern convenience* that Darry *entirely fails to maintain or fix properly*.",
+        "category": "conceptual",
+        "badgeTitle": "PROP USE",
+        "badgeText": "His attempt to replace it in the dark leads to a complete blackout."
+      },
+      {
+        "question": "Why is the specific time of \"early autumn evening with the sun low\" important to the plot?",
+        "answer": "It indicates there is *still enough daylight* for Lizzie to mow the meadow outside.",
+        "category": "conceptual",
+        "badgeTitle": "CONTRAST",
+        "badgeText": "Meanwhile, the men inside waste daylight until it becomes pitch dark and dangerous."
+      },
+      {
+        "question": "How does the presence of \"unwashed delf\" on the table contradict Darry's initial complaints?",
+        "answer": "It *visually proves* that Lizzie is already busy with chores and is *not living an easy life*.",
+        "category": "conceptual",
+        "badgeTitle": "VISUAL EVIDENCE",
+        "badgeText": "Darry ignores these dishes to do exercises instead."
+      },
+      {
+        "question": "Why does Lizzie tell Darry to \"Come down and heat it, then\" when he complains about the shaving water?",
+        "answer": "Lizzie *refuses to pamper his laziness* while she is busy working around the room.",
+        "category": "conceptual",
+        "badgeTitle": "CHARACTER DYNAMIC",
+        "badgeText": "She expects him to take responsibility for his own basic needs."
+      },
+      {
+        "question": "How does Darry justify delaying the mowing of the meadow?",
+        "answer": "He *arrogantly claims* the meadow will \"do to be done tomorrow\" just to continue arguing with Lizzie.",
+        "category": "conceptual",
+        "badgeTitle": "PROCRASTINATION",
+        "badgeText": "He prioritizes complaining over actually completing his assigned farm work."
+      },
+      {
+        "question": "Why does Darry believe his trousers are dangerously close to falling down?",
+        "answer": "He complains that there is *only one button* keeping them up because Lizzie hasn't done the sewing.",
+        "category": "conceptual",
+        "badgeTitle": "EXAGGERATION",
+        "badgeText": "He uses this to accuse her of neglecting her domestic duties."
+      },
+      {
+        "question": "How does Lizzie physically challenge Darry's claim that housework is easy?",
+        "answer": "She *violently pulls off her jazz-coloured overall* and flings it on the floor for him to wear.",
+        "category": "conceptual",
+        "badgeTitle": "SYMBOLIC SWAP",
+        "badgeText": "This action initiates the swap of their traditional gender roles."
+      },
+      {
+        "question": "Why does Lizzie explicitly forbid Darry from letting Alice Lanigan into the house?",
+        "answer": "Lizzie suspects Alice is *manipulating Darry's ego* and *goading him to complain* about his wife.",
+        "category": "conceptual",
+        "badgeTitle": "JEALOUSY/CONCERN",
+        "badgeText": "Lizzie views Alice as a disruptive and manipulative influence on her husband."
+      },
+      {
+        "question": "What does Lizzie mean when she says Alice \"assembles herself together\"?",
+        "answer": "She implies Alice *deliberately dresses and acts inappropriately young* to *captivate men*.",
+        "category": "conceptual",
+        "badgeTitle": "CHARACTER CRITIQUE",
+        "badgeText": "Lizzie compares Alice's dramatic posture to the Lady of Shalott."
+      },
+      {
+        "question": "How does Darry react when Lizzie accuses him of posing in the looking-glass for Alice?",
+        "answer": "Darry *weakly denies* it, saying he doesn't be thinking of Alice Lanigan.",
+        "category": "conceptual",
+        "badgeTitle": "GUILTY BEHAVIOR",
+        "badgeText": "His defensive and brief response suggests Lizzie's accusation might be true."
+      },
+      {
+        "question": "Why does Darry tell himself to \"let her see her folly out\" after Lizzie leaves?",
+        "answer": "He *arrogantly believes* Lizzie will fail at mowing the meadow because it is \"man's work.\"",
+        "category": "conceptual",
+        "badgeTitle": "DRAMATIC IRONY",
+        "badgeText": "He is the one who ultimately fails at his tasks, not her."
+      },
+      {
+        "question": "Why does Darry cram the broken spring back into the clock before Barry arrives?",
+        "answer": "He wants to *hide his mistake* so he can pretend the clock was already broken by someone else.",
+        "category": "conceptual",
+        "badgeTitle": "DECEPTION",
+        "badgeText": "He later hypocritically blames Barry for breaking the exact same clock."
+      },
+      {
+        "question": "How does Darry's physical posture during the gramophone scene reveal his true fitness level?",
+        "answer": "He *stands stiffly*, *pats his belly*, and *tries to push it back*, showing he is completely out of shape.",
+        "category": "conceptual",
+        "badgeTitle": "PHYSICAL COMEDY",
+        "badgeText": "This makes his attempt at rapid exercises hilarious and pitiful."
+      },
+      {
+        "question": "Why does Darry use \"partial performance of the movements\" while exercising?",
+        "answer": "He is *trying to cheat the exercises* to keep up with the fast pace of the music.",
+        "category": "conceptual",
+        "badgeTitle": "PHYSICAL FAILURE",
+        "badgeText": "Even by cheating, he becomes breathless and exhausted."
+      },
+      {
+        "question": "How does Barry's entrance immediately establish him as an unhelpful presence?",
+        "answer": "He enters briskly *carrying a mandolin* instead of offering to help with any household chores.",
+        "category": "conceptual",
+        "badgeTitle": "DISTRACTION",
+        "badgeText": "He completely derails Darry from starting the housework."
+      },
+      {
+        "question": "Why is Barry initially hesitant to do the physical exercises to the music?",
+        "answer": "Barry is *dubious* and states he wouldn't be able to *keep in touch with the musical measure*.",
+        "category": "conceptual",
+        "badgeTitle": "RELUCTANCE",
+        "badgeText": "He only joins in because Darry pressures him."
+      },
+      {
+        "question": "How does Darry shift the blame when he gets out of breath during the joint exercise?",
+        "answer": "Darry stops, *falsely claims Barry is spoiling the rhythm*, and tells him to tense his muscles.",
+        "category": "conceptual",
+        "badgeTitle": "EGO PROTECTION",
+        "badgeText": "He refuses to admit that he is physically weaker than Barry."
+      },
+      {
+        "question": "What does Darry mean when he compares Barry's playing to the \"Londonderry Air play'd in march time\"?",
+        "answer": "He is *insulting Barry's complete lack of musical grace* and proper timing.",
+        "category": "conceptual",
+        "badgeTitle": "SARCASTIC INSULT",
+        "badgeText": "Darry is frustrated that Barry won't follow his incorrect directions."
+      },
+      {
+        "question": "How does the song \"Down where the bees are hummin'\" contrast with the scene?",
+        "answer": "The song is *highly romantic and peaceful*, while the men are *actively creating noise and chaos*.",
+        "category": "conceptual",
+        "badgeTitle": "THEMATIC IRONY",
+        "badgeText": "They sing about high meditation while acting like clumsy fools."
+      },
+      {
+        "question": "Why does Darry ask Barry, \"Is the clock stopped?\" when they begin chores?",
+        "answer": "Darry is *deliberately setting a trap* for Barry to take the blame for the broken clock.",
+        "category": "conceptual",
+        "badgeTitle": "MANIPULATION",
+        "badgeText": "He waits for Barry to touch it before accusing him of having \"hands of a gorilla.\""
+      },
+      {
+        "question": "How does Darry react when Barry truthfully denies breaking the clock?",
+        "answer": "Darry *hypocritically scolds Barry* and tells him to be more careful when handling things.",
+        "category": "conceptual",
+        "badgeTitle": "UNFAIR BLAME",
+        "badgeText": "Darry uses his own vandalism to make Barry feel incompetent."
+      },
+      {
+        "question": "Why does Darry tell Barry he is \"depositing it in the air\" while wiping dishes?",
+        "answer": "Barry's *extremely poor vision* causes him to miss the table completely when trying to put down the jug.",
+        "category": "conceptual",
+        "badgeTitle": "SENSORY DEFICIT",
+        "badgeText": "This directly leads to the jug smashing on the floor."
+      },
+      {
+        "question": "What is Darry's immediate command to Barry after the jug shatters?",
+        "answer": "Darry yells at him to *sit in the corner, do nothing, and say nothing*.",
+        "category": "conceptual",
+        "badgeTitle": "FRUSTRATION",
+        "badgeText": "He realizes Barry is a \"destroying neighbour\" who ruins everything he touches."
+      },
+      {
+        "question": "Why does Darry's attempt to stop his nosebleed become a major obstacle?",
+        "answer": "He is forced to *lie flat on his back* with his nose in the air, making him useless for chores.",
+        "category": "conceptual",
+        "badgeTitle": "SELF-INFLICTED DELAY",
+        "badgeText": "This forces him to rely entirely on the half-blind Barry."
+      },
+      {
+        "question": "How does Barry's search for the shed key highlight his complete unsuitability for the task?",
+        "answer": "He foolishly asks for a *light switch* in a *pitch-dark, rustic room* where he cannot see anything.",
+        "category": "conceptual",
+        "badgeTitle": "INEVITABLE DISASTER",
+        "badgeText": "This blindness causes him to smash the washhand-stand."
+      },
+      {
+        "question": "Why does Darry claim he is \"nicely handicapped\" while lying on the kitchen floor?",
+        "answer": "He is *bitterly complaining* about needing help but only having a half-blind man available.",
+        "category": "conceptual",
+        "badgeTitle": "HOPELESS SITUATION",
+        "badgeText": "He realizes they are trapped in a cycle of incompetence."
+      },
+      {
+        "question": "How does Darry insult Barry's bleeding fingers after tying them up?",
+        "answer": "Darry *cruelly states* that Barry would play the mandolin *better if all his fingers were off*.",
+        "category": "conceptual",
+        "badgeTitle": "LACK OF EMPATHY",
+        "badgeText": "Darry cares more about his own minor nosebleed than Barry's severe cuts."
+      },
+      {
+        "question": "Why do the men decide to tie the heifer to a chair inside the kitchen?",
+        "answer": "Barry is worried she will *fall off the bank*, and they have *nothing outside to tie her to*.",
+        "category": "conceptual",
+        "badgeTitle": "ABSURD LOGIC",
+        "badgeText": "They believe the moving chair will act as a safe warning system."
+      },
+      {
+        "question": "How does the chair attached to the heifer serve as a recurring visual gag?",
+        "answer": "The chair *silently slides across the floor*, indicating the heifer is pulling, while the men are completely distracted.",
+        "category": "conceptual",
+        "badgeTitle": "COMEDIC TENSION",
+        "badgeText": "The audience sees the danger pulling closer while the characters remain oblivious."
+      },
+      {
+        "question": "Why does Darry step directly over the heifer's rope to enter the lumber room?",
+        "answer": "He *completely ignores the dangerous tripping hazard* they have created in the middle of the kitchen.",
+        "category": "conceptual",
+        "badgeTitle": "CARELESSNESS",
+        "badgeText": "It shows how poorly thought-out their \"shipshape\" plans are."
+      },
+      {
+        "question": "Why does Darry confidently declare \"Oh, I know what I'm doin'\" right before the lights go out?",
+        "answer": "This dialogue highlights his *persistent arrogance* right before he triggers a complete blackout.",
+        "category": "conceptual",
+        "badgeTitle": "PRIDE BEFORE FALL",
+        "badgeText": "He refuses to listen to Barry's warning about tampering with the electricity."
+      },
+      {
+        "question": "How does Barry try to appear intelligent when the replacement light bulb flashes and dies?",
+        "answer": "Barry *acts magnanimous and smugly claims* he \"warned\" Darry that the bulb would fuse.",
+        "category": "conceptual",
+        "badgeTitle": "EGO CLASH",
+        "badgeText": "Even in the dark, they are fighting over who is smarter."
+      },
+      {
+        "question": "Why does Darry need Barry to light the wall lamp in the dark?",
+        "answer": "Darry cannot do it because he is *busy fetching oil* from the drum in the lumber room.",
+        "category": "conceptual",
+        "badgeTitle": "DIVISION OF LABOR",
+        "badgeText": "Their attempt to split the work results in two separate disasters."
+      },
+      {
+        "question": "What physical action traps Darry in the lumber room after the tap breaks?",
+        "answer": "He is forced to *keep his thumb pressed over the outlet* to stop the oil from draining entirely.",
+        "category": "conceptual",
+        "badgeTitle": "PHYSICAL TRAP",
+        "badgeText": "He is completely immobilized and screams for Barry to help him."
+      },
+      {
+        "question": "Why does Barry cry out \"Where's the doorway? - I can't see!\" after the shed collapses?",
+        "answer": "Barry lost his *thick-lensed spectacles* in the crash, leaving him functionally blind in the dark.",
+        "category": "conceptual",
+        "badgeTitle": "TOTAL VULNERABILITY",
+        "badgeText": "He cannot help Darry because he cannot even find his way inside."
+      },
+      {
+        "question": "How does Barry ironically explain his decision to climb the unstable shelves?",
+        "answer": "Barry claims he was just trying to *\"expedite matters\"* by reaching the top shelf quickly.",
+        "category": "conceptual",
+        "badgeTitle": "VERBAL IRONY",
+        "badgeText": "His attempt to speed things up causes a massive, time-wasting disaster."
+      },
+      {
+        "question": "What emergency forces Darry to abandon the leaking oil drum in the sink?",
+        "answer": "Barry is *actively being dragged towards the fireplace* by the heifer and screams for help.",
+        "category": "conceptual",
+        "badgeTitle": "CLIMAX",
+        "badgeText": "Darry has to choose between saving the oil or saving his friend."
+      },
+      {
+        "question": "How does the play visually represent Darry's ultimate, humiliating defeat?",
+        "answer": "Darry *falls back down the chimney*, crawling out *exhausted and sooty* on his hands and knees.",
+        "category": "conceptual",
+        "badgeTitle": "VISUAL METAPHOR",
+        "badgeText": "The overconfident man is reduced to crawling in dirt."
+      },
+      {
+        "question": "Why is Lizzie's final question, \"What has happened?\", deeply comedic?",
+        "answer": "She expected him to do simple chores, but returns to find him *covered in soot in a destroyed house*.",
+        "category": "conceptual",
+        "badgeTitle": "UNDERSTATEMENT",
+        "badgeText": "The question is simple, but the answer is a catastrophic chain of events."
+      },
+      {
+        "question": "According to the glossary, how does the word \"callisthenics\" apply to Darry's actions?",
+        "answer": "It refers to the *physical exercises* Darry attempts to build an attractive body, but *miserably fails at*.",
+        "category": "conceptual",
+        "badgeTitle": "APPLICATION",
+        "badgeText": "His unfitness makes a mockery of the concept of callisthenics."
+      },
+      {
+        "question": "How does the concept of \"goading\" explain Lizzie's intense anger towards Alice Lanigan?",
+        "answer": "Lizzie believes Alice is *constantly annoying and pushing Darry* to disrespect his wife and his chores.",
+        "category": "conceptual",
+        "badgeTitle": "EMOTIONAL TRIGGER",
+        "badgeText": "This goading is the root cause of Darry's sudden rebellion."
+      },
+      {
+        "question": "In terms of character development, what is the core significance of Darry's mistakes?",
+        "answer": "His *continuous failures* force him on a journey from *arrogant pride* to *humiliating defeat*.",
+        "category": "conceptual",
+        "badgeTitle": "CHARACTER ARC",
+        "badgeText": "He is forced to realize he is not as capable as he believed."
+      },
+      {
+        "question": "How does the play use farcical comedy to address the serious social issue of gender roles?",
+        "answer": "It uses *exaggerated, ridiculous situations* to prove that domestic work requires *real skill and experience*, regardless of gender.",
+        "category": "conceptual",
+        "badgeTitle": "SOCIAL MESSAGE",
+        "badgeText": "The laughter highlights the absurdity of underestimating women's work."
+      },
+      {
+        "question": "How are the themes of this historical play still relevant to contemporary audiences today?",
+        "answer": "Modern society *still frequently underestimates the physical and mental demands* of household management.",
+        "category": "conceptual",
+        "badgeTitle": "REAL-WORLD CONNECTION",
+        "badgeText": "The assumption that \"staying at home\" is a sinecure remains a common prejudice."
+      },
+      {
+        "question": "According to the glossary, what does it mean to do something \"gingerly,\" and who does it?",
+        "answer": "It means acting in a *careful way to avoid pain*; Darry gets up *gingerly* after his nosebleed stops.",
+        "category": "conceptual",
+        "badgeTitle": "PHYSICAL STATE",
+        "badgeText": "He is battered and bruised by his own incompetence."
+      },
+      {
+        "question": "What is the precise meaning of \"debris\" as used by Lizzie in her prediction?",
+        "answer": "It refers to the *pieces of destroyed materials* she predicts Darry will be found dead under.",
+        "category": "conceptual",
+        "badgeTitle": "FORESHADOWING",
+        "badgeText": "Her sarcastic prediction of destroyed materials literally comes true by the end."
+      }
+    ]
   },
   "Physics": {
     "1": [
