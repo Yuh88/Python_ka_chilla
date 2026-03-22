@@ -7192,8 +7192,1228 @@ const siteData = {
         "badgeText": "The shift from passive administration to active, visionary creation."
       }
     ],
-    "3": [],
-    "5": [],
+    "3": [
+      {
+        "question": "Who is the author of the poem \"A Bird Came Down the Walk\"?",
+        "answer": "The poem was written by the famous *American poet Emily Dickinson*. She is well‑known for her *unique and unconventional style* of poetry.",
+        "category": "most",
+        "badgeTitle": "POET INFORMATION",
+        "badgeText": "Emily Dickinson (1830‑1886)"
+      },
+      {
+        "question": "What was the very first action the bird took when it came down the walk?",
+        "answer": "The bird first *bit an Angleworm in halves*. After breaking it, he *ate the fellow, raw*. He did this because he *did not know* the speaker was watching.",
+        "category": "most",
+        "badgeTitle": "BIRD'S ACTION",
+        "badgeText": "Eating the worm"
+      },
+      {
+        "question": "Where did the bird get a drink of water in the poem?",
+        "answer": "After eating the worm, the bird *drank a Dew*. He drank this refreshing dew directly from a *convenient Grass*.",
+        "category": "most",
+        "badgeTitle": "BIRD'S ACTION",
+        "badgeText": "Drinking Dew"
+      },
+      {
+        "question": "Why did the bird hop sideways to the wall?",
+        "answer": "The bird calmly hopped *sidewise to the Wall* to make space on the path. He did this specifically *to let a Beetle pass* by him safely.",
+        "category": "most",
+        "badgeTitle": "CAUSE AND EFFECT",
+        "badgeText": "Letting the beetle pass"
+      },
+      {
+        "question": "How does the speaker describe the fast-moving eyes of the bird?",
+        "answer": "The bird's eyes were very *rapid* and they *hurried all around*. The speaker thought his shiny eyes looked exactly like *frightened Beads*.",
+        "category": "most",
+        "badgeTitle": "SIMILE",
+        "badgeText": "Frightened Beads"
+      },
+      {
+        "question": "What did the speaker offer to the bird when it looked scared?",
+        "answer": "Because the bird looked like he was in danger, the speaker *offered him a Crumb*. The speaker wanted to interact gently with the *cautious* bird.",
+        "category": "most",
+        "badgeTitle": "HUMAN INTERACTION",
+        "badgeText": "Offering a crumb"
+      },
+      {
+        "question": "How did the bird react when the speaker offered him food?",
+        "answer": "The bird did not eat the food; instead, he *unrolled his feathers*. He then smoothly *rowed him softer home*, meaning he flew away gracefully.",
+        "category": "most",
+        "badgeTitle": "FLIGHT",
+        "badgeText": "Unrolling feathers"
+      },
+      {
+        "question": "What beautiful metaphor is used to describe the bird flying away?",
+        "answer": "The bird's smooth flight is directly compared to *Oars divide the Ocean*. This shows his wings moved perfectly through the air, being *too silver for a seam*.",
+        "category": "most",
+        "badgeTitle": "METAPHOR",
+        "badgeText": "Oars in the Ocean"
+      },
+      {
+        "question": "What other insect's movement is compared to the bird's flight at the end of the poem?",
+        "answer": "The bird's flight is compared to the graceful jump of *Butterflies*. The text says they leap from *Banks of Noon* and swim in a *plashless* manner.",
+        "category": "most",
+        "badgeTitle": "IMAGERY",
+        "badgeText": "Butterflies leaping"
+      },
+      {
+        "question": "What is the stanza structure of the poem \"A Bird Came Down the Walk\"?",
+        "answer": "The entire poem is divided into *five stanzas*. Furthermore, each stanza is a *quatrain*, which means it is comprised of exactly *four lines*.",
+        "category": "most",
+        "badgeTitle": "POETIC FORM",
+        "badgeText": "Five Quatrains"
+      },
+      {
+        "question": "What is the central theme regarding nature's balance in the poem?",
+        "answer": "The poem shows how nature contains both *beauty and brutality* living together harmoniously. This delicate balance is shown when the bird brutally eats a worm but gracefully steps aside for a *beetle*.",
+        "category": "most",
+        "badgeTitle": "THEME",
+        "badgeText": "Nature's Balance"
+      },
+      {
+        "question": "How does the poem portray the boundary and connection between humans and nature?",
+        "answer": "It shows a strong *distance* between human beings and the natural world. Even when the speaker tries to help by offering a crumb, the bird's choice to fly away proves nature's strong *independence*.",
+        "category": "most",
+        "badgeTitle": "THEME",
+        "badgeText": "Human Interaction with Nature"
+      },
+      {
+        "question": "What does the bird's final flight symbolize in the text?",
+        "answer": "The flying bird is a pure symbol of *freedom and self‑reliance*. Its strict refusal of the crumb highlights a deep desire to stay *untamed by human influence*.",
+        "category": "most",
+        "badgeTitle": "SYMBOLISM",
+        "badgeText": "Freedom and Independence"
+      },
+      {
+        "question": "How does the bird show a strong sense of danger in the poem?",
+        "answer": "The bird shows an underlying awareness of threats by acting very *cautious*. The poet notes that he *stirred his Velvet Head* exactly like *one in danger*.",
+        "category": "most",
+        "badgeTitle": "THEME",
+        "badgeText": "Innocence and Danger"
+      },
+      {
+        "question": "What made Emily Dickinson's view of nature very different from other 19th-century writers?",
+        "answer": "Unlike others who only romanticised nature, Dickinson showed its *subtle complexity*. She presented nature as a unique mixture of *beauty and raw reality*, capturing both grace and brutality.",
+        "category": "most",
+        "badgeTitle": "POET'S STYLE",
+        "badgeText": "Raw Reality of Nature"
+      },
+      {
+        "question": "During her lifetime, how many times was this poem published?",
+        "answer": "\"A Bird Came Down the Walk\" was *not published* during her lifetime at all. Her incredible work was only brought to the general public *after her death*.",
+        "category": "most",
+        "badgeTitle": "HISTORICAL FACT",
+        "badgeText": "Posthumous Publication"
+      },
+      {
+        "question": "What does the word \"angleworm\" mean in the context of the 19th century?",
+        "answer": "In the 19th century, the word \"angleworm\" was simply *another term for an earthworm*. The bird in the poem violently bites this *earthworm* in halves.",
+        "category": "most",
+        "badgeTitle": "GLOSSARY DEFINITION",
+        "badgeText": "Angleworm"
+      },
+      {
+        "question": "What is the exact meaning of the word \"plashless\" as used in the poem?",
+        "answer": "\"Plashless\" is an old‑fashioned word that means moving *without splashing*. It is used perfectly to describe the *silent, graceful movement* of the bird in the air.",
+        "category": "most",
+        "badgeTitle": "GLOSSARY DEFINITION",
+        "badgeText": "Plashless"
+      },
+      {
+        "question": "Define the literary device \"Caesura\" mentioned in the reading material.",
+        "answer": "A *Caesura* is a specific *pause in a line* of poetry. This necessary pause is usually created by using punctuation marks such as a *comma, full stop, or a dash*.",
+        "category": "most",
+        "badgeTitle": "LITERARY DEVICE",
+        "badgeText": "Caesura"
+      },
+      {
+        "question": "What does \"Enjambment\" mean when studying poetry?",
+        "answer": "*Enjambment* happens when one line of poetry *continues into the next line* seamlessly. It carries a point forward *without a pause* at the end of the line.",
+        "category": "most",
+        "badgeTitle": "LITERARY DEVICE",
+        "badgeText": "Enjambment"
+      },
+      {
+        "question": "How is \"Juxtaposition\" defined in the chapter's literary devices section?",
+        "answer": "*Juxtaposition* is placing two or more ideas, actions, or settings *side by side* in a text. This is done to clearly highlight their deep *contrasts or differences* to the reader.",
+        "category": "most",
+        "badgeTitle": "LITERARY DEVICE",
+        "badgeText": "Juxtaposition"
+      },
+      {
+        "question": "What is the overall tone of Emily Dickinson's poem?",
+        "answer": "The primary tone of \"A Bird Came Down the Walk\" is highly *Calm and reflective*. The speaker quietly and peacefully watches the bird's natural actions in a *detailed and intimate manner*.",
+        "category": "most",
+        "badgeTitle": "POEM ANALYSIS",
+        "badgeText": "Calm and Reflective Tone"
+      },
+      {
+        "question": "How did the editors change Emily Dickinson's poems after her death?",
+        "answer": "After she passed away, editors often changed her original work to fit more *conventional poetic norms* of that time. They did this to normalize her very *unique and unconventional style*.",
+        "category": "most",
+        "badgeTitle": "HISTORICAL FACT",
+        "badgeText": "Editing the Poems"
+      },
+      {
+        "question": "What does the tactile imagery \"Velvet Head\" add to the poem?",
+        "answer": "The phrase \"Velvet Head\" gives a soft, physical sense of touch, meaning a fabric with a *thick, soft surface*. It heavily contrasts the bird's delicate softness with its brutal action of eating the *fellow, raw*.",
+        "category": "most",
+        "badgeTitle": "TACTILE IMAGERY",
+        "badgeText": "Velvet"
+      },
+      {
+        "question": "Why is it significant that the speaker observed the bird in secret at first?",
+        "answer": "The speaker watched secretly so she could see the bird's true, wild behavior, as he *did not know* he was being seen. This unique angle gives the poem a very *detailed and intimate* observation of raw nature.",
+        "category": "most",
+        "badgeTitle": "COMPREHENSION",
+        "badgeText": "Secret Observation"
+      },
+      {
+        "question": "What serious subjects are most commonly explored in Emily Dickinson's poetry?",
+        "answer": "Emily Dickinson heavily explores deep themes such as *nature*, *life*, *death*, and the *human experience*. She looks carefully at these topics through a deeply *introspective and reflective lens*.",
+        "category": "most",
+        "badgeTitle": "AUTHOR BACKGROUND",
+        "badgeText": "Main Themes"
+      },
+      {
+        "question": "According to the exercise, what is the effect of comparing eyes to \"frightened Beads\"?",
+        "answer": "This specific simile shows that the wild bird is extremely *cautious* and nervous. The comparison perfectly paints the eyes as small, hard, and shiny like glass, wood, or *jewellery*.",
+        "category": "most",
+        "badgeTitle": "SIMILE EFFECT",
+        "badgeText": "Frightened Beads"
+      },
+      {
+        "question": "What specific action shows the brutality of nature in the first stanza?",
+        "answer": "The bird showing no mercy as he *bit an Angleworm in halves*. He then proceeded to eat the insect completely *raw*, showing the raw reality of natural survival.",
+        "category": "important",
+        "badgeTitle": "THEME ANALYSIS",
+        "badgeText": "Natural Brutality"
+      },
+      {
+        "question": "How did the bird find water to drink during his short walk?",
+        "answer": "Instead of looking for a river or pond, the bird simply *drank a Dew*. He easily found this tiny drop of fresh water on a nearby, *convenient Grass*.",
+        "category": "important",
+        "badgeTitle": "TEXTUAL DETAIL",
+        "badgeText": "Drinking Dew"
+      },
+      {
+        "question": "Identify a strong example of personification used for the bird in the poem.",
+        "answer": "The poet repeatedly uses the human pronoun *\"He\"* instead of \"It\" for the bird. Also, the bird acts like a polite gentleman when he steps aside to *let a Beetle pass*.",
+        "category": "important",
+        "badgeTitle": "EXERCISE QUESTION",
+        "badgeText": "Personification"
+      },
+      {
+        "question": "What is the exact cause and effect relationship in the second stanza regarding the beetle?",
+        "answer": "The clear cause is the bird hopping *sidewise to the Wall*. The direct effect of this cautious action was making enough space on the path to *let a Beetle pass* safely.",
+        "category": "important",
+        "badgeTitle": "EXERCISE QUESTION",
+        "badgeText": "Cause and Effect"
+      },
+      {
+        "question": "Why does the poet specifically describe the grass as \"convenient\"?",
+        "answer": "The grass is called \"convenient\" because it was extremely *useful and easy* for the bird to reach. It provided a quick drop of morning dew *without causing any problems*.",
+        "category": "important",
+        "badgeTitle": "GLOSSARY APPLICATION",
+        "badgeText": "Convenient"
+      },
+      {
+        "question": "How does the poem use visual imagery to describe the bird's physical actions?",
+        "answer": "The poet uses strong visual words like the bird violently biting a worm in *halves*, having quick *rapid eyes*, and smoothly unrolling his *feathers* to fly away.",
+        "category": "important",
+        "badgeTitle": "EXERCISE QUESTION",
+        "badgeText": "Visual Imagery"
+      },
+      {
+        "question": "What was the cause and effect when the human speaker offered the crumb?",
+        "answer": "The cause was the human speaker trying to be friendly and *offered him a Crumb*. The resulting effect was that the bird got scared, *unrolled his feathers*, and immediately flew away.",
+        "category": "important",
+        "badgeTitle": "EXERCISE QUESTION",
+        "badgeText": "Cause and Effect"
+      },
+      {
+        "question": "Why is the statement \"The bird's eyes looked like frightened Beads\" considered an opinion?",
+        "answer": "It is an opinion because it is simply the *speaker's personal thought* and imagination. Another person observing the bird might not think its shiny eyes look exactly like *frightened Beads*.",
+        "category": "important",
+        "badgeTitle": "EXERCISE QUESTION",
+        "badgeText": "Fact vs Opinion"
+      },
+      {
+        "question": "Is the statement \"The bird bit an Angleworm in halves\" a generalized statement or evidence-based?",
+        "answer": "This is pure *Evidence‑Based Information*. It is a direct, factual physical action that the speaker clearly saw the bird do with her own *eyes*.",
+        "category": "important",
+        "badgeTitle": "EXERCISE QUESTION",
+        "badgeText": "Evidence‑Based Information"
+      },
+      {
+        "question": "What does the beautiful phrase \"too silver for a seam\" mean regarding the bird's flight?",
+        "answer": "It means the bird's flight was completely smooth and flawless, leaving no *visible mark or dividing line* in the air. It was as perfect and unbroken as shining *silver*.",
+        "category": "important",
+        "badgeTitle": "TEXTUAL ANALYSIS",
+        "badgeText": "Silver Seam"
+      },
+      {
+        "question": "How does the general mood of the poem shift from the beginning to the end?",
+        "answer": "The mood starts as a *casual, everyday observation* of a bird simply eating a worm. However, by the end, it shifts to a feeling of deep *awe and wonder* at the bird's majestic flight.",
+        "category": "important",
+        "badgeTitle": "EXERCISE QUESTION",
+        "badgeText": "Mood Shift"
+      },
+      {
+        "question": "What does the bird's brief interaction with the beetle show about the natural world?",
+        "answer": "It strongly shows the peaceful *coexistence and harmony* in the natural world. Despite being a deadly predator to the worm, the bird politely makes way for the *harmless Beetle*.",
+        "category": "important",
+        "badgeTitle": "THEME ANALYSIS",
+        "badgeText": "Harmony in Nature"
+      },
+      {
+        "question": "Find a simile in the poem besides \"frightened beads\" and explain its meaning.",
+        "answer": "Another great simile is *\"Like one in danger, Cautious\"*. It clearly shows that the wild, innocent bird is constantly alert and highly *afraid of potential threats* in his environment.",
+        "category": "important",
+        "badgeTitle": "EXERCISE QUESTION",
+        "badgeText": "Simile"
+      },
+      {
+        "question": "How does the poem highlight the core concept of natural beauty?",
+        "answer": "Natural beauty is perfectly shown through the bird's highly *graceful and silent flight* at the end. The poet beautifully compares his flying to butterflies swimming *plashless* in the bright air.",
+        "category": "important",
+        "badgeTitle": "EXERCISE QUESTION",
+        "badgeText": "Natural Beauty"
+      },
+      {
+        "question": "What is the significance of using the word \"Oars\" in the final stanzas?",
+        "answer": "\"Oars\" are long wooden poles used for rowing a boat. Here, the bird's *wings are metaphorically compared* to oars that smoothly and silently divide the vast *Ocean* of air.",
+        "category": "important",
+        "badgeTitle": "METAPHOR ANALYSIS",
+        "badgeText": "Oars"
+      },
+      {
+        "question": "Why did Emily Dickinson choose to write about nature differently than her romanticised contemporaries?",
+        "answer": "She wanted to show the true, *raw reality* of life, not just a fake fairy‑tale view. She accurately captured nature's perfect blend of both elegant *grace and underlying brutality*.",
+        "category": "important",
+        "badgeTitle": "BACKGROUND INFO",
+        "badgeText": "Poet's Realistic Approach"
+      },
+      {
+        "question": "How does the title \"A Bird Came Down the Walk\" contrast with the poem's actual deep themes?",
+        "answer": "The title sounds very *simple and straightforward*, just like a casual daily walk. But the actual poem contains very *deep, complex reflections* about life, survival, freedom, and danger.",
+        "category": "important",
+        "badgeTitle": "PRE-READING QUESTION",
+        "badgeText": "Title Contrast"
+      },
+      {
+        "question": "What does the bird's extreme caution suggest about the daily life of wild animals?",
+        "answer": "It strongly suggests that wild animals live in a constant state of *vulnerability and fear*. They must always be ready to escape from *underlying dangers* just to survive another day.",
+        "category": "important",
+        "badgeTitle": "THEME ANALYSIS",
+        "badgeText": "Innocence and Danger"
+      },
+      {
+        "question": "Why did the bird completely refuse to accept the crumb from the human speaker?",
+        "answer": "The bird refused the crumb because wild creatures naturally *fear human contact*. His quick escape proves that nature prefers to remain highly *independent and untamed*.",
+        "category": "important",
+        "badgeTitle": "THEME ANALYSIS",
+        "badgeText": "Human Interaction"
+      },
+      {
+        "question": "What is the poetic meaning of the phrase \"Banks of Noon\" in the final stanza?",
+        "answer": "\"Banks of Noon\" is a highly creative metaphor for the bright, *sunny midday sky*. It creates a vivid image of butterflies leaping off invisible shores directly into the *bright afternoon light*.",
+        "category": "important",
+        "badgeTitle": "POETIC IMAGERY",
+        "badgeText": "Banks of Noon"
+      },
+      {
+        "question": "How does the poet describe the physical movement of the bird's soft head?",
+        "answer": "The poet says the bird nervously *stirred his Velvet Head*. This clearly shows he was making very quick, anxious movements to check his surroundings for any *hidden danger*.",
+        "category": "important",
+        "badgeTitle": "TEXTUAL DETAIL",
+        "badgeText": "Velvet Head"
+      },
+      {
+        "question": "What does the word \"seam\" normally mean, and how is it used creatively here?",
+        "answer": "A \"seam\" is a visible stitched line where two edges are *joined or sewn together*. The poet uses it to show the bird's flight was so incredibly smooth that the air had no *dividing lines or marks*.",
+        "category": "important",
+        "badgeTitle": "GLOSSARY APPLICATION",
+        "badgeText": "Seam"
+      },
+      {
+        "question": "How does the poem explore the specific theme of \"Innocence and Danger\"?",
+        "answer": "The bird looks very *innocent and soft*, with a beautiful velvet head and bead‑like eyes. However, his highly *cautious behavior* shows he constantly feels surrounded by deadly danger.",
+        "category": "important",
+        "badgeTitle": "THEME ANALYSIS",
+        "badgeText": "Innocence vs Danger"
+      },
+      {
+        "question": "What kind of poem is \"A Bird Came Down the Walk\" based on its literary structure?",
+        "answer": "It is a beautifully written, nature‑focus *lyric poem*. It contains exactly five stanzas that deeply examine a simple, everyday natural event in a very *detailed and intimate* way.",
+        "category": "important",
+        "badgeTitle": "BACKGROUND INFO",
+        "badgeText": "Poem Structure"
+      },
+      {
+        "question": "What is the literal and figurative meaning of \"rowed him softer home\"?",
+        "answer": "This beautiful phrase literally means the bird *flew back to his nest* or natural habitat. The word \"softer\" highlights the extreme *smoothness and quietness* of his wings moving in the sky.",
+        "category": "important",
+        "badgeTitle": "TEXTUAL ANALYSIS",
+        "badgeText": "Softer Home"
+      },
+      {
+        "question": "According to the text's definitions, what literary device is repeating the same letter sound at the start of adjacent words?",
+        "answer": "This specific, widely used literary device is known as *Alliteration*. It strongly helps create rhythm and mood by repeating the same *initial consonant sounds* closely together in a sentence.",
+        "category": "important",
+        "badgeTitle": "LITERARY DEVICE",
+        "badgeText": "Alliteration"
+      },
+      {
+        "question": "Which exact phrase proves the bird's eyes were moving very quickly in fear?",
+        "answer": "The poet explicitly states that the bird nervously *\"glanced with rapid eyes\"*. Furthermore, she notes that his tiny, shiny eyes *\"hurried all around\"* the open environment.",
+        "category": "important",
+        "badgeTitle": "TEXTUAL EVIDENCE",
+        "badgeText": "Rapid Eyes"
+      },
+      {
+        "question": "How does the title of the poem hint at a deeper philosophical meaning?",
+        "answer": "The title sounds very simple, but it encourages readers to find the *extraordinary in the ordinary*. It shows how a basic *simple observation* of nature can lead to very *deeper reflections* about life.",
+        "category": "conceptual",
+        "badgeTitle": "PRE-READING THEME",
+        "badgeText": "Extraordinary in Ordinary"
+      },
+      {
+        "question": "What 19th-century philosophical movement influenced poets like Emily Dickinson?",
+        "answer": "Emily Dickinson was heavily influenced by the *transcendentalist movement*. This movement strongly shaped the 19th-century *attitudes towards nature*, which is clearly visible in her deep poetry.",
+        "category": "conceptual",
+        "badgeTitle": "HISTORICAL BACKGROUND",
+        "badgeText": "Transcendentalism"
+      },
+      {
+        "question": "How did Emily Dickinson's personal lifestyle affect her poetry writing?",
+        "answer": "Emily Dickinson was famous for her extreme *reclusiveness*. Her quiet, isolated life heavily influenced her deep *philosophical outlook*, allowing her to observe nature through a deeply *introspective and reflective lens*.",
+        "category": "conceptual",
+        "badgeTitle": "POET'S LIFE",
+        "badgeText": "Reclusiveness"
+      },
+      {
+        "question": "What are the most common motifs or recurring subjects found in Dickinson's poetry?",
+        "answer": "The most common motifs in her beautiful poetry include *nature*, *death*, and the *human psyche*. She continuously explores these deep themes to understand the complete *human experience*.",
+        "category": "conceptual",
+        "badgeTitle": "POETIC MOTIFS",
+        "badgeText": "Nature and Death"
+      },
+      {
+        "question": "How is the literary device of \"Juxtaposition\" perfectly demonstrated in the first two stanzas?",
+        "answer": "Juxtaposition is shown by placing the bird's brutal action of eating a *raw worm* right next to his polite action of letting a *Beetle pass*. This highlights the deep *contrasts* within nature.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPTUAL DEVICE",
+        "badgeText": "Juxtaposition"
+      },
+      {
+        "question": "In the metaphor \"rowed him softer home\", what do the \"Oars\" actually represent?",
+        "answer": "In this deep metaphor, the \"Oars\" actually represent the *bird's soft wings*. Just as oars push a boat through water, the bird's wings smoothly push his body through the vast *Ocean of air*.",
+        "category": "conceptual",
+        "badgeTitle": "METAPHOR INSIGHT",
+        "badgeText": "Oars and Wings"
+      },
+      {
+        "question": "How does the speaker's simple offering of a crumb reveal the boundary between humans and nature?",
+        "answer": "The crumb shows the human's strong desire to *interact with nature*. However, the bird's immediate decision to fly away proves that an invisible *boundary* exists between humans and *natural autonomy*.",
+        "category": "conceptual",
+        "badgeTitle": "DEEP THEME",
+        "badgeText": "Human vs Nature Boundary"
+      },
+      {
+        "question": "Why was the poetry of Emily Dickinson often heavily edited after her passing?",
+        "answer": "Her poetry was edited because she originally wrote in a very *unique and unconventional style*. Editors changed her words to force them to fit the *conventional poetic norms* of the 19th century.",
+        "category": "conceptual",
+        "badgeTitle": "HISTORICAL EDITING",
+        "badgeText": "Conventional Norms"
+      },
+      {
+        "question": "How does the chapter glossary define the word \"cautious\" regarding the bird's actions?",
+        "answer": "The glossary defines \"cautious\" as being extremely *careful about what you say or do*. The bird acts this way specifically to strongly *avoid danger or mistakes* and avoid taking risks.",
+        "category": "conceptual",
+        "badgeTitle": "GLOSSARY DEFINITION",
+        "badgeText": "Cautious"
+      },
+      {
+        "question": "How does the word \"plashless\" perfectly connect to the metaphor of swimming in the sky?",
+        "answer": "\"Plashless\" means moving beautifully *without splashing*. The poet uses this to show that as the bird and butterflies \"swim\" through the air, they make absolutely *no noise or disturbance*.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPTUAL VOCABULARY",
+        "badgeText": "Plashless Swimming"
+      },
+      {
+        "question": "Why is the statement \"The bird's flight was graceful and beautiful\" strictly classified as an opinion?",
+        "answer": "It is an opinion because \"graceful and beautiful\" are *personal feelings and judgments*. They are not proven facts, as different people might have different views on what is truly *beautiful*.",
+        "category": "conceptual",
+        "badgeTitle": "EXERCISE LOGIC",
+        "badgeText": "Fact vs Opinion"
+      },
+      {
+        "question": "Is the statement \"The bird moved cautiously, as if in danger\" a fact or a generalized statement?",
+        "answer": "This statement is classified as a *Generalized Statement*. The observer is simply making a general assumption or guess about the bird's feelings, rather than stating a pure, measurable *fact*.",
+        "category": "conceptual",
+        "badgeTitle": "EXERCISE LOGIC",
+        "badgeText": "Generalized Statement"
+      },
+      {
+        "question": "How does the specific use of a \"Caesura\" create a feeling of hesitation in poetry?",
+        "answer": "A Caesura forces the reader to take a sudden *pause in a line*. This sudden stop naturally creates a feeling of nervous hesitation or fear, mimicking the *cautious behavior* of the wild bird.",
+        "category": "conceptual",
+        "badgeTitle": "LITERARY DEVICE",
+        "badgeText": "Caesura Effect"
+      },
+      {
+        "question": "What deep concept is explored through the bird's \"frightened Beads\" eyes?",
+        "answer": "The shiny, bead‑like eyes perfectly explore the deep concept of *Innocence and Danger*. The bird looks very innocent, but his wide eyes show a constant, terrifying awareness of *potential threats*.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPTUAL THEME",
+        "badgeText": "Innocence and Danger"
+      },
+      {
+        "question": "How does the poem's tone benefit from the bird not knowing he was being watched?",
+        "answer": "Because the bird *did not know* he was watched, his actions were completely natural and wild. This makes the tone of the poem feel much more *detailed and intimate*.",
+        "category": "conceptual",
+        "badgeTitle": "TONE ANALYSIS",
+        "badgeText": "Secret Observation"
+      },
+      {
+        "question": "What does the metaphor \"Banks of Noon\" suggest about the butterflies' environment?",
+        "answer": "The \"Banks of Noon\" beautifully suggests that the bright midday sky is like a *riverbank made of pure light*. The butterflies gracefully *leap* off this sunny bank to swim in the air.",
+        "category": "conceptual",
+        "badgeTitle": "METAPHOR INSIGHT",
+        "badgeText": "Banks of Noon"
+      },
+      {
+        "question": "What does the phrase \"Too silver for a seam\" imply about the perfection of the natural world?",
+        "answer": "A \"seam\" is a visible line where things are *joined or sewn together*. Saying the flight is \"too silver for a seam\" implies nature's movements are completely *flawless, pure, and unbroken*.",
+        "category": "conceptual",
+        "badgeTitle": "METAPHOR INSIGHT",
+        "badgeText": "Flawless Nature"
+      },
+      {
+        "question": "How does the poem contrast the bird's interaction with the worm versus the beetle?",
+        "answer": "The bird acts as a deadly predator to the worm, eating it *halves and raw*. In sharp contrast, he acts like a polite gentleman to the beetle, hopping aside to *let it pass* peacefully.",
+        "category": "conceptual",
+        "badgeTitle": "THEME CONTRAST",
+        "badgeText": "Predator vs Gentleman"
+      },
+      {
+        "question": "How does the bird symbolise the concept of \"self-reliance\" in the poem?",
+        "answer": "The bird proves his self‑reliance by finding his own food and *drinking a Dew*. He strictly rejects human help by refusing the crumb, showing his pure *natural independence*.",
+        "category": "conceptual",
+        "badgeTitle": "SYMBOLISM",
+        "badgeText": "Self‑Reliance"
+      },
+      {
+        "question": "According to the glossary, what is the exact definition of the word \"Dew\"?",
+        "answer": "The glossary defines \"dew\" as the very *small drops of water*. These refreshing water drops naturally form on the ground and grass strictly *during the night*.",
+        "category": "conceptual",
+        "badgeTitle": "GLOSSARY DEFINITION",
+        "badgeText": "Dew"
+      },
+      {
+        "question": "What does the tactile phrase \"stirred his Velvet Head\" reveal about the bird's state of mind?",
+        "answer": "\"Velvet\" shows his head is incredibly *thick and soft*. However, the nervous \"stirring\" motion reveals that despite his soft appearance, his mind is highly alert and *cautious of danger*.",
+        "category": "conceptual",
+        "badgeTitle": "TACTILE IMAGERY",
+        "badgeText": "Alertness"
+      },
+      {
+        "question": "How does the rhyme scheme of a \"quatrain\" function in this specific poem?",
+        "answer": "Since each stanza is a pure *quatrain*, it is completely comprised of exactly *four lines*. The second and fourth lines usually rhyme, giving the poem a steady, walking‑like *rhythm*.",
+        "category": "conceptual",
+        "badgeTitle": "POETIC FORM",
+        "badgeText": "Quatrain Function"
+      },
+      {
+        "question": "Why did the speaker compare the bird's eyes to \"frightened Beads\" instead of jewels?",
+        "answer": "Jewels represent beauty, but \"beads\" represent something small, hard, and *strung tightly together*. Calling them \"frightened\" emphasizes the bird's extreme *panic and constant fear*.",
+        "category": "conceptual",
+        "badgeTitle": "SIMILE INSIGHT",
+        "badgeText": "Fear vs Beauty"
+      },
+      {
+        "question": "What happens to a poem's flow when \"Enjambment\" is heavily used?",
+        "answer": "When Enjambment is used, the reading flow smoothly *continues into the next line*. It completely removes the pause at the end, perfectly mimicking the bird's *continuous, silent flight*.",
+        "category": "conceptual",
+        "badgeTitle": "LITERARY DEVICE",
+        "badgeText": "Flow of Enjambment"
+      },
+      {
+        "question": "Why are butterflies mentioned at the very end of a poem about a bird?",
+        "answer": "The beautiful butterflies are used as a final *graceful comparison*. They perfectly match the bird's silent, smooth, and *plashless* movement as he swims away into the sky.",
+        "category": "conceptual",
+        "badgeTitle": "ENDING METAPHOR",
+        "badgeText": "Butterfly Comparison"
+      },
+      {
+        "question": "How does the bird's flight symbolize the boundary between human interaction and natural autonomy?",
+        "answer": "When the human offers food, the bird immediately chooses to *fly away*. This powerful flight heavily underscores that wild nature wants to remain completely *independent and untamed* by any human influence.",
+        "category": "conceptual",
+        "badgeTitle": "DEEP THEME",
+        "badgeText": "Natural Autonomy"
+      },
+      {
+        "question": "What does Emily Dickinson's poem teach us about finding extraordinary things in life?",
+        "answer": "The poem teaches that if we pay *close observation* to simple, everyday events, we can find deep meaning. Watching a simple bird eat a worm leads to beautiful thoughts about *freedom, beauty, and survival*.",
+        "category": "conceptual",
+        "badgeTitle": "OVERALL LESSON",
+        "badgeText": "Extraordinary Observations"
+      }
+    ],
+    "5": [
+      {
+        "question": "What are the Sustainable Development Goals (SDGs) and which one is relevant to Pakistan's climate?",
+        "answer": "The *SDGs* are *17 global objectives* established by the *United Nations* to create a sustainable future. *SDG 13: Climate Action* is particularly important for Pakistan because the country is highly vulnerable to *global warming*.",
+        "category": "most",
+        "badgeTitle": "CORE CONCEPT",
+        "badgeText": "Global Climate Objectives"
+      },
+      {
+        "question": "Why does Pakistan's geography make it vulnerable to climate change?",
+        "answer": "Pakistan has a *diverse geography* that includes *high mountains*, *vast plains*, and a *long coastline*. This diversity makes the country prone to risks like *glacial melt*, *extreme heat*, and *sea‑level rise*.",
+        "category": "most",
+        "badgeTitle": "GEOGRAPHICAL RISK",
+        "badgeText": "Physical Landscape Vulnerability"
+      },
+      {
+        "question": "How does Pakistan's reliance on agriculture increase its climate vulnerability?",
+        "answer": "Pakistan depends heavily on *agriculture*, which is extremely sensitive to changes in *temperature and precipitation*. Any shift in the climate directly threatens the country's *food security* and *employment*.",
+        "category": "most",
+        "badgeTitle": "ECONOMIC FACTOR",
+        "badgeText": "Agricultural Dependence"
+      },
+      {
+        "question": "What role does rapid urbanization play in climate-induced disasters in Pakistan?",
+        "answer": "The *rapid urbanization* of cities like Karachi and Lahore creates extreme pressure on *inadequate infrastructure*. This rapid growth significantly increases the risks of disasters such as *heatwaves and flooding*.",
+        "category": "most",
+        "badgeTitle": "URBAN CHALLENGE",
+        "badgeText": "City Infrastructure and Growth"
+      },
+      {
+        "question": "How do limited resources affect Pakistan's ability to fight climate change?",
+        "answer": "Pakistan struggles with limited *financial and technical resources*. This shortage directly hinders the country's ability to effectively *mitigate and adapt* to the severe impacts of climate change.",
+        "category": "most",
+        "badgeTitle": "RESOURCE CONSTRAINT",
+        "badgeText": "Adaptation Limitations"
+      },
+      {
+        "question": "Why has Pakistan seen a significant rise in average temperatures recently?",
+        "answer": "The rise in average temperatures is primarily caused by an increase in global *greenhouse gas emissions* that trap heat in the atmosphere. In urban areas, this is worsened by local factors like *urban heat islands*.",
+        "category": "most",
+        "badgeTitle": "CLIMATE TREND",
+        "badgeText": "Rising Global Temperatures"
+      },
+      {
+        "question": "What extreme temperature was recorded in Jacobabad in 2022?",
+        "answer": "In 2022, the city of *Jacobabad* recorded a scorching temperature of *$51^{\\circ}C$ ($124^{\\circ}F$)*. This extreme heat ranks among the *highest temperatures* ever recorded in the world.",
+        "category": "most",
+        "badgeTitle": "FACTUAL RECORD",
+        "badgeText": "Extreme Weather Data"
+      },
+      {
+        "question": "What were the tragic consequences of the 2015 Karachi heatwave?",
+        "answer": "The severe heatwave that struck *Karachi in 2015* posed massive health risks to the public. Tragically, this extreme weather event resulted in over *1,200 deaths*.",
+        "category": "most",
+        "badgeTitle": "HISTORICAL EVENT",
+        "badgeText": "Urban Heat Disasters"
+      },
+      {
+        "question": "What is the Heatwave Management Plan introduced by Pakistan?",
+        "answer": "To combat rising temperatures, Pakistan introduced the *Heatwave Management Plan* under SDG 13. This plan includes *early warning systems* and widespread *public awareness campaigns*.",
+        "category": "most",
+        "badgeTitle": "GOVERNMENT ACTION",
+        "badgeText": "Mitigation Strategy"
+      },
+      {
+        "question": "Which major glaciers in Pakistan are melting at an accelerated rate?",
+        "answer": "The glaciers located in the *Himalayas and Karakoram ranges* are melting incredibly fast. This rapid melting is a direct result of *rising global temperatures*.",
+        "category": "most",
+        "badgeTitle": "ENVIRONMENTAL CHANGE",
+        "badgeText": "Mountain Ecosystems"
+      },
+      {
+        "question": "What are the initial and long-term effects of melting glaciers on Pakistan's rivers?",
+        "answer": "Initially, the melting glaciers increase water flow and cause *severe floods*. However, over time, it leads to a massive *reduction in water availability*, threatening agriculture and drinking supplies.",
+        "category": "most",
+        "badgeTitle": "WATER CRISIS",
+        "badgeText": "Glacial Runoff Impacts"
+      },
+      {
+        "question": "Why is the melting of glaciers a severe threat to Pakistan's agriculture?",
+        "answer": "Pakistan's agriculture relies heavily on the *Indus River*, which is fed by these melting glaciers. If the glaciers shrink, the *water availability* will shift, causing major agricultural losses.",
+        "category": "most",
+        "badgeTitle": "AGRICULTURAL THREAT",
+        "badgeText": "Indus River Dependency"
+      },
+      {
+        "question": "What percentage of ice in Pakistan's glaciers has already melted?",
+        "answer": "According to reports, over *30% of the ice* in Pakistan's massive glaciers has already melted away. This significant loss directly leads to *reduced river flows* across the country.",
+        "category": "most",
+        "badgeTitle": "FACTUAL RECORD",
+        "badgeText": "Glacier Depletion Data"
+      },
+      {
+        "question": "What is the GLOF project implemented by Pakistan?",
+        "answer": "The *Glacial Lake Outburst Flood (GLOF)* project was launched to address the risks of melting ice. It focuses on building *early warning systems* and constructing *protective infrastructure*.",
+        "category": "most",
+        "badgeTitle": "GOVERNMENT ACTION",
+        "badgeText": "Flood Protection"
+      },
+      {
+        "question": "What types of extreme weather events are becoming more frequent in Pakistan?",
+        "answer": "Because of global warming, Pakistan is experiencing a rapid increase in *floods*, *droughts*, and *cyclones*. The changing climate causes *intense rainfall* followed by prolonged dry periods.",
+        "category": "most",
+        "badgeTitle": "WEATHER PATTERNS",
+        "badgeText": "Climate Disasters"
+      },
+      {
+        "question": "What were the devastating human and economic impacts of the 2010 floods?",
+        "answer": "The massive *2010 floods* heavily impacted the nation, affecting over *20 million people*. Furthermore, the disaster caused huge economic losses estimated at *$10 billion*.",
+        "category": "most",
+        "badgeTitle": "HISTORICAL EVENT",
+        "badgeText": "Major Flood Disaster"
+      },
+      {
+        "question": "How has climate change specifically affected the Tharparkar region?",
+        "answer": "The *Tharparkar region* has been hit by more frequent and severe *droughts* due to changing weather. These dry periods have severely worsened *water shortages and food insecurity* in the area.",
+        "category": "most",
+        "badgeTitle": "REGIONAL IMPACT",
+        "badgeText": "Desertification Risks"
+      },
+      {
+        "question": "What framework has Pakistan developed to manage disaster risks?",
+        "answer": "Pakistan created the *National Disaster Risk Management Framework* as part of its SDG 13 goals. This system is designed to improve *disaster preparedness* and build resilience in vulnerable communities.",
+        "category": "most",
+        "badgeTitle": "GOVERNMENT ACTION",
+        "badgeText": "National Safety Protocols"
+      },
+      {
+        "question": "Why is global warming particularly troubling for Pakistan's food security?",
+        "answer": "Pakistan heavily relies on agriculture for *food security and employment*. Rising temperatures and extreme weather make farming highly *unpredictable and less productive*.",
+        "category": "most",
+        "badgeTitle": "ECONOMIC RISK",
+        "badgeText": "Food Supply Chain"
+      },
+      {
+        "question": "What is the projected decline in Pakistan's wheat yield by 2050?",
+        "answer": "Due to worsening climate conditions, Pakistan's *wheat yields* are officially estimated to decline by *6‑8% by 2050*. This poses a massive threat to the nation's core food supply.",
+        "category": "most",
+        "badgeTitle": "FACTUAL RECORD",
+        "badgeText": "Crop Yield Projections"
+      },
+      {
+        "question": "How did unusual weather patterns damage Pakistan's agriculture in 2020?",
+        "answer": "In 2020, unusual weather patterns triggered a massive *locust attack* across the country. This severe agricultural crisis resulted in crop losses worth a staggering *$2.2 billion*.",
+        "category": "most",
+        "badgeTitle": "HISTORICAL EVENT",
+        "badgeText": "Pest Infestation Disaster"
+      },
+      {
+        "question": "What are Climate-Smart Agriculture practices?",
+        "answer": "To protect farming, Pakistan is promoting *Climate‑Smart Agriculture*. This includes developing *drought‑resistant crops*, *optimizing water usage*, and improving *soil management*.",
+        "category": "most",
+        "badgeTitle": "AGRICULTURAL SOLUTION",
+        "badgeText": "Sustainable Farming"
+      },
+      {
+        "question": "Which coastal areas in Pakistan are directly threatened by rising sea levels?",
+        "answer": "The rising global temperatures and thermal expansion of seawater directly threaten the vast coastline of *Sindh and Balochistan*. These areas face severe *coastal erosion*.",
+        "category": "most",
+        "badgeTitle": "GEOGRAPHICAL RISK",
+        "badgeText": "Coastal Vulnerability"
+      },
+      {
+        "question": "What is the projected sea-level rise and its potential human impact by 2100?",
+        "answer": "By the year 2100, the sea levels along Pakistan's coast could officially rise by *0.6 meters*. This terrifying increase could potentially displace up to *5 million people*.",
+        "category": "most",
+        "badgeTitle": "FACTUAL RECORD",
+        "badgeText": "Displacement Projections"
+      },
+      {
+        "question": "How does the Mangrove Rehabilitation Project help combat climate change?",
+        "answer": "The *Mangrove Rehabilitation Project* aims to restore coastal mangrove forests. These forests are crucial because they act as *natural barriers* against coastal erosion and rising sea levels.",
+        "category": "most",
+        "badgeTitle": "ENVIRONMENTAL SOLUTION",
+        "badgeText": "Natural Coastal Defense"
+      },
+      {
+        "question": "How does global warming threaten Pakistan's natural biodiversity?",
+        "answer": "Changes in temperature and rainfall are completely disrupting *natural habitats* across Pakistan. This disruption directly causes the decline of animal species and the *degradation of entire ecosystems*.",
+        "category": "most",
+        "badgeTitle": "ECOLOGICAL RISK",
+        "badgeText": "Habitat Destruction"
+      },
+      {
+        "question": "Which key animal species are losing their habitats in Pakistan?",
+        "answer": "Important native species like the *snow leopard* and the *Indus River dolphin* are currently losing their natural homes. This is due to the rapidly changing climate conditions destroying their environments.",
+        "category": "most",
+        "badgeTitle": "BIODIVERSITY LOSS",
+        "badgeText": "Endangered Species"
+      },
+      {
+        "question": "How much forest cover is Pakistan losing annually?",
+        "answer": "Pakistan is suffering from severe deforestation, losing approximately *43,000 hectares of forest* every single year. This massive loss is a primary driver of the nation's declining biodiversity.",
+        "category": "most",
+        "badgeTitle": "FACTUAL RECORD",
+        "badgeText": "Deforestation Statistics"
+      },
+      {
+        "question": "What is the Protected Areas Initiative under SDG 13?",
+        "answer": "The *Protected Areas Initiative* was launched to actively conserve endangered species and critical habitats. It works by expanding legally *protected areas* and restoring damaged ecosystems.",
+        "category": "most",
+        "badgeTitle": "GOVERNMENT ACTION",
+        "badgeText": "Wildlife Conservation"
+      },
+      {
+        "question": "What is the connection between glacial melting and water scarcity in Pakistan?",
+        "answer": "As the glaciers shrink faster than they can regenerate, the *water flow* into the Indus River drops. This directly creates massive *water scarcity*, threatening both agriculture and drinking supplies.",
+        "category": "most",
+        "badgeTitle": "CORE CONCEPT",
+        "badgeText": "The Water Cycle Disruption"
+      },
+      {
+        "question": "How does rising temperature specifically affect urban areas like Karachi?",
+        "answer": "In urban areas like Karachi, rising temperatures are heavily trapped by densely built environments, creating *urban heat islands*. This combination leads to deadly, intense *heatwaves* that outpace city infrastructure.",
+        "category": "most",
+        "badgeTitle": "URBAN CHALLENGE",
+        "badgeText": "City Climate Extremes"
+      },
+      {
+        "question": "How does Pakistan's massive population affect its battle against climate change?",
+        "answer": "With a rapidly growing population exceeding *220 million*, Pakistan faces *immense pressure* on its limited *resources and infrastructure*, making it much harder to manage *ongoing climate changes*.",
+        "category": "important",
+        "badgeTitle": "DEMOGRAPHIC PRESSURE",
+        "badgeText": "Population Impact"
+      },
+      {
+        "question": "How do global greenhouse gas emissions contribute to rising temperatures in Pakistan?",
+        "answer": "Increased global *greenhouse gas emissions* act like a *thick blanket* that directly *traps heat* in the Earth's atmosphere, serving as the *primary cause* of Pakistan's *rising average temperatures*.",
+        "category": "important",
+        "badgeTitle": "SCIENTIFIC PROCESS",
+        "badgeText": "Heat Trapping Mechanism"
+      },
+      {
+        "question": "What exactly is an \"urban heat island\" as mentioned in the text?",
+        "answer": "An *urban heat island* occurs in *densely built‑up city areas* that *absorb and retain more heat*. This local factor makes the deadly effects of global warming even worse for *rapidly growing cities*.",
+        "category": "important",
+        "badgeTitle": "URBAN CONCEPT",
+        "badgeText": "City Heat Retention"
+      },
+      {
+        "question": "What was the average temperature increase in Pakistan between 2001 and 2020?",
+        "answer": "According to the provided data, the average temperature in Pakistan increased significantly by *+0.6°C* between the years *2001 and 2020*, showing a sharp rise compared to earlier decades.",
+        "category": "important",
+        "badgeTitle": "STATISTICAL DATA",
+        "badgeText": "Recent Temperature Surge"
+      },
+      {
+        "question": "What is identified as the primary cause of deadly heatwaves in the text?",
+        "answer": "The textbook identifies the primary cause of these severe heatwaves as the *enhanced greenhouse effect*, which occurs due to heavily increased concentrations of *greenhouse gases* in the air.",
+        "category": "important",
+        "badgeTitle": "CORE CONCEPT",
+        "badgeText": "Root Cause of Heatwaves"
+      },
+      {
+        "question": "Why are Pakistan's mountain glaciers shrinking faster than they can regenerate?",
+        "answer": "Global warming drastically *increases temperatures* in high‑altitude mountain areas. Because of this intense heat, glaciers *melt and shrink faster* than new winter snow can *rebuild* them.",
+        "category": "important",
+        "badgeTitle": "ENVIRONMENTAL PROCESS",
+        "badgeText": "Ice Regeneration Failure"
+      },
+      {
+        "question": "Why does the accelerated melting of glaciers initially cause severe floods?",
+        "answer": "When glaciers first begin to melt rapidly, they release a *massive, sudden volume of water* into rivers. This heavily *increased water flow* overwhelms riverbanks and directly *leads to severe floods*.",
+        "category": "important",
+        "badgeTitle": "WATER CRISIS",
+        "badgeText": "Immediate Melt Impact"
+      },
+      {
+        "question": "What is the current impact of glacier melting on river water flow in the 2020s?",
+        "answer": "In the 2020s, with a massive *30% of glaciers melted*, there is a *significant reduction* in river water flow, which severely limits the water available for daily use and farming.",
+        "category": "important",
+        "badgeTitle": "STATISTICAL DATA",
+        "badgeText": "Current Glacier Status"
+      },
+      {
+        "question": "How does a changing climate specifically disrupt normal weather patterns?",
+        "answer": "The changing climate aggressively alters global *atmospheric conditions*. In Pakistan, this disruption causes dangerous periods of *intense rainfall* followed immediately by abnormally *prolonged dry periods*.",
+        "category": "important",
+        "badgeTitle": "WEATHER SCIENCE",
+        "badgeText": "Disrupted Rainfall Cycles"
+      },
+      {
+        "question": "According to the chart, what is the general trend of extreme weather events from 2000 to 2020?",
+        "answer": "The chart displays a rapid, continuous *upward trend* in extreme weather. The number of dangerous climate events increased drastically from just *5 events in 2000* to a staggering *45 events in 2020*.",
+        "category": "important",
+        "badgeTitle": "GRAPHICAL DATA",
+        "badgeText": "Two‑Decade Weather Trend"
+      },
+      {
+        "question": "What is the main goal of the National Disaster Risk Management Framework?",
+        "answer": "The primary goal of this framework is to greatly enhance *disaster preparedness* and improve emergency response mechanisms to build vital *resilience* in the country's most *vulnerable communities*.",
+        "category": "important",
+        "badgeTitle": "GOVERNMENT ACTION",
+        "badgeText": "Community Resilience"
+      },
+      {
+        "question": "Which specific climate factors make agriculture in Pakistan unpredictable?",
+        "answer": "Farming in Pakistan is highly sensitive to sudden *changes in temperature* and unpredictable *precipitation*. Furthermore, the increased frequency of *extreme weather events* constantly damages crop production.",
+        "category": "important",
+        "badgeTitle": "AGRICULTURAL RISK",
+        "badgeText": "Farming Variables"
+      },
+      {
+        "question": "What is the projected decline in Pakistan's wheat yield for the year 2030?",
+        "answer": "According to official climate projections, Pakistan's vital wheat yield is expected to face a *3% decline* by the year *2030*, slowly threatening the nation's future food security.",
+        "category": "important",
+        "badgeTitle": "STATISTICAL DATA",
+        "badgeText": "Short‑term Crop Projection"
+      },
+      {
+        "question": "How did global warming contribute to the massive 2020 locust attack?",
+        "answer": "The devastating 2020 locust attack was directly driven by *unusual weather patterns* caused by climate change. These altered conditions created a perfect, warm environment for the *pests to multiply* and destroy crops.",
+        "category": "important",
+        "badgeTitle": "ECOLOGICAL DISASTER",
+        "badgeText": "Climate‑Driven Pests"
+      },
+      {
+        "question": "What three specific techniques are included in Climate-Smart Agriculture?",
+        "answer": "This highly sustainable approach involves developing *drought‑resistant crops*, strictly *optimizing water use*, and implementing much better *soil management techniques* to protect farmlands.",
+        "category": "important",
+        "badgeTitle": "FARMING SOLUTION",
+        "badgeText": "Smart Agricultural Methods"
+      },
+      {
+        "question": "What are the two direct consequences of rising global temperatures that cause sea-level rise?",
+        "answer": "Rising sea levels are directly caused by the *thermal expansion of seawater* as it naturally warms, combined with the massive *melting of polar ice caps* adding more water to the oceans.",
+        "category": "important",
+        "badgeTitle": "SCIENTIFIC PROCESS",
+        "badgeText": "Ocean Volume Expansion"
+      },
+      {
+        "question": "How does rising sea level physically damage Pakistan's coastal areas?",
+        "answer": "The rising ocean waters severely threaten to *displace coastal communities* from their homes. Additionally, salt water will *damage infrastructure* and completely inundate fertile *agricultural lands* near the sea.",
+        "category": "important",
+        "badgeTitle": "GEOGRAPHICAL RISK",
+        "badgeText": "Coastal Destruction"
+      },
+      {
+        "question": "What is the projected sea-level rise and population displacement for the year 2050?",
+        "answer": "By the year 2050, the sea level is projected to rise by *0.3 meters*. This significant increase could force the tragic, large‑scale displacement of *2.0 million people* from their homes.",
+        "category": "important",
+        "badgeTitle": "STATISTICAL DATA",
+        "badgeText": "Mid‑Century Coastal Threat"
+      },
+      {
+        "question": "How exactly do mangrove forests act as natural barriers against the ocean?",
+        "answer": "Mangrove forests have strong, *deep root systems* that hold the coastal soil together. This directly prevents *coastal erosion* and absorbs the dangerous impact of a *rising sea‑level* and strong ocean waves.",
+        "category": "important",
+        "badgeTitle": "ENVIRONMENTAL DEFENSE",
+        "badgeText": "Natural Seawalls"
+      },
+      {
+        "question": "How do changes in temperature and precipitation physically destroy natural ecosystems?",
+        "answer": "Unpredictable weather directly *disrupts natural habitats* where wild animals live and breed. This severe disruption leads to the tragic *decline of species* and total *degradation of the environment*.",
+        "category": "important",
+        "badgeTitle": "ECOLOGICAL DAMAGE",
+        "badgeText": "Habitat Disruption"
+      },
+      {
+        "question": "Besides climate change, what other human activities drive the loss of biodiversity in Pakistan?",
+        "answer": "Along with global warming, natural biodiversity is rapidly destroyed by rampant *deforestation* and highly *unsustainable land use practices* caused by human expansion.",
+        "category": "important",
+        "badgeTitle": "HUMAN IMPACT",
+        "badgeText": "Man‑made Ecological Harm"
+      },
+      {
+        "question": "How much forest cover was lost in Pakistan during the year 2010?",
+        "answer": "According to the Global Forest Watch data provided in the text, Pakistan suffered a devastating loss of *30,000 hectares* of precious forest cover in the *year 2010*.",
+        "category": "important",
+        "badgeTitle": "STATISTICAL DATA",
+        "badgeText": "Historical Deforestation"
+      },
+      {
+        "question": "How does the Protected Areas Initiative plan to specifically conserve critical habitats?",
+        "answer": "This important government initiative plans to save wildlife by legally *expanding protected areas* across the country and actively *restoring degraded ecosystems* back to their natural health.",
+        "category": "important",
+        "badgeTitle": "CONSERVATION STRATEGY",
+        "badgeText": "Ecosystem Restoration"
+      },
+      {
+        "question": "What specific program did Pakistan launch to address the dangerous risks of glacial melting?",
+        "answer": "To aggressively fight the massive risks of melting mountain ice, Pakistan officially launched the *Glacial Lake Outburst Flood (GLOF) Project* to build early warning systems.",
+        "category": "important",
+        "badgeTitle": "TEXTBOOK EXERCISE",
+        "badgeText": "Glacial Mitigation Program"
+      },
+      {
+        "question": "What is considered the primary reason for Pakistan's high vulnerability to climate change according to the textbook?",
+        "answer": "The textbook clearly states that Pakistan's vast *geographic diversity* is the primary reason it is so heavily exposed to various *climate‑related risks* like floods and heatwaves.",
+        "category": "important",
+        "badgeTitle": "TEXTBOOK EXERCISE",
+        "badgeText": "Core Vulnerability Factor"
+      },
+      {
+        "question": "Why do limited financial and technical resources hinder Pakistan's climate response?",
+        "answer": "Because adapting to severe climate change requires *expensive infrastructure* and *advanced technology*, Pakistan's *limited resources* heavily restrict its ability to fully *protect its citizens*.",
+        "category": "important",
+        "badgeTitle": "TEXTBOOK EXERCISE",
+        "badgeText": "Economic Barriers to Action"
+      },
+      {
+        "question": "Which specific regions of Pakistan are currently being threatened by rising sea levels?",
+        "answer": "The rising, destructive ocean waters pose a direct, existential threat specifically to the vast *coastal regions* of the country, primarily located in the provinces of *Sindh and Balochistan*.",
+        "category": "important",
+        "badgeTitle": "TEXTBOOK EXERCISE",
+        "badgeText": "Coastal Danger Zones"
+      },
+      {
+        "question": "What specific challenges are compounded by Pakistan's limited financial resources?",
+        "answer": "The country's severe lack of money and technology directly compounds the challenges of *rapid urbanization*, *inadequate infrastructure*, and *agricultural sensitivity*, making climate *mitigation very difficult*.",
+        "category": "important",
+        "badgeTitle": "ECONOMIC RISK",
+        "badgeText": "Compounding Climate Challenges"
+      },
+      {
+        "question": "Why is inadequate infrastructure a major problem for rapidly growing cities facing climate change?",
+        "answer": "Rapid city growth has completely *outpaced infrastructure development*. Because of this, poor city drainage and weak buildings simply cannot handle extreme *heatwaves and flooding*.",
+        "category": "important",
+        "badgeTitle": "URBAN CHALLENGE",
+        "badgeText": "Infrastructure Deficit"
+      },
+      {
+        "question": "What is the ultimate, long-term result of glaciers shrinking faster than they regenerate?",
+        "answer": "The ultimate long‑term consequence is a severe, permanent *reduction in water availability*. This will permanently threaten both *drinking water supplies* and the survival of the entire agricultural sector.",
+        "category": "important",
+        "badgeTitle": "LONG‑TERM CONSEQUENCE",
+        "badgeText": "Permanent Water Loss"
+      },
+      {
+        "question": "Which specific United Nations goal is the central focus of Pakistan's climate mitigation efforts?",
+        "answer": "Pakistan's various environmental projects, such as the GLOF and Heatwave Management Plans, are all strictly aligned with fulfilling the United Nations' *SDG 13: Climate Action*.",
+        "category": "important",
+        "badgeTitle": "GLOBAL COMMITMENT",
+        "badgeText": "UN Sustainable Goals"
+      },
+      {
+        "question": "In what specific year were the Sustainable Development Goals (SDGs) officially established?",
+        "answer": "The United Nations established these *17 global objectives* in the year *2015*. Their main goal is to foster a better and more *sustainable future* for the world.",
+        "category": "conceptual",
+        "badgeTitle": "HIDDEN FACT",
+        "badgeText": "Global Environmental Timeline"
+      },
+      {
+        "question": "How does the rate of temperature increase in Pakistan compare between 1901 and 2020?",
+        "answer": "From 1901 to 1950, the temperature only increased by *+0.2°C*. However, from 2001 to 2020, it rapidly jumped to *+0.6°C*, showing a dangerous *acceleration* in global warming.",
+        "category": "conceptual",
+        "badgeTitle": "DATA ANALYSIS",
+        "badgeText": "Table 1 Conceptual Comparison"
+      },
+      {
+        "question": "Which specific organization provided the official data for Pakistan's average temperature increase?",
+        "answer": "The official data tracking Pakistan's average temperature increase over the decades was provided by the *Asian Development Bank* in the year *2021*.",
+        "category": "conceptual",
+        "badgeTitle": "DATA SOURCE",
+        "badgeText": "Table 1 Reference"
+      },
+      {
+        "question": "What was the exact percentage of glacier melt in the 1980s, and what was its impact?",
+        "answer": "In the 1980s, only *10%* of the glaciers had melted. During this time, the melting only had a *slight impact* on the overall water flow in the rivers.",
+        "category": "conceptual",
+        "badgeTitle": "HISTORICAL DATA",
+        "badgeText": "Table 2 Past Metrics"
+      },
+      {
+        "question": "Which national department recorded the crucial data regarding glacier melting?",
+        "answer": "The crucial data regarding glacier melting and its terrifying impact on the Indus River was officially recorded by the *Pakistan Meteorological Department* in *2022*.",
+        "category": "conceptual",
+        "badgeTitle": "DATA SOURCE",
+        "badgeText": "Table 2 Reference"
+      },
+      {
+        "question": "Which international organization projected the future decline of Pakistan's wheat yield?",
+        "answer": "The terrifying projection regarding the future decline of Pakistan's core wheat yield was published by the organization *IFPRI* in the year *2021*.",
+        "category": "conceptual",
+        "badgeTitle": "DATA SOURCE",
+        "badgeText": "Table 3 Reference"
+      },
+      {
+        "question": "According to the text's data, what was the human impact of a 0.1-meter sea-level rise in 2020?",
+        "answer": "According to the provided projections, a minor sea‑level rise of just *0.1 meters* in the year 2020 was enough to cause the displacement of *0.2 million people*.",
+        "category": "conceptual",
+        "badgeTitle": "DATA ANALYSIS",
+        "badgeText": "Table 4 Early Impacts"
+      },
+      {
+        "question": "Which organization provided the detailed projections about Pakistan's sea-level rise?",
+        "answer": "The detailed projections about future sea‑level rise and the massive resulting population displacement were officially provided by the *World Bank* in *2021*.",
+        "category": "conceptual",
+        "badgeTitle": "DATA SOURCE",
+        "badgeText": "Table 4 Reference"
+      },
+      {
+        "question": "What is the specific source of the data tracking the massive loss of Pakistan's forest cover?",
+        "answer": "The alarming statistics tracking the massive loss of Pakistan's forest cover from 2000 to 2020 were officially recorded by *Global Forest Watch* in *2022*.",
+        "category": "conceptual",
+        "badgeTitle": "DATA SOURCE",
+        "badgeText": "Table 5 Reference"
+      },
+      {
+        "question": "Based on the \"While-reading\" section, what specific physical trait makes Pakistan highly prone to climate risks?",
+        "answer": "The text explains that Pakistan's *diverse geography* is the main reason it is so vulnerable. This unique landscape includes *high mountains*, *vast plains*, and a *long coastline*.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPTUAL CHECK",
+        "badgeText": "While-Reading Box 1"
+      },
+      {
+        "question": "How does the text answer the \"While-reading\" question about the long-term impact of glacier melting?",
+        "answer": "While the accelerated melting initially causes floods, the ultimate long‑term impact is a massive *reduction in water availability*. This threatens the country's essential *drinking water and agriculture*.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPTUAL CHECK",
+        "badgeText": "While-Reading Box 2"
+      },
+      {
+        "question": "According to the \"While-reading\" box, what exact factors make Pakistani agriculture less productive?",
+        "answer": "Agriculture has become highly unpredictable due to sudden, drastic changes in *temperature and precipitation*. Furthermore, the increased frequency of *extreme weather events* constantly damages crops.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPTUAL CHECK",
+        "badgeText": "While-Reading Box 3"
+      },
+      {
+        "question": "What is the explicit central theme of this unit as stated at the end of the chapter?",
+        "answer": "The central theme is *climate change* and its multifaceted, destructive effects on a *vulnerable nation*. It emphasizes the urgent need for climate action under *SDG 13*.",
+        "category": "conceptual",
+        "badgeTitle": "CORE CONCEPT",
+        "badgeText": "Chapter Theme Identification"
+      },
+      {
+        "question": "Based on the chapter's glossary, how is the term \"vulnerability\" accurately defined?",
+        "answer": "The chapter's educational glossary defines vulnerability as the factual state of being *weak and easily hurt*, whether physically or emotionally.",
+        "category": "conceptual",
+        "badgeTitle": "VOCABULARY CORE",
+        "badgeText": "Glossary Definition"
+      },
+      {
+        "question": "How does the text define the word \"mitigate\" when discussing Pakistan's climate action plans?",
+        "answer": "According to the provided glossary, the word mitigate simply means to take action to make something *less harmful, serious*, or severe.",
+        "category": "conceptual",
+        "badgeTitle": "VOCABULARY CORE",
+        "badgeText": "Glossary Definition"
+      },
+      {
+        "question": "What does the critical term \"sustainable\" mean according to the lesson's official glossary?",
+        "answer": "The glossary defines sustainable as using natural products and energy in a careful, balanced way that *does not harm the environment*.",
+        "category": "conceptual",
+        "badgeTitle": "VOCABULARY CORE",
+        "badgeText": "Glossary Definition"
+      },
+      {
+        "question": "How is \"infrastructure\" defined in the context of the massive damage caused by extreme weather?",
+        "answer": "Infrastructure is defined as the basic systems necessary for a country to run smoothly, such as *buildings*, *transport*, *water*, and *power supplies*.",
+        "category": "conceptual",
+        "badgeTitle": "VOCABULARY CORE",
+        "badgeText": "Glossary Definition"
+      },
+      {
+        "question": "What is the hidden conceptual link between the Indus River dolphin and global greenhouse gas emissions?",
+        "answer": "Greenhouse gases trap heat, causing massive global warming. This rising temperature drastically changes climate conditions, which directly destroys the *natural habitat* of the *Indus River dolphin*.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPTUAL LINK",
+        "badgeText": "Cause and Effect Chain"
+      },
+      {
+        "question": "Conceptually, how does rapid urbanization directly connect to the increased death toll during heatwaves?",
+        "answer": "Rapid urbanization creates dense concrete areas that *retain more heat*, forming urban heat islands. This rapid growth completely *outpaces infrastructure development*, leaving citizens trapped in extreme heat.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPTUAL LINK",
+        "badgeText": "Urban Planning and Climate"
+      },
+      {
+        "question": "In the chapter's multiple-choice exercise, what false reasons are given as distractors for Pakistan's vulnerability?",
+        "answer": "In the exercise section, false options like lack of technology, high literacy rate, and *industrial growth* are given as incorrect distractors. The correct true reason is *geographic diversity*.",
+        "category": "conceptual",
+        "badgeTitle": "EXAM STRATEGY",
+        "badgeText": "MCQ Analysis"
+      },
+      {
+        "question": "What is the physical difference between the two main causes of global sea-level rise?",
+        "answer": "Sea‑level rise has two distinct causes: the *thermal expansion* of seawater as it gets physically warmer, and the direct addition of new water from the massive *melting of polar ice caps*.",
+        "category": "conceptual",
+        "badgeTitle": "SCIENTIFIC CONCEPT",
+        "badgeText": "Ocean Dynamics"
+      },
+      {
+        "question": "Why is the agricultural sector considered a terrifying \"dual vulnerability\" for Pakistan?",
+        "answer": "The farming sector is highly sensitive to dangerous *climate variations*. This is terrifying because Pakistan heavily relies on agriculture for both its core *food security and employment*.",
+        "category": "conceptual",
+        "badgeTitle": "ECONOMIC CONCEPT",
+        "badgeText": "National Dependency"
+      },
+      {
+        "question": "According to the text, what three combined factors make Pakistan uniquely susceptible to climate-induced disasters?",
+        "answer": "The country is uniquely susceptible because of a deadly combination: its *diverse geography*, the immense, compounding pressures of *rapid urbanization*, and massive *population growth*.",
+        "category": "conceptual",
+        "badgeTitle": "MULTI-FACTOR CONCEPT",
+        "badgeText": "The Perfect Storm"
+      },
+      {
+        "question": "Compare the exact forest cover loss in Pakistan between the year 2000 and the year 2020.",
+        "answer": "In the year 2000, the forest cover loss was exactly *20,000 hectares*. By 2020, this environmental destruction had more than doubled, reaching a massive *43,000 hectares* lost annually.",
+        "category": "conceptual",
+        "badgeTitle": "DATA ANALYSIS",
+        "badgeText": "Table 5 Comparison"
+      },
+      {
+        "question": "What two specific physical actions are heavily involved in the government's GLOF project?",
+        "answer": "To stop flood damage, the GLOF project strictly focuses on two main actions: building modern *early warning systems* and actively constructing physical *protective infrastructure*.",
+        "category": "conceptual",
+        "badgeTitle": "HIDDEN DETAIL",
+        "badgeText": "Project Specifics"
+      },
+      {
+        "question": "Conceptually, why are mangrove forests vastly superior to artificial seawalls for coastal protection?",
+        "answer": "Mangrove forests act as powerful *natural barriers*. The Mangrove Rehabilitation Project uses these living trees to naturally and sustainably defend the coastline against severe *coastal erosion and sea‑level rise*.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPTUAL LINK",
+        "badgeText": "Sustainable Solutions"
+      },
+      {
+        "question": "What is the exact physical mechanism by which greenhouse gas emissions trigger deadly heatwaves?",
+        "answer": "Greenhouse gas emissions are extremely dangerous because they act like an invisible blanket that directly *traps heat* securely within the *Earth's atmosphere*, preventing it from escaping into space.",
+        "category": "conceptual",
+        "badgeTitle": "SCIENTIFIC CONCEPT",
+        "badgeText": "Physics of Global Warming"
+      },
+      {
+        "question": "What was the exact financial cost of the devastating 2020 locust attack mentioned in the text?",
+        "answer": "The terrifying locust attack of 2020, which was directly fueled by unusual weather patterns, resulted in massive, widespread crop losses valued at a staggering *$2.2 billion*.",
+        "category": "conceptual",
+        "badgeTitle": "HIDDEN DETAIL",
+        "badgeText": "Agricultural Economic Loss"
+      },
+      {
+        "question": "Conceptually, why does prolonged dry weather in the Tharparkar region lead directly to massive food insecurity?",
+        "answer": "In regions like Tharparkar, intense climate change has caused much more *frequent droughts*. This completely dries up the land, severely worsening *water shortages and food insecurity*.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPTUAL LINK",
+        "badgeText": "Desertification Impacts"
+      },
+      {
+        "question": "Which two international news and data organizations were explicitly cited for statistics on heatwaves and floods?",
+        "answer": "The text explicitly cites *BBC News* for the tragic 2015 Karachi heatwave deaths. It also heavily relies on the *World Bank* for data regarding the massive economic losses of the 2010 floods.",
+        "category": "conceptual",
+        "badgeTitle": "HIDDEN DETAIL",
+        "badgeText": "International Citations"
+      },
+      {
+        "question": "How does the chapter's final theme section describe the relationship between all these different climate issues?",
+        "answer": "The chapter theme highlights the highly *complex and interconnected nature* of these climate issues. For example, rising heat melts glaciers, which initially causes floods, but eventually leads to permanent *water scarcity*.",
+        "category": "conceptual",
+        "badgeTitle": "CORE CONCEPT",
+        "badgeText": "The Ripple Effect"
+      }
+    ],
     "6": [],
     "8": [],
     "10": [],
