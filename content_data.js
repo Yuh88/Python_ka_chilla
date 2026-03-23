@@ -12665,4543 +12665,5005 @@ const siteData = {
   "Physics": {
     "1": [
       {
-        "question": "What limits the accuracy of a measuring instrument?",
-        "answer": "Every instrument is calibrated to a certain *smallest division mark*, which puts a *limit* regarding its *accuracy*.",
+        "question": "What inherently limits the accuracy of any measuring instrument?",
+        "answer": "Every instrument is calibrated to a certain *smallest division mark*, which puts a limit regarding its accuracy.",
         "category": "most",
-        "badgeTitle": "EXTRA POINT",
-        "badgeText": "This limit of measurement is the smallest division or graduation on its scale."
+        "badgeTitle": "UNCERTAINTY SOURCE",
+        "badgeText": "Limit of measurement"
       },
       {
-        "question": "What limits the accuracy of a measuring instrument?",
-        "answer": "Every instrument is calibrated to a certain *smallest division mark*, which puts a *limit* regarding its *accuracy*.",
-        "category": "most",
-        "badgeTitle": "EXTRA POINT",
-        "badgeText": "This limit of measurement is the smallest division or graduation on its scale."
-      },
-      {
-        "question": "What is meant by absolute uncertainty?",
-        "answer": "The *estimated maximum uncertainty* as being *one smallest division* of the instrument is called *absolute uncertainty*.",
+        "question": "What is absolute uncertainty in the context of measurements?",
+        "answer": "It is the *estimated maximum uncertainty* of a measurement, which is equal to *one smallest division (or least count)* of the measuring instrument.",
         "category": "most",
         "badgeTitle": "EXAMPLE",
-        "badgeText": "It is one millimetre on a metre rule that is graduated in millimetres."
+        "badgeText": "One millimetre on a metre rule graduated in millimetres"
       },
       {
-        "question": "How do you record the measurement if one edge of a book is at 10.0 cm and the other at 33.5 cm on a metre rule?",
-        "answer": "The length with uncertainty is given by *subtracting the initial reading* with its uncertainty from the *final reading* with its uncertainty: (33.5 ± 0.05) cm - (10.0 ± 0.05) cm = (23.5 ± 0.1) cm.",
-        "category": "most",
-        "badgeTitle": "MEANING",
-        "badgeText": "The true length of the book is in between 23.4 cm and 23.6 cm."
-      },
-      {
-        "question": "How is fractional uncertainty defined and calculated?",
-        "answer": "*Fractional uncertainty* is defined as the *ratio* of the *absolute uncertainty* to the *measured value*.",
+        "question": "How is fractional uncertainty calculated from a measured value?",
+        "answer": "It is calculated by dividing the *absolute uncertainty* by the *measured value*.",
         "category": "most",
         "badgeTitle": "FORMULA",
-        "badgeText": "Fractional uncertainty = Absolute uncertainty / Measured value."
+        "badgeText": "Fractional uncertainty = Absolute uncertainty / Measured value"
       },
       {
-        "question": "How is percentage uncertainty defined?",
-        "answer": "*Percentage uncertainty* is the *fractional uncertainty* multiplied by *100*.",
+        "question": "How is percentage uncertainty derived?",
+        "answer": "It is obtained by multiplying the ratio of the absolute uncertainty to the measured value by *100*.",
         "category": "most",
         "badgeTitle": "FORMULA",
-        "badgeText": "Percentage uncertainty = (Absolute uncertainty / Measured value) × 100."
+        "badgeText": "Percentage uncertainty = (Absolute uncertainty / Measured value) × 100"
       },
       {
-        "question": "How is uncertainty estimated in modern digital instruments?",
-        "answer": "In modern instruments with a digital scale, uncertainty is estimated as *one digit beyond what is certain*, reflected in some *fluctuations* of the *last digit*.",
+        "question": "How is uncertainty indicated in instruments that possess a digital scale?",
+        "answer": "We estimate *one digit beyond what is certain*, which is reflected as some fluctuations of the *last digit* on the digital scale.",
         "category": "most",
-        "badgeTitle": "RULE",
-        "badgeText": "If the last digit fluctuates by 1 or 2, write down that last digit."
+        "badgeTitle": "RECORDING RULE",
+        "badgeText": "If the last digit fluctuates by 1 or 2, write down that last digit"
       },
       {
-        "question": "What does a large fluctuation in the last digit of a digital scale indicate?",
-        "answer": "If fluctuation is more than 2 in the last digit, it indicates the *reading is being influenced* by some factor such as *air currents*, meaning the *displayed digit is not really significant*.",
+        "question": "What does a large fluctuation in the last digit of a digital reading imply?",
+        "answer": "A fluctuation of *more than 2* means the reading is influenced by external factors like air currents, implying the displayed digit is *not really significant*.",
         "category": "most",
         "badgeTitle": "IMPLICATION",
-        "badgeText": "A large fluctuation may mean that the displayed digit is not really significant."
+        "badgeText": "Loss of digit significance"
       },
       {
-        "question": "Define significant figures in a measurement.",
-        "answer": "In any measurement, the *accurately known digits* and the *first estimated* or *doubtful digit* are called *significant figures*.",
+        "question": "How do significant figures help in recording measurements?",
+        "answer": "They simplify the indication of uncertainty, where the *last digit* acts as an estimation and an indication of the *accuracy* of the recorded value.",
         "category": "most",
-        "badgeTitle": "MEANING",
-        "badgeText": "They are the number of digits of a measurement about which we do feel reasonably sure."
+        "badgeTitle": "SIMPLIFICATION",
+        "badgeText": "Simplifies uncertainty indication"
       },
       {
-        "question": "Why should the result of any calculation from a calculator be rounded off?",
-        "answer": "A calculator yields many additional digits after the decimal point which may mislead another person into believing them, so they must be *rounded off* to the *correct number* of *significant figures*.",
+        "question": "Define significant figures in a physical measurement.",
+        "answer": "They are the *number of digits* of a measurement about which we feel reasonably sure, representing the *accurately known digits* and the *first estimated or doubtful digit*.",
         "category": "most",
-        "badgeTitle": "FACTOR TO CONSIDER",
-        "badgeText": "This rounding should keep in view the uncertainty or least count of the instrument."
+        "badgeTitle": "INDICATION",
+        "badgeText": "They reflect the use of the actual instrument used"
       },
       {
-        "question": "Are zeros placed between two significant figures considered significant?",
-        "answer": "Yes, a *zero placed between two significant figures* is itself *significant*.",
+        "question": "Why is it necessary to round off the results obtained from a calculator?",
+        "answer": "A calculator result contains many digits after the decimal point, which may mislead another person into believing them, so they must be *rounded off* to the correct number of *significant figures* based on the instrument's least count.",
         "category": "most",
-        "badgeTitle": "RULE CONTEXT",
-        "badgeText": "This is one of the standard rules for counting significant digits."
+        "badgeTitle": "BEST PRACTICE",
+        "badgeText": "Quote the result in scientific notation to avoid ambiguity"
       },
       {
-        "question": "Are zeros to the left of significant figures considered significant?",
+        "question": "How are non-zero digits treated when counting significant figures?",
+        "answer": "All digits *1, 2, 3, 4, 5, 6, 7, 8, 9* are *always considered significant*.",
+        "category": "most",
+        "badgeTitle": "EXCEPTION",
+        "badgeText": "Zeros may or may not be significant"
+      },
+      {
+        "question": "What is the rule regarding a zero placed between two significant figures?",
+        "answer": "A zero located *between two significant figures* is itself *always considered significant*.",
+        "category": "most",
+        "badgeTitle": "RULE APPLICATION",
+        "badgeText": "Counting significant digits"
+      },
+      {
+        "question": "Are zeros positioned to the left of significant figures counted as significant?",
         "answer": "No, *zeros to the left of significant figures* are *not significant*.",
         "category": "most",
         "badgeTitle": "EXAMPLE",
-        "badgeText": "None of the zeros in 0.00467 or 02.59 is significant."
+        "badgeText": "None of the zeros in 0.00467 or 02.59 are significant"
       },
       {
-        "question": "How do you determine the significance of zeros in integers like 8,000 kg?",
-        "answer": "In integers, the number of significant zeros is determined by the *precision of the measuring instrument*.",
+        "question": "In decimal fractions, how are zeros to the right of a significant figure treated?",
+        "answer": "In a *decimal fraction*, zeros to the right of a significant figure are *always significant*.",
         "category": "most",
         "badgeTitle": "EXAMPLE",
-        "badgeText": "If the least count is 1 kg, there are four significant figures, written as $8.000\\times10^{3}$ kg."
+        "badgeText": "All zeros in 3.570 or 7.4000 are significant"
       },
       {
-        "question": "Which figures are considered significant when a measurement is recorded in scientific notation?",
-        "answer": "When a measurement is recorded in *scientific notation* or *standard form*, the *figures other than the powers of ten* are *significant figures*.",
+        "question": "How is the significance of zeros determined in integers like 8000 kg?",
+        "answer": "In integers, the number of significant zeros is determined *exclusively by the precision (or least count)* of the measuring instrument.",
+        "category": "most",
+        "badgeTitle": "SCIENTIFIC NOTATION LINK",
+        "badgeText": "If the least count is 10 kg, it is written as $8.00\\times 10^{3}$ kg with 3 significant figures"
+      },
+      {
+        "question": "When a measurement is recorded in scientific notation, which figures are considered significant?",
+        "answer": "In scientific notation or standard form, the *figures other than the powers of ten* are the *only significant figures*.",
         "category": "most",
         "badgeTitle": "EXAMPLE",
-        "badgeText": "A measurement recorded as $8.70\\times10^{4}$ kg has three significant figures."
+        "badgeText": "$8.70\\times 10^{4}$ kg has three significant figures"
       },
       {
-        "question": "What rule must be followed for significant figures when multiplying or dividing numbers?",
-        "answer": "Keep a number of significant figures in the product or quotient *not more than* that contained in the *least accurate factor* (the factor containing the *least number of significant figures*).",
+        "question": "What is the thumb rule for significant figures when multiplying or dividing numbers?",
+        "answer": "The product or quotient must contain a number of significant figures *not more than that contained in the least accurate factor* (the factor with the least number of significant figures).",
         "category": "most",
         "badgeTitle": "THUMB RULE",
-        "badgeText": "Multiplication/Division requires the same accuracy (Same number of significant figures)."
+        "badgeText": "Multiplication/Division: same accuracy"
       },
       {
-        "question": "What is the rule for rounding off if the first digit to be dropped is exactly 5?",
-        "answer": "If the digit to be dropped is 5, the *previous digit to be retained* is *increased by one* if it is *odd* and *retained as such* if it is *even*.",
+        "question": "How do you round off a number if the first digit to be dropped is less than 5?",
+        "answer": "If the *first digit dropped is less than 5*, the *last digit retained should remain unchanged*.",
+        "category": "most",
+        "badgeTitle": "ROUNDING RULE",
+        "badgeText": "Deleting figures one by one"
+      },
+      {
+        "question": "How is a number rounded off if the first digit to be dropped is strictly more than 5?",
+        "answer": "If the *first digit dropped is more than 5*, the *digit to be retained is increased by one*.",
         "category": "most",
         "badgeTitle": "EXAMPLE",
-        "badgeText": "43.75 is rounded off as 43.8, whereas 64.350 is rounded off as 64.4."
+        "badgeText": "56.8546 is rounded off as 56.9"
       },
       {
-        "question": "What is the rule for significant figures when adding or subtracting numbers?",
-        "answer": "The number of *decimal places retained* in the answer should be equal to the *smallest number of decimal places* in any of the quantities being added or subtracted.",
+        "question": "What is the specific rounding rule when the exact digit to be dropped is 5?",
+        "answer": "If the dropped digit is *5*, the previous retained digit is *increased by one if it is odd*, and *retained as such if it is even*.",
+        "category": "most",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "73.650 rounds to 73.6 (even), while 64.350 rounds to 64.4 (odd increased)"
+      },
+      {
+        "question": "What is the rule for retaining decimal places when adding or subtracting numbers?",
+        "answer": "The number of decimal places retained should equal the *smallest number of decimal places* in any of the quantities being added or subtracted.",
         "category": "most",
         "badgeTitle": "IMPORTANT NOTE",
-        "badgeText": "In this case, the number of significant figures is not important; it is the position of decimal that matters."
+        "badgeText": "The position of the decimal matters, not the total number of significant figures"
       },
       {
-        "question": "What are the limitations of using significant figures to assess uncertainties?",
-        "answer": "Significant figures deal with *only one source of uncertainties* that is inherent in *reading the scale*, failing to account for *personal errors* and *hidden systematic errors*.",
+        "question": "What is the main limitation of using significant figures to represent experimental uncertainties?",
+        "answer": "They only deal with *one source of uncertainties* (inherent in reading the scale) and ignore other contributions like *personal errors and hidden systematic errors*.",
         "category": "most",
-        "badgeTitle": "LIMITATION",
-        "badgeText": "Total uncertainty may well be more than what the significant figure of the measurements would suggest."
+        "badgeTitle": "LIMITATION RESULT",
+        "badgeText": "The total uncertainty may be more than what the significant figures suggest"
       },
       {
-        "question": "What determines the precision of a measurement?",
-        "answer": "The *precision* of a measurement is determined by the *instrument* or *device* being used.",
-        "category": "most",
-        "badgeTitle": "RELATIONSHIP",
-        "badgeText": "The smaller the least count the more precise is the measurement."
-      },
-      {
-        "question": "How is accuracy defined in physical measurements?",
-        "answer": "*Accuracy* is defined as the *closeness* of a measurement to the *exact* or *accepted value* of a physical quantity.",
-        "category": "most",
-        "badgeTitle": "MEASUREMENT REPRESENTATION",
-        "badgeText": "It is expressed by the fractional or percentage uncertainty."
-      },
-      {
-        "question": "Differentiate between a precise measurement and an accurate measurement.",
-        "answer": "A *precise measurement* is one which has *less absolute uncertainty*, while an *accurate measurement* is one which has *less fractional* or *percentage uncertainty*.",
+        "question": "How is the precision of a measurement determined?",
+        "answer": "The precision is determined by the *instrument or device* being used; the *smaller the least count*, the more precise the measurement.",
         "category": "most",
         "badgeTitle": "THUMB RULE",
-        "badgeText": "Precision means less absolute uncertainty; Accuracy means less percentage uncertainty."
+        "badgeText": "Precision: Less absolute uncertainty"
       },
       {
-        "question": "How do you assess the total uncertainty when adding or subtracting physical quantities?",
+        "question": "How is accuracy defined in physics measurements?",
+        "answer": "Accuracy is the *closeness of a measurement to the exact or accepted value* of a physical quantity, expressed by the *fractional or percentage uncertainty*.",
+        "category": "most",
+        "badgeTitle": "THUMB RULE",
+        "badgeText": "Accuracy: Less % age uncertainty"
+      },
+      {
+        "question": "Why might a reading taken by a metre rule be less precise but more accurate than one taken by Vernier Callipers?",
+        "answer": "A metre rule reading has a larger least count so it is *less precise*, but if measuring a large object, it yields a *less percentage uncertainty*, making it *more accurate* compared to a very small reading on Callipers.",
+        "category": "most",
+        "badgeTitle": "RELATIVE IMPORTANCE",
+        "badgeText": "It is the relative measurement which is important"
+      },
+      {
+        "question": "What determines whether a more precise instrument should be utilized for a measurement?",
+        "answer": "The *smaller a physical quantity*, the *more precise instrument* should be used to maintain acceptable accuracy.",
+        "category": "most",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "Measuring 0.45 cm demands a micrometer screw gauge with least count 0.001 cm"
+      },
+      {
+        "question": "Summarize the conclusive relationship between precise and accurate measurements.",
+        "answer": "A *precise measurement* has *less absolute uncertainty*, while an *accurate measurement* has *less fractional or percentage uncertainty*.",
+        "category": "most",
+        "badgeTitle": "MEASUREMENT LIMIT",
+        "badgeText": "We can never make an exact measurement"
+      },
+      {
+        "question": "How is total uncertainty assessed when quantities are added or subtracted?",
         "answer": "For addition and subtraction, the *absolute uncertainties* of the individual quantities are *added*.",
         "category": "most",
-        "badgeTitle": "EXAMPLE",
-        "badgeText": "For $l_{1}=8.5\\pm0.1$ cm and $l_{2}=12.6\\pm0.1$ cm, $l=l_{1}+l_{2}=21.1\\pm0.2~cm$."
+        "badgeTitle": "EXAMPLE FORMULA",
+        "badgeText": "$x = x_2 - x_1 = 10.2 \\pm 0.2$ cm"
       },
       {
-        "question": "How do you determine the maximum possible uncertainty in the final result involving multiplication and division?",
-        "answer": "For multiplication and division, the *percentage uncertainties* of the individual factors are *added*.",
+        "question": "How is maximum possible uncertainty calculated for multiplication and division operations?",
+        "answer": "For multiplication and division, the *individual percentage uncertainties* are *added together* to find the total uncertainty.",
         "category": "most",
-        "badgeTitle": "EXAMPLE",
-        "badgeText": "If $V$ has 3% uncertainty and $I$ has 7% uncertainty, the total percentage uncertainty in $R = V/I$ is $3+7=10\\%$."
+        "badgeTitle": "APPLICATION",
+        "badgeText": "Calculating percentage uncertainty in resistance R from $V/I$"
       },
       {
-        "question": "How is the percentage uncertainty handled for a term with a power factor?",
-        "answer": "The *percentage uncertainty* of the variable is *multiplied by the power factor* in the formula.",
+        "question": "How does a power factor in a formula affect the assessment of total percentage uncertainty?",
+        "answer": "The *percentage uncertainty of the quantity* is *multiplied by the power factor* present in the formula.",
         "category": "most",
-        "badgeTitle": "EXAMPLE",
-        "badgeText": "For area $A=\\pi r^{2}$, the percentage uncertainty is $2\\times$ percentage uncertainty in radius $r$."
+        "badgeTitle": "EFFECT",
+        "badgeText": "It increases the precision demand of the measurement"
       },
       {
-        "question": "What does the term \"dimensions of a physical quantity\" mean?",
-        "answer": "Any physical quantity can be described by certain familiar measurable properties called *dimensions*, which deal with the *qualitative nature* of a physical quantity in terms of *fundamental quantities*.",
+        "question": "What is the thumb rule for assessing uncertainty when calculating the average value of many readings?",
+        "answer": "You determine the *mean deviation* from an average value.",
         "category": "most",
-        "badgeTitle": "SYMBOLS",
-        "badgeText": "They are denoted by specific symbols within square brackets, like [L] for length, [M] for mass, and [T] for time."
+        "badgeTitle": "CATEGORY",
+        "badgeText": "Thumb Rule for Uncertainty"
+      },
+      {
+        "question": "How is periodic uncertainty determined for a timing device during oscillations?",
+        "answer": "It is found by dividing the *least count of the timing device* by the *number of oscillations*.",
+        "category": "most",
+        "badgeTitle": "CATEGORY",
+        "badgeText": "Periodic Uncertainty"
+      },
+      {
+        "question": "What are dimensions of a physical quantity?",
+        "answer": "They are *measurable, familiar properties* that describe the *qualitative nature* of a physical quantity in terms of *fundamental quantities*.",
+        "category": "most",
+        "badgeTitle": "NOTATION",
+        "badgeText": "Denoted by specific symbols written within square brackets, e.g., $[L]$"
+      },
+      {
+        "question": "Why were the dimensions $[L]$, $[M]$, $[T]$, $[A]$, and $[\\theta]$ chosen as basic?",
+        "answer": "These five dimensions were chosen as being basic because they are *easy to measure* in experiments.",
+        "category": "most",
+        "badgeTitle": "FUNCTION",
+        "badgeText": "They indicate how other quantities are related to basic quantities"
       },
       {
         "question": "What is the principle of homogeneity of physical equations?",
-        "answer": "The correctness of an equation can be checked by showing that the *dimensions of quantities* on both sides of the equation are the *same*, which is known as the *principle of homogeneity*.",
+        "answer": "It is the principle used to *check the correctness* of an equation by showing that the *dimensions of quantities on both sides* of the equation are the same.",
         "category": "most",
-        "badgeTitle": "EXAMPLE APPLICATION",
-        "badgeText": "Proving $S=\\frac{1}{2}at^{2}$ gives $[L]=[L]$, showing the equation is dimensionally correct."
+        "badgeTitle": "APPLICATION",
+        "badgeText": "Checking homogeneity (correctness) of a physical equation"
       },
       {
-        "question": "What are the dimensions of velocity and acceleration?",
-        "answer": "The dimensions of velocity $v$ are *length divided by time*, $[LT^{-1}]$, and the dimensions of acceleration $a$ are *velocity divided by time*, $[LT^{-2}]$.",
-        "category": "most",
-        "badgeTitle": "DERIVATION",
-        "badgeText": "$[v]=[L]/[T]=[LT^{-1}]$ and $[a]=[v]/[T]=[LT^{-1}]/[T]=[LT^{-2}]$."
-      },
-      {
-        "question": "How can dimensionality be used to derive a physical formula?",
-        "answer": "Dimensionality can be used to derive a possible formula by *correct estimation* of various factors on which the quantity depends, and *comparing the powers* of dimensions on both sides.",
+        "question": "How are numerical factors treated during dimensional analysis of an equation?",
+        "answer": "Numerical factors like $1/2$ have *no dimensions*, so they can be *ignored* when putting the dimensions on both sides.",
         "category": "most",
         "badgeTitle": "EXAMPLE",
-        "badgeText": "Deriving the centripetal force formula $F=mv^{2}/r$."
+        "badgeText": "$S = \\frac{1}{2}at^{2}$ reduces to $[L] = [LT^{-2}][T^{2}]$"
       },
       {
-        "question": "What is a major limitation of dimensional analysis regarding equations?",
-        "answer": "The dimensional method *cannot identify where an equation is wrong*, nor does it provide a check on any *numerical factor* or *constant*.",
+        "question": "How can dimensionality be used to derive a formula for a physical quantity?",
+        "answer": "By making a correct estimation of various factors on which the quantity depends, and then comparing the *powers of dimensions* on both sides of the equation.",
         "category": "most",
-        "badgeTitle": "CONSEQUENCE",
-        "badgeText": "Numerical values of constants must be determined by experiments or plotting suitable graphs."
+        "badgeTitle": "LIMITATION",
+        "badgeText": "The numerical value of the constant cannot be determined by dimensional analysis"
       },
       {
-        "question": "What are the dimensions of force?",
-        "answer": "The dimensions of force can be written as *$[MLT^{-2}]$*.",
+        "question": "What is a fundamental limitation of dimensional analysis regarding the correctness of equations?",
+        "answer": "The dimensional method cannot identify where an equation is wrong, and cannot provide a check on any *numerical factor or constant*.",
         "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "Derived from $[F]=[m][a]=[M][LT^{-2}]$."
+        "badgeTitle": "RESOLUTION",
+        "badgeText": "Constants can only be determined by experiments or plotting graphs"
       },
       {
-        "question": "How are numerical factors like $1/2$ treated in dimensional analysis?",
-        "answer": "Numerical factors like $1/2$ have *no dimensions*, so they can be *ignored* when putting the dimensions of both sides of the equation.",
-        "category": "most",
-        "badgeTitle": "CONTEXT",
-        "badgeText": "Used when checking the homogeneity of equations like $S=\\frac{1}{2}at^{2}$."
-      },
-      {
-        "question": "Why might a measurement taken with a Vernier Callipers (e.g., 0.45 cm) be less accurate than one taken with a metre rule (e.g., 25.5 cm)?",
-        "answer": "The reading 0.45 cm has a *higher percentage uncertainty* (2%) compared to the 25.5 cm reading (0.4%), making it more *precise* but less *accurate* because accuracy depends on the fractional or percentage uncertainty.",
+        "question": "How does graduation on a scale relate to taking a measurement reading?",
+        "answer": "When a measurement is made, it is taken to the *nearest graduation* or *marking on the scale*.",
         "category": "important",
-        "badgeTitle": "RELATIVE MEASUREMENT",
-        "badgeText": "The smaller a physical quantity, the more precise instrument should be used to maintain accuracy."
+        "badgeTitle": "LIMITATION",
+        "badgeText": "This dictates the limit of measurement."
       },
       {
-        "question": "What is the rule for rounding off a number if the digit to be dropped is exactly 5 and the preceding digit is even?",
-        "answer": "If the digit to be dropped is 5, the previous digit which is to be retained is *retained as such* (remains unchanged) if it is *even*.",
+        "question": "Explain how the absolute uncertainty is quantified for a metre rule.",
+        "answer": "The maximum uncertainty is equal to *one smallest division*, which is exactly *one millimetre* on a metre rule graduated in millimetres.",
         "category": "important",
-        "badgeTitle": "EXAMPLE",
-        "badgeText": "The number 73.650 is rounded off as 73.6."
+        "badgeTitle": "EQUIVALENCE",
+        "badgeText": "In fact, it is equal to the least count."
       },
       {
-        "question": "What is the rule for rounding off a number if the digit to be dropped is exactly 5 and the preceding digit is odd?",
-        "answer": "If the digit to be dropped is 5, the previous digit which is to be retained is *increased by one* if it is *odd*.",
+        "question": "If one edge of a book is at 10.0 cm and the other at 33.5 cm, what is the combined maximum uncertainty of the length?",
+        "answer": "The maximum uncertainty is *±0.05 cm* for each reading, combining to an equivalent *total uncertainty of 0.1 cm*.",
         "category": "important",
-        "badgeTitle": "EXAMPLE",
-        "badgeText": "The number 43.75 is rounded off as 43.8."
+        "badgeTitle": "RESULT",
+        "badgeText": "The true length is in between 23.4 cm and 23.6 cm."
       },
       {
-        "question": "In the addition of 72.1 m, 3.42 m, and 0.003 m, why is the final answer written as 75.5 m?",
-        "answer": "In addition, the number of decimal places retained must equal the *smallest number of decimal places* in any of the quantities; since 72.1 has only *one decimal place*, the answer is rounded to the same position.",
+        "question": "What indicates that a displayed digit on a digital scale is not really significant?",
+        "answer": "A *fluctuation of more than 2* or so in the last digit means it is being influenced by *external factors like air currents*.",
         "category": "important",
-        "badgeTitle": "PRINCIPLE",
-        "badgeText": "The number of significant figures is not important here; it is the position of the decimal that matters."
+        "badgeTitle": "ACTION",
+        "badgeText": "The large fluctuation renders it not really significant."
       },
       {
-        "question": "How do you determine the percentage uncertainty in the calculation of an area (A=πr²)?",
-        "answer": "The *percentage uncertainty* of the radius r is *multiplied by the power factor* (which is 2), so the total percentage uncertainty in area A is *2 × percentage uncertainty* in radius r.",
+        "question": "How do significant figures relate to the actual measuring instrument used?",
+        "answer": "They *reflect the use of the actual instrument* used for that measurement, ensuring we correctly represent the *uncertainty*.",
         "category": "important",
-        "badgeTitle": "FORMULA EFFECT",
-        "badgeText": "As uncertainty is multiplied by a power factor, it increases the precision demand of the measurement."
+        "badgeTitle": "REFLECTING QUALITY",
+        "badgeText": "Better instruments allow extending the result to more significant figures."
       },
       {
-        "question": "If voltage is recorded as V=3.4±0.1V, how is its percentage uncertainty calculated?",
-        "answer": "The percentage uncertainty is calculated by *dividing the absolute uncertainty* (0.1V) by the *measured value* (3.4V) and *multiplying by 100*.",
+        "question": "Why is a recorded mass of 3.145 g considered more accurate than 3.1 g?",
+        "answer": "Because it reflects the use of a *better or more precise instrument*, extending the result to *more significant figures*.",
         "category": "important",
-        "badgeTitle": "CALCULATION",
-        "badgeText": "(0.1V/3.4V)×100=3%."
+        "badgeTitle": "IMPROVEMENT",
+        "badgeText": "Correspondingly improves experimental accuracy."
       },
       {
-        "question": "If current is recorded as I=0.68±0.05A, what is its percentage uncertainty?",
-        "answer": "The percentage uncertainty in current is found by taking the *absolute uncertainty* (0.05A) over the *measured value* (0.68A) times *100*.",
+        "question": "When weighing an object with an electronic balance giving $3.145 \\pm 0.001$ g, what is understood if the uncertainty is dropped?",
+        "answer": "It is understood that the number quoted has an *uncertainty of at least 1 unit* in the *last digit*.",
         "category": "important",
-        "badgeTitle": "CALCULATION",
-        "badgeText": "(0.05A/0.68A)×100=7%."
+        "badgeTitle": "CONVENTION",
+        "badgeText": "The accurately known digits and first doubtful digit remain."
       },
       {
-        "question": "Based on the voltage and current uncertainties above, how is the final resistance R=V/I recorded?",
-        "answer": "The percentage uncertainties are *added* (3%+7%=10%), and 10% of the calculated R (5.0Ω) is 0.5Ω, so it is recorded as *5.0±0.5 ohms*.",
+        "question": "Why is scientific notation preferred for reporting significant figures to avoid confusion?",
+        "answer": "It is better to quote the result in *scientific notation* to avoid any *ambiguity* regarding the exact number of significant figures.",
+        "category": "important",
+        "badgeTitle": "RULE",
+        "badgeText": "Figures other than powers of ten are significant."
+      },
+      {
+        "question": "Determine the significance of zeros in the measurement 0.00467.",
+        "answer": "*None of the zeros to the left* of the significant figures are considered significant.",
+        "category": "important",
+        "badgeTitle": "COUNT",
+        "badgeText": "It has exactly three significant figures."
+      },
+      {
+        "question": "Evaluate the number of significant figures in the integer 8,000 kg if the least count is 10 kg.",
+        "answer": "It will have exactly *3 significant figures*, written in scientific notation as *$8.00 \\times 10^3$ kg*.",
+        "category": "important",
+        "badgeTitle": "DETERMINING FACTOR",
+        "badgeText": "Precision of the measuring instrument dictates this."
+      },
+      {
+        "question": "During multiplication, why must extra figures be deleted from the calculator's result?",
+        "answer": "The additional digits are *insignificant* and must be deleted so the result contains *no more significant figures* than the least accurate factor.",
+        "category": "important",
+        "badgeTitle": "PROCESS",
+        "badgeText": "The last retained figure is rounded off."
+      },
+      {
+        "question": "What is the specific rounding outcome for the number 43.75 to three significant figures?",
+        "answer": "It is rounded off as *43.8* because the digit to be dropped is 5 and the previous digit (7) is *odd*, so it is increased by one.",
+        "category": "important",
+        "badgeTitle": "ROUNDING RULE",
+        "badgeText": "Odd digit increment."
+      },
+      {
+        "question": "Round off 64.350 to three significant figures and explain why.",
+        "answer": "It rounds to *64.4* because the dropped digit is 5 and the preceding digit (3) is *odd*, thus it is increased by one.",
+        "category": "important",
+        "badgeTitle": "COMPARISON",
+        "badgeText": "Unlike 73.650 which becomes 73.6 (even remains unchanged)."
+      },
+      {
+        "question": "In the addition of 72.1, 3.42, and 0.003, what determines the final decimal position?",
+        "answer": "The number *72.1* has the *smallest decimal places*, thus the answer is rounded off to the same position.",
         "category": "important",
         "badgeTitle": "IMPORTANT NOTE",
-        "badgeText": "The uncertainty, being an estimate only, is recorded to one significant figure."
+        "badgeText": "The number of significant figures is not important here, only the decimal position."
       },
       {
-        "question": "If a radius is measured as 1.25 cm using a Vernier Callipers with a least count of 0.01 cm, what is the absolute uncertainty?",
-        "answer": "The absolute uncertainty is exactly equal to the *least count* of the instrument, which is *±0.01 cm*.",
+        "question": "What inherent measurement error do significant figures completely fail to account for?",
+        "answer": "Significant figures deal only with uncertainties *inherent in reading the scale*, ignoring *personal errors and hidden systematic errors*.",
         "category": "important",
-        "badgeTitle": "RECORDED VALUE",
-        "badgeText": "r=1.25±0.01 cm."
+        "badgeTitle": "CONSEQUENCE",
+        "badgeText": "Total uncertainty may well be more than what the significant figures suggest."
       },
       {
-        "question": "How do you interpret the dimensional correctness of the equation S=½at²?",
-        "answer": "By *ignoring the dimensionless numerical factor* 1/2, we substitute the dimensions: [L]=[LT⁻²][T²], which simplifies to *[L]=[L]*, proving the equation is dimensionally correct.",
+        "question": "What physically dictates the precision of any given measurement?",
+        "answer": "The precision of a measurement is entirely determined by the *instrument or device* being used.",
         "category": "important",
-        "badgeTitle": "PRINCIPLE",
-        "badgeText": "Principle of Homogeneity of physical equations."
+        "badgeTitle": "RELATIONSHIP",
+        "badgeText": "The smaller the least count, the more precise is the measurement."
       },
       {
-        "question": "In the derivation of centripetal force (F=constant×mᵃ vᵇ rᶜ), how is the constant handled?",
-        "answer": "The *numerical value of the constant* cannot be determined by dimensional analysis; it has *no dimension* and must be found by *experiments*.",
+        "question": "State the mathematical indicators for a highly accurate measurement.",
+        "answer": "An accurate measurement is mathematically indicated by having *less fractional uncertainty* or *less percentage uncertainty*.",
         "category": "important",
-        "badgeTitle": "LIMITATION",
-        "badgeText": "Dimensional analysis does not provide a check on any numerical factor."
+        "badgeTitle": "DEFINITION",
+        "badgeText": "It is the closeness to the exact or accepted value."
       },
       {
-        "question": "According to the rules, are zeroes in a decimal fraction (like 3.570 or 7.4000) significant?",
-        "answer": "Yes, in a decimal fraction, *zeros to the right of a significant figure* are *significant*.",
+        "question": "Evaluate the precision (absolute uncertainty) of a length of 25.5 cm measured by a metre rule.",
+        "answer": "It has a precision or absolute uncertainty of *±0.1 cm*.",
         "category": "important",
-        "badgeTitle": "APPLICATION",
-        "badgeText": "Both 3.570 and 7.4000 have four significant figures."
+        "badgeTitle": "INSTRUMENT PROPERTY",
+        "badgeText": "Based on the smallest division in millimetres."
       },
       {
-        "question": "How many significant figures are in the measured mass 2500.0 kg? (MCQ 1.6)",
-        "answer": "The measurement 2500.0 kg has *five significant figures* because zeros to the right of a significant figure in a decimal fraction are significant.",
+        "question": "What is the exact percentage uncertainty of a 0.45 cm reading taken by Vernier Callipers?",
+        "answer": "The percentage uncertainty is calculated as *2%*, derived from dividing 0.01 cm by 0.45 cm and multiplying by 100.",
         "category": "important",
-        "badgeTitle": "CORRECT OPTION",
-        "badgeText": "(d) five."
+        "badgeTitle": "COMPARISON",
+        "badgeText": "It is less accurate than the 25.5 cm reading taken by a metre rule."
       },
       {
-        "question": "What is the sum of 12 kg+2.02 kg+5.1 kg to the appropriate precision? (MCQ 1.7)",
-        "answer": "The term with the *least decimal places* is 12 kg (zero decimal places), so the sum (19.12) must be *rounded to zero decimal places*, resulting in 19 kg.",
+        "question": "Why does a small measurement like 0.45 cm demand a much more precise instrument?",
+        "answer": "Because it is the *relative measurement* which is important; smaller quantities require instruments like a *micrometer screw gauge* to reduce percentage error.",
         "category": "important",
-        "badgeTitle": "CORRECT OPTION",
-        "badgeText": "(a) 19 kg."
+        "badgeTitle": "CONCLUSION",
+        "badgeText": "The smaller a physical quantity, the more precise instrument should be used."
       },
       {
-        "question": "What is the answer to appropriate precision for the subtraction (1.126−0.97268)? (MCQ 1.8)",
-        "answer": "The number 1.126 has *three decimal places*, so the result (0.15332) must be *rounded to three decimal places*, which is 0.153.",
+        "question": "Summarize the ideal goal of measurement despite inherent physical limitations.",
+        "answer": "We can *never make an exact measurement*, so the best we can do is to come *as close as possible* within the limitation of the measuring instrument.",
         "category": "important",
-        "badgeTitle": "CORRECT OPTION",
-        "badgeText": "(b) 0.153."
+        "badgeTitle": "REALITY",
+        "badgeText": "Perfection is impossible in experimental physics."
       },
       {
-        "question": "What is the product of (2.8723×1.6) to the appropriate number of significant figures? (MCQ 1.9)",
-        "answer": "The factor 1.6 has *two significant figures* (the least accurate), so the product (4.59568) must be *rounded to two significant figures*, yielding 4.6.",
+        "question": "How do you strictly assess the total uncertainty when calculating the distance between two positions ($x_2 - x_1$)?",
+        "answer": "For subtraction, the *absolute uncertainties* of both positions are *simply added together*.",
         "category": "important",
-        "badgeTitle": "CORRECT OPTION",
-        "badgeText": "(d) 4.6."
-      },
-      {
-        "question": "What is the answer to the division (45.2÷6.0) in the appropriate number of significant figures? (MCQ 1.10)",
-        "answer": "The factor 6.0 has *two significant figures*, so the quotient (7.5333...) must be *rounded to two significant figures*, giving 7.5.",
-        "category": "important",
-        "badgeTitle": "CORRECT OPTION",
-        "badgeText": "(a) 7.5."
-      },
-      {
-        "question": "What is the ratio of the dimensions of force and energy? (MCQ 1.12)",
-        "answer": "The dimensions of force are *[MLT⁻²]* and energy (work) are *[ML²T⁻²]*, so their ratio [MLT⁻²]/[ML²T⁻²] simplifies to *[L⁻¹]*.",
-        "category": "important",
-        "badgeTitle": "CORRECT OPTION",
-        "badgeText": "(d) L⁻¹."
-      },
-      {
-        "question": "Which pair of quantities does NOT have identical dimensions? (MCQ 1.13)",
-        "answer": "*Moment of inertia* ([ML²]) and *moment of force* ([ML²T⁻²]) do not have identical dimensions.",
-        "category": "important",
-        "badgeTitle": "CORRECT OPTION",
-        "badgeText": "(c) Moment of inertia and moment of force."
-      },
-      {
-        "question": "What does the least count of an instrument determine? (MCQ 1.15)",
-        "answer": "The least count of an instrument directly determines the *precision* of a measurement (also known as absolute uncertainty).",
-        "category": "important",
-        "badgeTitle": "CORRECT OPTION",
-        "badgeText": "(a) precision of a measurement."
-      },
-      {
-        "question": "What are the dimensions of kinetic energy (½mv²)? (Short Q 1.6)",
-        "answer": "Ignoring the ½, the dimensions are mass *[M]* times velocity squared *[LT⁻¹]²*, which equals *[ML²T⁻²]*.",
-        "category": "important",
-        "badgeTitle": "FORMULA",
-        "badgeText": "[Eₖ]=[M][L²T⁻²]."
-      },
-      {
-        "question": "How many significant figures are in the measurement 0.002953 m? (Short Q 1.7)",
-        "answer": "There are *four significant figures*, because *zeros to the left of significant figures* are *not significant*.",
-        "category": "important",
-        "badgeTitle": "RULE",
-        "badgeText": "Leading zeros only indicate the position of the decimal."
-      },
-      {
-        "question": "How many significant figures are in the measurement 7.50034 cm? (Short Q 1.7)",
-        "answer": "There are *six significant figures*, because *zeros between two significant figures* are *themselves significant*.",
-        "category": "important",
-        "badgeTitle": "RULE",
-        "badgeText": "Captive zeros are always significant."
-      },
-      {
-        "question": "What are the dimensions of Planck's constant (h)? (Short Q 1.8)",
-        "answer": "Since energy E=hf (and frequency f=1/T), h=E×T. Multiplying energy *[ML²T⁻²]* by time *[T]* gives *[ML²T⁻¹]*.",
-        "category": "important",
-        "badgeTitle": "UNIT EQUIVALENT",
-        "badgeText": "Joule-second (J·s)."
-      },
-      {
-        "question": "What are the dimensions of angular velocity? (Short Q 1.8)",
-        "answer": "Angular velocity is defined as an angle (dimensionless) divided by time, so its dimensions are *[T⁻¹]*.",
-        "category": "important",
-        "badgeTitle": "FORMULA",
-        "badgeText": "[ω]=1/[T]=[T⁻¹]."
-      },
-      {
-        "question": "How do you assess the uncertainty for the average value of many readings?",
-        "answer": "According to the Thumb Rule, find the *mean deviation* from the average value to determine the uncertainty.",
-        "category": "important",
-        "badgeTitle": "THUMB RULE",
-        "badgeText": "Average value uncertainty = Mean deviation."
-      },
-      {
-        "question": "How is periodic uncertainty assessed for a timing device?",
-        "answer": "To find periodic uncertainty, divide the *least count* of the timing device by the *number of oscillations*.",
-        "category": "important",
-        "badgeTitle": "THUMB RULE",
-        "badgeText": "Periodic Uncertainty = Least count / Number of oscillations."
-      },
-      {
-        "question": "Between an electronic balance (3.145±0.001 g) and a lever balance (3.1±0.1 g), which is more precise?",
-        "answer": "The electronic balance is more precise because it has a *smaller absolute uncertainty* (±0.001 g) compared to the lever balance (±0.1 g).",
-        "category": "important",
-        "badgeTitle": "IMPLICATION",
-        "badgeText": "It extends the result to more significant figures."
-      },
-      {
-        "question": "If a measurement is 8.00×10³ kg, what is the least count of the scale used?",
-        "answer": "Writing the integer as 8.00×10³ kg indicates *three significant figures*, meaning the measuring scale had a *precision* or *least count* of *10 kg*.",
-        "category": "important",
-        "badgeTitle": "RULE",
-        "badgeText": "The number of significant zeros in an integer is determined by instrument precision."
-      },
-      {
-        "question": "What is the final answer for 2.45×10³ m×2.46m/3.6m to appropriate significant figures? (Quick Quiz 4)",
-        "answer": "The factor 3.6 has the *least number of significant figures* (two). The raw calculation gives 1674.16..., which rounded to *two significant figures* is *1700*, written as *1.7×10³ m*.",
-        "category": "important",
-        "badgeTitle": "THUMB RULE",
-        "badgeText": "Multiplication/Division requires the same number of significant figures as the least accurate factor."
-      },
-      {
-        "question": "What is the base material for manufacturing computer chips according to scientific applications?",
-        "answer": "Computer chips are made from *silicon*, which is obtained from *sand*.",
-        "category": "conceptual",
-        "badgeTitle": "IMPLICATION",
-        "badgeText": "It highlights how fundamental physical sciences transform raw materials into advanced technology."
-      },
-      {
-        "question": "When were the units for plane angle and solid angle officially included in the list of derived SI units?",
-        "answer": "The units of plane angle (radian) and solid angle (steradian) have been *included in the list of derived units* since *1995*.",
-        "category": "conceptual",
-        "badgeTitle": "EXTRA POINT",
-        "badgeText": "Both of these are purely dimensionless quantities."
-      },
-      {
-        "question": "What are the traditional mathematical units used for measuring angles outside of the SI system?",
-        "answer": "The traditional mathematical units for measuring angles are the *degree*, *arcminute*, and *arcsecond*.",
-        "category": "conceptual",
-        "badgeTitle": "ALTERNATIVE",
-        "badgeText": "The standard SI permitted derived unit is the radian."
-      },
-      {
-        "question": "Which specific non-metric units are commonly used in the fields of physics and astronomy for measuring areas or very small lengths?",
-        "answer": "The *angstrom* and the *barn* are non-metric units traditionally used in physics and astronomy.",
-        "category": "conceptual",
-        "badgeTitle": "APPLICATION",
-        "badgeText": "Used heavily for subatomic and atomic scale measurements."
-      },
-      {
-        "question": "What is the unit of pressure commonly used in meteorology and engineering instead of the Pascal?",
-        "answer": "The *bar* is a unit of pressure, commonly used as the *millibar* in meteorology and the *kilobar* in engineering.",
-        "category": "conceptual",
-        "badgeTitle": "SYSTEM CONTEXT",
-        "badgeText": "It is a permitted additional unit outside the pure SI base/derived units."
-      },
-      {
-        "question": "According to Einstein's mass-energy equivalence, how much energy is contained in exactly 1 kg of mass?",
-        "answer": "According to the equation $E=mc^2$, 1 kg of mass is a *highly concentrated form of energy* equal to *$9 \\times 10^{16}$ J*.",
-        "category": "conceptual",
-        "badgeTitle": "CONCEPT",
-        "badgeText": "Mass can be fundamentally thought of as a form of energy."
-      },
-      {
-        "question": "Why is the use of a solidus (m/s) discouraged in writing SI units?",
-        "answer": "SI conventions dictate the use of *negative index notation* ($ms^{-1}$) instead of a solidus (m/s) to *avoid ambiguity*, especially in complex derived units.",
-        "category": "conceptual",
-        "badgeTitle": "CONVENTION RULE",
-        "badgeText": "It provides mathematical clarity when multiple units are combined."
-      },
-      {
-        "question": "How should a compound prefix like micro-micro farad be correctly written in the SI system?",
-        "answer": "*Compound prefixes are not allowed*; thus, 1 $\\mu\\mu$F should be correctly written using a single prefix as *1 pF (picofarad)*.",
-        "category": "conceptual",
-        "badgeTitle": "SI CONVENTION",
-        "badgeText": "Only one standard prefix is permitted per base unit."
-      },
-      {
-        "question": "When a prefix is attached to a base unit and raised to a power, does the power apply to the prefix as well?",
-        "answer": "Yes, when a multiple of a base unit is raised to a power, the *power applies to the whole multiple* and not to the base unit alone.",
-        "category": "conceptual",
         "badgeTitle": "EXAMPLE",
-        "badgeText": "$1 km^2 = 1 (10^3 m)^2 = 1 \\times 10^6 m^2$."
+        "badgeText": "$15.4 \\pm 0.1$ cm and $25.6 \\pm 0.1$ cm yield a total uncertainty of $\\pm 0.2$ cm."
       },
       {
-        "question": "Do significant figures account for hidden systematic errors in an experiment?",
-        "answer": "No, significant figures only deal with the *uncertainty inherent in reading the scale* and do not account for *personal or hidden systematic errors*.",
-        "category": "conceptual",
-        "badgeTitle": "LIMITATION",
-        "badgeText": "The real total uncertainty may well be more than what the significant figures formally suggest."
+        "question": "How is the maximum possible uncertainty in electrical resistance $R = V/I$ properly estimated?",
+        "answer": "By calculating the *individual percentage uncertainties* of voltage $V$ and current $I$, and ensuring they are *added together*.",
+        "category": "important",
+        "badgeTitle": "MATHEMATICAL OPERATION",
+        "badgeText": "This rule is used strictly for multiplication and division."
       },
       {
-        "question": "What colors are fundamentally used in modern color printing to produce the entire range of colors?",
-        "answer": "Color printing uses just *four colors*: *cyan*, *magenta*, *yellow*, and *black* to produce the entire range of colors.",
-        "category": "conceptual",
+        "question": "If the calculated percentage uncertainty in Voltage is 3% and Current is 7%, what is the total uncertainty in Resistance?",
+        "answer": "The total percentage uncertainty in the value of $R$ is *10%*, obtained by simply *adding 3% + 7%*.",
+        "category": "important",
+        "badgeTitle": "RECORDING RULE",
+        "badgeText": "Uncertainty being an estimate only, is recorded by one significant figure."
+      },
+      {
+        "question": "Describe the strict rule for assessing uncertainty involving a power factor in an equation.",
+        "answer": "The *percentage uncertainty of the given variable* must be *multiplied by the power factor* present in the mathematical formula.",
+        "category": "important",
+        "badgeTitle": "EFFECT ON PRECISION",
+        "badgeText": "It increases the precision demand of the measurement."
+      },
+      {
+        "question": "How does measuring the radius $r$ for the area formula $A = \\pi r^2$ mathematically amplify the uncertainty?",
+        "answer": "The total percentage uncertainty in area $A$ becomes *2 × percentage uncertainty in radius $r$*, due to the *power factor*.",
+        "category": "important",
+        "badgeTitle": "EXAMPLE CALCULATION",
+        "badgeText": "If $r$ has an 0.8% error, $A$ will have a 1.6% error."
+      },
+      {
+        "question": "State the specific thumb rule for finding total uncertainty in the average value of many separate readings.",
+        "answer": "You must calculate the *mean deviation* from an *average value* of all the recorded measurements.",
+        "category": "important",
         "badgeTitle": "APPLICATION",
-        "badgeText": "This is an everyday application of physical optics and pigment combinations."
+        "badgeText": "Strictly for average value of many readings."
       },
       {
-        "question": "How much time does it take for light to travel from the Moon to the Earth?",
-        "answer": "The travel time of light from the Moon to the Earth is exactly *1 min 20 s*.",
-        "category": "conceptual",
-        "badgeTitle": "ASTRONOMICAL FACT",
-        "badgeText": "This demonstrates the finite speed of light over celestial distances."
+        "question": "How do you precisely assess the periodic uncertainty in an experiment like a simple pendulum?",
+        "answer": "You must divide the *least count of the timing device* by the *total number of oscillations*.",
+        "category": "important",
+        "badgeTitle": "CATEGORY",
+        "badgeText": "Periodic Uncertainty."
       },
       {
-        "question": "How much time does light take to reach the Earth from the Sun?",
-        "answer": "The travel time of light from the Sun to the Earth is approximately *8 min 20 s*.",
-        "category": "conceptual",
-        "badgeTitle": "ASTRONOMICAL FACT",
-        "badgeText": "This is based on the average Earth-Sun distance (1 Astronomical Unit)."
+        "question": "Why is final uncertainty always recorded to exactly one significant figure in the final result?",
+        "answer": "Because uncertainty is *inherently an estimate only*, it is standard scientific practice to record it using *exactly one significant figure*.",
+        "category": "important",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "$R = 5.0 \\pm 0.5$ ohms."
       },
       {
-        "question": "What is the approximate travel time of light from Pluto to Earth?",
-        "answer": "The travel time of light from Pluto to the Earth is approximately *5 h 20 s*.",
-        "category": "conceptual",
-        "badgeTitle": "ASTRONOMICAL FACT",
-        "badgeText": "This illustrates the vast scale of our solar system compared to the Earth-Moon distance."
+        "question": "How are the dimensions of derived physical quantities formally established?",
+        "answer": "The dimensions of other quantities indicate how they are *related to the basic quantities* and act as a *combination of fundamental dimensions*.",
+        "category": "important",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "Speed $v$ is a combination of length $[L]$ and time $[T]$."
       },
       {
-        "question": "Where were the earliest known exquisite and sensitive liquid thermometers built?",
-        "answer": "The earliest known sensitive thermometers were built by the *Accademia del Cimento* (1657-1667) in *Florence*.",
-        "category": "conceptual",
-        "badgeTitle": "HISTORICAL CONTEXT",
-        "badgeText": "They contained alcohol, sometimes colored red for easier visual reading."
+        "question": "What is the exact dimensional formula representing velocity or speed?",
+        "answer": "It has the dimensions of *length divided by time*, written strictly in square brackets as *$[LT^{-1}]$*.",
+        "category": "important",
+        "badgeTitle": "DERIVATION",
+        "badgeText": "$[v] = [L]/[T]$."
       },
       {
-        "question": "What is the primary standard used worldwide for the exact measurement of the unit of time?",
-        "answer": "The *cesium atomic frequency standard* (Atomic Clock), such as the one at the National Institute of Standards and Technology in Colorado, is the *primary standard* for the unit of time.",
-        "category": "conceptual",
-        "badgeTitle": "PRECISION DEVICE",
-        "badgeText": "It uses the vibration period of atoms to maintain extreme accuracy."
+        "question": "Deduce the accurate dimensions of acceleration directly from its fundamental definition.",
+        "answer": "Acceleration is defined as *velocity divided by time*, so its dimensions are *$[LT^{-1}]/[T]$*, which firmly simplifies to *$[LT^{-2}]$*.",
+        "category": "important",
+        "badgeTitle": "FORMULA LINK",
+        "badgeText": "$a = \\Delta v / \\Delta t$."
       },
       {
-        "question": "What specific mechanism inside a traditional clock made the pendulum clock practical for keeping time?",
-        "answer": "The combination of the *anchor*, *pallet*, and *escape wheel* interacting with the pendulum acts as the *regulating device* that made the pendulum clock practical.",
-        "category": "conceptual",
-        "badgeTitle": "MECHANICAL PHYSICS",
-        "badgeText": "These components regulate the release of energy to maintain uniform, repeatable oscillations."
+        "question": "What are the fully combined dimensions required for physical Force?",
+        "answer": "Force is *mass times acceleration*, giving the final dimensional formula of *$[MLT^{-2}]$*.",
+        "category": "important",
+        "badgeTitle": "DERIVATION",
+        "badgeText": "$[F] = [m][a] = [M][LT^{-2}]$."
       },
       {
-        "question": "Why is dimensional analysis unable to determine the exact formula for a physical quantity?",
-        "answer": "Dimensional analysis can only verify if dimensions match, but it *cannot determine the numerical value* of any *constant* or *numerical factor* in the equation.",
-        "category": "conceptual",
+        "question": "Explain how the principle of homogeneity is practically applied to verify an equation.",
+        "answer": "It is applied to *check the correctness* of an equation by putting the *dimensions of both sides* of the equation and mathematically showing they are the same.",
+        "category": "important",
+        "badgeTitle": "APPLICATION",
+        "badgeText": "Checking $S = \\frac{1}{2}at^2$ ultimately yields $[L] = [L]$."
+      },
+      {
+        "question": "During dimensional derivation of a formula, how are unknown exponents (powers) calculated?",
+        "answer": "The exponents $a, b,$ and $c$ are logically determined by *comparing the powers of dimensions* on both sides of the homogeneous equation.",
+        "category": "important",
+        "badgeTitle": "MATHEMATICAL STEP",
+        "badgeText": "Solving simultaneous equations for the powers."
+      },
+      {
+        "question": "Why is dimensional analysis fundamentally unable to find the actual value of constants in a derived formula?",
+        "answer": "The *numerical value of the constant* has *no dimensions*, so it cannot be determined by dimensional analysis and must be found by experiments.",
+        "category": "important",
         "badgeTitle": "LIMITATION",
-        "badgeText": "These exact numerical constants must be found experimentally or graphically."
+        "badgeText": "It only provides the relational format of variables."
       },
       {
-        "question": "What is the approximate temperature of the outer part of the Sun?",
-        "answer": "The approximate temperature of the outer part of the Sun is *6000°C*.",
-        "category": "conceptual",
-        "badgeTitle": "THERMAL SCALE",
-        "badgeText": "This is far hotter than the melting point of most Earth-bound materials."
+        "question": "Give a textbook example of a formula successfully derived using dimensional analysis in this chapter.",
+        "answer": "The formula for *centripetal force* required to keep an object moving in a circle, derived dimensionally as *$F = (constant)mv^2/r$*.",
+        "category": "important",
+        "badgeTitle": "VARIABLES ASSUMED",
+        "badgeText": "Depends on mass $m$, speed $v$, and radius $r$."
       },
       {
-        "question": "At what specific temperature does air become a liquid?",
-        "answer": "Air becomes liquid at approximately *-200°C*.",
-        "category": "conceptual",
-        "badgeTitle": "THERMAL SCALE",
-        "badgeText": "This is near absolute zero, demonstrating extreme cryogenic physics."
+        "question": "If a complex equation is proven dimensionally correct, does it guarantee absolute physical correctness?",
+        "answer": "No, we can only confidently say the equation *might be correct*, because the method fails to provide a check on any *numerical factor or constant*.",
+        "category": "important",
+        "badgeTitle": "ALTERNATIVE METHOD",
+        "badgeText": "Plotting suitable graphs between variables is required to prove full correctness."
       },
       {
-        "question": "In terms of order of magnitude, what is the mass of the observable universe's largest single object mentioned (the Sun)?",
-        "answer": "The order of magnitude for the mass of the Sun is given as *$10^{30}$ kg*.",
+        "question": "According to the \"Think Over!\" insight, what everyday material is ultimately used to manufacture modern computer chips?",
+        "answer": "Computer chips are made from *silicon*, which is directly obtained from *sand*.",
         "category": "conceptual",
-        "badgeTitle": "MACRO-SCALE PHYSICS",
-        "badgeText": "Contrast this with the extremely small mass of an electron at $10^{-30}$ kg."
+        "badgeTitle": "PHILOSOPHICAL NOTE",
+        "badgeText": "It is up to us whether we make a sand castle or a computer out of it."
       },
       {
-        "question": "What is the order of magnitude for the mass of an electron?",
-        "answer": "The order of magnitude for the mass of an electron is *$10^{-30}$ kg*.",
+        "question": "How did Einstein conceptually revolutionize the relationship between mass and energy?",
+        "answer": "*Mass can be thought of as a form of energy*, effectively meaning that mass is a *highly concentrated form of energy*.",
         "category": "conceptual",
-        "badgeTitle": "MICRO-SCALE PHYSICS",
-        "badgeText": "This is the smallest specific mass explicitly mentioned in the mass scale chart."
+        "badgeTitle": "FORMULA LINK",
+        "badgeText": "$E=mc^2$"
       },
       {
-        "question": "Why must practical work measurements (like using a screw gauge) be recorded in their original units before final calculations?",
-        "answer": "Measurements should be recorded in the *most convenient units* depending on the instrument (e.g., mm for a screw gauge) to maintain the *exact precision record*, but final results must be converted to the *appropriate base SI units*.",
+        "question": "Quantitatively, how much energy does exactly 1 kg of mass inherently contain?",
+        "answer": "According to Einstein's equation, 1 kg of mass is actually equivalent to *$9 \\times 10^{16}$ J* of energy.",
         "category": "conceptual",
-        "badgeTitle": "RECORDING SKILL",
-        "badgeText": "This avoids conversion rounding errors during the intermediate physical steps."
+        "badgeTitle": "CONCEPTUAL GEM",
+        "badgeText": "Energy = mass × speed of light²."
       },
       {
-        "question": "If an equation is proven to be dimensionally correct, does that mean the equation is entirely physically correct?",
-        "answer": "No, if an equation is dimensionally correct, we can only say the equation *might be correct*, because the method cannot identify *missing dimensionless quantities* or *incorrect numerical factors*.",
+        "question": "What is the exact travel time of light from the Moon to the Earth?",
+        "answer": "Light takes exactly *1 min 20 s* to travel from the Moon to the Earth.",
         "category": "conceptual",
-        "badgeTitle": "PRINCIPLE OF HOMOGENEITY",
-        "badgeText": "Dimensional consistency is a necessary but not entirely sufficient condition for absolute correctness."
+        "badgeTitle": "TABLE REFERENCE",
+        "badgeText": "Travel time of light."
       },
       {
-        "question": "Why is the number of significant figures not considered when performing addition or subtraction?",
-        "answer": "In addition and subtraction, the limiting factor is the *precision (least count)* of the measurements, which depends strictly on the *smallest number of decimal places*, not the total number of significant figures.",
+        "question": "How long does it take for light emitted by the Sun to reach the Earth?",
+        "answer": "The travel time for light from the Sun to the Earth is *8 min 20 s*.",
         "category": "conceptual",
-        "badgeTitle": "THUMB RULE",
-        "badgeText": "Addition/Subtraction follows the strict rule of \"same precision\" rather than \"same accuracy\"."
+        "badgeTitle": "TABLE REFERENCE",
+        "badgeText": "Travel time of light."
       },
       {
-        "question": "What is the purpose of using scientific notation (standard form) to express a physical number?",
-        "answer": "Scientific notation employs *powers of ten* with only *one non-zero digit left of the decimal* to strictly *eliminate non-significant digits* and avoid ambiguity in the number of significant figures.",
+        "question": "What is the conceptual travel time required for light to travel from Pluto to our Earth?",
+        "answer": "Light travels from Pluto to the Earth in approximately *5 h 20 s*.",
         "category": "conceptual",
-        "badgeTitle": "STANDARD PRACTICE",
-        "badgeText": "Makes expressing extremely large or small quantities universally convenient."
+        "badgeTitle": "TABLE REFERENCE",
+        "badgeText": "Travel time of light."
       },
       {
-        "question": "What is the fundamental difference in reading the uncertainty of a digital instrument versus an analog scale?",
-        "answer": "For an analog scale, uncertainty is exactly the *smallest division*, but for a digital instrument, it is estimated by the *fluctuation of the last digit* (usually recording 1 or 2 as normal).",
+        "question": "What are the foundational four colors used exclusively in modern color printing?",
+        "answer": "Colour printing uses just four colours—*cyan, magenta, yellow, and black*—to produce the entire range of colors.",
         "category": "conceptual",
-        "badgeTitle": "ESTIMATION TECHNIQUE",
-        "badgeText": "If it fluctuates by more than 2, it clearly indicates external environmental influences."
+        "badgeTitle": "VISUAL APPLICATION",
+        "badgeText": "All colors in textbooks are made from just these four."
       },
       {
-        "question": "How do you strictly find the uncertainty in the average value of multiple physical readings?",
-        "answer": "The uncertainty in the average value is definitively found by calculating the *mean deviation* from the average value of all the collected readings.",
+        "question": "Which historical institution built the earliest known exquisite and sensitive thermometers?",
+        "answer": "They were built by the *Accademia del Cimento (1657-1667)* in Florence.",
         "category": "conceptual",
-        "badgeTitle": "DATA ANALYSIS",
-        "badgeText": "This mathematically assesses the random spread of the recorded measurements."
+        "badgeTitle": "HISTORICAL FACT",
+        "badgeText": "These were not just decoration pieces of glass."
       },
       {
-        "question": "Why are calculators considered \"dangerous\" when quoting final physical answers without manual rounding?",
-        "answer": "Calculators are designed to yield *as many digits as the memory of the chip permits*, which implies a *completely false sense of physical accuracy* if not manually rounded off to the correct significant figures.",
+        "question": "What specific fluid was used inside the earliest sensitive thermometers to make reading easier?",
+        "answer": "They contained *alcohol*, which was sometimes explicitly coloured *red* for easier reading.",
         "category": "conceptual",
-        "badgeTitle": "BEWARE NOTE",
-        "badgeText": "Never quote raw calculator outputs directly as final scientific answers."
+        "badgeTitle": "INSTRUMENT DESIGN",
+        "badgeText": "Early alternative to mercury."
       },
       {
-        "question": "What are the dimensions of the constant factor in the kinematic equation $S = \\frac{1}{2}at^2$?",
-        "answer": "The numerical factor is a *dimensionless quantity*, meaning it has *absolutely no dimensions* and is *completely ignored* during dimensional analysis.",
+        "question": "According to the specific temperatures chart, what is the approximate temperature of the outer part of the Sun?",
+        "answer": "The outer part of the Sun has a temperature of approximately *$6000^\\circ\\text{C}$*.",
         "category": "conceptual",
-        "badgeTitle": "MATHEMATICAL CONSTANTS",
-        "badgeText": "Pure numbers do not represent any measurable physical properties."
+        "badgeTitle": "COMPARISON",
+        "badgeText": "Much hotter than a filament lamp at $3000^\\circ\\text{C}$."
       },
       {
-        "question": "What is the age of the Earth expressed in seconds as an order of magnitude?",
-        "answer": "The approximate age of the Earth is given as *$1.4 \\times 10^{17}$ s*.",
+        "question": "At what specific temperature does solid aluminium transition into a liquid state?",
+        "answer": "Aluminium melts at approximately *$660^\\circ\\text{C}$* (located between $600^\\circ\\text{C}$ and $700^\\circ\\text{C}$ on the scale).",
         "category": "conceptual",
-        "badgeTitle": "TIME INTERVAL",
-        "badgeText": "This is compared to the entire universe's age of $5 \\times 10^{17}$ s."
+        "badgeTitle": "COMPARISON",
+        "badgeText": "It is cooler than a roaring Bunsen burner ($1000^\\circ\\text{C}$)."
       },
       {
-        "question": "What defines the boundary between accuracy and precision when evaluating multiple measurements?",
-        "answer": "*Precision* refers strictly to the *absolute uncertainty* (least count of the device), whereas *accuracy* purely accounts for the *relative size* of the measurement via fractional/percentage uncertainty.",
+        "question": "What specific device serves as the primary standard for the unit of time in Colorado (USA)?",
+        "answer": "The *cesium atomic frequency standard (Atomic Clock)* at the National Institute of Standards and Technology serves as the primary standard.",
         "category": "conceptual",
-        "badgeTitle": "COMPARATIVE METRIC",
-        "badgeText": "A highly precise reading can be highly inaccurate if the fractional error is large."
+        "badgeTitle": "PRECISION TOOL",
+        "badgeText": "Atomic Clock."
       },
       {
-        "question": "Are physical constants like the speed of light considered mathematically dimensionless?",
-        "answer": "No, physical constants like the speed of light have *specific units* (e.g., $ms^{-1}$) and therefore *possess dimensions* ($[LT^{-1}]$), unlike pure numerical constants.",
+        "question": "Name the crucial mechanical components that made the regulation of the pendulum clock practical.",
+        "answer": "The practical pendulum clock relies on an *Anchor*, a *Pallet*, an *Escape wheel*, and the *Pendulum* itself as the regulating device.",
         "category": "conceptual",
-        "badgeTitle": "PHYSICAL VS NUMERICAL",
-        "badgeText": "Only pure numbers and ratios (like plane angles) are mathematically dimensionless."
+        "badgeTitle": "MECHANICAL DIAGRAM",
+        "badgeText": "Clockwork regulating device."
+      },
+      {
+        "question": "What hidden danger must students beware of when using modern calculators for physics calculations?",
+        "answer": "Calculators yield *as many digits as the memory permits*, necessitating students to strictly *round off* the final answers down to the correct number of significant figures.",
+        "category": "conceptual",
+        "badgeTitle": "WARNING",
+        "badgeText": "Raw calculator outputs are scientifically misleading."
+      },
+      {
+        "question": "How many significant figures are actively counted in the measurement 0.03030 m?",
+        "answer": "There are exactly *four* significant figures, because the leading zeros are not significant but the trapped zero and the final trailing zero in a decimal fraction are.",
+        "category": "conceptual",
+        "badgeTitle": "QUICK QUIZ APPLICATION",
+        "badgeText": "Rules for zero significance."
+      },
+      {
+        "question": "What is the correct number of significant figures in the scientific notation value $8.20 \\times 10^3$ m?",
+        "answer": "There are *three* significant figures, because only the digits before the power of ten (8, 2, and 0) are considered significant.",
+        "category": "conceptual",
+        "badgeTitle": "QUICK QUIZ APPLICATION",
+        "badgeText": "Scientific notation rule."
+      },
+      {
+        "question": "When subtracting 2.4 kg from 3.54 kg, what determines the appropriately precise answer?",
+        "answer": "The answer must be *1.1 kg*, because the number 2.4 kg has the smallest number of decimal places (one), forcing the final answer to mirror that precision.",
+        "category": "conceptual",
+        "badgeTitle": "QUICK QUIZ APPLICATION",
+        "badgeText": "Addition/Subtraction decimal rule."
+      },
+      {
+        "question": "Evaluate $2602\\text{ kg} + 36.02\\text{ kg} + 54.1\\text{ kg}$ to its most appropriate precision.",
+        "answer": "The final sum is *2692 kg*, strictly because the least precise factor (2602 kg) has zero decimal places, forcing the result to have no decimals.",
+        "category": "conceptual",
+        "badgeTitle": "QUICK QUIZ APPLICATION",
+        "badgeText": "Position of decimal strictly matters."
+      },
+      {
+        "question": "What explicit \"Thumb Rule\" governs the arithmetic of addition and subtraction in measurements?",
+        "answer": "The end result must strictly maintain the *same precision (same number of decimal places)* as the *least precise quantity*.",
+        "category": "conceptual",
+        "badgeTitle": "MARGIN NOTE GUIDE",
+        "badgeText": "Addition / Subtraction: same precision."
+      },
+      {
+        "question": "What explicit \"Thumb Rule\" dictates the outcome of multiplication and division operations?",
+        "answer": "The end result must rigorously maintain the *same accuracy*, meaning it must have the *same number of significant figures* as the *least accurate factor*.",
+        "category": "conceptual",
+        "badgeTitle": "MARGIN NOTE GUIDE",
+        "badgeText": "Multiplication / Division: same accuracy."
+      },
+      {
+        "question": "Conceptually, what is the ultimate purpose of study and discoveries in Physics?",
+        "answer": "The ultimate purpose is the *betterment of mankind*, achieved through transforming our dreams into realities and adding comforts to everyday life.",
+        "category": "conceptual",
+        "badgeTitle": "MCQ 1.1 INSIGHT",
+        "badgeText": "Fundamental goal of physical sciences."
+      },
+      {
+        "question": "How do physicists formally define the number of significant figures in any measurement?",
+        "answer": "They are strictly defined as *all the accurately known digits combined with the first doubtful digit* of a measurement.",
+        "category": "conceptual",
+        "badgeTitle": "MCQ 1.5 INSIGHT",
+        "badgeText": "Core definition of significant figures."
+      },
+      {
+        "question": "Determine the exact number of significant figures in the precisely measured mass of 2500.0 kg.",
+        "answer": "There are exactly *five* significant figures, because in a decimal fraction, zeros to the right of a significant figure are strictly significant.",
+        "category": "conceptual",
+        "badgeTitle": "MCQ 1.6 INSIGHT",
+        "badgeText": "Decimal integer rule."
+      },
+      {
+        "question": "Calculate the sum of $12\\text{ kg} + 2.02\\text{ kg} + 5.1\\text{ kg}$ according to appropriate precision limits.",
+        "answer": "The sum is exactly *19 kg*, constrained by the measurement \"12 kg\" which dictates the smallest number of decimal places (zero).",
+        "category": "conceptual",
+        "badgeTitle": "MCQ 1.7 INSIGHT",
+        "badgeText": "Strict addition precision."
+      },
+      {
+        "question": "Provide the mathematically precise answer for the subtraction $(1.126 - 0.97268)$.",
+        "answer": "The appropriately precise answer is *0.153*, as it must be rounded off to three decimal places to match the precision of 1.126.",
+        "category": "conceptual",
+        "badgeTitle": "MCQ 1.8 INSIGHT",
+        "badgeText": "Strict subtraction precision."
+      },
+      {
+        "question": "Evaluate the product of $(2.8723 \\times 1.6)$ to the appropriate number of significant figures.",
+        "answer": "The answer is *4.6*, because the factor 1.6 possesses only two significant figures, making it the least accurate factor.",
+        "category": "conceptual",
+        "badgeTitle": "MCQ 1.9 INSIGHT",
+        "badgeText": "Strict multiplication accuracy."
+      },
+      {
+        "question": "What is the rigorous answer to the mathematical division $(45.2 \\div 6.0)$ in significant figures?",
+        "answer": "The answer is *7.5*, strictly limited to two significant figures to match the least accurate divisor (6.0).",
+        "category": "conceptual",
+        "badgeTitle": "MCQ 1.10 INSIGHT",
+        "badgeText": "Strict division accuracy."
+      },
+      {
+        "question": "Solve the mathematical operation $24.4\\text{ m} \\times 100\\text{ m} / 5.0\\text{ m}$ to the appropriate number of significant figures.",
+        "answer": "The answer is *$4.9 \\times 10^2\\text{ m}$*, limited by the two significant figures of the divisor 5.0.",
+        "category": "conceptual",
+        "badgeTitle": "MCQ 1.11 INSIGHT",
+        "badgeText": "Mixed operation accuracy constraint."
+      },
+      {
+        "question": "What is the conceptual ratio of the dimensions of force to the dimensions of energy?",
+        "answer": "The ratio is *$L^{-1}$*, derived by dividing the force dimension $[MLT^{-2}]$ by the energy dimension $[ML^2T^{-2}]$.",
+        "category": "conceptual",
+        "badgeTitle": "MCQ 1.12 INSIGHT",
+        "badgeText": "Dimensional algebra."
+      },
+      {
+        "question": "Which specific pair of physical quantities does NOT share identical dimensions?",
+        "answer": "The *Moment of inertia* and *moment of force (torque)* do not have identical dimensions.",
+        "category": "conceptual",
+        "badgeTitle": "MCQ 1.13 INSIGHT",
+        "badgeText": "Distinguishing physical properties."
+      },
+      {
+        "question": "What critical attribute of a measurement does the least count of an instrument explicitly establish?",
+        "answer": "The least count mathematically determines the *precision* of a measurement (absolute uncertainty).",
+        "category": "conceptual",
+        "badgeTitle": "MCQ 1.15 INSIGHT",
+        "badgeText": "Foundation of precision."
+      },
+      {
+        "question": "If a scale's minimum division is exactly 1 mm, which reading among 0.4235 m, 0.42 m, and 0.424 m is physically correct?",
+        "answer": "The reading *0.424 m* is correct, because 1 mm equals 0.001 m, demanding the reading be recorded to exactly three decimal places.",
+        "category": "conceptual",
+        "badgeTitle": "CRQ 1.2 INSIGHT",
+        "badgeText": "Instrument limitation reflection."
+      },
+      {
+        "question": "If $P = Q + R$ and both $Q$ and $R$ have the dimensions $[MLT]$, what are the forced dimensions of $P$?",
+        "answer": "The dimensions of $P$ must strictly be *$[MLT]$*, because physical quantities can only be added if they share the same dimensional nature.",
+        "category": "conceptual",
+        "badgeTitle": "CRQ 1.4 INSIGHT",
+        "badgeText": "Principle of dimensional addition."
+      },
+      {
+        "question": "Could we logically determine the dimensions of $P$ in $P = Q + R$ if $Q$ and $R$ had completely different dimensions?",
+        "answer": "No, it is *physically impossible* because quantities with different dimensions cannot be added together, violating the principle of homogeneity.",
+        "category": "conceptual",
+        "badgeTitle": "CRQ 1.4b INSIGHT",
+        "badgeText": "Homogeneity violation."
+      },
+      {
+        "question": "What exactly is meant by the concept of a \"dimensionless quantity\"?",
+        "answer": "It is a physical quantity that *lacks fundamental dimensional properties*, essentially functioning as a pure number or a ratio of identical quantities.",
+        "category": "conceptual",
+        "badgeTitle": "CRQ 1.10 INSIGHT",
+        "badgeText": "Qualitative nature of units."
+      },
+      {
+        "question": "Give a textbook example of a legally dimensionless quantity listed in the derived units table.",
+        "answer": "Both *Plane angle (radian)* and *Solid angle (steradian)* are formally classified as dimensionless derived units.",
+        "category": "conceptual",
+        "badgeTitle": "TABLE 1.2 LINK",
+        "badgeText": "Included in derived units since 1995."
+      },
+      {
+        "question": "What are the exact derived dimensions of kinetic energy ($\\frac{1}{2}mv^2$)?",
+        "answer": "The dimensions are *$[ML^2T^{-2}]$*, obtained by multiplying mass $[M]$ by the square of velocity $[LT^{-1}]^2$.",
+        "category": "conceptual",
+        "badgeTitle": "SHORT ANSWER 1.6 INSIGHT",
+        "badgeText": "Energy dimensionality."
+      },
+      {
+        "question": "Determine the dimensions of angular velocity based on its physical definition.",
+        "answer": "The dimensions are *$[T^{-1}]$*, because it is a ratio of a dimensionless angle to time $[T]$.",
+        "category": "conceptual",
+        "badgeTitle": "SHORT ANSWER 1.8 INSIGHT",
+        "badgeText": "Angular kinematics dimensionality."
+      },
+      {
+        "question": "What dimensions must the complex expression $\\sqrt{T \\times l / m}$ yield to prove homogeneity with speed $v$?",
+        "answer": "The expression must ultimately yield *$[LT^{-1}]$*, perfectly matching the fundamental dimensions of speed.",
+        "category": "conceptual",
+        "badgeTitle": "COMP Q 1.5 INSIGHT",
+        "badgeText": "Checking wave speed equation."
+      },
+      {
+        "question": "In Example 1.1, why is the final volume of $2.35277 \\times 10^{-2}\\text{ m}^3$ strictly restricted to exactly $2.4 \\times 10^{-2}\\text{ m}^3$?",
+        "answer": "Because the thickness factor (0.95 cm) contains the *minimum number of significant figures (two)*, which dictates the final accuracy of the entire multiplication.",
+        "category": "conceptual",
+        "badgeTitle": "CONCEPTUAL STEP",
+        "badgeText": "The chain is only as strong as its weakest link."
+      },
+      {
+        "question": "How is the mathematical homogeneity of the kinematic equation $v_f^2 - v_i^2 = 2aS$ proven dimensionally?",
+        "answer": "By strictly showing that both sides reduce to *$[L^2T^{-2}]$*, equating the square of velocity $[LT^{-1}]^2$ with acceleration × distance $[LT^{-2}][L]$.",
+        "category": "conceptual",
+        "badgeTitle": "NUM 1.6 INSIGHT",
+        "badgeText": "Kinematic consistency."
+      },
+      {
+        "question": "How many significant figures are genuinely present in the strict measurement 0.002953 m?",
+        "answer": "There are exactly *four* significant figures, as the zeros strictly to the left of the non-zero digits are primarily for decimal placement and are not significant.",
+        "category": "conceptual",
+        "badgeTitle": "SHORT ANSWER 1.7 INSIGHT",
+        "badgeText": "Leading zeros rule."
+      },
+      {
+        "question": "How many significant figures are actively counted in the measurement 7.50034 cm?",
+        "answer": "There are *six* significant figures, because any zero sitting between two significant figures is universally considered significant.",
+        "category": "conceptual",
+        "badgeTitle": "SHORT ANSWER 1.7 INSIGHT",
+        "badgeText": "Trapped zeros rule."
+      },
+      {
+        "question": "What is the ultimate conceptual benefit of translating physical quantities into their fundamental dimensions?",
+        "answer": "Dimensionality strictly allows physicists to *check the homogeneity (correctness) of complex physical equations*, and to successfully *derive possible formulas* for newly observed phenomena.",
+        "category": "conceptual",
+        "badgeTitle": "COMP Q 1.4 INSIGHT",
+        "badgeText": "The dual power of dimensional analysis."
       }
     ],
     "2": [
       {
-        "question": "What are rectangular components of a vector?",
-        "answer": "The components of a vector which are at *right angles* to each other are called *rectangular components*, representing the *effective value* of a vector in mutually perpendicular directions.",
+        "question": "What is a scalar product or dot product of two vectors?",
+        "answer": "The scalar product is the multiplication of two vectors that results in a *scalar quantity*.",
         "category": "most",
         "badgeTitle": "FORMULA",
-        "badgeText": "$A_{x} = A \\cos \\theta$ and $A_{y} = A \\sin \\theta$"
+        "badgeText": "$A.B = AB \\cos \\theta$."
       },
       {
-        "question": "How can the magnitude of a vector be determined from its rectangular components?",
-        "answer": "The magnitude of a vector can be determined from its rectangular components by using the *Pythagorean Theorem* on the *right-angled triangle* formed by the components.",
+        "question": "How is the scalar product mathematically defined?",
+        "answer": "It is defined as the *product of the magnitudes* of the two vectors and the *cosine of the angle* between them.",
         "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$A = \\sqrt{A_{x}^2 + A_{y}^2}$"
-      },
-      {
-        "question": "How is the direction of a vector determined from its rectangular components?",
-        "answer": "The direction of a vector, represented by the angle $\\theta$ it makes with the x‑axis, is found by taking the *inverse tangent* of the *ratio* of its y‑component to its x‑component.",
-        "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$\\theta = \\tan^{-1}(\\frac{A_{y}}{A_{x}})$"
-      },
-      {
-        "question": "Define the scalar or dot product of two vectors.",
-        "answer": "If the product of two vectors results in a *scalar quantity*, it is called a *scalar product*, defined as the product of their *magnitudes* and the *cosine* of the angle between them.",
-        "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$A.B = AB \\cos \\theta$"
+        "badgeTitle": "EQUATION",
+        "badgeText": "$A.B = AB \\cos \\theta$."
       },
       {
         "question": "What is the physical interpretation of the dot product of two vectors?",
-        "answer": "The dot product $A.B$ represents the *magnitude* of vector A multiplied by the *projection* of vector B on A, or the *effective component* of one vector in the direction of the other.",
+        "answer": "It is the *magnitude of one vector* multiplied by the *projection of the second vector* onto the first.",
         "category": "most",
-        "badgeTitle": "EXAMPLE",
-        "badgeText": "Work done is $F.d = Fd \\cos \\theta$"
+        "badgeTitle": "MATHEMATICAL FORM",
+        "badgeText": "$A.B = A(\\text{projection of B on A}) = AB \\cos \\theta$."
       },
       {
-        "question": "Prove that the scalar product is commutative.",
-        "answer": "The scalar product is *commutative* because the order of multiplication is irrelevant, meaning the product of the *magnitudes* and the *cosine* of the angle remains identical regardless of sequence.",
+        "question": "Give a physical example of a scalar product from mechanics.",
+        "answer": "*Work done* is the scalar product of *force* and the *displacement* moved in a direction making an angle with the line of action.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$W = F.d = Fd \\cos \\theta$."
+      },
+      {
+        "question": "Does the order of multiplication matter in a scalar product?",
+        "answer": "No, the order of multiplication is irrelevant, meaning the scalar product is *commutative*.",
+        "category": "most",
+        "badgeTitle": "EXPRESSION",
+        "badgeText": "$A.B = B.A$."
+      },
+      {
+        "question": "What is the result of the scalar product of two mutually perpendicular vectors?",
+        "answer": "The scalar product of two mutually perpendicular vectors is *zero*.",
         "category": "most",
         "badgeTitle": "PROOF",
-        "badgeText": "$A.B = AB \\cos \\theta$ and $B.A = BA \\cos \\theta$, hence $A.B = B.A$"
+        "badgeText": "$A.B = AB \\cos 90^\\circ = 0$."
       },
       {
-        "question": "What is the scalar product of two mutually perpendicular vectors?",
-        "answer": "The scalar product of two *mutually perpendicular vectors* is always *zero*, because the angle between them is $90^{\\circ}$ and the *cosine* of $90^{\\circ}$ is zero.",
+        "question": "What happens when you take the dot product of two parallel vectors?",
+        "answer": "The scalar product of two parallel vectors is *equal to the product of their magnitudes*.",
         "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$A.B = AB \\cos 90^{\\circ} = 0$"
-      },
-      {
-        "question": "How is the scalar product expressed in terms of rectangular components?",
-        "answer": "The scalar product of two vectors in terms of their *rectangular components* is the *sum* of the products of their respective x, y, and z components.",
-        "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$A.B = A_{x}B_{x} + A_{y}B_{y} + A_{z}B_{z}$"
-      },
-      {
-        "question": "Define the vector or cross product.",
-        "answer": "If the product of two vectors results in a *vector quantity*, it is called a *vector product*, defined by the product of their *magnitudes*, the *sine* of the angle, and a *normal unit vector*.",
-        "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$A \\times B = AB \\sin \\theta \\hat{n}$"
-      },
-      {
-        "question": "How is the direction of a cross product determined?",
-        "answer": "The direction of a cross product is determined by the *right hand rule*, where curling the fingers from the first vector to the second vector points the erect thumb in the direction of the product vector.",
-        "category": "most",
-        "badgeTitle": "DIRECTION",
-        "badgeText": "Perpendicular to the plane containing vectors A and B."
-      },
-      {
-        "question": "Why is the cross product non-commutative?",
-        "answer": "The cross product is *non‑commutative* because reversing the order of multiplication reverses the *direction* of the resulting vector according to the *right hand rule*, giving it an opposite sign.",
-        "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$A \\times B = - B \\times A$"
-      },
-      {
-        "question": "What is the geometric interpretation of the magnitude of a cross product?",
-        "answer": "The magnitude of the cross product of two vectors is equal to the *area of the parallelogram* formed with those two vectors acting as its *adjacent sides*.",
-        "category": "most",
-        "badgeTitle": "GEOMETRIC PROPERTY",
-        "badgeText": "Magnitude of $A \\times B$ = Area of parallelogram."
-      },
-      {
-        "question": "State the algebraic derivation of the first equation of motion.",
-        "answer": "The first equation of motion is derived from the basic definition of *uniform acceleration*, which is the *rate of change of velocity*, by rearranging the terms to solve for the *final velocity*.",
-        "category": "most",
-        "badgeTitle": "DERIVATION",
-        "badgeText": "$a = \\frac{v_f - v_i}{t}$ rearranging to $v_f = v_i + at$"
-      },
-      {
-        "question": "State the algebraic derivation of the second equation of motion.",
-        "answer": "The second equation of motion is derived by substituting the *average velocity* and the *first equation of motion* into the formula for *displacement*.",
-        "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$S = v_i t + \\frac{1}{2}at^2$"
-      },
-      {
-        "question": "State the algebraic derivation of the third equation of motion.",
-        "answer": "The third equation of motion is derived by substituting the expression for *time* from the first equation of motion into the formula for *displacement* using *average velocity*, eliminating the time variable.",
-        "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$2aS = v_f^2 - v_i^2$"
-      },
-      {
-        "question": "What is the sign convention for acceleration due to gravity in free fall motion?",
-        "answer": "Acceleration due to gravity ($g$) is taken as *positive* for a *falling body* where initial velocity is zero, and *negative* for a body *projected vertically upward* where initial velocity is not zero.",
-        "category": "most",
-        "badgeTitle": "VALUE",
-        "badgeText": "Experimental value is $9.8 \\text{ m s}^{-2}$ in SI units."
-      },
-      {
-        "question": "Define projectile motion.",
-        "answer": "*Projectile motion* is defined as a *two‑dimensional motion* experienced by an object thrown or projected, moving under the influence of *constant acceleration due to gravity* while ignoring air resistance.",
-        "category": "most",
-        "badgeTitle": "EXAMPLE",
-        "badgeText": "A football kicked off by a player or a missile fired from a launching pad."
-      },
-      {
-        "question": "Why does the horizontal component of a projectile's velocity remain constant?",
-        "answer": "The *horizontal component* of a projectile's velocity remains constant because we neglect *air resistance* and there is no other *horizontal force* acting on it to cause horizontal acceleration.",
-        "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$v_{fx} = v_i \\cos \\theta$"
-      },
-      {
-        "question": "How is the vertical component of a projectile's velocity determined at any instant?",
-        "answer": "The *vertical component* of a projectile's velocity at any instant is determined by treating its upward motion as *free fall motion* with a *downward acceleration* of gravity, using the first equation of motion.",
-        "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$v_{fy} = v_i \\sin \\theta - gt$"
-      },
-      {
-        "question": "How do you calculate the maximum height attained by a projectile?",
-        "answer": "The *maximum height* of a projectile is the *vertical distance* it covers before its *vertical velocity* becomes zero, derived using the third equation of motion with upward initial velocity and downward gravity.",
-        "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$h = \\frac{v_i^2 \\sin^2 \\theta}{2g}$"
-      },
-      {
-        "question": "What is the time of flight of a projectile?",
-        "answer": "The *time of flight* is the *total time* taken by a projectile to cover the distance from its place of projection to the place where it hits the ground, covering *zero net vertical displacement*.",
-        "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$t = \\frac{2v_i \\sin \\theta}{g}$"
-      },
-      {
-        "question": "Define the range of a projectile.",
-        "answer": "The *range* of a projectile is the *maximum distance* the body covers in the *horizontal direction*, calculated by multiplying the constant horizontal velocity by the total time of flight.",
-        "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$R = \\frac{v_i^2}{g} \\sin 2\\theta$"
-      },
-      {
-        "question": "Under what condition is the range of a projectile maximum?",
-        "answer": "The range of a projectile is maximum when the factor $\\sin 2\\theta$ equals $1$, which occurs when the *angle of projection* is exactly *$45^{\\circ}$*.",
-        "category": "most",
-        "badgeTitle": "ANGLE",
-        "badgeText": "$\\theta = 45^{\\circ}$ for maximum range."
-      },
-      {
-        "question": "Define linear momentum.",
-        "answer": "*Linear momentum* is defined as the *quantity of motion* possessed by a moving body, calculated mathematically as the *product* of the object's *mass* and its *velocity*.",
-        "category": "most",
-        "badgeTitle": "SI UNIT",
-        "badgeText": "$\\text{kg m s}^{-1}$ or $\\text{Ns}$"
-      },
-      {
-        "question": "State Newton's second law of motion in terms of momentum.",
-        "answer": "Newton's second law of motion in terms of momentum states that the *time rate of change of momentum* of a body is exactly equal to the *applied force* acting on it.",
-        "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$F = \\frac{mv_f - mv_i}{t}$"
-      },
-      {
-        "question": "What is impulse and when is it used?",
-        "answer": "*Impulse* is defined as the *product* of *average force* and the *time* during which it acts, used primarily for cases where a varying force acts for a very short time interval, like a bat hitting a ball.",
-        "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$\\text{Impulse} = F \\times t = mv_f - mv_i$"
-      },
-      {
-        "question": "State the Law of Conservation of Momentum.",
-        "answer": "The Law of Conservation of Momentum states that the *total linear momentum* of an *isolated system*—a system on which no external agency exerts any force—always remains *constant*.",
-        "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$m_1v_1 + m_2v_2 = m_1v'_1 + m_2v'_2$"
-      },
-      {
-        "question": "Differentiate between elastic and inelastic collisions.",
-        "answer": "A collision where *kinetic energy* is completely conserved is an *elastic collision*, whereas a collision in which a portion of kinetic energy is lost (transferred to heat/sound) is called an *inelastic collision*.",
-        "category": "most",
-        "badgeTitle": "KEY NOTE",
-        "badgeText": "Momentum and total energy are conserved in both types."
-      },
-      {
-        "question": "What is the relationship between relative velocities before and after an elastic collision in one dimension?",
-        "answer": "In a perfectly elastic one‑dimensional collision, the magnitude of the *relative velocity of approach* before collision is strictly equal to the magnitude of the *relative velocity of separation* after collision.",
-        "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$(v_1 - v_2) = -(v'_1 - v'_2)$"
-      },
-      {
-        "question": "What happens when a light body elastically collides with a massive stationary body?",
-        "answer": "When a *light body* collides elastically with a *massive body* at rest, the light body will *bounce back* with the same velocity in the opposite direction, while the massive body remains *stationary*.",
-        "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$v'_1 \\approx -v$ and $v'_2 \\approx 0$"
-      },
-      {
-        "question": "What occurs when a massive body elastically collides with a light stationary body?",
-        "answer": "When a *massive body* collides with a *light stationary body*, the massive body continues with practically no change in velocity, but the lighter body bounces forward with approximately *twice the incident velocity*.",
-        "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$v'_1 \\approx v_1$ and $v'_2 \\approx 2v_1$"
-      },
-      {
-        "question": "How does an inelastic collision in one dimension affect final velocity?",
-        "answer": "In an *inelastic collision* where bodies *stick together*, they move with a *common final velocity*, which is mathematically reduced by the mass ratio depending on the combination of both masses.",
-        "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$v_f = \\frac{m_1}{m_1 + m_2} v_{1i} + \\frac{m_2}{m_1 + m_2} v_{2i}$"
-      },
-      {
-        "question": "What is the result of the self scalar product of a vector?",
-        "answer": "The self product of a vector A is equal to the *square of its magnitude*, because the angle between identical vectors is $0^{\\circ}$.",
-        "category": "important",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$A.A = AA \\cos 0^{\\circ} = A^2$"
-      },
-      {
-        "question": "What is the scalar product of two parallel vectors?",
-        "answer": "The scalar product of two *parallel vectors* ($\\theta = 0^{\\circ}$) is exactly equal to the *product of their magnitudes*, as the cosine of zero is one.",
-        "category": "important",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$A.B = AB \\cos 0^{\\circ} = AB$"
+        "badgeTitle": "CALCULATION",
+        "badgeText": "$A.B = AB \\cos 0^\\circ = AB$."
       },
       {
         "question": "What is the scalar product of two antiparallel vectors?",
-        "answer": "The scalar product of two *antiparallel vectors* ($\\theta = 180^{\\circ}$) is equal to the *negative product of their magnitudes*.",
+        "answer": "For antiparallel vectors, the dot product is *equal to the negative product of their magnitudes*.",
+        "category": "most",
+        "badgeTitle": "EQUATION",
+        "badgeText": "$A.B = AB \\cos 180^\\circ = -AB$."
+      },
+      {
+        "question": "What is the result of the self-product of a vector?",
+        "answer": "The self product of a vector is *equal to the square of its magnitude*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$A.A = AA \\cos 0^\\circ = A^2$."
+      },
+      {
+        "question": "How is the scalar product expressed using rectangular components?",
+        "answer": "It is the *sum of the products of their corresponding x, y, and z components*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$A.B = A_x B_x + A_y B_y + A_z B_z$."
+      },
+      {
+        "question": "How can the angle between two vectors be determined using the dot product?",
+        "answer": "The angle can be found by dividing the *dot product of their rectangular components* by the *product of their magnitudes*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$\\cos \\theta = \\frac{A_x B_x + A_y B_y + A_z B_z}{AB}$."
+      },
+      {
+        "question": "What is a vector product or cross product?",
+        "answer": "If the product of two vectors results in a *vector quantity*, it is called a vector product.",
+        "category": "most",
+        "badgeTitle": "MATHEMATICAL DEFINITION",
+        "badgeText": "$A \\times B = AB \\sin \\theta \\hat{n}$."
+      },
+      {
+        "question": "What does the unit vector represent in the vector product equation?",
+        "answer": "The unit vector indicates the *direction of the product vector*, which is *perpendicular to the plane* containing the two original vectors.",
+        "category": "most",
+        "badgeTitle": "DETERMINATION",
+        "badgeText": "Its direction is determined by the right hand rule."
+      },
+      {
+        "question": "State the right-hand rule for finding the direction of a vector product.",
+        "answer": "Rotate the *first vector into the second* through the smaller angle and curl the fingers of the right hand in the direction of rotation; the *erect thumb points* in the direction of the product vector.",
+        "category": "most",
+        "badgeTitle": "SIGNIFICANCE",
+        "badgeText": "This explains why $A \\times B = -B \\times A$."
+      },
+      {
+        "question": "Is the vector product commutative?",
+        "answer": "No, the cross product is *non commutative* because the direction reverses when the order is changed.",
+        "category": "most",
+        "badgeTitle": "EXPRESSION",
+        "badgeText": "$A \\times B \\neq B \\times A$."
+      },
+      {
+        "question": "When does the cross product of two vectors yield its maximum magnitude?",
+        "answer": "The cross product has maximum magnitude when the two vectors are *perpendicular* to each other.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$A \\times B = AB \\sin 90^\\circ \\hat{n} = AB \\hat{n}$."
+      },
+      {
+        "question": "What is the vector product of two parallel or antiparallel vectors?",
+        "answer": "The cross product of parallel or antiparallel vectors is a *null vector*.",
+        "category": "most",
+        "badgeTitle": "EQUATION",
+        "badgeText": "$A \\times B = AB \\sin 0^\\circ \\hat{n} = 0$."
+      },
+      {
+        "question": "What is the geometric interpretation of the magnitude of a vector product?",
+        "answer": "The magnitude of the cross product is *equal to the area of the parallelogram* formed with the two vectors as adjacent sides.",
+        "category": "most",
+        "badgeTitle": "VISUAL REFERENCE",
+        "badgeText": "Fig. 2.4(d) illustrates this area."
+      },
+      {
+        "question": "Give an example of a vector product from rotational mechanics.",
+        "answer": "*Torque*, the turning effect of a force about an axis, is the vector product of the *position vector* and the *applied force*.",
+        "category": "most",
+        "badgeTitle": "EQUATION",
+        "badgeText": "$\\tau = r \\times F$."
+      },
+      {
+        "question": "Give an example of a vector product from electromagnetism.",
+        "answer": "The *force* on a particle of charge moving with velocity in a magnetic field is a vector product.",
+        "category": "most",
+        "badgeTitle": "EQUATION",
+        "badgeText": "$F = q(v \\times B)$."
+      },
+      {
+        "question": "What are the three fundamental kinematic variables used in equations of motion?",
+        "answer": "The three kinematic variables are *velocity*, *position*, and *time*.",
+        "category": "most",
+        "badgeTitle": "LIMITATION",
+        "badgeText": "These equations apply only to objects moving in a straight line with constant acceleration."
+      },
+      {
+        "question": "How is the first equation of motion derived analytically?",
+        "answer": "By defining *acceleration* as the rate of change of *velocity* and rearranging the formula to solve for the *final velocity*.",
+        "category": "most",
+        "badgeTitle": "FIRST EQUATION",
+        "badgeText": "$v_f = v_i + at$."
+      },
+      {
+        "question": "How is displacement calculated for a body moving with uniform acceleration?",
+        "answer": "By multiplying the *average velocity* (the sum of initial and final velocity divided by two) by the *time taken*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$S = \\frac{v_i + v_f}{2} \\times t$."
+      },
+      {
+        "question": "How is the second equation of motion derived analytically?",
+        "answer": "By substituting the *final velocity expression* from the first equation of motion into the *displacement equation*.",
+        "category": "most",
+        "badgeTitle": "SECOND EQUATION",
+        "badgeText": "$S = v_i t + \\frac{1}{2} at^2$."
+      },
+      {
+        "question": "How is the third equation of motion derived analytically?",
+        "answer": "By substituting the *value of time* from the first equation into the *average velocity displacement equation*.",
+        "category": "most",
+        "badgeTitle": "THIRD EQUATION",
+        "badgeText": "$2aS = v_f^2 - v_i^2$."
+      },
+      {
+        "question": "What is the average value of acceleration due to gravity on the Earth's surface?",
+        "answer": "The average value of acceleration due to gravity is *9.8 m s⁻²* acting in the *downward direction*.",
+        "category": "most",
+        "badgeTitle": "SIGN CONVENTION",
+        "badgeText": "It is taken positive for a falling body and negative for a body projected vertically upward."
+      },
+      {
+        "question": "What is a projectile?",
+        "answer": "Objects projected at some angles with the horizontal, moving under *constant acceleration due to gravity*, are called *projectiles*.",
+        "category": "most",
+        "badgeTitle": "EXAMPLES",
+        "badgeText": "A kicked football, a thrown cricket ball, or a missile fired from a launching pad."
+      },
+      {
+        "question": "Why does the horizontal component of a projectile's velocity remain unchanged?",
+        "answer": "Because *air resistance is neglected* and there is *no horizontal force or acceleration* acting on the object during its flight.",
+        "category": "most",
+        "badgeTitle": "EQUATION",
+        "badgeText": "$v_{fx} = v_i \\cos \\theta$."
+      },
+      {
+        "question": "How is the instantaneous vertical component of a projectile's velocity calculated?",
+        "answer": "By treating the upward motion as *free fall* and applying the *first equation of motion* with downward gravitational acceleration.",
+        "category": "most",
+        "badgeTitle": "EQUATION",
+        "badgeText": "$v_{fy} = v_i \\sin \\theta - gt$."
+      },
+      {
+        "question": "How do you find the overall magnitude of a projectile's velocity at any given instant?",
+        "answer": "By taking the *square root* of the sum of the squares of its *instantaneous horizontal and vertical velocity components*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$v = \\sqrt{v_{fx}^2 + v_{fy}^2}$."
+      },
+      {
+        "question": "How is the maximum height of a projectile determined theoretically?",
+        "answer": "By using the *third equation of motion* and setting the *final vertical velocity to zero* at the highest point of the trajectory.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$h = \\frac{v_i^2 \\sin^2 \\theta}{2g}$."
+      },
+      {
+        "question": "Define the Time of Flight for a projectile.",
+        "answer": "It is the *time taken* by a body to cover the distance from the place of its projection to the place where it hits the ground.",
+        "category": "most",
+        "badgeTitle": "DERIVATION CONDITION",
+        "badgeText": "It is obtained by taking vertical displacement as zero since the body returns to the same level."
+      },
+      {
+        "question": "What is the mathematical formula for the Time of Flight of a projectile?",
+        "answer": "It is derived from the *second equation of motion* by setting the *total vertical distance covered to zero*.",
+        "category": "most",
+        "badgeTitle": "EQUATION",
+        "badgeText": "$t = \\frac{2v_i \\sin \\theta}{g}$."
+      },
+      {
+        "question": "Define the Range of a projectile.",
+        "answer": "The *maximum distance* which a projectile covers in the *horizontal direction*.",
+        "category": "most",
+        "badgeTitle": "CALCULATION METHOD",
+        "badgeText": "Found by multiplying the constant horizontal component of velocity with the total time of flight."
+      },
+      {
+        "question": "What is the formula for the Range of a projectile?",
+        "answer": "The range depends upon the *square of the velocity of projection* and the *sine of twice the angle of projection*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$R = \\frac{v_i^2}{g} \\sin 2\\theta$."
+      },
+      {
+        "question": "Under what condition is the range of a projectile maximum?",
+        "answer": "The horizontal range reaches its maximum limit when the *sine factor equals one*, which occurs at an *angle of 45°*.",
+        "category": "most",
+        "badgeTitle": "DERIVATION",
+        "badgeText": "$2\\theta = 90^\\circ \\implies \\theta = 45^\\circ$."
+      },
+      {
+        "question": "How does air resistance physically alter the trajectory of a projectile?",
+        "answer": "It *slows down the forward motion*, *reduces the range*, and causes the trajectory to become *skewed with a steeper descent than ascent*.",
+        "category": "most",
+        "badgeTitle": "MECHANISM",
+        "badgeText": "The air resistance decreases as the object slows down, causing it to retard and accelerate non-uniformly."
+      },
+      {
+        "question": "Define linear momentum.",
+        "answer": "Linear momentum is the *quantity of motion* of a body, defined mathematically as the *product of its mass and velocity*.",
+        "category": "most",
+        "badgeTitle": "FORMULA & SI UNIT",
+        "badgeText": "$p = mv$, measured in kg m s⁻¹ or N s."
+      },
+      {
+        "question": "How can Newton's second law be stated in terms of momentum?",
+        "answer": "The *time rate of change of momentum* of a body is strictly equal to the *applied force*.",
+        "category": "most",
+        "badgeTitle": "EQUATION",
+        "badgeText": "$F = \\frac{mv_f - mv_i}{t}$."
+      },
+      {
+        "question": "What is Impulse?",
+        "answer": "It is the *product of the average force* and the *time for which it acts*, especially useful when dealing with forces that vary over very short intervals.",
+        "category": "most",
+        "badgeTitle": "RELATIONSHIP",
+        "badgeText": "Impulse is equal to the change in momentum."
+      },
+      {
+        "question": "State the Law of Conservation of Momentum.",
+        "answer": "The *total linear momentum* of an *isolated system* remains strictly constant.",
+        "category": "most",
+        "badgeTitle": "VECTOR NATURE",
+        "badgeText": "Momentum is a vector quantity, so direction must be accounted for when applying this law."
+      },
+      {
+        "question": "What constitutes an isolated system in physics?",
+        "answer": "It is a *system on which no external agency exerts any force*.",
+        "category": "most",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "Molecules of a gas enclosed in a glass vessel at a constant temperature."
+      },
+      {
+        "question": "What is the term for the effective value of a vector in a specified direction?",
+        "answer": "A *component* of a vector is its *effective value in a given direction*, often resolved into mutually perpendicular axes.",
+        "category": "important",
+        "badgeTitle": "RECTANGULAR COMPONENTS",
+        "badgeText": "Formed along the x-axis and y-axis."
+      },
+      {
+        "question": "How do you evaluate the scalar product of a vector with itself?",
+        "answer": "The *self product* of a vector is always equal to the *square of its magnitude*.",
+        "category": "important",
+        "badgeTitle": "CALCULATION",
+        "badgeText": "$A.A = AA \\cos 0^\\circ = A^2$."
+      },
+      {
+        "question": "Who scientifically observed that all bodies fall freely in a vacuum with the exact same acceleration?",
+        "answer": "*Galileo* observed that all bodies fall freely under the *acceleration due to gravity* regardless of their masses.",
+        "category": "important",
+        "badgeTitle": "KEY FACT",
+        "badgeText": "Different bodies dropped from the same height strike the ground simultaneously in a vacuum."
+      },
+      {
+        "question": "What strict sign convention is used for gravitational acceleration during vertical motion?",
+        "answer": "The acceleration $g$ is taken as *positive* for a *falling body* (starting from zero velocity) and *negative* for a *body projected vertically upward*.",
+        "category": "important",
+        "badgeTitle": "SIGNIFICANCE",
+        "badgeText": "Dictates the algebraic signs in the equations of motion."
+      },
+      {
+        "question": "What fundamental law explains why the horizontal velocity of a projectile remains unchanged?",
+        "answer": "According to *Newton's first law of motion*, there will be *no horizontal acceleration* unless a horizontally directed force acts on the body.",
+        "category": "important",
+        "badgeTitle": "CONDITION",
+        "badgeText": "Air friction is completely ignored."
+      },
+      {
+        "question": "Why is projectile motion definitively classified as a two-dimensional motion?",
+        "answer": "Because the object moves simultaneously in both the *horizontal and vertical planes* under *constant acceleration purely due to gravity*.",
+        "category": "important",
+        "badgeTitle": "COMPONENTS",
+        "badgeText": "Resolved into independent $x$ and $y$ vectors."
+      },
+      {
+        "question": "How do you mathematically determine the angle of the resultant velocity of a projectile at any instant?",
+        "answer": "The angle $\\phi$ is found using the *inverse tangent* of the ratio of the *instantaneous vertical velocity* to the *horizontal velocity*.",
         "category": "important",
         "badgeTitle": "FORMULA",
-        "badgeText": "$A.B = AB \\cos 180^{\\circ} = -AB$"
+        "badgeText": "$\\phi = \\tan^{-1}\\left(\\frac{v_{fy}}{v_{fx}}\\right)$."
       },
       {
-        "question": "How can the scalar product be used to mathematically find the angle between two vectors?",
-        "answer": "The angle between two vectors can be found by taking the *inverse cosine* of the *ratio* of their dot product to the product of their respective magnitudes.",
+        "question": "How does the presence of real-world air resistance physically alter a projectile's maximum height?",
+        "answer": "The air resistance actively *decreases the upward velocity component*, causing the maximum height attained by the projectile to strictly *decrease*.",
         "category": "important",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$\\cos \\theta = \\frac{A_xB_x + A_yB_y + A_zB_z}{AB}$"
+        "badgeTitle": "COMPARISON",
+        "badgeText": "Actual trajectory height < Ideal calculated height."
       },
       {
-        "question": "Why is the cross product of two parallel vectors a null vector?",
-        "answer": "The cross product of two *parallel* or *antiparallel* vectors is a null vector because the *sine* of the angle between them ($0^{\\circ}$ or $180^{\\circ}$) is zero.",
-        "category": "important",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$A \\times B = AB \\sin 0^{\\circ} \\hat{n} = 0$"
-      },
-      {
-        "question": "What is the result of the self vector product of a single vector?",
-        "answer": "The *self cross product* of any vector is always a *null vector* because a vector is naturally parallel to itself, creating an angle of $0^{\\circ}$.",
-        "category": "important",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$A \\times A = 0$"
-      },
-      {
-        "question": "Under what exact condition does the cross product of two vectors yield maximum magnitude?",
-        "answer": "The cross product has *maximum magnitude* when the two vectors are *mutually perpendicular* ($\\theta = 90^{\\circ}$), because the sine of $90^{\\circ}$ is exactly $1$.",
-        "category": "important",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$A \\times B = AB \\sin 90^{\\circ} \\hat{n} = AB\\hat{n}$"
-      },
-      {
-        "question": "Give a practical physical example of a vector product involving a force and a position vector.",
-        "answer": "The *torque* ($\\tau$) or the turning effect produced by a force on a rigid body is calculated as the *vector product* of the *position vector* ($r$) and the *applied force* ($F$).",
-        "category": "important",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$\\tau = r \\times F$"
-      },
-      {
-        "question": "How is the magnetic force on a moving charge calculated as a vector product?",
-        "answer": "The *magnetic force* ($F$) acting on a particle of charge $q$ moving with velocity $v$ inside a magnetic field $B$ is determined by the *vector product* of its *velocity* and the *magnetic field strength*.",
-        "category": "important",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$F = q(v \\times B)$"
-      },
-      {
-        "question": "What are the strict limiting conditions under which the standard equations of motion can be applied?",
-        "answer": "The standard equations of motion are strictly restricted to objects moving in a *straight line* while maintaining a *constant acceleration*; they are invalid for variable acceleration curves.",
-        "category": "important",
-        "badgeTitle": "KEY LIMITATION",
-        "badgeText": "If direction does not change, vector quantities can be manipulated as scalars."
-      },
-      {
-        "question": "What are the three kinematic variable pairings addressed by the three equations of motion?",
-        "answer": "The equations mathematically pair kinematic variables into *velocity‑time* (1st equation), *position‑time* (2nd equation), and *velocity‑position* (3rd equation) relationships.",
-        "category": "important",
-        "badgeTitle": "CORE VARIABLES",
-        "badgeText": "Velocity ($v$), position ($s$), and time ($t$)."
-      },
-      {
-        "question": "What did Galileo experimentally conclude about the free fall motion of bodies?",
-        "answer": "Galileo concluded that all material bodies fall freely in a vacuum under the exact same *uniform acceleration due to gravity*, meaning *mass does not affect falling velocity*.",
+        "question": "What happens to the time of flight if a projectile is launched at an angle shallower than 45°?",
+        "answer": "For an angle less than 45°, both the *vertical height reached* and the *horizontal range* will be less, thereby reducing the total *flight time*.",
         "category": "important",
         "badgeTitle": "OBSERVATION",
-        "badgeText": "Objects dropped from the same height strike the ground simultaneously."
+        "badgeText": "The trajectory appears noticeably flatter."
       },
       {
-        "question": "How are the standard equations of uniformly accelerated motion modified for a freely falling body?",
-        "answer": "For a freely falling body, the linear acceleration '$a$' is substituted with the *acceleration due to gravity* '$g$', and linear distance '$S$' is generally replaced by *vertical height* '$h$'.",
+        "question": "How does a steeper launch angle (greater than 45°) specifically affect the projectile's trajectory limits?",
+        "answer": "When the angle is larger than 45°, the *height attained* will be more, but the *horizontal range* will again be *less than the maximum potential*.",
         "category": "important",
-        "badgeTitle": "EXAMPLE MODIFICATION",
-        "badgeText": "$v_f = v_i + gt$"
+        "badgeTitle": "TRADE-OFF",
+        "badgeText": "Distance is sacrificed for altitude."
       },
       {
-        "question": "How do you precisely calculate the horizontal distance covered by a horizontally launched projectile?",
-        "answer": "The horizontal distance '$x$' is calculated by taking the product of the *constant horizontal velocity component* and the *total time in flight*.",
+        "question": "Why is a projectile's actual trajectory not a geometrically perfect parabola?",
+        "answer": "*Air resistance* continuously *slows the forward motion*, causing the trajectory to be *skewed*, resulting in a *steeper descent than its initial ascent*.",
         "category": "important",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$x = v_{x} \\times t$"
+        "badgeTitle": "VISUAL PATH",
+        "badgeText": "The actual impact point falls short of the ideal parabolic path."
       },
       {
-        "question": "How is the vertical drop calculated for a projectile that is launched perfectly horizontally?",
-        "answer": "Because the *initial vertical velocity* is zero, the vertical distance '$y$' is calculated using the *second equation of motion* for free fall, influenced solely by gravity and elapsed time.",
+        "question": "Why does a projectile decelerate non-uniformly as it falls back down in the presence of air drag?",
+        "answer": "As the object *slows down from its peak speed*, the *air resistance* it experiences also *proportionally decreases*, leading to varying deceleration.",
         "category": "important",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$y = \\frac{1}{2}gt^2$"
+        "badgeTitle": "DYNAMIC FORCE",
+        "badgeText": "Drag is entirely velocity-dependent."
       },
       {
-        "question": "How is the magnitude of a projectile's resultant velocity determined at any given instant during its flight?",
-        "answer": "The magnitude of the *resultant velocity* is calculated using the *Pythagorean theorem*, strictly combining the instantaneous *horizontal* and *vertical velocity components*.",
+        "question": "What two distinct physical factors make a moving object exponentially harder to stop?",
+        "answer": "An object requires more stopping force if it is travelling *faster (higher velocity)* or if it is inherently *more massive (higher mass)*.",
         "category": "important",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$v = \\sqrt{v_{fx}^2 + v_{fy}^2}$"
+        "badgeTitle": "CONCEPT",
+        "badgeText": "This is the qualitative basis of linear momentum."
       },
       {
-        "question": "How is the exact direction of a projectile's resultant velocity calculated at any instant?",
-        "answer": "The angle $\\phi$, representing the direction of the resultant velocity relative to the horizontal, is found by calculating the *inverse tangent* of the *vertical velocity* divided by the *horizontal velocity*.",
+        "question": "Why is Newton's second law written in terms of momentum ($F = \\Delta p / t$) considered superior to $F=ma$?",
+        "answer": "It is *more general* because it mathematically accounts for dynamic situations where a body *accelerates while its mass also changes simultaneously*.",
         "category": "important",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$\\tan \\phi = \\frac{v_{fy}}{v_{fx}}$"
+        "badgeTitle": "APPLICATION",
+        "badgeText": "Essential for variable-mass systems."
       },
       {
-        "question": "Qualitatively describe how air resistance negatively impacts the maximum height of a projectile.",
-        "answer": "In the presence of air resistance, the *upward velocity* of the projectile decreases *more rapidly* than in a vacuum, which directly results in a *significantly reduced maximum height*.",
-        "category": "important",
-        "badgeTitle": "KINEMATIC EFFECT",
-        "badgeText": "Upward retardation increases."
-      },
-      {
-        "question": "What is the precise physical effect of air resistance on the horizontal range of a standard projectile?",
-        "answer": "Air resistance continuously *slows down* the projectile's forward motion, reducing its *horizontal velocity component*, which directly results in a *decrease* in the total horizontal range.",
-        "category": "important",
-        "badgeTitle": "TRAJECTORY CONSEQUENCE",
-        "badgeText": "It falls short of its ideal parabolic target."
-      },
-      {
-        "question": "Why does air resistance cause the actual trajectory of a high-speed projectile to become skewed rather than parabolic?",
-        "answer": "Because air friction is *not constant*; as the object slows down, the drag decreases, causing the object to retard more slowly and fall differently, creating a *skewed trajectory* characterized by a *steeper descent* than ascent.",
-        "category": "important",
-        "badgeTitle": "VISUAL INDICATOR",
-        "badgeText": "The actual path falls inside the ideal path envelope."
-      },
-      {
-        "question": "In terms of momentum, why is it substantially more difficult to stop a massive object compared to a light object moving at the identical velocity?",
-        "answer": "The massive object possesses a mathematically *greater quantity of motion*, scientifically termed *linear momentum*, allowing it to exert a *far larger physical force* on any obstacle attempting to arrest its motion.",
+        "question": "How does a baseball bat striking a ball necessitate the concept of \"impulse\"?",
+        "answer": "The actual force exerted by the bat *fluctuates wildly* from instant to instant over a *very short time*, making it mathematically practical to use the *average force multiplied by time*.",
         "category": "important",
         "badgeTitle": "FORMULA",
-        "badgeText": "$p = mv$"
+        "badgeText": "Impulse = $F \\times t = m v_f - m v_i$."
       },
       {
-        "question": "Why is Newton's second law expressed in terms of momentum considered mathematically more general than $F = ma$?",
-        "answer": "The *momentum formulation* is more general because it inherently accounts for dynamic systems where the *mass* of the accelerating body is *actively changing* over time, such as a rocket expelling burnt fuel.",
+        "question": "What critical biomechanical role does hair play in protecting the human skull during an impact?",
+        "answer": "Hair biologically acts like a *crumple zone*, *extending the time of collision* and drastically *reducing the average impact force* required to fracture the cranium.",
         "category": "important",
-        "badgeTitle": "GENERAL EQUATION",
-        "badgeText": "$F = \\frac{mv_f - mv_i}{t}$"
+        "badgeTitle": "DATA EVIDENCE",
+        "badgeText": "A force of 50 N is needed to fracture a skull with hair/skin, compared to only 5 N for a naked skull."
       },
       {
-        "question": "What are the strict physical requirements for a system to be defined as an \"isolated system\"?",
-        "answer": "An *isolated system* strictly requires a group of interacting bodies where *absolutely no external agency* or outside influence exerts any net physical force on the components.",
+        "question": "How do automotive seatbelts physically reduce the statistical chance of fatal injury during a crash?",
+        "answer": "Seatbelts physically *prevent passengers from moving forward* due to inertia, forcibly *changing the forces of motion* and *increasing the stopping time*.",
         "category": "important",
-        "badgeTitle": "EXAMPLE",
-        "badgeText": "Gas molecules enclosed in a rigid glass vessel at a constant temperature."
+        "badgeTitle": "SAFETY PRINCIPLE",
+        "badgeText": "Reduces lethal impact forces by managing the rate of momentum change."
       },
       {
-        "question": "Mathematically, what is the total change in momentum of an isolated two-ball system immediately following a collision?",
-        "answer": "Due to Newton's third law, the *momentum gained* by the first ball is perfectly offset by the *momentum lost* by the second ball, ensuring the *total change in momentum* of the entire system remains exactly *zero*.",
+        "question": "What is the exact physics-based purpose of the thick padding inside a motorcycle safety helmet?",
+        "answer": "The dense padding is engineered to *extend the time of any collision*, which inversely *decreases the instantaneous impact force* to prevent serious head trauma.",
         "category": "important",
-        "badgeTitle": "MATHEMATICAL PROOF",
-        "badgeText": "$(m_1v'_1 - m_1v_1) + (m_2v'_2 - m_2v_2) = 0$"
+        "badgeTitle": "PHYSICS APPLICATION",
+        "badgeText": "Directly utilizes the Impulse-Momentum theorem."
       },
       {
-        "question": "What physical mechanisms are responsible for the permanent loss of kinetic energy in macroscopic inelastic collisions?",
-        "answer": "Kinetic energy is permanently lost primarily due to *internal friction* as molecules shift past one another during structural distortion, converting the mechanical energy into unrecoverable *heat* and *sound* energies.",
+        "question": "In an isolated system of two colliding gas molecules, what are the internal force dynamics?",
+        "answer": "They exert an *action force* and an *equal but opposite reaction force* on each other, ensuring the *net internal force mathematically equals zero*.",
         "category": "important",
-        "badgeTitle": "GENERAL RULE",
-        "badgeText": "Most real-world macroscopic collisions are inelastic."
+        "badgeTitle": "RESULT",
+        "badgeText": "The total change in momentum of the isolated system is exactly zero."
       },
       {
-        "question": "State the absolute theoretical condition under which a physical collision is considered perfectly elastic.",
-        "answer": "A collision is classified as *perfectly elastic* strictly in the ideal, frictionless case where *absolutely no kinetic energy* is lost or transformed during the physical interaction between the bodies.",
+        "question": "What strictly defines an inelastic collision in classical mechanics?",
+        "answer": "A collision in which the *total macroscopic kinetic energy* of the system is *not conserved* is definitively called an *inelastic collision*.",
         "category": "important",
-        "badgeTitle": "CLOSEST PHYSICAL APPROXIMATION",
-        "badgeText": "A hard ball dropping onto a solid marble floor."
+        "badgeTitle": "ENERGY TRANSFER",
+        "badgeText": "Energy is lost to the environment via friction, heat, and sound."
       },
       {
-        "question": "What is the fundamental, invariable difference in conservation laws when comparing elastic and inelastic collisions?",
-        "answer": "While both *momentum* and *total system energy* are universally conserved in all collisions, *kinetic energy* specifically remains conserved only in a *perfectly elastic collision*.",
+        "question": "Where exactly does the \"lost\" kinetic energy go when two tennis balls collide inelastically?",
+        "answer": "A measurable portion of kinetic energy is lost due to *internal friction* as molecules violently distort, and is partly transformed into *irreversible heat and sound energies*.",
         "category": "important",
-        "badgeTitle": "CRUCIAL DISTINCTION",
-        "badgeText": "Inelastic collisions never conserve kinetic energy."
+        "badgeTitle": "DEFORMATION",
+        "badgeText": "The structural integrity of the balls distorts momentarily."
       },
       {
-        "question": "What is the precise kinematic outcome when two bodies of perfectly equal mass undergo a perfectly elastic, one-dimensional collision?",
-        "answer": "When two bodies of *identically equal mass* collide elastically in one dimension, they mathematically *interchange their velocities* entirely after the moment of impact.",
+        "question": "Are momentum and total energy ever violated in an inelastic collision?",
+        "answer": "No, the *total momentum* and the *absolute total energy* are *universally conserved* in all types of collisions, even if the kinetic energy specifically is not.",
+        "category": "important",
+        "badgeTitle": "DISTINCTION",
+        "badgeText": "Only K.E. is strictly conserved in perfectly elastic collisions."
+      },
+      {
+        "question": "What does the mathematical equation $(v_1 - v_2) = -(v'_1 - v'_2)$ fundamentally signify in a 1D elastic collision?",
+        "answer": "It signifies that the *magnitude of the relative velocity of approach* before the collision is exactly equal to the *relative velocity of separation* after the collision.",
+        "category": "important",
+        "badgeTitle": "REVERSAL",
+        "badgeText": "The relative velocities maintain magnitude but completely reverse direction."
+      },
+      {
+        "question": "In a perfect 1D elastic collision, what dictates the outcome when two bodies of exactly equal mass collide?",
+        "answer": "If the masses are identical ($m_1 = m_2$), the two bodies *perfectly exchange their individual velocities* instantly after the impact.",
         "category": "important",
         "badgeTitle": "MATHEMATICAL RESULT",
-        "badgeText": "$v'_1 = v_2$ and $v'_2 = v_1$"
+        "badgeText": "$v'_1 = v_2$ and $v'_2 = v_1$."
       },
       {
-        "question": "Describe the exact outcome when a moving billiard ball collides elastically with an identical, stationary billiard ball.",
-        "answer": "The originally moving ball comes to a *complete, immediate stop*, while the previously stationary ball takes off forward with the *exact same velocity* the first ball initially possessed.",
+        "question": "What physically occurs when a moving billiard ball elastically strikes an identical stationary ball dead-on?",
+        "answer": "The initial moving ball *completely stops dead*, while the previously stationary ball physically *takes off with the exact same initial velocity* of the first ball.",
         "category": "important",
-        "badgeTitle": "CONDITION",
-        "badgeText": "$m_1 = m_2$, with target velocity $v_2 = 0$."
+        "badgeTitle": "CASE STUDY",
+        "badgeText": "$m_1 = m_2$ and $v_2 = 0$."
       },
       {
-        "question": "How does the physics of a light body colliding with a massive stationary body apply to a squash player hitting a wall?",
-        "answer": "The squash ball (light body) strikes the *massive, immovable wall* (massive stationary body) and instantly *bounces back* with nearly the exact same velocity in reverse, while the wall's velocity remains zero.",
+        "question": "Describe the kinematic outcome when a very light body elastically collides head-on with a massive stationary body.",
+        "answer": "The light body will *violently bounce back* with its exact initial velocity reversed, while the *massive target body remains completely stationary*.",
         "category": "important",
-        "badgeTitle": "FORMULAIC APPROXIMATION",
-        "badgeText": "$v'_1 \\approx -v$, $v'_2 = 0$"
+        "badgeTitle": "REAL-WORLD EXAMPLE",
+        "badgeText": "A lightweight squash ball hitting a solid concrete wall."
       },
       {
-        "question": "From a physics standpoint, why is a successful karate chop breaking a pile of bricks categorized as an inelastic collision?",
-        "answer": "It is highly *inelastic* because the striking hand does *not rebound*; the kinetic energy is deliberately *absorbed by the bricks*, transforming into *heat*, *sound*, and the deformation force required to permanently fracture the material.",
+        "question": "What is the counter-intuitive result when a massive body elastically collides with a tiny stationary body?",
+        "answer": "The massive body continues forward with *practically no change in its velocity*, while the tiny body is *knocked violently forward* with exactly *twice the velocity* of the incident massive body.",
         "category": "important",
-        "badgeTitle": "OUTCOME",
-        "badgeText": "No elastic restitution occurs."
+        "badgeTitle": "EQUATION APPROX",
+        "badgeText": "$v'_1 \\approx v_1$ and $v'_2 \\approx 2v_1$."
       },
       {
-        "question": "How is kinetic energy fundamentally redistributed during an inelastic automobile crash?",
-        "answer": "During a severe crash, the vehicles intentionally *crumple* and *deform*, absorbing the destructive impact energy by converting the vast majority of the original *kinetic energy* into *heat*, *loud sound*, and permanent *structural damage*.",
+        "question": "How do physicists define a perfectly inelastic collision?",
+        "answer": "It is an extreme collision where the colliding objects *physically stick together* to form a *single combined mass* moving with a *shared common velocity* after impact.",
         "category": "important",
-        "badgeTitle": "SAFETY FEATURE",
-        "badgeText": "This prevents elastic bouncing, reducing passenger whiplash."
+        "badgeTitle": "COMBINED MASS VARIABLE",
+        "badgeText": "$M = m_1 + m_2$."
       },
       {
-        "question": "Why does a collision between a standard cricket bat and a ball invariably demonstrate inelastic behavior?",
-        "answer": "The impact is *inelastic* because the ball physically *compresses* and *deforms* violently upon contact, and the rigid bat structure absorbs shock, permanently converting a fraction of the kinetic energy into dissipated *heat* and *sound*.",
+        "question": "What is the specific formula for the common velocity of two bodies after a perfectly inelastic collision in one dimension (assuming the target is at rest)?",
+        "answer": "The final common velocity $v_f$ is determined by the ratio of the *projectile's mass to the total combined mass*, multiplied by the *original initial velocity*.",
         "category": "important",
-        "badgeTitle": "CONCLUSION",
-        "badgeText": "Perfect kinetic conservation is impossible in this scenario."
-      },
-      {
-        "question": "Why is the specific order of vector multiplication completely irrelevant when calculating a scalar product?",
-        "answer": "The order is irrelevant because the scalar product strictly obeys the *commutative property*, meaning the mathematical product of the *magnitudes* and the *cosine* of the angle remains identical regardless of the sequence.",
-        "category": "conceptual",
-        "badgeTitle": "PROOF",
-        "badgeText": "$A.B = B.A$"
-      },
-      {
-        "question": "How is the physical concept of mechanical work accurately represented using vector multiplication?",
-        "answer": "Work is accurately calculated as the *dot product* of the *force* and *displacement* vectors, representing the *effective component* of the force acting strictly in the direction of motion.",
-        "category": "conceptual",
         "badgeTitle": "FORMULA",
-        "badgeText": "$W = F.d = Fd \\cos \\theta$"
+        "badgeText": "$v_f = \\frac{m_1}{m_1 + m_2} v_{1i}$."
       },
       {
-        "question": "What specific kinematic pairing is inherently described by the third equation of motion?",
-        "answer": "The third equation of motion is unique because it strictly pairs the kinematic variables of *velocity* and *position* (displacement), purposefully completely *eliminating the time variable* from the mathematical relationship.",
+        "question": "How is a martial artist's karate chop breaking bricks a textbook example of an inelastic collision?",
+        "answer": "The striking hand *does not bounce back*; instead, vast kinetic energy is *permanently absorbed by the bricks*, turning into heat, sound, and the structural force needed to shatter them.",
+        "category": "important",
+        "badgeTitle": "ENERGY LOSS",
+        "badgeText": "Kinetic energy is entirely spent on catastrophic material deformation."
+      },
+      {
+        "question": "Why is a high-speed car crash engineered to be highly inelastic?",
+        "answer": "Modern vehicles are designed to *violently absorb the impact energy* to *crumple and deform*, which stops the chassis from bouncing back and converts lethal kinetic energy into harmless heat and sound.",
+        "category": "important",
+        "badgeTitle": "SAFETY MECHANISM",
+        "badgeText": "This intentional energy absorption is critical for passenger survival."
+      },
+      {
+        "question": "Why is a wooden baseball bat hitting a leather ball never perfectly elastic in reality?",
+        "answer": "Because the ball *severely compresses and deforms* upon impact, and the supposedly rigid bat structurally *absorbs some energy*, leading to a massive, unrecoverable loss of kinetic energy.",
+        "category": "important",
+        "badgeTitle": "RESULT",
+        "badgeText": "The overall collision strongly exhibits inelastic macroscopic behavior."
+      },
+      {
+        "question": "What is the formal definition of the rate of change of momentum?",
+        "answer": "The *rate of change of momentum* with respect to time is strictly defined as the *net applied force* acting on the body.",
+        "category": "important",
+        "badgeTitle": "NEWTON'S SECOND LAW FORMULATION",
+        "badgeText": "$F = \\frac{\\Delta p}{t}$."
+      },
+      {
+        "question": "If the scalar dot product of two vectors yields its maximum mathematical value, what is their exact geometric relationship?",
+        "answer": "The vectors must be *perfectly parallel* to each other, meaning the geometric angle between them is exactly *0°*.",
+        "category": "important",
+        "badgeTitle": "TRIGONOMETRIC REASON",
+        "badgeText": "$\\cos 0^\\circ = 1$."
+      },
+      {
+        "question": "At what specific launch angle does any projectile physically gain its maximum possible vertical height?",
+        "answer": "A projectile achieves its absolute maximum height only when launched *perfectly vertically* at an angle of exactly *90°*.",
+        "category": "important",
+        "badgeTitle": "TRIGONOMETRIC REASON",
+        "badgeText": "$\\sin 90^\\circ = 1$."
+      },
+      {
+        "question": "For which mathematical pair of launch angles will the horizontal range of a projectile be exactly identical?",
+        "answer": "The horizontal range is mathematically identical for any two angles that are exactly *complementary* to each other (i.e., they sum to 90°).",
+        "category": "important",
+        "badgeTitle": "MATHEMATICAL CONCEPT",
+        "badgeText": "Example: $\\theta = 30^\\circ$ and $\\theta' = 90^\\circ - 30^\\circ = 60^\\circ$ yield the same range."
+      },
+      {
+        "question": "What is the true acceleration of a projectile at the absolute maximum peak of its parabolic trajectory?",
+        "answer": "The acceleration at the absolute peak remains exactly *g*, directed *strictly downward*, because gravitational force acts constantly throughout the entire flight.",
+        "category": "important",
+        "badgeTitle": "COMMON MISCONCEPTION",
+        "badgeText": "Vertical velocity is zero, but vertical acceleration is never zero."
+      },
+      {
+        "question": "Why doesn't a person falling onto a soft heap of sand hurt as much as falling onto a rigid concrete floor?",
+        "answer": "The shifting sand *massively increases the time of impact*, which mathematically *reduces the peak average force* exerted on the person's body to achieve the required change in momentum.",
+        "category": "important",
+        "badgeTitle": "PHYSICAL CONCEPT",
+        "badgeText": "Direct real-world application of the Impulse-Momentum theorem."
+      },
+      {
+        "question": "Why does a stationary hunter always miss the exact target if they aim their rifle directly at a bird in a tree?",
+        "answer": "Because the instant the bullet leaves the muzzle, *gravity begins pulling it downward*, forcing it to follow a *parabolic trajectory* and ultimately *strike below the visually aimed spot*.",
+        "category": "important",
+        "badgeTitle": "BALLISTICS CONCEPT",
+        "badgeText": "A fired bullet acts perfectly as a projectile under gravity."
+      },
+      {
+        "question": "What are the designated SI units for expressing Impulse?",
+        "answer": "The official SI unit of impulse is the *Newton second*, which is *dimensionally equivalent* to the unit of momentum.",
+        "category": "important",
+        "badgeTitle": "UNITS",
+        "badgeText": "N s or kg m s⁻¹."
+      },
+      {
+        "question": "Why do two balls, one dropped vertically and one projected horizontally from the same height, hit the ground simultaneously?",
+        "answer": "Because a projectile's *vertical motion* is strictly *independent* of its *horizontal motion*, and both bodies experience the exact same *uniform downward acceleration* due to gravity.",
         "category": "conceptual",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$2aS = v_f^2 - v_i^2$"
+        "badgeTitle": "EXPERIMENTAL PROOF",
+        "badgeText": "A stroboscopic photograph of two balls released simultaneously demonstrates their vertical displacements remain perfectly equal over time."
       },
       {
-        "question": "Why is a negative sign mathematically assigned to specific vector quantities when using linear equations of motion?",
-        "answer": "A negative sign is deliberately assigned to any vector quantity (like acceleration or displacement) whose *physical direction* is strictly *opposite* to the direction of the defined *initial velocity*.",
+        "question": "Does a continuously moving object inherently possess \"impulse\"?",
+        "answer": "No, a moving object possesses internal *momentum*; *impulse* is an external event that measures how an applied force actively *changes that momentum* over a specific time interval.",
         "category": "conceptual",
-        "badgeTitle": "CONVENTION",
-        "badgeText": "Initial velocity is universally taken as positive."
+        "badgeTitle": "CORE DISTINCTION",
+        "badgeText": "Impulse is a transitional force-time event, whereas momentum is a continuous physical state."
       },
       {
-        "question": "Under what specific condition is the acceleration due to gravity ($g$) mathematically taken as a positive value?",
-        "answer": "The value of $g$ is taken as strictly *positive* for a *falling body* where the initial velocity is zero, and *negative* for a body projected vertically upward against gravity.",
+        "question": "Why does a bullet fired directly into a thick block of wood act as an inelastic collision?",
+        "answer": "Because a *massive portion* of the bullet's *kinetic energy* is *irreversibly lost* in the form of intense sound, dissipating heat, and the catastrophic mechanical deformation of the wood grain.",
         "category": "conceptual",
-        "badgeTitle": "VALUE",
-        "badgeText": "$+9.8 \\text{ m s}^{-2}$ for free fall from rest."
+        "badgeTitle": "ENERGY TRANSFER",
+        "badgeText": "Kinetic energy transforms permanently into non-mechanical forms."
       },
       {
-        "question": "Why do two different physical bodies, when allowed to fall freely from the exact same height in a vacuum, strike the ground simultaneously?",
-        "answer": "According to Galileo, all bodies fall freely under the *exact same uniform acceleration due to gravity*, definitively proving that a body's *mass does not affect its falling velocity* in the absence of air friction.",
+        "question": "If a heavy rubber ball is dropped onto a hard concrete floor, why doesn't it rebound to its exact original release height?",
+        "answer": "The impact is a *slightly inelastic collision*, meaning structural compression causes some *initial kinetic energy* to be *permanently lost* to the environment as heat and sound energy.",
         "category": "conceptual",
-        "badgeTitle": "CONDITION",
-        "badgeText": "Moving strictly in a vacuum."
+        "badgeTitle": "REAL-WORLD APPLICATION",
+        "badgeText": "Macroscopic collisions in nature are practically never perfectly elastic."
       },
       {
-        "question": "Why does a horizontally projected ball and a simultaneously dropped ball from the exact same height hit the level ground at the exact same time?",
-        "answer": "They strike the ground simultaneously because the *downward vertical motion* is completely *independent* of the forward horizontal motion; both experience *identical downward acceleration* due to gravity.",
+        "question": "Why is the actual measured trajectory of a high-speed projectile noticeably shorter than its ideal parabolic path?",
+        "answer": "Because the continuous presence of *atmospheric air friction* consistently *drains the projectile's kinetic energy*, severely *retarding its forward horizontal velocity*.",
         "category": "conceptual",
-        "badgeTitle": "OBSERVATION",
-        "badgeText": "Their vertical displacements are equal at any given time $t$."
+        "badgeTitle": "VISUAL REFERENCE",
+        "badgeText": "\"For Your Information\" side box illustrating a skewed, shortened trajectory curve."
       },
       {
-        "question": "What is the specific kinematic effect on a projectile's trajectory if it is fired at an angle strictly less than $45^\\circ$?",
-        "answer": "If the angle is less than $45^\\circ$, the *maximum height* reached by the projectile is visibly reduced, and the resulting *horizontal range* is also proportionally *less* than the maximum possible theoretical range.",
+        "question": "How does human hair fundamentally protect the skull from catastrophic fracturing upon a sudden, violent impact?",
+        "answer": "Hair biologically acts as a *dense crumple zone* that physically *extends the total time of the collision*, thereby drastically *reducing the peak average force* delivered to the bone.",
         "category": "conceptual",
-        "badgeTitle": "TRAJECTORY FACT",
-        "badgeText": "Shallow angles yield shorter flights."
+        "badgeTitle": "QUANTITATIVE FACT",
+        "badgeText": "A naked skull fractures at just 5 N, while a skull protected by hair and skin requires a massive 50 N force."
       },
       {
-        "question": "Why do complementary angles of projection (e.g., $30^\\circ$ and $60^\\circ$) result in the exact same horizontal range?",
-        "answer": "Because the mathematical range formula relies on $\\sin 2\\theta$, and the sine of *double a complementary angle* yields the *exact same trigonometric value*, making the ratio $R/R'$ strictly equal to $1$.",
-        "category": "conceptual",
-        "badgeTitle": "MATHEMATICAL PROOF",
-        "badgeText": "$\\sin 2(30^\\circ) = \\sin 60^\\circ$ and $\\sin 2(60^\\circ) = \\sin 120^\\circ = \\sin 60^\\circ$."
-      },
-      {
-        "question": "How does air resistance visually alter the ideal mathematical parabolic trajectory of a high-speed projectile?",
-        "answer": "Air resistance continuously *slows down* the forward motion, causing the actual trajectory to fall *considerably short* of a perfect parabola, creating a *skewed path* characterized by a noticeably *steeper descent* than ascent.",
-        "category": "conceptual",
-        "badgeTitle": "VISUAL INDICATOR",
-        "badgeText": "Actual path is consistently inside the ideal path envelope."
-      },
-      {
-        "question": "Why does the air resistance experienced by a projectile actively decrease throughout its flight rather than remain constant?",
-        "answer": "Because air resistance is a *velocity‑dependent force*; as the object naturally *slows down* over time, the opposing drag force *proportionally decreases*, meaning the object retards more slowly as it falls.",
-        "category": "conceptual",
-        "badgeTitle": "CONSEQUENCE",
-        "badgeText": "Non-uniform horizontal deceleration."
-      },
-      {
-        "question": "Why does a heavy football objectively hurt a catcher significantly more than a light stone moving at the identical speed?",
-        "answer": "The football possesses a *vastly larger linear momentum* due to its significantly greater mass, allowing it to exert a *much harsher stopping force* upon sudden deceleration.",
-        "category": "conceptual",
-        "badgeTitle": "FORMULA",
-        "badgeText": "Momentum $p = mv$"
-      },
-      {
-        "question": "Can a steadily moving object physically possess \"impulse\" while in transit?",
-        "answer": "No, a moving object inherently possesses *momentum*, but *impulse* strictly measures a *physical change in momentum* over time caused by an applied external force; it is not a persistent property of constant motion.",
-        "category": "conceptual",
-        "badgeTitle": "CONCEPT CLARIFICATION",
-        "badgeText": "Impulse requires an active interaction."
-      },
-      {
-        "question": "How does human hair biologically act as a functional \"crumple zone\" for the skull during a blunt impact?",
-        "answer": "The hair and skin slightly compress, deliberately *extending the time* of the physical collision, which means a *drastically larger force* (e.g., $50\\text{ N}$ vs $5\\text{ N}$) is actively required to physically fracture the cranium.",
+        "question": "Why are standard motorcycle safety helmets strictly required to be lined with thick, compressible padding?",
+        "answer": "The specialized padding is engineered to safely *extend the time of any violent collision*, which mathematically *minimizes the sudden impact force* enough to prevent fatal brain trauma.",
         "category": "conceptual",
         "badgeTitle": "PHYSICS PRINCIPLE",
-        "badgeText": "Increased time equals decreased average force."
+        "badgeText": "Direct life-saving application of the impulse-momentum theorem ($F = \\Delta p / t$)."
       },
       {
-        "question": "What is the fundamental physics principle utilized by modern automobile seatbelts to drastically reduce passenger injury?",
-        "answer": "Seatbelts deliberately *stretch* to apply a restraining force over an *extended time duration*, safely dissipating the kinetic energy and completely preventing the rapid, lethal momentum change of striking the windshield.",
+        "question": "How do automotive seatbelts physically prevent severe passenger injuries during high-speed frontal collisions?",
+        "answer": "They act to securely *alter the forces of motion*, mechanically *preventing passengers from violently moving forward* due to their own massive forward inertia.",
         "category": "conceptual",
-        "badgeTitle": "APPLICATION",
-        "badgeText": "Life-saving impulse modification."
+        "badgeTitle": "SAFETY ENGINEERING",
+        "badgeText": "Radically reduces the lethal chance of passengers striking the windshield or dashboard."
       },
       {
-        "question": "How does the internal padding strictly inside a motorcycle safety helmet fundamentally protect the rider's brain during a severe crash?",
-        "answer": "The thick padding structurally *compresses* to deliberately *extend the time interval* of the physical collision, thereby drastically reducing the lethal *average force* applied directly to the human head.",
+        "question": "If a heavy granite stone and a light football move toward you with the exact same velocity, which is harder to stop and why?",
+        "answer": "The heavy stone is significantly harder to stop because its *vastly greater mass* grants it a *much larger total linear momentum*, requiring a more powerful stopping force.",
         "category": "conceptual",
-        "badgeTitle": "SAFETY STANDARD",
-        "badgeText": "Maximizing collision time $\\Delta t$."
+        "badgeTitle": "CONCEPTUAL INSIGHT",
+        "badgeText": "Momentum fundamentally dictates the true \"quantity of motion\" an object possesses."
       },
       {
-        "question": "Why is dealing with \"impulse\" mathematically more convenient than analyzing raw force when a bat powerfully hits a cricket ball?",
-        "answer": "The actual physical force varies *violently* from instant to instant during the microsecond collision, making the mathematical product of *average force* and *total time* far easier to calculate than instantaneous values.",
+        "question": "Why must the standard kinematic equations of motion be strictly limited to objects traveling in straight-line paths?",
+        "answer": "Because they are mathematically derived under the *rigid assumption of constant acceleration* where the *vector direction of motion never dynamically shifts or curves*.",
         "category": "conceptual",
-        "badgeTitle": "FORMULA",
-        "badgeText": "Impulse = $F_{avg} \\times t$"
+        "badgeTitle": "KINEMATIC LIMITATION",
+        "badgeText": "Vector quantities can only be treated like scalars in perfectly 1D uniform motion."
       },
       {
-        "question": "Why does a tennis ball practically never rebound to its original drop height on a standard court?",
-        "answer": "It undergoes an *inelastic collision* where a portion of its original *kinetic energy* is permanently lost to *internal molecular friction*, *heat generation*, and temporary *structural distortion*.",
+        "question": "At the absolute highest peak of a projectile's trajectory arc, is its overall instantaneous velocity perfectly zero?",
+        "answer": "No, the overall velocity is not zero; only the *vertical component becomes zero*, while the *constant horizontal component* pushes the object forward entirely unchanged.",
         "category": "conceptual",
-        "badgeTitle": "ENERGY REALITY",
-        "badgeText": "K.E. is never conserved here."
+        "badgeTitle": "VELOCITY COMPONENT",
+        "badgeText": "$v = v_x$ at the maximum apex of flight."
       },
       {
-        "question": "When a fast-moving billiard ball collides head-on elastically with an identical stationary one, why does the first ball stop completely?",
-        "answer": "In a perfectly elastic 1D collision involving bodies of *identical mass*, the physics strictly dictates that the objects *perfectly and entirely interchange their velocities* upon impact.",
+        "question": "In the rigorous theoretical absence of all air resistance, what governs the horizontal acceleration of a free projectile?",
+        "answer": "In a perfect vacuum, the *horizontal acceleration* is strictly *zero*, meaning the *horizontal velocity* remains absolutely constant throughout the entire duration of the flight.",
         "category": "conceptual",
-        "badgeTitle": "CONDITION",
-        "badgeText": "$m_1 = m_2$ and $v_2 = 0$ yields $v'_1 = 0$ and $v'_2 = v_1$."
+        "badgeTitle": "NEWTONIAN EXPLANATION",
+        "badgeText": "Governed flawlessly by Newton's first law of inertia."
       },
       {
-        "question": "How does a professional squash player expertly utilize the physics of a light body colliding with a massive stationary body?",
-        "answer": "The light squash ball impacts the *massive, completely immovable wall* and elastically *bounces back* in the reverse direction with practically the exact same incident speed.",
+        "question": "Why is a negative mathematical sign explicitly used when calculating equations for an upwardly thrown object?",
+        "answer": "To clearly denote *retardation or deceleration*, visually proving that the *downward vector direction of gravity* is precisely *opposite to the upward vector direction of motion*.",
         "category": "conceptual",
-        "badgeTitle": "MATHEMATICAL APPROXIMATION",
-        "badgeText": "$v'_1 \\approx -v$"
+        "badgeTitle": "MATHEMATICAL CONVENTION",
+        "badgeText": "Assigns negative polarity to physically opposing vectors."
       },
       {
-        "question": "Why is a powerful karate chop deliberately executing a strike through a pile of bricks categorized scientifically as an inelastic collision?",
-        "answer": "The striking hand does *not rebound* elastically; the vast majority of kinetic energy is directly and permanently *absorbed* into generating the severe force required for breaking the bricks, alongside heat and sound.",
+        "question": "Geometrically, what does the scalar product calculation $A.B = 0$ practically guarantee about two non-zero vectors?",
+        "answer": "It mathematically guarantees that the two vectors are *strictly orthogonal*, meaning they sit *perfectly perpendicular* to each other in three-dimensional space.",
         "category": "conceptual",
-        "badgeTitle": "OUTCOME",
-        "badgeText": "Complete failure to conserve kinetic energy."
+        "badgeTitle": "MATHEMATICAL CONDITION",
+        "badgeText": "The physical angle $\\theta$ between them is exactly $90^\\circ$."
       },
       {
-        "question": "How does the deliberate crumpling of an automobile chassis during a severe crash physically demonstrate inelastic behavior?",
-        "answer": "The chassis intentionally *deforms permanently*, safely *absorbing* the massive kinetic energy and completely stopping the car from dangerously *bouncing back* (rebounding) into active traffic.",
+        "question": "Geometrically, what does the numerical magnitude of the cross product $A \\times B$ visually represent on a graph?",
+        "answer": "The resultant magnitude physically equates to the *geometric area of the unique parallelogram* formed utilizing the *two source vectors as adjacent connected sides*.",
         "category": "conceptual",
-        "badgeTitle": "ENGINEERING GOAL",
-        "badgeText": "Maximum energy absorption, zero restitution."
+        "badgeTitle": "VISUAL PROOF",
+        "badgeText": "Clearly demonstrated in Fig. 2.4(d) of the vector graphics section."
       },
       {
-        "question": "Why does a collision between a standard rigid cricket bat and a ball inevitably demonstrate inelastic behavior despite the bat's stiffness?",
-        "answer": "The ball physically *compresses* and *deforms* violently upon impact, and the rigid bat structure itself absorbs high-frequency shock, permanently converting a fraction of the kinetic energy into dissipated *heat* and *loud sound*.",
+        "question": "Why is the mathematical self-cross product of any vector inherently evaluated as a null vector?",
+        "answer": "Because the *geometric angle between any vector and itself* is exactly *0°*, and the *sine of zero* rigorously yields a magnitude of strictly zero.",
         "category": "conceptual",
-        "badgeTitle": "REALITY",
-        "badgeText": "Perfect elasticity is impossible in sports equipment."
+        "badgeTitle": "VECTOR RULE",
+        "badgeText": "$A \\times A = AA \\sin 0^\\circ = 0$."
       },
       {
-        "question": "Why must a skilled hunter aiming a rifle at a distant tree branch deliberately aim slightly above the visible target?",
-        "answer": "Because the fired bullet inherently acts as a *horizontal projectile* and immediately begins to *fall vertically* under the continuous acceleration of gravity, requiring a calculated upward compensation to hit the exact mark.",
+        "question": "If a military projectile is fired at a 30° angle, how does its landing range compare to one fired at 60° with the identical initial speed?",
+        "answer": "The horizontal ranges are *mathematically identical*, because 30° and 60° are *complementary angles* whose trigonometric *sine of $2\\theta$* yields the exact same numerical value.",
         "category": "conceptual",
-        "badgeTitle": "REASON",
-        "badgeText": "Vertical drop $y = \\frac{1}{2}gt^2$."
+        "badgeTitle": "TRIGONOMETRIC SYMMETRY",
+        "badgeText": "$\\sin(2 \\times 30^\\circ) = \\sin(2 \\times 60^\\circ) = 0.866$."
       },
       {
-        "question": "From a momentum perspective, why does a person falling directly onto a soft heap of sand hurt considerably less than striking a rigid concrete floor?",
-        "answer": "The yielding sand drastically *increases the time duration* of the physical impact, which proportionally and safely decreases the crippling *average rate of change of momentum* (force) exerted on the human body.",
+        "question": "What specific physical force causes the positive upward velocity of an ascending projectile to steadily decrease over time?",
+        "answer": "The constant *downward pull of Earth's gravity* provides a *continuous negative acceleration ($-g$)* that relentlessly *bleeds off the projectile's initial vertical velocity*.",
         "category": "conceptual",
-        "badgeTitle": "PHYSICS CONCEPT",
-        "badgeText": "Impulse manipulation ($F = \\Delta p / t$)."
+        "badgeTitle": "GRAVITATIONAL INFLUENCE",
+        "badgeText": "$v_{fy} = v_{iy} - gt$."
       },
       {
-        "question": "Under what precise physical circumstance is the instantaneous velocity of a thrown object exactly zero while its acceleration is definitively not zero?",
-        "answer": "At the *absolute highest point* (peak) of a vertically thrown object's trajectory, its instantaneous vertical velocity is strictly *zero*, but its acceleration remains a constant $9.8 \\text{ m/s}^2$ *downwards*.",
+        "question": "If an ideal elastic collision occurs head-on between two identical mass billiard balls, what physically happens to their individual kinetic energies?",
+        "answer": "Since they *perfectly exchange velocities*, they also *completely exchange their individual kinetic energies*, flawlessly conserving the total mechanical energy of the system.",
         "category": "conceptual",
-        "badgeTitle": "KINEMATIC EDGE CASE",
-        "badgeText": "Velocity vector flips, acceleration is constant."
+        "badgeTitle": "SPECIAL CASE OUTCOME",
+        "badgeText": "$v'_1 = v_2$ and $v'_2 = v_1$."
       },
       {
-        "question": "Under what precise physical circumstance is the linear acceleration of a vehicle exactly zero while its velocity remains strictly non-zero?",
-        "answer": "This strictly occurs when the vehicle is *cruising effortlessly* along a perfectly straight path with a *constant, uniform velocity*, meaning there is absolutely no rate of change in its speed or direction.",
+        "question": "Why does a professional squash player rely on the advanced physics of a highly light body colliding with a massive stationary body?",
+        "answer": "So the *highly elastic, lightweight ball* will *violently bounce back* toward the player with *nearly its exact same initial velocity*, while the *massive wall remains completely unmoved*.",
         "category": "conceptual",
-        "badgeTitle": "CONDITION",
-        "badgeText": "$\\Delta v = 0$ yields $a = 0$."
+        "badgeTitle": "COLLISION DYNAMIC",
+        "badgeText": "$v'_1 \\approx -v_1$ and the wall's velocity stays zero."
       },
       {
-        "question": "Under what specific trajectory condition are the velocity and acceleration vectors of a projectile strictly perpendicular to one another?",
-        "answer": "At the *exact top* of a parabolic trajectory, where the velocity vector is completely *horizontal* ($v_x$ only) and the acceleration due to gravity is completely *vertical* (downward).",
+        "question": "How does a completely isolated thermodynamic system (like gas molecules inside a sealed glass vessel) flawlessly conserve its total momentum despite internal kinetic chaos?",
+        "answer": "The random, violent molecular collisions generate *perfectly equal and opposite internal reaction forces* that *perfectly cancel each other out*, leaving the macroscopic net force on the closed system at absolute zero.",
         "category": "conceptual",
-        "badgeTitle": "ANGLE",
-        "badgeText": "$\\theta = 90^\\circ$ between $v$ and $g$."
+        "badgeTitle": "NEWTON'S THIRD LAW",
+        "badgeText": "Internal force action-reaction pairs mathematically sum to zero."
       },
       {
-        "question": "Provide a practical real-world example where kinetic energy is forcefully transformed into severe structural deformation and loud sound during an inelastic interaction.",
-        "answer": "A classic example of an extreme inelastic collision is a *high-speed bullet fired directly into a wooden block*, where the bullet *embeds itself* and kinetic energy is permanently lost to friction, splitting the wood, and thermal heating.",
+        "question": "Why is evaluating the product of force and time often significantly more practical than trying to measure force alone during violent physical impacts?",
+        "answer": "Because the *actual impact force wildly varies* from microsecond to microsecond, making the *average force-time product (impulse)* much more *mathematically stable and measurable*.",
         "category": "conceptual",
-        "badgeTitle": "ENERGY STATE",
-        "badgeText": "$(K.E.)_i > (K.E.)_f$"
+        "badgeTitle": "PRACTICAL PHYSICS",
+        "badgeText": "Avoids the need for complex calculus to integrate wildly fluctuating force spikes."
       },
       {
-        "question": "Why is the specific fractional amount of kinetic energy definitively lost in a perfectly inelastic 1D collision mathematically represented by the ratio $m_2 / (m_1 + m_2)$?",
-        "answer": "Because the *target's mass* ($m_2$) relative to the *total combined mass* directly dictates the exact mathematical proportion of incident kinetic energy that must be permanently *absorbed* when the two masses physically stick together to conserve momentum.",
+        "question": "How does the physical presence of air drag visibly skew the symmetrical flight time of a launched projectile?",
+        "answer": "The *descent phase takes noticeably longer* than the initial ascent because *air resistance continuously fights against the downward gravitational acceleration*, severely retarding its fall.",
         "category": "conceptual",
-        "badgeTitle": "MATHEMATICAL PROOF",
-        "badgeText": "Derived from $\\Delta K.E. / (K.E.)_i$."
+        "badgeTitle": "TRAJECTORY DISTORTION",
+        "badgeText": "The path drastically diverges from being a perfect, symmetrical parabola."
+      },
+      {
+        "question": "What unique geometric angle is implied when the magnitude of a vector's dot product perfectly equals the magnitude of its cross product?",
+        "answer": "It implies that the *trigonometric sine of the angle* perfectly equals the *cosine of the angle*, which strictly occurs only at an exact *geometric angle of 45°*.",
+        "category": "conceptual",
+        "badgeTitle": "TRIGONOMETRIC EQUALITY",
+        "badgeText": "At $\\theta = 45^\\circ$, $\\sin 45^\\circ = \\cos 45^\\circ = 0.707$."
+      },
+      {
+        "question": "In a perfectly inelastic 1D collision, what physically happens to the structural integrity of the colliding solid bodies?",
+        "answer": "The solid bodies *catastrophically deform* upon impact and *permanently stick together*, completely sharing a *unified single combined mass* and one unified final velocity moving forward.",
+        "category": "conceptual",
+        "badgeTitle": "PHYSICAL BOND",
+        "badgeText": "$M = m_1 + m_2$."
+      },
+      {
+        "question": "Why is the scalar dot product inherently considered a commutative mathematical operation?",
+        "answer": "Because the *physical projection of vector A onto B* mathematically yields the *exact same numerical magnitude* as the *projection of vector B onto A*, making the order of multiplication entirely irrelevant.",
+        "category": "conceptual",
+        "badgeTitle": "EQUATION IDENTITY",
+        "badgeText": "$A.B = B.A$."
+      },
+      {
+        "question": "Why does a freely falling object, when dropped from a high tower, technically possess an initial velocity of precisely zero?",
+        "answer": "Because the object is simply *released or dropped from a state of total rest*, meaning *absolutely no initial downward propulsive force* was applied to it by the dropper.",
+        "category": "conceptual",
+        "badgeTitle": "BOUNDARY CONDITION",
+        "badgeText": "$v_{iy} = 0$ strictly applies for standard free fall."
+      },
+      {
+        "question": "How does a launch angle below the 45° optimum specifically influence the trajectory arc of a projectile?",
+        "answer": "For any projection angle distinctly less than 45°, the *projectile's vertical velocity component is weaker*, meaning both the *maximum height reached* and *overall horizontal range* will be drastically stunted.",
+        "category": "conceptual",
+        "badgeTitle": "TRAJECTORY PROFILE",
+        "badgeText": "Shallower launch angle geometrically equates to a much flatter arc."
+      },
+      {
+        "question": "Why is the resultant of a cross product $A \\times B$ considered a completely new vector rather than just a scaled numeric value?",
+        "answer": "Because the cross operation explicitly generates a spatial quantity that possesses both a *calculable numerical magnitude* and a *strict, right-hand rule perpendicular direction* in 3D space.",
+        "category": "conceptual",
+        "badgeTitle": "UNIT VECTOR ROLE",
+        "badgeText": "The newly forged direction is denoted by the normal vector $\\hat{n}$."
+      },
+      {
+        "question": "In a closed inelastic system, if massive amounts of kinetic energy are lost to heat, why is the total linear momentum still rigidly conserved?",
+        "answer": "*Momentum conservation* relies strictly on *Newton's Third Law (equal/opposite forces cancelling out)*, which is *completely independent* of whether localized mechanical energy is dissipated into heat or sound.",
+        "category": "conceptual",
+        "badgeTitle": "FUNDAMENTAL INDEPENDENCE",
+        "badgeText": "Momentum is a vector state; Kinetic Energy is a convertible scalar quantity."
+      },
+      {
+        "question": "If a heavy iron ball is fired perfectly horizontally from a towering cliff, what is its exact initial vertical velocity?",
+        "answer": "The *initial vertical velocity* is exactly *zero*, because the entirety of the initial propulsive launch force was applied *purely along the horizontal axis*, leaving the vertical y-axis untouched.",
+        "category": "conceptual",
+        "badgeTitle": "VECTOR RESOLUTION",
+        "badgeText": "$v_{iy} = v_i \\sin 0^\\circ = 0$."
+      },
+      {
+        "question": "How does the vertical speed of a projectile dynamically behave on its way down from the maximum trajectory peak?",
+        "answer": "The *downward speed steadily and predictably increases* because *Earth's gravity acts in the exact same vector direction* as the body's downward motion, causing a positive downward acceleration.",
+        "category": "conceptual",
+        "badgeTitle": "GRAVITY EFFECT",
+        "badgeText": "The magnitude of $v_{fy}$ continuously grows as it falls."
+      },
+      {
+        "question": "If an out-of-control car crashes into a rigid mountain wall and completely stops, is the physical law of momentum conserved?",
+        "answer": "Yes, but strictly only if the *massive Earth itself* is included in the defined mathematical system, as the car's microscopic momentum is *invisibly transferred to the entire planet's mass*.",
+        "category": "conceptual",
+        "badgeTitle": "SYSTEM BOUNDARY DEFINITION",
+        "badgeText": "Total momentum of an absolutely isolated system is universally conserved."
+      },
+      {
+        "question": "Why is the relative velocity of approach mathematically forced to equal the relative velocity of separation in a pure 1D elastic collision?",
+        "answer": "Because the simultaneous mathematical *conservation of both linear momentum and kinetic energy* algebraically forces this *strict, equal-magnitude relative velocity reversal* upon impact.",
+        "category": "conceptual",
+        "badgeTitle": "MATHEMATICAL IDENTITY",
+        "badgeText": "$v_1 - v_2 = -(v'_1 - v'_2)$."
+      },
+      {
+        "question": "Why does a massive heavy truck inherently cause vastly more structural damage than a bicycle moving at the exact same velocity during a collision?",
+        "answer": "The truck possesses a *massively larger quantity of linear momentum* due solely to its *huge mass*, allowing it to transfer a *vastly more destructive and unstoppable impulse* upon impact.",
+        "category": "conceptual",
+        "badgeTitle": "MOMENTUM TRANSFER",
+        "badgeText": "$p = mv$ means higher mass yields higher striking momentum."
+      },
+      {
+        "question": "Why does the mathematical magnitude of a rectangular vector component theoretically never exceed the magnitude of the original vector itself?",
+        "answer": "Because rectangular components are algebraically calculated using *trigonometric sine and cosine functions*, which are *geometrically bounded to a maximum absolute numeric value of 1*.",
+        "category": "conceptual",
+        "badgeTitle": "TRIGONOMETRIC LIMIT",
+        "badgeText": "$A_x = A \\cos \\theta$, and since $\\cos \\theta \\le 1$, $A_x \\le A$."
+      },
+      {
+        "question": "If a vector's x-component and y-component are perfectly equal in positive magnitude, what is its precise geometric angle with the horizontal x-axis?",
+        "answer": "The geometric angle is exactly *45°*, because the mathematical *inverse tangent of the ratio 1* (since $A_y = A_x$) perfectly yields an angle of 45°.",
+        "category": "conceptual",
+        "badgeTitle": "CALCULATION PROOF",
+        "badgeText": "$\\theta = \\tan^{-1}(1) = 45^\\circ$."
+      },
+      {
+        "question": "How does the physical mass of a fired projectile mathematically affect its total Time of Flight in a perfect vacuum?",
+        "answer": "The *mass has absolutely no effect*; kinematics in a perfect vacuum are *entirely independent of mass*, meaning a heavy iron ball and a light feather fall at the exact same vertical rate.",
+        "category": "conceptual",
+        "badgeTitle": "GRAVITATIONAL EQUIVALENCE",
+        "badgeText": "$t = (2v_i \\sin\\theta)/g$ (The mass variable $m$ is entirely absent from the formula)."
       }
     ],
     "3": [
       {
-        "question": "What is circular motion?",
-        "answer": "It is the motion of material bodies where their *direction* is continuously changing, meaning their *velocities* are not constant.",
-        "category": "most",
-        "badgeTitle": "EXAMPLES",
-        "badgeText": "Satellites moving in circular orbits around the Earth, or a stone whirled around by a string."
-      },
-      {
-        "question": "Define one radian.",
-        "answer": "If the *length of the arc* is equal to the *radius* of the circle, then the angle drawn at the centre is called *one radian*.",
+        "question": "What is the definition of one radian?",
+        "answer": "An angle drawn at the centre of a circle where the *length of the arc* is *equal to the radius* of the circle.",
         "category": "most",
         "badgeTitle": "SI UNIT",
-        "badgeText": "It is the SI unit of angular measurement and its symbol is \"rad\"."
+        "badgeText": "It is the SI unit of angular measurement."
       },
       {
-        "question": "How is angular displacement defined for very small values?",
-        "answer": "For *very small values* of $\\Delta\\theta$, the angular displacement is considered a *vector quantity*.",
+        "question": "How is the direction of angular displacement determined?",
+        "answer": "The direction associated with angular displacement is given by the *right hand rule*.",
         "category": "most",
-        "badgeTitle": "SIGN CONVENTION",
-        "badgeText": "It is assigned a positive sign when the sense of rotation is counter clock wise."
+        "badgeTitle": "RULE",
+        "badgeText": "Grasp the axis of rotation in the right hand with fingers curling in the direction of rotation; the thumb points in the direction of angular displacement."
       },
       {
-        "question": "What is the right hand rule for angular displacement?",
-        "answer": "Grasp the *axis of rotation* in the right hand with fingers curling in the *direction of rotation*; the thumb points in the *direction of angular displacement*.",
+        "question": "What is the mathematical relationship between arc length, radius, and angular displacement?",
+        "answer": "The *arc length S* is the *product of the radius r* and the *angular displacement θ* in radians.",
         "category": "most",
-        "badgeTitle": "DIRECTION",
-        "badgeText": "The direction associated with $\\Delta\\theta$ is along the axis of rotation."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$S = r\\theta$."
       },
       {
-        "question": "What is the relationship between arc length and angular displacement in radians?",
-        "answer": "The arc length $S$ of a circle of radius $r$ which subtends an angle $\\theta$ at the centre is given by the equation $S=r\\theta$.",
+        "question": "How many degrees are equivalent to one radian?",
+        "answer": "One radian is equivalent to exactly *57.3°*.",
         "category": "most",
-        "badgeTitle": "CONDITION",
-        "badgeText": "The angle $\\theta$ must be measured in radian."
-      },
-      {
-        "question": "How many radians are in one complete revolution?",
-        "answer": "In one revolution, the distance covered is $S=2\\pi r$, which corresponds to an *angular displacement* of $2\\pi$ rad.",
-        "category": "most",
-        "badgeTitle": "DEGREE EQUIVALENT",
-        "badgeText": "1 revolution $=2\\pi$ rad $=360^{\\circ}$."
-      },
-      {
-        "question": "How many degrees are in one radian?",
-        "answer": "One radian is mathematically equivalent to $57.3^{\\circ}$.",
-        "category": "most",
-        "badgeTitle": "DERIVATION",
-        "badgeText": "$1~rad=\\frac{360^{\\circ}}{2\\pi}=57.3^{\\circ}$."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$1 \\text{ rad} = \\frac{360^\\circ}{2\\pi}$."
       },
       {
         "question": "Define average angular velocity.",
-        "answer": "It is defined as the *rate* at which the *angular displacement* is changing with time, given by the *ratio* of angular displacement to the time interval.",
+        "answer": "The *rate* at which the *angular displacement* is changing with *time* during a specific time interval.",
         "category": "most",
         "badgeTitle": "FORMULA",
-        "badgeText": "$\\omega_{av}=\\frac{\\Delta\\theta}{\\Delta t}$."
+        "badgeText": "$\\omega_{av} = \\frac{\\Delta \\theta}{\\Delta t}$."
       },
       {
-        "question": "What is instantaneous angular velocity?",
-        "answer": "It is the *limit* of the ratio $\\Delta\\theta/\\Delta t$ as the time interval $\\Delta t$ approaches to *zero*.",
+        "question": "Define instantaneous angular velocity.",
+        "answer": "The *limit* of the ratio $\\Delta \\theta / \\Delta t$ as *Δt approaches zero*.",
         "category": "most",
         "badgeTitle": "FORMULA",
-        "badgeText": "$\\omega=Lim_{\\Delta t\\rightarrow0}\\frac{\\Delta\\theta}{\\Delta t}$."
+        "badgeText": "$\\omega = \\lim_{\\Delta t \\to 0} \\frac{\\Delta \\theta}{\\Delta t}$."
       },
       {
-        "question": "What is the SI unit of angular velocity?",
-        "answer": "Angular velocity is measured in *radians per second*, which is its *SI unit*.",
-        "category": "most",
-        "badgeTitle": "ALTERNATIVE UNIT",
-        "badgeText": "It is also sometimes given in terms of revolution per minute (rpm)."
-      },
-      {
-        "question": "Define angular acceleration.",
-        "answer": "We define angular acceleration as the *rate of change* of *angular velocity*.",
+        "question": "Define average angular acceleration.",
+        "answer": "The *rate of change* of *angular velocity* over a given interval.",
         "category": "most",
         "badgeTitle": "FORMULA",
-        "badgeText": "$\\alpha_{av}=\\frac{\\omega_{f}-\\omega_{i}}{t_{f}-t_{i}}=\\frac{\\Delta\\omega}{\\Delta t}$."
+        "badgeText": "$\\alpha_{av} = \\frac{\\omega_f - \\omega_i}{t_f - t_i} = \\frac{\\Delta \\omega}{\\Delta t}$."
       },
       {
-        "question": "What is instantaneous angular acceleration?",
-        "answer": "It is the *limit* of the ratio $\\frac{\\Delta\\omega}{\\Delta t}$ as $\\Delta t$ approaches *zero*.",
+        "question": "Define instantaneous angular acceleration.",
+        "answer": "The *limit* of the ratio $\\Delta \\omega / \\Delta t$ as *Δt approaches zero*.",
         "category": "most",
-        "badgeTitle": "VECTOR NATURE",
-        "badgeText": "It is a vector quantity whose direction is along the axis of rotation."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$\\alpha = \\lim_{\\Delta t \\to 0} \\frac{\\Delta \\omega}{\\Delta t}$."
       },
       {
-        "question": "How is the rotation of a rigid body described using a reference line?",
-        "answer": "The rotation of a rigid body can be described by the rotation of a *perpendicular reference line* dropped from a point on the body to the axis of rotation.",
+        "question": "What is the SI unit of angular acceleration?",
+        "answer": "Angular acceleration is expressed in *radians per second squared*.",
         "category": "most",
-        "badgeTitle": "PROPERTY",
-        "badgeText": "The line rotates with the same angular velocity and angular acceleration as the body."
+        "badgeTitle": "SI UNIT",
+        "badgeText": "$\\text{rad s}^{-2}$."
       },
       {
-        "question": "What is the mathematical relationship between linear and angular velocities?",
-        "answer": "The magnitude of the *linear velocity* $v$ with which a point moves on the circumference is equal to the *product* of the *radius* $r$ and the *angular velocity* $\\omega$.",
+        "question": "How are linear velocity and angular velocity related?",
+        "answer": "The magnitude of the *linear velocity v* is the *product of the radius r* and the *angular velocity ω*.",
         "category": "most",
-        "badgeTitle": "EQUATION",
-        "badgeText": "$v=r\\omega$."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$v = r\\omega$."
       },
       {
-        "question": "Why is linear velocity in circular motion also called tangential velocity?",
-        "answer": "Because the *direction* of the velocity is always along the *tangent* to the circle at that specific point.",
+        "question": "Why is linear velocity in a circular path also called tangential velocity?",
+        "answer": "Because its *direction* is always *along the tangent* to the circle at that specific point.",
         "category": "most",
-        "badgeTitle": "MAGNITUDE",
-        "badgeText": "The magnitude $v$ represents how fast the point is moving on the circumference of the circle."
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "The length of arc $P_1P_2$ becomes very small and its direction represents the direction of the tangent."
       },
       {
-        "question": "What is the relation between linear and angular acceleration?",
-        "answer": "If the reference line is rotating with an angular acceleration $\\alpha$, a point at distance $r$ will have a *linear* or *tangential acceleration* $a_{t}$.",
+        "question": "How are linear (tangential) acceleration and angular acceleration related?",
+        "answer": "The *tangential acceleration a_t* is the *product of the radius r* and the *angular acceleration α*.",
         "category": "most",
-        "badgeTitle": "EQUATION",
-        "badgeText": "$a_{t}=r\\alpha$."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$a_t = r\\alpha$."
       },
       {
         "question": "Do all points on a rotating rigid body have the same linear speed?",
-        "answer": "No, points at *different distances* from the axis do not have the same speed or acceleration.",
+        "answer": "No, *points at different distances* from the axis *do not have the same speed* or acceleration.",
         "category": "most",
-        "badgeTitle": "CONSTANT VARIABLES",
+        "badgeTitle": "IMPORTANT",
         "badgeText": "However, all points do have the same angular displacement, angular speed, and angular acceleration."
       },
       {
-        "question": "Under what condition do the equations of angular motion hold true?",
-        "answer": "The angular equations hold true only when the *axis of rotation is fixed*, so all angular vectors have the *same direction*.",
+        "question": "State the first equation of angular motion.",
+        "answer": "The *final angular velocity* is the *sum of the initial angular velocity* and the *product of angular acceleration and time*.",
         "category": "most",
-        "badgeTitle": "MANIPULATION",
-        "badgeText": "This allows them to be manipulated as scalars."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$\\omega_f = \\omega_i + \\alpha t$."
       },
       {
-        "question": "What are the three angular equations of motion for constant angular acceleration?",
-        "answer": "They are analogous to linear equations, replacing $S$, $v$, and $a$ with $\\theta$, $\\omega$, and $\\alpha$.",
+        "question": "State the second equation of angular motion.",
+        "answer": "The *angular displacement* is the *product of initial angular velocity and time*, plus *half the product of angular acceleration and the square of time*.",
         "category": "most",
-        "badgeTitle": "EQUATIONS",
-        "badgeText": "$\\omega_{f}=\\omega_{i}+\\alpha t$, $2\\alpha\\theta=\\omega_{f}^{2}-\\omega_{i}^{2}$, and $\\theta=\\omega_{i}t+\\frac{1}{2}\\alpha t^{2}$."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$\\theta = \\omega_i t + \\frac{1}{2} \\alpha t^2$."
+      },
+      {
+        "question": "State the third equation of angular motion.",
+        "answer": "*Twice the product of angular acceleration and angular displacement* equals the *difference between the squares of the final and initial angular velocities*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$2\\alpha \\theta = \\omega_f^2 - \\omega_i^2$."
+      },
+      {
+        "question": "Under what condition are the angular equations of motion valid?",
+        "answer": "They hold true only when the *axis of rotation is fixed*, allowing angular vectors to be manipulated as scalars.",
+        "category": "most",
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "All angular vectors must have the same direction."
       },
       {
         "question": "Define centripetal force.",
-        "answer": "The force needed to *bend* the straight path of the particle into a circular path is called the *centripetal force*.",
+        "answer": "The *force needed* to *bend the straight path* of a particle into a *circular path* by pulling the object *towards the centre*.",
         "category": "most",
-        "badgeTitle": "FUNCTION",
-        "badgeText": "It changes the direction of velocity continuously at each point without altering the speed."
+        "badgeTitle": "DIRECTION",
+        "badgeText": "Its direction is perpendicular to the tangential velocity at each point."
       },
       {
-        "question": "What is the direction of the centripetal force?",
-        "answer": "This force always *pulls* the object towards the *centre* of the circular path and is *perpendicular* to the tangential velocity at each point.",
+        "question": "What happens when a constant force acts perpendicular to the velocity of a moving body?",
+        "answer": "It will *change the direction* but the *magnitude of velocity (speed)* will *remain the same*.",
         "category": "most",
-        "badgeTitle": "ALTERNATIVE NAME",
-        "badgeText": "It is also referred to as a Centre seeking force."
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "This makes the body move in a circle by producing radial acceleration."
       },
       {
         "question": "What is the formula for centripetal force in terms of linear velocity?",
-        "answer": "For a body of mass $m$ moving with velocity $v$ in a path of radius $r$, the force is the *product* of mass and *centripetal acceleration*.",
+        "answer": "Centripetal force $F_c$ is the *product of mass m and the square of velocity v* *divided by the radius r*.",
         "category": "most",
-        "badgeTitle": "EQUATION",
-        "badgeText": "$F_{c}=ma_{c}=\\frac{mv^{2}}{r}$."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$F_c = \\frac{mv^2}{r}$."
       },
       {
         "question": "What is the formula for centripetal force in terms of angular velocity?",
-        "answer": "Substituting $v=r\\omega$ into the linear equation gives the relationship based on *angular velocity*.",
+        "answer": "Centripetal force is the *product of mass m, radius r, and the square of angular velocity ω*.",
         "category": "most",
-        "badgeTitle": "EQUATION",
-        "badgeText": "$F_{c}=mr\\omega^{2}$."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$F_c = m r \\omega^2$."
       },
       {
-        "question": "In a vertical circle, how is tension calculated at the top point (Point A)?",
-        "answer": "At the top, the *vector sum* of the pull of the string (T) and the weight of the ball (w) provides the *centripetal force*.",
+        "question": "How do you calculate the required tension at the highest point for a ball swung in a vertical circle?",
+        "answer": "The tension T is the *total required centripetal force* *minus the weight w* of the ball.",
         "category": "most",
-        "badgeTitle": "EQUATION",
-        "badgeText": "$T=m(\\frac{v^{2}}{r}-g)$."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$T = \\frac{mv^2}{r} - mg$."
       },
       {
-        "question": "What is the condition for tension to be zero at the top of a vertical circle?",
-        "answer": "If the ratio $\\frac{v^{2}}{r}$ is *equal* to $g$, then the tension $T$ will be *zero*.",
+        "question": "What is the required condition for tension to be zero at the top of a vertical circular path?",
+        "answer": "If the *centripetal acceleration* $\\frac{v^2}{r}$ is *equal to the acceleration due to gravity g*.",
         "category": "most",
-        "badgeTitle": "IMPLICATION",
-        "badgeText": "The required centripetal force is just equal to the weight."
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "The centripetal force is just equal to the weight."
       },
       {
-        "question": "What force provides the centripetal force for an object placed on a turntable?",
-        "answer": "For an object placed on a turntable, the *friction* is the *centripetal force*.",
+        "question": "What provides the centripetal force for an object placed on a turntable?",
+        "answer": "The *friction* between the object and the turntable provides the required centripetal force.",
         "category": "most",
-        "badgeTitle": "CONSEQUENCE",
-        "badgeText": "If friction is insufficient, the object will move away from the centre."
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "This force is necessary for every circular or orbital motion."
       },
       {
-        "question": "Why are highway roads banked on quick turns?",
-        "answer": "Banked tracks are needed because *friction alone* cannot provide enough energy for *centripetal force* at high speeds.",
+        "question": "What provides the centripetal force for planets orbiting the Sun?",
+        "answer": "The *gravitational force* is the cause of the Earth orbiting around the Sun.",
         "category": "most",
-        "badgeTitle": "DESIGN",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "This also applies to the Moon and artificial satellites revolving around the Earth."
+      },
+      {
+        "question": "What force causes a charged particle moving along a straight path to bend into a circular path?",
+        "answer": "A *normal or perpendicular magnetic force* compels a charged particle into a circular path.",
+        "category": "most",
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "The required centripetal force is provided by this external agency."
+      },
+      {
+        "question": "What defines an artificial satellite?",
+        "answer": "*Objects that orbit* in nearly circular paths around the Earth, *held by gravitational pull*.",
+        "category": "most",
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "They are put into orbit by rockets."
+      },
+      {
+        "question": "What is the minimum velocity necessary to put a satellite into orbit called?",
+        "answer": "It is called the *critical velocity*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$v = \\sqrt{gR}$."
+      },
+      {
+        "question": "What is the approximate critical velocity for a low flying Earth satellite?",
+        "answer": "The required speed is approximately *7.9 km s⁻¹*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$v = \\sqrt{9.8\\ \\text{m s}^{-2} \\times 6.4 \\times 10^6\\ \\text{m}}$."
+      },
+      {
+        "question": "What is the approximate period of a low flying Earth satellite?",
+        "answer": "The period is approximately *5060 s* or *84 min*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$T = \\frac{2\\pi R}{v}$."
+      },
+      {
+        "question": "How does the height of a satellite affect its required orbital speed?",
+        "answer": "The *higher the satellite*, the *slower* will be the required speed.",
+        "category": "most",
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "It will also take longer to complete one revolution around the Earth."
+      },
+      {
+        "question": "What provides the centripetal force for a satellite going round the Earth?",
+        "answer": "The *gravitational force* of attraction between the Earth and the satellite.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$\\frac{G m_s M}{r^2} = \\frac{m_s v^2}{r}$."
+      },
+      {
+        "question": "What is the expression for the orbital velocity of a satellite?",
+        "answer": "Orbital velocity v is the *square root* of the *product of the gravitational constant G and Earth's mass M*, *divided by the radius r*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$v = \\sqrt{\\frac{GM}{r}}$."
+      },
+      {
+        "question": "Does the mass of a satellite affect its orbital speed?",
+        "answer": "No, the *mass of the satellite is unimportant* in describing the satellite's orbit.",
+        "category": "most",
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "Any speed less than the calculated orbital speed will bring the satellite tumbling back to Earth."
+      },
+      {
+        "question": "Why do objects inside a satellite experience weightlessness?",
+        "answer": "Because the *satellite and everything inside it is accelerating towards the centre* of the Earth as a freely falling body.",
+        "category": "most",
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "The supporting normal force $F_N$ acting on a body inside the satellite is zero."
+      },
+      {
+        "question": "How is artificial gravity created in a spacecraft?",
+        "answer": "The spaceship is *set into rotation* around its own axis, pressing the astronaut *towards the outer rim*.",
+        "category": "most",
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "The astronaut exerts a force on the floor in much the same way as on the Earth."
+      },
+      {
+        "question": "What is the formula for the frequency required to create artificial gravity like Earth?",
+        "answer": "Frequency f equals *one over 2π times the square root of the acceleration due to gravity g divided by the radius R*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$f = \\frac{1}{2\\pi} \\sqrt{\\frac{g}{R}}$."
+      },
+      {
+        "question": "What is the rotational analogue of Newton's second law of motion?",
+        "answer": "The *torque τ* equals the *product of the moment of inertia I* and the *angular acceleration α*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$\\tau = I \\alpha$."
+      },
+      {
+        "question": "What happens to a moving body when a force acts along the direction of its velocity?",
+        "answer": "It will *change the magnitude of the velocity* (speed) while *keeping the direction unchanged*.",
+        "category": "important",
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "This is a direct application of Newton's second law of motion for linear acceleration."
+      },
+      {
+        "question": "What happens to a moving body when a constant force acts perpendicular to its velocity?",
+        "answer": "It will *change the direction of motion* but the *magnitude of velocity* (speed) will remain the same.",
+        "category": "important",
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "This specific force makes the body move in a circle by producing radial acceleration."
+      },
+      {
+        "question": "What path would a ball whirled in a horizontal circle follow if the string snaps?",
+        "answer": "The ball will follow a *straight line path* which is *exactly tangent* to the circle at that specific point.",
+        "category": "important",
+        "badgeTitle": "DIAGRAM REFERENCE",
+        "badgeText": "This is illustrated as the straight line path AB in Fig. 3.6 (b)."
+      },
+      {
+        "question": "What is the relation between one revolution and radians?",
+        "answer": "One revolution is mathematically equivalent to exactly *$2\\pi$ radians*.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "1 revolution $= 2\\pi~rad = 360^{\\circ}$."
+      },
+      {
+        "question": "How do we define the reference line for a rigid body in rotational motion?",
+        "answer": "A *perpendicular line* dropped from a point $P$ on the rigid body to the *axis of rotation*.",
+        "category": "important",
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "As the body rotates, this reference line also rotates with the same angular velocity and acceleration."
+      },
+      {
+        "question": "In Example 3.1, what is the initial angular velocity of the electric fan?",
+        "answer": "The initial angular velocity is given as *$3.0~rev~s^{-1}$*.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$\\omega_{i}=3.0~rev~s^{-1}$."
+      },
+      {
+        "question": "In Example 3.1, how many revolutions does the fan turn before coming to complete rest?",
+        "answer": "The fan completes exactly *27 revolutions* before stopping.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$\\theta = 27~rev$."
+      },
+      {
+        "question": "What force provides the necessary centripetal force for a vehicle taking a turn on a level road?",
+        "answer": "The *friction* between the *tyres and the road surface* provides the required centripetal force.",
+        "category": "important",
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "If the road is slippery, friction may not be sufficient, causing the vehicle to skid."
+      },
+      {
+        "question": "Why are highway roads banked on sharp turns?",
+        "answer": "Because *friction alone cannot provide enough energy* for centripetal force at high speeds, *preventing the vehicle from skidding or toppling*.",
+        "category": "important",
+        "badgeTitle": "EXTRA POINT",
         "badgeText": "The outer edge of the track is kept slightly higher than the inner edge."
       },
       {
-        "question": "What are artificial satellites?",
-        "answer": "Satellites are objects that orbit in nearly *circular paths* around the Earth, held in orbit by the *gravitational pull*.",
-        "category": "most",
-        "badgeTitle": "STRAIGHT LINE",
-        "badgeText": "Without this pull, they would fly off in a straight line along the tangent to the orbit."
+        "question": "What is the specific value of gravitational acceleration for low flying Earth satellites?",
+        "answer": "They have an acceleration of exactly *$9.8~m~s^{-2}$* directed *towards the centre of the Earth*.",
+        "category": "important",
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "This acceleration provides the necessary centripetal force for orbit."
       },
       {
-        "question": "What is critical velocity for an artificial satellite?",
-        "answer": "It is the *minimum velocity* necessary to put a low flying satellite into *orbit* around the Earth.",
-        "category": "most",
-        "badgeTitle": "VALUE",
-        "badgeText": "The critical velocity is approximately $7.9~km~s^{-1}$."
+        "question": "According to Newton's \"Principia Mathematica\", what happens if an object is thrown horizontally with a particular speed from a sufficient height?",
+        "answer": "It will *not fall back* but will *start revolving around the Earth*.",
+        "category": "important",
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "Newton predicated about artificial satellites 300 years ago."
       },
       {
-        "question": "How does altitude affect a satellite's required orbital speed and period?",
-        "answer": "The *higher* the satellite, the *slower* will be the required speed and the *longer* it will take to complete one revolution.",
-        "category": "most",
-        "badgeTitle": "REASON",
-        "badgeText": "Gravitational acceleration decreases inversely as the square of the distance from the centre."
+        "question": "What happens to the required speed and period of a satellite as its orbital height increases?",
+        "answer": "The *required speed will be slower* and it will take a *longer period* to complete one full revolution.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "Gravitational acceleration decreases inversely as the square of the distance."
       },
       {
-        "question": "What is the formula for the orbital velocity of a satellite?",
-        "answer": "Equating the *gravitational force* to the required *centripetal force* gives the orbital speed.",
-        "category": "most",
-        "badgeTitle": "EQUATION",
-        "badgeText": "$v=\\sqrt{\\frac{GM}{r}}$."
+        "question": "Who became the first human satellite of the Earth?",
+        "answer": "*Bruce McCandless* stepped into space from a space shuttle in 1984 and became the *first human satellite*.",
+        "category": "important",
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "He achieved this at a height of 100 km above Hawaii island."
       },
       {
-        "question": "Does the mass of a satellite affect its orbit?",
-        "answer": "No, the *mass* of the satellite ($m_s$) *cancels out* in the derivation, showing that it is unimportant in describing the satellite's orbit.",
-        "category": "most",
-        "badgeTitle": "CONDITION",
-        "badgeText": "Any satellite at distance $r$ must have the specific orbital speed; any less will bring it tumbling back to the Earth."
+        "question": "Why does a body suspended by a spring balance inside an orbiting satellite show zero weight?",
+        "answer": "Because the *supporting normal force* $F_N$ acting on the body inside the satellite is *exactly zero*.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$mg = mg - F_N \\implies F_N = 0$."
       },
       {
-        "question": "Why do astronauts experience weightlessness in a satellite?",
-        "answer": "Everything inside the satellite experiences weightlessness because the satellite is *accelerating* towards the centre of the Earth as a *freely falling body*.",
-        "category": "most",
-        "badgeTitle": "SUPPORTING FORCE",
-        "badgeText": "The supporting force ($F_N$) acting on a body inside the satellite becomes zero."
+        "question": "How does prolonged weightlessness affect astronauts?",
+        "answer": "It may *negatively affect* the *normal performance and functions* of the astronauts.",
+        "category": "important",
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "This is the primary reason why artificial gravity is created in spacecraft."
       },
       {
-        "question": "How is artificial gravity created in a spaceship?",
-        "answer": "The spaceship is set into *rotation* around its own axis, pressing the astronaut towards the *outer rim*.",
-        "category": "most",
-        "badgeTitle": "EFFECT",
-        "badgeText": "The astronaut exerts a force on the 'floor' of the spaceship in much the same way as on the Earth."
+        "question": "What specific role does moment of inertia play in angular motion?",
+        "answer": "It plays the *exact same role* in angular motion as *mass plays in linear translational motion*.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "It is the rotational analogue of mass in $F=ma$."
       },
       {
-        "question": "What is the frequency required to create Earth-like artificial gravity?",
-        "answer": "Setting the *centripetal acceleration* equal to $g$ gives the frequency for artificial gravity like the Earth.",
-        "category": "most",
-        "badgeTitle": "EQUATION",
-        "badgeText": "$f=\\frac{1}{2\\pi}\\sqrt{\\frac{g}{R}}$."
+        "question": "On what factors does the moment of inertia of a rigid body depend?",
+        "answer": "It depends not only on the *mass $m$* but also on its *distribution from the axis of rotation*.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "It depends heavily on $r^2$."
       },
       {
-        "question": "Define Moment of Inertia.",
-        "answer": "The quantity $mr^{2}$ is known as the *moment of inertia* and plays the same role in angular motion as *mass* does in linear motion.",
-        "category": "most",
-        "badgeTitle": "SYMBOL",
-        "badgeText": "It is represented by $I$."
-      },
-      {
-        "question": "What does the moment of inertia of a rigid body depend on?",
-        "answer": "It depends not only on *mass* $m$ but also on $r^{2}$, meaning the *mass distribution* from the axis of rotation.",
-        "category": "most",
-        "badgeTitle": "EQUATION FOR RIGID BODY",
+        "question": "What is the formula for the total moment of inertia of a rigid body composed of n small pieces?",
+        "answer": "It is the *sum of the products* of each *mass piece* and the *square of its distance from the axis*.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
         "badgeText": "$I=\\sum_{i=1}^{n}m_{i}{r_{i}}^{2}$."
       },
       {
-        "question": "What is the rotational analogue of Newton's second law?",
-        "answer": "By substituting *torque*, *moment of inertia*, and *angular acceleration*, we get the equation for rotation.",
-        "category": "most",
-        "badgeTitle": "EQUATION",
-        "badgeText": "$\\tau=I\\alpha$."
+        "question": "What is the moment of inertia of a thin rod of length L?",
+        "answer": "The moment of inertia for a thin rod is *$\\frac{1}{12}mL^{2}$*.",
+        "category": "important",
+        "badgeTitle": "DIAGRAM REFERENCE",
+        "badgeText": "For an axis passing through its center as shown in the textbook table."
       },
       {
-        "question": "Define angular momentum of a particle.",
-        "answer": "The *angular momentum* $L$ of a particle relative to an origin is the *cross product* of its position vector $r$ and its *linear momentum* $p$.",
-        "category": "most",
-        "badgeTitle": "EQUATION",
+        "question": "What is the moment of inertia of a thin ring or hoop?",
+        "answer": "The moment of inertia for a thin ring or hoop is *$mr^{2}$*.",
+        "category": "important",
+        "badgeTitle": "DIAGRAM REFERENCE",
+        "badgeText": "For an axis passing through its central symmetry."
+      },
+      {
+        "question": "What is the moment of inertia of a solid disc or cylinder?",
+        "answer": "The moment of inertia for a solid disc or cylinder is *$\\frac{1}{2}mr^{2}$*.",
+        "category": "important",
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "A cylinder with a larger diameter has a greater rotational inertia."
+      },
+      {
+        "question": "Define the angular momentum of a particle.",
+        "answer": "The *cross product* of the *position vector $r$* and the *linear momentum $p$* of the particle relative to the origin.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
         "badgeText": "$L=r\\times p$."
       },
       {
-        "question": "What is the magnitude and SI unit of angular momentum?",
-        "answer": "The magnitude is $L=m~rv~sin~\\theta$, and the SI unit is $kg~m^{2}s^{-1}$ or *Js*.",
-        "category": "most",
-        "badgeTitle": "DIRECTION",
-        "badgeText": "It is perpendicular to the plane formed by $r$ and $p$, given by the right hand rule."
-      },
-      {
-        "question": "State the law of conservation of angular momentum.",
-        "answer": "If *no external torque* acts on a system, the *total angular momentum* of the system remains *constant*.",
-        "category": "most",
-        "badgeTitle": "MATHEMATICAL FORM",
-        "badgeText": "$I_{1}\\omega_{1}=I_{2}\\omega_{2}$."
-      },
-      {
-        "question": "How does a diver use the conservation of angular momentum?",
-        "answer": "After leaving the board, the diver *curls* his body to *decrease* his moment of inertia, which causes him to spin with a *large angular velocity*.",
-        "category": "most",
-        "badgeTitle": "LANDING",
-        "badgeText": "Stretching arms and legs outward increases inertia, resulting in a gentle speed for a smooth dive."
-      },
-      {
-        "question": "How does a force act when it alters only the speed of a moving body?",
-        "answer": "A force acting on a moving body *along the direction* of its velocity will change the *magnitude* of the velocity (speed) while keeping the *direction* unchanged.",
+        "question": "What is the magnitude of angular momentum for a moving particle?",
+        "answer": "The magnitude is given by the *product of mass, radius, velocity*, and the *sine of the angle $\\theta$*.",
         "category": "important",
-        "badgeTitle": "CONCEPT CONNECTION",
-        "badgeText": "This produces linear acceleration but no circular motion."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$L=m~rv~\\sin\\theta$."
       },
       {
-        "question": "How does a force act when it alters only the direction of a moving body?",
-        "answer": "A *constant force* acting *perpendicular* to the velocity of a body moving in a circular path will change its *direction* continuously but its *speed* will remain the same.",
+        "question": "What is the exact angle between the position vector and tangential velocity for a particle moving in a uniform circle?",
+        "answer": "The angle is exactly *$90^{\\circ}$*.",
         "category": "important",
-        "badgeTitle": "RESULTING MOTION",
-        "badgeText": "This produces a radial (centripetal) acceleration."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$L=mrv~\\sin~90^{\\circ}=mrv$."
       },
       {
-        "question": "What orientation is chosen for the reference axes when describing circular motion?",
-        "answer": "The *z‑axis* is taken along the *axis of rotation* with the pivot 'O' as the origin, while the *x and y axes* are taken in the *plane of rotation*.",
+        "question": "What is the SI unit of angular momentum?",
+        "answer": "The SI unit is *$kg~m^{2}s^{-1}$* or *Joule second (Js)*.",
         "category": "important",
-        "badgeTitle": "VISUAL SETUP",
-        "badgeText": "Referencing a rigid body moving in a 3D coordinate plane."
-      },
-      {
-        "question": "Why is angular displacement considered a vector quantity only for infinitesimally small values?",
-        "answer": "For *very small values* of $\\Delta\\theta$, the angular displacement follows the *rules of vector addition*, making it a vector quantity.",
-        "category": "important",
-        "badgeTitle": "VECTOR PROPERTY",
-        "badgeText": "Large angular displacements do not commute and are therefore scalars."
-      },
-      {
-        "question": "What happens to the direction of angular velocity when the axis of rotation is fixed?",
-        "answer": "As the *axis of rotation is fixed*, the direction of $\\omega$ always remains the *same* and its magnitude can be manipulated as a *scalar*.",
-        "category": "important",
-        "badgeTitle": "MATHEMATICAL SIMPLIFICATION",
-        "badgeText": "This allows the use of simple algebraic kinematic equations for angular motion."
-      },
-      {
-        "question": "What is the physical significance of the reference line 'OP' in a rotating rigid body?",
-        "answer": "The line 'OP' is a *perpendicular* dropped from point P to the *axis of rotation*; the rotation of the entire rigid body is described by the rotation of this reference line.",
-        "category": "important",
-        "badgeTitle": "MOTION PROPERTY",
-        "badgeText": "The line OP rotates with the same angular velocity and acceleration as the rigid body."
-      },
-      {
-        "question": "In the limit as $\\Delta t \\rightarrow 0$, what does the arc length $P_1P_2$ represent?",
-        "answer": "As the time interval approaches zero, the length of the arc becomes *very small* and its direction represents the *direction of the tangent* to the circle at that point.",
-        "category": "important",
-        "badgeTitle": "GEOMETRICAL PROOF",
-        "badgeText": "This proves why linear velocity is always tangential."
-      },
-      {
-        "question": "Why is it necessary to have banked tracks on highway turns?",
-        "answer": "Turns taken so quickly that *friction alone cannot provide* enough energy for the required centripetal force require *banked tracks* to prevent vehicles from skidding.",
-        "category": "important",
-        "badgeTitle": "HIGHWAY DESIGN",
-        "badgeText": "The outer edge of the track is kept slightly higher than the inner edge."
-      },
-      {
-        "question": "What happens if the string snapping a whirling ball is suddenly broken?",
-        "answer": "The ball will not continue in a circular path but will follow a *straight line path* which is *tangent* to the circle at the point where the string snapped.",
-        "category": "important",
-        "badgeTitle": "NEWTON'S FIRST LAW",
-        "badgeText": "Inertia causes it to move in a straight line when the centripetal force is removed."
-      },
-      {
-        "question": "What provides the necessary centripetal force for an electron moving in a magnetic field?",
-        "answer": "A *normal* or *perpendicular magnetic force* compels a charged particle moving along a straight path to bend into a *circular path*.",
-        "category": "important",
-        "badgeTitle": "ATOMIC/SUBATOMIC EXAMPLE",
-        "badgeText": "This is a key example of centripetal force in electromagnetism."
-      },
-      {
-        "question": "What agency provides the centripetal force for a car taking a turn on a level road?",
-        "answer": "The necessary centripetal force is provided by the *friction* between the *tyres* and the *road*.",
-        "category": "important",
-        "badgeTitle": "HAZARD CONDITION",
-        "badgeText": "If the road is slippery, friction decreases, leading to skidding."
-      },
-      {
-        "question": "How does gravity behave for satellites at an altitude much greater than Earth's radius ($h >> R$)?",
-        "answer": "The *gravitational acceleration* decreases *inversely as the square of the distance* from the centre of the Earth, requiring a *slower orbital speed*.",
-        "category": "important",
-        "badgeTitle": "MATHEMATICAL RELATIONSHIP",
-        "badgeText": "Higher altitude = Slower speed and longer orbital period."
-      },
-      {
-        "question": "What happens if an artificial satellite's speed is less than the critical orbital speed?",
-        "answer": "Any speed *less than the required orbital speed* ($v = \\sqrt{GM/r}$) will cause the satellite to *fall out of orbit* and bring it tumbling back to the Earth.",
-        "category": "important",
-        "badgeTitle": "ORBITAL MECHANICS",
-        "badgeText": "The critical velocity is the absolute minimum speed required to maintain orbit."
-      },
-      {
-        "question": "How do we prove that the mass of a satellite does not affect its orbital velocity?",
-        "answer": "By equating *gravitational force* ($Gm_sM/r^2$) to *centripetal force* ($m_sv^2/r$), the *mass of the satellite* ($m_s$) *cancels out* on both sides of the equation.",
-        "category": "important",
-        "badgeTitle": "EQUATION IMPLICATION",
-        "badgeText": "$v = \\sqrt{GM/r}$ depends only on the Earth's mass and orbital radius."
-      },
-      {
-        "question": "Explain the concept of weightlessness inside a satellite using a spring balance.",
-        "answer": "A spring balance measures the *normal force* ($F_N$), but since the required centripetal force is perfectly provided by gravity ($Mg = Mv^2/r$), the resulting supporting normal force is *zero*.",
-        "category": "important",
-        "badgeTitle": "RESULTING STATE",
-        "badgeText": "$F_N = 0$ leaves the astronaut in a state of apparent weightlessness."
-      },
-      {
-        "question": "Why is extended weightlessness a problem for astronauts?",
-        "answer": "In a *gravity‑free space*, there is no force pushing the body, and extended exposure to weightlessness may severely affect the *performance and health* of the crew of the spaceships.",
-        "category": "important",
-        "badgeTitle": "SOLUTION",
-        "badgeText": "Artificial gravity is generated to counteract this."
-      },
-      {
-        "question": "How does a rotating spacecraft mimic gravity?",
-        "answer": "By setting the spaceship into *rotation* around its *central axis*, astronauts are pressed towards the *outer rim*, exerting a force on the floor similar to Earth's gravity.",
-        "category": "important",
-        "badgeTitle": "PHYSICS PRINCIPLE",
-        "badgeText": "The outer rim provides the necessary centripetal force via normal reaction."
-      },
-      {
-        "question": "In generating artificial gravity, what does the variable $R$ represent in the frequency formula?",
-        "answer": "The variable $R$ represents the *outer radius* of the spaceship that is rotating around its own central axis.",
-        "category": "important",
-        "badgeTitle": "FORMULA COMPONENT",
-        "badgeText": "Used in $f = \\frac{1}{2\\pi}\\sqrt{\\frac{g}{R}}$."
-      },
-      {
-        "question": "Why is the pivot point assumed to be frictionless when deriving the moment of inertia?",
-        "answer": "A *frictionless bearing* at the pivot point 'O' ensures that *no external resistive torque* opposes the applied force, allowing the pure rotational analogue of Newton's second law to be derived.",
-        "category": "important",
-        "badgeTitle": "IDEAL CONDITION",
-        "badgeText": "Ensures all applied force $F$ contributes to tangential acceleration $a_T$."
-      },
-      {
-        "question": "How do we transition from Newton's linear second law ($F=ma$) to its rotational analogue?",
-        "answer": "By substituting $a = r\\alpha$ into $F=ma$ to get $F=mr\\alpha$, and then multiplying both sides by $r$ to introduce *torque* ($\\tau = rF$), we derive $\\tau = mr^2\\alpha$.",
-        "category": "important",
-        "badgeTitle": "MATHEMATICAL SUBSTITUTION",
-        "badgeText": "This proves that $\\tau = I\\alpha$."
-      },
-      {
-        "question": "Why do most rigid bodies have complex moment of inertia calculations?",
-        "answer": "Because they have *different mass concentrations* at different distances from the axis of rotation, meaning their *mass distribution* is not uniform.",
-        "category": "important",
-        "badgeTitle": "CALCULATION METHOD",
-        "badgeText": "Requires summing up individual pieces: $I = \\sum m_i r_i^2$."
-      },
-      {
-        "question": "Why do all small pieces ($m_1, m_2, ... m_n$) of a rigid body share the same angular acceleration?",
-        "answer": "Because the body is *rigid*, all individual masses and particles maintain *fixed distances* from each other, resulting in them rotating with the *same angular acceleration* ($\\alpha$).",
-        "category": "important",
-        "badgeTitle": "KINEMATIC CONSTRAINT",
-        "badgeText": "Allows $\\alpha$ to be factored out of the summation in $\\tau = (\\sum m_i r_i^2)\\alpha$."
-      },
-      {
-        "question": "What is the condition for angular momentum ($L$) to be exactly $mrv$?",
-        "answer": "If a particle is moving in a *circle of radius $r$* with uniform angular velocity, the angle between the position vector ($r$) and tangential velocity ($v$) is exactly $90^\\circ$.",
-        "category": "important",
-        "badgeTitle": "TRIGONOMETRIC RESULT",
-        "badgeText": "Since $\\sin(90^\\circ) = 1$, the cross product simplifies to $L = mrv$."
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "It is a vector quantity."
       },
       {
         "question": "How is the total angular momentum of a symmetric rigid body calculated?",
-        "answer": "By *summing* the angular momentum of each individual $i$-th particle ($m_i r_i^2 \\omega$) over all particles, which factors into the product of *total moment of inertia* ($I$) and *angular velocity* ($\\omega$).",
+        "answer": "It is the *direct product* of its *moment of inertia $I$* and its *angular velocity $\\omega$*.",
         "category": "important",
-        "badgeTitle": "FINAL FORMULA",
-        "badgeText": "$L = I\\omega$."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$L=I\\omega$."
       },
       {
-        "question": "What proves that the law of conservation of angular momentum is a fundamental principle of Physics?",
-        "answer": "Its *validity* has been verified across *all scales of the universe*, ranging from the massive cosmological level to the sub‑microscopic level.",
+        "question": "In Example 3.5, what is the Earth's calculated orbital angular momentum about the Sun?",
+        "answer": "The Earth's orbital angular momentum is calculated to be *$2.67\\times10^{40}~kg~m^{2}s^{-1}$*.",
         "category": "important",
-        "badgeTitle": "UNIVERSAL LAW",
-        "badgeText": "Applies equally to galaxies and subatomic particles."
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "The sign is positive because the revolution is counter-clockwise."
       },
       {
-        "question": "What happens if a single isolated spinning body alters its moment of inertia?",
-        "answer": "According to the conservation law, if its moment of inertia $I_1$ changes to $I_2$, its *angular speed* ($\\omega_2$) automatically changes in *inverse proportion* so that total angular momentum remains constant.",
+        "question": "State the Law of Conservation of Angular Momentum.",
+        "answer": "If *no external torque* acts on a system, the *total angular momentum* of the system remains *strictly constant*.",
         "category": "important",
-        "badgeTitle": "EQUATION",
-        "badgeText": "$I_1\\omega_1 = I_2\\omega_2$."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$L_{total} = L_1 + L_2 + \\dots = \\text{constant}$."
+      },
+      {
+        "question": "What happens to a single isolated spinning body if it decreases its moment of inertia?",
+        "answer": "Its *angular speed will automatically increase* so that its *total angular momentum remains constant*.",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$I_{1}\\omega_{1}=I_{2}\\omega_{2}$."
       },
       {
         "question": "Why does the Earth's axis of rotation remain fixed in one direction relative to the universe?",
-        "answer": "Because the *major force* acting on it is the pull of the Sun, and it experiences *no other sizeable external torque* to alter its angular momentum direction.",
+        "answer": "Because *no other sizeable torque* is experienced by the Earth, thereby *conserving its angular momentum*.",
         "category": "important",
-        "badgeTitle": "COSMIC CONSERVATION",
-        "badgeText": "An example of angular momentum conservation maintaining orientation."
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "The major force acting on it (pull of the Sun) does not cause a changing torque."
       },
       {
-        "question": "How does a diver execute a somersault efficiently after jumping from a springboard?",
-        "answer": "The diver *curls* his body by rolling his arms and legs in, which *decreases* his moment of inertia and *drastically increases* his angular velocity for midair spins.",
+        "question": "How does a diver increase his angular velocity in midair before hitting the water?",
+        "answer": "By *curling his body* and rolling arms and legs in, which effectively *decreases his moment of inertia*.",
         "category": "important",
-        "badgeTitle": "PRACTICAL APPLICATION",
-        "badgeText": "Conservation of Angular Momentum in sports."
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "This allows him to spin in midair with a large angular velocity."
       },
       {
-        "question": "How does a diver achieve a smooth, gentle entry into the water?",
-        "answer": "Before touching the water surface, the diver *stretches out* his arms and legs, which *increases* his moment of inertia and *slows down* his angular velocity.",
+        "question": "How does a spinning ice skater decrease their angular velocity?",
+        "answer": "By *stretching their hands and a leg outward*, which *increases their overall moment of inertia*.",
         "category": "important",
-        "badgeTitle": "SAFETY MECHANISM",
-        "badgeText": "Prevents dangerous high-speed rotational impacts with the water."
+        "badgeTitle": "DIAGRAM REFERENCE",
+        "badgeText": "This action is required by the conservation of angular momentum."
       },
       {
-        "question": "How does an ice skater increase their spinning speed?",
-        "answer": "An ice skater increases their angular velocity by *folding* their arms and bringing stretched legs *close to the body*, effectively *decreasing* their moment of inertia.",
+        "question": "What happens to a person standing on a turntable if they draw heavy mass dumb-bells inward?",
+        "answer": "Their *angular speed at once increases* because the *moment of inertia* of the system *decreases*.",
         "category": "important",
-        "badgeTitle": "KINETIC RESULT",
-        "badgeText": "Less inertia leads to faster spinning without additional torque."
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "$L=I\\omega$ dictates that if $I$ goes down, $\\omega$ must go up."
       },
       {
-        "question": "What happens when a person on a rotating turntable draws heavy dumbbells inward?",
-        "answer": "As the hands are drawn *inward*, the moment of inertia *decreases*, causing the person's angular speed to *at once increase* due to conservation of angular momentum.",
+        "question": "What effect does the melting of polar ice caps have on the Earth's duration of day?",
+        "answer": "The water flows towards the equator, meaning the *moment of inertia increases*, causing *angular velocity to decrease*, which *increases the duration of the day*.",
         "category": "important",
-        "badgeTitle": "LABORATORY EXPERIMENT",
-        "badgeText": "A classic demonstration of $I_1\\omega_1 = I_2\\omega_2$."
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "This is a direct consequence of the conservation of angular momentum."
       },
       {
-        "question": "What surprising effect does the melting of Earth's polar ice caps have on our days?",
-        "answer": "As ice melts and water flows towards the *equator*, the mass distributes *further from the axis*, increasing Earth's moment of inertia and *decreasing* its angular velocity.",
+        "question": "In Example 3.4, what is the calculated period of revolution of the Earth satellite?",
+        "answer": "The period of revolution is approximately *27.7 days*.",
         "category": "important",
-        "badgeTitle": "GEOLOGICAL IMPACT",
-        "badgeText": "This causes the total duration of the day to slightly increase."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$T = 27.7~days$."
       },
       {
-        "question": "In terms of units, what is the significance of \"rev $min^{-1}$\" or RPM?",
-        "answer": "It is a common, *non‑SI unit* used to measure angular velocity, indicating how many *complete revolutions* a body makes in *one minute*.",
+        "question": "How does the direction of angular momentum behave in a completely isolated system?",
+        "answer": "The *direction of angular momentum* along the axis of rotation remains *absolutely fixed*.",
         "category": "important",
-        "badgeTitle": "CONVERSION FACTOR",
-        "badgeText": "Must be multiplied by $2\\pi/60$ to convert to SI unit rad $s^{-1}$."
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "It will not change its orientation unless an external torque causes it to do so."
       },
       {
-        "question": "What is the vector direction of instantaneous angular acceleration?",
-        "answer": "The angular acceleration is a vector quantity whose direction is strictly *along the axis of rotation*.",
+        "question": "According to the \"Point to Ponder\", why don't you fall out of an inverted roller coaster loop?",
+        "answer": "You don't fall because your *tangential velocity is high enough* that the *required centripetal force* keeps you pressed against the track.",
         "category": "important",
-        "badgeTitle": "SIGN RULE",
-        "badgeText": "Pointing in the same direction as $\\omega$ if speeding up, and opposite if slowing down."
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "The track provides a normal force pushing you inward to maintain the circular path."
       },
       {
-        "question": "Under what specific condition will an artificial satellite fly off in a straight line?",
-        "answer": "If the *gravitational pull* is *suddenly removed*, the satellite would immediately fly off in a *straight line along the tangent* to its original circular orbit.",
+        "question": "How is the torque equation related to linear momentum?",
+        "answer": "Just as *force changes linear momentum*, *torque changes angular momentum*.",
         "category": "important",
-        "badgeTitle": "NEWTONIAN MECHANICS",
-        "badgeText": "Centripetal force is solely responsible for bending the path."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$\\tau = I\\alpha$ is the rotational analogue to $F = ma$."
       },
       {
-        "question": "Why is the orbital velocity of a satellite independent of its own mass?",
-        "answer": "Because the *gravitational force* pulling the satellite scales *proportionally* with the satellite's mass, exactly canceling out the mass requirement for its centripetal acceleration.",
-        "category": "important",
-        "badgeTitle": "EQUATION FACT",
-        "badgeText": "$v = \\sqrt{GM/r}$ lacks a lower-case $m$."
-      },
-      {
-        "question": "Why does the equation $T=m(v^2/r - g)$ imply tension can be zero?",
-        "answer": "If the satellite or ball reaches a specific *critical speed* where the required centripetal acceleration ($v^2/r$) exactly equals *gravity* ($g$), the string no longer needs to exert any pulling force (Tension).",
-        "category": "important",
-        "badgeTitle": "PHYSICAL STATE",
-        "badgeText": "Gravity alone handles the circular motion."
-      },
-      {
-        "question": "Why are equations of angular motion analogous to linear motion equations?",
-        "answer": "Because they are derived using *identical algebraic manipulation* of the basic kinematic definitions, simply replacing linear variables ($S, v, a$) with their angular counterparts ($\\theta, \\omega, \\alpha$).",
-        "category": "important",
-        "badgeTitle": "MATHEMATICAL SYMMETRY",
-        "badgeText": "Allows identical problem-solving strategies."
-      },
-      {
-        "question": "What is the SI unit for the moment of inertia?",
-        "answer": "Since moment of inertia is the product of *mass* and the *square of the distance* ($mr^2$), its SI unit is *kilogram metre squared* ($kg~m^2$).",
-        "category": "important",
-        "badgeTitle": "UNIT ANALYSIS",
-        "badgeText": "A fundamental unit for rotational dynamics."
-      },
-      {
-        "question": "How does the direction of total angular momentum ($L$) relate to angular velocity ($\\omega$) for a symmetric rigid body?",
-        "answer": "For a symmetric rigid body rotating about a *fixed axis* through its centre of mass, the direction of total angular momentum ($L$) is identically the *same* as the direction of the angular velocity ($\\omega$).",
-        "category": "important",
-        "badgeTitle": "VECTOR ALIGNMENT",
-        "badgeText": "$L$ and $\\omega$ both point along the axis of rotation."
-      },
-      {
-        "question": "What does a non-zero net external torque do to a spinning body?",
-        "answer": "An *external torque* will forcibly *change the orientation* of the axis of rotation or *alter* the total angular momentum of the system, violating the conservation state.",
-        "category": "important",
-        "badgeTitle": "DYNAMICAL EFFECT",
-        "badgeText": "Torque is to angular momentum what Force is to linear momentum."
-      },
-      {
-        "question": "In the context of artificial gravity, how does the frequency ($f$) relate to the time period ($t$) of the spaceship?",
-        "answer": "The frequency is the *inverse* of the time period ($f = 1/t$), dictating how many full rotations the spaceship must complete per second to maintain the $9.8 \\text{ m s}^{-2}$ acceleration.",
-        "category": "important",
-        "badgeTitle": "FORMULA SUBSTITUTION",
-        "badgeText": "Crucial for deriving $f = \\frac{1}{2\\pi}\\sqrt{g/R}$."
-      },
-      {
-        "question": "Why does an object moving in a circular path have a continuously changing velocity even if its speedometer reading remains constant?",
-        "answer": "Because *velocity* is a *vector quantity*, and in circular motion, the *direction* is continuously changing at every point along the curve.",
+        "question": "Why is angular displacement $\\Delta\\theta$ considered a vector only for very small values?",
+        "answer": "Because only for *infinitesimally small values* does it *obey the commutative law of vector addition*.",
         "category": "conceptual",
-        "badgeTitle": "CONCEPTUAL PRINCIPLE",
-        "badgeText": "Speed is scalar, but velocity includes direction."
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "For large values, the order of rotation matters, violating standard vector properties."
       },
       {
-        "question": "How does a wheel laying out a tangential distance demonstrate the geometric relation between linear and angular displacement?",
-        "answer": "As the wheel turns through an angle $\\theta$, it rolls forward and lays out a tangential distance strictly equal to $S=r\\theta$.",
+        "question": "When applying the right-hand rule, what does the curling of the fingers represent?",
+        "answer": "The fingers curl *strictly in the direction of rotation* of the rigid body or particle.",
         "category": "conceptual",
-        "badgeTitle": "VISUAL PROOF",
-        "badgeText": "Demonstrated in the \"Do You Know?\" margin note."
+        "badgeTitle": "DIAGRAM REFERENCE",
+        "badgeText": "As illustrated in Fig. 3.2(d), this determines the thumb's direction."
       },
       {
-        "question": "Why do passengers not fall down when they are completely upside down at the top of a roller coaster loop?",
-        "answer": "Because at the top of the loop, their *weight* provides the *necessary centripetal force* required to keep them moving in the circular path rather than pulling them straight down.",
+        "question": "Under what condition is the angular displacement assigned a positive sign?",
+        "answer": "It is assigned a *positive sign* when the sense of rotation is strictly *counter-clockwise*.",
         "category": "conceptual",
-        "badgeTitle": "PHYSICS APPLICATION",
-        "badgeText": "Sensation of fear occurs, but physics prevents the fall."
+        "badgeTitle": "CONVENTION",
+        "badgeText": "Clockwise rotation is conventionally assigned a negative sign."
       },
       {
-        "question": "What specific prediction did Isaac Newton make about artificial satellites 300 years ago in his book \"Principia Mathematica\"?",
-        "answer": "He predicted that if an object is *thrown horizontally* with a *particular speed* from a place which is *sufficiently high*, it will start revolving around the Earth.",
+        "question": "Why is the z-axis typically chosen as the axis of rotation in a 3D coordinate system?",
+        "answer": "This allows the *x and y axes* to *perfectly represent the 2D plane of rotation* of the body.",
         "category": "conceptual",
-        "badgeTitle": "HISTORICAL FACT",
-        "badgeText": "Found in the \"Do you know?\" section."
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "The pivot O serves as the origin of these coordinates."
       },
       {
-        "question": "According to the \"Satellites Orbits\" diagram, what specific speed is required for an object to achieve an elliptical orbit around Earth?",
-        "answer": "An object must reach a speed of exactly *$30,000~km~h^{-1}$* to maintain an *elliptical orbit*.",
+        "question": "How does a rotating wheel mathematically lay out a tangential distance on the ground?",
+        "answer": "As the wheel turns through an angle $\\theta$, it covers a *linear tangential distance* equal to the *product of its radius and angle*.",
         "category": "conceptual",
-        "badgeTitle": "DIAGRAM DATA",
-        "badgeText": "Located in the visual graphic on page 9."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$S = r\\theta$ (from \"Do You Know?\" sidebox)."
       },
       {
-        "question": "According to the \"Satellites Orbits\" diagram, what is the required escape velocity to leave Earth's orbit entirely?",
-        "answer": "The *escape velocity* is *$11~km~s^{-1}$* or equivalently *$40,000~km~h^{-1}$*.",
+        "question": "In the derivation of $v=r\\omega$, why does the length of arc $P_1P_2$ become a straight line?",
+        "answer": "In the *limit when $\\Delta t$ approaches zero*, the arc becomes so small that its *direction perfectly matches the tangent* to the circle.",
         "category": "conceptual",
-        "badgeTitle": "DIAGRAM DATA",
-        "badgeText": "Located in the visual graphic on page 9."
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "This fundamentally proves why linear velocity is called tangential velocity."
       },
       {
-        "question": "According to the \"Satellites Orbits\" diagram, what is the exact speed required for a standard circular orbit?",
-        "answer": "A steady *circular orbit* requires a speed of *$27,000~km~h^{-1}$*.",
+        "question": "Do all particles in a rigid body have the same tangential acceleration?",
+        "answer": "No, *tangential acceleration* depends *directly on the particle's radial distance* from the axis of rotation.",
         "category": "conceptual",
-        "badgeTitle": "DIAGRAM DATA",
-        "badgeText": "Located in the visual graphic on page 9."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$a_t = r\\alpha$ (different $r$ means different $a_t$)."
       },
       {
-        "question": "How is the Earth's global positioning system directly related to your mobile phone's startup?",
-        "answer": "The moment you switch on your mobile phone, your *exact location* can be *tracked immediately* by the *global positioning system*.",
+        "question": "Why are the angular equations of motion strictly invalid for a changing axis of rotation?",
+        "answer": "Because the equations require all angular vectors to have the *same direction* so they can be manipulated as *simple scalars*.",
         "category": "conceptual",
-        "badgeTitle": "TID-BITS FACT",
-        "badgeText": "Modern application of satellite technology."
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "A wobbling axis would require complex 3D vector calculus."
       },
       {
-        "question": "Who holds the record for becoming the first \"human satellite\" of the Earth, and in what year did this occur?",
-        "answer": "*Bruce McCandless* became the first *human satellite* in the year *1984*.",
+        "question": "What visual proof shows that the direction of motion changes continuously in circular motion?",
+        "answer": "If the string is snapped, the ball instantly follows a *straight line path tangent to the circle*, showing the *instantaneous direction* of the velocity vector.",
         "category": "conceptual",
-        "badgeTitle": "TID-BITS FACT",
-        "badgeText": "A historic milestone in space exploration."
+        "badgeTitle": "DIAGRAM REFERENCE",
+        "badgeText": "Fig. 3.6(b) shows path AB branching off at point A."
       },
       {
-        "question": "What was the speed and altitude of Bruce McCandless when he stepped out of the space shuttle?",
-        "answer": "He stepped into space at a height of *100 km* above Hawaii with an *orbital speed* of *$29000~km~h^{-1}$*.",
+        "question": "Why is a stunt involving curved flight at high speed considered highly dangerous?",
+        "answer": "Because it requires an *exponentially large centripetal force* to bend the *high-speed path*, which is *difficult to maintain*.",
         "category": "conceptual",
-        "badgeTitle": "SPACE DATA",
-        "badgeText": "Extreme conditions of human orbit."
+        "badgeTitle": "SIDEBOX FACT",
+        "badgeText": "This remains true even if the airplanes are not flying close to each other."
       },
       {
-        "question": "Why does your apparent weight only change at specific moments during an elevator ride?",
-        "answer": "Your weight slightly changes only when the *velocity* of the elevator *changes* (causing acceleration) at the *start and end* of a ride, not during the middle when velocity is constant.",
+        "question": "What occurs physically if $v^2/r = g$ at the top of a vertical circular path?",
+        "answer": "The required centripetal force is *perfectly provided by gravity alone*, resulting in the *string tension becoming exactly zero*.",
         "category": "conceptual",
-        "badgeTitle": "CONCEPTUAL PRINCIPLE",
-        "badgeText": "Weight changes require a net vertical acceleration."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$T = m(v^2/r - g) = 0$."
       },
       {
-        "question": "Why does water not spill out of a bucket that is rapidly whirled in a vertical circle, even when completely inverted at the top?",
-        "answer": "Because the water's *downward weight* perfectly provides the *required centripetal force* needed to maintain the circular path, preventing it from falling out of the bucket.",
+        "question": "Why are highway tracks specially banked on sharp turns?",
+        "answer": "Because at high speeds, *friction alone cannot safely provide* the required centripetal force to *prevent the vehicle from skidding*.",
         "category": "conceptual",
-        "badgeTitle": "EVERYDAY PHYSICS",
-        "badgeText": "An application of $T = m(v^2/r - g)$."
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "Banking tilts the normal force to contribute to the center-seeking pull."
       },
       {
-        "question": "How does the physical structure of a rotating space-ship provide artificial gravity to its inhabitants?",
-        "answer": "The *surface* of the rotating space-ship *pushes* on the object in contact with it, providing a *normal force* that acts as the centripetal force needed to keep the object moving.",
+        "question": "According to the \"Satellites Orbits\" diagram, what speed corresponds to a purely circular orbit?",
+        "answer": "A steady speed of exactly *$27,000~km~h^{-1}$*.",
         "category": "conceptual",
-        "badgeTitle": "MECHANISM",
-        "badgeText": "This upward push mimics the feeling of Earth's gravity."
+        "badgeTitle": "DIAGRAM REFERENCE",
+        "badgeText": "Speeds higher than this but below escape velocity result in an elliptical orbit."
       },
       {
-        "question": "Why must the linear equation ($F=ma$) be multiplied by radius ($r$) to derive the rotational equation of motion?",
-        "answer": "Because the turning effect is produced by *torque* ($\\tau$), it is mathematically required to *multiply both sides by $r$* to write the equation purely in terms of torque.",
+        "question": "What happens to a satellite if it reaches a speed of $11~km~s^{-1}$?",
+        "answer": "It achieves *escape velocity* and entirely *breaks free from Earth's gravitational orbit*.",
         "category": "conceptual",
-        "badgeTitle": "DERIVATION STEP",
-        "badgeText": "This leads directly to $\\tau = I\\alpha$."
+        "badgeTitle": "CONVERSION",
+        "badgeText": "This is equivalent to $40,000~km~h^{-1}$."
       },
       {
-        "question": "If two solid cylinders have identically equal mass, which one will inherently possess a greater rotational inertia?",
-        "answer": "The cylinder with the *larger diameter* will always have the *greater rotational inertia*.",
+        "question": "What historical book predicted the existence of artificial satellites 300 years ago?",
+        "answer": "Isaac Newton's well-known book *\"Principia Mathematica\"*.",
         "category": "conceptual",
-        "badgeTitle": "MASS DISTRIBUTION",
-        "badgeText": "Inertia depends heavily on how far mass is spread from the center."
+        "badgeTitle": "HIDDEN GEM",
+        "badgeText": "He predicated that an object thrown horizontally with sufficient speed from a high place would revolve around Earth."
       },
       {
-        "question": "What is the precise mathematical formula for the moment of inertia of a \"Thin Rod\" rotating about its center?",
-        "answer": "The moment of inertia for a thin rod of mass $m$ and length $L$ is *$\\frac{1}{12}mL^2$*.",
+        "question": "How does the Global Positioning System (GPS) utilize satellites in daily life?",
+        "answer": "The moment you switch on your mobile phone, your *exact location can be tracked immediately* by the GPS.",
         "category": "conceptual",
-        "badgeTitle": "TABLE REFERENCE",
-        "badgeText": "Essential for calculating standard geometries."
+        "badgeTitle": "TID-BIT",
+        "badgeText": "This requires constant synchronization with orbiting satellites."
       },
       {
-        "question": "What is the precise mathematical formula for the moment of inertia of a solid \"Sphere\"?",
-        "answer": "The moment of inertia for a solid sphere of mass $m$ and radius $r$ is *$\\frac{2}{5}mr^2$*.",
+        "question": "Who holds the record for becoming the first \"human satellite\" of the Earth?",
+        "answer": "Astronaut *Bruce McCandless*, who stepped into space from a space shuttle in 1984.",
         "category": "conceptual",
-        "badgeTitle": "TABLE REFERENCE",
-        "badgeText": "Found in the geometrical shapes chart."
+        "badgeTitle": "DATA POINT",
+        "badgeText": "He floated at a height of 100 km with a speed of $29,000~km~h^{-1}$."
       },
       {
-        "question": "What is the precise mathematical formula for the moment of inertia of a \"Solid disc or cylinder\"?",
-        "answer": "The moment of inertia for a solid disc or cylinder is *$\\frac{1}{2}mr^2$*.",
+        "question": "Why doesn't your weight change during the middle of an elevator ride?",
+        "answer": "Because your *weight only alters when the velocity changes* (accelerates/decelerates) at the start or end, *not during constant velocity*.",
         "category": "conceptual",
-        "badgeTitle": "TABLE REFERENCE",
-        "badgeText": "Crucial formula for flywheel and pulley problems."
+        "badgeTitle": "CONCEPTUAL LINK",
+        "badgeText": "Apparent weight depends entirely on net vertical acceleration."
       },
       {
-        "question": "What is the precise mathematical formula for the moment of inertia of a \"Thin ring or Hoop\"?",
-        "answer": "The moment of inertia for a thin ring or hoop where all mass is at the outer edge is *$mr^2$*.",
+        "question": "Why doesn't water fall out of an inverted bucket whirled rapidly in a vertical circle?",
+        "answer": "The bucket's speed is *high enough* that the *required centripetal force exceeds or equals the weight* of the water, keeping it pressed against the bottom.",
         "category": "conceptual",
-        "badgeTitle": "TABLE REFERENCE",
-        "badgeText": "Represents the maximum possible inertia for a given radius."
+        "badgeTitle": "CAN YOU TELL?",
+        "badgeText": "Inertia forces the water into the bucket's base faster than gravity pulls it down."
       },
       {
-        "question": "Why does a bicycle immediately fall when at rest, but remain perfectly upright and stable when moving?",
-        "answer": "When moving, the *angular momentum* of the spinning wheel strongly *resists* any tendency to change its orientation, keeping the bike stable.",
+        "question": "In a rotating spacecraft, what physically provides the artificial gravity to the astronaut?",
+        "answer": "The *internal surface (floor)* of the rotating spaceship *pushes on the astronaut* to keep them moving in a circular path.",
         "category": "conceptual",
-        "badgeTitle": "GYROSCOPIC EFFECT",
-        "badgeText": "An everyday demonstration of angular momentum conservation."
+        "badgeTitle": "FORCE TYPE",
+        "badgeText": "This is a normal force acting as the centripetal force."
       },
       {
-        "question": "Why does the speed of a ball tied to a string increase drastically as the string wraps tightly around a finger?",
-        "answer": "As the string wraps, the *radius of rotation decreases*, which *decreases* the moment of inertia; to conserve angular momentum, the *angular speed must increase*.",
+        "question": "Why do the moment of inertia formulas contain the term $r^2$ rather than just $r$?",
+        "answer": "Because moment of inertia is derived from the torque equation ($\\tau = rF$), where $F$ itself contains an *$r$ component via tangential acceleration ($mr\\alpha$)*, resulting in *$m \\times r \\times r \\times \\alpha$*.",
         "category": "conceptual",
-        "badgeTitle": "VISUAL EXAMPLE",
-        "badgeText": "A clear consequence of $I_1\\omega_1 = I_2\\omega_2$."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$I = mr^2$."
       },
       {
-        "question": "What hidden effect does the melting of polar ice caps have on the length of a day on Earth?",
-        "answer": "As melted water flows away toward the *equator*, the *moment of inertia* of Earth increases; due to conservation of angular momentum, the Earth's *angular velocity decreases*, causing the *duration of the day to increase*.",
+        "question": "Between two solid cylinders of equal mass, which one will inherently resist rotational changes more?",
+        "answer": "The cylinder with the *larger diameter* will have the strictly *greater rotational inertia*.",
         "category": "conceptual",
-        "badgeTitle": "PLANETARY PHYSICS",
-        "badgeText": "A macro-scale application of rotational dynamics."
+        "badgeTitle": "VISUAL BOX",
+        "badgeText": "Due to the mass being distributed further from the central axis."
       },
       {
-        "question": "If a planet moves closer to the Sun in its elliptical orbit, why does its orbital velocity automatically increase?",
-        "answer": "As the *distance* to the Sun *decreases*, its *moment of inertia decreases*; to maintain a *constant angular momentum*, the *orbital velocity must automatically increase*.",
+        "question": "How do we calculate the total torque of a rigid body composed of multiple uneven masses?",
+        "answer": "By *summing the individual torques* ($\\tau_i = m_i r_i^2 \\alpha$) of all the $n$ small pieces making up the body.",
         "category": "conceptual",
-        "badgeTitle": "KEPLER'S LAW CONCEPT",
-        "badgeText": "Found in the \"Point to Ponder\" section."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$\\tau_{total} = (\\sum m_i r_i^2)\\alpha$."
       },
       {
-        "question": "If the angular velocity of all particles in a rigid body is perfectly constant, is their linear velocity also constant?",
-        "answer": "No, because *linear velocity* depends directly on the *radius* ($v = r\\omega$), meaning particles at *different distances* from the axis will have *different linear velocities*.",
+        "question": "How does the vector direction of a rotating sphere's angular momentum align with its spin?",
+        "answer": "If the sphere spins *counter-clockwise*, the angular velocity and angular momentum vectors point *vertically upward* along the rotational axis.",
         "category": "conceptual",
-        "badgeTitle": "CRQ 3.1 INSIGHT",
-        "badgeText": "Distinguishes angular consistency from linear variance."
+        "badgeTitle": "DIAGRAM REFERENCE",
+        "badgeText": "Shown by the gold arrow in the right-hand rule illustration (Fig 3.17)."
       },
       {
-        "question": "Why do passengers in a car tend to fall to the right when the vehicle takes a sharp turn to the left?",
-        "answer": "Due to *inertia*, the passengers' bodies attempt to maintain their *original straight-line path* while the car itself *accelerates to the left* beneath them.",
+        "question": "Why is it practically impossible to balance on a stationary bicycle, yet easy on a moving one?",
+        "answer": "The *angular momentum* of the spinning wheels creates a *gyroscopic effect* that heavily *resists any tendency to change orientation*.",
         "category": "conceptual",
-        "badgeTitle": "SHORT QUESTION 3.7 CONCEPT",
-        "badgeText": "A classic demonstration of Newton's First Law in a rotating frame."
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "This helps keep the bike upright and structurally stable."
       },
       {
-        "question": "What will be the time period of a simple pendulum inside an artificial satellite orbiting the Earth?",
-        "answer": "The time period will be *infinity*, because the satellite is in a state of *free fall*, making the *apparent gravity* ($g$) *zero*.",
+        "question": "Why does a ball spinning on a string speed up as the string wraps around your finger?",
+        "answer": "As the string wraps, the *orbital radius decreases*; to strictly *conserve angular momentum*, the *linear speed must forcefully increase*.",
         "category": "conceptual",
-        "badgeTitle": "CRQ 3.4 INSIGHT",
-        "badgeText": "Since $T = 2\\pi\\sqrt{l/g}$, placing $g=0$ results in an undefined/infinite period."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$mvr = \\text{constant}$."
       },
       {
-        "question": "What are the average velocity and average acceleration of a particle in uniform circular motion over exactly one complete revolution?",
-        "answer": "Both *average velocity* and *average acceleration* are *zero*, because after one full revolution, the *net displacement* is zero.",
+        "question": "What is the macro-scale effect of polar ice melting into the oceans?",
+        "answer": "The water moves *toward the equator*, increasing Earth's *moment of inertia*, which strictly *decreases angular velocity* and *increases the duration of the day*.",
         "category": "conceptual",
-        "badgeTitle": "CRQ 3.7 INSIGHT",
-        "badgeText": "A tricky conceptual trap regarding \"average\" vs \"instantaneous\" values."
+        "badgeTitle": "HIDDEN GEM",
+        "badgeText": "A planetary example of conservation of angular momentum."
       },
       {
-        "question": "If a string can barely support a stationary heavy ball without breaking, why does it snap when whirled in a vertical circle?",
-        "answer": "Because when whirled, the *tension* at the *lowest point* must provide both the *upward centripetal force* ($mv^2/r$) and *counteract* the *downward weight* ($mg$), creating a *total force* that exceeds the string's limit.",
+        "question": "Why does a coasting, rotating beaker slow down if water drips into it?",
+        "answer": "The dripping water *adds mass further from the center*, increasing the system's *moment of inertia ($I$)*, which forces the *angular speed ($\\omega$) to decrease*.",
         "category": "conceptual",
-        "badgeTitle": "CRQ 3.9 INSIGHT",
-        "badgeText": "Analyzes the point of maximum mechanical stress."
+        "badgeTitle": "POINT TO PONDER",
+        "badgeText": "This ensures $L = I\\omega$ remains constant."
       },
       {
-        "question": "Why does a coasting rotating system slow down if water continuously drips into its attached beaker?",
-        "answer": "The *added water mass* steadily *increases* the system's *moment of inertia*; to satisfy the *conservation of angular momentum*, the system's *angular speed* must correspondingly *decrease*.",
+        "question": "If a rigid body has constant angular velocity, why is the linear velocity of its particles NOT constant?",
+        "answer": "Because linear velocity is a vector; its *direction is continuously changing* at every point along the circular path.",
         "category": "conceptual",
-        "badgeTitle": "POINT TO PONDER CONCEPT",
-        "badgeText": "Inelastic collision principles applied to rotation."
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "Also, the magnitude $v$ varies based on the particle's distance $r$ from the axis."
       },
       {
-        "question": "How is the exact direction of angular momentum determined for a spinning sphere?",
-        "answer": "By using the *right-hand rule*: curling the fingers in the sense given by rotation, the *thumb points upward* along the rotational axis representing the *angular momentum*.",
+        "question": "What happens to the time period of a simple pendulum if taken inside an artificial satellite?",
+        "answer": "The time period *approaches infinity*, meaning the pendulum *completely stops swinging*.",
         "category": "conceptual",
-        "badgeTitle": "VISUAL DIAGRAM ANALYSIS",
-        "badgeText": "Explains the vectors in the rotating sphere figure."
+        "badgeTitle": "REASONING",
+        "badgeText": "The apparent gravity ($g'$) inside the satellite is exactly zero due to free-fall."
       },
       {
-        "question": "Why does a force acting strictly along the direction of a body's velocity completely fail to produce circular motion?",
-        "answer": "Because such a *parallel force* will only *change the magnitude* of the velocity (speed) and *leaves the direction completely unchanged*.",
+        "question": "What is the average velocity of an object completing exactly one uniform circular revolution?",
+        "answer": "The average velocity is *exactly zero*.",
         "category": "conceptual",
-        "badgeTitle": "VECTOR LIMITATION",
-        "badgeText": "Circular motion fundamentally requires a perpendicular force component."
+        "badgeTitle": "REASONING",
+        "badgeText": "Because the starting and ending points are identical, the net vector displacement is zero."
       },
       {
-        "question": "Conceptually, why does the vector sum of Tension ($T$) and weight ($w$) furnish the required centripetal force at the top of a vertical circle?",
-        "answer": "Because at the highest point, *both forces act downward* along the radius, *directly towards the center* of the circular path, combining to pull the object inward.",
+        "question": "Why might a string effortlessly support a stationary heavy ball, but abruptly break if whirled vertically?",
+        "answer": "At the bottom of the arc, the string must support both *the weight of the ball* AND provide the *massive upward centripetal force*.",
         "category": "conceptual",
-        "badgeTitle": "FREE BODY DIAGRAM",
-        "badgeText": "Explains the setup of $T + w = mv^2/r$."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$T_{max} = mg + \\frac{mv^2}{r}$."
       },
       {
-        "question": "In the context of a satellite, what does the variable $F_N$ represent conceptually in the equation $F_c = mg - F_N$?",
-        "answer": "It represents the *supporting normal force* from the floor of the spacecraft, or the *physical tension* in a suspending spring balance.",
+        "question": "When a moving car sharply turns left, why do the occupants feel violently thrown to the right?",
+        "answer": "Due to their *bodily inertia*, they tend to *continue moving in a straight line* while the car is physically *pulled away to the left*.",
         "category": "conceptual",
-        "badgeTitle": "WEIGHTLESSNESS PROOF",
-        "badgeText": "Proving $F_N = 0$ is how physics mathematically defines apparent weightlessness."
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "There is no actual \"outward\" force; it is simply the absence of an inward force on their bodies."
       },
       {
-        "question": "What does it mean conceptually when we state that the moment of inertia is the rotational analogue of mass?",
-        "answer": "It means that just as *mass resists linear acceleration*, *moment of inertia* serves as the *ultimate measure* of a rigid body's *resistance* to any change in its *rotational state*.",
+        "question": "What is the exact ratio of the angular speed of a minute hand to an hour hand on a clock?",
+        "answer": "The exact ratio is *$12:1$*.",
         "category": "conceptual",
-        "badgeTitle": "SHORT QUESTION 3.4 CONCEPT",
-        "badgeText": "Defining inertia across different motion domains."
+        "badgeTitle": "REASONING",
+        "badgeText": "The minute hand completes one full revolution ($2\\pi$) in one hour, while the hour hand takes $12$ hours to complete the same rotation."
       },
       {
-        "question": "Why does the law of conservation of angular momentum strictly hold true for a midair diver despite the strong downward pull of gravity?",
-        "answer": "Because *gravity acts perfectly uniformly* through the diver's *center of mass*, which means it has *no lever arm* and produces *zero external torque* to alter the spin.",
+        "question": "Why is the term \"apparent weightlessness\" physically more accurate than \"true weightlessness\" for orbiting astronauts?",
+        "answer": "Because the *true gravitational weight ($mg$)* is still *heavily acting on them* to provide centripetal force; only the *supporting normal force ($F_N$) has vanished*.",
         "category": "conceptual",
-        "badgeTitle": "ADVANCED MECHANICS",
-        "badgeText": "Explains why falling objects can still conserve internal momentum."
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "True weightlessness would require being infinitely far from any massive body."
       },
       {
-        "question": "In the derivation of $L = I\\omega$, the text specifies a \"symmetric rigid body.\" Why is symmetry conceptually important here?",
-        "answer": "Symmetry ensures that the *total angular momentum vector* perfectly *aligns* with the *axis of rotation* and the *angular velocity vector*, allowing a simple *scalar multiplication*.",
+        "question": "What geometric feature dictates the velocity direction of a point $P$ moving on a rigid rotating body?",
+        "answer": "The velocity direction is always *perpendicular* to the *reference line $OP$* dropped from the point to the axis of rotation.",
         "category": "conceptual",
-        "badgeTitle": "MATHEMATICAL CONSTRAINT",
-        "badgeText": "Asymmetric bodies cause wobbling and complex tensor calculations."
-      },
-      {
-        "question": "According to the text, what exact two physical factors does the moment of inertia of a body depend upon?",
-        "answer": "It depends strictly upon the *mass* of the body and *how that mass is distributed* about the *axis of rotation*.",
-        "category": "conceptual",
-        "badgeTitle": "CORE DEFINITION",
-        "badgeText": "The distinction between $m$ and $mr^2$."
+        "badgeTitle": "DIAGRAM REFERENCE",
+        "badgeText": "Fig. 3.5(b) illustrates this orthogonal relationship."
       }
     ],
     "4": [
       {
-        "question": "How is work calculated when a particle is acted upon by a variable force?",
-        "answer": "The total path is divided into $n$ short intervals of displacements where the force is considered approximately *constant*, and the work is the *sum* of the products of force components and displacements for all intervals.",
+        "question": "How is the work done calculated when a rocket moves away from the Earth?",
+        "answer": "It is calculated by considering a *variable force*, because the work is done against the force of gravity, which varies as the *inverse square of the distance* from the Earth's centre.",
         "category": "most",
         "badgeTitle": "MATHEMATICAL EXPRESSION",
-        "badgeText": "$W_{total}=\\sum_{i=1}^{n}F_{i}\\cos\\theta_{i}\\Delta d_{i}$"
+        "badgeText": "$W_{\\text{total}} = \\lim_{\\Delta d \\to 0} \\sum_{i=1}^{n} F_i \\cos\\theta_i \\Delta d_i$"
       },
       {
-        "question": "How is the exact result for work done by a variable force obtained?",
-        "answer": "The exact work done is obtained by taking the *limit* as the displacement intervals $\\Delta d$ approach *zero*.",
+        "question": "Give two common examples of situations involving a variable force.",
+        "answer": "1. A *rocket moving away from the Earth against gravity*. 2. The *force exerted by a spring*, which increases with the amount of stretch.",
+        "category": "most",
+        "badgeTitle": "KEY CONCEPT",
+        "badgeText": "In these cases, the force does not remain constant during the process of doing work."
+      },
+      {
+        "question": "How can the exact result for work done by a variable force be obtained mathematically?",
+        "answer": "By *sub-dividing the distance* into a large number of intervals and letting each displacement interval $\\Delta d$ *approach zero*.",
         "category": "most",
         "badgeTitle": "FORMULA",
-        "badgeText": "$W_{total}=\\lim_{\\Delta d\\rightarrow0}\\sum_{i=1}^{n}F_{i}\\cos\\theta_{i}\\Delta d_{i}$"
+        "badgeText": "$W_{\\text{total}} = \\lim_{\\Delta d \\to 0} \\sum_{i=1}^{n} F_i \\cos\\theta_i \\Delta d_i$"
       },
       {
-        "question": "What does the graphical representation of work done by a variable force represent?",
-        "answer": "The work done by a variable force is equal to the *area under the curve* of the $F \\cos\\theta$ versus $d$ graph between two points.",
+        "question": "What does the area under the $F\\cos\\theta$ versus $d$ curve represent?",
+        "answer": "It represents the *work done* by a *variable force* in moving a particle between two points.",
         "category": "most",
-        "badgeTitle": "DIAGRAM REFERENCE",
-        "badgeText": "The shaded area under the curve in the force-displacement graph."
+        "badgeTitle": "GRAPHICAL REPRESENTATION",
+        "badgeText": "The total area of the rectangles approaches the area between the curve and the x-axis."
       },
       {
-        "question": "What defines a conservative force?",
-        "answer": "A force is *conservative* if the work done by it in moving an object between two points is *independent of the path* followed, or if the work done in a *closed path* is zero.",
+        "question": "Define gravitational field.",
+        "answer": "The *space around the Earth* in which its *gravitational force acts* on a body is called the gravitational field.",
+        "category": "most",
+        "badgeTitle": "PROPERTY",
+        "badgeText": "When an object is moved in this field, the work done by the gravitational force does not depend on the choice of the path."
+      },
+      {
+        "question": "What is the condition for work done to be positive or negative in a gravitational field?",
+        "answer": "If displacement is *in the direction of the gravitational force*, work is *positive*. If displacement is *against the gravitational force*, work is *negative*.",
+        "category": "most",
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "The gravitational force in these calculations is equal to the weight $mg$ of the object."
+      },
+      {
+        "question": "What is the work done by the gravitational force along a horizontal step?",
+        "answer": "The work done is *zero*, because the *weight $mg$ is perpendicular* to the displacement for these steps.",
+        "category": "most",
+        "badgeTitle": "APPLICATION",
+        "badgeText": "Work is done by the force of gravity only along the vertical displacements."
+      },
+      {
+        "question": "Define a conservative force.",
+        "answer": "A force is *conservative* if the work done by it in moving an object between two points is *independent of the path followed*, or if the *work done in a closed path is zero*.",
         "category": "most",
         "badgeTitle": "EXAMPLES",
         "badgeText": "Gravitational force, electrostatic force, and elastic spring force."
       },
       {
-        "question": "What is the work done by the gravitational force along a horizontal path?",
-        "answer": "The work done is *zero* because the weight of the object is *perpendicular* to the horizontal displacement ($\\theta = 90^\\circ$).",
+        "question": "Define a non-conservative force and give its most common example.",
+        "answer": "A force is *non-conservative* if the work done by it in moving an object between two points or in a closed path *depends on the path of motion*, with the *kinetic frictional force* being a prime example.",
         "category": "most",
-        "badgeTitle": "CONCEPT",
-        "badgeText": "$\\cos(90^\\circ) = 0$, leading to zero work."
+        "badgeTitle": "OTHER EXAMPLES",
+        "badgeText": "Air resistance, tension in a string, normal force, and propulsion force of a rocket."
       },
       {
-        "question": "How does gravitational force behave when an object is moved over a closed path?",
-        "answer": "The total work done by the gravitational force along any *closed path* is exactly *zero*.",
+        "question": "Why is kinetic frictional force considered a non-conservative force?",
+        "answer": "Because it *always acts opposite to the motion*, doing *negative work*; thus, a greater amount of work is done over a longer path, making it *dependent on the choice of path*.",
         "category": "most",
-        "badgeTitle": "IMPORTANT PROPERTY",
-        "badgeText": "This confirms that the gravitational field is a conservative field."
+        "badgeTitle": "CLOSED PATH RULE",
+        "badgeText": "The total work done by a non-conservative force in a closed path is not zero."
       },
       {
-        "question": "What defines a non-conservative force?",
-        "answer": "A force is *non-conservative* if the work done by it in moving an object between two points strictly *depends on the path* of motion.",
+        "question": "Define Power and state its SI unit.",
+        "answer": "Power is the *measure of the rate at which work is being done*, and its SI unit is the *watt*.",
         "category": "most",
-        "badgeTitle": "KEY CHARACTERISTIC",
-        "badgeText": "The total work done in a closed path is never zero."
+        "badgeTitle": "DEFINITION OF UNIT",
+        "badgeText": "One watt is defined as one joule of work done in one second."
       },
       {
-        "question": "Why is kinetic frictional force classified as a non-conservative force?",
-        "answer": "Frictional force always acts *opposite to motion*, doing *negative work*; therefore, a longer path results in a *greater amount of work* done against friction, making it path-dependent.",
+        "question": "Provide the formula for average power and instantaneous power.",
+        "answer": "Average power is $P_{av} = \\frac{\\Delta W}{\\Delta t}$, while instantaneous power is $P = \\lim_{\\Delta t \\to 0} \\frac{\\Delta W}{\\Delta t}$.",
         "category": "most",
-        "badgeTitle": "EXAMPLES",
-        "badgeText": "Air resistance, tension in a string, and propulsion force of a rocket."
+        "badgeTitle": "CONDITION",
+        "badgeText": "Instantaneous power is used when work is expressed as a function of time for a short interval $\\Delta t$."
       },
       {
-        "question": "What is the definition of power in physics?",
-        "answer": "Power is defined as the measure of the *rate* at which *work is being done*.",
+        "question": "Prove that Power is the dot product of Force and Velocity.",
+        "answer": "Since work $\\Delta W = \\mathbf{F} \\cdot \\Delta \\mathbf{d}$, substituting gives $P = \\frac{\\mathbf{F} \\cdot \\Delta \\mathbf{d}}{\\Delta t}$. Because $\\frac{\\Delta \\mathbf{d}}{\\Delta t} = \\mathbf{v}$, we get $P = \\mathbf{F} \\cdot \\mathbf{v}$.",
         "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$P_{av}=\\frac{\\Delta W}{\\Delta t}$"
+        "badgeTitle": "SIGNIFICANCE",
+        "badgeText": "This relates instantaneous power directly to the applied force and the object's velocity."
       },
       {
-        "question": "How is instantaneous power defined?",
-        "answer": "Instantaneous power is the limiting value of the ratio of work done to the time interval as the time interval $\\Delta t$ approaches *zero*.",
-        "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$P=\\lim_{\\Delta t\\rightarrow0}\\frac{\\Delta W}{\\Delta t}$"
-      },
-      {
-        "question": "What is the mathematical relationship between power, force, and velocity?",
-        "answer": "Power is equal to the *dot product* of the *applied force* and the *velocity* of the object.",
-        "category": "most",
-        "badgeTitle": "EXPRESSION",
-        "badgeText": "$P=F \\cdot v$"
-      },
-      {
-        "question": "What is the SI unit of power and how is it defined?",
-        "answer": "The SI unit of power is the *watt*, defined as one *joule* of work done in one *second*.",
-        "category": "most",
-        "badgeTitle": "COMMERCIAL UNIT",
-        "badgeText": "Kilowatt-hour (kWh) is often used for electrical energy."
-      },
-      {
-        "question": "What does one kilowatt-hour (kWh) represent in terms of energy?",
-        "answer": "One kilowatt-hour is the *work done* in one hour by an agency whose power is exactly *one kilowatt*.",
+        "question": "What is a kilowatt-hour and what does it measure?",
+        "answer": "One kilowatt-hour is the *work done in one hour* by an agency whose power is *one kilowatt*, representing a *commercial unit of electrical energy*.",
         "category": "most",
         "badgeTitle": "CONVERSION",
         "badgeText": "$1 \\text{ kWh} = 3.6 \\times 10^6 \\text{ J} = 3.6 \\text{ MJ}$."
       },
       {
-        "question": "Define potential energy.",
-        "answer": "*Potential energy* is the energy possessed by a body because of its *position* in a force field or because of its *constrained state*.",
+        "question": "Define Potential Energy.",
+        "answer": "Potential energy is the *energy possessed by a body due to its changed position or its constrained state*.",
         "category": "most",
-        "badgeTitle": "TYPES",
-        "badgeText": "Gravitational potential energy and elastic potential energy."
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "It is a kind of mechanical energy, similar to kinetic energy."
       },
       {
-        "question": "Define absolute gravitational potential energy.",
-        "answer": "It is the *work done* by the gravitational force in displacing an object from a certain *position* to *infinity* where the force of gravity becomes zero.",
+        "question": "What is elastic potential energy?",
+        "answer": "The energy stored in a *compressed spring* is the potential energy possessed by the spring due to its *compressed or stretched state*, which is called *elastic potential energy*.",
         "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$U=-\\frac{GMm}{r}$"
+        "badgeTitle": "CONSTRAINT",
+        "badgeText": "It arises because of the object's constrained state in a force field."
       },
       {
-        "question": "Why does the equation $W = mgh$ fail over large distances from the Earth?",
-        "answer": "The formula $mgh$ assumes the gravitational force is nearly *constant*, but over large distances, the force varies *inversely* to the square of the distance.",
-        "category": "most",
-        "badgeTitle": "CORRECTION METHOD",
-        "badgeText": "The distance is divided into small steps $\\Delta r$ to keep the force constant within each step."
-      },
-      {
-        "question": "What does the negative sign in the absolute potential energy formula represent?",
-        "answer": "The negative sign indicates that the work has to be done *on the body* to move it against gravity, showing that the Earth's gravitational field is *attractive*.",
-        "category": "most",
-        "badgeTitle": "BEHAVIOR",
-        "badgeText": "As distance $r$ increases, the potential energy $U$ becomes less negative (it increases)."
-      },
-      {
-        "question": "What is the value of absolute potential energy on the surface of the Earth?",
-        "answer": "It is found by setting the distance $r$ equal to the *radius of the Earth* ($R$).",
-        "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$U_{g}=-\\frac{GMm}{R}$"
-      },
-      {
-        "question": "Define escape velocity.",
-        "answer": "The *initial velocity* of an object with which it goes out of the Earth's *gravitational field* and *never returns*.",
+        "question": "Define Absolute Gravitational Potential Energy.",
+        "answer": "It is the *work done by the gravitational force* in displacing an object from a certain position to *infinity*, where the force of gravity becomes zero.",
         "category": "most",
         "badgeTitle": "CONDITION",
-        "badgeText": "Initial kinetic energy must equal the increase in absolute potential energy."
+        "badgeText": "The traditional relation $mgh$ is only true near the surface of the Earth."
       },
       {
-        "question": "How is escape velocity derived in terms of the Earth's mass and radius?",
-        "answer": "By equating the initial kinetic energy $\\frac{1}{2}mv_{esc}^{2}$ to the total work required to lift the body to infinity, which is $G\\frac{Mm}{R}$.",
+        "question": "Why does the relation $P.E. = mgh$ fail when a body is displaced through a large distance in space?",
+        "answer": "Because the *gravitational force will not remain constant*; it varies *inversely to the square of the distance*.",
         "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$v_{esc}=\\sqrt{\\frac{2GM}{R}}$"
+        "badgeTitle": "SOLUTION",
+        "badgeText": "To overcome this, divide the distance into small steps $\\Delta r$ so the force remains constant for each step."
       },
       {
-        "question": "How can the escape velocity formula be expressed using gravitational acceleration $g$?",
-        "answer": "By substituting the relation $g=\\frac{GM}{R^2}$ (or $gR=\\frac{GM}{R}$) into the escape velocity equation.",
+        "question": "What is the expression for the gravitational force $F$ at the centre of a small step $\\Delta r$ between $r_1$ and $r_2$?",
+        "answer": "$F = G \\frac{Mm}{r_1 r_2}$, where $M$ is the mass of the Earth, $m$ is the mass of the object, and $G$ is the Gravitational constant.",
         "category": "most",
-        "badgeTitle": "SIMPLIFIED FORMULA",
-        "badgeText": "$v_{esc}=\\sqrt{2gR}$"
+        "badgeTitle": "ASSUMPTION",
+        "badgeText": "The step $(\\Delta r)^2$ is neglected as it is much smaller than $r_1^2$."
       },
       {
-        "question": "What is the approximate numerical value of escape velocity on Earth?",
-        "answer": "The escape velocity from the surface of the Earth is approximately *$11 \\text{ km s}^{-1}$* (or $11.2 \\text{ km s}^{-1}$).",
+        "question": "Write the formula for Absolute potential energy $U_g$ on the surface of the Earth.",
+        "answer": "$U_g = -\\frac{GMm}{R}$, where $R$ is the Radius of the Earth.",
+        "category": "most",
+        "badgeTitle": "PHYSICAL MEANING",
+        "badgeText": "The negative sign shows that the Earth's gravitational field for mass $m$ is attractive."
+      },
+      {
+        "question": "How much work or energy is required to take a body entirely out of the Earth's gravitational field?",
+        "answer": "We will have to do work on it equal to $\\frac{GMm}{R}$, so that its potential energy becomes *zero*.",
+        "category": "most",
+        "badgeTitle": "REFERENCE POINT",
+        "badgeText": "At this infinite distance, its potential energy with respect to Earth is zero."
+      },
+      {
+        "question": "Define Escape Velocity.",
+        "answer": "The *initial velocity* of an object with which it *goes out of the Earth's gravitational field* is known as escape velocity.",
+        "category": "most",
+        "badgeTitle": "ENERGY EQUIVALENCE",
+        "badgeText": "It corresponds to the initial kinetic energy gained by the body which carries it to an infinite distance."
+      },
+      {
+        "question": "Write the mathematical expressions for Escape Velocity in terms of Earth's mass ($M$) and gravity ($g$).",
+        "answer": "In terms of mass: $v_{\\text{esc}} = \\sqrt{\\frac{2GM}{R}}$; and in terms of gravity: $v_{\\text{esc}} = \\sqrt{2gR}$.",
+        "category": "most",
+        "badgeTitle": "DERIVATION CONCEPT",
+        "badgeText": "The body escapes if the initial kinetic energy $\\frac{1}{2} m v_{\\text{esc}}^2$ is equal to the increase in potential energy $G \\frac{Mm}{R}$."
+      },
+      {
+        "question": "What is the approximate value of escape velocity on Earth?",
+        "answer": "The value of $v_{\\text{esc}}$ on Earth comes out to be approximately *$11 \\text{ km s}^{-1}$*.",
         "category": "most",
         "badgeTitle": "COMPARISON",
-        "badgeText": "The escape velocity on the Moon is much lower, at $2.4 \\text{ km s}^{-1}$."
+        "badgeText": "The escape speed for the Moon is much lower, at $2.4 \\text{ km s}^{-1}$."
       },
       {
-        "question": "State the work-energy theorem.",
-        "answer": "The theorem states that the *change in kinetic energy* of an object is equal to the *work done* on it by a net force.",
+        "question": "State the Work-Energy Theorem.",
+        "answer": "It states that the *change in kinetic energy* of an object is *equal to the work done* on it by a net force.",
         "category": "most",
-        "badgeTitle": "MATHEMATICAL FORM",
-        "badgeText": "$W = \\frac{1}{2}mv_{f}^{2}-\\frac{1}{2}mv_{i}^{2}$"
+        "badgeTitle": "FORMULA",
+        "badgeText": "$W = \\frac{1}{2} m v_f^2 - \\frac{1}{2} m v_i^2$."
       },
       {
-        "question": "Is the work-energy theorem applicable for variable forces?",
-        "answer": "Yes, the theorem remains *valid* even if the applied force may *vary* from point to point along the path.",
+        "question": "Is the Work-Energy Theorem applicable if the force varies from point to point?",
+        "answer": "Yes, the theorem remains *valid* even if the force may *vary from point to point*.",
+        "category": "most",
+        "badgeTitle": "DIRECTIONALITY",
+        "badgeText": "It is also applicable for any direction of the force relative to the displacement."
+      },
+      {
+        "question": "What happens to the energy of an object if it uses its kinetic energy to push or pull on another object?",
+        "answer": "The work will be taken as *negative* and the *kinetic energy of the object will decrease*.",
+        "category": "most",
+        "badgeTitle": "PRINCIPLE",
+        "badgeText": "An object with kinetic energy can perform work."
+      },
+      {
+        "question": "What is the total energy of a body at position A (at height $h$) before it is released to fall?",
+        "answer": "At position A, the body has *potential energy $P.E. = mgh$* and *kinetic energy $K.E. = 0$*, so the *total energy is $mgh$*.",
+        "category": "most",
+        "badgeTitle": "CONDITION",
+        "badgeText": "The body is at rest at a height $h$ above the surface of the Earth."
+      },
+      {
+        "question": "State the equation for the interconversion of energy for a falling body when air friction is ignored.",
+        "answer": "*Loss in P.E. = Gain in K.E.*, which can be written as $mg(h_1 - h_2) = \\frac{1}{2} m(v_2^2 - v_1^2)$.",
+        "category": "most",
+        "badgeTitle": "CONCEPT",
+        "badgeText": "As the body falls, its height decreases (P.E. decreases) and its velocity increases (K.E. increases)."
+      },
+      {
+        "question": "How is the interconversion of energy equation modified when a frictional force $f$ is present during downward motion?",
+        "answer": "*Loss in P.E. = Gain in K.E. + Work done against friction*.",
+        "category": "most",
+        "badgeTitle": "EQUATION",
+        "badgeText": "$mgh = \\frac{1}{2} m v^2 + fh$."
+      },
+      {
+        "question": "What is the energy conversion formula when a body is thrown upward against air friction?",
+        "answer": "Conversely, *Loss of K.E. = Gain in P.E. + Work done against friction*.",
+        "category": "most",
+        "badgeTitle": "MECHANISM",
+        "badgeText": "A part of the kinetic energy is converted into P.E., and the rest is used to overcome friction."
+      },
+      {
+        "question": "According to the provided table, what is the approximate escape speed of Jupiter?",
+        "answer": "The escape speed of Jupiter is *$61 \\text{ km s}^{-1}$*.",
+        "category": "most",
+        "badgeTitle": "FACT CHECK",
+        "badgeText": "It is the highest escape speed listed among the planets in the table."
+      },
+      {
+        "question": "According to the provided table, what is the power of a Jumbo Jet Aircraft?",
+        "answer": "The approximate power of a Jumbo Jet Aircraft is *$1.3 \\times 10^5 \\text{ W}$*.",
+        "category": "most",
+        "badgeTitle": "COMPARISON",
+        "badgeText": "A colored TV uses about 120 W."
+      },
+      {
+        "question": "If the force makes an angle $\\theta$ where $\\theta > 90^\\circ$, what is the nature of the work done?",
+        "answer": "If $\\theta > 90^\\circ$, the work done is said to be *negative*.",
+        "category": "most",
+        "badgeTitle": "CONDITION",
+        "badgeText": "From the definition of work, when the angle exceeds 90 degrees, the cosine component becomes negative."
+      },
+      {
+        "question": "How much energy is approximately used by a car from petrol in its entire life time?",
+        "answer": "A car uses about *$1 \\times 10^{12} \\text{ J}$* of energy from petrol in its life time.",
+        "category": "most",
+        "badgeTitle": "MANUFACTURING ENERGY",
+        "badgeText": "It takes about $9 \\times 10^9 \\text{ J}$ of energy to make the car."
+      },
+      {
+        "question": "If work done by a force along a closed path $ACBA$ or $ADBA$ is zero, what type of force is it?",
+        "answer": "The force is called a *conservative force*.",
+        "category": "most",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "The gravitational force acts as a conservative force in such a path."
+      },
+      {
+        "question": "How can the total work done in displacing a body from point 1 to $N$ in a gravitational field be simplified when $N$ is situated at infinity?",
+        "answer": "When $r_N = \\infty$, the term $\\frac{1}{r_N}$ becomes $0$, making the total work equation $W_{\\text{total}} = -\\frac{GMm}{r_1}$.",
+        "category": "most",
+        "badgeTitle": "CONCEPT",
+        "badgeText": "This total work defines the absolute potential energy at that point."
+      },
+      {
+        "question": "What does it mean when the Absolute Potential Energy $U$ becomes less negative?",
+        "answer": "It means that $U$ *increases*, which occurs when the *distance $r$ increases*.",
         "category": "most",
         "badgeTitle": "APPLICATION",
-        "badgeText": "It applies for any direction of the force relative to the displacement."
+        "badgeText": "When we raise a body above the surface of the Earth, its potential energy increases."
       },
       {
-        "question": "Describe the energy state of a freely falling body at its maximum height.",
-        "answer": "At its maximum height before release, the body is at rest, meaning its *kinetic energy* is *zero* and its *potential energy* is at its *maximum* ($mgh$).",
+        "question": "During the segment $AB$ of a curved path in a gravitational field, why is the product of $mg$ and $\\Delta y$ negative?",
+        "answer": "Although $mg$ is positive, all $\\Delta y$ elements are *negative*, so the products of $mg$ and $\\Delta y$ for all elements will be negative.",
         "category": "most",
-        "badgeTitle": "EQUATION",
-        "badgeText": "Total Energy = $mgh + 0 = mgh$."
+        "badgeTitle": "RESULT",
+        "badgeText": "$W_{AB} = -mg(\\Delta y_1 + \\Delta y_2 + \\Delta y_3 + \\dots + \\Delta y_n)$."
       },
       {
-        "question": "What happens to the potential and kinetic energy as a body falls downwards?",
-        "answer": "As the body falls, its height decreases causing a *loss* in potential energy, while its velocity increases resulting in a simultaneous *gain* in kinetic energy.",
+        "question": "In the context of a variable force, what happens to the accuracy of the work done when each $\\Delta d$ becomes very small?",
+        "answer": "The calculation of work done becomes *more accurate*.",
         "category": "most",
-        "badgeTitle": "PRINCIPLE",
-        "badgeText": "Loss in P.E. = Gain in K.E. (ignoring friction)"
+        "badgeTitle": "MATHEMATICAL LIMIT",
+        "badgeText": "Letting $\\Delta d$ approach zero yields an exact result."
       },
       {
-        "question": "What is the formula for the total energy of a falling body after it has dropped a distance $x$?",
-        "answer": "The potential energy becomes $mg(h-x)$ and the kinetic energy becomes $mgx$, making the total energy consistently equal to *$mgh$*.",
+        "question": "Based on Example 4.1, how is the total work done calculated from a force-distance graph consisting of a rectangle and a triangle?",
+        "answer": "The total work done is the *sum of the areas*, equal to the area of the rectangular section plus the area of the triangular section.",
         "category": "most",
-        "badgeTitle": "DERIVATION NOTE",
-        "badgeText": "K.E. is calculated using the velocity equation $v_{B}^{2}=2gx$."
+        "badgeTitle": "CALCULATION",
+        "badgeText": "$20 \\text{ J} + 5 \\text{ J} = 25 \\text{ J}$."
       },
       {
-        "question": "How does air friction affect the interconversion of energy in a falling body?",
-        "answer": "If a frictional force $f$ is present, a part of the original potential energy is consumed doing *work against friction*, and only the remaining energy is converted into kinetic energy.",
-        "category": "most",
-        "badgeTitle": "EQUATION",
-        "badgeText": "$mgh = \\frac{1}{2}mv^{2} + fh$"
+        "question": "How do you graphically represent the work done by a variable force?",
+        "answer": "It is represented by plotting a graph between *$F \\cos \\theta$* and *displacement $d$*, where the work done equals the *area under the curve*.",
+        "category": "important",
+        "badgeTitle": "GRAPHICAL FEATURE",
+        "badgeText": "The distance is sub-divided into $n$ equal small intervals."
       },
       {
-        "question": "State the generalized energy equation for a body falling through a resistive medium.",
-        "answer": "The loss in potential energy equals the gain in kinetic energy *plus* the work done against the *frictional force*.",
-        "category": "most",
-        "badgeTitle": "FORMULA SUMMARY",
-        "badgeText": "Loss in P.E. = Gain in K.E. + Work done against friction."
+        "question": "In the calculation of work done by a variable force, what does the variable $n$ represent?",
+        "answer": "It represents the *number of short intervals* of displacements ($\\Delta d_1, \\Delta d_2, \\ldots, \\Delta d_n$) into which the total path has been divided.",
+        "category": "important",
+        "badgeTitle": "ASSUMPTION",
+        "badgeText": "The force is supposed to be approximately constant during each interval."
       },
       {
-        "question": "State the generalized energy equation for a body projected upwards through a resistive medium.",
-        "answer": "The loss of kinetic energy is equal to the gain in potential energy *plus* the work done against the *frictional force*.",
-        "category": "most",
-        "badgeTitle": "FORMULA SUMMARY",
-        "badgeText": "Loss of K.E. = Gain in P.E. + Work done against friction."
+        "question": "What mathematical operation is used to calculate the total work done in moving an object through multiple small intervals?",
+        "answer": "The total work is calculated by *adding all the individual work terms* for each interval, using the summation formula $\\sum_{i=1}^{n} F_i \\cos \\theta_i \\Delta d_i$.",
+        "category": "important",
+        "badgeTitle": "CONDITION",
+        "badgeText": "This becomes an exact result when the limit of $\\Delta d$ approaches zero."
       },
       {
-        "question": "At the exact moment just before a falling body strikes the Earth, what is its energy state?",
-        "answer": "The potential energy becomes *zero* and the kinetic energy reaches its *maximum* value, entirely equaling the original potential energy.",
-        "category": "most",
-        "badgeTitle": "EQUATION",
-        "badgeText": "$K.E = \\frac{1}{2}mv_{c}^{2} = mgh$"
+        "question": "In the context of a closed path like ACBA or ADBA, what is the work done by a conservative force?",
+        "answer": "The work done by a conservative force along a closed path is *always zero*.",
+        "category": "important",
+        "badgeTitle": "APPLICATION",
+        "badgeText": "This is a defining property of gravitational and electrostatic fields."
       },
       {
-        "question": "How do we calculate the work done during the first small step $\\Delta r$ when deriving absolute potential energy?",
-        "answer": "The work is the product of the average gravitational force $G\\frac{Mm}{r_{1}r_{2}}$ and the negative displacement $-\\Delta r$.",
-        "category": "most",
+        "question": "Why is the work done along the vertical path AC (moving upwards) in a gravitational field considered negative?",
+        "answer": "Because the *direction of the object's displacement* is *opposite to the downward gravitational force* (weight $mg$), making the angle $180^\\circ$.",
+        "category": "important",
         "badgeTitle": "FORMULA",
-        "badgeText": "$W_{1\\rightarrow 2}=-GMm(\\frac{1}{r_{1}}-\\frac{1}{r_{2}})$"
+        "badgeText": "$W = -mgh$."
       },
       {
-        "question": "What geometric approximation is used for the radius squared ($r^2$) in the derivation of absolute potential energy?",
-        "answer": "Since $\\Delta r$ is very small, the term $(\\Delta r)^2$ is *neglected*, allowing $r^2$ to be approximated as the product of the initial and final radii, *$r_1 r_2$*.",
-        "category": "most",
+        "question": "What happens to the work done against kinetic friction when an object slides over a surface?",
+        "answer": "The kinetic frictional force acts *opposite to the motion* and does *negative work*, equal in magnitude to the frictional force multiplied by the length of the path.",
+        "category": "important",
+        "badgeTitle": "CONSEQUENCE",
+        "badgeText": "A greater amount of work is done over a longer path, making it non-conservative."
+      },
+      {
+        "question": "Name three common examples of non-conservative forces other than kinetic friction.",
+        "answer": "*Air resistance*, *tension in a string*, and the *propulsion force of a rocket*.",
+        "category": "important",
+        "badgeTitle": "PROPERTY",
+        "badgeText": "The work done by these forces depends strictly on the choice of path."
+      },
+      {
+        "question": "Why is the concept of Power necessary in Physics?",
+        "answer": "Because the definition of work does not clarify *how much time is taken* to do the work; Power is needed to measure the *rate at which work is being done*.",
+        "category": "important",
+        "badgeTitle": "PRACTICAL USE",
+        "badgeText": "It is often of interest in practical and industrial applications."
+      },
+      {
+        "question": "What is the formula for Average Power ($P_{av}$)?",
+        "answer": "It is defined as the *ratio of work done $\\Delta W$ to the time interval $\\Delta t$*, written as $P_{av} = \\frac{\\Delta W}{\\Delta t}$.",
+        "category": "important",
+        "badgeTitle": "CONTEXT",
+        "badgeText": "Used when work is calculated over a measurable duration."
+      },
+      {
+        "question": "What does the term \"watt second\" measure in electrical contexts?",
+        "answer": "It is used as a *unit to express work or energy*, since *1 Joule equals 1 Watt multiplied by 1 second*.",
+        "category": "important",
+        "badgeTitle": "COMMERCIAL EQUIVALENT",
+        "badgeText": "The kilowatt-hour is the larger commercial version of this unit."
+      },
+      {
+        "question": "How many Joules are equivalent to one kilowatt-hour (kWh)?",
+        "answer": "One kilowatt-hour is equal to *$3.6 \\times 10^6$ Joules* or *$3.6$ MJ*.",
+        "category": "important",
+        "badgeTitle": "DERIVATION",
+        "badgeText": "$1000 \\text{ W} \\times 3600 \\text{ s}$."
+      },
+      {
+        "question": "In Example 4.2, what is the calculated power output of a 70 kg man running up a 4.5 m flight of stairs in 4.0 s?",
+        "answer": "The man's power output is *$7.7 \\times 10^2 \\text{ W}$*.",
+        "category": "important",
+        "badgeTitle": "FORMULA USED",
+        "badgeText": "$P = \\frac{mgh}{t}$."
+      },
+      {
+        "question": "What are the two basic forms of mechanical energy?",
+        "answer": "The two basic forms are *kinetic energy* and *potential energy*.",
+        "category": "important",
+        "badgeTitle": "DEFINITION",
+        "badgeText": "Energy of a body is its capacity to do work."
+      },
+      {
+        "question": "Define Elastic Potential Energy.",
+        "answer": "It is the *potential energy possessed by a spring* due to its *compressed or stretched state*.",
+        "category": "important",
+        "badgeTitle": "CONSTRAINT",
+        "badgeText": "This energy arises because of the object's constrained condition."
+      },
+      {
+        "question": "In calculating absolute potential energy, why do we assume $r^2 \\approx r_1^2 + r_1 \\Delta r$?",
+        "answer": "Because the term $(\\Delta r)^2$ is *very small compared to $r_1^2$*, so it can be neglected in the expansion of $(r_1 + \\frac{\\Delta r}{2})^2$.",
+        "category": "important",
         "badgeTitle": "SIMPLIFICATION",
-        "badgeText": "$r^2 \\approx r_1^2 + r_1\\Delta r = r_1 r_2$."
+        "badgeText": "This allows $r^2$ to be approximated as $r_1 r_2$."
       },
       {
-        "question": "What does the sum of all work intervals $W_{total} = W_{1\\rightarrow 2} + W_{2\\rightarrow 3} ... + W_{N-1\\rightarrow N}$ simplify to?",
-        "answer": "All intermediate terms cancel out, leaving only the terms containing the *initial position* $r_1$ and the *final position* $r_N$.",
-        "category": "most",
-        "badgeTitle": "FINAL STEP BEFORE INFINITY",
-        "badgeText": "$W_{total}=-GMm(\\frac{1}{r_{1}}-\\frac{1}{r_{N}})$"
+        "question": "In the derivation of absolute potential energy, what does the index $N$ represent?",
+        "answer": "It represents a point situated at an *infinite distance from the Earth*, where the distance $r_N = \\infty$.",
+        "category": "important",
+        "badgeTitle": "RESULT",
+        "badgeText": "At this point, the term $\\frac{1}{r_N}$ becomes $0$."
       },
       {
-        "question": "What is the value of gravitational potential energy at an infinite distance from Earth?",
-        "answer": "At infinity, the distance $r$ is $\\infty$, making the term $\\frac{1}{\\infty}$ equal to *zero*, which means the potential energy is exactly *zero*.",
-        "category": "most",
+        "question": "What does the negative sign indicate in the absolute potential energy formula $U = -\\frac{GMm}{r}$?",
+        "answer": "The negative sign shows that the Earth's gravitational field for mass $m$ is *attractive*, and work must be done on the body to move it against this field.",
+        "category": "important",
+        "badgeTitle": "BEHAVIOR",
+        "badgeText": "As $r$ increases, $U$ becomes less negative (increases)."
+      },
+      {
+        "question": "What happens to a vertically projected object if its initial velocity goes on increasing?",
+        "answer": "A stage comes when it *will not return to the ground* and will *escape out of the influence of gravity*.",
+        "category": "important",
+        "badgeTitle": "CONCEPT",
+        "badgeText": "This critical velocity is known as the escape velocity."
+      },
+      {
+        "question": "What is the condition for a body to escape out of the gravitational field in terms of energy?",
+        "answer": "The *initial kinetic energy* of the body must be *equal to the increase in potential energy* required to lift it to an infinite distance.",
+        "category": "important",
+        "badgeTitle": "EQUATION",
+        "badgeText": "$\\frac{1}{2}mv_{esc}^2 = G\\frac{Mm}{R}$."
+      },
+      {
+        "question": "What is the alternative formula for escape velocity using acceleration due to gravity ($g$)?",
+        "answer": "The formula can be written as $v_{esc} = \\sqrt{2gR}$.",
+        "category": "important",
+        "badgeTitle": "SUBSTITUTION",
+        "badgeText": "This is derived by replacing $G\\frac{M}{R^2}$ with $g$."
+      },
+      {
+        "question": "According to the provided table, what is the escape speed of Venus?",
+        "answer": "The escape speed of Venus is *10.4 km s⁻¹*.",
+        "category": "important",
+        "badgeTitle": "COMPARISON",
+        "badgeText": "It is slightly less than the Earth's escape speed of 11.2 km s⁻¹."
+      },
+      {
+        "question": "What is another common name for the Work-Energy Theorem?",
+        "answer": "It is also known as the *work-energy principle*.",
+        "category": "important",
+        "badgeTitle": "STATEMENT",
+        "badgeText": "The change in kinetic energy of an object is equal to the work done on it by a net force."
+      },
+      {
+        "question": "Which equation of motion is primarily used to derive the Work-Energy Theorem?",
+        "answer": "The *third equation of motion*, which is $2ad = v_f^2 - v_i^2$.",
+        "category": "important",
+        "badgeTitle": "PROCESS",
+        "badgeText": "It is used to substitute for acceleration $a$ in Newton's second law ($F = ma$)."
+      },
+      {
+        "question": "Under what condition will the kinetic energy of an object decrease according to the work-energy theorem?",
+        "answer": "If the object *uses its kinetic energy to push or pull on another object*, the work done is taken as *negative*, resulting in a decrease in its kinetic energy.",
+        "category": "important",
+        "badgeTitle": "VALIDITY",
+        "badgeText": "The theorem applies regardless of the force's direction relative to displacement."
+      },
+      {
+        "question": "In Example 4.4, what forces make up the net force acting on the motorcycle coasting down the slope?",
+        "answer": "The net force is the *difference between the downward component of weight ($mg \\sin 24^\\circ$)* and the *kinetic frictional force ($f$)*.",
+        "category": "important",
+        "badgeTitle": "EQUATION",
+        "badgeText": "$F = mg \\sin 24^\\circ - f$."
+      },
+      {
+        "question": "What is the total energy of a body of mass $m$ at a height $h$ when it is at rest?",
+        "answer": "Because its velocity is zero, its kinetic energy is zero, making the total energy equal strictly to its *potential energy, $mgh$*.",
+        "category": "important",
+        "badgeTitle": "INITIAL STATE",
+        "badgeText": "$P.E. = mgh$ and $K.E. = 0$."
+      },
+      {
+        "question": "When a body falls a distance $x$ from a height $h$, what is its remaining Potential Energy?",
+        "answer": "Its new height from the ground is $(h - x)$, so its potential energy is *$mg(h - x)$*.",
+        "category": "important",
+        "badgeTitle": "ENERGY BALANCE",
+        "badgeText": "The lost potential energy ($mgx$) is converted into kinetic energy."
+      },
+      {
+        "question": "What is the velocity ($v_B$) of a body after it has fallen a vertical distance $x$ from rest?",
+        "answer": "Using the third equation of motion, the squared velocity is $v_B^2 = 2gx$, so the velocity is *$v_B = \\sqrt{2gx}$*.",
+        "category": "important",
+        "badgeTitle": "KINETIC ENERGY",
+        "badgeText": "The kinetic energy at this point becomes $mgx$."
+      },
+      {
+        "question": "Just before a falling body strikes the Earth (at point C), what is its Potential Energy?",
+        "answer": "At the point of impact, the height is zero, so the *Potential Energy is zero*.",
+        "category": "important",
+        "badgeTitle": "CONSERVATION",
+        "badgeText": "All initial potential energy ($mgh$) has been converted completely into kinetic energy."
+      },
+      {
+        "question": "How does friction alter the ideal interconversion of P.E. and K.E. for a falling body?",
+        "answer": "A part of the potential energy is used in *doing work against friction* (equal to $fh$), and only the *remaining P.E. ($mgh - fh$)* is converted into kinetic energy.",
+        "category": "important",
+        "badgeTitle": "EQUATION",
+        "badgeText": "$mgh = \\frac{1}{2}mv^2 + fh$."
+      },
+      {
+        "question": "Write the word equation for the interconversion of energy when a body is thrown upwards against air friction.",
+        "answer": "*Loss of K.E. = Gain in P.E. + Work done against friction*.",
+        "category": "important",
+        "badgeTitle": "MECHANISM",
+        "badgeText": "The initial kinetic energy is depleted by both gaining height and pushing through the air."
+      },
+      {
+        "question": "According to the \"Tid-bits\" box, the energy from all the food you eat in one day is equivalent to what amount of petrol?",
+        "answer": "It has about the same energy as *$1/3$ litre of petrol*.",
+        "category": "important",
+        "badgeTitle": "CONTEXT",
+        "badgeText": "This highlights the high energy density of fossil fuels compared to human metabolic needs."
+      },
+      {
+        "question": "How does the amount of solar energy reaching the Earth in 10 days compare to fossil fuels?",
+        "answer": "There is *more energy reaching Earth in 10 days of sunlight* than in *all the fossil fuels present on the Earth*.",
+        "category": "important",
         "badgeTitle": "SIGNIFICANCE",
-        "badgeText": "It is the reference point where the Earth's gravitational force no longer has an effect."
+        "badgeText": "Demonstrates the massive potential of solar power."
       },
       {
-        "question": "If a constant force pushes an object but its velocity strictly decreases, what does the work-energy theorem imply about the work done?",
-        "answer": "If velocity decreases, the final kinetic energy is less than the initial, making the change in kinetic energy *negative*. Thus, the total work done on the object is *negative*.",
-        "category": "most",
-        "badgeTitle": "REASONING",
-        "badgeText": "Work is done by the object against an opposing force (like friction)."
-      },
-      {
-        "question": "Why is the force exerted by a spring considered a variable force?",
-        "answer": "The force exerted by a spring *increases* proportionally with the *amount of stretch*, making it continuously dependent on the object's displacement rather than remaining constant.",
+        "question": "According to the \"Tid-bits\", what alarming statistic is given about coal usage since 1945?",
+        "answer": "*More coal has been used since 1945* than was used in *the whole of history before that*.",
         "category": "important",
-        "badgeTitle": "EXAMPLE",
-        "badgeText": "Stretching a mechanical spring or a rubber band."
+        "badgeTitle": "IMPLICATION",
+        "badgeText": "Highlights the exponential increase in industrial energy consumption in modern times."
       },
       {
-        "question": "In the graphical calculation of work for a variable force, what happens if the displacement intervals are made infinitely small?",
-        "answer": "As the distance intervals approach *zero*, the summation of areas becomes an *exact result* for the total work done by the variable force.",
-        "category": "important",
-        "badgeTitle": "LIMIT CONDITION",
-        "badgeText": "$\\lim_{\\Delta d\\rightarrow0}$"
-      },
-      {
-        "question": "How do we calculate the work done for the first short interval $\\Delta d_1$ of a variable force?",
-        "answer": "It is calculated as the product of the *constant force component* acting along the displacement and the small *displacement interval* itself.",
-        "category": "important",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$\\Delta W_1 = F_1 \\cos\\theta_1 \\Delta d_1$"
-      },
-      {
-        "question": "How do you find the total work done from a force-displacement graph comprising both a rectangle and a triangle?",
-        "answer": "The total work is the direct *sum* of the *area of the rectangle* and the *area of the triangle* calculated from the area under the curve.",
-        "category": "important",
-        "badgeTitle": "APPLICATION METHOD",
-        "badgeText": "As demonstrated in Example 4.1."
-      },
-      {
-        "question": "When calculating work done by a variable force, why is the path divided into $n$ short intervals?",
-        "answer": "The path is divided so that the variable force can be assumed to remain approximately *constant* during each very *short interval*, allowing the standard work formula to be applied.",
-        "category": "important",
-        "badgeTitle": "CONCEPTUAL STEP",
-        "badgeText": "$F$ is assumed constant over $\\Delta d$."
-      },
-      {
-        "question": "What exactly constitutes the gravitational field of the Earth?",
-        "answer": "It is defined as the specific *space* around the Earth in which its *gravitational force* acts upon a body.",
-        "category": "important",
-        "badgeTitle": "KEY PROPERTY",
-        "badgeText": "It is a perfectly conservative field."
-      },
-      {
-        "question": "When moving an object horizontally in a gravitational field, why is the work done along the horizontal steps zero?",
-        "answer": "The force of gravity $mg$ acts straight down, which is exactly *perpendicular* to the horizontal *displacement*, making the work zero.",
-        "category": "important",
-        "badgeTitle": "MATHEMATICAL PROOF",
-        "badgeText": "$\\cos 90^\\circ = 0$."
-      },
-      {
-        "question": "In calculating work along a curved path in a gravitational field, what do the $\\Delta y$ elements represent?",
-        "answer": "They represent the *infinitesimal vertical displacements* during which the gravitational force actually performs work on the object.",
-        "category": "important",
-        "badgeTitle": "IMPORTANT RELATION",
-        "badgeText": "The sum of all vertical steps $\\sum \\Delta y = h$."
-      },
-      {
-        "question": "What is the sign of the product of $mg$ and $\\Delta y$ as a body is lifted upward against gravity?",
-        "answer": "The product is inherently *negative* because the upward displacement is directly *opposite* to the downward gravitational force.",
-        "category": "important",
-        "badgeTitle": "EQUATION",
-        "badgeText": "$W_{AB} = -mgh$"
-      },
-      {
-        "question": "Is the normal force considered conservative or non-conservative?",
-        "answer": "The normal force is classified strictly as a *non-conservative force* because any work it might do heavily depends on the *path* of motion.",
-        "category": "important",
-        "badgeTitle": "OTHER EXAMPLES",
-        "badgeText": "Air resistance, tension, and rocket propulsion."
-      },
-      {
-        "question": "Why is the concept of power introduced in physics alongside the concept of work?",
-        "answer": "Because the definition of work alone measures energy transfer but does not specify the *rate* or *time interval* in which that physical effort is accomplished.",
-        "category": "important",
-        "badgeTitle": "PRACTICAL APPLICATION",
-        "badgeText": "Measuring machine efficiency and output."
-      },
-      {
-        "question": "If work is expressed as a continuous function of time, which type of power is most appropriate to calculate?",
-        "answer": "The *instantaneous power*, which evaluates the rate of doing work at any specific, infinitesimally small *instant* in time.",
-        "category": "important",
-        "badgeTitle": "EQUATION",
-        "badgeText": "$P = \\lim_{\\Delta t\\rightarrow0}\\frac{\\Delta W}{\\Delta t}$"
-      },
-      {
-        "question": "How does the power equation $P = F \\cdot v$ arise from the basic definition of power?",
-        "answer": "By substituting work $\\Delta W = F \\cdot \\Delta d$ into the power formula and recognizing that the physical *ratio* $\\frac{\\Delta d}{\\Delta t}$ is exactly equal to *velocity*.",
-        "category": "important",
-        "badgeTitle": "DERIVATION STEP",
-        "badgeText": "$P = F \\cdot \\frac{\\Delta d}{\\Delta t}$"
-      },
-      {
-        "question": "What does the term \"watt second\" represent in physical measurements?",
-        "answer": "It is a commercial or practical unit of *work* or *electrical energy*, which is precisely equivalent to one *joule*.",
-        "category": "important",
-        "badgeTitle": "EQUIVALENCE",
-        "badgeText": "$1 \\text{ Ws} = 1 \\text{ J}$"
-      },
-      {
-        "question": "According to the \"For Your Information\" table, what is the approximate power of a Jumbo Jet Aircraft?",
-        "answer": "A Jumbo Jet operates at an massive approximate power of *$1.3 \\times 10^5$ W*.",
-        "category": "important",
-        "badgeTitle": "COMPARISON",
-        "badgeText": "Significantly higher than a car at $1.1 \\times 10^4$ W."
-      },
-      {
-        "question": "According to the text, what is the standard power consumption of a typical coloured TV?",
-        "answer": "A coloured TV typically consumes about *120 W* of electrical power.",
-        "category": "important",
-        "badgeTitle": "DATA SOURCE",
-        "badgeText": "Chapter 4 \"For Your Information\" table."
-      },
-      {
-        "question": "Give an example of a body possessing potential energy strictly due to its constrained state.",
-        "answer": "The energy permanently stored in a *compressed spring* or a stretched bow is due to its physically *constrained state*.",
-        "category": "important",
-        "badgeTitle": "TERMINOLOGY",
-        "badgeText": "This is known as Elastic Potential Energy."
-      },
-      {
-        "question": "According to the \"Do You Know?\" box, how does the energy from 10 days of sunlight compare to Earth's fossil fuels?",
-        "answer": "The solar energy reaching Earth in just *10 days* of sunlight is significantly *more* than the total energy stored in all the *fossil fuels* combined.",
-        "category": "important",
-        "badgeTitle": "ENVIRONMENTAL CONTEXT",
-        "badgeText": "Highlights the immense potential of solar energy."
-      },
-      {
-        "question": "Why do we specifically divide the distance from the Earth into small steps $\\Delta r$ when deriving absolute potential energy?",
-        "answer": "Because the Earth's gravitational force varies as the *inverse square* of the distance, and we mathematically require it to be approximately *constant* over each microscopic step.",
-        "category": "important",
-        "badgeTitle": "MATHEMATICAL NECESSITY",
-        "badgeText": "Required to accurately apply $W = F \\cdot d$."
-      },
-      {
-        "question": "What is the average radius $r$ representing the distance of the center of a step from the Earth's center?",
-        "answer": "It is mathematically taken as the *arithmetic mean* of the boundary distances $r_1$ and $r_2$, calculated as *$\\frac{r_1 + r_2}{2}$*.",
-        "category": "important",
-        "badgeTitle": "FORMULA",
-        "badgeText": "$r = r_1 + \\frac{\\Delta r}{2}$"
-      },
-      {
-        "question": "What happens to the absolute potential energy of a body as it is moved infinitely far away from the Earth?",
-        "answer": "As the distance parameter $r$ approaches *infinity*, the mathematical term $\\frac{1}{r}$ becomes zero, forcing the absolute potential energy to become exactly *zero*.",
-        "category": "important",
-        "badgeTitle": "PHYSICAL MEANING",
-        "badgeText": "The body is completely free from the Earth's gravitational influence."
-      },
-      {
-        "question": "What is the exact amount of work required to completely remove an object of mass $m$ from Earth's gravitational field starting from its surface?",
-        "answer": "The required work must be *positive* and equal in absolute magnitude to *$G\\frac{Mm}{R}$*.",
-        "category": "important",
-        "badgeTitle": "PRINCIPLE",
-        "badgeText": "Energy required to make its final P.E. exactly zero."
-      },
-      {
-        "question": "What physical phenomenon causes a standard projectile to eventually return to the ground?",
-        "answer": "The continuous *downward action* of the *force of gravity* decelerates the object's upward climb until it eventually falls back.",
-        "category": "important",
-        "badgeTitle": "EXCEPTION",
-        "badgeText": "Unless the object is launched at or above escape velocity."
-      },
-      {
-        "question": "According to the escape speeds table, what is the escape velocity of Jupiter?",
-        "answer": "Jupiter possesses the highest listed planetary escape speed of *$61 \\text{ km s}^{-1}$*.",
-        "category": "important",
-        "badgeTitle": "COMPARISON",
-        "badgeText": "Extremely massive compared to Earth's $11.2 \\text{ km s}^{-1}$."
-      },
-      {
-        "question": "According to the escape speeds table, what is the escape velocity of the planet Mars?",
-        "answer": "The specific escape speed required to leave Mars is *$5.0 \\text{ km s}^{-1}$*.",
-        "category": "important",
-        "badgeTitle": "COMPARISON",
-        "badgeText": "Less than half of the escape velocity required on Earth."
-      },
-      {
-        "question": "What does a mathematically negative value for work indicate when applying the work-energy theorem?",
-        "answer": "It strongly indicates that the kinetic energy of the object will *decrease* because the applied net force is acting directly *opposite* to the direction of motion.",
-        "category": "important",
-        "badgeTitle": "EXAMPLE",
-        "badgeText": "Brakes being applied to a moving car."
-      },
-      {
-        "question": "In the work-energy theorem derivation, what is the formula for the uniform acceleration $a$ produced by a net force $F$ over distance $d$?",
-        "answer": "Using the third equation of motion, the acceleration is isolated as *$a = \\frac{1}{2d}(v_f^2 - v_i^2)$*.",
-        "category": "important",
-        "badgeTitle": "DERIVATION STEP",
-        "badgeText": "This is calculated right before substitution into Newton's second law ($F=ma$)."
-      },
-      {
-        "question": "In Example 4.4 featuring a motorcycle coasting down a slope, what force balances the normal force $F_N$?",
-        "answer": "The normal force is perfectly balanced by the *perpendicular component* of the motorcycle's total weight, which is mathematically *$mg \\cos 24^\\circ$*.",
-        "category": "important",
-        "badgeTitle": "DYNAMICS APPLICATION",
-        "badgeText": "Resolving vector forces on an inclined plane."
-      },
-      {
-        "question": "According to the chapter's \"Tid-bits\" box, how does daily human food energy intake roughly compare to petrol?",
-        "answer": "All the food energy a standard person eats in one single day contains approximately the same energy as a *$1/3$ litre* of liquid *petrol*.",
-        "category": "important",
-        "badgeTitle": "FUN FACT",
-        "badgeText": "Illustrates the stark difference in energy densities."
-      },
-      {
-        "question": "In the theoretical interconversion of P.E. and K.E., what is the total energy at a point exactly halfway down the fall?",
-        "answer": "The potential energy and kinetic energy are perfectly *equal*, and their mathematical sum remains identically constant at *$mgh$*.",
-        "category": "important",
-        "badgeTitle": "CONSERVATION PRINCIPLE",
-        "badgeText": "Total mechanical energy is conserved in the absence of friction."
-      },
-      {
-        "question": "When a freely falling body is subjected to air friction, what does the mathematical term $fh$ represent?",
-        "answer": "It directly represents the portion of the original potential energy strictly *used up* or dissipated in doing *work against friction*.",
-        "category": "important",
-        "badgeTitle": "ENERGY EQUATION",
-        "badgeText": "$P.E._{loss} = K.E._{gain} + fh$"
-      },
-      {
-        "question": "If an upward-moving body experiences heavy air resistance, what is the worded equation for its energy change?",
-        "answer": "The initial kinetic energy lost is equal to the *gain in potential energy* added to the *work done against* the resistive frictional force.",
-        "category": "important",
-        "badgeTitle": "FORMULA SUMMARY",
-        "badgeText": "Loss of K.E. = Gain in P.E. + Work done against friction."
-      },
-      {
-        "question": "(MCQ 4.1) A 1 kg mass has a potential energy of 1 joule relative to the ground when it is at what specific height?",
-        "answer": "Using the formula $mgh = 1$, the height is calculated as $1 / 9.8$, which accurately equals *0.102 m*.",
-        "category": "important",
-        "badgeTitle": "FORMULA APPLIED",
-        "badgeText": "$h = \\frac{P.E.}{mg}$"
-      },
-      {
-        "question": "(MCQ 4.3) A body sitting perfectly at rest may still possess which of the following physical quantities: speed, velocity, momentum, or energy?",
-        "answer": "A stationary body at rest may still possess *energy*, specifically *potential energy*, depending entirely on its relative position in a field.",
-        "category": "important",
-        "badgeTitle": "KEY CONCEPT",
-        "badgeText": "Speed, velocity, and momentum are all exactly zero at rest."
-      },
-      {
-        "question": "(MCQ 4.5) When a sports ball is thrown vertically upward and falls back down, which acting force is conservative?",
-        "answer": "The downward force of *gravity* acting continuously on the ball is the strictly *conservative force* in this entire scenario.",
-        "category": "important",
-        "badgeTitle": "CONTRAST",
-        "badgeText": "Any air resistance encountered is non-conservative."
-      },
-      {
-        "question": "(MCQ 4.6) According to the strict work-energy principle in linear motion, the total work done on a body is equal to what?",
-        "answer": "It is physically and mathematically equal to the *change in kinetic energy* of the body.",
-        "category": "important",
-        "badgeTitle": "THEOREM STATEMENT",
-        "badgeText": "$\\Delta K.E. = W$"
-      },
-      {
-        "question": "(MCQ 4.7) If the rated power of a lamp is 6 W, how much total energy does it give out in exactly 2 minutes?",
-        "answer": "Using $W = P \\times t$, the energy is $6 \\text{ W} \\times (2 \\times 60 \\text{ s}) = 720$, which equals *720 J*.",
+        "question": "(From MCQ 4.1) At what height does a 1 kg mass have a potential energy of 1 joule relative to the ground?",
+        "answer": "It has a potential energy of 1 joule at a height of *$0.102\\text{ m}$*.",
         "category": "important",
         "badgeTitle": "CALCULATION",
-        "badgeText": "Power multiplied by time in standard SI units."
+        "badgeText": "$h = \\frac{P.E.}{mg} = \\frac{1}{1 \\times 9.8} \\approx 0.102\\text{ m}$."
       },
       {
-        "question": "(MCQ 4.10) A body moves 10 m under a 5 N force doing precisely 25 J of work. What is the angle of the force?",
-        "answer": "Since $W = Fd \\cos\\theta \\implies 25 = 50 \\cos\\theta \\implies \\cos\\theta = 0.5$, the angle is exactly *$60^\\circ$*.",
+        "question": "(From MCQ 4.7) How much energy does a 6 W lamp give out in 2 minutes?",
+        "answer": "The lamp gives out *720 J* of energy.",
         "category": "important",
-        "badgeTitle": "MATHEMATICAL SOLVING",
-        "badgeText": "Taking the inverse cosine of 0.5."
+        "badgeTitle": "CALCULATION",
+        "badgeText": "$E = P \\times t = 6\\text{ W} \\times (2 \\times 60\\text{ s}) = 720\\text{ J}$."
       },
       {
-        "question": "(Short Q 4.1) Why is electrical power actively required at all when a heavy elevator is descending?",
-        "answer": "Power is strictly required to operate the *braking mechanisms* and control systems to safely dissipate the rapid *decrease in potential energy* and completely prevent a free fall.",
+        "question": "(From MCQ 4.10) If a body moves 10 m under a 5 N force and the work done is 25 J, what is the angle the force makes with the motion?",
+        "answer": "The angle is *$60^\\circ$*.",
         "category": "important",
-        "badgeTitle": "SAFETY APPLICATION",
-        "badgeText": "Ensuring a controlled and safe descent."
+        "badgeTitle": "CALCULATION",
+        "badgeText": "$\\cos \\theta = \\frac{W}{Fd} = \\frac{25}{5 \\times 10} = 0.5$, so $\\theta = 60^\\circ$."
       },
       {
-        "question": "(Short Q 4.3) Will the total mechanical energy of a stone falling towards Earth in standard air be fully conserved?",
-        "answer": "*No*, it will not be strictly conserved because air friction acts as a *non-conservative force* that permanently dissipates some mechanical energy as heat.",
+        "question": "(From CRQ 4.6) Why is work done against friction considered non-conservative in nature?",
+        "answer": "Because the *work done against friction depends on the length of the path followed* and the *total work done in a closed path is not zero*.",
         "category": "important",
-        "badgeTitle": "CONCEPT",
-        "badgeText": "Energy conservation in resistive mediums ($Loss P.E = Gain K.E + fh$)."
+        "badgeTitle": "EXPLANATION",
+        "badgeText": "Friction always opposes motion, continuously draining energy from the system as negative work."
       },
       {
-        "question": "(Short Q 4.10) What is the mathematical effect on the kinetic energy of a body if its linear momentum suddenly becomes double?",
-        "answer": "Since kinetic energy is proportional to the *square of momentum* ($K.E. = p^2/2m$), doubling the momentum will cause the kinetic energy to become *four times* its original value.",
+        "question": "(From Example 4.6) When calculating the average frictional force of air for a falling 3 kg object, what energy components are balanced?",
+        "answer": "The *Loss of P.E.* is balanced by the *sum of the Gain in K.E. and the Work done against friction ($fh$)*.",
         "category": "important",
-        "badgeTitle": "FORMULA LINK",
-        "badgeText": "$K.E. \\propto p^2$"
+        "badgeTitle": "RESULT",
+        "badgeText": "This allows you to isolate and solve for the frictional force $f = 3.8\\text{ N}$."
       },
       {
-        "question": "(Short Q 4.11) Does the international space station currently possess gravitational potential energy, kinetic energy, or both?",
-        "answer": "It strictly possesses *both*; it has immense *kinetic energy* due to its fast orbital velocity and significant *gravitational potential energy* due to its high altitude above the Earth.",
+        "question": "What is the formula to calculate the distance $r$ at the center of the step $\\Delta r$ in the absolute potential energy derivation?",
+        "answer": "The center distance is calculated as *$r = \\frac{r_1 + r_2}{2}$*, which simplifies to *$r_1 + \\frac{\\Delta r}{2}$*.",
         "category": "important",
-        "badgeTitle": "CONCEPT",
-        "badgeText": "Orbital mechanics and total mechanical energy."
+        "badgeTitle": "USAGE",
+        "badgeText": "This $r$ is substituted into Newton's law of gravitation to find the average constant force for that step."
       },
       {
-        "question": "(CRQ 4.1) What are the two strict physical conditions for a given force to be considered conservative?",
-        "answer": "The work done must be completely *independent of the path* followed between two points, and the total work done around any closed *loop or path* must be exactly *zero*.",
+        "question": "Does the work-energy theorem apply when an object moves in a resistive medium?",
+        "answer": "Yes, the theorem applies; the *net force* used in the calculation will simply be the *difference between the applied forces and the resistive forces* (like friction).",
         "category": "important",
-        "badgeTitle": "DEFINITIONAL CONDITIONS",
-        "badgeText": "Core traits of conservative fields."
+        "badgeTitle": "APPLICATION",
+        "badgeText": "As seen when calculating velocities of falling objects experiencing air resistance."
       },
       {
-        "question": "(CRQ 4.4) If an opposing force reduces a moving ball's speed from $14 \\text{ m s}^{-1}$ to $6 \\text{ m s}^{-1}$, has that force done positive or negative work?",
-        "answer": "The force has absolutely done *negative work* because the resulting change in kinetic energy is negative, proving the force acted *opposite* to the displacement.",
-        "category": "important",
-        "badgeTitle": "WORK-ENERGY APPLICATION",
-        "badgeText": "Negative work removes kinetic energy from the system."
-      },
-      {
-        "question": "(CRQ 4.6) Why is the physical work done against sliding friction considered non-conservative in nature?",
-        "answer": "Because the total work done against friction *depends entirely on the path length*; a longer, winding path dissipates far more energy as heat, and work in a closed loop is never zero.",
-        "category": "important",
-        "badgeTitle": "KEY PROPERTY",
-        "badgeText": "Strict path dependency of energy loss."
-      },
-      {
-        "question": "Why is the work done on a rocket moving away from Earth analyzed as a variable force problem?",
-        "answer": "Because the *gravitational force* pulling on the rocket strictly varies as the *inverse square* of the distance from the Earth's center.",
+        "question": "According to the provided table, what is the approximate power output of a pocket calculator?",
+        "answer": "The approximate power is *$7.5 \\times 10^{-4}$ W*.",
         "category": "conceptual",
-        "badgeTitle": "CONCEPT FOCUS",
-        "badgeText": "Inverse-square law application."
+        "badgeTitle": "COMPARISON",
+        "badgeText": "This is extremely small compared to a flashlight, which uses about 1.5 W."
       },
       {
-        "question": "In the graphical analysis of a variable force, what specific geometric shape represents the work done in a single tiny interval?",
-        "answer": "The work is represented by a *shaded rectangle* with a mathematical area defined as *$F_i \\cos\\theta_i \\Delta d_i$*.",
-        "category": "conceptual",
-        "badgeTitle": "DIAGRAM REFERENCE",
-        "badgeText": "Figure 4.6 (Area approximation)."
-      },
-      {
-        "question": "What mathematical condition transforms the sum of rectangular areas into the exact continuous work done by a variable force?",
-        "answer": "The exact result is achieved by applying a *limit* where the displacement intervals $\\Delta d$ mathematically approach *zero*.",
-        "category": "conceptual",
-        "badgeTitle": "CALCULUS CONCEPT",
-        "badgeText": "$\\lim_{\\Delta d\\rightarrow 0}$"
-      },
-      {
-        "question": "How does the gravitational work along a straight diagonal path (Path 1) compare to a stepped rectangular path (Path 2)?",
-        "answer": "The total work done is exactly the *same* ($-mgh$) because the gravitational force is inherently *path-independent*.",
-        "category": "conceptual",
-        "badgeTitle": "KEY PROPERTY",
-        "badgeText": "Hallmark of a conservative field."
-      },
-      {
-        "question": "If an object is moved in a complete closed loop (e.g., from A to B and back to A) in a gravitational field, what is the net work done?",
-        "answer": "The total net work is precisely *zero* because the negative work done moving upward perfectly cancels the positive work done moving downward.",
-        "category": "conceptual",
-        "badgeTitle": "THEOREM",
-        "badgeText": "Closed-path integral of a conservative force."
-      },
-      {
-        "question": "Why does kinetic sliding friction completely fail the closed-path test for conservative forces?",
-        "answer": "Because friction always *opposes motion*, requiring continuous physical effort; thus, work in a closed loop accumulates and is *never zero*.",
-        "category": "conceptual",
-        "badgeTitle": "ENERGY IMPLICATION",
-        "badgeText": "Continuous energy dissipation."
-      },
-      {
-        "question": "Under what exact condition does the instantaneous power of an object perfectly equal its average power?",
-        "answer": "This occurs only when the rate of doing work remains absolutely *constant* over the entire observed time interval.",
-        "category": "conceptual",
-        "badgeTitle": "MATHEMATICAL CONDITION",
-        "badgeText": "When $\\frac{\\Delta W}{\\Delta t}$ does not fluctuate."
-      },
-      {
-        "question": "In the expression $P = F \\cdot v$, what does the mathematical dot product imply about the nature of power?",
-        "answer": "The dot product of the force and velocity vectors dictates that power is strictly a *scalar quantity*.",
-        "category": "conceptual",
-        "badgeTitle": "VECTOR ANALYSIS",
-        "badgeText": "Dot product yields scalars."
-      },
-      {
-        "question": "According to the \"For Your Information\" power table, what is the rated power of a standard pocket calculator?",
-        "answer": "A typical pocket calculator operates at an extremely low power of exactly *$7.5 \\times 10^{-4}$ W*.",
+        "question": "What is the power output of a car at 90 km h⁻¹ based on the informational table?",
+        "answer": "The approximate power of a car running at that speed is *$1.1 \\times 10^4$ W*.",
         "category": "conceptual",
         "badgeTitle": "DATA POINT",
-        "badgeText": "Practical scale of micro-electronics."
+        "badgeText": "A Jumbo Jet aircraft operates at a massively higher power of approximately $1.3 \\times 10^5$ W."
       },
       {
-        "question": "According to the text's table, how much power does a typical flash light utilizing two cells consume?",
-        "answer": "A two-cell flash light consumes exactly *1.5 W* of electrical power.",
+        "question": "Which heavenly body listed in the table has the lowest escape speed, and what is its value?",
+        "answer": "The *Moon* has the lowest escape speed, which is *2.4 km s⁻¹*.",
         "category": "conceptual",
-        "badgeTitle": "DATA POINT",
-        "badgeText": "Everyday device power metrics."
+        "badgeTitle": "CONTEXT",
+        "badgeText": "This is significantly lower than Earth due to the Moon's smaller mass and gravitational pull."
       },
       {
-        "question": "Which specific household device listed in the chapter's table consumes exactly $2 \\times 10^3$ W of power?",
-        "answer": "An *electric heater* operates exactly at this high power consumption level.",
+        "question": "Compare the escape speeds of Mars and Venus as per the provided data.",
+        "answer": "The escape speed of *Mars* is *5.0 km s⁻¹*, while *Venus* has a much higher escape speed of *10.4 km s⁻¹*.",
         "category": "conceptual",
-        "badgeTitle": "DATA POINT",
-        "badgeText": "High-draw thermal appliances."
+        "badgeTitle": "PROXIMITY",
+        "badgeText": "Venus's escape speed is very close to that of Earth (11.2 km s⁻¹)."
       },
       {
-        "question": "In the definition of absolute potential energy, why is the reference point strictly chosen to be at infinity?",
-        "answer": "Because it is only at an *infinite distance* that the Earth's gravitational pull mathematically and physically becomes *zero*.",
+        "question": "Identify the gas giant planet from the table that requires an escape speed of 37.0 km s⁻¹.",
+        "answer": "That planet is *Saturn*.",
         "category": "conceptual",
-        "badgeTitle": "REFERENCE POINT",
-        "badgeText": "$U_{\\infty} = 0$"
+        "badgeTitle": "MAXIMUM VALUE",
+        "badgeText": "Jupiter holds the highest recorded escape speed in the table at 61 km s⁻¹."
       },
       {
-        "question": "During the derivation of absolute potential energy, what does the algebraic term $r = \\frac{r_1 + r_2}{2}$ represent?",
-        "answer": "It represents the *arithmetic mean* distance, precisely locating the *center of the step* between radii $r_1$ and $r_2$.",
+        "question": "In analyzing the work done by a variable force, why do we assume the force is approximately constant during each interval?",
+        "answer": "This assumption allows us to calculate the work for each small interval as a *simple product of force and displacement ($\\Delta W_1 = F_1 \\cos \\theta_1 \\Delta d_1$)*, creating a series of calculable rectangular areas.",
         "category": "conceptual",
-        "badgeTitle": "DERIVATION GEOMETRY",
-        "badgeText": "Midpoint approximation."
+        "badgeTitle": "SUMMATION",
+        "badgeText": "The total work is then calculated by adding all these individual interval terms."
       },
       {
-        "question": "Why is the specific mathematical approximation $(\\Delta r)^2 \\ll r_1^2$ critical in deriving absolute potential energy?",
-        "answer": "It allows the infinitesimally small $(\\Delta r)^2$ term to be safely *neglected*, smoothly simplifying the radius squared ($r^2$) into the product *$r_1 r_2$*.",
+        "question": "When calculating work in a gravitational field using infinitesimal horizontal and vertical steps, why is the work along horizontal steps strictly zero?",
+        "answer": "Because the gravitational weight $mg$ is *exactly perpendicular* to the displacement for these horizontal steps.",
         "category": "conceptual",
-        "badgeTitle": "ALGEBRAIC SIMPLIFICATION",
-        "badgeText": "$r^2 \\approx r_1 r_2$"
+        "badgeTitle": "CONCLUSION",
+        "badgeText": "Work is done by the force of gravity only along the vertical displacements."
       },
       {
-        "question": "What physical reality is indicated by the fact that the value of $U$ becomes \"less negative\" as distance $r$ increases?",
-        "answer": "It mathematically confirms that as an object is physically raised higher against gravity, its absolute potential energy actually *increases*.",
+        "question": "During the derivation of Absolute Potential Energy, why is the approximation $(\\Delta r)^2 \\ll r_1^2$ necessary?",
+        "answer": "Because the step $\\Delta r$ is very small, its square can be *neglected* compared to $r_1^2$, allowing the mathematical simplification of $r^2 \\approx r_1^2 + r_1 \\Delta r$.",
         "category": "conceptual",
-        "badgeTitle": "CONCEPT",
-        "badgeText": "Moving towards a maximum value of zero."
+        "badgeTitle": "FINAL SIMPLIFICATION",
+        "badgeText": "This crucially reduces the denominator to $r_1 r_2$ in the gravitational force equation."
       },
       {
-        "question": "What is the precise amount of positive work required to completely free a mass $m$ from Earth's gravity starting from the surface?",
-        "answer": "The required energy is exactly *$\\frac{GMm}{R}$*, which perfectly neutralizes the negative absolute potential energy holding it to Earth.",
+        "question": "As a body is displaced to an infinite distance ($N$) from Earth, what happens to the mathematical term $1/r_N$?",
+        "answer": "Since $r_N = \\infty$, the term $\\frac{1}{r_N}$ becomes *exactly $0$*.",
         "category": "conceptual",
-        "badgeTitle": "ENERGY REQUIREMENT",
-        "badgeText": "Overcoming the gravitational binding energy."
+        "badgeTitle": "PHYSICAL MEANING",
+        "badgeText": "The gravitational potential energy with respect to Earth becomes zero at infinity."
       },
       {
-        "question": "What striking fact is stated in the \"Do You Know?\" box regarding sunlight and Earth's fuel reserves?",
-        "answer": "The sheer volume of solar energy striking Earth in just *10 days* vastly exceeds the total energy stored in *all fossil fuels* combined.",
+        "question": "Can a moving body with kinetic energy perform work, and if so, what is the consequence?",
+        "answer": "Yes, it can perform work if it pushes or pulls another object; the work is taken as *negative* and the object's *kinetic energy will decrease*.",
         "category": "conceptual",
-        "badgeTitle": "ENVIRONMENTAL PERSPECTIVE",
-        "badgeText": "Scale of solar energy."
+        "badgeTitle": "PRINCIPLE",
+        "badgeText": "This aligns directly with the work-energy theorem."
       },
       {
-        "question": "In the derivation of escape velocity, what happens to the body's final potential energy?",
-        "answer": "It mathematically approaches exactly *zero* because the body is theorized to successfully reach an *infinite distance* from Earth.",
+        "question": "If a ball is thrown vertically upward and falls back to the ground, why is gravity considered a conservative force in this scenario?",
+        "answer": "Because the *net work done by gravity over this closed path (up and back down) is strictly zero*.",
         "category": "conceptual",
-        "badgeTitle": "BOUNDARY CONDITION",
-        "badgeText": "Escape criteria."
+        "badgeTitle": "CONTRAST",
+        "badgeText": "Air resistance in the same scenario would be non-conservative."
       },
       {
-        "question": "Based on the table of escape speeds, which listed planet possesses the lowest escape velocity?",
-        "answer": "*Mercury* has the lowest planetary escape speed listed at exactly *$4.3 \\text{ km s}^{-1}$*.",
+        "question": "When a body falls a vertical distance $x$ from a height $h$, what is the exact relationship between its P.E. and K.E. at that point?",
+        "answer": "Its potential energy is *$mg(h-x)$* while its kinetic energy has grown to exactly *$mgx$*.",
         "category": "conceptual",
-        "badgeTitle": "PLANETARY DATA",
-        "badgeText": "Smallest major planet gravity."
+        "badgeTitle": "CONSERVATION CHECK",
+        "badgeText": "The sum of both at any position $B$ always equals the original total energy $mgh$."
       },
       {
-        "question": "According to the chapter's data table, what is the exact escape velocity required to leave the planet Neptune?",
-        "answer": "The escape speed for Neptune is listed precisely at *$25.4 \\text{ km s}^{-1}$*.",
+        "question": "If air friction $f$ is present, what does the quantity $fh$ physically represent when a body falls from height $h$?",
+        "answer": "It represents the *part of potential energy used up in doing work against friction*.",
         "category": "conceptual",
-        "badgeTitle": "PLANETARY DATA",
-        "badgeText": "Gas giant gravity metrics."
+        "badgeTitle": "ENERGY EQUATION",
+        "badgeText": "$mgh = \\frac{1}{2}mv^2 + fh$."
       },
       {
-        "question": "What is the specific escape speed required to overcome the gravity of the planet Venus?",
-        "answer": "Venus requires an escape speed of *$10.4 \\text{ km s}^{-1}$*, which is fractionally lower than Earth's.",
+        "question": "Why is the initial kinetic energy equated to the increase in potential energy to calculate escape velocity?",
+        "answer": "Because a body escapes the gravitational field when its initial K.E. is exactly enough to cover the *work required to lift it to an infinite distance*, where P.E. becomes zero.",
         "category": "conceptual",
-        "badgeTitle": "PLANETARY DATA",
-        "badgeText": "Sister-planet comparison."
+        "badgeTitle": "MATHEMATICAL STEP",
+        "badgeText": "$\\frac{1}{2}mv_{esc}^2 = G\\frac{Mm}{R}$."
       },
       {
-        "question": "How does the escape velocity of Uranus compare to the escape velocity of Saturn?",
-        "answer": "Uranus requires a noticeably *lower* escape speed ($22.4 \\text{ km s}^{-1}$) compared to the massive gravity of Saturn ($37.0 \\text{ km s}^{-1}$).",
+        "question": "(MCQ 4.1) At what height does a 1 kg mass have a potential energy of 1 joule relative to the ground?",
+        "answer": "It has a potential energy of 1 J at a height of *0.102 m*.",
         "category": "conceptual",
-        "badgeTitle": "PLANETARY DATA",
-        "badgeText": "Mass-to-radius ratio effects."
+        "badgeTitle": "FORMULA APPLICATION",
+        "badgeText": "Derived from $h = P.E. / (mg) = 1 / (1 \\times 9.8)$."
       },
       {
-        "question": "In the formal derivation of the work-energy theorem, which specific kinematic equation is initially utilized?",
-        "answer": "The derivation strictly relies on the *third equation of motion*, which is mathematically expressed as *$2ad = v_f^2 - v_i^2$*.",
+        "question": "(MCQ 4.3) True or False: A body completely at rest may still possess energy.",
+        "answer": "*True*, a body at rest may have *potential energy due to its position or constrained state*.",
         "category": "conceptual",
-        "badgeTitle": "MATHEMATICAL FOUNDATION",
-        "badgeText": "Linking kinematics to dynamics."
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "A compressed spring or a boulder on a hill."
       },
       {
-        "question": "What does the \"Tid-bits\" margin box claim about the strict energy equivalent of your daily food intake?",
-        "answer": "It states that all the food a person eats in one single day contains roughly the same physical energy as a *$1/3$ litre of petrol*.",
+        "question": "(MCQ 4.6) According to the work-energy principle in linear motion, what is the work done on a body exactly equal to?",
+        "answer": "It is equal to the *change in kinetic energy* of the body.",
         "category": "conceptual",
-        "badgeTitle": "ANALOGY",
-        "badgeText": "Biological vs. chemical energy density."
+        "badgeTitle": "EQUATION",
+        "badgeText": "$W = (K.E)_f - (K.E)_i$."
       },
       {
-        "question": "When initially deriving the interconversion of P.E. and K.E. for a falling body, what major environmental assumption is made?",
-        "answer": "The theoretical derivation strictly assumes a perfect vacuum by completely *ignoring air friction* and drag.",
+        "question": "(MCQ 4.7) Calculate the total energy given out by a 6 W lamp in 2 minutes.",
+        "answer": "The lamp gives out *720 J* of energy.",
         "category": "conceptual",
-        "badgeTitle": "IDEALIZED SYSTEM",
-        "badgeText": "Perfect mechanical energy conservation."
+        "badgeTitle": "CONVERSION",
+        "badgeText": "Time must be converted to seconds ($2 \\text{ min} \\times 60 \\text{ s} = 120 \\text{ s}$), then $E = P \\times t = 6 \\times 120 = 720$."
       },
       {
-        "question": "For a body falling from height $h$, how is its kinetic energy at an intermediate distance $x$ calculated without knowing the time elapsed?",
-        "answer": "By isolating $v^2$ using the third equation of motion ($v^2 = 2gx$), the kinetic energy algebraically simplifies straight to the spatial term *$mgx$*.",
+        "question": "(Short Answer 4.1) Why is electrical power actively required even when an elevator is descending?",
+        "answer": "Because power is needed to run the motor in reverse to provide a *controlled braking force against gravity*, ensuring it does not fall freely.",
         "category": "conceptual",
-        "badgeTitle": "DERIVATION TRICK",
-        "badgeText": "Substituting $2gx$ into $\\frac{1}{2}mv^2$."
+        "badgeTitle": "SAFETY LIMIT",
+        "badgeText": "This is also why there is a limit on passengers, to prevent the gravitational force from exceeding the motor's braking capacity."
       },
       {
-        "question": "In a real-world resistive medium, what physical fate befalls the mechanical energy \"lost\" by a falling object?",
-        "answer": "The lost mechanical energy is strictly converted into *thermal energy* by doing continuous *work against friction* ($fh$).",
+        "question": "(Short Answer 4.3) Will the total mechanical energy of a body be conserved if it falls towards the Earth in air?",
+        "answer": "No, it will *not* be conserved because *air resistance acts as a non-conservative frictional force*.",
         "category": "conceptual",
-        "badgeTitle": "THERMODYNAMIC REALITY",
-        "badgeText": "Energy dissipation."
+        "badgeTitle": "RESULT",
+        "badgeText": "Some of the mechanical energy is dissipated as work done against friction ($fh$)."
       },
       {
-        "question": "What surprising historical fact is presented in the chapter's \"Tid-bits\" regarding global coal consumption?",
-        "answer": "It notes that humanity has burned more coal since the year *1945* than was utilized in the *whole of history* before that date.",
+        "question": "(Short Answer 4.4) How do you calculate the power of a crane in kilowatts that lifts a 1000 kg mass to 100 m in 20 seconds?",
+        "answer": "Using $P = mgh / t$, the power is $\\frac{1000 \\times 9.8 \\times 100}{20} = 49,000 \\text{ W}$, which equals *49 kW*.",
         "category": "conceptual",
-        "badgeTitle": "HISTORICAL DATA",
-        "badgeText": "Exponential energy usage."
+        "badgeTitle": "UNIT NOTICE",
+        "badgeText": "The final answer must be divided by 1000 to convert watts to kilowatts."
       },
       {
-        "question": "(MCQ 4.2) If an iron sphere and an aluminium sphere are dropped simultaneously, what physical property is identical when they are 10 m from the ground?",
-        "answer": "Because they are falling in the exact same gravitational field, they possess identical downward *accelerations* regardless of their mass difference.",
+        "question": "(Short Answer 4.6 & CRQ 4.1) State the two distinct conditions under which a force is defined as conservative.",
+        "answer": "1) The *work done in moving an object between two points is independent of the path followed*. 2) The *total work done in a closed path is exactly zero*.",
         "category": "conceptual",
-        "badgeTitle": "PHYSICS PRINCIPLE",
-        "badgeText": "Independence of falling acceleration from mass."
+        "badgeTitle": "PRIME EXAMPLE",
+        "badgeText": "Gravitational force perfectly fulfills both conditions."
       },
       {
-        "question": "(Short Q 4.1) Why must an engineering limit be placed on the maximum number of passengers in a descending elevator?",
-        "answer": "To strictly ensure that the massive *decrease in potential energy* does not completely overwhelm the safe dissipation capacity of the elevator's *braking motors*.",
+        "question": "(Short Answer 4.10) What is the mathematical effect on Kinetic Energy if a body's momentum becomes double?",
+        "answer": "Since K.E. is proportional to the square of velocity (and thus momentum if mass is constant), doubling the momentum makes the Kinetic Energy *four times greater*.",
         "category": "conceptual",
-        "badgeTitle": "ENGINEERING SAFETY",
-        "badgeText": "Managing maximum kinetic loads."
+        "badgeTitle": "RELATIONSHIP",
+        "badgeText": "$K.E. = p^2 / 2m$."
       },
       {
-        "question": "(Short Q 4.2) If a crane raises a heavy body to a height $H$, what are the specific mathematical signs of the work done by the crane and by gravity?",
-        "answer": "The lifting crane inherently does *positive work* (force and motion align), while the Earth's gravity does strictly *negative work* (force opposes motion).",
+        "question": "(Short Answer 4.11) Does the International Space Station (ISS) possess gravitational P.E. and/or Kinetic energy?",
+        "answer": "It possesses *both*; it has gravitational P.E. due to its height above the Earth and Kinetic Energy due to its continuous orbital velocity.",
         "category": "conceptual",
-        "badgeTitle": "VECTOR ANALYSIS",
-        "badgeText": "Directionality of $F$ and $d$."
+        "badgeTitle": "FIELD PRESENCE",
+        "badgeText": "It resides entirely within the Earth's gravitational field."
       },
       {
-        "question": "(Short Q 4.5) If a moving transport trolley drops leaking sand bags onto a frictionless track, what happens to the trolley's uniform speed?",
-        "answer": "The forward speed remains completely *unchanged* because the leaking sand simply carries away its own proportionate *momentum*, exerting no decelerating force on the trolley itself.",
+        "question": "(CRQ 4.4) If an opposing force brings the speed of a ball down from 14 m s⁻¹ to 6 m s⁻¹, has it done positive or negative work?",
+        "answer": "The force has done *negative work*, because it acts in the opposite direction of motion, actively decreasing the object's kinetic energy.",
         "category": "conceptual",
-        "badgeTitle": "NEWTONIAN MECHANICS",
-        "badgeText": "No external horizontal force applied."
+        "badgeTitle": "WORK-ENERGY PROOF",
+        "badgeText": "$(K.E.)_f < (K.E.)_i$, meaning $\\Delta K.E.$ is negative."
       },
       {
-        "question": "(CRQ 4.1) Aside from path independence, what is the strict second condition for a force to be officially classified as conservative?",
-        "answer": "The total physical work calculated over any complete *closed path* must integrate to exactly *zero*.",
+        "question": "(CRQ 4.6) Explain briefly why work done against friction is strictly non-conservative in nature.",
+        "answer": "Because friction *always opposes the direction of motion*, so the negative work accumulates over distance; thus, the work depends heavily on the path length and is never zero in a closed loop.",
         "category": "conceptual",
-        "badgeTitle": "CORE DEFINITION",
-        "badgeText": "Mathematical criteria for conservative fields."
+        "badgeTitle": "HEAT LOSS",
+        "badgeText": "This energy is lost from the mechanical system permanently."
       },
       {
-        "question": "(CRQ 4.7) Does the invisible movement of atmospheric wind physically contain kinetic energy?",
-        "answer": "Yes, because wind is fundamentally a *moving air mass*, and any physical mass in motion intrinsically possesses measurable *kinetic energy*.",
+        "question": "(Numerical 4.1 Concept) How is the power developed by a machine gun firing bullets calculated?",
+        "answer": "By calculating the *total kinetic energy of all bullets fired in a specific time frame*, substituting $W$ with $n \\times (\\frac{1}{2}mv^2)$ over time $t$.",
         "category": "conceptual",
-        "badgeTitle": "FLUID DYNAMICS",
-        "badgeText": "$K.E. = \\frac{1}{2}mv^2$ applied to gases."
+        "badgeTitle": "RESULTING POWER",
+        "badgeText": "For 6 bullets of 40g at 700 m s⁻¹ per minute, it generates 9800 watts."
       },
       {
-        "question": "(Comp Q 4.3) How does the textbook theoretically prove that the Earth's gravitational field is definitively conservative?",
-        "answer": "By geometrically showing that the mathematical work done along any stepped or highly *curved path* perfectly equals $-mgh$, exactly matching a direct *vertical path*.",
+        "question": "(Numerical 4.4 Concept) What physical principle determines the minimum velocity of water at the lowest point of a vertical whirled bucket so it doesn't spill?",
+        "answer": "The principle of *interconversion of kinetic to potential energy*, ensuring the water retains enough velocity at the top to maintain outward centripetal force against gravity.",
         "category": "conceptual",
-        "badgeTitle": "PROOF METHOD",
-        "badgeText": "Breaking curves into infinitesimal $x$ and $y$ vectors."
+        "badgeTitle": "VELOCITY ANSWER",
+        "badgeText": "The lowest point requires a speed of $4.94 \\text{ m s}^{-1}$."
       },
       {
-        "question": "(Num 4.4) What exact physical condition must be met at the highest point so that water does not spill from a bucket whirled in a vertical circle?",
-        "answer": "The downward weight of the water ($mg$) must be entirely provided by the required minimum *centripetal force* ($\\frac{mv^2}{r}$), keeping the water pinned to the bucket base.",
+        "question": "(Numerical 4.6 Concept) What is the total work done by gravity when an object goes up 5 m and falls back down to its exact starting point?",
+        "answer": "The total work done is *0 J*.",
         "category": "conceptual",
-        "badgeTitle": "CIRCULAR MOTION DYNAMICS",
-        "badgeText": "$v = \\sqrt{rg}$ threshold."
+        "badgeTitle": "PHYSICAL SIGNIFICANCE",
+        "badgeText": "Gravity is a conservative force and does not transfer any net energy to the object over a closed path."
+      },
+      {
+        "question": "In a complex force-displacement graph for a variable force, what does a single $i^{th}$ shaded rectangle represent mathematically?",
+        "answer": "It represents the *work done during that specific $i^{th}$ interval*, calculated as $F_i \\cos \\theta_i \\Delta d_i$.",
+        "category": "conceptual",
+        "badgeTitle": "TOTALING",
+        "badgeText": "The sum of all such rectangles gives the total work done."
+      },
+      {
+        "question": "Why is the simple calculation $W = mgh$ invalid for launching a rocket deep into space?",
+        "answer": "Because the formula $mgh$ assumes the gravitational force is *constant*, which is only true near the surface of the Earth; in space, gravity decreases inversely to the square of the distance.",
+        "category": "conceptual",
+        "badgeTitle": "CORRECTION",
+        "badgeText": "Absolute potential energy equations must be used instead."
+      },
+      {
+        "question": "Conceptually, what is the primary difference between instantaneous power and average power?",
+        "answer": "Instantaneous power measures the rate of work at a *specific, infinitely small instant in time ($\\Delta t \\to 0$)*, whereas average power measures the rate over a *measurable, larger time interval*.",
+        "category": "conceptual",
+        "badgeTitle": "LIMITS",
+        "badgeText": "Instantaneous relies heavily on mathematical limits."
+      },
+      {
+        "question": "In the interconversion equation $mgh = \\frac{1}{2}mv^2 + fh$, what does the exact term $mgh$ represent?",
+        "answer": "It represents the *total available initial potential energy of the body at its maximum starting height*, before any motion or friction occurs.",
+        "category": "conceptual",
+        "badgeTitle": "CONSERVATION",
+        "badgeText": "This total energy is split between kinetic energy and heat generated by friction."
+      },
+      {
+        "question": "According to the \"Tid-bits\" section, how much energy does the human body consume daily compared to a car's fossil fuel?",
+        "answer": "All the food eaten by a human in one full day possesses about the same energy as merely *$1/3$ litre of petrol*.",
+        "category": "conceptual",
+        "badgeTitle": "PERSPECTIVE",
+        "badgeText": "This demonstrates the incredibly high energy density of modern fuels."
+      },
+      {
+        "question": "Based on the \"Do You Know?\" box, how does the incoming solar energy over a 10-day period compare to Earth's resources?",
+        "answer": "There is *more energy reaching Earth in 10 days of sunlight* than is contained in *all the combined fossil fuels on the planet*.",
+        "category": "conceptual",
+        "badgeTitle": "IMPLICATION",
+        "badgeText": "Solar energy represents an overwhelmingly vast and untapped resource."
+      },
+      {
+        "question": "Why exactly does the Absolute Potential Energy formula $U = -GMm/r$ mathematically become zero at infinity?",
+        "answer": "Because as the distance $r$ approaches infinity, the denominator becomes infinitely large, causing the entire fraction to *approach zero*, meaning the Earth's gravitational pull ceases to have influence.",
+        "category": "conceptual",
+        "badgeTitle": "ESCAPE REFERENCE",
+        "badgeText": "This zero-energy state is the target required to calculate escape velocity."
       }
     ],
     "5": [
       {
-        "question": "What is meant by deformation in solids?",
-        "answer": "It is the *change in shape*, *length*, or *volume* produced when a body is subjected to some *external force*.",
+        "question": "What produces a change in shape, volume, or length of a solid body?",
+        "answer": "*Deformation* is produced when a body is subjected to some *external force*.",
+        "category": "most",
+        "badgeTitle": "EXPLANATION",
+        "badgeText": "The body regains its original shape after the removal of the force, provided it was not too great."
+      },
+      {
+        "question": "What is the specific term for a material's ability to recover its original shape?",
+        "answer": "The ability of the body to return to its original shape after the removal of an external force is called *elasticity*.",
+        "category": "most",
+        "badgeTitle": "CONDITION",
+        "badgeText": "This occurs provided that the external applied force was not too great."
+      },
+      {
+        "question": "How is stress defined in terms of mechanical properties?",
+        "answer": "It is defined as the *force applied per unit area* to produce any change in the shape, volume, or length of a body.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "Stress $(\\sigma) = \\frac{\\text{Force}(F)}{\\text{Area}(A)}$."
+      },
+      {
+        "question": "What is the SI unit used to measure stress?",
+        "answer": "The SI unit of stress is *newton per square meter (N m⁻²)*, which is given the name *pascal (Pa)*.",
+        "category": "most",
+        "badgeTitle": "RELATED CONCEPT",
+        "badgeText": "It has the exact same unit as Young's modulus."
+      },
+      {
+        "question": "What are the three types of stress based on the specific deformation they cause?",
+        "answer": "Stress is called *tensile stress* when it changes length, *volume stress* when it changes volume, and *shear stress* when it changes shape.",
+        "category": "most",
+        "badgeTitle": "EFFECT",
+        "badgeText": "Stress may cause a change in length, volume, and shape."
+      },
+      {
+        "question": "What is the definition of strain for a one-dimensional deformation?",
+        "answer": "Strain is defined as the *fractional change in length*, acting as a measure of the deformation of a solid when stress is applied.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "Strain $(\\varepsilon) = \\frac{\\text{Change in length }(\\Delta L)}{\\text{Original length }(L_o)}$."
+      },
+      {
+        "question": "Why does strain possess no units of measurement?",
+        "answer": "Since strain is the *ratio of lengths*, it is completely *dimensionless* and therefore has no units.",
         "category": "most",
         "badgeTitle": "EXAMPLE",
-        "badgeText": "Squeezing a soft rubber ball or stretching a rubber string."
+        "badgeText": "Tensile strain is the ratio of change in length to original length."
       },
       {
-        "question": "How is a solid body brought into a state of stress?",
-        "answer": "Under the influence of an *external force*, distortion occurs because of the *displacement of atoms* from their equilibrium position, bringing the body into a *state of stress*.",
-        "category": "most",
-        "badgeTitle": "EXTRA POINT",
-        "badgeText": "The atoms are held by inter-atomic cohesive forces."
-      },
-      {
-        "question": "Define the term elasticity.",
-        "answer": "It is the *ability* of a body to *return* to its *original shape and dimensions* after the removal of the external applied force.",
-        "category": "most",
-        "badgeTitle": "CONDITION",
-        "badgeText": "This is provided the external applied force is not too great."
-      },
-      {
-        "question": "What is stress and how is it mathematically defined?",
-        "answer": "*Stress* is defined as the *force applied per unit area* to produce any change in the shape, volume, or length of a body.",
+        "question": "How is volumetric strain calculated for a solid body?",
+        "answer": "In cases when the applied stress changes the volume, the *change in volume per unit volume* is known as volumetric strain.",
         "category": "most",
         "badgeTitle": "FORMULA",
-        "badgeText": "σ=F/A"
+        "badgeText": "Volumetric strain $= \\frac{\\Delta V}{V_o}$."
       },
       {
-        "question": "What is the SI unit of stress?",
-        "answer": "The SI unit of stress is *newton per square meter* (N m⁻²), which is given the name *pascal* (Pa).",
-        "category": "most",
-        "badgeTitle": "EQUIVALENCE",
-        "badgeText": "1 Pa=1 N m⁻²"
-      },
-      {
-        "question": "What are the three types of stress based on the deformation they cause?",
-        "answer": "The three types are *tensile stress* (changes length), *volume stress* (changes volume), and *shear stress* (changes shape).",
-        "category": "most",
-        "badgeTitle": "APPLICATION",
-        "badgeText": "Stretching a wire involves tensile stress."
-      },
-      {
-        "question": "Define strain in the context of one-dimensional deformation.",
-        "answer": "*Strain* is a measure of the *deformation* of a solid and is defined as the *fractional change in length* when stress is applied.",
+        "question": "What defines the concept of shear strain in a rigid body?",
+        "answer": "When a body is subjected to shear stress, one face slides through a distance $\\Delta x$ relative to an opposite face at distance $y$, producing *shear strain*.",
         "category": "most",
         "badgeTitle": "FORMULA",
-        "badgeText": "ε=ΔL/L₀"
+        "badgeText": "$\\gamma = \\frac{\\Delta x}{y} = \\tan \\theta$, which approximates to $\\gamma = \\theta$ for small angles in radians."
       },
       {
-        "question": "Why does strain have no units?",
-        "answer": "Because strain is the *ratio* of two *identical physical quantities* (such as lengths), it is *dimensionless* and has no units.",
-        "category": "most",
-        "badgeTitle": "EXTRA POINT",
-        "badgeText": "It solely represents a fractional or percentage change."
-      },
-      {
-        "question": "Define volumetric strain.",
-        "answer": "It is the *change in volume per unit original volume* when the applied stress changes the volume of a body.",
+        "question": "How is Young's Modulus mathematically defined?",
+        "answer": "The *stress applied per unit strain* is called Young's modulus.",
         "category": "most",
         "badgeTitle": "FORMULA",
-        "badgeText": "Volumetric strain = ΔV/V₀"
+        "badgeText": "$Y = \\frac{F/A}{\\Delta L / L_0}$."
       },
       {
-        "question": "Define shear strain.",
-        "answer": "It is the strain produced when shear stress *slides one face* of a rigid body relative to the opposite face, mathematically defined as *displacement divided by distance*.",
+        "question": "What is the proportional limit on a typical stress-strain curve?",
+        "answer": "It is the *greatest stress* that a material can endure without losing *straight line proportionality* between stress and strain.",
         "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "γ= Δx/y = tanθ (For small angles, γ=θ in radians)."
+        "badgeTitle": "RULE OBEYED",
+        "badgeText": "Hooke's law is directly obeyed in this linear region."
       },
       {
-        "question": "What is Young's Modulus?",
-        "answer": "It is defined as the *tensile stress* applied per *unit tensile strain* on a material.",
+        "question": "What happens to a material in the elastic region of deformation when the load is removed?",
+        "answer": "If the load is removed, the curve will be *retraced* and the material will *return to its original length*.",
         "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "Y = (F/A) / (ΔL/L₀)"
+        "badgeTitle": "LIMIT",
+        "badgeText": "This behavior lasts up to the yield point, known as the elastic limit."
       },
       {
-        "question": "What is the proportional limit in a stress-strain curve?",
-        "answer": "It is defined as the *greatest stress* that a material can endure without losing the *straight line proportionality* between stress and strain.",
-        "category": "most",
-        "badgeTitle": "HOOKE'S LAW",
-        "badgeText": "In this region, deformation is directly proportional to the load."
-      },
-      {
-        "question": "Define elastic limit or yield point.",
-        "answer": "It is the *maximum stress* at which a material *remains elastic*, meaning it will recover its original shape if the load is removed.",
+        "question": "What specifically defines the yield point on a stress-strain curve?",
+        "answer": "The point where the material stops being perfectly elastic is the *yield point*, and the stress value here is strictly known as the *elastic limit*.",
         "category": "most",
         "badgeTitle": "SYMBOL",
-        "badgeText": "Usually denoted as σ₀ at the yield point."
+        "badgeText": "The elastic limit is denoted by $\\sigma_0$."
       },
       {
-        "question": "Describe plastic deformation.",
-        "answer": "It is a kind of behavior where a specimen is *permanently changed* and does not recover its original shape or dimensions after the stress is increased *beyond the yield stress* and then removed.",
+        "question": "What characterizes plastic deformation in a solid specimen?",
+        "answer": "If stress is increased beyond the elastic limit, the specimen becomes *permanently changed* and does not *recover* its original shape or dimension.",
         "category": "most",
-        "badgeTitle": "ALTERNATIVE TERM",
-        "badgeText": "Plasticity."
+        "badgeTitle": "TERM",
+        "badgeText": "This kind of behavior is scientifically called plasticity."
       },
       {
-        "question": "What is Ultimate Tensile Strength (UTS)?",
-        "answer": "It is the *maximum stress* that a material can withstand and can be regarded as the *nominal strength* of the material.",
+        "question": "How is Ultimate Tensile Strength (UTS) defined for a material?",
+        "answer": "The UTS is defined as the *maximum stress* that a material can withstand, representing the *nominal strength* of the material.",
         "category": "most",
-        "badgeTitle": "SYMBOL",
-        "badgeText": "Represented as σₘ."
+        "badgeTitle": "CONSEQUENCE",
+        "badgeText": "Once the point corresponding to UTS is crossed, the material ultimately breaks."
       },
       {
-        "question": "What happens at the fracture stress point?",
-        "answer": "Once the *Ultimate Tensile Strength* is crossed, the material eventually *breaks* or *ruptures* at a specific point corresponding to the *fracture stress*.",
-        "category": "most",
-        "badgeTitle": "SYMBOL",
-        "badgeText": "Represented as σ_f."
-      },
-      {
-        "question": "Differentiate between ductile and brittle substances based on their deformation behavior.",
-        "answer": "*Ductile* substances undergo *plastic deformation* until they break, whereas *brittle* substances break just after the *elastic limit* is reached.",
+        "question": "What is the fundamental difference between ductile and brittle substances?",
+        "answer": "*Ductile* substances undergo plastic deformation until they break, whereas *brittle* substances break immediately after the elastic limit is reached.",
         "category": "most",
         "badgeTitle": "EXAMPLES",
-        "badgeText": "Lead and copper are ductile; glass and high carbon steel are brittle."
+        "badgeText": "Lead and copper are ductile, while glass and high carbon steel are brittle."
       },
       {
-        "question": "What is strain energy in a deformed material?",
-        "answer": "It is the *work done* against the *elastic restoring force*, stored as the *gain in potential energy* of the molecules due to their displacement from mean positions.",
+        "question": "What happens to the work done against elastic restoring forces when deforming a body?",
+        "answer": "It is *stored in it as its potential energy*, equal to the gain in potential energy of the molecules due to their displacement from mean positions.",
+        "category": "most",
+        "badgeTitle": "GRAPHIC REPRESENTATION",
+        "badgeText": "The area under a force-extension graph visually represents this work done."
+      },
+      {
+        "question": "What is the formula for the strained energy stored in a stretched spring?",
+        "answer": "The work done by the stretching force is stored as *strained energy*, given by the product of average force and extension.",
         "category": "most",
         "badgeTitle": "FORMULA",
-        "badgeText": "W = ½ F Δx"
+        "badgeText": "$E = \\frac{1}{2} k (\\Delta x)^2$."
       },
       {
-        "question": "How can the work done to stretch a material be found from a graph?",
-        "answer": "The *area under* a *force-extension graph* represents the *work done* to stretch the material.",
-        "category": "most",
-        "badgeTitle": "EQUIVALENCE",
-        "badgeText": "This area is equal to the elastic potential energy stored in the material."
-      },
-      {
-        "question": "State the expression for strain energy per unit volume of a material.",
-        "answer": "The *strain energy per unit volume* is equal to *half* the product of *stress* and *strain*.",
+        "question": "How is strain energy per unit volume calculated for a material?",
+        "answer": "The strain energy per unit volume is derived as *half the product of stress and strain*.",
         "category": "most",
         "badgeTitle": "FORMULA",
-        "badgeText": "U = ½ × stress × strain"
+        "badgeText": "$U = \\frac{1}{2} \\times \\text{stress} \\times \\text{strain}$."
       },
       {
-        "question": "State Archimedes' principle.",
-        "answer": "When an object is *totally or partially immersed* in a liquid, an *upthrust force* acts on it which is equal to the *weight of the liquid it displaces*.",
+        "question": "What is the physical meaning of the area under a force-extension graph?",
+        "answer": "The area under a force-extension graph accurately represents the *work done to stretch the material*, which equals the *elastic potential energy stored*.",
+        "category": "most",
+        "badgeTitle": "MATHEMATICAL LINK",
+        "badgeText": "$W = \\text{Area of OPQ}$."
+      },
+      {
+        "question": "What causes the apparent loss of weight of an object when it is kept inside a liquid?",
+        "answer": "There is an *upward force* acting on the object kept inside a liquid, called the *upthrust*.",
+        "category": "most",
+        "badgeTitle": "DISCOVERY",
+        "badgeText": "This phenomenon was originally noticed by the Greek scientist Archimedes."
+      },
+      {
+        "question": "State the core principle of Archimedes' principle.",
+        "answer": "When an object is totally or partially immersed in a liquid, an *upthrust force* acts on it equal to the *weight of the liquid it displaces*.",
+        "category": "most",
+        "badgeTitle": "APPLICATION SCOPE",
+        "badgeText": "This principle is widely applicable to liquids as well as gases."
+      },
+      {
+        "question": "What is the direct mathematical expression for the upthrust of a liquid?",
+        "answer": "The upthrust is precisely equal to the *product of liquid density, gravitational acceleration, and displaced volume*.",
         "category": "most",
         "badgeTitle": "FORMULA",
-        "badgeText": "Upthrust = ρgV"
+        "badgeText": "Upthrust $= \\rho g V$."
       },
       {
-        "question": "What is the principle of floatation?",
-        "answer": "A *floating object* displaces a fluid having a *weight equal to the weight of the object*.",
+        "question": "Under what exact condition does an object float according to the principle of floatation?",
+        "answer": "An object naturally floats if its *weight is equal or less than the upthrust*, displacing a fluid having weight equal to the weight of the object.",
         "category": "most",
-        "badgeTitle": "CONDITION",
-        "badgeText": "An object floats if its weight is equal to or less than the upthrust."
+        "badgeTitle": "SINKING CONDITION",
+        "badgeText": "Conversely, an object sinks if its weight is strictly greater than the upthrust force."
       },
       {
-        "question": "Explain why a hot-air balloon rises in the mid-air.",
-        "answer": "The balloon rises because the *density* of the *hot air inside* is *less* than the surrounding air, making the *buoyant force* greater than its weight.",
+        "question": "How does a submarine control its fundamental ability to dive and float?",
+        "answer": "It has a system of *tanks* that can be filled with or emptied from seawater, changing its weight to be greater or less than the constant upthrust.",
         "category": "most",
-        "badgeTitle": "APPLICATION",
-        "badgeText": "A direct application of Archimedes' principle in gases."
+        "badgeTitle": "MECHANISM",
+        "badgeText": "To come up to the surface, the tanks are physically emptied of seawater."
       },
       {
-        "question": "How does a submarine manage to float and dive?",
-        "answer": "It has a system of *tanks*; filling them with seawater *increases weight* beyond the upthrust to dive, and *emptying them reduces weight* to float.",
+        "question": "What explicitly characterizes a streamline or laminar flow?",
+        "answer": "It is a fluid flow where every particle passes a point along *exactly the same path* as particles that passed that point earlier, maintaining a *smooth and regular motion*.",
         "category": "most",
-        "badgeTitle": "PRINCIPLE",
-        "badgeText": "Principle of floatation."
+        "badgeTitle": "CRUCIAL RULE",
+        "badgeText": "The different streamlines cannot cross each other."
       },
       {
-        "question": "Define streamline or laminar flow.",
-        "answer": "A flow where *every particle passing a particular point moves along exactly the same path* as the particles that passed that point earlier.",
+        "question": "What happens when fluid flow structurally becomes unsteady or turbulent?",
+        "answer": "The *velocity changes abruptly*, and there are *eddies and whirlpools* in the motion, causing the paths of particles to be continuously changing.",
         "category": "most",
-        "badgeTitle": "VISUAL",
-        "badgeText": "The smooth path followed is called a streamline, and they never cross."
+        "badgeTitle": "CAUSE TRIGGER",
+        "badgeText": "This typically occurs above a certain velocity threshold of the fluid flow."
       },
       {
-        "question": "Describe turbulent flow in fluids.",
-        "answer": "It is the *irregular* or *unsteady* flow of a fluid, occurring above a certain velocity, where there are *eddies and whirlpools* and particle paths continuously change.",
+        "question": "What are the three strict, defining conditions for an ideal fluid?",
+        "answer": "The fluid must be *completely non-viscous* (zero frictional force), *incompressible* (constant density), and possess *steady motion*.",
         "category": "most",
-        "badgeTitle": "CHARACTERISTIC",
-        "badgeText": "The velocity of the fluid changes abruptly."
+        "badgeTitle": "THEORETICAL NOTE",
+        "badgeText": "Ideal fluids only exist in theory and not in the real, physical world."
       },
       {
-        "question": "What are the three strict conditions for an ideal fluid?",
-        "answer": "An ideal fluid must be *non-viscous* (no internal friction), *incompressible* (constant density), and its flow must be *steady*.",
-        "category": "most",
-        "badgeTitle": "CONCEPT",
-        "badgeText": "This is a theoretical model used to simplify fluid dynamics."
-      },
-      {
-        "question": "Define the rate of flow of a fluid.",
-        "answer": "It is the *volume* of the fluid *passing through any section of pipe* per *unit time*.",
+        "question": "How is the mathematical rate of flow of a fluid officially defined?",
+        "answer": "The rate of flow is the *volume of the fluid passing through any section of pipe per unit time*, calculated as the *product of cross-sectional area and velocity*.",
         "category": "most",
         "badgeTitle": "FORMULA",
-        "badgeText": "Rate of flow = A × v (Area × velocity)."
+        "badgeText": "Rate of flow $= A v$."
       },
       {
-        "question": "State the equation of continuity.",
-        "answer": "The *product* of the *cross-sectional area* and the *fluid speed* at any point along a pipe is a *constant* for a steady flow of incompressible fluid.",
+        "question": "What are the standard SI units for measuring the rate of fluid flow?",
+        "answer": "In formal SI units, it is explicitly measured in *cubic metre per second (m³ s⁻¹)*, and sometimes practically in *litres per second (L s⁻¹)*.",
         "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "A₁v₁ = A₂v₂"
+        "badgeTitle": "CONSTANT CONCEPT",
+        "badgeText": "This measured constant product represents the volume flow per second."
       },
       {
-        "question": "What physical law does the equation of continuity justify?",
-        "answer": "It justifies the *conservation of mass* of the fluid flowing through a pipe, meaning *mass flowing inward equals mass flowing outward*.",
+        "question": "State the complete equation of continuity for fluid flow.",
+        "answer": "The *product of cross-sectional area of the pipe and the fluid speed* at any point along the pipe is a defined constant.",
         "category": "most",
         "badgeTitle": "MATHEMATICAL FORM",
-        "badgeText": "Δm₁ = Δm₂"
+        "badgeText": "$A_1 v_1 = A_2 v_2$."
       },
       {
-        "question": "State Bernoulli's equation in terms of conservation of energy.",
-        "answer": "The *sum* of *pressure*, *kinetic energy per unit volume*, and *potential energy per unit volume* remains *constant* for an ideal fluid in steady flow.",
+        "question": "What fundamental conservation law is justified by the equation of continuity?",
+        "answer": "The equation scientifically justifies the *conservation of mass* of an incompressible fluid flowing steadily through a pipe.",
+        "category": "most",
+        "badgeTitle": "MEANING",
+        "badgeText": "It proves the rate of flow inward is strictly equal to the rate of flow outward."
+      },
+      {
+        "question": "What basic assumptions are critically made when deriving Bernoulli's equation?",
+        "answer": "We assume that the fluid is *perfectly incompressible*, *entirely non-viscous*, and flows in a *strict steady state* manner.",
+        "category": "most",
+        "badgeTitle": "FUNDAMENTAL ROLE",
+        "badgeText": "It mathematically relates pressure to fluid speed and height."
+      },
+      {
+        "question": "State the final mathematical form of Bernoulli's equation.",
+        "answer": "The sum of *static pressure*, *kinetic energy per unit volume*, and *potential energy per unit volume* remains perfectly constant.",
         "category": "most",
         "badgeTitle": "FORMULA",
-        "badgeText": "P + ½ρv² + ρgh = constant"
+        "badgeText": "$P + \\frac{1}{2}\\rho v^2 + \\rho g h = \\text{constant}$."
       },
       {
-        "question": "How does an aeroplane wing generate lift using Bernoulli's principle?",
-        "answer": "The wing deflects air to move *faster over the upper curved side*, creating *lower pressure*, while slower air below creates *higher pressure*, forcing the wing upward.",
-        "category": "most",
-        "badgeTitle": "DYNAMIC EFFECT",
-        "badgeText": "This upward force is called aerodynamic lift."
-      },
-      {
-        "question": "What is the Magnus effect in sports?",
-        "answer": "The *sideways curving force* generated when a *spinning ball* causes air to move faster on one side (creating low pressure) and slower on the other (creating high pressure).",
+        "question": "How is Bernoulli's principle dynamically applied to the lift of an aeroplane wing?",
+        "answer": "The wing deflects air to force streamlines closer together above the wing, making air travel *faster* and creating *lower pressure* at the top, forcing the wing upward.",
         "category": "most",
         "badgeTitle": "APPLICATION",
-        "badgeText": "The swing of a cricket ball or baseball."
+        "badgeText": "This specific upward force is universally known as the lift of an aeroplane."
       },
       {
-        "question": "State Torricelli's theorem.",
-        "answer": "The *speed of efflux* of a fluid from a small orifice is equal to the *velocity gained* by the fluid falling through the height distance under gravity.",
+        "question": "What specifically causes a spinning cricket or baseball to swing rapidly in the air?",
+        "answer": "A spinning ball makes air move *faster over its rough side*, creating *lower pressure*, while slower air over the smoother side creates *higher pressure*, generating a sideways force.",
+        "category": "most",
+        "badgeTitle": "NAME OF EFFECT",
+        "badgeText": "This resulting sideways force is scientifically known as the Magnus effect."
+      },
+      {
+        "question": "How does a standard carburetor practically utilize the Venturi effect?",
+        "answer": "Fast-moving air through a Venturi duct deliberately creates *low pressure*, which smoothly draws *petrol vapours* into the air stream to feed the correct mixture to cylinders.",
+        "category": "most",
+        "badgeTitle": "DEVICE COMPONENT",
+        "badgeText": "A tiny inlet at the side of the duct is fed directly with petrol."
+      },
+      {
+        "question": "What is the Venturi relation stated mathematically for horizontal pipes?",
+        "answer": "When a pipe is placed horizontally, the *difference in pressure* is proportional to the *square of the velocity* of the fluid at the narrow portion.",
         "category": "most",
         "badgeTitle": "FORMULA",
-        "badgeText": "v₂ = √[2g(h₁ − h₂)]"
+        "badgeText": "$P_1 - P_2 = \\frac{1}{2} \\rho v_2^2$."
       },
       {
-        "question": "What is viscous drag or drag force?",
-        "answer": "It is a *retarding force* experienced by an object moving through a fluid, which *increases* as the *speed* of the object increases.",
-        "category": "most",
-        "badgeTitle": "CAUSE",
-        "badgeText": "Due to the internal friction or viscosity of the fluid."
-      },
-      {
-        "question": "State Stokes' law for a sphere moving in a fluid.",
-        "answer": "The *drag force* on a sphere of radius r moving slowly with speed v through a fluid of viscosity η is *6πηrv*.",
+        "question": "What does Torricelli's theorem state regarding the speed of fluid efflux?",
+        "answer": "The *speed of efflux* is exactly equal to the *velocity gained by the fluid in falling through the vertical distance* under the action of gravity.",
         "category": "most",
         "badgeTitle": "FORMULA",
-        "badgeText": "F = 6πηrv"
+        "badgeText": "$v_2 = \\sqrt{2g(h_1 - h_2)}$."
       },
       {
-        "question": "Define terminal velocity in fluid dynamics.",
-        "answer": "The *constant maximum speed* attained by a falling body when the *upward drag force* becomes exactly equal in magnitude to its *downward weight*.",
+        "question": "How is the physical viscosity of a fluid officially described?",
+        "answer": "Viscosity structurally measures *how much force is required to slide one layer of the liquid over another layer*, representing the *frictional effect* between adjacent layers.",
         "category": "most",
-        "badgeTitle": "FORMULA",
-        "badgeText": "v_t = (2gr²ρ)/(9η)"
-      },
-      {
-        "question": "How does a paint sprayer or atomizer work?",
-        "answer": "*High-speed air* from a squeezed bulb blows over a narrow tube, causing a *fall of pressure*; the higher *atmospheric pressure* in the bottle then pushes the liquid up.",
-        "category": "most",
-        "badgeTitle": "APPLICATION OF",
-        "badgeText": "Bernoulli's principle."
-      },
-      {
-        "question": "What determines the equilibrium position of atoms in a solid?",
-        "answer": "It depends on the *strength* of the *inter-atomic cohesive force* between them.",
-        "category": "important",
-        "badgeTitle": "EFFECT",
-        "badgeText": "Under external force, these atoms are displaced."
-      },
-      {
-        "question": "When is a solid body said to be in a state of stress?",
-        "answer": "When *distortion* occurs due to the *displacement of atoms* from their equilibrium position under the influence of an *external force*.",
-        "category": "important",
-        "badgeTitle": "RESTORATION",
-        "badgeText": "After force removal, atoms return to equilibrium."
-      },
-      {
-        "question": "What are the results of mechanical tests on materials usually expressed in?",
-        "answer": "They are usually expressed in terms of *stress* and *strain*, which are defined in terms of applied force and deformation.",
-        "category": "important",
-        "badgeTitle": "APPLICATION",
-        "badgeText": "Helps in plotting the stress-strain curve."
-      },
-      {
-        "question": "Differentiate between tensile strain and compressive strain.",
-        "answer": "*Tensile strain* is produced due to tensile stress (elongation), whereas *compressive strain* is produced as a result of compressive stress (compression).",
-        "category": "important",
-        "badgeTitle": "DIMENSION",
-        "badgeText": "Both have no units."
-      },
-      {
-        "question": "How is shear strain mathematically related to the angle of deformation?",
-        "answer": "Shear strain γ is equal to the *tangent* of the angle θ, which for small angles measured in radians, is *approximately equal to θ*.",
-        "category": "important",
-        "badgeTitle": "FORMULA",
-        "badgeText": "γ=tanθ≅θ"
-      },
-      {
-        "question": "How is the stress-strain curve typically generated in a mechanical testing machine?",
-        "answer": "A metal wire is *extended* at a specified *deformation rate*, and stresses generated are continuously *measured* and *plotted* automatically.",
-        "category": "important",
-        "badgeTitle": "DEVICE",
-        "badgeText": "Usually plotted on an X-Y chart recorder."
-      },
-      {
-        "question": "What does the region OA represent in a typical stress-strain curve?",
-        "answer": "It represents the *initial stage* of deformation where stress is increased *linearly* with the strain, obeying *Hooke's law*.",
-        "category": "important",
-        "badgeTitle": "LIMIT",
-        "badgeText": "It ends at the proportional limit."
-      },
-      {
-        "question": "Describe the region from point A to point B on a stress-strain curve.",
-        "answer": "In this region, stress and strain are *not proportional*, but the material is still *elastic* and will return to its original length if the load is removed.",
-        "category": "important",
-        "badgeTitle": "KEY POINT",
-        "badgeText": "Point B is the yield point."
-      },
-      {
-        "question": "What happens if stress is applied between the yield point and the ultimate tensile strength?",
-        "answer": "The material undergoes *plasticity* or *plastic deformation*, meaning it becomes *permanently changed* and does not recover its original shape.",
-        "category": "important",
-        "badgeTitle": "REGION",
-        "badgeText": "This is represented by the curve from B to C."
-      },
-      {
-        "question": "What causes strain energy to be stored in a deformed material?",
-        "answer": "When a body is deformed, *work is done* against the *elastic restoring force*, which is stored as the *potential energy* of the molecules.",
-        "category": "important",
-        "badgeTitle": "MECHANISM",
-        "badgeText": "Due to the displacement of molecules from their mean positions."
-      },
-      {
-        "question": "Why does the applied stretching force increase uniformly from zero to F within the elastic limit?",
-        "answer": "Because the *extension* is *directly proportional* to the stretching force according to *Hooke's law*.",
-        "category": "important",
-        "badgeTitle": "CALCULATION",
-        "badgeText": "This makes the average force equal to ½ F."
-      },
-      {
-        "question": "State the alternative form of elastic potential energy in terms of spring constant.",
-        "answer": "The strained energy stored is equal to *half* the product of the *spring constant* and the *square of the extension*.",
-        "category": "important",
-        "badgeTitle": "FORMULA",
-        "badgeText": "E = ½ k Δx²"
-      },
-      {
-        "question": "Write the equation for strain energy per unit volume in terms of Young's modulus.",
-        "answer": "The strain energy per unit volume is equal to *half* the product of *Young's modulus* and the *square* of the fractional change in length.",
-        "category": "important",
-        "badgeTitle": "FORMULA",
-        "badgeText": "U = ½ Y × (ΔL/L)²"
-      },
-      {
-        "question": "What causes the apparent loss of weight in an object kept inside a liquid?",
-        "answer": "The apparent loss of weight is caused by the *upward force* acting on the object, known as the *upthrust* of the liquid.",
-        "category": "important",
-        "badgeTitle": "OBSERVATION",
-        "badgeText": "Noticed by Archimedes over two thousand years ago."
-      },
-      {
-        "question": "How is the net upthrust force related to the pressure at the top and bottom of an immersed cylinder?",
-        "answer": "The upthrust is the *difference* between the *upward force* due to pressure at the bottom and the *downward force* due to pressure at the top.",
-        "category": "important",
-        "badgeTitle": "FORMULA",
-        "badgeText": "Net Force F = F₂ − F₁ = ρgA(h₂ − h₁)"
-      },
-      {
-        "question": "Under what exact condition does an object sink in a fluid?",
-        "answer": "An object *sinks* if its *weight* is *greater* than the *upthrust force* acting on it.",
-        "category": "important",
-        "badgeTitle": "CONTRAST",
-        "badgeText": "It floats if weight is equal or less than upthrust."
-      },
-      {
-        "question": "Why does a wooden block float on water despite its solid structure?",
-        "answer": "It floats because the *weight* of an *equal volume* of water is *greater* than the weight of the block.",
-        "category": "important",
-        "badgeTitle": "PRINCIPLE",
-        "badgeText": "A floating body displaces water equal to its own weight."
-      },
-      {
-        "question": "What does the tangent to any point on a streamline indicate?",
-        "answer": "The *tangent* to any point on a streamline gives the *direction of flow* of a fluid at that specific point.",
-        "category": "important",
-        "badgeTitle": "RULE",
-        "badgeText": "Different streamlines cannot cross each other."
-      },
-      {
-        "question": "What happens if two streamlines were to cross each other in a fluid flow?",
-        "answer": "The particles would go *in one or in the other direction*, meaning the flow would not be *steady* and would become *turbulent*.",
-        "category": "important",
-        "badgeTitle": "CONCLUSION",
-        "badgeText": "Hence, streamlines never cross in steady flow."
-      },
-      {
-        "question": "Define steady flow in terms of the overall flow pattern.",
-        "answer": "If the *overall flow pattern* does not *change with time*, where every particle follows the *same flow line* as its previous particle, it is a *steady flow*.",
-        "category": "important",
-        "badgeTitle": "SYNONYM",
-        "badgeText": "Laminar or streamline flow."
-      },
-      {
-        "question": "What are the two units used to measure the rate of flow of a fluid?",
-        "answer": "In SI units, it is measured in *cubic metre per second* (m³ s⁻¹), and sometimes it is also measured in *litres per second* (L s⁻¹).",
-        "category": "important",
-        "badgeTitle": "FORMULA EQUIVALENCE",
-        "badgeText": "Volume / Time."
-      },
-      {
-        "question": "How is the mass of fluid flowing into a tube calculated in time Δt?",
-        "answer": "It is calculated as the *product* of *cross-sectional area*, *velocity*, *time interval*, and *density* of the fluid.",
-        "category": "important",
-        "badgeTitle": "FORMULA",
-        "badgeText": "Δm₁ = A₁ v₁ Δt × ρ₁"
-      },
-      {
-        "question": "Why is density considered constant in the equation of continuity for an ideal fluid?",
-        "answer": "Because an ideal fluid is *incompressible*, meaning its *density* does *not change* with pressure or location during steady flow.",
-        "category": "important",
-        "badgeTitle": "RESULT",
-        "badgeText": "ρ₁ = ρ₂ cancels out from the equation."
-      },
-      {
-        "question": "In the derivation of Bernoulli's equation, why is the work done at the lower end (W₂) taken as negative?",
-        "answer": "It is taken as negative because this work is done *against* the fluid force acting in the *opposite direction* of the flow.",
-        "category": "important",
-        "badgeTitle": "FORMULA",
-        "badgeText": "W₂ = −P₂ A₂ Δx₂"
-      },
-      {
-        "question": "How is the total work done on a fluid volume related to pressure in Bernoulli's derivation?",
-        "answer": "The total work done is equal to the *pressure difference* multiplied by the *volume* of the fluid moving through the pipe.",
-        "category": "important",
-        "badgeTitle": "FORMULA",
-        "badgeText": "W = (P₁ − P₂) V"
-      },
-      {
-        "question": "How is the work done by the fluid utilized according to the law of conservation of energy?",
-        "answer": "A part of the work is utilized in changing the fluid's *kinetic energy* and a part is used in changing its *gravitational potential energy*.",
-        "category": "important",
-        "badgeTitle": "EQUATION",
-        "badgeText": "W = ΔK.E. + ΔP.E."
-      },
-      {
-        "question": "How does a filter pump utilize Bernoulli's principle to draw in air?",
-        "answer": "A *constriction* in the center makes the water jet flow *faster*, causing a *drop in pressure*, which draws air in from the side tube.",
-        "category": "important",
-        "badgeTitle": "RESULT",
-        "badgeText": "Air and water are expelled together."
-      },
-      {
-        "question": "Explain the function of a Venturi duct in a car's carburetor.",
-        "answer": "*Fast-moving air* through the duct creates *low pressure*, which draws *petrol vapours* from a tiny inlet into the air stream for the cylinders.",
-        "category": "important",
-        "badgeTitle": "PURPOSE",
-        "badgeText": "To feed the correct mixture of air and petrol."
-      },
-      {
-        "question": "What is the Venturi relation equation derived from Bernoulli's principle for horizontal pipes?",
-        "answer": "Assuming v₁ is *very slow* compared to v₂, the pressure difference is equal to *half* the product of *density* and the *square of the higher velocity*.",
-        "category": "important",
-        "badgeTitle": "FORMULA",
-        "badgeText": "P₁ − P₂ = ½ ρ v₂²"
-      },
-      {
-        "question": "In Torricelli's theorem, why is the velocity of the top surface of water (v₁) taken as approximately zero?",
-        "answer": "Because the orifices are so *small* that the efflux speeds are *much larger* than the rate at which the large top surface moves down.",
-        "category": "important",
-        "badgeTitle": "ASSUMPTION",
-        "badgeText": "v₁ ≈ 0"
-      },
-      {
-        "question": "What happens if the orifice in a Torricelli tank is pointed upwards?",
-        "answer": "The *kinetic energy* of the efflux would allow the fluid to rise to the *original level* of the water tank.",
-        "category": "important",
-        "badgeTitle": "REAL-WORLD FACTOR",
-        "badgeText": "Viscous energy losses would slightly alter this height."
-      },
-      {
-        "question": "How is fluid friction described in moving fluids?",
-        "answer": "It is described in terms of the *viscosity* of the fluid, which measures *how much force is required* to slide one layer over another.",
-        "category": "important",
         "badgeTitle": "SYMBOL",
-        "badgeText": "Denoted by the Greek letter η."
+        "badgeText": "It is usually denoted by the Greek letter 'η'."
       },
       {
-        "question": "What effect does the small viscosity of air have on a high-speed car?",
-        "answer": "Even small viscosity causes a *large retarding force* or *drag force* on the car as it travels at high speed.",
-        "category": "important",
-        "badgeTitle": "PHENOMENON",
-        "badgeText": "Drag force increases with the object's speed."
+        "question": "What happens to an object moving rapidly through a fluid due to its viscosity?",
+        "answer": "The object experiences a physical *retarding force called a drag force*, which drastically *increases* as the speed of the object increases.",
+        "category": "most",
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "Even the small viscosity of air causes a remarkably large retarding force on a fast-moving car."
       },
       {
-        "question": "Is the drag force always simply proportional to the speed of the object?",
-        "answer": "No, at *high speeds*, the force is *no longer simply proportional* to the speed, making exact calculations difficult.",
+        "question": "What is Stokes' law for the drag force acting on a moving sphere?",
+        "answer": "The drag force $F$ on a sphere of radius $r$ moving slowly with speed $v$ through a fluid of viscosity $\\eta$ is directly proportional to its *radius, velocity, and fluid viscosity*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$F = 6 \\pi \\eta r v$."
+      },
+      {
+        "question": "When does a freely falling droplet officially achieve terminal velocity?",
+        "answer": "When the magnitude of the *upward drag force becomes exactly equal to the downward weight*, making the net force zero, the droplet continuously falls with a *constant speed called terminal velocity*.",
+        "category": "most",
+        "badgeTitle": "NET FORCE",
+        "badgeText": "Net force $= \\text{Weight} - \\text{Drag force} = 0$."
+      },
+      {
+        "question": "What is the derived mathematical formula for the terminal velocity of a falling sphere?",
+        "answer": "Terminal velocity is directly proportional to the *square of the radius and fluid density*, and inversely proportional to the *fluid viscosity*.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$v_t = \\frac{2g r^2 \\rho}{9\\eta}$."
+      },
+      {
+        "question": "What mechanically happens to a soft rubber ball when it is squeezed and then released?",
+        "answer": "Under the influence of applied force, its *shape or volume will change*, but upon releasing the hand, the ball will physically *return to its original spherical shape*.",
         "category": "important",
         "badgeTitle": "CONDITION",
-        "badgeText": "Stokes' law applies strictly to objects moving slowly."
+        "badgeText": "This demonstrates deformation and elastic recovery."
       },
       {
-        "question": "Describe the initial motion of a water droplet falling through air before terminal velocity is reached.",
-        "answer": "The droplet *accelerates rapidly* under the *overpowering force of gravity*, while the upward *air drag increases* with its speed.",
+        "question": "What physically determines the equilibrium position of atoms within solid bodies?",
+        "answer": "The equilibrium position depends entirely on the *fundamental strength of the inter-atomic cohesive force* acting between the constituent atoms.",
         "category": "important",
-        "badgeTitle": "EQUATION",
-        "badgeText": "Net force = Weight - Drag force."
+        "badgeTitle": "ATOMIC BEHAVIOR",
+        "badgeText": "Atoms vibrate about these fixed equilibrium points."
       },
       {
-        "question": "What is the volume of the spherical droplet used in the derivation of terminal velocity?",
-        "answer": "The volume of the sphere is *four-thirds times pi times the cube of its radius*.",
+        "question": "How is a state of stress described at the microscopic, atomic level in a solid?",
+        "answer": "Distortion occurs because of the *physical displacement of the atoms* from their natural equilibrium position, placing the body in a *state of stress*.",
         "category": "important",
-        "badgeTitle": "FORMULA",
-        "badgeText": "V = ⁴⁄₃ π r³"
+        "badgeTitle": "CONSEQUENCE",
+        "badgeText": "This distortion manifests as a visible change in shape or size."
       },
       {
-        "question": "In Bernoulli's equation, what does the term ρgh represent?",
-        "answer": "It represents the *gravitational potential energy per unit volume* of the flowing fluid.",
+        "question": "Under what specific limit will displaced atoms successfully return to their original equilibrium positions?",
+        "answer": "Atoms will return to equilibrium and the body will regain its original shape provided that the *external applied force was not too great*.",
         "category": "important",
-        "badgeTitle": "ROLE",
-        "badgeText": "Accounts for changes in fluid height during steady flow."
+        "badgeTitle": "MATERIAL PROPERTY",
+        "badgeText": "This restoring ability is defined as the material's elasticity."
       },
       {
-        "question": "Who originally developed the concept of Young's Modulus before it was named after Thomas Young?",
-        "answer": "The concept was originally developed in 1727 by the scientist *Leonhard Euler*.",
-        "category": "conceptual",
+        "question": "What are the three distinct scientific terms for stresses based on the structural dimension they alter?",
+        "answer": "It is called *tensile stress* when changing length, *volume stress* when changing volume, and *shear stress* when physically changing the structural shape.",
+        "category": "important",
+        "badgeTitle": "TYPES OF DEFORMATION",
+        "badgeText": "Length, volume, and shape deformation."
+      },
+      {
+        "question": "Why is mathematical strain inherently considered a completely dimensionless physical quantity?",
+        "answer": "Because strain is mathematically calculated as the *ratio of lengths* (change in dimension to original dimension), it cancels out physical units and is therefore *dimensionless*.",
+        "category": "important",
+        "badgeTitle": "MATHEMATICAL FACT",
+        "badgeText": "It possesses absolute no units of measurement."
+      },
+      {
+        "question": "How do you strictly differentiate between tensile strain and compressive strain?",
+        "answer": "Strain produced strictly due to tensile stress is *tensile strain*, whereas strain produced as a direct result of compressive stress is legally termed *compressive strain*.",
+        "category": "important",
+        "badgeTitle": "DEFORMATION DIRECTION",
+        "badgeText": "Tensile stretches, compressive squashes."
+      },
+      {
+        "question": "What exact physical parameter does the variable 'y' represent in the mathematical derivation of shear strain?",
+        "answer": "The variable 'y' physically represents the *perpendicular distance between two opposite faces* of a rigid body that are subjected to the applied shear stress.",
+        "category": "important",
+        "badgeTitle": "FORMULA COMPONENT",
+        "badgeText": "$\\gamma = \\frac{\\Delta x}{y} = \\tan \\theta$."
+      },
+      {
+        "question": "Who officially developed the core scientific concept of the elastic modulus before Thomas Young?",
+        "answer": "Although named after the British scientist Thomas Young, the fundamental concept was initially developed in *1727 by Leonhard Euler*.",
+        "category": "important",
         "badgeTitle": "HISTORICAL FACT",
-        "badgeText": "Mentioned in the \"For Your Information\" box."
+        "badgeText": "Found in the \"For Your Information\" section."
       },
       {
-        "question": "According to the elastic constants table, which materials possess a Young's Modulus of exactly zero?",
-        "answer": "Both *Water* and *Mercury* have a Young's Modulus of zero, as they are liquids and cannot sustain linear stretching.",
-        "category": "conceptual",
-        "badgeTitle": "TABLE INSIGHT",
-        "badgeText": "Liquids lack tensile strength."
+        "question": "What exactly does a continuously recorded stress-strain curve physically represent in a mechanical testing machine?",
+        "answer": "It is a *force-elongation diagram* automatically plotted to continuously measure the stresses generated in the wire during a specified deformation rate.",
+        "category": "important",
+        "badgeTitle": "TESTING EQUIPMENT",
+        "badgeText": "Measured by an electronic device fitted in the machine."
       },
       {
-        "question": "Why is the shear modulus for water and mercury listed as zero in standard elastic constant tables?",
-        "answer": "Because *fluids cannot resist shear stress* and will simply flow when subjected to it, rendering their shear modulus zero.",
-        "category": "conceptual",
-        "badgeTitle": "CONCEPTUAL TRUTH",
-        "badgeText": "Only solid structures maintain shear rigidity."
+        "question": "What strict mathematical relationship characterizes the initial stage of elastic deformation?",
+        "answer": "In the initial stage, mechanical stress is *actively increased linearly with the strain* until reaching the defined proportional limit.",
+        "category": "important",
+        "badgeTitle": "GOVERNING LAW",
+        "badgeText": "Hooke's law is perfectly obeyed in this linear region."
       },
       {
-        "question": "Which material listed in the elastic constants table possesses the highest Young's Modulus?",
-        "answer": "*Diamond* has the highest Young's Modulus at *1120×10⁹ N m⁻²*, indicating it is exceptionally stiff and hard to stretch.",
-        "category": "conceptual",
-        "badgeTitle": "DATA POINT",
-        "badgeText": "Extracted from Table 5.1."
+        "question": "In a typical stress-strain curve, what strictly defines the region where the material behaves perfectly elastically?",
+        "answer": "If the applied load is removed at any specific point between the *origin O and the yield point B*, the curve will be *retraced*, maintaining an elastic state.",
+        "category": "important",
+        "badgeTitle": "MATERIAL MEMORY",
+        "badgeText": "The material fully recovers its original length."
       },
       {
-        "question": "Among the given materials, bone possesses a shear modulus of 80×10⁹ N m⁻². How does this compare to its Young's Modulus?",
-        "answer": "The shear modulus of bone is *surprisingly higher* than its Young's Modulus, which is only 15×10⁹ N m⁻².",
-        "category": "conceptual",
-        "badgeTitle": "COMPARATIVE FACT",
-        "badgeText": "Highlights the unique mechanical structure of bone."
+        "question": "What absolute physical meaning does point 'C' hold on a standard ductile stress-strain curve?",
+        "answer": "Point C officially represents the *Ultimate Tensile Strength (UTS)*, defined strictly as the *maximum stress* the material can withstand before failing.",
+        "category": "important",
+        "badgeTitle": "NOMINAL VALUE",
+        "badgeText": "It is practically regarded as the nominal strength of the material."
       },
       {
-        "question": "If a steel rod and a rubber band are subjected to the exact same force, which one will be stretched more and why?",
-        "answer": "The *rubber band* will be stretched more because its *Young's modulus* is *significantly lower* than that of steel.",
-        "category": "conceptual",
-        "badgeTitle": "BRAIN TEASER",
-        "badgeText": "A lower modulus translates to greater fractional deformation for an identical stress."
+        "question": "What inevitably happens to a solid material when it physically reaches the fracture stress point?",
+        "answer": "Once the ultimate tensile strength is mechanically crossed, the solid material physically *breaks at point D*, which responds to the defined fracture stress ($\\sigma_f$).",
+        "category": "important",
+        "badgeTitle": "CURVE TERMINAL",
+        "badgeText": "This is the final absolute point on the deformation curve."
       },
       {
-        "question": "In a stress-strain curve, what precisely defines the proportional limit (σₚ)?",
-        "answer": "It is the *greatest stress* a material can endure without losing the precise *straight line proportionality* between stress and strain.",
-        "category": "conceptual",
-        "badgeTitle": "CONCEPTUAL BOUNDARY",
-        "badgeText": "Beyond this point, Hooke's Law fails."
+        "question": "How does a structural metal like wrought iron behave under extreme stress compared to a material like glass?",
+        "answer": "Wrought iron is a *ductile* substance that undergoes massive *plastic deformation*, whereas glass is a *brittle* substance that *shatters just after the elastic limit*.",
+        "category": "important",
+        "badgeTitle": "DEFORMATION TYPE",
+        "badgeText": "Ductile bends, brittle breaks."
       },
       {
-        "question": "Why does the stress-strain curve bend between the proportional limit (A) and the yield point (B)?",
-        "answer": "Because in this specific region, *stress and strain are not strictly proportional*, even though the material remains entirely elastic and will recover its shape.",
-        "category": "conceptual",
-        "badgeTitle": "SUBTLE DISTINCTION",
-        "badgeText": "Elasticity does not inherently guarantee linear proportionality."
+        "question": "What physical thermodynamic mechanism effectively stores potential energy in a mechanically deformed body?",
+        "answer": "Mechanical work physically done against the *elastic restoring force* is internally stored as the *gain in potential energy* of the displaced molecules.",
+        "category": "important",
+        "badgeTitle": "ENERGY CONVERSION",
+        "badgeText": "Kinetic mechanical work converts to internal potential energy."
       },
       {
-        "question": "What does the \"nominal strength\" of a ductile material refer to in industrial terms?",
-        "answer": "The nominal strength refers to the *Ultimate Tensile Strength (UTS)*, which is the *absolute maximum stress* the material can withstand.",
-        "category": "conceptual",
-        "badgeTitle": "SYNONYM",
-        "badgeText": "Maximum load-bearing capacity before necking begins."
+        "question": "Why does the applied stretching force mathematically increase uniformly from exactly zero to F within the material's elastic limit?",
+        "answer": "Because the *physical extension is directly proportional* to the applied stretching force strictly within the designated elastic limit.",
+        "category": "important",
+        "badgeTitle": "GRAPHICAL REPRESENTATION",
+        "badgeText": "This forms a perfect triangle on the force-extension graph."
       },
       {
-        "question": "Name three brittle metals mentioned in the text that break just after the elastic limit is reached.",
-        "answer": "*Beryllium*, *Bismuth*, and *Chromium* are explicit examples of brittle metals that fracture with virtually no plastic deformation.",
-        "category": "conceptual",
-        "badgeTitle": "HIDDEN EXAMPLES",
-        "badgeText": "Often overlooked compared to common brittle items like glass."
+        "question": "How is the mathematical average force calculated when stretching a physical spring through extension x?",
+        "answer": "Because the force increases perfectly uniformly from zero, the mathematical average force that actively stretches the spring through distance $\\Delta x$ is precisely *$1/2 F$*.",
+        "category": "important",
+        "badgeTitle": "WORK FORMULA",
+        "badgeText": "Work done = Average force $\\times$ Distance."
       },
       {
-        "question": "How does the geometric area under a force-extension graph relate to stored energy?",
-        "answer": "The area under the graph physically represents the *total work done* to stretch the material, which strictly equates to its *stored elastic potential energy*.",
-        "category": "conceptual",
-        "badgeTitle": "GEOMETRIC PROOF",
-        "badgeText": "Area of triangle OPQ = ½ FΔx."
+        "question": "In deriving standard strain energy, what does the calculated product of cross-sectional area A and extension length L formally represent?",
+        "answer": "The mathematical product of the *cross-sectional area A and the original length L* represents the *total undeformed volume* of the material.",
+        "category": "important",
+        "badgeTitle": "ENERGY DENSITY",
+        "badgeText": "Used to calculate strain energy per unit volume."
       },
       {
-        "question": "Why is the factor ½ F used instead of F when calculating the work done to stretch a spring?",
-        "answer": "Because the stretching force *increases uniformly from zero to F*, making the *average force* exerted over the distance equal to ½ F.",
-        "category": "conceptual",
-        "badgeTitle": "MATHEMATICAL LOGIC",
-        "badgeText": "This average applies only within the Hooke's law limit."
+        "question": "What is the alternative, expanded mathematical form of volumetric elastic potential energy utilizing Young's modulus?",
+        "answer": "By strictly substituting the Young's modulus relationship into the strain energy formula, the energy per unit volume becomes *half the product of Young's Modulus and the square of the strain*.",
+        "category": "important",
+        "badgeTitle": "ADVANCED FORMULA",
+        "badgeText": "$U = \\frac{1}{2} Y \\times \\left(\\frac{\\Delta L}{L}\\right)^2$."
       },
       {
-        "question": "Why does a massive ship made of heavy steel float on water while a small solid rock sinks instantly?",
-        "answer": "The ship's *hollow hull* displaces a *massive volume of water* whose total weight is equal to or greater than the ship's weight, generating sufficient upthrust.",
-        "category": "conceptual",
-        "badgeTitle": "BRAIN TEASER",
-        "badgeText": "The solid rock displaces less water weight than its own heavy mass."
+        "question": "Why does a fully submerged mug filled with water suddenly feel drastically heavier as soon as it is pulled out of the water?",
+        "answer": "Under water, the mug structurally experiences an *upward buoyant force (upthrust)* that physically causes an *apparent loss of weight*, which vanishes in the air.",
+        "category": "important",
+        "badgeTitle": "PHYSICAL PHENOMENON",
+        "badgeText": "This is the core basis of Archimedes' discovery."
       },
       {
-        "question": "What specific physical parameter is represented by the term \"A×h\" in the upthrust derivation equation?",
-        "answer": "It represents the *volume (V)* of the solid cylinder, which mathematically equals the *volume of the liquid displaced*.",
-        "category": "conceptual",
-        "badgeTitle": "VARIABLE BREAKDOWN",
-        "badgeText": "Upthrust = ρgV."
+        "question": "In the mathematical derivation of standard upthrust, what does the defined difference in fluid depths $(h_2 - h_1)$ represent?",
+        "answer": "The calculated difference between the bottom depth $h_2$ and the top depth $h_1$ strictly represents the *physical height (h)* of the immersed cylinder.",
+        "category": "important",
+        "badgeTitle": "GEOMETRIC VALUE",
+        "badgeText": "Used to calculate the displaced volume."
       },
       {
-        "question": "When Archimedes discovered his buoyancy principle, what historical anecdote is associated with his eventual death?",
-        "answer": "He was *killed by a Roman soldier* in Syracuse after he *stubbornly refused to leave his mathematical work*.",
-        "category": "conceptual",
-        "badgeTitle": "HISTORICAL NOTE",
-        "badgeText": "Extracted from the \"For Your Information\" box."
+        "question": "What specific physical fluid pressures actively generate the opposing mechanical forces $F_1$ and $F_2$ on an immersed solid cylinder?",
+        "answer": "Liquid pressure $P_1$ at depth $h_1$ exerts *downward force $F_1$*, while strictly greater liquid pressure $P_2$ at depth $h_2$ exerts the *upward opposing force $F_2$*.",
+        "category": "important",
+        "badgeTitle": "NET RESULT",
+        "badgeText": "The difference ($F_2 - F_1$) directly causes upthrust."
       },
       {
-        "question": "How does a hot-air balloon pilot actively initiate the vertical ascent of the balloon?",
-        "answer": "The pilot increases the balloon's *buoyant force* by *varying (increasing) the quantity of hot air*, making its internal density less than surrounding air.",
-        "category": "conceptual",
-        "badgeTitle": "OPERATIONAL MECHANISM",
-        "badgeText": "Direct application of Archimedes' principle to atmospheric gases."
+        "question": "How is the total physical weight of the displaced liquid mathematically calculated from the immersed cylinder's geometric dimensions?",
+        "answer": "The volume $V$ is area $A$ times height $h$; multiplying this physical volume by fluid density $\\rho$ and gravity $g$ strictly gives *$\\rho g V$*, the *true weight of the liquid displaced*.",
+        "category": "important",
+        "badgeTitle": "EQUIVALENCE",
+        "badgeText": "This exactly equals the net upthrust force."
       },
       {
-        "question": "How is the principle of floatation applied when a submarine needs to remain partially above the water surface?",
-        "answer": "Its internal *ballast tanks* are *emptied of seawater*, ensuring the weight of the displaced water remains *greater* than the submarine's total adjusted weight.",
-        "category": "conceptual",
-        "badgeTitle": "ENGINEERING APPLICATION",
-        "badgeText": "Making it act hydrodynamically like a standard floating ship."
+        "question": "Why does an actively heated hot-air balloon forcibly rise and float smoothly in mid-air?",
+        "answer": "It deliberately rises because the *physical density of the hot air inside is strictly less* than the surrounding air, making the *buoyant force massively overpowering*.",
+        "category": "important",
+        "badgeTitle": "CONTROL MECHANISM",
+        "badgeText": "Altitude is controlled by directly varying the quantity of hot air."
       },
       {
-        "question": "In Example 5.3, why must the combined weight of the balloon, hydrogen, and extra contents not exceed the weight of the displaced air?",
-        "answer": "Because the *maximum upthrust (F)* is fixed by the volume of displaced air, and for liftoff, the *total downward forces* must be *strictly balanced* by it.",
-        "category": "conceptual",
-        "badgeTitle": "EQUILIBRIUM CONDITION",
-        "badgeText": "w + w₁ + w₂ = F."
+        "question": "Under what exact physical operational condition will a fully loaded cargo ship drastically sink in the sea?",
+        "answer": "A ship will inevitably sink if its *total combined weight* (including passengers and cargo) critically becomes *greater than the maximum possible upthrust* of water.",
+        "category": "important",
+        "badgeTitle": "DESIGN PRINCIPLE",
+        "badgeText": "Engineered on the strict principle of floatation."
       },
       {
-        "question": "What happens to the path of individual fluid particles if two fluid streamlines were to cross each other?",
-        "answer": "Particles at the intersection would have a *choice to go in one or the other direction*, destroying the orderly path and making the flow *unsteady or turbulent*.",
-        "category": "conceptual",
-        "badgeTitle": "PHYSICAL IMPOSSIBILITY",
-        "badgeText": "Streamlines can never intersect in a steady, laminar flow."
+        "question": "How does deliberately increasing the internal weight of a modern submarine affect its physical operational position in seawater?",
+        "answer": "When built-in tanks are filled with seawater, the submarine's weight increases; when it physically becomes *greater than the upthrust*, it *actively dives* into the water.",
+        "category": "important",
+        "badgeTitle": "SUBMERGED STATE",
+        "badgeText": "It safely remains under the water level until tanks are emptied."
       },
       {
-        "question": "How do Formula One racing cars and marine dolphins utilize the concept of fluid dynamics?",
-        "answer": "Both feature a *highly streamlined design/body* to assist their movement by drastically *minimizing fluid resistance* (air or water drag).",
-        "category": "conceptual",
-        "badgeTitle": "REAL-WORLD EXAMPLES",
-        "badgeText": "Visual concepts from the \"For Your Information\" box."
+        "question": "How is the drawn geometric tangent to a fluid streamline practically utilized in advanced fluid dynamics?",
+        "answer": "A tangent mathematically drawn to any specific point along a curved streamline perfectly gives the *exact direction of flow* of a fluid at that exact point.",
+        "category": "important",
+        "badgeTitle": "VECTOR PROPERTY",
+        "badgeText": "It visually represents the instantaneous velocity vector."
       },
       {
-        "question": "Who first translated Euler's complex continuity equation for incompressible fluids into English, and in what year?",
-        "answer": "It was translated by *C. Truesdell* from English in the year *1954* (the equation was originally obtained by Euler in 1752).",
-        "category": "conceptual",
-        "badgeTitle": "HISTORICAL FACT",
-        "badgeText": "Found in the \"Interesting Fact\" side margin box."
+        "question": "Why is it physically and mathematically impossible for two different fluid streamlines to ever cross each other?",
+        "answer": "If streamlines crossed, particles at the intersection would *violently go in one or the other directions*, immediately proving the flow will *not be a steady flow*.",
+        "category": "important",
+        "badgeTitle": "CONSERVATION RULE",
+        "badgeText": "Steady flow requires a single, orderly processing path."
       },
       {
-        "question": "How does the mathematical continuity equation strictly justify the physical conservation of mass?",
-        "answer": "By proving that the *mass flowing into a pipe* (Δm₁) strictly *equals* the *mass flowing out* (Δm₂) in the same time interval, mathematically stated as A₁v₁ρ₁ = A₂v₂ρ₂.",
-        "category": "conceptual",
-        "badgeTitle": "FUNDAMENTAL PRINCIPLE",
-        "badgeText": "Mass cannot be mysteriously created or destroyed inside the pipe."
+        "question": "What explicitly physical conditions define an irregular or strictly unsteady flow of moving fluid?",
+        "answer": "An unsteady flow occurs when *fluid velocity changes abruptly*, physically creating *eddies and whirlpools* where the exact paths of the particles are continuously changing.",
+        "category": "important",
+        "badgeTitle": "SCIENTIFIC TERM",
+        "badgeText": "This chaotic state is officially termed turbulent flow."
       },
       {
-        "question": "What happens to the speed and cross-sectional area of a stream of water as it falls from a tap?",
-        "answer": "As the water falls, its *speed increases* due to gravity, and consequently, its *cross-sectional area decreases* proportionally as mandated by the continuity equation.",
-        "category": "conceptual",
-        "badgeTitle": "TIDBITS BOX",
-        "badgeText": "Visualized as a narrowing, tapered stream of water."
+        "question": "What happens to the mathematical exact path calculation of fluid particles in a fully realized turbulent flow?",
+        "answer": "Because the fluid velocity changes so abruptly and chaotically, the *exact path* of the individual physical particles *cannot be considered or reliably mapped*.",
+        "category": "important",
+        "badgeTitle": "THRESHOLD BOUNDARY",
+        "badgeText": "This occurs specifically above a certain critical flow velocity."
       },
       {
-        "question": "Name three practical, real-world systems where the equation of continuity is actively applied in engineering or biology.",
-        "answer": "It is applied to *blood flow* in arteries and veins, *water flow* in rivers and pipes, and *air flow* in duct and ventilation systems.",
-        "category": "conceptual",
-        "badgeTitle": "APPLICATIONS",
-        "badgeText": "Sourced from the \"For Your Information\" list."
+        "question": "What exact mathematical term defines the physical distance covered by a flowing fluid in a specific time $t$ moving with a set velocity $v$?",
+        "answer": "The exact distance $l$ physically covered by the flowing fluid through the pipe in a given time is mathematically calculated as the direct product *$vt$*.",
+        "category": "important",
+        "badgeTitle": "FORMULA COMPONENT",
+        "badgeText": "Essential for calculating the volumetric rate of flow."
       },
       {
-        "question": "How does the curved trajectory of a baseball relate to Bernoulli's principle?",
-        "answer": "The *spinning ball drags air*, creating *faster moving air (lower pressure)* on one side and *slower moving air (higher pressure)* on the other, generating a sideways deflection force.",
-        "category": "conceptual",
-        "badgeTitle": "BRAIN TEASER & PHENOMENON",
-        "badgeText": "This curving action is specifically known as the Magnus effect."
+        "question": "In the formal continuity equation derivation, what does the exact mathematical term $\\Delta m_1$ precisely represent?",
+        "answer": "The term $\\Delta m_1$ precisely calculates the *small mass of the fluid* physically contained strictly within the shaded region flowing through the lower end $A_1$.",
+        "category": "important",
+        "badgeTitle": "MASS CALCULATION",
+        "badgeText": "It is the physical product of Area, velocity, time, and density."
       },
       {
-        "question": "In Bernoulli's work derivation, why is the work W₁ positive but the work W₂ strictly negative?",
-        "answer": "W₁ is positive because the fluid behind *does work on the volume in the direction of motion*, while W₂ is negative because work is done *against the resisting fluid force ahead*.",
-        "category": "conceptual",
+        "question": "Why must the total mass of fluid entering fundamentally equal the total mass exiting in a steady state pipe flow?",
+        "answer": "Because the ideal fluid is *strictly incompressible* and the overall flow is *perfectly steady*, the total physical mass of the fluid is *mathematically conserved*.",
+        "category": "important",
+        "badgeTitle": "EQUATION BASIS",
+        "badgeText": "Therefore, mathematically $\\Delta m_1 = \\Delta m_2$."
+      },
+      {
+        "question": "How does the full mathematical equation of continuity structurally simplify for an ideal, incompressible fluid?",
+        "answer": "Because fluid density ($\\rho$) is *perfectly constant* for an incompressible fluid, the densities neatly cancel out, reducing the equation strictly to *$A_1 v_1 = A_2 v_2$*.",
+        "category": "important",
+        "badgeTitle": "CORE PRINCIPLE",
+        "badgeText": "The rate of flow inward exactly equals the rate of flow outward."
+      },
+      {
+        "question": "How does the measured physical pressure behavior of a fluid actively change as it smoothly moves through a pipe of heavily varying cross-section and height?",
+        "answer": "As the fluid physically forces its way through varying cross-sections and changing elevations, the *internal static pressure will change continuously* along the pipe.",
+        "category": "important",
+        "badgeTitle": "GOVERNING RULE",
+        "badgeText": "This dynamic variation is perfectly modeled by Bernoulli's fundamental equation."
+      },
+      {
+        "question": "In mathematically deriving Bernoulli's equation, why is the physical work $W_2$ explicitly recorded as a negative value?",
+        "answer": "The work $W_2$ done on the fluid at the lower end is mathematically taken to be *strictly negative* because this specific work is *physically done against the fluid force*.",
+        "category": "important",
         "badgeTitle": "SIGN CONVENTION",
-        "badgeText": "W = P₁A₁Δx₁ − P₂A₂Δx₂."
+        "badgeText": "It opposes the primary direction of the steady fluid flow."
       },
       {
-        "question": "What simple predictive rule of thumb for horizontal pipes is directly derived from Bernoulli's Equation?",
-        "answer": "It dictates a simple inverse relationship: in a horizontal pipe, *\"where speed is high, the pressure will be low.\"*",
+        "question": "What specific types of internal mechanical energies are actively changed by the net thermodynamic work done on a flowing fluid volume?",
+        "answer": "A part of this net physical work is actively utilized in fundamentally changing the fluid's *kinetic energy (speed)* and a part strictly alters its *gravitational potential energy (height)*.",
+        "category": "important",
+        "badgeTitle": "ENERGY TRANSFORMATION",
+        "badgeText": "Work directly converts to $\\Delta$K.E. and $\\Delta$P.E."
+      },
+      {
+        "question": "How does the universal principle of conservation of energy fundamentally apply directly to Bernoulli's derived theorem?",
+        "answer": "The total work mathematically applied $(P_1 - P_2)m/\\rho$ is physically equated exactly to the *sum of the change in kinetic energy and the change in potential energy*.",
+        "category": "important",
+        "badgeTitle": "FINAL BALANCE",
+        "badgeText": "This balanced energy equation flawlessly rearranges into Bernoulli's classic equation."
+      },
+      {
+        "question": "How does the engineered structural design of a modern aeroplane wing physically alter the spacing of moving air streamlines?",
+        "answer": "The wing is specifically designed to structurally deflect the air so that the flowing streamlines are *forced significantly closer together above the wing* than directly below it.",
+        "category": "important",
+        "badgeTitle": "AERODYNAMIC RESULT",
+        "badgeText": "This physical compression directly induces much faster air flow on top."
+      },
+      {
+        "question": "What physically happens to the speed of tap water when it violently reaches the narrow central constriction of a laboratory filter pump?",
+        "answer": "Because of the designed central constriction, the physical jet of water forced from the tap flows *drastically faster exactly at this narrowed point*.",
+        "category": "important",
+        "badgeTitle": "PRESSURE EFFECT",
+        "badgeText": "This extreme speed immediately causes a sharp drop in local pressure."
+      },
+      {
+        "question": "How is standard atmospheric pressure mechanically utilized in the active operation of a simple perfume atomizer or paint sprayer?",
+        "answer": "High-speed blown air strictly creates a *localized fall of pressure*, so the *strong external atmospheric pressure physically pushes* the liquid paint/perfume heavily up the narrow tube.",
+        "category": "important",
+        "badgeTitle": "DEVICE ACTION",
+        "badgeText": "The liquid is then violently expelled through the nozzle aperture."
+      },
+      {
+        "question": "How does a highly viscous physical substance structurally and mechanically differ from a naturally low viscosity substance?",
+        "answer": "Highly viscous substances like thick tar face *massive friction between adjacent layers* and do not flow easily, whereas low viscosity fluids like water physically *flow extremely easily*.",
+        "category": "important",
+        "badgeTitle": "MOLECULAR PROPERTY",
+        "badgeText": "It physically defines the exact thickness or internal friction of the fluid."
+      },
+      {
+        "question": "At what exact physical mathematical moment does a rapidly accelerating falling water droplet finally reach its constant terminal velocity?",
+        "answer": "It occurs precisely when the continuously increasing *upward drag force eventually approaches and perfectly equals the downward weight* in magnitude, making the absolute *net force identically zero*.",
+        "category": "important",
+        "badgeTitle": "EQUILIBRIUM STATE",
+        "badgeText": "At exactly zero net force, all physical acceleration ceases."
+      },
+      {
+        "question": "How does the exact physical geometric size (specifically the radius) of a falling sphere mathematically dictate its final terminal velocity?",
+        "answer": "According to the finalized derived formula, the absolute terminal velocity $v_t$ is mathematically *directly proportional to the square of the radius ($r^2$)* of the falling spherical body.",
+        "category": "important",
+        "badgeTitle": "MATHEMATICAL LINK",
+        "badgeText": "Larger spheres fall exponentially faster due to this squared radius relationship."
+      },
+      {
+        "question": "According to the hidden data in Table 5.1, what is the exact Bulk Modulus of rigid Diamond, and what does it indicate?",
+        "answer": "The Bulk Modulus of Diamond is exactly *$540 \\times 10^9 N m^{-2}$*, mathematically indicating a massive, supreme physical *resistance to any volumetric compression*.",
         "category": "conceptual",
-        "badgeTitle": "INTERESTING INFORMATION BOX",
-        "badgeText": "P + ½ρv² = constant."
+        "badgeTitle": "TABLE DATA INSIGHT",
+        "badgeText": "It has the highest resistance to volume change among the listed materials."
       },
       {
-        "question": "What exact pressure mechanism causes the liquid to rise up the narrow tube in a paint sprayer or perfume atomizer?",
-        "answer": "*High-speed air* from the nozzle creates a *fall of pressure* above the tube, allowing the comparatively *higher atmospheric pressure* inside the bottle reservoir to physically push the liquid up.",
+        "question": "Why does compressive strain technically and mathematically result in a negative fractional value?",
+        "answer": "Because the final deformed length is *structurally smaller than the original length*, making the change in length ($\\Delta L$) mathematically *negative*, resulting in a *negative ratio*.",
         "category": "conceptual",
-        "badgeTitle": "PRESSURE DIFFERENTIAL",
-        "badgeText": "A classic demonstration of Bernoulli's principle."
+        "badgeTitle": "MATHEMATICAL NUANCE",
+        "badgeText": "Tensile strain is positive; compressive is strictly negative."
       },
       {
-        "question": "Why does a laboratory filter pump passively draw air in from its side tube?",
-        "answer": "A deliberate *constriction* in the center makes the tap water jet flow *much faster*, causing a *drop in pressure* that literally vacuums air in from the side tube.",
+        "question": "Why is the specific region between points A and B on the ductile stress-strain curve considered non-proportional yet still physically elastic?",
+        "answer": "Because the strictly linear Hooke's law fails in this zone, but if the load is removed, the material will still *physically retrace the curve and fully return to its original length*.",
         "category": "conceptual",
-        "badgeTitle": "DEVICE MECHANISM",
-        "badgeText": "The entrained air and water mix and are expelled together."
+        "badgeTitle": "CRITICAL DISTINCTION",
+        "badgeText": "Elasticity outlasts linear proportionality."
       },
       {
-        "question": "In the Venturi relation mathematical derivation, why is the velocity v₁ entirely neglected on the right-hand side?",
-        "answer": "Because the wider area A₁ is *much larger* than A₂, making v₁ *extremely small* compared to v₂, so its squared value becomes *statistically negligible*.",
+        "question": "Why does the geometric area representing mechanical work done form a precise right-angled triangle (Area OPQ) on a standard force-extension graph?",
+        "answer": "Because the restoring force is *not constant*; it inherently *increases uniformly from zero* with a constant linear slope up to the strict elastic limit, forming a *perfect triangle*.",
         "category": "conceptual",
-        "badgeTitle": "APPROXIMATION",
-        "badgeText": "P₁ − P₂ ≈ ½ ρ v₂²."
+        "badgeTitle": "GRAPHICAL GEOMETRY",
+        "badgeText": "The area is strictly calculated as $\\frac{1}{2} \\times base \\times height$."
       },
       {
-        "question": "How does Torricelli's theorem compare the horizontal efflux speed of a fluid to a vertically falling solid object?",
-        "answer": "It states the efflux speed is *mathematically the same* as the speed of a ball that falls freely through the exact same height difference (h₁ − h₂).",
+        "question": "In the strict mathematical derivation of Archimedes' principle on a submerged cylinder, why are the horizontal forces acting on the vertical sides completely ignored?",
+        "answer": "Because hydrostatic fluid pressure is *perfectly equal at the exact same depth*, causing all opposing lateral horizontal forces to *completely cancel each other out*, leaving only vertical upthrust.",
         "category": "conceptual",
-        "badgeTitle": "KINEMATIC ANALOGY",
-        "badgeText": "Both are governed by v = √(2gh)."
+        "badgeTitle": "VECTOR PHYSICS",
+        "badgeText": "Only the vertical pressure differential $(P_2 - P_1)$ creates a net force."
       },
       {
-        "question": "According to the \"Viscosities of Liquids and Gases\" table, which listed substance is the most resistant to flow at 30°C?",
-        "answer": "*Glycerin* is the most viscous substance listed, possessing a high viscosity coefficient of *6.29×10⁻³ Ns m⁻²*.",
+        "question": "Based on the hot-air balloon example, if total upthrust is $127.4 N$ and the empty balloon weighs $80 N$, what strictly dictates the maximum extra payload it can safely lift?",
+        "answer": "The total combined weight of the hydrogen gas plus the extra payload must strictly *not exceed the remaining available force margin of $47.4 N$* to maintain positive atmospheric buoyancy.",
+        "category": "conceptual",
+        "badgeTitle": "PAYLOAD CALCULATION",
+        "badgeText": "$W_{gas} + W_{payload} = Upthrust - W_{empty}$."
+      },
+      {
+        "question": "Why are the exact mathematical trajectories of individual fluid particles in a fully turbulent flow considered completely impossible to trace?",
+        "answer": "Because highly chaotic, unpredictable *eddies and whirlpools* cause the velocity vectors to *change abruptly*, forcing particle paths to be *continuously changing in random directions*.",
+        "category": "conceptual",
+        "badgeTitle": "FLOW LIMITATION",
+        "badgeText": "Predictable streamlines cease to exist above critical velocities."
+      },
+      {
+        "question": "How does the mathematical equation of continuity physically justify the fundamental law of conservation of mass in a rigid pipe?",
+        "answer": "By mathematically proving that for an ideal, steady flow, the *exact mass rate of fluid physically flowing inward* must strictly equal the *exact mass rate physically flowing outward*.",
+        "category": "conceptual",
+        "badgeTitle": "EQUATION PROOF",
+        "badgeText": "$\\Delta m_1 / \\Delta t = \\Delta m_2 / \\Delta t$."
+      },
+      {
+        "question": "In the rigorous thermodynamic derivation of Bernoulli's equation, why is the specific mass term $m$ mathematically replaced by the physical expression $\\rho V$?",
+        "answer": "To specifically allow the identical *volume term $V$ to factor out* of the work equations, isolating the physical energy components purely *per unit volume*.",
+        "category": "conceptual",
+        "badgeTitle": "ALGEBRAIC STRATEGY",
+        "badgeText": "$W = (P_1 - P_2) \\frac{m}{\\rho}$."
+      },
+      {
+        "question": "How does the physical Venturi relation mathematically prove that the wider sections of a horizontal pipe possess much higher static pressure?",
+        "answer": "Since velocity $v_1$ is *extremely small in wider pipes*, its subtracted kinetic energy component is mathematically *negligible*, leaving a structurally *much larger static pressure $P_1$*.",
+        "category": "conceptual",
+        "badgeTitle": "FORMULA INSIGHT",
+        "badgeText": "$P_1 = P_2 + \\frac{1}{2} \\rho v_2^2$."
+      },
+      {
+        "question": "In Torricelli's theorem derivation, why does standard atmospheric pressure essentially cancel out from both sides of the complex Bernoulli equation?",
+        "answer": "Because both the large open top surface of the fluid tank and the tiny exiting orifice jet are *physically exposed directly to the exact same external atmospheric pressure*.",
+        "category": "conceptual",
+        "badgeTitle": "PRESSURE BOUNDARY",
+        "badgeText": "$P_1 = P_2 = P_{atm}$."
+      },
+      {
+        "question": "According to the hidden FYI table on liquid viscosities, what is the exact measured viscosity coefficient of Methanol at $30^\\circ C$?",
+        "answer": "The strictly measured viscosity coefficient of pure Methanol at exactly $30^\\circ C$ is *$0.510 \\times 10^{-3} Ns~m^{-2}$*.",
         "category": "conceptual",
         "badgeTitle": "DATA POINT",
-        "badgeText": "It is nearly eight times thicker than pure water."
+        "badgeText": "It is significantly less viscous than standard water."
       },
       {
-        "question": "How does the kinematic viscosity of air compare to that of acetone at 30°C?",
-        "answer": "Air has a *very low viscosity* of 0.019×10⁻³ Ns m⁻², making it *significantly less viscous* and easier to shear than liquid acetone (0.295×10⁻³ Ns m⁻²).",
+        "question": "What happens to the exact net physical acceleration of a freely falling water droplet the precise millisecond it hits its terminal velocity?",
+        "answer": "The net physical acceleration *instantly and permanently becomes exactly zero* because the downward weight is *perfectly balanced by the upward viscous drag force*.",
         "category": "conceptual",
-        "badgeTitle": "DATA COMPARISON",
-        "badgeText": "Confirms gases exhibit far less internal friction than liquids."
+        "badgeTitle": "KINEMATIC STATE",
+        "badgeText": "Constant maximum velocity means zero acceleration."
       },
       {
-        "question": "Why does sticking your hand out of a fast-moving car window require considerable muscular force to hold it steady?",
-        "answer": "Because even the *incredibly small viscosity* of atmospheric air generates a *surprisingly large retarding drag force* against your hand at very high speeds.",
+        "question": "If the radius of a falling spherical raindrop is physically doubled, how does its mathematical terminal velocity change according to the derived formula?",
+        "answer": "Because terminal velocity is *directly proportional to the square of the radius ($r^2$)*, doubling the physical radius will mathematically cause the terminal velocity to *increase by a factor of four*.",
         "category": "conceptual",
-        "badgeTitle": "EVERYDAY EXAMPLE",
-        "badgeText": "Demonstrates that fluid friction scales dramatically with relative velocity."
+        "badgeTitle": "MATHEMATICAL PROPORTIONALITY",
+        "badgeText": "$v_t \\propto r^2$."
       },
       {
-        "question": "How does a tall industrial chimney utilize fluid dynamics to improve its drafting efficiency?",
-        "answer": "Being *tall* and exposed to *faster upper air currents* reduces the pressure at the top, which acts as a *vacuum* and naturally forces an upward flow of smoke from the higher-pressure base.",
+        "question": "According to the \"Interesting Fact\" margin note, who was the specific scientist responsible for translating Euler's original 1752 continuity equation into English in 1954?",
+        "answer": "The complex mathematical translation of Euler's fluid continuity equation was historically completed by the scientist *C. Truesdell*.",
         "category": "conceptual",
-        "badgeTitle": "DO YOU KNOW? BOX",
-        "badgeText": "Bernoulli's effect aiding natural convection drafts."
+        "badgeTitle": "HISTORICAL TRANSLATION",
+        "badgeText": "Unlocked Euler's work for the modern English scientific community."
       },
       {
-        "question": "What is the critical dynamic condition for a falling object to finally achieve its terminal velocity?",
-        "answer": "Terminal velocity is reached precisely when the magnitude of the *upward drag force* becomes *exactly equal* to the *downward weight*, rendering the net accelerating force strictly zero.",
+        "question": "Why does a stream of water falling straight down from a household tap structurally narrow and decrease its cross-sectional area as it falls?",
+        "answer": "As gravity *rapidly accelerates the falling water*, its flow speed *increases*, strictly mandating a *geometric decrease in cross-sectional area* to perfectly satisfy the fundamental equation of continuity.",
         "category": "conceptual",
-        "badgeTitle": "DYNAMIC EQUILIBRIUM",
-        "badgeText": "Acceleration ceases, and speed maxes out."
+        "badgeTitle": "PHYSICAL OBSERVATION",
+        "badgeText": "$A \\times v$ must remain absolutely constant."
       },
       {
-        "question": "In the terminal velocity formula vₜ = (2gr²ρ)/(9η), what is the mathematical relationship between the terminal speed and the sphere's physical radius?",
-        "answer": "The terminal velocity is *directly proportional to the square of the radius* (r²) of the falling spherical body.",
+        "question": "What specific physical anatomical networks in the human body perfectly obey the fluid dynamics equation of continuity?",
+        "answer": "The complex, branched biological flow of *blood circulating strictly through the human arteries and veins* perfectly obeys the continuous mass flow equation.",
         "category": "conceptual",
-        "badgeTitle": "DEPENDENCY RULE",
-        "badgeText": "This explains why larger heavy drops fall significantly faster than tiny mist droplets."
+        "badgeTitle": "BIOLOGICAL APPLICATION",
+        "badgeText": "Mentioned as a direct real-world application in the FYI section."
       },
       {
-        "question": "Why do skydivers' parachutes successfully prevent a person from impacting the ground at a lethal terminal velocity?",
-        "answer": "They deploy to create a *massive large surface area* which *maximizes air resistance (drag)*, perfectly counteracting the force of gravity at a *much lower, safer descent speed*.",
+        "question": "How does a spinning cricket ball physically alter the local air pressure to curve violently through the air via the Magnus effect?",
+        "answer": "The ball's *rough side drags air faster*, creating a *low-pressure zone*, while the *smooth side slows air down*, creating a *high-pressure zone*, forcing the ball to physically deflect sideways.",
         "category": "conceptual",
-        "badgeTitle": "TIDBITS BOX",
-        "badgeText": "Form drag manipulations save lives by lowering the vₜ threshold."
+        "badgeTitle": "AERODYNAMIC DEFLECTION",
+        "badgeText": "This pressure differential generates a strict lateral force."
+      },
+      {
+        "question": "In the operation of a high-speed car carburetor, what physical action violently draws the heavy petrol vapors into the engine cylinders?",
+        "answer": "Fast-moving air sucked through the Venturi duct creates a *severe low-pressure vacuum*, which mechanically *draws petrol vapors up from a tiny side inlet* directly into the rapid air stream.",
+        "category": "conceptual",
+        "badgeTitle": "MECHANICAL MIXING",
+        "badgeText": "Ensures the mathematically correct air-to-fuel combustion mixture."
+      },
+      {
+        "question": "What is the critical, simplified thermodynamic takeaway rule derived from Bernoulli's equation for horizontal fluid pipes?",
+        "answer": "The simplified, inverse rule states that in horizontal steady flow, exactly *\"where speed is high, the physical pressure will be low\"*.",
+        "category": "conceptual",
+        "badgeTitle": "CORE CONCEPT",
+        "badgeText": "Represents the strict conservation of energy without height changes."
+      },
+      {
+        "question": "Why is the downward efflux speed $v_1$ at the top surface of a massive water tank mathematically taken as approximately zero in Torricelli's theorem?",
+        "answer": "Because the *tiny orifice area is astronomically smaller than the massive tank surface*, making the top surface's downward drop velocity *mathematically and physically negligibly small*.",
+        "category": "conceptual",
+        "badgeTitle": "APPROXIMATION RULE",
+        "badgeText": "Allows $v_1$ to be practically eliminated from the final equation."
+      },
+      {
+        "question": "How does Torricelli's theorem dynamically compare the fast efflux speed of a fluid to a solid, freely falling physical object?",
+        "answer": "The mathematical fluid efflux speed is *exactly the same* as the final speed of a solid ball *falling freely through the exact same vertical height difference* under gravity alone.",
+        "category": "conceptual",
+        "badgeTitle": "KINEMATIC EQUIVALENCE",
+        "badgeText": "$v = \\sqrt{2gh}$ applies perfectly to both phenomena."
+      },
+      {
+        "question": "If a high-pressure water tank's small orifice was physically pointed strictly upwards, what would ideally happen to the fluid jet's exiting kinetic energy?",
+        "answer": "The massive kinetic energy would dynamically *propel the liquid jet to structurally rise back up to the exact original level* of the water tank, assuming zero viscous losses.",
+        "category": "conceptual",
+        "badgeTitle": "ENERGY REVERSAL",
+        "badgeText": "K.E. flawlessly converts back into max gravitational P.E."
+      },
+      {
+        "question": "According to the \"Do You Know?\" side box, why does a structurally tall industrial chimney draft heavy smoke much more efficiently than a short one?",
+        "answer": "Taller chimneys are physically exposed to *much faster upper air currents*, which drastically *reduces the static pressure at the top*, forcing a *highly powerful upward flow of smoke* from the high-pressure bottom.",
+        "category": "conceptual",
+        "badgeTitle": "BERNOULLI APPLICATION",
+        "badgeText": "Capitalizes on the atmospheric wind speed gradient."
+      },
+      {
+        "question": "Under what specific extreme kinetic condition does Stokes' simple drag force equation mathematically fail to apply to a moving object?",
+        "answer": "At *physically high speeds*, the complex drag force is *completely no longer simply proportional to the object's speed*, breaking the fundamental linear bounds of Stokes' basic law.",
+        "category": "conceptual",
+        "badgeTitle": "FORMULA LIMITATION",
+        "badgeText": "High speeds induce chaotic turbulence that invalidates $F \\propto v$."
+      },
+      {
+        "question": "Why does the physical value of Young's Modulus mathematically equal the exact applied tensile stress when a wire is stretched to double its original length?",
+        "answer": "Because doubling the length means $\\Delta L = L_0$, making the physical *tensile strain exactly equal to 1*; therefore, Young's modulus ($Stress / 1$) *strictly equals the applied stress*.",
+        "category": "conceptual",
+        "badgeTitle": "MATHEMATICAL BOUNDARY",
+        "badgeText": "A theoretical conceptual scenario testing the formula $Y = \\frac{F/A}{\\Delta L/L_0}$."
+      },
+      {
+        "question": "What exactly happens to the microscopic inter-atomic distances in a solid crystalline block when it is subjected to pure, uniform volume stress?",
+        "answer": "The intense, uniform external pressure physically forces the highly ordered atoms to *move closer together simultaneously in all three dimensions*, actively *decreasing the global inter-atomic distances*.",
+        "category": "conceptual",
+        "badgeTitle": "MICROSCOPIC VIEW",
+        "badgeText": "This creates uniform inward compression of the entire lattice."
+      },
+      {
+        "question": "According to the rigorous CRQ 5.1, why does the constant mathematical ratio of stress to strain suddenly collapse if a solid deformation is made extreme?",
+        "answer": "An extreme, very large deformation *structurally forces the material strictly past its physical proportional limit*, *violently breaking Hooke's fundamental linear law*.",
+        "category": "conceptual",
+        "badgeTitle": "MATERIAL FAILURE",
+        "badgeText": "The stress/strain ratio is only mathematically constant within the linear elastic zone."
+      },
+      {
+        "question": "How does the specific physical design of commercial aeroplane wings, as questioned in CRQ 5.4, generate lift via spatial geometry?",
+        "answer": "They are strictly designed *rounded outward on top and heavily flattened inward below* to physically force top-flowing air to travel a *longer, inherently faster path*, generating critical low-pressure lift.",
+        "category": "conceptual",
+        "badgeTitle": "GEOMETRICAL AERODYNAMICS",
+        "badgeText": "The asymmetric shape enforces the Bernoulli pressure differential."
+      },
+      {
+        "question": "If an ideal fluid strictly possesses zero internal viscosity, what happens to the theoretical drag force on a sphere moving through it?",
+        "answer": "Because the fluid's physical viscosity ($\\eta$) is mathematically zero, Stokes' law ($F=6\\pi\\eta r v$) proves that the strict theoretical *drag force would be absolute zero*, regardless of the sphere's velocity.",
+        "category": "conceptual",
+        "badgeTitle": "THEORETICAL PHYSICS",
+        "badgeText": "The sphere would experience perpetual motion without retardation."
+      },
+      {
+        "question": "Why is the calculated physical term $\\rho g h_1 A$ mathematically subtracted from $\\rho g h_2 A$ to find the net upthrust on an immersed solid?",
+        "answer": "Because the *shallow top liquid pressure strictly pushes the object downwards ($\\rho g h_1 A$)*, mechanically *opposing and reducing* the much stronger upward push ($\\rho g h_2 A$) from the deep bottom liquid.",
+        "category": "conceptual",
+        "badgeTitle": "VECTOR SUBTRACTION",
+        "badgeText": "The opposing directional vectors must be mathematically subtracted to find the true net force."
+      },
+      {
+        "question": "In the complex derivation of strain energy, why must we strictly multiply by $\\frac{L}{L}$ to introduce Young's modulus into the energy density equation?",
+        "answer": "Multiplying by unity ($\\frac{L}{L}$) allows us to algebraically arrange the term $\\Delta L / L$ to strictly form the *mathematical strain ratio*, creating the required format to cleanly *substitute the Young's modulus variable ($Y$)*.",
+        "category": "conceptual",
+        "badgeTitle": "ALGEBRAIC TRICK",
+        "badgeText": "Transforms raw forces and lengths into standardized material constants."
+      },
+      {
+        "question": "How do standard Formula One racing cars practically utilize fluid dynamics principles to maintain extreme high speeds on the track?",
+        "answer": "They heavily feature an *engineered streamlined design* to physically slice through the atmosphere, strictly *maintaining laminar air flow* and drastically *minimizing highly turbulent viscous drag*.",
+        "category": "conceptual",
+        "badgeTitle": "ENGINEERING FYI",
+        "badgeText": "Form follows the strict laws of fluid friction reduction."
+      },
+      {
+        "question": "If two distinct fluid streamlines are fundamentally forbidden from crossing, what does this guarantee about the mathematical velocity vector at any point?",
+        "answer": "It mathematically guarantees that at any single fixed coordinate point in space, the flowing fluid possesses *one and strictly only one exact velocity vector*, confirming a *perfectly steady state*.",
+        "category": "conceptual",
+        "badgeTitle": "MATHEMATICAL UNIQUENESS",
+        "badgeText": "A single point cannot possess two different simultaneous velocities."
+      },
+      {
+        "question": "In the specific Bernoulli equation derivation, how is the total volume $V$ of the moving fluid mass mathematically defined using the equation of continuity?",
+        "answer": "Because the flow rate is constant, the exact physical volume $V$ moved in time $t$ is mathematically equal to the *direct product of Area, velocity, and time ($A_1 v_1 t$ or $A_2 v_2 t$)* at any cross-section.",
+        "category": "conceptual",
+        "badgeTitle": "VOLUME DERIVATION",
+        "badgeText": "This proves the equal volume displacement at both ends of the pipe."
       }
     ],
     "6": [
       {
-        "question": "How is an ideal gas defined according to thermodynamic principles?",
-        "answer": "A gas that strictly obeys the *kinetic theory of gases* is termed an *ideal gas*.",
+        "question": "What is the definition of an ideal gas according to the kinetic theory?",
+        "answer": "A gas that strictly obeys the kinetic theory of gases, having *no intermolecular interaction* and molecules that are *far apart* from each other, is termed as an *ideal gas*.",
         "category": "most",
-        "badgeTitle": "EQUATION OF STATE",
-        "badgeText": "The ideal gas equation is given by $PV=nRT$, where $P$ represents pressure, $V$ is volume, $n$ is number of moles, $R$ is universal gas constant, and $T$ is temperature."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$PV = nRT$"
       },
       {
-        "question": "Under what specific conditions does a real gas approximate ideal behavior?",
-        "answer": "For a real gas to behave like an ideal gas, it must be subjected to *low pressure* and *high temperature*.",
+        "question": "Under what specific conditions does a real gas behave most like an ideal gas?",
+        "answer": "A real gas approaches ideal behavior at *low pressure* and *high temperature*, which causes the molecules to be at a large distance from each other, making *intermolecular forces negligible*.",
         "category": "most",
-        "badgeTitle": "REASONING",
-        "badgeText": "Under these conditions, the density of the gas is low, placing molecules at a large distance from each other, which makes intermolecular forces negligible."
+        "badgeTitle": "IMPORTANT CONDITION",
+        "badgeText": "The P.E. of the gas molecules must be negligible, possessing only K.E."
       },
       {
-        "question": "How does gas density relate to pressure and temperature for an ideal gas?",
-        "answer": "The *density* of a gas is *directly proportional* to its *pressure* and *inversely proportional* to its *temperature*.",
+        "question": "How is the ideal gas equation expressed in terms of the density of the gas?",
+        "answer": "By substituting mass over volume for density, the ideal gas equation becomes $\\rho = \\frac{PM}{RT}$, showing that the density of a gas is *directly proportional to pressure* and *inversely proportional to temperature*.",
         "category": "most",
-        "badgeTitle": "MATHEMATICAL RELATION",
-        "badgeText": "$\\rho \\propto \\frac{P}{T}$ or $\\rho = \\frac{PM}{RT}$, where $M$ is constant."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$\\rho \\propto \\frac{P}{T}$"
       },
       {
-        "question": "What is the Boltzmann constant and how is it derived?",
-        "answer": "The term $\\frac{R}{N_A}$, representing the *universal gas constant* divided by *Avogadro's number*, is termed the *Boltzmann constant* $k_B$.",
+        "question": "What is the Boltzmann constant and how is it derived mathematically?",
+        "answer": "The Boltzmann constant is the *ratio of the universal gas constant to Avogadro's number*, representing the *gas constant per molecule*.",
         "category": "most",
-        "badgeTitle": "STANDARD VALUE",
-        "badgeText": "$k_B = 1.38 \\times 10^{-23} J K^{-1}$."
+        "badgeTitle": "VALUE",
+        "badgeText": "$k_{B} = 1.38 \\times 10^{-23} J K^{-1}$"
       },
       {
-        "question": "How is the ideal gas equation expressed in terms of the Boltzmann constant?",
-        "answer": "By substituting the number of moles with the ratio of total particles to Avogadro's number, the ideal gas equation transforms to include the *Boltzmann constant*.",
+        "question": "State the ideal gas equation in terms of the number of molecules and the Boltzmann constant.",
+        "answer": "When substituting the number of moles with the ratio of total molecules to Avogadro's number, the equation transforms to relate *pressure, volume, total molecules, and absolute temperature*.",
         "category": "most",
-        "badgeTitle": "ALTERNATE FORMULA",
-        "badgeText": "$PV = Nk_BT$."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$PV = N k_{B} T$"
       },
       {
-        "question": "State Boyle's Law regarding the behavior of gases.",
-        "answer": "For a fixed mass of an ideal gas, the *pressure* $P$ exerted by a gas varies *inversely* with *volume* $V$ occupied by the gas at *constant temperature*.",
+        "question": "State Boyle's Law regarding the behavior of ideal gases.",
+        "answer": "For a fixed mass of an ideal gas, the *pressure exerted by the gas varies inversely with the volume* occupied by the gas, provided the *temperature remains constant*.",
         "category": "most",
-        "badgeTitle": "FORMULA FORM",
-        "badgeText": "$P_1V_1 = P_2V_2$."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$P_{1}V_{1} = P_{2}V_{2}$"
       },
       {
-        "question": "State Charles' Law and identify its constant parameter.",
-        "answer": "The *volume* of a given mass of gas at *constant pressure* is *directly proportional* to the *absolute temperature*.",
+        "question": "State Charles' Law regarding the expansion of gases.",
+        "answer": "The *volume* of a given mass of gas is *directly proportional to its absolute temperature*, provided the *pressure remains constant*.",
         "category": "most",
-        "badgeTitle": "FORMULA FORM",
-        "badgeText": "$\\frac{V_1}{T_1} = \\frac{V_2}{T_2}$."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$\\frac{V_{1}}{T_{1}} = \\frac{V_{2}}{T_{2}}$"
       },
       {
-        "question": "State Gay-Lussac's Law for ideal gases.",
-        "answer": "For a fixed mass of an ideal gas, the *pressure* exerted by a gas varies *directly* with *absolute temperature* of the gas at *constant volume*.",
+        "question": "Define Gay-Lussac's Law for an ideal gas.",
+        "answer": "For a fixed mass of an ideal gas, the *pressure* exerted by a gas varies *directly with the absolute temperature* of the gas, provided the *volume remains constant*.",
         "category": "most",
-        "badgeTitle": "FORMULA FORM",
-        "badgeText": "$\\frac{P_1}{T_1} = \\frac{P_2}{T_2}$."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$\\frac{P_{1}}{T_{1}} = \\frac{P_{2}}{T_{2}}$"
       },
       {
-        "question": "Define the state of thermal equilibrium between two bodies.",
-        "answer": "When two bodies are at the *same temperature*, there is no driving force for *heat transfer* between them, and thus they remain in *thermal equilibrium*.",
+        "question": "How is work done by a gas graphically represented on a P-V diagram?",
+        "answer": "The work done by a gas undergoing a thermodynamic process is *equal to the area under the curve* of its P-V graph plotted between the initial and final volumes.",
         "category": "most",
-        "badgeTitle": "UNDERLYING CONCEPT",
-        "badgeText": "The thermal energy (related to kinetic energy of particles) of each body is equal."
+        "badgeTitle": "GRAPHICAL ASPECT",
+        "badgeText": "The area calculates $W = P\\Delta V$."
       },
       {
-        "question": "What constitutes the internal energy of a substance?",
-        "answer": "The *sum* of all forms of *molecular energies* (both *kinetic* and *potential*) of a substance is termed as its *internal energy*.",
+        "question": "What is meant by the internal energy of a thermodynamic system?",
+        "answer": "The internal energy is the *sum of all forms of molecular energies*, including both *kinetic and potential energies*, of a substance.",
         "category": "most",
-        "badgeTitle": "STATE FUNCTION CONCEPT",
-        "badgeText": "Internal energy does not depend on the path taken but depends only on the initial and final states of the system."
+        "badgeTitle": "DEPENDENCY",
+        "badgeText": "For an ideal gas, it is primarily the translational kinetic energy of its molecules."
       },
       {
-        "question": "Why does the internal energy of an ideal gas depend only on its temperature?",
-        "answer": "The molecules of an ideal gas are mere mass points that exert *no forces* on one another, meaning *potential energy* is zero, so the internal energy is generally the *translational kinetic energy* of its molecules.",
+        "question": "Why does the internal energy of an ideal gas depend strictly on its temperature?",
+        "answer": "Because the molecules of an ideal gas are considered point masses that exert *no intermolecular forces* (zero potential energy), the internal energy is entirely the *translational kinetic energy*, which is *directly proportional to absolute temperature*.",
         "category": "most",
-        "badgeTitle": "KINETIC THEORY FORMULA",
-        "badgeText": "$<\\frac{1}{2}mv^2> = \\frac{3}{2}k_BT$."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$<\\frac{1}{2}mv^{2}> = \\frac{3}{2}k_{B}T$"
       },
       {
-        "question": "What is the sign convention for work done in a thermodynamic system?",
-        "answer": "*Work done by the system* on its environment is considered *positive*, while *work done on the system* by the environment is taken as *negative*.",
+        "question": "Why is internal energy classified as a state function?",
+        "answer": "Internal energy *depends only on the initial and final states* of the system and *does not depend on the path taken* to reach that state.",
         "category": "most",
-        "badgeTitle": "HEAT CONVENTION",
-        "badgeText": "Heat entering the system is positive $(+Q)$, and heat leaving is negative $(-Q)$."
+        "badgeTitle": "ANALOGY",
+        "badgeText": "It is similar to gravitational potential energy; only the change in the value is physically significant."
       },
       {
-        "question": "How is the mechanical work done by an expanding gas calculated?",
-        "answer": "When a gas expands through a small volume change $\\Delta V$ at a *constant pressure* $P$, the work done $W$ by the gas is the *product* of *pressure* and the *change in volume*.",
+        "question": "What forms of energy does a diatomic gas molecule possess that a monatomic gas lacks?",
+        "answer": "In addition to translational energy, a diatomic gas molecule possesses both *rotational energy* and *vibrational energy* associated with the spring-like bond between its atoms.",
         "category": "most",
-        "badgeTitle": "STANDARD FORMULA",
-        "badgeText": "$W = P\\Delta V$."
+        "badgeTitle": "EXTRA POINT",
+        "badgeText": "This complexity affects its specific heat capacities."
       },
       {
-        "question": "How can work done be visually determined from a pressure-volume diagram?",
-        "answer": "The work done can be calculated by finding the *area of the curve* under the *P-V graph*.",
+        "question": "What is the established sign convention for thermodynamic work?",
+        "answer": "*Work done by the system* on its environment is considered *positive*, whereas *work done on the system* by the environment is taken as *negative*.",
         "category": "most",
-        "badgeTitle": "DIAGRAM REFERENCE",
-        "badgeText": "It is equivalent to the area representing constant pressure expansion from $V_1$ to $V_2$."
+        "badgeTitle": "SIGNIFICANCE",
+        "badgeText": "Positive work means energy is leaving the system as mechanical output."
+      },
+      {
+        "question": "Derive the formula for work done by a gas expanding at constant pressure.",
+        "answer": "Work is the product of force and displacement ($W = F\\Delta y$). Since pressure is force per unit area ($F = PA$), substituting gives $W = PA\\Delta y$. Recognizing that Area × displacement equals *change in volume*, we get the final work equation.",
+        "category": "most",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$W = P\\Delta V$"
       },
       {
         "question": "State the First Law of Thermodynamics.",
-        "answer": "In any thermodynamic process, when *heat* $Q$ is added to a system, this energy appears as an *increase in the internal energy* $\\Delta U$ stored in the system plus the *work* $W$ done by the system on its surroundings.",
+        "answer": "In any thermodynamic process, the *heat added to a system* is equal to the *increase in internal energy stored* in the system plus the *work done by the system* on its surroundings.",
         "category": "most",
-        "badgeTitle": "MATHEMATICAL STATEMENT",
-        "badgeText": "$Q = \\Delta U + W$."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$Q = \\Delta U + W$"
       },
       {
-        "question": "What fundamental physical principle is the First Law of Thermodynamics based upon?",
-        "answer": "The underlying principle of the first law of thermodynamics is the *conservation of energy*, affirming that *energy is a conserved quantity* in isolated systems.",
+        "question": "How is the First Law of Thermodynamics related to a fundamental law of physics?",
+        "answer": "The first law is a statement of the *law of conservation of energy*, affirming that energy cannot be created or destroyed, only transferred (as heat or work) or transformed (into internal energy) within an isolated system.",
         "category": "most",
-        "badgeTitle": "CORE ASSERTION",
-        "badgeText": "While energy can change from one form to another, the total amount of energy remains constant over time."
+        "badgeTitle": "KEY PRINCIPLE",
+        "badgeText": "Total energy remains constant over time."
       },
       {
-        "question": "How does human metabolism demonstrate the First Law of Thermodynamics?",
-        "answer": "Energy transforming processes within an organism (metabolism) follow the first law where *work done* results in a *decrease in internal energy*, which is subsequently maintained by the *food consumed*.",
+        "question": "How does a bicycle pump demonstrate the First Law of Thermodynamics?",
+        "answer": "When the handle is pumped rapidly, *mechanical work is done on the gas* ($W$ is negative). This rapid compression *increases the internal energy* of the air, which manifests as a *noticeable rise in temperature* measured by a thermocouple.",
         "category": "most",
-        "badgeTitle": "FORMULA APPLICATION",
-        "badgeText": "$\\Delta U = Q - W$ applies directly to the human body."
+        "badgeTitle": "EXAMPLE",
+        "badgeText": "Converting mechanical work directly into thermal internal energy."
       },
       {
-        "question": "Define an isothermal process in thermodynamics.",
-        "answer": "An *isothermal process* is one which is carried out at *constant temperature*, fulfilling the condition for the application of *Boyle's law*.",
+        "question": "Define an isothermal process.",
+        "answer": "An isothermal process is a thermodynamic change which is carried out at *constant temperature*, fulfilling the condition for the application of Boyle's law on the gas.",
         "category": "most",
-        "badgeTitle": "FIRST LAW APPLICATION",
-        "badgeText": "Since $\\Delta U = 0$ for an ideal gas at constant temperature, the first law reduces to $Q = W$."
+        "badgeTitle": "CONDITION",
+        "badgeText": "$\\Delta T = 0$"
       },
       {
-        "question": "Why must an isothermal process take place slowly?",
-        "answer": "Since the *transfer of heat* from one place to another requires time, the expansion or compression must take place *slowly* to keep the temperature of the gas *constant*.",
+        "question": "What is the modified form of the First Law of Thermodynamics for an isothermal process?",
+        "answer": "Since the temperature remains constant, the *change in internal energy ($\\Delta U$) is zero*. Therefore, *all the heat supplied* to the gas is *entirely utilized in doing external work*.",
         "category": "most",
-        "badgeTitle": "GRAPH IDENTITY",
-        "badgeText": "The curve representing this process is called an isotherm."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$Q = W$"
+      },
+      {
+        "question": "Why must an isothermal expansion or compression take place very slowly?",
+        "answer": "To keep the temperature of the gas constant, there must be enough time for the *transfer of heat* between the system and its surroundings to occur, *compensating for the work done*.",
+        "category": "most",
+        "badgeTitle": "PRACTICAL REQUIREMENT",
+        "badgeText": "Heat transfer is a time-dependent process."
       },
       {
         "question": "Define an adiabatic process.",
-        "answer": "An *adiabatic process* is one in which *no heat* enters or leaves the system.",
+        "answer": "An adiabatic process is one in which *no heat is allowed to enter or leave* the thermodynamic system.",
         "category": "most",
-        "badgeTitle": "FIRST LAW APPLICATION",
-        "badgeText": "Because $\\Delta Q = 0$, the first law of thermodynamics gives $W = -\\Delta U$."
+        "badgeTitle": "CONDITION",
+        "badgeText": "$\\Delta Q = 0$"
       },
       {
-        "question": "What effect does an adiabatic expansion have on the temperature of a gas?",
-        "answer": "During an adiabatic expansion, if the gas does *external work*, it is done at the expense of the *internal energy* of its molecules, and hence the *temperature* of the gas *falls*.",
+        "question": "How does the First Law of Thermodynamics apply to an adiabatic process?",
+        "answer": "Because no heat is exchanged ($\\Delta Q = 0$), *any external work done by the gas* is performed at the *expense of its own internal energy*, resulting in a *decrease in internal energy*.",
         "category": "most",
-        "badgeTitle": "REAL-WORLD EXAMPLE",
-        "badgeText": "The rapid escape of air from a burst tyre."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$W = -\\Delta U$"
       },
       {
-        "question": "What effect does an adiabatic compression have on gas temperature?",
-        "answer": "An adiabatic compression causes the *temperature* of the gas to *rise* because of the *work done on the gas*.",
+        "question": "Why does the temperature of a gas fall during an adiabatic expansion?",
+        "answer": "During adiabatic expansion, the gas does work on the surroundings. Since no heat can enter the system, this work is fueled by a *decrease in the internal energy* of the molecules, which corresponds to a *drop in temperature*.",
         "category": "most",
-        "badgeTitle": "REAL-WORLD EXAMPLE",
-        "badgeText": "Cloud formation in the atmosphere."
+        "badgeTitle": "RESULT",
+        "badgeText": "Expansion causes cooling; compression causes heating."
       },
       {
-        "question": "What is the mathematical relationship between pressure and volume during an adiabatic process?",
-        "answer": "As the temperature does not remain constant, the relationship is defined by a specific constant involving the *ratio of molar specific heats*.",
+        "question": "State the mathematical relationship between pressure and volume during an adiabatic process.",
+        "answer": "During an adiabatic change, the *product of the pressure and the volume raised to the power of $\\gamma$* (gamma) *remains constant*.",
         "category": "most",
-        "badgeTitle": "ADIABATIC FORMULA",
-        "badgeText": "$PV^\\gamma = Constant$, where $\\gamma$ is the ratio of molar specific heat at constant pressure to constant volume."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$PV^{\\gamma} = \\text{constant}$"
       },
       {
-        "question": "How is a reversible process defined?",
-        "answer": "A *reversible process* is one which can be *retraced* in exactly reverse order, without producing any *change in the surroundings*.",
+        "question": "What does $\\gamma$ (gamma) represent in the adiabatic equation of state?",
+        "answer": "Gamma ($\\gamma$) is the *ratio of the molar specific heat of the gas at constant pressure* to the *molar specific heat at constant volume*.",
         "category": "most",
-        "badgeTitle": "PROCESS REQUIREMENT",
-        "badgeText": "Thermal and mechanical effects at each stage must be exactly reversed to restore original conditions."
+        "badgeTitle": "MATHEMATICAL DEFINITION",
+        "badgeText": "$\\gamma = \\frac{C_{p}}{C_{v}}$"
       },
       {
-        "question": "What characterizes an irreversible process?",
-        "answer": "If a process *cannot be retraced* in the backward direction by reversing the controlling factors, it is an *irreversible process*.",
+        "question": "Identify three common examples of adiabatic processes.",
+        "answer": "Examples include the *rapid escape of air from a burst tire*, the *rapid expansion and compression of air* during the passage of a sound wave, and *cloud formation* in the atmosphere.",
         "category": "most",
-        "badgeTitle": "COMMON CAUSES",
-        "badgeText": "Changes that occur suddenly, involve friction, or dissipate energy through conduction, convection, or radiation."
+        "badgeTitle": "KEY CHARACTERISTIC",
+        "badgeText": "All occur too rapidly for heat exchange to take place."
+      },
+      {
+        "question": "Define a reversible process in thermodynamics.",
+        "answer": "A reversible process is one that can be *retraced in exactly reverse order* without producing any change in the surroundings, *restoring the working substance* back to its original conditions.",
+        "category": "most",
+        "badgeTitle": "CONDITION",
+        "badgeText": "Thermal and mechanical effects at each stage are exactly reversed."
+      },
+      {
+        "question": "Define an irreversible process.",
+        "answer": "A process is irreversible if it *cannot be retraced* in the backward direction by reversing the controlling factors, typically due to *sudden changes* or the *dissipation of energy*.",
+        "category": "most",
+        "badgeTitle": "CAUSES",
+        "badgeText": "Friction, conduction, convection, or radiation."
       },
       {
         "question": "State Lord Kelvin's statement of the Second Law of Thermodynamics.",
-        "answer": "It is *impossible* to devise a process which may convert *heat*, extracted from a *single reservoir*, entirely into *work* without leaving any change in the working system.",
+        "answer": "It is *impossible to devise a process* which may convert heat, extracted from a single reservoir, *entirely into work* without leaving any change in the working system.",
         "category": "most",
-        "badgeTitle": "CONSEQUENCE",
-        "badgeText": "Two bodies at different temperatures (a source and a sink) are essential for the conversion of heat into work."
+        "badgeTitle": "IMPLICATION",
+        "badgeText": "A single heat reservoir cannot be made to perform continuous work."
       },
       {
-        "question": "Why can't we extract useful mechanical work from the massive heat stored in oceans?",
-        "answer": "According to the second law of thermodynamics, there is *no reservoir* available at a temperature *lower* than the ocean or atmosphere to which heat may be *expelled*.",
+        "question": "According to the Second Law, what is strictly essential for the continuous conversion of heat into work?",
+        "answer": "The existence of *two bodies at different temperatures*; specifically, a *source of heat at a high temperature* and a *sink at a low temperature* to which excess heat may be expelled.",
         "category": "most",
-        "badgeTitle": "KEY PRINCIPLE",
-        "badgeText": "A single heat reservoir cannot be made to perform work."
+        "badgeTitle": "REQUIREMENT",
+        "badgeText": "Temperature difference is mandatory for heat flow and work output."
       },
       {
-        "question": "What are the four distinct steps comprising a Carnot cycle?",
-        "answer": "The Carnot cycle consists of *isothermal expansion*, *adiabatic expansion*, *isothermal compression*, and *adiabatic compression*.",
+        "question": "Why is it impossible to extract useful work from the immense heat energy stored in the oceans?",
+        "answer": "Because there is *no heat reservoir available at a lower temperature* than the ocean or atmosphere to act as a sink, making it impossible to satisfy the requirements of the Second Law of Thermodynamics.",
         "category": "most",
-        "badgeTitle": "INTERNAL ENERGY STATE",
-        "badgeText": "As the working substance returns to the initial state after the cycle, the change in its internal energy $\\Delta U = 0$."
+        "badgeTitle": "LIMITATION",
+        "badgeText": "Heat cannot flow without a cold sink to receive the expelled heat."
       },
       {
-        "question": "How is the efficiency of a Carnot engine determined mathematically?",
-        "answer": "The efficiency $\\eta$ is defined as the *ratio* of *work output* to *energy input*, which directly depends on the *absolute temperatures* of the hot and cold reservoirs.",
+        "question": "What is the theoretical significance of a Carnot cycle?",
+        "answer": "It describes an *ideal engine* using only reversible isothermal and adiabatic processes, proving that an engine operating between two heat reservoirs is the *most efficient engine possible*, establishing an *upper limit on thermal efficiency*.",
         "category": "most",
-        "badgeTitle": "EFFICIENCY FORMULA",
-        "badgeText": "$\\eta = 1 - \\frac{T_2}{T_1}$."
+        "badgeTitle": "THEOREM",
+        "badgeText": "No real engine can exceed its efficiency."
       },
       {
-        "question": "What does Carnot's theorem state regarding heat engines?",
-        "answer": "*No heat engine* can be *more efficient* than a *Carnot engine* operating between the same two temperatures.",
+        "question": "Outline the four distinct stages that make up the Carnot cycle.",
+        "answer": "The cycle consists of: 1) *Isothermal expansion* (absorbing heat), 2) *Adiabatic expansion* (temperature drops), 3) *Isothermal compression* (rejecting heat), and 4) *Adiabatic compression* (restoring initial state).",
         "category": "most",
-        "badgeTitle": "SUB-THEOREM",
-        "badgeText": "All Carnot engines operating between the same two temperatures have the same efficiency, irrespective of the nature of the working substance."
+        "badgeTitle": "NET INTERNAL ENERGY CHANGE",
+        "badgeText": "$\\Delta U = 0$ for the complete cycle."
       },
       {
-        "question": "Why is a 100% efficient heat engine practically impossible?",
-        "answer": "Maximum efficiency can never be 100% unless the *cold reservoir* is at *absolute zero temperature* $(T_2 = 0 K)$, and such reservoirs are *not available*.",
+        "question": "State the formula for the efficiency of a Carnot engine in terms of temperature.",
+        "answer": "The efficiency is determined strictly by the *absolute temperatures* of the hot reservoir ($T_{1}$) and the cold reservoir ($T_{2}$), and is *independent of the working substance*.",
         "category": "most",
-        "badgeTitle": "REAL-WORLD FACTOR",
-        "badgeText": "All real heat engines are less efficient due to friction and other heat losses."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$\\eta = 1 - \\frac{T_{2}}{T_{1}}$"
       },
       {
-        "question": "How does a refrigerator operate in relation to a heat engine?",
-        "answer": "A refrigerator operates in a *cyclic process* but in *reverse* as that of the heat engine, where *work is done on the system* to absorb heat from a cold reservoir and give it off to a hot reservoir.",
+        "question": "Under what impossible condition could a Carnot engine theoretically achieve 100% efficiency?",
+        "answer": "The efficiency could only be 100% (or 1) if the temperature of the cold reservoir was at *absolute zero* ($T_{2} = 0\\text{ K}$), which is *practically unattainable*.",
         "category": "most",
-        "badgeTitle": "GOVERNING PRINCIPLE",
-        "badgeText": "It works on the basis of the Clausius statement of the second law of thermodynamics."
+        "badgeTitle": "RESULTING REALITY",
+        "badgeText": "Maximum efficiency is always less than 100%."
       },
       {
-        "question": "What is the coefficient of performance of a refrigerator?",
-        "answer": "The *ratio* of *heat removed* from the low-temperature reservoir $(Q_c)$ to the *work done* $(W)$ is called the *co-efficient of performance*.",
+        "question": "State Carnot's Theorem regarding engine efficiency.",
+        "answer": "*No heat engine can be more efficient* than a Carnot engine operating between the same two temperatures.",
         "category": "most",
-        "badgeTitle": "FORMULA FORM",
-        "badgeText": "$E = \\frac{Q_c}{W} = \\frac{Q_c}{Q_H - Q_c}$."
+        "badgeTitle": "EXTENSION",
+        "badgeText": "All Carnot engines between the same two temperatures share the exact same efficiency regardless of the working fluid."
       },
       {
-        "question": "How is entropy defined quantitatively in thermodynamics?",
-        "answer": "If a system undergoes a *reversible process* absorbing heat $\\Delta Q$ at *absolute temperature* $T$, the increase in the state variable called *entropy* $S$ is the *ratio* of heat absorbed to temperature.",
+        "question": "How does a refrigerator function in relation to a standard heat engine?",
+        "answer": "A refrigerator operates in a cyclic process that functions in the *exact reverse of a heat engine*; it requires *external work* to be done on the system to absorb heat from a cold reservoir and expel it to a hot reservoir.",
         "category": "most",
-        "badgeTitle": "MATHEMATICAL FORM",
-        "badgeText": "$\\Delta S = \\frac{\\Delta Q}{T}$."
+        "badgeTitle": "PRINCIPLE",
+        "badgeText": "Based on the Clausius statement of the second law."
       },
       {
-        "question": "State the Second Law of Thermodynamics in terms of entropy.",
-        "answer": "If a system undergoes a *natural process*, it will go in the direction that causes the *entropy of the system plus the environment* to *increase*.",
+        "question": "Define the Coefficient of Performance (COP) of a refrigerator.",
+        "answer": "It is the *ratio of the heat removed* from the low-temperature reservoir ($Q_{c}$) to the *mechanical work done* ($W$) to remove that heat.",
         "category": "most",
-        "badgeTitle": "PHYSICAL MEANING",
-        "badgeText": "A natural process tends to proceed towards a state of greater molecular disorder."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$E = \\frac{Q_{c}}{W} = \\frac{T_{1}}{T_{2} - T_{1}}$"
       },
       {
-        "question": "What is meant by the \"degradation of energy\" in the context of entropy?",
-        "answer": "An increase in entropy means *degradation of energy* from a *higher level* where more work can be extracted to a *lower level* at which less or no useful work can be done.",
+        "question": "What is the fundamental definition of Entropy in thermodynamics?",
+        "answer": "Entropy is a thermodynamic *state variable* introduced to give a *quantitative basis for the second law*, measuring the *degree of disorder or randomness* of the particles in a system.",
+        "category": "most",
+        "badgeTitle": "FORMULA FOR CHANGE",
+        "badgeText": "$\\Delta S = \\frac{\\Delta Q}{T}$"
+      },
+      {
+        "question": "State the Second Law of Thermodynamics strictly in terms of entropy.",
+        "answer": "If a system undergoes a natural process, it will go in the direction that causes the *total entropy of the system plus its environment to increase*.",
         "category": "most",
         "badgeTitle": "UNIVERSAL LAW",
-        "badgeText": "When all systems are taken together as the universe, the entropy of the universe always increases."
+        "badgeText": "The entropy of the universe always increases."
       },
       {
-        "question": "What is the condition regarding potential energy for a real gas to behave like an ideal gas?",
-        "answer": "For a real gas to behave ideally, the *potential energy* of the gas molecules must be *negligible*, meaning the molecules possess only *kinetic energy*.",
-        "category": "important",
-        "badgeTitle": "MOLECULAR SPACING",
-        "badgeText": "This occurs at low pressure and high temperature where molecules are far apart."
+        "question": "How is the increase in entropy conceptually linked to the availability of energy?",
+        "answer": "An increase in entropy means the *degradation of energy*; energy transitions from a *highly ordered form* (where work can be extracted) to a *less orderly form* (thermal energy), making it no longer available for conversion into useful work.",
+        "category": "most",
+        "badgeTitle": "OUTCOME",
+        "badgeText": "Energy is conserved, but its usefulness degrades."
       },
       {
-        "question": "How is the number of moles mathematically expressed in terms of mass for the ideal gas law?",
-        "answer": "The number of moles $n$ is calculated by *dividing the mass* of the gas by its *molar mass*.",
-        "category": "important",
-        "badgeTitle": "FORMULA FORM",
-        "badgeText": "$n = \\frac{m}{M}$."
-      },
-      {
-        "question": "What is the relationship between the universal gas constant, Avogadro's number, and the Boltzmann constant?",
-        "answer": "The *Boltzmann constant* $k_B$ is mathematically defined as the *ratio* of the *universal gas constant* $R$ to *Avogadro's number* $N_A$.",
-        "category": "important",
-        "badgeTitle": "STANDARD VALUE",
-        "badgeText": "$k_B = 1.38 \\times 10^{-23} J K^{-1}$."
-      },
-      {
-        "question": "How do you formulate the ideal gas equation to reflect the total number of individual molecules rather than moles?",
-        "answer": "By substituting $n = \\frac{N}{N_A}$ into $PV=nRT$, the equation transforms to incorporate the *total number of particles* $N$ and the *Boltzmann constant* $k_B$.",
-        "category": "important",
-        "badgeTitle": "ALTERNATE EQUATION",
-        "badgeText": "$PV = Nk_BT$."
-      },
-      {
-        "question": "What graphical shape represents Boyle's law on a pressure-volume diagram?",
-        "answer": "The inverse relationship between pressure and volume at constant temperature produces a *curved line* known as an *isotherm*.",
-        "category": "important",
-        "badgeTitle": "GRAPHICAL COORDINATES",
-        "badgeText": "Plotted as $P$ on the y-axis against $V$ on the x-axis."
-      },
-      {
-        "question": "Who formulated the law relating the volume and temperature of a gas at constant pressure, and when?",
-        "answer": "This relationship was formulated in 1870 by the French Physicist *Jacques Charles*.",
-        "category": "important",
-        "badgeTitle": "PROPORTIONALITY",
-        "badgeText": "$V \\propto T$."
-      },
-      {
-        "question": "How is Gay-Lussac's Law represented mathematically for two different states of a gas?",
-        "answer": "For a fixed mass at constant volume, the *ratio* of *initial pressure* to *initial temperature* is exactly equal to the *ratio* of *final pressure* to *final temperature*.",
-        "category": "important",
-        "badgeTitle": "FORMULA FORM",
-        "badgeText": "$\\frac{P_1}{T_1} = \\frac{P_2}{T_2}$."
-      },
-      {
-        "question": "What happens to the net heat flow between a hot coffee cup and a metal spoon once they reach the same temperature?",
-        "answer": "Once they reach the same temperature, there is *no net heat flow* between the coffee and the spoon, establishing *thermal equilibrium*.",
-        "category": "important",
-        "badgeTitle": "EQUILIBRIUM CONDITION",
-        "badgeText": "The thermal energy of each body becomes equal."
-      },
-      {
-        "question": "For an ideal gas system, the internal energy is primarily associated with which specific type of energy?",
-        "answer": "Because ideal gas molecules exert *no forces* on one another, their internal energy is generally strictly their *translational kinetic energy*.",
+        "question": "In thermodynamics, what is the primary composition of the internal energy of an ideal gas system?",
+        "answer": "Since the molecules of an ideal gas exert *no forces on one another*, the internal energy is generally entirely the *translational kinetic energy* of its molecules.",
         "category": "important",
         "badgeTitle": "DEPENDENCY",
-        "badgeText": "It is directly proportional to the gas's absolute temperature."
+        "badgeText": "It depends strictly on the temperature of the gas."
       },
       {
-        "question": "Besides translational energy, what other complex forms of energy does a diatomic gas molecule possess?",
-        "answer": "A diatomic gas molecule has both *rotational energy* and *vibrational energy* associated with the spring‑like bond between its atoms.",
+        "question": "How is the concept of temperature linked to the molecular behavior of an ideal gas?",
+        "answer": "The temperature of a system is defined as the *average kinetic energy* of its molecules, meaning an increase in temperature reflects a *direct increase in this internal kinetic energy*.",
         "category": "important",
-        "badgeTitle": "INTERNAL ENERGY CONTRIBUTION",
-        "badgeText": "These contribute to the total sum of all molecular energies."
+        "badgeTitle": "KEY CONCEPT",
+        "badgeText": "Thermal energy directly correlates to particle motion."
       },
       {
-        "question": "Why is internal energy considered similar to gravitational potential energy?",
-        "answer": "Internal energy is a *state function*, meaning it depends only on the *initial and final states* of the system and *not on the path* taken, just like gravitational potential energy.",
+        "question": "What specific assumption must be made about the gas expansion process ($\\Delta V$) to use the formula $W = P\\Delta V$ accurately?",
+        "answer": "We must assume that the gas expands *very slowly* so that the system constantly remains in *thermal and mechanical equilibrium* throughout the process.",
         "category": "important",
-        "badgeTitle": "IMPORTANT VALUE",
-        "badgeText": "Only the change in internal energy ($\\Delta U$) is practically important."
+        "badgeTitle": "CONDITION",
+        "badgeText": "Slow expansion prevents pressure gradients."
       },
       {
-        "question": "In the equation $W = P\\Delta V$, what physical constraint must be applied to the system's pressure?",
-        "answer": "The equation $W = P\\Delta V$ assumes that the *pressure* $P$ remains *constant* while the gas expands very slowly through volume $\\Delta V$.",
+        "question": "When an amount of heat $Q$ enters a system, what two distinct physical changes can it manifest as?",
+        "answer": "The entered heat can manifest as either an *increase in internal energy* (raising the temperature) or as a *resulting quantity of work* performed by the system on its surroundings, or both.",
         "category": "important",
-        "badgeTitle": "GEOMETRICAL DERIVATION",
-        "badgeText": "Derived from $F = PA$ and $W = F\\Delta y$."
+        "badgeTitle": "DISTRIBUTION",
+        "badgeText": "Energy divides between heating the gas and expanding it."
       },
       {
-        "question": "On a pressure-volume graph, what physical quantity does the area under a constant pressure line represent?",
-        "answer": "The *rectangular area* enclosed under the P-V curve directly calculates the *work done* by or on the gas.",
+        "question": "For a gas enclosed in a cylinder with a movable piston, what is the equation for the force exerted by the gas on the piston?",
+        "answer": "The force $F$ exerted by the gas is the *product of its internal pressure $P$ and the cross-sectional area $A$* of the piston.",
         "category": "important",
-        "badgeTitle": "VISUAL PROOF",
-        "badgeText": "Area = base $\\times$ height = $\\Delta V \\times P$."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$F = PA$"
       },
       {
-        "question": "According to thermodynamic sign conventions, how is heat leaving a system represented?",
-        "answer": "If heat energy is *expelled* or *leaves* the system, it is considered a *negative quantity* $(-Q)$.",
+        "question": "What are the three potential physical consequences of adding heat to a thermodynamic system?",
+        "answer": "Adding heat can cause a *rise in temperature* (increase in internal energy), an *increase in pressure*, or a *change in the state* of the substance.",
         "category": "important",
-        "badgeTitle": "CONTRASTING CONVENTION",
-        "badgeText": "Heat entering the system is strictly positive $(+Q)$."
+        "badgeTitle": "OBSERVABLE EFFECTS",
+        "badgeText": "These are the macroscopic signs of heat transfer."
       },
       {
-        "question": "Why does the handle of a bicycle pump become hot when pumped rapidly?",
-        "answer": "Rapid pumping performs *mechanical work* on the trapped gas, which raises its *internal energy* and consequently registers as a *rise in temperature*.",
+        "question": "How does a blocked bicycle pump demonstrate the relationship between mechanical work and internal energy?",
+        "answer": "When the piston is pushed rapidly, *mechanical work is done on the trapped air*, which directly *increases its internal energy*, resulting in a *measurable temperature rise* shown by a connected thermocouple.",
         "category": "important",
-        "badgeTitle": "PROCESS TYPE",
-        "badgeText": "This is a practical example of the First Law of Thermodynamics."
+        "badgeTitle": "PRACTICAL EXAMPLE",
+        "badgeText": "Work converts to thermal energy."
       },
       {
-        "question": "How does the first law of thermodynamics explain the maintenance of human body temperature?",
-        "answer": "In human metabolism, *work done* results in a *decrease in internal energy*, so the body's internal energy (temperature) must be maintained by the *chemical energy* from the food we eat.",
+        "question": "What specific biological process represents energy-transforming processes within an organism?",
+        "answer": "The energy-transforming processes that occur within a living organism, responsible for maintaining internal energy and facilitating growth, are collectively named *metabolism*.",
         "category": "important",
-        "badgeTitle": "BIOLOGICAL APPLICATION",
-        "badgeText": "$\\Delta U = Q - W$ applies to living organisms."
+        "badgeTitle": "APPLICATION",
+        "badgeText": "First law of thermodynamics applied to biology."
       },
       {
-        "question": "Why does the internal energy of an ideal gas remain strictly constant during an isothermal expansion?",
-        "answer": "Because the potential energy of ideal gas molecules is zero, internal energy depends only on *temperature*; since temperature is *constant* in an isothermal process, the *change in internal energy* ($\\Delta U$) is *zero*.",
+        "question": "According to the first law of thermodynamics, what happens to the internal energy of a human body when it performs physical work like walking or running?",
+        "answer": "When the body performs physical work on its environment, it *expends energy*, which results in a *decrease in the internal energy* of the body if not replenished.",
         "category": "important",
         "badgeTitle": "ENERGY BALANCE",
-        "badgeText": "Any heat added is entirely converted into work ($Q = W$)."
+        "badgeText": "Work output requires an energy source."
       },
       {
-        "question": "Why must an isothermal expansion or compression be carried out extremely slowly?",
-        "answer": "Because the *transfer of heat* between the system and its surroundings requires *time*, the process must be *slow* to ensure the temperature of the gas remains perfectly *constant*.",
+        "question": "How does the human body replenish the internal energy lost through physical exertion and cellular growth?",
+        "answer": "The internal energy, and consequently the body temperature, is maintained and replenished by the *chemical potential energy derived from the food* we eat.",
         "category": "important",
-        "badgeTitle": "CONSEQUENCE OF SPEED",
-        "badgeText": "Rapid processes become adiabatic instead."
+        "badgeTitle": "INPUT",
+        "badgeText": "Food acts as the heat/energy input ($Q$) in the thermodynamic system."
       },
       {
-        "question": "What is the value of heat exchange ($\\Delta Q$) in a perfectly insulated cylinder undergoing rapid compression?",
-        "answer": "In a perfectly insulated cylinder, the process is *adiabatic*, meaning *no heat enters or leaves*, making $\\Delta Q$ exactly *zero*.",
+        "question": "In Example 6.2, how is the work done by the gas calculated when it is maintained at a pressure of 8000 $N m^{-2}$ and expands by 4.0 cm?",
+        "answer": "The work is calculated by multiplying the *constant pressure* by the *change in volume*, where the volume change is the cross-sectional area ($0.10 m^2$) times the displacement ($0.04 m$).",
         "category": "important",
-        "badgeTitle": "FIRST LAW RESULT",
-        "badgeText": "Work done equals the negative change in internal energy ($W = -\\Delta U$)."
+        "badgeTitle": "CALCULATION",
+        "badgeText": "$W = P \\times A \\times \\Delta y = 32 J$."
       },
       {
-        "question": "Why does an expanding gas cool down if it is not supplied with external heat?",
-        "answer": "In an *adiabatic expansion*, the gas does *external work* at the expense of the *internal energy* of its own molecules, causing its *temperature* to *fall*.",
+        "question": "Why is the potential energy associated with the molecules of an ideal gas considered to be strictly zero?",
+        "answer": "Because the molecules of an ideal gas are assumed to be *mere mass points* that exert *no attractive or repulsive forces* on one another.",
         "category": "important",
-        "badgeTitle": "EXAMPLE",
-        "badgeText": "The rapid escape of air from a burst tyre."
+        "badgeTitle": "ASSUMPTION EFFECT",
+        "badgeText": "Internal energy becomes exclusively kinetic."
       },
       {
-        "question": "What type of thermodynamic process characterizes the rapid expansion and compression of air as a sound wave passes?",
-        "answer": "The passage of a sound wave causes rapid, localized pressure changes *without time for heat exchange*, classifying it as an *adiabatic process*.",
+        "question": "During an isothermal expansion, why must the process occur very slowly?",
+        "answer": "Because the transfer of heat from one place to another requires time; a slow expansion allows *enough time for heat to enter the system* and keep the temperature constant.",
         "category": "important",
-        "badgeTitle": "ATMOSPHERIC EXAMPLE",
-        "badgeText": "Cloud formation is another atmospheric adiabatic process."
+        "badgeTitle": "REQUIREMENT",
+        "badgeText": "Thermal equilibrium must be maintained continuously."
       },
       {
-        "question": "In the adiabatic equation $PV^\\gamma = \\text{constant}$, what does the symbol $\\gamma$ represent?",
-        "answer": "The symbol $\\gamma$ is the *ratio* of the *molar specific heat* of the gas at constant pressure to the *molar specific heat* at constant volume.",
+        "question": "What is the specific term used for the graphical curve that represents an isothermal process on a P-V diagram?",
+        "answer": "The hyperbolic curve representing an isothermal process on a pressure-volume graph is called an *isotherm*.",
         "category": "important",
-        "badgeTitle": "CURVE STEEPNESS",
-        "badgeText": "This factor makes the adiabat curve steeper than an isotherm."
+        "badgeTitle": "GRAPH FEATURE",
+        "badgeText": "It follows the path $PV = \\text{constant}$."
       },
       {
-        "question": "What happens to the internal energy of a working substance when it completes a perfectly reversible cycle?",
-        "answer": "Because a cycle brings the system *exactly back* to its initial condition, the *net change* in its internal energy is exactly *zero* ($\\Delta U = 0$).",
+        "question": "Why does the temperature of a gas rise during an adiabatic compression?",
+        "answer": "Because *work is done on the gas by the surroundings*, and since no heat can escape ($\\Delta Q = 0$), this added energy *entirely increases the internal energy* of the molecules, causing a rise in temperature.",
         "category": "important",
-        "badgeTitle": "WORK RELATION",
+        "badgeTitle": "ENERGY TRANSFER",
+        "badgeText": "Mechanical work becomes internal heat."
+      },
+      {
+        "question": "Give an everyday example of an adiabatic expansion involving a common vehicle component.",
+        "answer": "The *rapid escape of air from a burst tire* is a prime example of an adiabatic process, as it happens too quickly for heat exchange with the environment.",
+        "category": "important",
+        "badgeTitle": "OBSERVATION",
+        "badgeText": "The escaping air feels cool due to the temperature drop."
+      },
+      {
+        "question": "How is cloud formation in the atmosphere categorized thermodynamically?",
+        "answer": "Cloud formation is considered an *adiabatic process*, involving the rapid expansion and subsequent cooling of rising moist air parcels.",
+        "category": "important",
+        "badgeTitle": "NATURAL PHENOMENON",
+        "badgeText": "Large-scale atmospheric thermodynamics."
+      },
+      {
+        "question": "What is the specific term for the P-V curve that represents an adiabatic process, and how does it compare to an isothermal curve?",
+        "answer": "It is called an *adiabat*, and it is *notably steeper than an isotherm* because pressure drops faster due to both volume expansion and temperature decrease.",
+        "category": "important",
+        "badgeTitle": "GRAPH FEATURE",
+        "badgeText": "It follows $PV^{\\gamma} = \\text{constant}$."
+      },
+      {
+        "question": "State the defining characteristic of a thermodynamically reversible cycle.",
+        "answer": "A reversible cycle is a succession of events where *all changes are reversible*, bringing the working system *exactly back to its initial condition* with *no net change in the surroundings*.",
+        "category": "important",
+        "badgeTitle": "CONDITION",
+        "badgeText": "$\\Delta U = 0$ for the complete cycle."
+      },
+      {
+        "question": "Provide two practical examples of processes that are considered practically reversible when performed slowly.",
+        "answer": "The processes of *liquefaction and evaporation* of a substance, as well as the *slow compression of a gas* in a cylinder, are practically reversible.",
+        "category": "important",
+        "badgeTitle": "KEY FACTOR",
+        "badgeText": "Extreme slowness allows continuous equilibrium."
+      },
+      {
+        "question": "What physical factors or energy dissipations render a thermodynamic process irreversible?",
+        "answer": "Any process that occurs *suddenly*, or involves the *dissipation of energy through friction, conduction, convection, or radiation*, is rendered irreversible.",
+        "category": "important",
+        "badgeTitle": "REAL-WORLD LIMITS",
+        "badgeText": "These factors create permanent entropy increases."
+      },
+      {
+        "question": "Give a prime example of a highly irreversible process mentioned in the text.",
+        "answer": "An *explosion* is an example of a highly irreversible process due to its sudden, chaotic nature and massive rapid dissipation of energy.",
+        "category": "important",
+        "badgeTitle": "CHARACTERISTICS",
+        "badgeText": "Cannot be retraced backwards under any circumstances."
+      },
+      {
+        "question": "What critical piece of information about heat conversion is missing from the first law of thermodynamics?",
+        "answer": "While it states that heat can be converted into work, it is *entirely silent about the conditions* under which this conversion takes place and the *direction of heat flow*.",
+        "category": "important",
+        "badgeTitle": "LIMITATION",
+        "badgeText": "This necessitates the second law of thermodynamics."
+      },
+      {
+        "question": "In a cyclic process where the working substance returns to its initial state, what is the net change in internal energy?",
+        "answer": "Because the system returns to its exact starting conditions, the *change in internal energy is zero ($\\Delta U = 0$)*.",
+        "category": "important",
+        "badgeTitle": "CONSEQUENCE",
         "badgeText": "Net work done equals net heat absorbed ($W = Q_1 - Q_2$)."
       },
       {
-        "question": "Why are processes involving friction or sudden explosions classified as irreversible?",
-        "answer": "These processes *cannot be retraced* in the backward direction because they involve the *permanent dissipation* of energy (via conduction, convection, radiation) or occur *too suddenly* to reverse controlling factors.",
+        "question": "What is the approximate thermal efficiency range of a typical petrol engine?",
+        "answer": "A typical petrol engine converts roughly *25%* of its available heat energy into useful mechanical work.",
+        "category": "important",
+        "badgeTitle": "OBSERVATION",
+        "badgeText": "The remaining 75% is expelled to the atmosphere."
+      },
+      {
+        "question": "What is the approximate thermal efficiency range of a typical diesel engine?",
+        "answer": "A typical diesel engine is slightly more efficient, converting roughly *35% to 40%* of available heat energy into work.",
+        "category": "important",
+        "badgeTitle": "COMPARISON",
+        "badgeText": "More efficient than petrol engines, but still loses majority of heat."
+      },
+      {
+        "question": "Why can't the immense heat energy contained in the oceans and atmosphere be converted into useful mechanical work?",
+        "answer": "Because there is *no reservoir at a lower temperature* available to act as a sink to expel the waste heat, which is a strict requirement for a heat engine.",
+        "category": "important",
+        "badgeTitle": "SECOND LAW LIMIT",
+        "badgeText": "Heat conversion requires a temperature gradient."
+      },
+      {
+        "question": "Who introduced the concept of the ideal reversible heat engine, and in what year?",
+        "answer": "*Sadi Carnot* described this theoretical ideal engine in the year *1824*.",
+        "category": "important",
+        "badgeTitle": "HISTORICAL FACT",
+        "badgeText": "Laid the groundwork for maximum theoretical efficiency."
+      },
+      {
+        "question": "Which two specific thermodynamic processes constitute the four steps of a Carnot cycle?",
+        "answer": "The Carnot cycle uses exclusively alternating *isothermal* (constant temperature) and *adiabatic* (no heat exchange) processes.",
+        "category": "important",
+        "badgeTitle": "COMPOSITION",
+        "badgeText": "Two isothermal, two adiabatic paths."
+      },
+      {
+        "question": "In the PV diagram of a Carnot cycle, what does the area enclosed by the closed path ABCDA represent?",
+        "answer": "The enclosed area represents the *net work done* by the working substance during one complete cycle.",
+        "category": "important",
+        "badgeTitle": "GRAPHICAL MEANING",
+        "badgeText": "$W = Q_1 - Q_2$."
+      },
+      {
+        "question": "State the general formula for the efficiency of any heat engine in terms of work and energy.",
+        "answer": "Efficiency ($\\eta$) is defined as the *ratio of the output work to the input energy* (heat absorbed).",
+        "category": "important",
+        "badgeTitle": "FORMULA",
+        "badgeText": "$\\eta = \\frac{Output (Work)}{Input (Energy)} = \\frac{Q_1 - Q_2}{Q_1}$"
+      },
+      {
+        "question": "Why are all real, practical heat engines inherently less efficient than an ideal Carnot engine operating between the same temperatures?",
+        "answer": "Real engines suffer from *energy dissipation due to friction* and *inevitable heat losses through conduction and radiation*, meaning they cannot be perfectly reversible.",
         "category": "important",
         "badgeTitle": "PRACTICAL REALITY",
-        "badgeText": "No actual change in nature is completely reversible."
+        "badgeText": "Carnot efficiency is an unreachable upper limit."
       },
       {
-        "question": "What specific limitation of the First Law of Thermodynamics led to the formulation of the Second Law?",
-        "answer": "The first law states *heat can be converted to work* but is *silent about the conditions* under which this conversion takes place or the *direction of heat flow*.",
+        "question": "What is the primary thermodynamic function of a refrigerator?",
+        "answer": "A refrigerator is a device which *maintains the temperature of a body below that of its surroundings* by extracting heat from a cold region and expelling it to a hot region.",
         "category": "important",
-        "badgeTitle": "SECOND LAW PURPOSE",
-        "badgeText": "It dictates the circumstances and limits of converting heat into useful work."
+        "badgeTitle": "FUNCTION",
+        "badgeText": "It reverses the natural flow of heat."
       },
       {
-        "question": "In practice, what percentage of available heat energy is roughly converted into mechanical work by a diesel engine?",
-        "answer": "It has been observed that diesel engines convert roughly *35 to 40%* of available heat energy into useful work.",
+        "question": "How does the Clausius statement of the second law relate to the operation of a refrigerator?",
+        "answer": "The Clausius statement forms the basis of a refrigerator, describing it essentially as a *heat engine operating in reverse*, requiring external work to move heat from cold to hot.",
         "category": "important",
-        "badgeTitle": "PETROL ENGINE COMPARISON",
-        "badgeText": "Petrol engines are even less efficient, converting only about 25%."
+        "badgeTitle": "PRINCIPLE",
+        "badgeText": "Heat cannot flow from cold to hot spontaneously."
       },
       {
-        "question": "Why can we not run a ship's engine by simply extracting thermal energy directly from the massive heat of the ocean?",
-        "answer": "According to the Second Law, converting heat to work requires a *source* and a *sink*; there is *no reservoir* available at a *lower temperature* than the ocean to expel the excess heat into.",
+        "question": "What is the mathematical relationship between the heat rejected to the High Temperature Reservoir ($Q_H$), heat extracted ($Q_c$), and work done ($W$) in a refrigerator?",
+        "answer": "The heat rejected to the hot surroundings is the *sum of the heat extracted from the cold compartment and the external work done* by the compressor.",
         "category": "important",
-        "badgeTitle": "KELVIN'S STATEMENT",
-        "badgeText": "Heat from a single reservoir cannot be converted entirely into work."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$Q_H = Q_c + W$"
       },
       {
-        "question": "During which specific step of the Carnot cycle does the gas actively absorb heat from the high-temperature source?",
-        "answer": "The gas absorbs heat $Q_1$ from the hot reservoir during the first step, which is an *isothermal expansion* at temperature $T_1$.",
+        "question": "In the context of a refrigerator, what does the term \"Coefficient of Performance\" (COP) measure?",
+        "answer": "The COP is the *ratio of the heat removed from the low-temperature reservoir to the mechanical work done* to achieve that removal; a higher COP indicates a better refrigerator.",
         "category": "important",
-        "badgeTitle": "P-V DIAGRAM",
-        "badgeText": "Represented by the curve AB."
+        "badgeTitle": "FORMULA",
+        "badgeText": "$E = \\frac{Q_c}{W}$"
       },
       {
-        "question": "What thermodynamic event occurs in the Carnot cycle immediately after the initial isothermal expansion?",
-        "answer": "The gas is allowed to expand *adiabatically* until its temperature drops from the hot reservoir temperature $T_1$ to the cold reservoir temperature $T_2$.",
+        "question": "Who introduced the concept of entropy into thermodynamics, and for what primary purpose?",
+        "answer": "*Rudolph Clausius* introduced entropy in 1856 to provide a *quantitative mathematical basis for the second law of thermodynamics*.",
         "category": "important",
-        "badgeTitle": "P-V DIAGRAM",
-        "badgeText": "Represented by the curve BC."
+        "badgeTitle": "HISTORICAL ORIGIN",
+        "badgeText": "Quantified the concept of disorder."
       },
       {
-        "question": "Why is the theoretical efficiency of a Carnot engine completely independent of the nature of the working substance?",
-        "answer": "Carnot's theorem dictates that efficiency depends *strictly on the absolute temperatures* of the hot and cold reservoirs, making the *working fluid irrelevant* to maximum efficiency.",
+        "question": "What happens to the net entropy of a system when heat flows naturally from a hot reservoir to a cold reservoir?",
+        "answer": "The entropy of the cold reservoir *increases more* than the entropy of the hot reservoir *decreases*, resulting in a *net positive change (an increase)* in overall entropy.",
         "category": "important",
-        "badgeTitle": "EFFICIENCY FORMULA",
-        "badgeText": "$\\eta = 1 - \\frac{T_2}{T_1}$."
+        "badgeTitle": "OUTCOME",
+        "badgeText": "$\\frac{Q}{T_2} > \\frac{Q}{T_1}$"
       },
       {
-        "question": "According to Carnot's theorem, why are all practical, real-world heat engines mathematically less efficient than the ideal Carnot engine?",
-        "answer": "No practical heat engine can be *perfectly reversible*, and energy dissipation through *friction* and *heat loss* is inevitable.",
+        "question": "How does the free expansion of a gas affect its molecular disorder and entropy?",
+        "answer": "Free expansion *increases disorder* because the molecules have *greater randomness of position* in the larger volume than before, thereby *increasing the entropy* of the gas.",
         "category": "important",
-        "badgeTitle": "THEOREM LIMIT",
-        "badgeText": "The Carnot cycle establishes the absolute upper limit on efficiency."
+        "badgeTitle": "PHYSICAL CHANGE",
+        "badgeText": "Volume expansion without work increases entropy."
       },
       {
-        "question": "In a refrigerator, what role does external mechanical work play in the heat transfer process?",
-        "answer": "*External work* is done on the system (usually by a compressor) to forcefully *extract heat* $Q_C$ from a low‑temperature reservoir and *throw it* into a high‑temperature reservoir.",
+        "question": "Explain the concept of \"degradation of energy\" in terms of entropy.",
+        "answer": "An increase in entropy implies energy has *degraded from a higher, orderly level* (where more work can be extracted) to a *lower, less orderly level* (thermal energy) where less or no useful work can be done.",
         "category": "important",
-        "badgeTitle": "ENERGY BALANCE",
-        "badgeText": "The heat rejected to the hot room is $Q_H = Q_C + W$."
+        "badgeTitle": "CONSEQUENCE",
+        "badgeText": "Energy quality is lost, even though total quantity is conserved."
       },
       {
-        "question": "What does a higher co-efficient of performance indicate about a refrigerator's practical operation?",
-        "answer": "A better refrigerator (higher COP) removes a *greater amount of heat* from the freezer using a *smaller expenditure* of mechanical or electrical work.",
+        "question": "What is the value of the latent heat of fusion of ice used to calculate entropy change in Example 6.5?",
+        "answer": "The latent heat of fusion of ice ($L_f$) is strictly given as *$3.36 \\times 10^5 J kg^{-1}$*.",
         "category": "important",
-        "badgeTitle": "MATHEMATICAL DEFINITION",
-        "badgeText": "$E = \\frac{Q_C}{W}$."
+        "badgeTitle": "DATA POINT",
+        "badgeText": "Required to calculate $\\Delta Q$ for phase change entropy."
       },
       {
-        "question": "What thermodynamic state variable did Rudolph Clausius introduce to quantify the Second Law of Thermodynamics?",
-        "answer": "Clausius introduced the concept of *entropy* ($S$) in 1856 to provide a *quantitative variable* describing the state of a system's molecular disorder.",
-        "category": "important",
-        "badgeTitle": "MATHEMATICAL DEFINITION",
-        "badgeText": "$\\Delta S = \\frac{\\Delta Q}{T}$."
-      },
-      {
-        "question": "How does the free expansion of a gas into a vacuum affect the randomness and entropy of its molecules?",
-        "answer": "Free expansion *increases* the gas's *disorder* because the molecules have *greater randomness of position* after expanding, leading to a definitive *increase in entropy*.",
-        "category": "important",
-        "badgeTitle": "UNIVERSAL PRINCIPLE",
-        "badgeText": "Natural processes always proceed toward greater disorder."
-      },
-      {
-        "question": "What does the term \"degradation of energy\" mean when mixing hot and cold water?",
-        "answer": "While total energy is conserved, the increase in entropy means energy is *degraded* from an orderly form (separated hot/cold) to a less orderly form (warm water), *losing the opportunity* to convert that heat into useful work.",
-        "category": "important",
-        "badgeTitle": "FINAL OUTCOME",
-        "badgeText": "The energy eventually ends up entirely as unavailable thermal energy."
-      },
-      {
-        "question": "Why is the study of thermodynamics considered crucially important for modern technology?",
-        "answer": "Thermodynamics plays a *key role* in technology because almost all the *raw energy* available for human use is eventually liberated and utilized in the form of *heat*.",
+        "question": "Why does the product of pressure and volume relate directly to temperature in an ideal gas?",
+        "answer": "Because according to the ideal gas equation $PV=nRT$, the product of the number of moles ($n$) and the universal gas constant ($R$) is a constant, making *$PV$ directly proportional to the absolute temperature $T$*.",
         "category": "conceptual",
-        "badgeTitle": "UNDERLYING CONCEPT",
-        "badgeText": "It governs the macroscopic behavior of systems through temperature, pressure, and volume."
+        "badgeTitle": "MATHEMATICAL IMPLICATION",
+        "badgeText": "$PV \\propto T$"
       },
       {
-        "question": "How does the density equation ρ = PM/RT mathematically prove when a real gas behaves ideally?",
-        "answer": "The equation shows that density is *lowest* at *low pressure* and *high temperature*, which physically places gas molecules at a *large distance* from each other, rendering *intermolecular forces negligible*.",
+        "question": "Mathematically prove how the density of a gas relates to its temperature at constant pressure.",
+        "answer": "By substituting density $\\rho = m/V$ into the ideal gas equation $PV = (m/M)RT$, we derive $\\rho = PM/RT$, which proves that *density is inversely proportional to absolute temperature ($\\rho \\propto 1/T$)* when pressure is constant.",
         "category": "conceptual",
-        "badgeTitle": "PROPORTIONALITY",
-        "badgeText": "Density (ρ) is inversely proportional to Temperature (T)."
+        "badgeTitle": "FORMULA DERIVATION",
+        "badgeText": "$\\rho \\propto \\frac{P}{T}$"
       },
       {
-        "question": "According to the \"For Your Information\" margin note, what three specific conditions force a real gas to approach ideal behavior?",
-        "answer": "A real gas acts ideally under *low pressure*, *high temperature*, and when its *potential energy (P.E.)* becomes *negligible*.",
+        "question": "According to the \"For Your Information\" box, what are the two specific environmental conditions that force real gases to approach ideal behavior?",
+        "answer": "Real gases approach ideal behavior under the specific conditions of *strictly low pressure* and *high temperature*.",
         "category": "conceptual",
-        "badgeTitle": "KINETIC RESULT",
-        "badgeText": "The molecules essentially possess only Kinetic Energy (K.E.)."
+        "badgeTitle": "PHYSICAL REASON",
+        "badgeText": "Intermolecular forces become negligible."
       },
       {
-        "question": "On the Charles' Law graph (Fig 6.2), what is the physical significance of the straight line extending to −273°C?",
-        "answer": "This x‑intercept represents *absolute zero*, the theoretical temperature at which the *volume of an ideal gas* would completely shrink to *zero*.",
+        "question": "What specific mathematical shape does the curve of Boyle's Law take on a pressure-volume graph?",
+        "answer": "The curve representing Boyle's Law ($P \\propto 1/V$) at constant temperature forms a *downward-sloping hyperbolic curve* mathematically, which in thermodynamics is specifically called an *isotherm*.",
         "category": "conceptual",
-        "badgeTitle": "GRAPHICAL EXTRAPOLATION",
-        "badgeText": "The line must be extrapolated because real gases liquefy before reaching this temperature."
+        "badgeTitle": "GRAPH FEATURE",
+        "badgeText": "Represents $PV = \\text{constant}$."
       },
       {
-        "question": "According to the \"Do You Know?\" side box, what complex mechanical analogy describes the vibrational energy within a diatomic molecule?",
-        "answer": "A diatomic gas molecule contains *vibrational energy* that behaves as if there is a *spring‑like bond* continuously oscillating between its two atoms.",
+        "question": "What does the straight diagonal line passing through the origin in a Pressure-Temperature graph signify according to Gay-Lussac's Law?",
+        "answer": "It signifies a *direct proportional relationship* between absolute pressure and absolute temperature, demonstrating that *$P/T$ is constant* when the volume is kept strictly constant.",
         "category": "conceptual",
-        "badgeTitle": "ENERGY TYPES",
-        "badgeText": "They possess translational, rotational, and vibrational energies simultaneously."
+        "badgeTitle": "GRAPHICAL REPRESENTATION",
+        "badgeText": "Fig. 6.3."
       },
       {
-        "question": "According to the text's \"For Your Information\" box, why is internal energy fundamentally compared to gravitational potential energy?",
-        "answer": "Internal energy is a *function of state*, meaning it relies strictly on the *initial and final states* of the system rather than the *path taken*, exactly like gravitational potential energy.",
+        "question": "When a metal spoon is placed in hot coffee, at what precise moment does the net heat flow between them become zero?",
+        "answer": "The net heat flow becomes zero when the spoon and coffee reach the *exact same temperature*, achieving a state of *thermal equilibrium* where there is no driving force for heat transfer.",
         "category": "conceptual",
-        "badgeTitle": "PRACTICAL TAKEAWAY",
-        "badgeText": "Only the change (ΔU) is practically important, not absolute values."
+        "badgeTitle": "EQUILIBRIUM CONDITION",
+        "badgeText": "$\\Delta T = 0$ between objects."
       },
       {
-        "question": "In Fig 6.4, when a downward applied force F compresses a gas via a piston, what is the thermodynamic result?",
-        "answer": "The constant downward force equals PA, and when the piston is displaced downward by distance Δy, *downward work* is effectively *done on the gas*.",
+        "question": "According to the \"Do You Know?\" section, why is the internal energy of a diatomic gas more complex than that of a monatomic gas?",
+        "answer": "Because a diatomic gas molecule possesses *additional energy modes*, specifically *rotational energy* and *vibrational energy* associated with the spring-like bond between its atoms, unlike the purely translational energy of monatomic gases.",
         "category": "conceptual",
-        "badgeTitle": "ENERGY TRANSFER",
-        "badgeText": "This mechanical work transfers energy into the gaseous system."
+        "badgeTitle": "MOLECULAR DYNAMICS",
+        "badgeText": "More degrees of freedom increase internal energy capacity."
       },
       {
-        "question": "On the P‑V graph in Fig 6.5, what specific thermodynamic parameter is represented by the perfectly horizontal line from point B to C?",
-        "answer": "A horizontal line from left to right indicates an expansion happening at an *absolutely constant pressure*.",
+        "question": "According to the \"Tidbits\" section, how can heat energy profoundly alter a substance without changing its temperature?",
+        "answer": "During a *phase change* (such as melting or boiling), the added heat energy is used *entirely to alter the state of matter* by breaking bonds, rather than increasing the kinetic energy and thus the temperature.",
         "category": "conceptual",
-        "badgeTitle": "AREA REPRESENTATION",
-        "badgeText": "The shaded rectangular area directly beneath this line represents the mechanical work done (PΔV)."
+        "badgeTitle": "THERMODYNAMIC PROCESS",
+        "badgeText": "Latent heat absorption."
       },
       {
-        "question": "According to the margin's sign convention guide, how are the mathematical signs strictly assigned when the environment does work on a system and extracts heat from it?",
-        "answer": "*Work done on the system* is considered *negative* (−W), and *heat leaving* or extracted from the system is considered *negative* (−Q).",
+        "question": "Why is internal energy mathematically analogous to gravitational potential energy?",
+        "answer": "Both are *state functions*, meaning they *depend only on the initial and final states* of the system and are *completely independent of the thermodynamic path* taken to reach that state.",
         "category": "conceptual",
-        "badgeTitle": "OPPOSITE SCENARIO",
-        "badgeText": "Heat in is +Q, work by the system is +W."
+        "badgeTitle": "IMPORTANT CONSEQUENCE",
+        "badgeText": "Only the change ($\\Delta U$) is physically significant."
       },
       {
-        "question": "In the Thermocouple experiment (Fig 6.6), why does rapidly pushing the blocked bicycle pump cause a temperature spike?",
-        "answer": "The rapid push exerts a force that does *mechanical work* directly on the trapped air, forcing its *internal energy* to rapidly rise without any external heat source.",
+        "question": "Why was work done by the system originally defined as a positive quantity in the historical study of thermodynamics?",
+        "answer": "This convention originated with *early steam engines*, where it was natural and practical to consider *\"heat in\"* and the resulting *useful mechanical work out* as positive quantities.",
         "category": "conceptual",
-        "badgeTitle": "FIRST LAW APPLICATION",
-        "badgeText": "This is an adiabatic manifestation where W = −ΔU."
+        "badgeTitle": "SIGN CONVENTION",
+        "badgeText": "Output work is $+W$."
       },
       {
-        "question": "How does the First Law of Thermodynamics technically define human \"metabolism\"?",
-        "answer": "Metabolism represents the *energy transforming processes* within a human organism, where the *chemical energy* from food offsets the internal energy lost by the body performing daily work.",
-        "category": "conceptual",
-        "badgeTitle": "EQUATION LINK",
-        "badgeText": "The equation ΔU = Q − W applies directly to biological survival."
-      },
-      {
-        "question": "From the \"Brain Teaser!\" box: Why exactly does the internal energy of an ideal gas remain perfectly constant during an isothermal expansion?",
-        "answer": "An ideal gas lacks potential energy, so its internal energy relies entirely on the *average kinetic energy* of its molecules; since K.E. depends solely on *temperature*, which is held *constant*, internal energy cannot change.",
-        "category": "conceptual",
-        "badgeTitle": "NET RESULT",
-        "badgeText": "ΔU = 0."
-      },
-      {
-        "question": "Why must the expansion or compression in an isothermal process occur extremely slowly?",
-        "answer": "Because the *transfer of heat* between the system and its surroundings naturally requires *time*, moving too fast would disrupt the *thermal equilibrium* and alter the constant temperature.",
-        "category": "conceptual",
-        "badgeTitle": "CONTRARY PROCESS",
-        "badgeText": "Doing it too fast makes it an adiabatic process."
-      },
-      {
-        "question": "Why is an adiabat curve visibly steeper than an isotherm curve on a P‑V diagram (Fig 6.7b)?",
-        "answer": "In an adiabatic process, pressure drops *faster* because it is affected by both the increase in volume and a simultaneous *decrease in temperature*, governed by the exponent factor γ.",
-        "category": "conceptual",
-        "badgeTitle": "MATHEMATICAL CONSTANT",
-        "badgeText": "It follows PV^γ = Constant."
-      },
-      {
-        "question": "What is the thermodynamic reason a burst tire's valve feels noticeably cold immediately after the air escapes?",
-        "answer": "The high‑pressure air undergoes a *rapid adiabatic expansion*, doing external work on the atmosphere at the strict expense of its own *internal energy*, causing its temperature to *aggressively fall*.",
-        "category": "conceptual",
-        "badgeTitle": "REAL-WORLD EXAMPLE",
-        "badgeText": "Cloud formation in the atmosphere happens via the same expansion principle."
-      },
-      {
-        "question": "Why is the slow, controlled evaporation or liquification of a substance considered practically reversible?",
-        "answer": "Because these phase changes can be *perfectly retraced*; slightly increasing or decreasing the pressure or temperature allows the substance to *reverse the operation* without permanent changes to surroundings.",
-        "category": "conceptual",
-        "badgeTitle": "EQUILIBRIUM STATUS",
-        "badgeText": "Thermal and mechanical equilibrium are maintained at every micro‑stage."
-      },
-      {
-        "question": "Why is an explosion considered the ultimate example of a highly irreversible process?",
-        "answer": "An explosion occurs *suddenly* and involves *massive dissipation* of energy through uncontrolled friction, conduction, convection, and radiation that *cannot be mechanically reversed*.",
-        "category": "conceptual",
-        "badgeTitle": "ONE-WAY PROCESS",
-        "badgeText": "The controlling factors cannot be retraced backward."
-      },
-      {
-        "question": "In the \"Tidbits\" margin visual, what specific impossible scenario is depicted by the crossed-out heat engine diagram?",
-        "answer": "It depicts a machine extracting heat from a *single hot reservoir* at temperature T and converting that heat *entirely into useful work* without rejecting any heat to a cold sink.",
-        "category": "conceptual",
-        "badgeTitle": "LAW VIOLATION",
-        "badgeText": "This directly violates the Kelvin statement of the Second Law."
-      },
-      {
-        "question": "According to the \"Interesting Information\" box, how does a waterfall serve as a perfect conceptual analogy for a heat engine?",
-        "answer": "Just as water must fall from a *high potential* to a *low potential* to turn a mechanical wheel, heat must naturally flow from a *high temperature* to a *low temperature* to produce useful work.",
+        "question": "When a constant downward force pushes a piston into a cylinder, why is the thermodynamic work considered negative?",
+        "answer": "Because the displacement of the piston is *downward (compressing the gas)*, meaning work is being *done on the gas* by the external applied force, which is taken as *negative* according to convention.",
         "category": "conceptual",
         "badgeTitle": "ENERGY FLOW",
-        "badgeText": "Without a \"drop\" in state, no kinetic energy can be harnessed."
+        "badgeText": "Energy enters the system mechanically."
       },
       {
-        "question": "Looking at the Carnot efficiency equation (η = 1 − T₂/T₁), how does raising the hot reservoir temperature theoretically maximize efficiency?",
-        "answer": "Raising *T₁* makes the fraction *mathematically smaller*, subtracting less from 1, which brings the total efficiency percentage *much closer to 100%*.",
+        "question": "According to the standard thermodynamic sign convention visual, what does $-Q$ and $+W$ represent occurring simultaneously?",
+        "answer": "A $-Q$ represents *heat being strictly removed from the system*, while $+W$ represents *work being actively done by the system* on its surrounding environment.",
         "category": "conceptual",
-        "badgeTitle": "PRACTICAL LIMITATION",
-        "badgeText": "T₂ cannot realistically be lowered to absolute zero."
+        "badgeTitle": "SYSTEM DIAGRAM",
+        "badgeText": "Arrows pointing outward."
       },
       {
-        "question": "In the Carnot cycle's P‑V diagram (Fig 6.9), why does the net work done equal the physical area enclosed by path ABCDA?",
-        "answer": "The enclosed area represents the net mathematical difference between the *positive expansion work* done by the gas and the *negative compression work* done on the gas to complete the loop.",
+        "question": "Does the first law of thermodynamics apply to non-mechanical systems like electrical or nuclear reactions?",
+        "answer": "Yes, it has *wider applicability*, applying universally to *all forms of energy transformations*, including chemical, electrical, and nuclear systems, since it is a fundamental statement of energy conservation.",
         "category": "conceptual",
-        "badgeTitle": "CYCLE PROPERTY",
-        "badgeText": "Internal energy change for the full loop is zero."
+        "badgeTitle": "FUNDAMENTAL PRINCIPLE",
+        "badgeText": "Energy cannot be created nor destroyed."
       },
       {
-        "question": "According to Carnot's theorem, why does swapping the working substance from steam to helium not change the theoretical maximum efficiency?",
-        "answer": "Carnot proved that *all reversible engines* operating between the same two temperatures have the *exact same efficiency*, making it entirely *independent of the nature* of the working substance.",
+        "question": "In the bicycle pump experiment demonstrating the First Law, what specific scientific instrument acts as the sensor to detect the increase in internal energy?",
+        "answer": "A *thermocouple* connected through the blocked outlet acts as the precise sensor to monitor and detect the temperature rise of the trapped air.",
         "category": "conceptual",
-        "badgeTitle": "DETERMINING FACTOR",
-        "badgeText": "Efficiency relies exclusively on reservoir temperatures."
+        "badgeTitle": "MEASUREMENT TOOL",
+        "badgeText": "Millivoltmeter connected to the thermocouple."
       },
       {
-        "question": "Why must a Carnot cycle reject heat (Q₂) to a cold sink during its third step instead of just re-compressing the hot gas?",
-        "answer": "Rejecting heat lowers the gas's *internal pressure and temperature*, meaning *significantly less mechanical work* is required to compress it back to its original state, ensuring a *net positive work output*.",
+        "question": "Applying the first law ($\\Delta U = Q - W$) to human metabolism, what represents the heat input ($Q$), and what happens if $W$ exceeds it?",
+        "answer": "The *food we eat* acts as the required energy input; if the *mechanical work done ($W$)* by moving/walking exceeds this input, the body's *internal energy ($\\Delta U$) must decrease* to compensate.",
         "category": "conceptual",
-        "badgeTitle": "ENGINE SURVIVAL",
-        "badgeText": "If it compressed while hot, input work would equal output work (zero net gain)."
+        "badgeTitle": "BIOLOGICAL THERMODYNAMICS",
+        "badgeText": "Metabolism converts chemical $Q$ to mechanical $W$."
       },
       {
-        "question": "How does a refrigerator seemingly defy the natural flow of heat without violating the Clausius statement?",
-        "answer": "A refrigerator moves heat from cold to hot *not spontaneously*, but by utilizing *external mechanical work* (from a compressor), which explicitly satisfies the Second Law.",
+        "question": "If 42 J of heat is added to a gas and it does 32 J of work expanding against a piston, where does the remaining 10 J physically manifest?",
+        "answer": "According to the first law of thermodynamics ($\\Delta U = Q - W$), the remaining 10 J is *retained within the gas as an increase in internal energy*, which physically manifests as a *rise in temperature*.",
         "category": "conceptual",
-        "badgeTitle": "ENERGY IMBALANCE",
-        "badgeText": "Total heat rejected to the room is greater than heat pulled from the fridge (Q_H = Q_C + W)."
+        "badgeTitle": "ENERGY BALANCE",
+        "badgeText": "$42\\text{ J} - 32\\text{ J} = 10\\text{ J}$."
       },
       {
-        "question": "Conceptually, what makes one refrigerator objectively \"better\" (higher COP) than another?",
-        "answer": "A superior refrigerator extracts a *greater amount of heat* from the cold interior using a *relatively smaller expenditure* of mechanical or electrical work input.",
+        "question": "Solve the \"Brain Teaser!\": Why does the internal energy of an ideal gas remain perfectly constant during an isothermal expansion?",
+        "answer": "Because the internal energy of an ideal gas *depends only on its temperature* (potential energy is zero). Since an isothermal process strictly *maintains a constant temperature*, the internal energy absolutely cannot change ($\\Delta U = 0$).",
         "category": "conceptual",
-        "badgeTitle": "RATIO MEANING",
-        "badgeText": "COP is the direct ratio of Heat Removed to Work Done."
+        "badgeTitle": "KINETIC THEORY RESULT",
+        "badgeText": "$\\Delta U \\propto \\Delta T = 0$"
       },
       {
-        "question": "From the \"Brain Teaser!\" box: Why does a brand new, sorted deck of cards become irreversibly disordered when shuffled?",
-        "answer": "Shuffling pushes the system toward a state of *vastly greater probability and randomness*, conceptually mirroring the natural thermodynamic law that isolated systems always evolve toward *maximum entropy*.",
+        "question": "Why does the mathematical formula $PV^\\gamma = \\text{constant}$ result in an adiabat being visually steeper than an isotherm?",
+        "answer": "Because $\\gamma$ (the ratio of specific heats) is *always greater than 1*, causing the pressure to *drop more rapidly and non-linearly* with increasing volume during adiabatic expansion compared to the simple inverse relationship of an isotherm.",
         "category": "conceptual",
-        "badgeTitle": "STATISTICAL REALITY",
-        "badgeText": "There are vastly more disordered card combinations than ordered ones."
+        "badgeTitle": "GRAPHICAL COMPARISON",
+        "badgeText": "Fig. 6.7(b)."
       },
       {
-        "question": "Why does the free expansion of a gas into a larger vacuum result in an entropy increase despite zero heat being added?",
-        "answer": "Because the molecules *spread out* and achieve a *significantly greater randomness of position* within the new volume, causing their physical and molecular disorder to *measurably increase*.",
+        "question": "Why is a sudden explosion mathematically impossible to represent as a reversible thermodynamic cycle?",
+        "answer": "An explosion is *highly irreversible* because it occurs *suddenly* and involves *massive, chaotic dissipation of energy* through uncontrolled radiation, convection, and conduction, making it *impossible to retrace backwards* to its initial conditions.",
         "category": "conceptual",
-        "badgeTitle": "SECOND LAW EVIDENCE",
-        "badgeText": "Natural processes proceed toward greater molecular disorder."
+        "badgeTitle": "PROCESS NATURE",
+        "badgeText": "Sudden changes prohibit equilibrium."
       },
       {
-        "question": "Why is the energy of a warm body of water considered \"degraded\" compared to an unmixed system of separate hot and cold water?",
-        "answer": "While the total joules remain identical, the warm water *lacks a temperature gradient*, meaning its internal energy can *no longer be systematically converted* into useful work.",
+        "question": "In practice, what happens to the roughly 60% to 75% of available heat energy that a motor car engine fails to convert into useful work?",
+        "answer": "The remaining unutilized heat energy is simply *expelled as waste heat* to the *surrounding atmosphere*, which acts as the necessary low-temperature sink.",
+        "category": "conceptual",
+        "badgeTitle": "EFFICIENCY REALITY",
+        "badgeText": "$Q_2$ must be rejected."
+      },
+      {
+        "question": "Based on the \"Tidbits\" diagram of the Kelvin statement, why is the pictured engine process labeled unequivocally as \"IMPOSSIBLE\"?",
+        "answer": "The diagram shows *heat from a single source* at temperature $T$ being *converted entirely into work*, which explicitly violates the Second Law's requirement that *some heat must be rejected to a cold sink*.",
+        "category": "conceptual",
+        "badgeTitle": "THERMODYNAMIC VIOLATION",
+        "badgeText": "Cannot have $\\Delta Q = W$ from a single reservoir."
+      },
+      {
+        "question": "In a complete, perfect Carnot cycle, why is the net heat absorbed ($\\Delta Q$) exactly equal to the net external work done ($W$)?",
+        "answer": "Because the working substance eventually returns *perfectly to its initial state*, meaning the overall *net change in internal energy is strictly zero ($\\Delta U = 0$)*, so the first law equation directly reduces to $W = Q_1 - Q_2$.",
+        "category": "conceptual",
+        "badgeTitle": "CYCLIC PROPERTY",
+        "badgeText": "State functions reset to zero."
+      },
+      {
+        "question": "How does the \"waterfall analogy\" in the \"Interesting Information\" box beautifully explain the fundamental function of a heat engine?",
+        "answer": "Just as a physical waterwheel extracts *mechanical work from water dropping from a high gravitational potential to a low potential*, a heat engine extracts *useful work from heat naturally flowing from a high temperature reservoir to a low temperature reservoir*.",
+        "category": "conceptual",
+        "badgeTitle": "VISUAL METAPHOR",
+        "badgeText": "Flow gradient is required for work."
+      },
+      {
+        "question": "In most practical real-world heat engines, why is it functionally easier to increase efficiency by raising the hot reservoir temperature rather than lowering the cold reservoir temperature?",
+        "answer": "Because the *cold reservoir is typically fixed near ambient room temperature*, making it *technologically impractical or expensive to lower significantly*, so efficiency must be optimized by *significantly raising the temperature of the hot reservoir*.",
+        "category": "conceptual",
+        "badgeTitle": "ENGINEERING CONSTRAINT",
+        "badgeText": "Ambient cooling is the practical limit."
+      },
+      {
+        "question": "Does a refrigerator fundamentally violate the Second Law of Thermodynamics by transferring heat from a cold body to a hot body?",
+        "answer": "No, it does not violate the law because it *necessitates external work (from a compressor)* to force this unnatural heat transfer, fulfilling the *explicit Clausius statement* of the second law operating in reverse.",
+        "category": "conceptual",
+        "badgeTitle": "REQUIRED INPUT",
+        "badgeText": "$W$ is strictly required."
+      },
+      {
+        "question": "Why might a refrigerator's Coefficient of Performance (COP) routinely be a number greater than 1, unlike the strict limit on heat engine efficiency?",
+        "answer": "Because COP is calculated as the *ratio of heat removed to work input ($Q_c/W$)*, and in efficient refrigeration cycles, it is *completely normal to move significantly more heat energy* than the mechanical energy required to run the compressor.",
+        "category": "conceptual",
+        "badgeTitle": "PERFORMANCE METRIC",
+        "badgeText": "Not a percentage of total energy, but a ratio of transfer to input."
+      },
+      {
+        "question": "When heat $Q$ flows naturally from a hot reservoir ($T_1$) to a cold reservoir ($T_2$), mathematically prove why the net change in entropy of the universe is always positive.",
+        "answer": "Since $T_1 > T_2$, the mathematical fraction $Q/T_2$ (representing entropy gained by the cold body) is *definitively greater than $Q/T_1$* (entropy lost by the hot body). Therefore, the net change calculated by $(Q/T_2 - Q/T_1)$ must *absolutely be a positive value*.",
+        "category": "conceptual",
+        "badgeTitle": "MATHEMATICAL PROOF",
+        "badgeText": "Demonstrates the Second Law."
+      },
+      {
+        "question": "Explain conceptually why mixing hot and cold water irreversibly increases the total entropy of the universe.",
+        "answer": "Initially, the *fast (hot) and slow (cold) molecules are neatly sorted*. Mixing them brings the system to an *irreversible thermal equilibrium*, a state of *greater molecular disorder*, where the opportunity to convert that initial temperature difference into useful work is *permanently lost*.",
+        "category": "conceptual",
+        "badgeTitle": "IRREVERSIBLE ACTION",
+        "badgeText": "Order lost cannot be spontaneously regained."
+      },
+      {
+        "question": "What is meant by the \"degradation of energy\" in relation to the inevitable increase of entropy in the universe?",
+        "answer": "It describes how an increase in entropy *forces energy to degrade from highly orderly forms* (where maximum work can be extracted) to *completely less orderly forms* (like ambient thermal energy), making *any useful work utterly impossible*.",
         "category": "conceptual",
         "badgeTitle": "ULTIMATE FATE",
-        "badgeText": "This represents energy devolving from an orderly, useful form to a disorderly, useless form."
+        "badgeText": "Total energy is conserved, but utility is destroyed."
       },
       {
-        "question": "If a refrigerator locally decreases the entropy of water by freezing it into ice cubes, what must simultaneously happen to the universe's total entropy?",
-        "answer": "The refrigerator rejects a *massive amount of heated exhaust* into the room, meaning the entropy of the surrounding environment must *increase by a greater magnitude*, ensuring the universe's net entropy *always rises*.",
+        "question": "Solve the specific \"Brain Teaser!\": Why does a brand new deck of cards inherently become more disordered when physically shuffled?",
+        "answer": "Shuffling takes a *highly ordered, specific numerical and suit sequence* and forces it into a *randomized state*. Thermodynamically, this represents a *natural transition to a state of greater probability and randomness*, which is the exact conceptual analogue of an *increase in entropy*.",
         "category": "conceptual",
-        "badgeTitle": "UNIVERSAL LAW",
-        "badgeText": "Entropy of the universe can never decrease."
+        "badgeTitle": "STATISTICAL MECHANICS",
+        "badgeText": "Entropy measures probability of states."
       },
       {
-        "question": "During an isothermal expansion where the volume doubles, what definitively happens to the internal energy of the enclosed gas?",
-        "answer": "Because the process maintains a strict *constant temperature*, the internal energy of the ideal gas definitively *remains the same*.",
+        "question": "What is the strict defining mathematical relationship between the total entropy of a system and a perfectly reversible thermodynamic process?",
+        "answer": "For a *perfectly reversible process*, the *total entropy of the system and its encompassing surroundings remains exactly constant ($\\Delta S = 0$)*; entropy is *only allowed to increase* during irreversible processes.",
         "category": "conceptual",
-        "badgeTitle": "FIRST LAW CHECK",
-        "badgeText": "All heat added transforms 100% into work."
+        "badgeTitle": "THEORETICAL LIMIT",
+        "badgeText": "The best a process can do is not generate new entropy."
       },
       {
-        "question": "When a gas expands forcefully against a piston due to the addition of external heat, what are the formal signs of the thermodynamic variables involved?",
-        "answer": "The *work* is *positive* because it is done by the expanding system, and the *heat* is *positive* because it was absorbed into the system.",
+        "question": "In solving Example 6.3, why must the given Celsius temperatures strictly be converted to Kelvin before calculating the theoretical efficiency of the Carnot engine?",
+        "answer": "The Carnot efficiency formula $\\eta = 1 - (T_2/T_1)$ is derived fundamentally based on *absolute zero* and assumes temperatures are *strictly on the absolute Kelvin scale*; using Celsius will yield *mathematically incorrect and meaningless efficiencies*.",
         "category": "conceptual",
-        "badgeTitle": "EXPANSION RULE",
-        "badgeText": "Volume increase always equals positive work by the gas."
+        "badgeTitle": "CALCULATION RULE",
+        "badgeText": "$T_1$ and $T_2$ must be absolute."
       },
       {
-        "question": "What is the precise, final mathematical change in the entropy of a system that undergoes a completely reversible cyclic process?",
-        "answer": "Because the system eventually returns *perfectly to its exact initial state* with no net degradation, the change in entropy of the system is exactly *zero*.",
+        "question": "Why is a hypothetical engine drawing heat solely from the ocean and producing work considered a strict violation of thermodynamic laws?",
+        "answer": "Because it attempts to *continuously extract useful work from a single heat reservoir* without *rejecting any heat to a separate lower-temperature sink*, explicitly violating *Lord Kelvin's statement* of the Second Law.",
         "category": "conceptual",
-        "badgeTitle": "STATE VARIABLE PROPERTY",
-        "badgeText": "Like internal energy, cyclic entropy change is nil."
+        "badgeTitle": "IMPOSSIBILITY",
+        "badgeText": "A single reservoir cannot drive an engine."
       },
       {
-        "question": "In an adiabatic process, what specific thermodynamic exchange is forcefully prevented from occurring?",
-        "answer": "An adiabatic barrier entirely prevents the *exchange of heat energy* between the system and its surrounding environment.",
+        "question": "In step 3 of the ideal Carnot cycle (curve CD), what specific mechanism prevents the gas temperature from rising as it is physically compressed?",
+        "answer": "The compression is *strictly isothermal*; as mechanical work is done on the gas to compress it, it *simultaneously rejects an exactly equivalent amount of heat ($Q_2$)* to the cold reservoir, *perfectly maintaining the constant low temperature $T_2$*.",
         "category": "conceptual",
-        "badgeTitle": "EQUATION FACT",
-        "badgeText": "Therefore, ΔQ = 0."
+        "badgeTitle": "ENERGY REJECTION",
+        "badgeText": "Heat out equals work in."
       },
       {
-        "question": "How do Lord Kelvin and Rudolf Clausius's statements of the Second Law conceptually mirror each other as two sides of the same coin?",
-        "answer": "Kelvin rules out the *perfect, spontaneous conversion of heat into work* (from one source), while Clausius rules out the *spontaneous flow of heat from cold to hot* (without external work).",
+        "question": "On a standard P-V graph, if a thermodynamic state change moves from $(P_1, V_1)$ to $(P_2, V_2)$ entirely along an isotherm, what critical unplotted variable remains completely identical at both coordinates?",
+        "answer": "The *absolute temperature ($T$)* remains *completely identical* at both data points because the specific curve inherently represents a *constant-temperature process* obeying Boyle's Law.",
         "category": "conceptual",
-        "badgeTitle": "UNIFIED REALITY",
-        "badgeText": "Both dictate the absolute limits of natural thermodynamic directionality."
+        "badgeTitle": "STATE VARIABLE",
+        "badgeText": "$T_1 = T_2$ for the entire path."
       },
       {
-        "question": "What is the theoretical \"Heat Death of the Universe\" based strictly on thermodynamic entropy principles?",
-        "answer": "It is the hypothetical final state where all energy is *universally degraded* into a uniform, lukewarm thermal baseline, universal entropy reaches its *absolute maximum*, and *no further useful work* can ever be extracted.",
+        "question": "Why can't all the heat ($Q$) entering a gas cylinder be converted entirely into external work if the internal pressure is allowed to change?",
+        "answer": "Because *a portion of that entering heat energy* will naturally and inevitably manifest as an *increase in internal energy*, thereby *raising the physical temperature* of the gas itself, rather than contributing entirely to the work performed on the surroundings.",
         "category": "conceptual",
-        "badgeTitle": "COSMIC END",
-        "badgeText": "The universe achieves total thermal equilibrium."
+        "badgeTitle": "ENERGY DIVISION",
+        "badgeText": "$Q$ splits into $\\Delta U$ and $W$."
+      },
+      {
+        "question": "In a slow, constant pressure expansion, why is the work done simply calculated algebraically as $P \\times \\Delta V$ instead of requiring complex calculus integration?",
+        "answer": "Because the *pressure $P$ is maintained strictly constant* throughout the entire slow expansion, allowing work to be calculated simply as the *constant force ($PA$)* mathematically multiplied by the *linear displacement ($\\Delta y$)*, directly and simply yielding $P\\Delta V$.",
+        "category": "conceptual",
+        "badgeTitle": "MATHEMATICAL SIMPLIFICATION",
+        "badgeText": "Constant force simplifies the work integral."
       }
     ],
     "7": [
