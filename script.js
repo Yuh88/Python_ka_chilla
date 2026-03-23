@@ -175,8 +175,34 @@ const initializeNotesCraftApp = () => {
     const sidebar = document.getElementById('sidebar');
     const openBtn = document.getElementById('openSidebar');
     const closeBtn = document.getElementById('closeSidebar');
+    const menuDiscoveredStorageKey = 'menuDiscovered';
 
     const isMobileView = () => window.matchMedia('(max-width: 768px)').matches;
+
+    const hasMenuBeenDiscovered = () => {
+        try {
+            return localStorage.getItem(menuDiscoveredStorageKey) === 'true';
+        } catch (error) {
+            return false;
+        }
+    };
+
+    const markMenuAsDiscovered = () => {
+        if (!openBtn) return;
+        openBtn.classList.remove('attention-pulse');
+
+        try {
+            localStorage.setItem(menuDiscoveredStorageKey, 'true');
+        } catch (error) {
+            /* no-op */
+        }
+    };
+
+    const syncMobileMenuCue = () => {
+        if (!openBtn) return;
+        const shouldPulse = isMobileView() && !hasMenuBeenDiscovered();
+        openBtn.classList.toggle('attention-pulse', shouldPulse);
+    };
 
     const closeSidebarOnMobile = () => {
         if (!sidebar || !isMobileView()) return;
@@ -202,12 +228,17 @@ const initializeNotesCraftApp = () => {
 
     if (openBtn && sidebar) {
         openBtn.addEventListener('click', () => {
+            if (isMobileView() && !hasMenuBeenDiscovered()) {
+                markMenuAsDiscovered();
+            }
+
             if (isMobileView()) {
                 sidebar.classList.toggle('mobile-open');
             } else {
                 document.body.classList.toggle('sidebar-collapsed');
             }
             updateSidebarToggleState();
+            syncMobileMenuCue();
         });
     }
 
@@ -227,9 +258,11 @@ const initializeNotesCraftApp = () => {
             sidebar.classList.remove('mobile-open');
         }
         updateSidebarToggleState();
+        syncMobileMenuCue();
     });
 
     updateSidebarToggleState();
+    syncMobileMenuCue();
 
     // 2. Dark Mode Toggle
     const themeToggleBtn = document.getElementById('themeToggleBtn');
@@ -313,6 +346,7 @@ const initializeNotesCraftApp = () => {
     let announcementUnsubscribe = null;
     let latestAnnouncementText = '';
     let adminInboxUnsubscribe = null;
+    let userInboxUnreadUnsubscribe = null;
     let privateChatUnsubscribes = [];
     let privateStreamA = [];
     let activePrivateChatUserId = '';
@@ -406,6 +440,74 @@ const initializeNotesCraftApp = () => {
         if (!privateChatStatus) return;
         privateChatStatus.textContent = message;
         privateChatStatus.classList.toggle('is-error', isError);
+    };
+
+    const setSidebarButtonUnreadDot = (button, shouldShow, badgeText = '') => {
+        if (!button) return;
+
+        let dot = button.querySelector('.notification-dot.notification-dot-button');
+        if (!dot) {
+            dot = document.createElement('span');
+            dot.className = 'notification-dot notification-dot-button';
+            dot.setAttribute('aria-hidden', 'true');
+            button.appendChild(dot);
+        }
+
+        dot.textContent = badgeText;
+        dot.classList.toggle('hidden', !shouldShow);
+    };
+
+    const stopUserInboxUnreadListener = () => {
+        if (userInboxUnreadUnsubscribe) {
+            userInboxUnreadUnsubscribe();
+            userInboxUnreadUnsubscribe = null;
+        }
+        setSidebarButtonUnreadDot(messageAdminBtn, false);
+    };
+
+    const startUserInboxUnreadListener = async (uid) => {
+        if (!uid || isCurrentUserAdmin()) {
+            stopUserInboxUnreadListener();
+            return;
+        }
+
+        stopUserInboxUnreadListener();
+
+        try {
+            const db = await initializeFirestoreCompat();
+            userInboxUnreadUnsubscribe = db.collection('inbox').doc(uid).onSnapshot((docSnapshot) => {
+                const data = docSnapshot.exists ? (docSnapshot.data() || {}) : {};
+                const hasUnread = Boolean(data.hasUnreadForUser);
+                setSidebarButtonUnreadDot(messageAdminBtn, hasUnread);
+            }, () => {
+                setSidebarButtonUnreadDot(messageAdminBtn, false);
+            });
+        } catch (error) {
+            console.warn('Unable to initialize user unread listener.', error);
+            setSidebarButtonUnreadDot(messageAdminBtn, false);
+        }
+    };
+
+    const clearUnreadForAdmin = async (uid) => {
+        if (!uid || !isCurrentUserAdmin()) return;
+
+        try {
+            const db = await initializeFirestoreCompat();
+            await db.collection('inbox').doc(uid).set({ hasUnreadForAdmin: false }, { merge: true });
+        } catch (error) {
+            console.warn('Unable to clear admin unread state.', error);
+        }
+    };
+
+    const clearUnreadForUser = async (uid) => {
+        if (!uid || isCurrentUserAdmin()) return;
+
+        try {
+            const db = await initializeFirestoreCompat();
+            await db.collection('inbox').doc(uid).set({ hasUnreadForUser: false }, { merge: true });
+        } catch (error) {
+            console.warn('Unable to clear user unread state.', error);
+        }
     };
 
     const renderGlobalAnnouncement = (announcementText) => {
@@ -1517,11 +1619,19 @@ const initializeNotesCraftApp = () => {
             button.style.gap = '0.5rem';
             button.appendChild(avatar);
             button.appendChild(metaWrap);
-            button.addEventListener('click', () => {
+            if (entry.hasUnreadForAdmin) {
+                const rowDot = document.createElement('span');
+                rowDot.className = 'notification-dot notification-dot-inline';
+                rowDot.setAttribute('aria-hidden', 'true');
+                button.appendChild(rowDot);
+            }
+
+            button.addEventListener('click', async () => {
                 activePrivateChatUserId = entry.uid;
                 if (privateChatTitle) {
                     privateChatTitle.textContent = `Inbox · ${entry.name || 'Student'}`;
                 }
+                await clearUnreadForAdmin(entry.uid);
                 startPrivateConversationListener(entry.uid);
                 renderAdminInboxUsers(users);
             });
@@ -1545,26 +1655,36 @@ const initializeNotesCraftApp = () => {
                 .orderBy('timestamp', 'desc')
                 .onSnapshot((snapshot) => {
                     const latestByUser = new Map();
+                    let hasAnyUnreadForAdmin = false;
 
                     snapshot.docs.forEach((doc) => {
                         const data = doc.data() || {};
                         const chatUserId = String(doc.id || '').trim();
                         if (!chatUserId || latestByUser.has(chatUserId)) return;
 
+                        const hasUnreadForAdmin = Boolean(data.hasUnreadForAdmin);
+                        if (hasUnreadForAdmin) {
+                            hasAnyUnreadForAdmin = true;
+                        }
+
                         latestByUser.set(chatUserId, {
                             uid: chatUserId,
                             name: String(data.displayName || data.email || 'Student'),
                             photoURL: String(data.photoURL || ''),
-                            preview: String(data.lastMessage || '').trim().slice(0, 52)
+                            preview: String(data.lastMessage || '').trim().slice(0, 52),
+                            hasUnreadForAdmin
                         });
                     });
 
+                    setSidebarButtonUnreadDot(adminInboxBtn, hasAnyUnreadForAdmin);
                     renderAdminInboxUsers([...latestByUser.values()]);
                 }, (error) => {
                     console.warn('Unable to load admin inbox.', error);
+                    setSidebarButtonUnreadDot(adminInboxBtn, false);
                 });
         } catch (error) {
             console.warn('Unable to initialize admin inbox listener.', error);
+            setSidebarButtonUnreadDot(adminInboxBtn, false);
         }
     };
 
@@ -1614,6 +1734,11 @@ const initializeNotesCraftApp = () => {
                 inboxPayload.displayName = String(currentAuthenticatedUser.displayName || getFirstName(currentAuthenticatedUser) || 'Student');
                 inboxPayload.email = String(currentAuthenticatedUser.email || '');
                 inboxPayload.photoURL = String(currentAuthenticatedUser.photoURL || '');
+                inboxPayload.hasUnreadForAdmin = true;
+                inboxPayload.hasUnreadForUser = false;
+            } else {
+                inboxPayload.hasUnreadForUser = true;
+                inboxPayload.hasUnreadForAdmin = false;
             }
 
             await db.collection('inbox').doc(chatUserId).set(inboxPayload, { merge: true });
@@ -1650,12 +1775,14 @@ const initializeNotesCraftApp = () => {
         if (adminMode) {
             await startAdminInboxListener();
             if (openInbox && activePrivateChatUserId) {
+                await clearUnreadForAdmin(activePrivateChatUserId);
                 await startPrivateConversationListener(activePrivateChatUserId);
             } else {
                 renderPrivateChatMessages([]);
             }
         } else {
             activePrivateChatUserId = currentAuthenticatedUser.uid;
+            await clearUnreadForUser(currentAuthenticatedUser.uid);
             await startPrivateConversationListener(currentAuthenticatedUser.uid);
         }
     };
@@ -1818,9 +1945,11 @@ const initializeNotesCraftApp = () => {
                         adminAnnouncementInput.value = latestAnnouncementText;
                     }
                     startAdminInboxListener();
+                    stopUserInboxUnreadListener();
                 } else if (adminInboxUnsubscribe) {
                     adminInboxUnsubscribe();
                     adminInboxUnsubscribe = null;
+                    setSidebarButtonUnreadDot(adminInboxBtn, false);
                 }
 
                 if (isCurrentUserAdmin()) {
@@ -1831,6 +1960,10 @@ const initializeNotesCraftApp = () => {
                     queueMicrotask(() => {
                         loadProgressFromFirestore(currentAuthenticatedUser.uid);
                         ensureUserProfileSetup(currentAuthenticatedUser);
+
+                        if (!isCurrentUserAdmin()) {
+                            startUserInboxUnreadListener(currentAuthenticatedUser.uid);
+                        }
                     });
                 } else {
                     queueMicrotask(() => {
@@ -1840,6 +1973,8 @@ const initializeNotesCraftApp = () => {
                     isNewProfileDocument = false;
                     closeProfileSetupModal();
                     closePrivateChatModal();
+                    stopUserInboxUnreadListener();
+                    setSidebarButtonUnreadDot(adminInboxBtn, false);
                 }
 
                 queueMicrotask(() => {

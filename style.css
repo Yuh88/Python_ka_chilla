@@ -651,6 +651,7 @@ a {
 }
 
 .sidebar-message-btn {
+    position: relative;
     width: 100%;
     border: 1px solid rgba(148, 163, 184, 0.44);
     border-radius: 10px;
@@ -667,6 +668,33 @@ a {
 .sidebar-message-btn:hover {
     border-color: rgba(129, 140, 248, 0.7);
     background: rgba(79, 70, 229, 0.28);
+}
+
+.notification-dot {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 12px;
+    height: 12px;
+    padding: 0 3px;
+    border-radius: 999px;
+    background: #ef4444;
+    color: #ffffff;
+    font-size: 0.62rem;
+    font-weight: 700;
+    line-height: 1;
+    box-shadow: 0 0 0 2px rgba(15, 23, 42, 0.7);
+}
+
+.notification-dot.notification-dot-button {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+}
+
+.notification-dot.notification-dot-inline {
+    margin-left: auto;
+    align-self: center;
 }
 
 .global-announcement-banner {
@@ -1620,12 +1648,78 @@ body.dark-mode .answer-text strong {
     color: var(--text-muted);
     cursor: pointer;
     user-select: none;
+    position: relative;
 }
 
 .done-checkbox {
-    width: 16px;
-    height: 16px;
-    accent-color: #10b981;
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    pointer-events: none;
+}
+
+.done-toggle span {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding-left: 1.72rem;
+    transition: color 0.24s ease;
+}
+
+.done-toggle span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1.08rem;
+    height: 1.08rem;
+    border-radius: 0.34rem;
+    transform: translateY(-50%);
+    background: linear-gradient(145deg, rgba(15, 23, 42, 0.92), rgba(30, 41, 59, 0.9));
+    border: 1px solid rgba(129, 140, 248, 0.38);
+    box-shadow: 0 0 0 1px rgba(67, 56, 202, 0.18), inset 0 0 0 1px rgba(15, 23, 42, 0.35);
+    transition: border-color 0.24s ease, box-shadow 0.24s ease, background 0.24s ease, transform 0.24s ease;
+}
+
+.done-toggle span::after {
+    content: '';
+    position: absolute;
+    left: 0.32rem;
+    top: 50%;
+    width: 0.28rem;
+    height: 0.56rem;
+    border-right: 2px solid #f8fafc;
+    border-bottom: 2px solid #f8fafc;
+    transform: translateY(-60%) rotate(45deg) scale(0.75);
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.done-toggle:hover span::before {
+    border-color: rgba(167, 139, 250, 0.65);
+    box-shadow: 0 0 0 1px rgba(139, 92, 246, 0.28), 0 0 12px rgba(99, 102, 241, 0.22);
+}
+
+.done-toggle .done-checkbox:focus-visible + span::before {
+    border-color: rgba(192, 132, 252, 0.78);
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.24), 0 0 14px rgba(99, 102, 241, 0.24);
+}
+
+.done-toggle .done-checkbox:checked + span::before {
+    background: linear-gradient(145deg, rgba(180, 134, 14, 0.9), rgba(245, 158, 11, 0.92));
+    border-color: rgba(251, 191, 36, 0.95);
+    box-shadow: 0 0 0 1px rgba(245, 158, 11, 0.42), 0 0 14px rgba(245, 158, 11, 0.32);
+}
+
+.done-toggle .done-checkbox:checked + span::after {
+    opacity: 1;
+    transform: translateY(-60%) rotate(45deg) scale(1);
+}
+
+.done-toggle .done-checkbox:checked + span {
+    color: #f8fafc;
 }
 
 .question-card.is-done {
@@ -2718,6 +2812,108 @@ body.dark-mode .subject-icon {
     filter: brightness(1.2) drop-shadow(0 0 4px rgba(129, 140, 248, 0.45));
 }
 
+.why-features-section {
+    margin-top: 1rem;
+    border: 1px solid rgba(148, 163, 184, 0.26);
+    border-radius: 16px;
+    padding: 0.95rem;
+    background: linear-gradient(145deg, rgba(15, 23, 42, 0.58), rgba(30, 41, 59, 0.52));
+    box-shadow: 0 14px 30px -20px rgba(2, 6, 23, 0.8);
+}
+
+.why-features-header h2 {
+    margin: 0;
+    font-size: 1.04rem;
+    color: #f8fafc;
+}
+
+.why-features-header p {
+    margin: 0.25rem 0 0.85rem;
+    font-size: 0.85rem;
+    color: #cbd5e1;
+}
+
+.why-features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.7rem;
+}
+
+.why-feature-card {
+    border: 1px solid rgba(148, 163, 184, 0.26);
+    border-radius: 12px;
+    background: rgba(15, 23, 42, 0.64);
+    padding: 0.72rem 0.78rem;
+    transform: translateY(14px);
+    opacity: 0;
+    animation: featureSlideUpFade 0.56s ease forwards;
+    transition: transform 0.24s ease, border-color 0.24s ease, box-shadow 0.24s ease;
+}
+
+.why-feature-card:nth-child(1) { animation-delay: 0.06s; }
+.why-feature-card:nth-child(2) { animation-delay: 0.14s; }
+.why-feature-card:nth-child(3) { animation-delay: 0.22s; }
+.why-feature-card:nth-child(4) { animation-delay: 0.3s; }
+
+.why-feature-card h3 {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #e2e8f0;
+}
+
+.why-feature-card p {
+    margin: 0.35rem 0 0;
+    font-size: 0.8rem;
+    line-height: 1.45;
+    color: #94a3b8;
+}
+
+.why-feature-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(129, 140, 248, 0.52);
+    box-shadow: 0 0 0 1px rgba(129, 140, 248, 0.2), 0 10px 20px -14px rgba(79, 70, 229, 0.55);
+}
+
+@keyframes featureSlideUpFade {
+    from {
+        transform: translateY(14px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.menu-toggle-btn.attention-pulse {
+    position: relative;
+}
+
+.menu-toggle-btn.attention-pulse::after {
+    content: '';
+    position: absolute;
+    inset: -5px;
+    border-radius: 999px;
+    border: 2px solid rgba(79, 70, 229, 0.52);
+    animation: pulse-glow 1.8s ease-out infinite;
+    pointer-events: none;
+}
+
+@keyframes pulse-glow {
+    0% {
+        transform: scale(0.95);
+        opacity: 0.9;
+    }
+    70% {
+        transform: scale(1.25);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1.25);
+        opacity: 0;
+    }
+}
+
 .chapter-grid {
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
     gap: 0.85rem;
@@ -2831,6 +3027,10 @@ body.dark-mode .subject-icon {
     .subject-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 0.65rem;
+    }
+
+    .why-features-grid {
+        grid-template-columns: 1fr;
     }
 
     .chapter-grid {
