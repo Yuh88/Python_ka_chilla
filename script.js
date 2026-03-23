@@ -2583,17 +2583,93 @@ const initializeNotesCraftApp = () => {
     const encodeChapterPath = (pathSegments) => pathSegments.map(segment => String(segment)).join('||');
     const decodeChapterPath = (chapterKey) => String(chapterKey || '').split('||').filter(Boolean);
 
-    const formatChapterLabelFromPath = (subjectName, pathSegments) => {
-        if (!pathSegments.length) return 'Untitled';
+    const SUBJECT_CHAPTER_TITLES = {
+        'computer science': {
+            '1': 'INTRODUCTION TO SOFTWARE DEVELOPMENT',
+            '2': 'PYTHON PROGRAMMING',
+            '3': 'ALGORITHMS AND PROBLEM SOLVING',
+            '4': 'COMPUTATIONAL STRUCTURES',
+            '5': 'DATA ANALYTICS',
+            '6': 'EMERGING TECHNOLOGIES',
+            '7': 'LEGAL AND ETHICAL ASPECTS OF COMPUTING SYSTEM',
+            '8': 'ONLINE RESEARCH AND DIGITAL LITERACY',
+            '9': 'ENTREPRENEURSHIP IN DIGITAL AGE'
+        },
+        'english': {
+            '1': 'Khatam-un-Nabiyeen Hazrat Muhammad ﷺ',
+            '2': 'Responsibility of the Youth in Nation-Building',
+            '3': 'A Bird Came Down the Walk (Poem)',
+            '5': 'Impact of Global Warming on Pakistan',
+            '6': 'The Echoing Green (Poem)',
+            '8': 'Clean Water',
+            '10': 'The Punishment of Shahpesh, the Persian, on Khipil, the Builder',
+            '11': 'Those Winter Sundays',
+            '13': "Ruba'iyat (Poem)",
+            '14': 'The End of Beginning'
+        },
+        'physics': {
+            '1': 'MEASUREMENTS',
+            '2': 'FORCE AND MOTION',
+            '3': 'CIRCULAR AND ROTATIONAL MOTION',
+            '4': 'WORK, ENERGY AND POWER',
+            '5': 'SOLID AND FLUID DYNAMICS',
+            '6': 'HEAT AND THERMODYNAMICS',
+            '7': 'WAVE AND VIBRATIONS',
+            '8': 'PHYSICAL OPTICS AND GRAVITATIONAL WAVES',
+            '9': 'ELECTROSTATICS AND CURRENT ELECTRICITY',
+            '10': 'ELECTROMAGNETISM',
+            '11': 'SPECIAL THEORY OF RELATIVITY',
+            '12': 'NUCLEAR AND PARTICLE PHYSICS'
+        }
+    };
+
+    const getMappedChapterTitle = (subjectName, chapterId) => {
+        const normalizedSubject = String(subjectName || '').toLowerCase();
+        const subjectMap = SUBJECT_CHAPTER_TITLES[normalizedSubject];
+        if (!subjectMap) return '';
+        return subjectMap[String(chapterId)] || '';
+    };
+
+    const getChapterDisplayParts = (subjectName, pathSegments) => {
+        if (!pathSegments.length) {
+            return {
+                label: 'Untitled',
+                chapterName: '',
+                headerTitle: 'Untitled'
+            };
+        }
+
         if (subjectName === 'Islamiyat') {
-            return pathSegments.join(' - ');
+            const label = pathSegments.join(' - ');
+            return {
+                label,
+                chapterName: '',
+                headerTitle: label
+            };
         }
 
         if (pathSegments.length === 1 && /^\d+$/.test(pathSegments[0])) {
-            return `Chapter ${pathSegments[0]}`;
+            const chapterId = pathSegments[0];
+            const label = `Chapter ${chapterId}`;
+            const chapterName = getMappedChapterTitle(subjectName, chapterId);
+
+            return {
+                label,
+                chapterName,
+                headerTitle: chapterName ? `${label}: ${chapterName}` : `${label}: ${subjectName}`
+            };
         }
 
-        return pathSegments.join(' - ');
+        const label = pathSegments.join(' - ');
+        return {
+            label,
+            chapterName: '',
+            headerTitle: `${label}: ${subjectName}`
+        };
+    };
+
+    const formatChapterLabelFromPath = (subjectName, pathSegments) => {
+        return getChapterDisplayParts(subjectName, pathSegments).label;
     };
 
     const getChapterEntries = (subjectName) => {
@@ -2603,10 +2679,13 @@ const initializeNotesCraftApp = () => {
         const walk = (node, currentPath = []) => {
             if (Array.isArray(node)) {
                 if (currentPath.length) {
+                    const chapterDisplay = getChapterDisplayParts(subjectName, currentPath);
                     entries.push({
                         key: encodeChapterPath(currentPath),
                         path: currentPath,
-                        label: formatChapterLabelFromPath(subjectName, currentPath)
+                        label: chapterDisplay.label,
+                        chapterName: chapterDisplay.chapterName,
+                        headerTitle: chapterDisplay.headerTitle
                     });
                 }
                 return;
@@ -2916,7 +2995,27 @@ const initializeNotesCraftApp = () => {
             chapterCard.type = 'button';
             chapterCard.setAttribute('data-subject', subjectName);
             chapterCard.setAttribute('data-chapter', chapter.key);
-            chapterCard.textContent = chapter.label;
+
+            if (chapter.chapterName) {
+                chapterCard.classList.add('has-chapter-name');
+                if (chapter.chapterName.length > 40) {
+                    chapterCard.classList.add('is-long-title');
+                }
+
+                const chapterMain = document.createElement('span');
+                chapterMain.className = 'chapter-card-main';
+                chapterMain.textContent = chapter.label;
+
+                const chapterName = document.createElement('span');
+                chapterName.className = 'chapter-card-name';
+                chapterName.textContent = chapter.chapterName;
+
+                chapterCard.appendChild(chapterMain);
+                chapterCard.appendChild(chapterName);
+            } else {
+                chapterCard.textContent = chapter.label;
+            }
+
             chapterList.appendChild(chapterCard);
         });
 
@@ -2944,7 +3043,8 @@ const initializeNotesCraftApp = () => {
             bannerBadge.innerText = subjectName;
         }
         if (bannerTitle) {
-            bannerTitle.innerText = `${formatChapterLabelFromPath(subjectName, decodeChapterPath(chapterName))}: ${subjectName}`;
+            const chapterDisplay = getChapterDisplayParts(subjectName, decodeChapterPath(chapterName));
+            bannerTitle.innerText = chapterDisplay.headerTitle;
         }
         if (bannerSubtitle) {
             bannerSubtitle.innerText = 'Focused revision view for board preparation.';

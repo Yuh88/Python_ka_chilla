@@ -2941,6 +2941,45 @@ body.dark-mode .subject-icon {
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 
+.chapter-card.has-chapter-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.32rem;
+    text-align: left;
+}
+
+.chapter-card-main {
+    display: block;
+    font-size: 0.74rem;
+    font-weight: 500;
+    line-height: 1.25;
+    color: #dbeafe;
+    opacity: 0.92;
+    width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+.chapter-card-name {
+    display: block;
+    font-size: 0.84rem;
+    font-weight: 700;
+    line-height: 1.35;
+    color: #cbd5e1;
+    letter-spacing: 0.01em;
+    text-transform: none;
+    width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+.chapter-card.has-chapter-name.is-long-title .chapter-card-name {
+    font-size: 0.72rem;
+    line-height: 1.28;
+}
+
 .chapter-card:hover {
     transform: translateY(-5px);
     border-color: rgba(88, 166, 255, 0.46);
@@ -3048,6 +3087,23 @@ body.dark-mode .subject-icon {
         min-height: 58px;
         padding: 0.8rem 0.72rem;
         border-radius: 12px;
+    }
+
+    .chapter-card.has-chapter-name {
+        gap: 0.24rem;
+    }
+
+    .chapter-card-main {
+        font-size: 0.7rem;
+    }
+
+    .chapter-card-name {
+        font-size: 0.76rem;
+        line-height: 1.28;
+    }
+
+    .chapter-card.has-chapter-name.is-long-title .chapter-card-name {
+        font-size: 0.66rem;
     }
 
     .subject-name {
