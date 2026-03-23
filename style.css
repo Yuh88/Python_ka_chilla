@@ -141,7 +141,9 @@ a {
 
     z-index: 100;
 
-    transition: transform 0.3s ease;
+    transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+    transform: translateZ(0);
 
     box-shadow: 10px 0 34px rgba(2, 6, 23, 0.28);
 
@@ -1485,7 +1487,7 @@ a {
 
 .question-card:hover {
 
-    transform: translateY(-3px);
+    transform: translateY(-2px);
 
     box-shadow: var(--shadow-hover);
 
@@ -2319,11 +2321,11 @@ body, html { max-width: 100%; overflow-x: hidden; width: 100%; }
 }
 
 .main-wrapper {
-    transition: margin-left 0.3s ease, width 0.3s ease;
+    transition: none;
 }
 
 .sidebar {
-    transition: transform 0.3s ease;
+    transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body.sidebar-collapsed .sidebar {
@@ -2421,7 +2423,7 @@ body.splash-active {
     align-items: center;
     justify-content: center;
     padding: 1.5rem;
-    background: radial-gradient(circle at 20% 20%, #4338ca 0%, #1e1b4b 55%, #0f172a 100%);
+    background: linear-gradient(155deg, #312e81 0%, #1e1b4b 45%, #0f172a 100%);
     color: #eef2ff;
     opacity: 1;
     transform: translateY(0);
@@ -2550,6 +2552,8 @@ body.splash-active {
 .subject-dashboard-view,
 .chapter-selection-view {
     margin-bottom: 1.5rem;
+    content-visibility: auto;
+    contain-intrinsic-size: 700px;
 }
 
 .bismillah-banner {
@@ -2719,9 +2723,6 @@ body.splash-active {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 0.9rem;
 }
-    font-family: 'Noto Nastaliq Urdu', 'Noto Naskh Arabic', 'Jameel Noori Nastaleeq', 'Segoe UI', serif;
-    text-align: right;
-    direction: rtl;
 
 .subject-card,
 .chapter-card {
@@ -2751,7 +2752,7 @@ body.splash-active {
 
 .subject-card:hover,
 .chapter-card:hover {
-    transform: translateY(-3px) scale(1.03);
+    transform: translateY(-2px) scale(1.01);
     border-color: rgba(79, 70, 229, 0.35);
     box-shadow: var(--shadow-hover);
 }
@@ -3172,6 +3173,8 @@ body.dark-mode .subject-icon {
     border-radius: var(--radius-xl);
     padding: 1rem;
     box-shadow: var(--shadow-soft);
+    content-visibility: auto;
+    contain-intrinsic-size: 420px;
 }
 
 .comments-section-header h3 {

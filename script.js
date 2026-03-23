@@ -165,7 +165,8 @@ const initializeNotesCraftApp = () => {
             window.setTimeout(startFeatureTour, 760);
         };
 
-        window.setTimeout(closeOnce, 3000);
+        const splashDisplayDuration = window.matchMedia('(max-width: 768px)').matches ? 1400 : 2600;
+        window.setTimeout(closeOnce, splashDisplayDuration);
 
     };
 
@@ -2778,23 +2779,35 @@ const initializeNotesCraftApp = () => {
         });
 
         const emptyHtml = '<div class="chapter-empty-state">No questions in this category yet.</div>';
-        paneMost.innerHTML = grouped.most.length
+        const mostHtml = grouped.most.length
             ? grouped.most.map((entry) => createQuestionCardHtml(entry, { subjectName, chapterName, categoryKey: 'most' })).join('')
             : emptyHtml;
-        paneImportant.innerHTML = grouped.important.length
+        const importantHtml = grouped.important.length
             ? grouped.important.map((entry) => createQuestionCardHtml(entry, { subjectName, chapterName, categoryKey: 'important' })).join('')
             : emptyHtml;
-        paneConceptual.innerHTML = grouped.conceptual.length
+        const conceptualHtml = grouped.conceptual.length
             ? grouped.conceptual.map((entry) => createQuestionCardHtml(entry, { subjectName, chapterName, categoryKey: 'conceptual' })).join('')
             : emptyHtml;
 
-        applyStoredCardStates();
-        runSearchFilter();
-        runFlashcardSync();
+        paneMost.innerHTML = '';
+        paneImportant.innerHTML = '';
+        paneConceptual.innerHTML = '';
 
-        if (window.MathJax && typeof window.MathJax.typesetPromise === 'function') {
-            window.MathJax.typesetPromise();
-        }
+        window.requestAnimationFrame(() => {
+            paneMost.innerHTML = mostHtml;
+            paneImportant.innerHTML = importantHtml;
+            paneConceptual.innerHTML = conceptualHtml;
+
+            window.requestAnimationFrame(() => {
+                applyStoredCardStates();
+                runSearchFilter();
+                runFlashcardSync();
+
+                if (window.MathJax && typeof window.MathJax.typesetPromise === 'function') {
+                    window.MathJax.typesetPromise();
+                }
+            });
+        });
     };
 
     const buildNavState = (view, subject = null, chapter = null) => ({
