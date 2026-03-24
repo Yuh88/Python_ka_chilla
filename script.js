@@ -1,7 +1,5 @@
 const initializeNotesCraftApp = () => {
-    window.openModelPapers = function openModelPapers() {
-        alert('Model Papers section coming soon!');
-    };
+    window.openModelPapers = function openModelPapers() {};
 
     const splashKey = 'notescraft_splash_seen';
     const splash = document.getElementById('firstVisitSplash');
@@ -2736,6 +2734,10 @@ const initializeNotesCraftApp = () => {
         }
     };
 
+    const openModelPaperSubject = (subjectName) => {
+        alert(`${subjectName} Model Paper 2026 content coming soon!`);
+    };
+
     const clearRenderedQuestionContent = () => {
         const paneMost = document.getElementById('tab-most-important');
         const paneImportant = document.getElementById('tab-important');
@@ -2773,7 +2775,11 @@ const initializeNotesCraftApp = () => {
 
         showElement(persistentBackBtn);
         persistentBackBtn.dataset.mode = mode;
-        const label = mode === 'subjects' ? 'Back to Subjects' : 'Back to Chapters';
+        const label = mode === 'subjects'
+            ? 'Back to Subjects'
+            : mode === 'model-papers'
+                ? 'Back to Main Menu'
+                : 'Back to Chapters';
         persistentBackBtn.setAttribute('aria-label', label);
         persistentBackBtn.setAttribute('title', label);
     };
@@ -2905,6 +2911,10 @@ const initializeNotesCraftApp = () => {
             return buildNavState('dashboard');
         }
 
+        if (state.view === 'model-papers') {
+            return buildNavState('model-papers');
+        }
+
         if (state.view === 'chapters' && state.subject) {
             return buildNavState('chapters', state.subject);
         }
@@ -2945,6 +2955,64 @@ const initializeNotesCraftApp = () => {
         renderDailyWisdom();
     };
 
+    const showModelPapersMenu = () => {
+        activeSubject = null;
+        activeChapter = null;
+        clearRenderedQuestionContent();
+        setFlashcardFabVisibility(false);
+        setCommentsSectionVisibility(false);
+
+        hideElement(subjectDashboardView);
+        showElement(chapterSelectionView);
+        hideElement(chapterHeaderBanner);
+        hideElement(tabNavigation);
+        hideElement(questionsFeed);
+        hideElement(contentUnavailable);
+        setBackButtonState('model-papers');
+        resetDropdownActiveState();
+        setExpandedSidebarSubject('', false);
+
+        if (chapterSelectionTitle) {
+            chapterSelectionTitle.innerText = 'Board Model Papers (Solved)';
+        }
+
+        if (!chapterList) return;
+
+        chapterList.classList.add('model-papers-grid');
+        chapterList.innerHTML = '';
+
+        const modelPaperSubjects = [
+            { key: 'Computer Science', icon: '💻' },
+            { key: 'English', icon: '📘' },
+            { key: 'Physics', icon: '🧪' }
+        ];
+
+        modelPaperSubjects.forEach((entry) => {
+            const card = document.createElement('button');
+            card.type = 'button';
+            card.className = 'chapter-card model-paper-card';
+
+            const title = document.createElement('span');
+            title.className = 'model-paper-card-title';
+            title.textContent = `${entry.icon} ${entry.key}`;
+
+            const subtitle = document.createElement('span');
+            subtitle.className = 'model-paper-card-subtitle';
+            subtitle.textContent = 'Model Paper 2026';
+
+            card.appendChild(title);
+            card.appendChild(subtitle);
+            card.addEventListener('click', () => {
+                openModelPaperSubject(entry.key);
+            });
+            chapterList.appendChild(card);
+        });
+    };
+
+    window.openModelPapers = function openModelPapers() {
+        navigateToState(buildNavState('model-papers'), 'forward');
+    };
+
     const showSubjectDashboard = () => {
         activeSubject = null;
         activeChapter = null;
@@ -2961,6 +3029,9 @@ const initializeNotesCraftApp = () => {
         setBackButtonState('none');
         resetDropdownActiveState();
         setExpandedSidebarSubject('', false);
+        if (chapterList) {
+            chapterList.classList.remove('model-papers-grid');
+        }
     };
 
     const showChapterSelection = (subjectName) => {
@@ -2986,6 +3057,8 @@ const initializeNotesCraftApp = () => {
 
         const chapters = getChapterEntries(subjectName);
         if (!chapterList) return;
+
+        chapterList.classList.remove('model-papers-grid');
 
         if (chapters.length === 0) {
             chapterList.innerHTML = '<div class="chapter-empty-state">Content Coming Soon</div>';
@@ -3090,7 +3163,9 @@ const initializeNotesCraftApp = () => {
     const renderNavState = (state, direction = 'none') => {
         const safeState = normalizeNavState(state);
 
-        if (safeState.view === 'chapters' && safeState.subject) {
+        if (safeState.view === 'model-papers') {
+            showModelPapersMenu();
+        } else if (safeState.view === 'chapters' && safeState.subject) {
             showChapterSelection(safeState.subject);
         } else if (safeState.view === 'content' && safeState.subject && safeState.chapter) {
             showChapterContent(safeState.subject, safeState.chapter);
@@ -3201,6 +3276,8 @@ const initializeNotesCraftApp = () => {
             const mode = persistentBackBtn.dataset.mode;
             if (mode === 'chapters' || mode === 'subjects') {
                 history.back();
+            } else if (mode === 'model-papers') {
+                navigateToState(buildNavState('dashboard'), 'back');
             }
         });
     }

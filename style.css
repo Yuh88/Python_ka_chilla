@@ -2989,6 +2989,48 @@ body.dark-mode .subject-icon {
     align-items: stretch;
 }
 
+.chapter-grid.model-papers-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.95rem;
+}
+
+.model-paper-card {
+    border: 1px solid rgba(250, 204, 21, 0.5);
+    background:
+        linear-gradient(#12151d, #12151d) padding-box,
+        linear-gradient(135deg, rgba(250, 204, 21, 0.42), rgba(56, 189, 248, 0.36)) border-box;
+    min-height: 120px;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.model-paper-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(252, 211, 77, 0.72);
+    box-shadow: 0 0 0 1px rgba(252, 211, 77, 0.28), 0 16px 30px -16px rgba(251, 191, 36, 0.58);
+}
+
+.model-paper-card-title {
+    display: block;
+    font-size: 0.98rem;
+    font-weight: 700;
+    line-height: 1.32;
+    color: #fef9c3;
+}
+
+.model-paper-card-subtitle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #dbeafe;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
 .chapter-card {
     border: 1px solid transparent;
     border-radius: 14px;
@@ -3144,6 +3186,23 @@ body.dark-mode .subject-icon {
     .chapter-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 0.7rem;
+    }
+
+    .chapter-grid.model-papers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .model-paper-card {
+        min-height: 96px;
+        padding: 0.84rem 0.78rem;
+    }
+
+    .model-paper-card-title {
+        font-size: 0.9rem;
+    }
+
+    .model-paper-card-subtitle {
+        font-size: 0.72rem;
     }
 
     .subject-card {
