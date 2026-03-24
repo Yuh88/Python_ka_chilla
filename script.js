@@ -1,4 +1,8 @@
 const initializeNotesCraftApp = () => {
+    window.openModelPapers = function openModelPapers() {
+        alert('Model Papers section coming soon!');
+    };
+
     const splashKey = 'notescraft_splash_seen';
     const splash = document.getElementById('firstVisitSplash');
     const isFirstVisit = !document.documentElement.classList.contains('returning-visitor');
