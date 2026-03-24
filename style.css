@@ -1535,11 +1535,11 @@ a {
 
 .question-title {
 
-    font-size: 1.25rem;
+    font-size: 1.1rem;
 
     font-weight: 600;
 
-    color: var(--text-primary);
+    color: #d1d5db;
 
     line-height: 1.4;
 
