@@ -3011,6 +3011,7 @@ const initializeNotesCraftApp = () => {
 
     window.openModelPapers = function openModelPapers() {
         navigateToState(buildNavState('model-papers'), 'forward');
+        closeSidebarAfterNavigation();
     };
 
     const showSubjectDashboard = () => {
@@ -3186,6 +3187,7 @@ const initializeNotesCraftApp = () => {
         sidebarHomeLink.addEventListener('click', (event) => {
             event.preventDefault();
             navigateToState(buildNavState('dashboard'), 'back');
+            closeSidebarAfterNavigation();
         });
     }
 
@@ -3216,6 +3218,7 @@ const initializeNotesCraftApp = () => {
             }
 
             navigateToState(buildNavState('chapters', subjectName), 'forward');
+            closeSidebarAfterNavigation();
         });
     });
 

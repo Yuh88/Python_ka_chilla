@@ -10,6 +10,12 @@ SUBJECT_MENU = {
     "5": "Tarjama-tul-Quran",
 }
 
+MODEL_PAPER_SUBJECT_MENU = {
+    "1": "Computer Science",
+    "2": "English",
+    "3": "Physics",
+}
+
 CATEGORY_MENU = {
     "1": "most",
     "2": "important",
@@ -34,23 +40,41 @@ def clean_menu_token(raw_value: str):
     return value.upper()
 
 
-def read_site_data(js_path: Path):
+def read_js_data_block(js_path: Path, const_name: str, window_name: str):
     content = js_path.read_text(encoding="utf-8")
+    escaped_const_name = re.escape(const_name)
+    escaped_window_name = re.escape(window_name)
     pattern = re.compile(
-        r"(const\s+siteData\s*=\s*)(\{[\s\S]*?\})(\s*;\s*window\.siteData\s*=\s*siteData\s*;)"
+        rf"(const\s+{escaped_const_name}\s*=\s*)(\{{[\s\S]*?\}})(\s*;\s*window\.{escaped_window_name}\s*=\s*{escaped_const_name}\s*;)"
     )
     match = pattern.search(content)
     if not match:
-        raise ValueError("Could not find siteData object in content_data.js")
+        raise ValueError(f"Could not find {const_name} object in content_data.js")
 
     data_obj = json.loads(match.group(2))
     return content, match, data_obj
 
 
-def write_site_data(js_path: Path, original_content: str, match, data_obj):
+def read_site_data(js_path: Path):
+    return read_js_data_block(js_path, const_name="siteData", window_name="siteData")
+
+
+def read_model_papers_data(js_path: Path):
+    return read_js_data_block(js_path, const_name="modelPapersData", window_name="modelPapersData")
+
+
+def write_js_data_block(js_path: Path, original_content: str, match, data_obj):
     json_blob = json.dumps(data_obj, indent=2, ensure_ascii=False)
     updated_content = original_content[: match.start(2)] + json_blob + original_content[match.end(2):]
     js_path.write_text(updated_content, encoding="utf-8")
+
+
+def write_site_data(js_path: Path, original_content: str, match, data_obj):
+    write_js_data_block(js_path, original_content, match, data_obj)
+
+
+def write_model_papers_data(js_path: Path, original_content: str, match, data_obj):
+    write_js_data_block(js_path, original_content, match, data_obj)
 
 
 def choose_subject():
@@ -65,6 +89,20 @@ def choose_subject():
         if choice in SUBJECT_MENU:
             return SUBJECT_MENU[choice]
         print("Invalid choice. Please enter a number between 1 and 5.")
+
+
+def choose_model_paper_subject():
+    print("\nSelect Model Paper Subject:")
+    for key, value in MODEL_PAPER_SUBJECT_MENU.items():
+        print(f"{key}. {value}")
+
+    while True:
+        choice = prompt_with_back("Enter choice (1-3)")
+        if choice is None:
+            return None
+        if choice in MODEL_PAPER_SUBJECT_MENU:
+            return MODEL_PAPER_SUBJECT_MENU[choice]
+        print("Invalid choice. Please enter a number between 1 and 3.")
 
 
 def choose_chapter():
@@ -110,13 +148,14 @@ def choose_main_menu_action():
     print("[1] Add New Questions (Single/Bulk)")
     print("[2] Delete a Question")
     print("[3] Exit")
+    print("[4] Add Model Paper Content")
     while True:
-        action = prompt_with_back("Choose action (1-3)")
+        action = prompt_with_back("Choose action (1-4)")
         if action is None:
             return "3"
-        if action in {"1", "2", "3"}:
+        if action in {"1", "2", "3", "4"}:
             return action
-        print("Invalid choice. Please enter 1, 2, or 3.")
+        print("Invalid choice. Please enter 1, 2, 3, or 4.")
 
 
 def normalize_category(raw_value: str):
@@ -239,6 +278,20 @@ def append_and_save(js_path, original_content, match, data_obj, subject, chapter
     ensure_structure(data_obj, subject, chapter)
     data_obj[subject][chapter].extend(entries)
     write_site_data(js_path, original_content, match, data_obj)
+    return len(entries)
+
+
+def ensure_model_paper_structure(data_obj, subject):
+    if subject not in data_obj or not isinstance(data_obj[subject], list):
+        data_obj[subject] = []
+
+
+def append_model_papers_and_save(js_path, original_content, match, data_obj, subject, entries):
+    if not entries:
+        return 0
+    ensure_model_paper_structure(data_obj, subject)
+    data_obj[subject].extend(entries)
+    write_model_papers_data(js_path, original_content, match, data_obj)
     return len(entries)
 
 
@@ -628,6 +681,49 @@ def run_add_questions_flow(js_path, original_content, match, data_obj):
                 return
 
 
+def run_add_model_papers_flow(js_path, original_content, match, data_obj):
+    while True:
+        subject = choose_model_paper_subject()
+        if subject is None:
+            return
+
+        ensure_model_paper_structure(data_obj, subject)
+
+        while True:
+            mode = choose_mode()
+            if mode is None:
+                break
+
+            def save_callback(entries):
+                try:
+                    return append_model_papers_and_save(
+                        js_path=js_path,
+                        original_content=original_content,
+                        match=match,
+                        data_obj=data_obj,
+                        subject=subject,
+                        entries=entries,
+                    )
+                except Exception as exc:
+                    print(f"Error writing {js_path.name}: {exc}")
+                    return 0
+
+            if mode == "1":
+                total_saved, went_back = collect_single_entries(save_callback)
+            else:
+                total_saved, went_back = collect_bulk_entries(save_callback)
+
+            if total_saved > 0:
+                print(f"\nSaved {total_saved} model paper item(s) to {subject} in {js_path.name}.")
+            else:
+                print("No model paper entries were saved.")
+
+            if went_back:
+                continue
+
+            return
+
+
 def run_delete_specific_numbers_flow(js_path, original_content, match, data_obj):
     while True:
         subject = choose_subject()
@@ -807,6 +903,14 @@ def main():
             run_add_questions_flow(js_path, original_content, match, data_obj)
         elif action == "2":
             run_delete_question_flow(js_path, original_content, match, data_obj)
+        elif action == "4":
+            try:
+                model_original_content, model_match, model_papers_data_obj = read_model_papers_data(js_path)
+            except Exception as exc:
+                print(f"Error reading model papers data in {js_path.name}: {exc}")
+                continue
+
+            run_add_model_papers_flow(js_path, model_original_content, model_match, model_papers_data_obj)
         else:
             print("Exiting injector bot.")
             return

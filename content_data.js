@@ -23666,3 +23666,11 @@ const siteData = {
 };
 
 window.siteData = siteData;
+
+const modelPapersData = {
+  "Computer Science": [],
+  "English": [],
+  "Physics": []
+};
+
+window.modelPapersData = modelPapersData;
