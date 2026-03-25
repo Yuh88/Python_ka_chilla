@@ -2926,6 +2926,92 @@ const initializeNotesCraftApp = () => {
         return buildNavState('dashboard');
     };
 
+    const slugifyRouteSegment = (value) => String(value || '')
+        .toLowerCase()
+        .trim()
+        .replace(/[^a-z0-9\s-]/g, '')
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-');
+
+    const getSubjectSlug = (subjectName) => slugifyRouteSegment(subjectName);
+
+    const getChapterSlug = (subjectName, chapterKey) => {
+        const pathSegments = decodeChapterPath(chapterKey);
+        const chapterLabel = formatChapterLabelFromPath(subjectName, pathSegments);
+        return slugifyRouteSegment(chapterLabel);
+    };
+
+    const getRoutePathFromState = (state) => {
+        const safeState = normalizeNavState(state);
+
+        if (safeState.view === 'model-papers') {
+            return '/model-papers';
+        }
+
+        if (safeState.view === 'chapters' && safeState.subject) {
+            return `/${getSubjectSlug(safeState.subject)}`;
+        }
+
+        if (safeState.view === 'content' && safeState.subject && safeState.chapter) {
+            return `/${getSubjectSlug(safeState.subject)}/${getChapterSlug(safeState.subject, safeState.chapter)}`;
+        }
+
+        return '/';
+    };
+
+    const getSubjectBySlug = (subjectSlug) => {
+        const normalizedSlug = slugifyRouteSegment(subjectSlug);
+        return Object.keys(siteData).find((subjectName) => getSubjectSlug(subjectName) === normalizedSlug) || null;
+    };
+
+    const getChapterKeyBySlug = (subjectName, chapterSlug) => {
+        const normalizedSlug = slugifyRouteSegment(chapterSlug);
+        const chapterEntry = getChapterEntries(subjectName).find((entry) => {
+            return getChapterSlug(subjectName, entry.key) === normalizedSlug;
+        });
+        return chapterEntry ? chapterEntry.key : null;
+    };
+
+    const getStateFromPathname = (pathname) => {
+        const rawSegments = String(pathname || '/')
+            .split('/')
+            .map((segment) => segment.trim())
+            .filter(Boolean)
+            .map((segment) => {
+                try {
+                    return decodeURIComponent(segment);
+                } catch {
+                    return segment;
+                }
+            });
+
+        if (!rawSegments.length) {
+            return buildNavState('dashboard');
+        }
+
+        const firstSegment = slugifyRouteSegment(rawSegments[0]);
+
+        if (firstSegment === 'model-papers') {
+            return buildNavState('model-papers');
+        }
+
+        const subjectName = getSubjectBySlug(firstSegment);
+        if (!subjectName) {
+            return buildNavState('dashboard');
+        }
+
+        if (rawSegments.length === 1) {
+            return buildNavState('chapters', subjectName);
+        }
+
+        const chapterKey = getChapterKeyBySlug(subjectName, rawSegments[1]);
+        if (chapterKey) {
+            return buildNavState('content', subjectName, chapterKey);
+        }
+
+        return buildNavState('chapters', subjectName);
+    };
+
     const renderDailyWisdom = () => {
         if (!dailyWisdomQuote || !dailyWisdomSource || !DAILY_WISDOM_URDU.length) return;
 
@@ -3179,15 +3265,27 @@ const initializeNotesCraftApp = () => {
 
     const navigateToState = (state, direction = 'forward') => {
         const safeState = normalizeNavState(state);
-        history.pushState(safeState, '', window.location.href);
+        const routePath = getRoutePathFromState(safeState);
+        history.pushState(safeState, '', routePath);
         renderNavState(safeState, direction);
     };
 
     if (sidebarHomeLink) {
+        sidebarHomeLink.setAttribute('href', '/');
         sidebarHomeLink.addEventListener('click', (event) => {
             event.preventDefault();
             navigateToState(buildNavState('dashboard'), 'back');
             closeSidebarAfterNavigation();
+        });
+    }
+
+    const sidebarModelPapersLink = document.querySelector('.sidebar-modelpapers-link');
+    if (sidebarModelPapersLink) {
+        sidebarModelPapersLink.setAttribute('href', '/model-papers');
+        sidebarModelPapersLink.removeAttribute('onclick');
+        sidebarModelPapersLink.addEventListener('click', (event) => {
+            event.preventDefault();
+            window.openModelPapers();
         });
     }
 
@@ -3201,9 +3299,14 @@ const initializeNotesCraftApp = () => {
     });
 
     subjectLinks.forEach(link => {
+        const subjectName = link.getAttribute('data-subject') || link.innerText.trim();
+        if (subjectName) {
+            link.setAttribute('href', `/${getSubjectSlug(subjectName)}`);
+        }
+
         link.addEventListener('click', (event) => {
             event.preventDefault();
-            const subjectName = link.getAttribute('data-subject') || link.innerText.trim();
+            const selectedSubjectName = link.getAttribute('data-subject') || link.innerText.trim();
 
             const sidebarItem = link.closest('.sidebar .nav-item.has-dropdown');
             if (sidebarItem) {
@@ -3217,7 +3320,7 @@ const initializeNotesCraftApp = () => {
                 sidebarItem.classList.add('expanded');
             }
 
-            navigateToState(buildNavState('chapters', subjectName), 'forward');
+            navigateToState(buildNavState('chapters', selectedSubjectName), 'forward');
             closeSidebarAfterNavigation();
         });
     });
@@ -3240,7 +3343,7 @@ const initializeNotesCraftApp = () => {
 
             chapterEntries.forEach(chapter => {
                 const link = document.createElement('a');
-                link.href = '#';
+                link.href = `/${getSubjectSlug(subjectName)}/${getChapterSlug(subjectName, chapter.key)}`;
                 link.className = 'dropdown-link';
                 link.setAttribute('data-chapter-key', chapter.key);
                 link.textContent = chapter.label;
@@ -3285,12 +3388,27 @@ const initializeNotesCraftApp = () => {
         });
     }
 
+    window.openSubject = function openSubject(subjectName) {
+        if (!subjectName) return;
+        navigateToState(buildNavState('chapters', subjectName), 'forward');
+    };
+
+    window.openChapter = function openChapter(subjectName, chapterName) {
+        if (!subjectName || !chapterName) return;
+        navigateToState(buildNavState('content', subjectName, chapterName), 'forward');
+    };
+
     window.addEventListener('popstate', (event) => {
-        renderNavState(event.state, 'back');
+        const stateFromHistory = event.state && event.state[navStateKey] === true
+            ? event.state
+            : getStateFromPathname(window.location.pathname);
+        renderNavState(stateFromHistory, 'back');
     });
 
-    const initialState = normalizeNavState(history.state);
-    history.replaceState(initialState, '', window.location.href);
+    const initialState = history.state && history.state[navStateKey] === true
+        ? normalizeNavState(history.state)
+        : getStateFromPathname(window.location.pathname);
+    history.replaceState(initialState, '', getRoutePathFromState(initialState));
     renderNavState(initialState, 'none');
 
     // 6. Back To Top Button
