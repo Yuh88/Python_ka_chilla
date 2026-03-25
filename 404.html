@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+      // Save the path the user was trying to access
+      sessionStorage.setItem('spaRedirect', window.location.pathname);
+      // Redirect them back to the main index.html
+      window.location.replace('/');
+    </script>
+  </head>
+  <body></body>
+</html>
