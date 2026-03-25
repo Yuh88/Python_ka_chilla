@@ -1,4 +1,4 @@
-/* ==========================================================================
+﻿/* ==========================================================================
 
     NotesCraft - Premium Dashboard Stylesheet
 
@@ -1455,7 +1455,7 @@ a {
 
 
 
-.banner-content h1 {
+.banner-content h2 {
 
     font-size: 2rem;
 
@@ -1801,16 +1801,20 @@ body.flashcard-mode .question-card.revealed .a-body {
 /* Main Footer */
 
 .main-footer {
-
     text-align: center;
-
-    padding: 3rem 0;
-
-    color: var(--text-muted);
-
-    font-size: 0.9rem;
-
+    padding: 30px 15px;
+    margin-top: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #a0a0b0;
+    font-size: 0.85rem;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 1.6;
 }
+
+.main-footer p { margin: 5px 0 10px; }
+.main-footer a { color: #a0a0b0; text-decoration: none; }
+.main-footer a:hover { color: #ffffff; }
 
 
 
@@ -2053,7 +2057,7 @@ body, .sidebar, .topbar, .question-card, .search-container, .card-footer, .theme
 
     }
 
-    .banner-content h1 {
+    .banner-content h2 {
 
         font-size: 1.6rem;
 
@@ -2308,7 +2312,7 @@ body, html { max-width: 100%; overflow-x: hidden; width: 100%; }
   .chapter-header-banner { padding: 1rem 1.25rem; }
   .questions-feed { gap: 0.75rem; }
   .question-card { padding: 0.85rem; }
-  .banner-content h1 { font-size: 1.4rem; }
+  .banner-content h2 { font-size: 1.4rem; }
   .q-header { display: flex; flex-direction: row; flex-wrap: wrap; align-items: flex-start; }
   .q-header .question-title { flex: 1 1 0%; min-width: 0; }
 
@@ -2618,7 +2622,7 @@ body.splash-active {
     box-shadow: var(--shadow-soft);
 }
 
-.subject-hero-banner h1 {
+.subject-hero-banner h2 {
     font-size: clamp(1rem, 2.2vw, 1.35rem);
     font-weight: 700;
     letter-spacing: 0.01em;
@@ -3663,3 +3667,5 @@ body.dark-mode .subject-icon {
         transform: translateX(0);
     }
 }
+
+
