@@ -3240,6 +3240,7 @@ const initializeNotesCraftApp = () => {
             chapterCard.type = 'button';
             chapterCard.setAttribute('data-subject', subjectName);
             chapterCard.setAttribute('data-chapter', chapter.key);
+            chapterCard.setAttribute('aria-label', `${subjectName} ${chapter.label}`.replace(/\s+/g, ' ').trim());
 
             if (chapter.chapterName) {
                 chapterCard.classList.add('has-chapter-name');
@@ -3427,6 +3428,7 @@ const initializeNotesCraftApp = () => {
                 link.href = withBasePrefix(`/${getSubjectSlug(subjectName)}/${getChapterSlug(subjectName, chapter.key)}`);
                 link.className = 'dropdown-link';
                 link.setAttribute('data-chapter-key', chapter.key);
+                link.setAttribute('aria-label', `${subjectName} ${chapter.label}`.replace(/\s+/g, ' ').trim());
                 link.textContent = chapter.label;
                 dropdownMenu.appendChild(link);
             });
