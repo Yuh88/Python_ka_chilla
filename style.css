@@ -2856,8 +2856,7 @@ body.splash-active {
     overflow: hidden;
     white-space: nowrap;
     width: 0;
-    border-right: 2px solid currentColor;
-    animation: typing 2.8s steps(40, end) 0.1s forwards, blink-caret 0.75s step-end infinite;
+    animation: typing 2.8s steps(40, end) 0.1s forwards;
 }
 
 @keyframes fadeInUp {
@@ -2877,16 +2876,6 @@ body.splash-active {
     }
     to {
         width: 100%;
-    }
-}
-
-@keyframes blink-caret {
-    from,
-    to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: currentColor;
     }
 }
 
