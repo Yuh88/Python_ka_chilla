@@ -162,16 +162,17 @@ const initializeNotesCraftApp = () => {
     };
 
     const hideSplash = () => {
-        if (!splash || splash.classList.contains('is-exiting') || splash.classList.contains('is-hidden')) {
+        if (!splash || splash.classList.contains('fade-out') || splash.classList.contains('is-hidden')) {
             return;
         }
 
-        splash.classList.add('is-exiting');
+        splash.classList.add('fade-out');
         document.body.classList.remove('splash-active');
 
         window.setTimeout(() => {
             splash.classList.add('is-hidden');
-        }, 700);
+            splash.style.display = 'none';
+        }, 500);
     };
 
     const initFirstVisitSplash = () => {
