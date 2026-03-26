@@ -356,7 +356,13 @@ const initializeNotesCraftApp = () => {
     const flashcardStorageKey = 'notescraft_flashcard_mode';
     let isFlashcardMode = false;
     let completedQuestionIds = new Set();
+    let savedQuestionIds = new Set();
     let currentAuthenticatedUser = null;
+    let bookmarksUnsubscribe = null;
+    let bookmarksListenerUid = '';
+    let currentChapterQuestionList = [];
+    let currentChapterSubjectName = '';
+    let currentChapterName = '';
 
     const moonIcon = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>`;
     const sunIcon = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>`;
@@ -1998,6 +2004,7 @@ const initializeNotesCraftApp = () => {
                 if (currentAuthenticatedUser && currentAuthenticatedUser.uid) {
                     queueMicrotask(() => {
                         loadProgressFromFirestore(currentAuthenticatedUser.uid);
+                        startBookmarksRealtimeListener(currentAuthenticatedUser.uid);
                         ensureUserProfileSetup(currentAuthenticatedUser);
 
                         if (!isCurrentUserAdmin()) {
@@ -2007,7 +2014,11 @@ const initializeNotesCraftApp = () => {
                 } else {
                     queueMicrotask(() => {
                         applyStoredCardStates();
+                        savedQuestionIds.clear();
+                        applyBookmarkedCardStates();
+                        renderBookmarkedPane();
                     });
+                    stopBookmarksRealtimeListener();
                     pendingProfileSetupUid = '';
                     isNewProfileDocument = false;
                     closeProfileSetupModal();
@@ -2434,9 +2445,28 @@ const initializeNotesCraftApp = () => {
         });
     };
 
+    const handleBookmarkInteractions = () => {
+        document.addEventListener('click', (event) => {
+            const bookmarkBtn = event.target.closest('.bookmark-btn');
+            if (!bookmarkBtn) return;
+
+            event.preventDefault();
+            event.stopPropagation();
+
+            const questionCard = bookmarkBtn.closest('.question-card');
+            if (!questionCard) return;
+
+            const questionId = questionCard.getAttribute('data-question-id');
+            if (!questionId) return;
+
+            toggleBookmark(questionId);
+        });
+    };
+
     runSearchFilter = initSearch();
     runFlashcardSync = initFlashcardInteractions();
     handleProgress();
+    handleBookmarkInteractions();
 
     // 5. Subject Dashboard → Chapters → Content Flow
 
@@ -2524,6 +2554,165 @@ const initializeNotesCraftApp = () => {
         }
     };
 
+    const getCurrentAuthUser = () => {
+        if (firebaseAuthInstance && firebaseAuthInstance.auth && firebaseAuthInstance.auth.currentUser) {
+            return firebaseAuthInstance.auth.currentUser;
+        }
+        return currentAuthenticatedUser;
+    };
+
+    const applyBookmarkedCardStates = () => {
+        document.querySelectorAll('.question-card').forEach((card) => {
+            const questionId = card.getAttribute('data-question-id');
+            if (!questionId) return;
+
+            const isBookmarked = savedQuestionIds.has(questionId);
+            card.classList.toggle('bookmarked', isBookmarked);
+
+            const bookmarkBtn = card.querySelector('.bookmark-btn');
+            if (!bookmarkBtn) return;
+
+            bookmarkBtn.classList.toggle('is-active', isBookmarked);
+            bookmarkBtn.setAttribute('aria-pressed', String(isBookmarked));
+            bookmarkBtn.setAttribute('title', isBookmarked ? 'Remove bookmark' : 'Save question');
+
+            const icon = bookmarkBtn.querySelector('i');
+            if (icon) {
+                icon.classList.toggle('fas', isBookmarked);
+                icon.classList.toggle('far', !isBookmarked);
+            }
+        });
+    };
+
+    const renderBookmarkedPane = () => {
+        const paneBookmarked = document.getElementById('tab-bookmarked');
+        if (!paneBookmarked) return;
+
+        if (!currentChapterQuestionList.length || !currentChapterSubjectName || !currentChapterName) {
+            paneBookmarked.innerHTML = '<div class="chapter-empty-state">Open a chapter to view saved questions.</div>';
+            return;
+        }
+
+        const bookmarkedQuestions = currentChapterQuestionList.filter((entry) => {
+            const questionId = buildQuestionId(entry, {
+                subjectName: currentChapterSubjectName,
+                chapterName: currentChapterName,
+                categoryKey: normalizeCategoryKey(entry.category || entry.categoryKey || entry.type)
+            });
+            return savedQuestionIds.has(questionId);
+        });
+
+        if (!bookmarkedQuestions.length) {
+            paneBookmarked.innerHTML = '<div class="chapter-empty-state">No saved questions in this chapter yet.</div>';
+            return;
+        }
+
+        paneBookmarked.innerHTML = bookmarkedQuestions
+            .map((entry) => createQuestionCardHtml(entry, {
+                subjectName: currentChapterSubjectName,
+                chapterName: currentChapterName,
+                categoryKey: normalizeCategoryKey(entry.category || entry.categoryKey || entry.type)
+            }))
+            .join('');
+
+        applyStoredCardStates();
+        applyBookmarkedCardStates();
+        runSearchFilter();
+        runFlashcardSync();
+    };
+
+    const stopBookmarksRealtimeListener = () => {
+        if (bookmarksUnsubscribe) {
+            bookmarksUnsubscribe();
+            bookmarksUnsubscribe = null;
+        }
+        bookmarksListenerUid = '';
+    };
+
+    const startBookmarksRealtimeListener = async (uid) => {
+        if (!uid) {
+            stopBookmarksRealtimeListener();
+            savedQuestionIds.clear();
+            applyBookmarkedCardStates();
+            renderBookmarkedPane();
+            return;
+        }
+
+        if (bookmarksUnsubscribe && bookmarksListenerUid === uid) {
+            return;
+        }
+
+        stopBookmarksRealtimeListener();
+        bookmarksListenerUid = uid;
+
+        try {
+            const db = await initializeFirestoreCompat();
+            bookmarksUnsubscribe = db.collection('users').doc(uid).onSnapshot((docSnapshot) => {
+                const data = docSnapshot.exists ? (docSnapshot.data() || {}) : {};
+                const remoteSavedIds = Array.isArray(data.savedQuestions) ? data.savedQuestions : [];
+
+                savedQuestionIds = new Set(remoteSavedIds);
+                applyBookmarkedCardStates();
+                renderBookmarkedPane();
+            }, (error) => {
+                console.warn('Unable to subscribe saved questions.', error);
+            });
+        } catch (error) {
+            console.warn('Unable to initialize saved questions listener.', error);
+        }
+    };
+
+    const toggleBookmark = async (questionId) => {
+        if (!questionId) return;
+
+        const auth = firebaseAuthInstance && firebaseAuthInstance.auth ? firebaseAuthInstance.auth : null;
+        if (!auth || !auth.currentUser) {
+            alert('Please Sign in with Google to save questions.');
+            return;
+        }
+
+        const uid = auth.currentUser.uid;
+        const wasBookmarked = savedQuestionIds.has(questionId);
+
+        if (wasBookmarked) {
+            savedQuestionIds.delete(questionId);
+        } else {
+            savedQuestionIds.add(questionId);
+        }
+        applyBookmarkedCardStates();
+        renderBookmarkedPane();
+
+        try {
+            const db = await initializeFirestoreCompat();
+            const userRef = db.collection('users').doc(uid);
+
+            if (firestoreFieldValue) {
+                await userRef.set({
+                    savedQuestions: wasBookmarked
+                        ? firestoreFieldValue.arrayRemove(questionId)
+                        : firestoreFieldValue.arrayUnion(questionId),
+                    savedUpdatedAt: typeof firestoreFieldValue.serverTimestamp === 'function'
+                        ? firestoreFieldValue.serverTimestamp()
+                        : new Date()
+                }, { merge: true });
+            } else {
+                await userRef.set({
+                    savedQuestions: Array.from(savedQuestionIds),
+                    savedUpdatedAt: new Date()
+                }, { merge: true });
+            }
+        } catch (error) {
+            console.warn('Unable to update saved question in Firestore.', error);
+            if (wasBookmarked) {
+                savedQuestionIds.add(questionId);
+            } else {
+                savedQuestionIds.delete(questionId);
+            }
+            applyBookmarkedCardStates();
+            renderBookmarkedPane();
+        }
+    };
+
     completedQuestionIds = readStorageSet(STORAGE_KEYS.completed);
 
     const buildQuestionId = (entry, meta = {}) => {
@@ -2599,6 +2788,7 @@ const initializeNotesCraftApp = () => {
 
     queueMicrotask(() => {
         applyStoredCardStates();
+        applyBookmarkedCardStates();
     });
 
     const siteData = (window.siteData && typeof window.siteData === 'object') ? window.siteData : {};
@@ -2783,10 +2973,12 @@ const initializeNotesCraftApp = () => {
         const paneMost = document.getElementById('tab-most-important');
         const paneImportant = document.getElementById('tab-important');
         const paneConceptual = document.getElementById('tab-conceptual');
+        const paneBookmarked = document.getElementById('tab-bookmarked');
 
         if (paneMost) paneMost.innerHTML = '';
         if (paneImportant) paneImportant.innerHTML = '';
         if (paneConceptual) paneConceptual.innerHTML = '';
+        if (paneBookmarked) paneBookmarked.innerHTML = '';
 
         if (questionsFeed) {
             questionsFeed.querySelectorAll('.question-card').forEach((card) => card.remove());
@@ -2867,9 +3059,10 @@ const initializeNotesCraftApp = () => {
         const badgeText = applyStarMagic(entry.badgeText || entry.badge_text || entry.marks_booster || entry.marksBooster || '');
         const questionId = buildQuestionId(entry, meta);
         const isDone = completedQuestionIds.has(questionId);
+        const isBookmarked = savedQuestionIds.has(questionId);
 
         return `
-<article class="question-card${isDone ? ' is-done' : ''}" data-question-id="${questionId}">
+    <article class="question-card${isDone ? ' is-done' : ''}${isBookmarked ? ' bookmarked' : ''}" data-question-id="${questionId}">
     <div class="q-header">
         <span class="q-label">Q:</span>
         <h3 class="question-title">${question}</h3>
@@ -2882,6 +3075,9 @@ const initializeNotesCraftApp = () => {
         <p class="extra-text">${badgeText}</p>
     </div>
     <div class="card-meta-actions">
+        <button class="bookmark-btn${isBookmarked ? ' is-active' : ''}" type="button" data-question-id="${questionId}" aria-label="Save question" aria-pressed="${isBookmarked ? 'true' : 'false'}" title="${isBookmarked ? 'Remove bookmark' : 'Save question'}">
+            <i class="${isBookmarked ? 'fas' : 'far'} fa-bookmark"></i>
+        </button>
         <label class="done-toggle">
             <input class="done-checkbox" type="checkbox" ${isDone ? 'checked' : ''}>
             <span>Mark as Done</span>
@@ -2895,7 +3091,12 @@ const initializeNotesCraftApp = () => {
         const paneMost = document.getElementById('tab-most-important');
         const paneImportant = document.getElementById('tab-important');
         const paneConceptual = document.getElementById('tab-conceptual');
-        if (!paneMost || !paneImportant || !paneConceptual) return;
+        const paneBookmarked = document.getElementById('tab-bookmarked');
+        if (!paneMost || !paneImportant || !paneConceptual || !paneBookmarked) return;
+
+        currentChapterQuestionList = Array.isArray(questionList) ? [...questionList] : [];
+        currentChapterSubjectName = subjectName;
+        currentChapterName = chapterName;
 
         const grouped = {
             most: [],
@@ -2918,18 +3119,36 @@ const initializeNotesCraftApp = () => {
         const conceptualHtml = grouped.conceptual.length
             ? grouped.conceptual.map((entry) => createQuestionCardHtml(entry, { subjectName, chapterName, categoryKey: 'conceptual' })).join('')
             : emptyHtml;
+        const bookmarkedQuestions = questionList.filter((entry) => {
+            const questionId = buildQuestionId(entry, {
+                subjectName,
+                chapterName,
+                categoryKey: normalizeCategoryKey(entry.category || entry.categoryKey || entry.type)
+            });
+            return savedQuestionIds.has(questionId);
+        });
+        const bookmarkedHtml = bookmarkedQuestions.length
+            ? bookmarkedQuestions.map((entry) => createQuestionCardHtml(entry, {
+                subjectName,
+                chapterName,
+                categoryKey: normalizeCategoryKey(entry.category || entry.categoryKey || entry.type)
+            })).join('')
+            : '<div class="chapter-empty-state">No saved questions in this chapter yet.</div>';
 
         paneMost.innerHTML = '';
         paneImportant.innerHTML = '';
         paneConceptual.innerHTML = '';
+        paneBookmarked.innerHTML = '';
 
         window.requestAnimationFrame(() => {
             paneMost.innerHTML = mostHtml;
             paneImportant.innerHTML = importantHtml;
             paneConceptual.innerHTML = conceptualHtml;
+            paneBookmarked.innerHTML = bookmarkedHtml;
 
             window.requestAnimationFrame(() => {
                 applyStoredCardStates();
+                applyBookmarkedCardStates();
                 runSearchFilter();
                 runFlashcardSync();
 
@@ -3279,6 +3498,12 @@ const initializeNotesCraftApp = () => {
     const showChapterContent = (subjectName, chapterName) => {
         activeSubject = subjectName;
         activeChapter = chapterName;
+
+        const authUser = getCurrentAuthUser();
+        if (authUser && authUser.uid) {
+            startBookmarksRealtimeListener(authUser.uid);
+        }
+
         hideElement(subjectDashboardView);
         hideElement(chapterSelectionView);
         showElement(chapterHeaderBanner);

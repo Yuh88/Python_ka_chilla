@@ -1675,7 +1675,39 @@ body.dark-mode .answer-text strong {
 .card-meta-actions {
     margin-top: 0.8rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bookmark-btn {
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    background: rgba(15, 23, 42, 0.52);
+    color: #94a3b8;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.55rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.bookmark-btn:hover {
+    color: #f8fafc;
+    border-color: rgba(251, 191, 36, 0.62);
+    box-shadow: 0 0 10px rgba(245, 158, 11, 0.2);
+}
+
+.bookmark-btn i {
+    pointer-events: none;
+}
+
+.bookmarked i,
+.question-card.bookmarked i,
+.bookmark-btn.is-active i {
+    font-weight: 900;
+    color: #f39c12;
 }
 
 .done-toggle {
