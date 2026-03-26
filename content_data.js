@@ -5898,7 +5898,7 @@ const siteData = {
         "question": "Where is the sacred city of Makkah located?",
         "answer": "Makkah is located in the *south‑western region of Hijaz*, surrounded by *arid hills*.",
         "category": "most",
-        "badgeTitle": "GEOGRAPHICAL SIGNIFICANCE",
+        "badgeTitle": "SIGNIFICANCE",
         "badgeText": "It is the birthplace of Hazrat Muhammad, the last Rasool of Allah."
       },
       {
