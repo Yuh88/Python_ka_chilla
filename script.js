@@ -2660,6 +2660,9 @@ const initializeNotesCraftApp = () => {
         applyBookmarkedCardStates();
         runSearchFilter();
         runFlashcardSync();
+        if (window.MathJax && typeof window.MathJax.typesetPromise === 'function') {
+            window.MathJax.typesetPromise().then(() => window.MathJax.typesetPromise());
+        }
     };
 
     const stopBookmarksRealtimeListener = () => {
@@ -3093,11 +3096,25 @@ const initializeNotesCraftApp = () => {
                 .replace(/\*([^*]+)\*/g, '<strong class="highlight">$1</strong>')
                 .replace(/\n/g, '<br>');
         };
+        const ensureDisplayMathDelimiters = (rawFormulaValue) => {
+            const formulaText = String(rawFormulaValue || '').trim();
+            if (!formulaText) return '';
+
+            const hasDelimiter = /(\$\$[\s\S]*\$\$)|(\\\([\s\S]*\\\))|(\\\[[\s\S]*\\\])/.test(formulaText);
+            if (hasDelimiter) {
+                return formulaText;
+            }
+
+            return `$$${formulaText}$$`;
+        };
 
         const question = applyStarMagic(entry.question);
         const answer = applyStarMagic(entry.answer);
-        const badgeTitle = applyStarMagic(entry.badgeTitle || entry.badge_title || 'MARKS BOOSTER');
-        const badgeText = applyStarMagic(entry.badgeText || entry.badge_text || entry.marks_booster || entry.marksBooster || '');
+        const rawBadgeTitle = entry.badgeTitle || entry.badge_title || 'MARKS BOOSTER';
+        const rawBadgeText = entry.badgeText || entry.badge_text || entry.marks_booster || entry.marksBooster || '';
+        const isFormulaBadge = String(rawBadgeTitle).toLowerCase().includes('formula');
+        const badgeTitle = applyStarMagic(rawBadgeTitle);
+        const badgeText = applyStarMagic(isFormulaBadge ? ensureDisplayMathDelimiters(rawBadgeText) : rawBadgeText);
         const questionId = buildQuestionId(entry, meta);
         const isDone = completedQuestionIds.has(questionId);
         const isBookmarked = savedQuestionIds.has(questionId);
@@ -3194,7 +3211,7 @@ const initializeNotesCraftApp = () => {
                 runFlashcardSync();
 
                 if (window.MathJax && typeof window.MathJax.typesetPromise === 'function') {
-                    window.MathJax.typesetPromise();
+                    window.MathJax.typesetPromise().then(() => window.MathJax.typesetPromise());
                 }
             });
         });
@@ -3531,6 +3548,7 @@ const initializeNotesCraftApp = () => {
                 const chapter = chapterCard.getAttribute('data-chapter');
                 if (subject && chapter) {
                     navigateToState(buildNavState('content', subject, chapter), 'forward');
+                    window.MathJax.typesetPromise().then(() => window.MathJax.typesetPromise());
                 }
             });
         });

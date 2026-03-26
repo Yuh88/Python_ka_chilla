@@ -1615,6 +1615,20 @@ a {
     line-height: 1.7;
 }
 
+.question-card mjx-container {
+    margin: 0.18rem 0.12rem;
+    padding: 0.05rem 0.12rem;
+    max-width: 100%;
+}
+
+.question-card mjx-container[display="true"] {
+    display: block;
+    margin: 0.5rem 0;
+    padding: 0.3rem 0.4rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
 body.dark-mode .answer-text {
     color: var(--text-primary);
 }
