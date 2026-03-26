@@ -1405,8 +1405,6 @@ a {
 
     flex: 1;
 
-    min-height: 60vh;
-
     max-width: 100%;
 
     margin: 0 auto;
@@ -1494,8 +1492,6 @@ a {
     display: flex;
 
     flex-direction: column;
-
-    min-height: 60vh;
 
     gap: 1.5rem;
 
@@ -1951,6 +1947,12 @@ body, .sidebar, .topbar, .question-card, .search-container, .card-footer, .theme
 
 
 /* Hidden Class for Live Search Filter */
+
+.question-card.hidden,
+.questions-feed .question-card.hidden,
+.tab-pane .question-card.hidden {
+    display: none !important;
+}
 
 .question-card.hidden-card {
 

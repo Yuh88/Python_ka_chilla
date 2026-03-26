@@ -2345,7 +2345,10 @@ const initializeNotesCraftApp = () => {
         btn.addEventListener('click', () => {
             // Remove active class from all tabs and panes
             tabButtons.forEach(b => b.classList.remove('active'));
-            tabPanes.forEach(p => p.classList.remove('active'));
+            tabPanes.forEach(p => {
+                p.classList.remove('active');
+                p.style.display = 'none';
+            });
 
             // Add active class to clicked tab
             btn.classList.add('active');
@@ -2356,6 +2359,7 @@ const initializeNotesCraftApp = () => {
                 const targetPane = document.getElementById(targetId);
                 if (targetPane) {
                     targetPane.classList.add('active');
+                    targetPane.style.display = 'block';
                     // Reset animation sequence to ensure it replays
                     targetPane.style.animation = 'none';
                     targetPane.offsetHeight;
@@ -2379,19 +2383,55 @@ const initializeNotesCraftApp = () => {
             const activePane = document.querySelector('.tab-pane.active');
             const questionCards = document.querySelectorAll('.question-card');
 
+            const getDirectWrapper = (element) => {
+                const parent = element.parentElement;
+                if (!parent) return null;
+                if (parent.classList.contains('tab-pane') || parent.classList.contains('questions-feed')) {
+                    return null;
+                }
+                return parent;
+            };
+
+            const showCardAndWrapper = (card) => {
+                card.classList.remove('hidden', 'hidden-card');
+                card.style.display = 'block';
+
+                const wrapper = getDirectWrapper(card);
+                if (wrapper) {
+                    wrapper.style.display = 'block';
+                }
+            };
+
+            const hideCardAndWrapper = (card) => {
+                card.classList.add('hidden');
+                card.classList.remove('hidden-card');
+                card.style.display = 'none';
+
+                const wrapper = getDirectWrapper(card);
+                if (wrapper) {
+                    wrapper.style.display = 'none';
+                }
+            };
+
             questionCards.forEach(card => {
                 if (!activePane || !activePane.contains(card)) {
-                    card.classList.remove('hidden-card');
+                    showCardAndWrapper(card);
                     return;
                 }
 
                 if (!searchTerm) {
-                    card.classList.remove('hidden-card');
+                    showCardAndWrapper(card);
                     return;
                 }
 
                 const textContent = card.innerText.toLowerCase();
-                card.classList.toggle('hidden-card', !textContent.includes(searchTerm));
+                const shouldHide = !textContent.includes(searchTerm);
+                if (shouldHide) {
+                    hideCardAndWrapper(card);
+                    return;
+                }
+
+                showCardAndWrapper(card);
             });
         };
 
