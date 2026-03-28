@@ -23687,11 +23687,12 @@ const siteData = {
     ]
   },
   "Tarjama-tul-Quran": {
-    "1": [],
-    "2": [],
-    "3": [],
-    "4": [],
-    "5": []
+    "tarjama-tul-quran": [
+      { "id": "surah-baqarah", "title": "سُورَةُ الْبَقَرَةِ" },
+      { "id": "surah-ale-imran", "title": "سُورَةُ آلِ عِمْرَانَ" },
+      { "id": "surah-anfal", "title": "سُورَةُ الْأَنْفَالِ" },
+      { "id": "surah-taubah", "title": "سُورَةُ التَّوْبَةِ" }
+    ]
   }
 };
 

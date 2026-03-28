@@ -2861,6 +2861,16 @@ const initializeNotesCraftApp = () => {
         return chapter.topics.find((topic) => !topic.is_header && String(topic.id) === String(topicId)) || null;
     };
 
+    const getTarjamaSyllabus = () => {
+        const tarjamaNode = getSubjectChapterData('Tarjama-tul-Quran');
+        if (!tarjamaNode || typeof tarjamaNode !== 'object') return [];
+        return Array.isArray(tarjamaNode['tarjama-tul-quran']) ? tarjamaNode['tarjama-tul-quran'] : [];
+    };
+
+    const getTarjamaSurahById = (surahId) => {
+        return getTarjamaSyllabus().find((surah) => String(surah.id) === String(surahId)) || null;
+    };
+
     const getNodeKeys = (subjectName, node) => {
         const keys = Object.keys(node || {});
         if (subjectName === 'Islamiyat') return keys;
@@ -2972,6 +2982,17 @@ const initializeNotesCraftApp = () => {
             };
         }
 
+        if (subjectName === 'Tarjama-tul-Quran' && getTarjamaSyllabus().length) {
+            const [surahId] = pathSegments;
+            const surah = getTarjamaSurahById(surahId);
+            const label = surah ? surah.title : String(surahId || '').trim();
+            return {
+                label,
+                chapterName: '',
+                headerTitle: label
+            };
+        }
+
         if (pathSegments.length === 1 && /^\d+$/.test(pathSegments[0])) {
             const chapterId = pathSegments[0];
             const label = `Chapter ${chapterId}`;
@@ -2997,10 +3018,29 @@ const initializeNotesCraftApp = () => {
             // Keep route slugs ASCII-safe for nested Islamiyat IDs.
             return pathSegments.map((segment) => String(segment)).join('-');
         }
+        if (subjectName === 'Tarjama-tul-Quran' && getTarjamaSyllabus().length) {
+            // Keep route slugs ASCII-safe for Tarjama surah IDs.
+            return pathSegments.map((segment) => String(segment)).join('-');
+        }
         return getChapterDisplayParts(subjectName, pathSegments).label;
     };
 
     const getChapterEntries = (subjectName) => {
+        if (subjectName === 'Tarjama-tul-Quran' && getTarjamaSyllabus().length) {
+            return getTarjamaSyllabus()
+                .filter((surah) => surah && surah.id)
+                .map((surah) => {
+                    const path = [String(surah.id)];
+                    return {
+                        key: encodeChapterPath(path),
+                        path,
+                        label: String(surah.title || surah.id),
+                        chapterName: '',
+                        headerTitle: String(surah.title || surah.id)
+                    };
+                });
+        }
+
         if (subjectName === 'Islamiyat' && getIslamiyatHierarchy().length) {
             const entries = [];
             getIslamiyatHierarchy().forEach((chapter) => {
@@ -3057,6 +3097,10 @@ const initializeNotesCraftApp = () => {
         }
 
         if (subjectName === 'Islamiyat' && getIslamiyatHierarchy().length) {
+            return [];
+        }
+
+        if (subjectName === 'Tarjama-tul-Quran' && getTarjamaSyllabus().length) {
             return [];
         }
 
