@@ -23616,45 +23616,75 @@ const siteData = {
     ]
   },
   "Islamiyat": {
-    "Baab 1": {
-      "Topic 1": [],
-      "Topic 2": []
-    },
-    "Baab 2 - Sub-topic 1": {
-      "Ch 1": [],
-      "Ch 2": [],
-      "Ch 3": [],
-      "Ch 4": [],
-      "Ch 5": []
-    },
-    "Baab 2 - Sub-topic 2": {
-      "Ch 1": [],
-      "Ch 2": [],
-      "Ch 3": [],
-      "Ch 4": []
-    },
-    "Baab 3": {
-      "Topic 1": [],
-      "Topic 2": [],
-      "Topic 3": [],
-      "Topic 4": []
-    },
-    "Baab 4": {
-      "Topic 1": [],
-      "Topic 2": []
-    },
-    "Baab 5": {
-      "Topic 1": [],
-      "Topic 2": []
-    },
-    "Baab 6": {
-      "Topic 1": [],
-      "Topic 2": []
-    },
-    "Baab 7": {
-      "Topic 1": [],
-      "Topic 2": []
-    }
+    "islamiat_data": [
+      {
+        "id": "chapter-1",
+        "title": "باب اول: قرآن مجید و حدیث نبوی ﷺ",
+        "topics": [
+          { "id": "ulum-ul-quran", "title": "(الف) علوم القرآن" },
+          { "id": "ulum-ul-hadith", "title": "(ب) علوم الحدیث" }
+        ]
+      },
+      {
+        "id": "chapter-2",
+        "title": "باب دوم: ایمانیات و عبادات",
+        "topics": [
+          { "title": "(1) ایمانیات:", "is_header": true },
+          { "id": "tauheed", "title": "(الف) توحید کے دلائل اور تقاضے" },
+          { "id": "risalat", "title": "(ب) رسالتِ محمدی ﷺ کی خصوصیات" },
+          { "id": "malaika", "title": "(ج) ملائکہ پر ایمان" },
+          { "id": "kutub-e-samavia", "title": "(د) کُتبِ سماویہ پر ایمان" },
+          { "id": "akhirat", "title": "(ہ) آخرت پر ایمان" },
+          { "title": "(2) عبادات:", "is_header": true },
+          { "id": "namaz", "title": "(الف) فلسفۂ نماز" },
+          { "id": "zakat", "title": "(ب) فلسفۂ زکوٰۃ و صدقات" },
+          { "id": "soum", "title": "(ج) فلسفۂ صوم" },
+          { "id": "hajj", "title": "(د) فلسفۂ حج و قربانی" }
+        ]
+      },
+      {
+        "id": "chapter-3",
+        "title": "باب سوم: سیرتِ طیبہ ﷺ",
+        "topics": [
+          { "id": "seerat-intro", "title": "(الف) سیرتِ طیبہ کا تعارف" },
+          { "id": "makki-zindagi", "title": "(ب) مکی زندگی کے نمایاں پہلو" },
+          { "id": "madani-zindagi", "title": "(ج) مدنی زندگی کے نمایاں پہلو" },
+          { "id": "akhlaq-e-nabawi", "title": "(د) اخلاقِ نبوی ﷺ" }
+        ]
+      },
+      {
+        "id": "chapter-4",
+        "title": "باب چہارم: اسلامی اخلاق و آداب",
+        "topics": [
+          { "id": "islami-akhlaq", "title": "(الف) اسلامی اخلاق" },
+          { "id": "muashrati-adab", "title": "(ب) معاشرتی آداب" }
+        ]
+      },
+      {
+        "id": "chapter-5",
+        "title": "باب پنجم: اسلامی تہذیب و ثقافت",
+        "topics": [
+          { "id": "islami-tahzeeb", "title": "(الف) اسلامی تہذیب" },
+          { "id": "islami-saqafat", "title": "(ب) اسلامی ثقافت" }
+        ]
+      },
+      {
+        "id": "chapter-6",
+        "title": "باب ششم: اسلام اور سماجی نظام",
+        "topics": [
+          { "id": "huqooq-ul-ibad", "title": "(الف) حقوق العباد" },
+          { "id": "insaf-o-musawat", "title": "(ب) انصاف و مساوات" }
+        ]
+      },
+      {
+        "id": "chapter-7",
+        "title": "باب ہفتم: اسلامی ریاست و ذمہ داریاں",
+        "topics": [
+          { "id": "riyasat-ka-tasawwur", "title": "(الف) اسلامی ریاست کا تصور" },
+          { "id": "shahri-zimmedariyan", "title": "(ب) شہری ذمہ داریاں" }
+        ]
+      }
+    ]
   },
   "Tarjama-tul-Quran": {
     "1": [],
