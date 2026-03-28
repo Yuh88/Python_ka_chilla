@@ -2539,6 +2539,7 @@ const initializeNotesCraftApp = () => {
     const knownRouteSlugs = new Set(['computer-science', 'english', 'physics', 'islamiyat', 'model-papers']);
     let activeSubject = null;
     let activeChapter = null;
+    let activeIslamiyatBaabId = '';
 
     const WELCOME_CONTENT = {
         heading: 'NotesCraft: Fast Revision Companion',
@@ -3579,6 +3580,7 @@ const initializeNotesCraftApp = () => {
     const showSubjectDashboard = () => {
         activeSubject = null;
         activeChapter = null;
+        activeIslamiyatBaabId = '';
         clearRenderedQuestionContent();
         renderWelcomeSection();
         setFlashcardFabVisibility(false);
@@ -3600,6 +3602,7 @@ const initializeNotesCraftApp = () => {
     const showChapterSelection = (subjectName, islamiyatBaabId = '') => {
         activeSubject = subjectName;
         activeChapter = null;
+        activeIslamiyatBaabId = subjectName === 'Islamiyat' ? String(islamiyatBaabId || '') : '';
         clearRenderedQuestionContent();
         setFlashcardFabVisibility(false);
         setCommentsSectionVisibility(false);
@@ -3749,6 +3752,7 @@ const initializeNotesCraftApp = () => {
     const showChapterContent = (subjectName, chapterName) => {
         activeSubject = subjectName;
         activeChapter = chapterName;
+        activeIslamiyatBaabId = '';
 
         const authUser = getCurrentAuthUser();
         if (authUser && authUser.uid) {
@@ -4010,6 +4014,13 @@ const initializeNotesCraftApp = () => {
     if (persistentBackBtn) {
         persistentBackBtn.addEventListener('click', () => {
             const mode = persistentBackBtn.dataset.mode;
+
+            if (mode === 'subjects' && activeSubject === 'Islamiyat' && activeIslamiyatBaabId) {
+                // In Islamiyat nested view, step back from topics grid to baab grid first.
+                showChapterSelection('Islamiyat');
+                return;
+            }
+
             if (mode === 'chapters' || mode === 'subjects') {
                 history.back();
             } else if (mode === 'model-papers') {
