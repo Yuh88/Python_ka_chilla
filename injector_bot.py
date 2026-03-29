@@ -202,8 +202,7 @@ def choose_chapter_for_subject(data_obj, subject):
             print("No topics found.")
             return tuple(path) if path else None
 
-        print(f"
-Available {'Topics' if path else 'Chapters'}:")
+        print(f"\nAvailable {'Topics' if path else 'Chapters'}:")
         for index, key in enumerate(keys, start=1):
             print(f"{index}. {key}")
 
