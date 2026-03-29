@@ -2539,6 +2539,7 @@ const initializeNotesCraftApp = () => {
     const knownRouteSlugs = new Set(['computer-science', 'english', 'physics', 'islamiyat', 'model-papers']);
     let activeSubject = null;
     let activeChapter = null;
+    let activeIslamiyatBaabId = '';
 
     const WELCOME_CONTENT = {
         heading: 'NotesCraft: Fast Revision Companion',
@@ -2845,6 +2846,32 @@ const initializeNotesCraftApp = () => {
         return siteData[subjectName] && typeof siteData[subjectName] === 'object' ? siteData[subjectName] : {};
     };
 
+    const getIslamiyatHierarchy = () => {
+        const islamiyatNode = getSubjectChapterData('Islamiyat');
+        if (!islamiyatNode || typeof islamiyatNode !== 'object') return [];
+        return Array.isArray(islamiyatNode.islamiat_data) ? islamiyatNode.islamiat_data : [];
+    };
+
+    const getIslamiyatChapterById = (chapterId) => {
+        return getIslamiyatHierarchy().find((chapter) => String(chapter.id) === String(chapterId)) || null;
+    };
+
+    const getIslamiyatTopicByIds = (chapterId, topicId) => {
+        const chapter = getIslamiyatChapterById(chapterId);
+        if (!chapter || !Array.isArray(chapter.topics)) return null;
+        return chapter.topics.find((topic) => !topic.is_header && String(topic.id) === String(topicId)) || null;
+    };
+
+    const getTarjamaSyllabus = () => {
+        const tarjamaNode = getSubjectChapterData('Tarjama-tul-Quran');
+        if (!tarjamaNode || typeof tarjamaNode !== 'object') return [];
+        return Array.isArray(tarjamaNode['tarjama-tul-quran']) ? tarjamaNode['tarjama-tul-quran'] : [];
+    };
+
+    const getTarjamaSurahById = (surahId) => {
+        return getTarjamaSyllabus().find((surah) => String(surah.id) === String(surahId)) || null;
+    };
+
     const getNodeKeys = (subjectName, node) => {
         const keys = Object.keys(node || {});
         if (subjectName === 'Islamiyat') return keys;
@@ -2917,7 +2944,49 @@ const initializeNotesCraftApp = () => {
         }
 
         if (subjectName === 'Islamiyat') {
+            const islamiyatHierarchy = getIslamiyatHierarchy();
+            if (islamiyatHierarchy.length) {
+                const [chapterId, topicId] = pathSegments;
+                const chapter = getIslamiyatChapterById(chapterId);
+                if (!chapter) {
+                    const label = 'اسلامیات';
+                    return {
+                        label,
+                        chapterName: '',
+                        headerTitle: label
+                    };
+                }
+
+                if (!topicId) {
+                    return {
+                        label: chapter.title,
+                        chapterName: '',
+                        headerTitle: chapter.title
+                    };
+                }
+
+                const topic = getIslamiyatTopicByIds(chapterId, topicId);
+                const topicTitle = topic ? topic.title : String(topicId || '').trim();
+                const label = `${chapter.title} - ${topicTitle}`;
+                return {
+                    label,
+                    chapterName: '',
+                    headerTitle: `${chapter.title} — ${topicTitle}`
+                };
+            }
+
             const label = pathSegments.join(' - ');
+            return {
+                label,
+                chapterName: '',
+                headerTitle: label
+            };
+        }
+
+        if (subjectName === 'Tarjama-tul-Quran' && getTarjamaSyllabus().length) {
+            const [surahId] = pathSegments;
+            const surah = getTarjamaSurahById(surahId);
+            const label = surah ? surah.title : String(surahId || '').trim();
             return {
                 label,
                 chapterName: '',
@@ -2946,10 +3015,52 @@ const initializeNotesCraftApp = () => {
     };
 
     const formatChapterLabelFromPath = (subjectName, pathSegments) => {
+        if (subjectName === 'Islamiyat' && getIslamiyatHierarchy().length) {
+            // Keep route slugs ASCII-safe for nested Islamiyat IDs.
+            return pathSegments.map((segment) => String(segment)).join('-');
+        }
+        if (subjectName === 'Tarjama-tul-Quran' && getTarjamaSyllabus().length) {
+            // Keep route slugs ASCII-safe for Tarjama surah IDs.
+            return pathSegments.map((segment) => String(segment)).join('-');
+        }
         return getChapterDisplayParts(subjectName, pathSegments).label;
     };
 
     const getChapterEntries = (subjectName) => {
+        if (subjectName === 'Tarjama-tul-Quran' && getTarjamaSyllabus().length) {
+            return getTarjamaSyllabus()
+                .filter((surah) => surah && surah.id)
+                .map((surah) => {
+                    const path = [String(surah.id)];
+                    return {
+                        key: encodeChapterPath(path),
+                        path,
+                        label: String(surah.title || surah.id),
+                        chapterName: '',
+                        headerTitle: String(surah.title || surah.id)
+                    };
+                });
+        }
+
+        if (subjectName === 'Islamiyat' && getIslamiyatHierarchy().length) {
+            const entries = [];
+            getIslamiyatHierarchy().forEach((chapter) => {
+                if (!Array.isArray(chapter.topics)) return;
+                chapter.topics.forEach((topic) => {
+                    if (topic.is_header || !topic.id) return;
+                    const path = [String(chapter.id), String(topic.id)];
+                    entries.push({
+                        key: encodeChapterPath(path),
+                        path,
+                        label: `${chapter.title} - ${topic.title}`,
+                        chapterName: '',
+                        headerTitle: `${chapter.title} — ${topic.title}`
+                    });
+                });
+            });
+            return entries;
+        }
+
         const chapterData = getSubjectChapterData(subjectName);
         const entries = [];
 
@@ -2983,6 +3094,14 @@ const initializeNotesCraftApp = () => {
     const getChapterQuestions = (subjectName, chapterKey) => {
         const pathSegments = decodeChapterPath(chapterKey);
         if (!pathSegments.length) {
+            return [];
+        }
+
+        if (subjectName === 'Islamiyat' && getIslamiyatHierarchy().length) {
+            return [];
+        }
+
+        if (subjectName === 'Tarjama-tul-Quran' && getTarjamaSyllabus().length) {
             return [];
         }
 
@@ -3475,6 +3594,7 @@ const initializeNotesCraftApp = () => {
     const showSubjectDashboard = () => {
         activeSubject = null;
         activeChapter = null;
+        activeIslamiyatBaabId = '';
         clearRenderedQuestionContent();
         renderWelcomeSection();
         setFlashcardFabVisibility(false);
@@ -3493,9 +3613,10 @@ const initializeNotesCraftApp = () => {
         }
     };
 
-    const showChapterSelection = (subjectName) => {
+    const showChapterSelection = (subjectName, islamiyatBaabId = '') => {
         activeSubject = subjectName;
         activeChapter = null;
+        activeIslamiyatBaabId = subjectName === 'Islamiyat' ? String(islamiyatBaabId || '') : '';
         clearRenderedQuestionContent();
         setFlashcardFabVisibility(false);
         setCommentsSectionVisibility(false);
@@ -3508,16 +3629,91 @@ const initializeNotesCraftApp = () => {
         setBackButtonState('subjects');
         setExpandedSidebarSubject(subjectName, true);
 
-        if (chapterSelectionTitle) {
-            chapterSelectionTitle.innerText = subjectName === 'Islamiyat'
-                ? 'Islamiyat Baab & Topics'
-                : `${subjectName} Chapters`;
-        }
-
-        const chapters = getChapterEntries(subjectName);
         if (!chapterList) return;
 
         chapterList.classList.remove('model-papers-grid');
+
+        if (subjectName === 'Islamiyat' && getIslamiyatHierarchy().length) {
+            const islamiyatHierarchy = getIslamiyatHierarchy();
+
+            if (islamiyatBaabId) {
+                const selectedBaab = getIslamiyatChapterById(islamiyatBaabId);
+
+                if (chapterSelectionTitle) {
+                    chapterSelectionTitle.innerText = selectedBaab
+                        ? selectedBaab.title
+                        : 'اسلامیات: موضوعات';
+                }
+
+                if (!selectedBaab || !Array.isArray(selectedBaab.topics)) {
+                    chapterList.innerHTML = '<div class="chapter-empty-state">Content Coming Soon</div>';
+                    return;
+                }
+
+                const topicList = selectedBaab.topics.filter((topic) => !topic.is_header && topic.id);
+                if (!topicList.length) {
+                    chapterList.innerHTML = '<div class="chapter-empty-state">Content Coming Soon</div>';
+                    return;
+                }
+
+                chapterList.innerHTML = '';
+                topicList.forEach((topic) => {
+                    const topicCard = document.createElement('button');
+                    topicCard.className = 'chapter-card';
+                    topicCard.type = 'button';
+                    topicCard.setAttribute('data-subject', subjectName);
+                    topicCard.setAttribute('data-chapter', encodeChapterPath([String(selectedBaab.id), String(topic.id)]));
+                    topicCard.setAttribute('aria-label', `اسلامیات ${selectedBaab.title} ${topic.title}`.replace(/\s+/g, ' ').trim());
+                    topicCard.textContent = topic.title;
+                    chapterList.appendChild(topicCard);
+                });
+
+                chapterList.querySelectorAll('.chapter-card').forEach((topicCard) => {
+                    topicCard.addEventListener('click', () => {
+                        const subject = topicCard.getAttribute('data-subject');
+                        const chapter = topicCard.getAttribute('data-chapter');
+                        if (subject && chapter) {
+                            navigateToState(buildNavState('content', subject, chapter), 'forward');
+                        }
+                    });
+                });
+
+                return;
+            }
+
+            if (chapterSelectionTitle) {
+                chapterSelectionTitle.innerText = 'اسلامیات: ابواب';
+            }
+
+            chapterList.innerHTML = '';
+            islamiyatHierarchy.forEach((baab) => {
+                const baabCard = document.createElement('button');
+                baabCard.className = 'chapter-card';
+                baabCard.type = 'button';
+                baabCard.setAttribute('data-subject', subjectName);
+                baabCard.setAttribute('data-islamiyat-baab', String(baab.id));
+                baabCard.setAttribute('aria-label', `اسلامیات ${baab.title}`.replace(/\s+/g, ' ').trim());
+                baabCard.textContent = baab.title;
+                chapterList.appendChild(baabCard);
+            });
+
+            chapterList.querySelectorAll('.chapter-card[data-islamiyat-baab]').forEach((baabCard) => {
+                baabCard.addEventListener('click', () => {
+                    const baabId = baabCard.getAttribute('data-islamiyat-baab');
+                    if (baabId) {
+                        showChapterSelection('Islamiyat', baabId);
+                    }
+                });
+            });
+
+            return;
+        }
+
+        if (chapterSelectionTitle) {
+            chapterSelectionTitle.innerText = `${subjectName} Chapters`;
+        }
+
+        const chapters = getChapterEntries(subjectName);
 
         if (chapters.length === 0) {
             chapterList.innerHTML = '<div class="chapter-empty-state">Content Coming Soon</div>';
@@ -3562,7 +3758,6 @@ const initializeNotesCraftApp = () => {
                 const chapter = chapterCard.getAttribute('data-chapter');
                 if (subject && chapter) {
                     navigateToState(buildNavState('content', subject, chapter), 'forward');
-                    window.MathJax.typesetPromise().then(() => window.MathJax.typesetPromise());
                 }
             });
         });
@@ -3571,6 +3766,7 @@ const initializeNotesCraftApp = () => {
     const showChapterContent = (subjectName, chapterName) => {
         activeSubject = subjectName;
         activeChapter = chapterName;
+        activeIslamiyatBaabId = '';
 
         const authUser = getCurrentAuthUser();
         if (authUser && authUser.uid) {
@@ -3714,6 +3910,63 @@ const initializeNotesCraftApp = () => {
             const subjectName = subjectLink.getAttribute('data-subject');
             if (!subjectName) return;
 
+            dropdownMenu.classList.toggle('islamiyat-menu', subjectName === 'Islamiyat');
+
+            if (subjectName === 'Islamiyat' && getIslamiyatHierarchy().length) {
+                dropdownMenu.innerHTML = '';
+
+                getIslamiyatHierarchy().forEach((chapter) => {
+                    const section = document.createElement('div');
+                    section.className = 'baab-section';
+
+                    const sectionToggle = document.createElement('button');
+                    sectionToggle.type = 'button';
+                    sectionToggle.className = 'baab-header';
+                    sectionToggle.setAttribute('aria-expanded', 'false');
+
+                    const arrow = document.createElement('span');
+                    arrow.className = 'baab-arrow';
+                    arrow.textContent = '▸';
+
+                    const titleText = document.createElement('span');
+                    titleText.className = 'baab-title';
+                    titleText.textContent = chapter.title;
+
+                    sectionToggle.appendChild(arrow);
+                    sectionToggle.appendChild(titleText);
+
+                    const submenu = document.createElement('div');
+                    submenu.className = 'topics-panel hidden';
+
+                    (Array.isArray(chapter.topics) ? chapter.topics : []).forEach((topic) => {
+                        if (topic.is_header) {
+                            const header = document.createElement('div');
+                            header.className = 'dropdown-topic-header';
+                            header.textContent = String(topic.title || '').replace(/\*\*/g, '');
+                            submenu.appendChild(header);
+                            return;
+                        }
+
+                        if (!topic.id) return;
+
+                        const chapterKey = encodeChapterPath([String(chapter.id), String(topic.id)]);
+                        const link = document.createElement('a');
+                        link.href = withBasePrefix(`/${getSubjectSlug(subjectName)}/${getChapterSlug(subjectName, chapterKey)}`);
+                        link.className = 'dropdown-link topic-link';
+                        link.setAttribute('data-chapter-key', chapterKey);
+                        link.setAttribute('aria-label', `اسلامیات ${chapter.title} ${topic.title}`.replace(/\s+/g, ' ').trim());
+                        link.textContent = topic.title;
+                        submenu.appendChild(link);
+                    });
+
+                    section.appendChild(sectionToggle);
+                    section.appendChild(submenu);
+                    dropdownMenu.appendChild(section);
+                });
+
+                return;
+            }
+
             const chapterEntries = getChapterEntries(subjectName);
             dropdownMenu.innerHTML = '';
 
@@ -3737,7 +3990,21 @@ const initializeNotesCraftApp = () => {
 
     if (sidebar) {
         sidebar.addEventListener('click', (event) => {
-            const chapterLink = event.target.closest('.chapter-link, .dropdown-link');
+            const sectionToggle = event.target.closest('.baab-header');
+            if (sectionToggle) {
+                event.preventDefault();
+                const section = sectionToggle.closest('.baab-section');
+                const panel = section ? section.querySelector('.topics-panel') : null;
+                if (panel) {
+                    const isHidden = panel.classList.contains('hidden');
+                    panel.classList.toggle('hidden', !isHidden);
+                    sectionToggle.classList.toggle('active-baab', isHidden);
+                    sectionToggle.setAttribute('aria-expanded', String(isHidden));
+                }
+                return;
+            }
+
+            const chapterLink = event.target.closest('.chapter-link, .dropdown-link[data-chapter-key]');
             if (!chapterLink) return;
 
             event.preventDefault();
@@ -3761,6 +4028,13 @@ const initializeNotesCraftApp = () => {
     if (persistentBackBtn) {
         persistentBackBtn.addEventListener('click', () => {
             const mode = persistentBackBtn.dataset.mode;
+
+            if (mode === 'subjects' && activeSubject === 'Islamiyat' && activeIslamiyatBaabId) {
+                // In Islamiyat nested view, step back from topics grid to baab grid first.
+                showChapterSelection('Islamiyat');
+                return;
+            }
+
             if (mode === 'chapters' || mode === 'subjects') {
                 history.back();
             } else if (mode === 'model-papers') {
