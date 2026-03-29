@@ -191,32 +191,37 @@ def get_category_menu_code(category_value):
 
 
 def choose_chapter_for_subject(data_obj, subject):
-    subject_data = data_obj.get(subject, {}) if isinstance(data_obj.get(subject), dict) else {}
-    chapter_keys = list(subject_data.keys())
-
-    if not chapter_keys:
-        print("No chapters found for this subject.")
+    current = data_obj.get(subject, {})
+    if not isinstance(current, dict):
         return None
 
-    print("\nAvailable Chapters:")
-    for index, chapter_key in enumerate(chapter_keys, start=1):
-        print(f"{index}. {chapter_key}")
+    path = []
+    while isinstance(current, dict):
+        keys = list(current.keys())
+        if not keys:
+            print("No topics found.")
+            return tuple(path) if path else None
 
-    while True:
-        choice = prompt_with_back("Enter chapter index from list")
-        if choice is None:
-            return None
+        print(f"
+Available {'Topics' if path else 'Chapters'}:")
+        for index, key in enumerate(keys, start=1):
+            print(f"{index}. {key}")
 
-        if choice.isdigit():
-            index = int(choice)
-            if 1 <= index <= len(chapter_keys):
-                return chapter_keys[index - 1]
+        while True:
+            choice = prompt_with_back("Enter index from list")
+            if choice is None:
+                return None
 
-        if choice in subject_data:
-            return choice
+            if choice.isdigit():
+                index = int(choice)
+                if 1 <= index <= len(keys):
+                    selected_key = keys[index - 1]
+                    path.append(selected_key)
+                    current = current.get(selected_key, {})
+                    break
+                print("Invalid index.")
 
-        print("Invalid chapter. Enter a valid index from the list.")
-
+    return tuple(path)
 
 def build_entry(question, answer, category, badge_title, badge_text):
     return {
@@ -276,7 +281,15 @@ def append_and_save(js_path, original_content, match, data_obj, subject, chapter
     if not entries:
         return 0
     ensure_structure(data_obj, subject, chapter)
-    data_obj[subject][chapter].extend(entries)
+    
+    current = data_obj[subject]
+    if isinstance(chapter, tuple):
+        for k in chapter[:-1]:
+            current = current[k]
+        current[chapter[-1]].extend(entries)
+    else:
+        current[chapter].extend(entries)
+        
     write_site_data(js_path, original_content, match, data_obj)
     return len(entries)
 
@@ -610,8 +623,19 @@ def collect_bulk_entries(save_callback):
 def ensure_structure(data_obj, subject, chapter):
     if subject not in data_obj or not isinstance(data_obj[subject], dict):
         data_obj[subject] = {}
-    if chapter not in data_obj[subject] or not isinstance(data_obj[subject][chapter], list):
-        data_obj[subject][chapter] = []
+        
+    current = data_obj[subject]
+    if isinstance(chapter, tuple):
+        for k in chapter[:-1]:
+            if k not in current or not isinstance(current[k], dict):
+                current[k] = {}
+            current = current[k]
+        last_key = chapter[-1]
+    else:
+        last_key = chapter
+
+    if last_key not in current or not isinstance(current[last_key], list):
+        current[last_key] = []
 
 
 def write_data_with_error_handling(js_path, original_content, match, data_obj):
@@ -641,7 +665,11 @@ def run_add_questions_flow(js_path, original_content, match, data_obj):
             return
 
         while True:
-            chapter = choose_chapter()
+            if subject in ["Islamiyat", "Tarjama-tul-Quran"]:
+                chapter = choose_chapter_for_subject(data_obj, subject)
+            else:
+                chapter = choose_chapter()
+
             if chapter is None:
                 break
 
