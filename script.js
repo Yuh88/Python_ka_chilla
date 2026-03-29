@@ -3110,7 +3110,18 @@ const initializeNotesCraftApp = () => {
 
         const question = applyStarMagic(entry.question);
         const answer = applyStarMagic(entry.answer);
-        const rawBadgeTitle = entry.badgeTitle || entry.badge_title || 'MARKS BOOSTER';
+
+        const isUrdu = meta.subjectName === 'Islamiyat' || meta.subjectName === 'Tarjama-tul-Quran';
+        let rawBadgeTitle = entry.badgeTitle || entry.badge_title || (isUrdu ? 'کلیدی معلومات/یاد رکھنے والی بات:' : 'MARKS BOOSTER');
+        // Translate common hardcoded english headers to Urdu for Urdu subjects
+        if (isUrdu && ['MARKS BOOSTER', 'ENERGY FLOW', 'QUICK NOTE'].includes(rawBadgeTitle.toUpperCase())) {
+            rawBadgeTitle = 'کلیدی معلومات/یاد رکھنے والی بات:';
+        }
+        
+        if (isUrdu && rawBadgeTitle && !rawBadgeTitle.endsWith(':')) {
+            rawBadgeTitle += ':';
+        }
+
         const rawBadgeText = entry.badgeText || entry.badge_text || entry.marks_booster || entry.marksBooster || '';
         const isFormulaBadge = String(rawBadgeTitle).toLowerCase().includes('formula');
         const badgeTitle = applyStarMagic(rawBadgeTitle);
@@ -3119,14 +3130,17 @@ const initializeNotesCraftApp = () => {
         const isDone = completedQuestionIds.has(questionId);
         const isBookmarked = savedQuestionIds.has(questionId);
 
+        const qLabelText = isUrdu ? 'سوال:' : 'Q:';
+        const aLabelText = isUrdu ? 'جواب:' : 'Definition: ';
+
         return `
-    <article class="question-card${isDone ? ' is-done' : ''}${isBookmarked ? ' bookmarked' : ''}" data-question-id="${questionId}">
+    <article class="question-card${isDone ? ' is-done' : ''}${isBookmarked ? ' bookmarked' : ''}${isUrdu ? ' urdu-text' : ''}" data-question-id="${questionId}">
     <div class="q-header">
-        <span class="q-label">Q:</span>
+        <span class="q-label">${qLabelText}</span>
         <h3 class="question-title">${question}</h3>
     </div>
     <div class="a-body">
-        <p class="answer-text"><span class="a-label">Definition: </span>${answer}</p>
+        <p class="answer-text"><span class="a-label">${aLabelText}</span>${answer}</p>
     </div>
     <div class="card-footer">
         <span class="extra-badge">${badgeTitle}</span>
