@@ -765,7 +765,13 @@ def run_delete_specific_numbers_flow(js_path, original_content, match, data_obj)
 
             chapter_questions = []
             if isinstance(data_obj.get(subject), dict):
-                chapter_questions = data_obj[subject].get(chapter, [])
+                current = data_obj[subject]
+                if isinstance(chapter, tuple):
+                    for k in chapter[:-1]:
+                        current = current.get(k, {})
+                    chapter_questions = current.get(chapter[-1], [])
+                else:
+                    chapter_questions = current.get(chapter, [])
 
             if not isinstance(chapter_questions, list):
                 print("No questions found to delete.")
@@ -850,7 +856,13 @@ def run_delete_entire_category_flow(js_path, original_content, match, data_obj):
             if chapter is None:
                 break
 
-            chapter_node = data_obj.get(subject, {}).get(chapter)
+            current = data_obj.get(subject, {})
+            if isinstance(chapter, tuple):
+                for k in chapter[:-1]:
+                    current = current.get(k, {})
+                chapter_node = current.get(chapter[-1])
+            else:
+                chapter_node = current.get(chapter)
             leaf_lists = get_leaf_question_lists(chapter_node)
 
             if not leaf_lists:
