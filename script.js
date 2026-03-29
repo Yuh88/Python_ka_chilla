@@ -2849,7 +2849,28 @@ const initializeNotesCraftApp = () => {
     const getIslamiyatHierarchy = () => {
         const islamiyatNode = getSubjectChapterData('Islamiyat');
         if (!islamiyatNode || typeof islamiyatNode !== 'object') return [];
-        return Array.isArray(islamiyatNode.islamiat_data) ? islamiyatNode.islamiat_data : [];
+
+        const hierarchy = [];
+        for (const baabName in islamiyatNode) {
+            const topicsData = islamiyatNode[baabName];
+            if (!topicsData || typeof topicsData !== 'object' || Array.isArray(topicsData)) continue;
+
+            const topics = [];
+            for (const topicName in topicsData) {
+                topics.push({
+                    id: topicName,
+                    title: topicName,
+                    is_header: false
+                });
+            }
+
+            hierarchy.push({
+                id: baabName,
+                title: baabName,
+                topics: topics
+            });
+        }
+        return hierarchy;
     };
 
     const getIslamiyatChapterById = (chapterId) => {
@@ -3061,10 +3082,6 @@ const initializeNotesCraftApp = () => {
     const getChapterQuestions = (subjectName, chapterKey) => {
         const pathSegments = decodeChapterPath(chapterKey);
         if (!pathSegments.length) {
-            return [];
-        }
-
-        if (subjectName === 'Islamiyat' && getIslamiyatHierarchy().length) {
             return [];
         }
 
@@ -3342,12 +3359,15 @@ const initializeNotesCraftApp = () => {
         return buildNavState('dashboard');
     };
 
-    const slugifyRouteSegment = (value) => String(value || '')
-        .toLowerCase()
-        .trim()
-        .replace(/[^a-z0-9\s-]/g, '')
-        .replace(/\s+/g, '-')
-        .replace(/-+/g, '-');
+    const slugifyRouteSegment = (value) => {
+        // Encode standard string, but support Arabic/Urdu unicode block to avoid empty slugs
+        let safeStr = String(value || '').toLowerCase().trim();
+        // Remove characters that are NOT alphanumeric, spaces, hyphens, or Arabic script
+        safeStr = safeStr.replace(/[^a-z0-9\s-\u0600-\u06FF]/g, '');
+        safeStr = safeStr.replace(/\s+/g, '-');
+        safeStr = safeStr.replace(/-+/g, '-');
+        return safeStr;
+    };
 
     const getSubjectSlug = (subjectName) => slugifyRouteSegment(subjectName);
 
