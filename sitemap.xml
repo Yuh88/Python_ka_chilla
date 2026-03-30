@@ -4,48 +4,56 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
+<!-- Root URL -->
 <url>
   <loc>https://notescraft.dev/</loc>
-  <lastmod>2026-03-24T13:40:06+00:00</lastmod>
+  <lastmod>2026-03-30</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.0</priority>
 </url>
 
+<!-- Main Subject Dashboard Routes (SPA Handled) -->
 <url>
   <loc>https://notescraft.dev/computer-science</loc>
-  <lastmod>2026-03-25</lastmod>
-</url>
-
-<url>
-  <loc>https://notescraft.dev/computer-science/chapter-1</loc>
-  <lastmod>2026-03-25</lastmod>
+  <lastmod>2026-03-30</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.8</priority>
 </url>
 
 <url>
   <loc>https://notescraft.dev/english</loc>
-  <lastmod>2026-03-25</lastmod>
-</url>
-
-<url>
-  <loc>https://notescraft.dev/english/chapter-1</loc>
-  <lastmod>2026-03-25</lastmod>
+  <lastmod>2026-03-30</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.8</priority>
 </url>
 
 <url>
   <loc>https://notescraft.dev/physics</loc>
-  <lastmod>2026-03-25</lastmod>
+  <lastmod>2026-03-30</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.8</priority>
 </url>
 
 <url>
-  <loc>https://notescraft.dev/physics/chapter-1</loc>
-  <lastmod>2026-03-25</lastmod>
+  <loc>https://notescraft.dev/islamiyat</loc>
+  <lastmod>2026-03-30</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.8</priority>
 </url>
 
 <url>
-  <loc>https://notescraft.dev/board-papers</loc>
-  <lastmod>2026-03-25</lastmod>
+  <loc>https://notescraft.dev/tarjama-tul-quran</loc>
+  <lastmod>2026-03-30</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.8</priority>
 </url>
 
+<url>
+  <loc>https://notescraft.dev/model-papers</loc>
+  <lastmod>2026-03-30</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
 
 </urlset>
