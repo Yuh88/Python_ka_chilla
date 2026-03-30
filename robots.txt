@@ -1,2 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /*.py$
+Disallow: /README.md
+
+Sitemap: https://notescraft.dev/sitemap.xml
