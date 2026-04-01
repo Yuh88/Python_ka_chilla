@@ -3213,9 +3213,9 @@ const initializeNotesCraftApp = () => {
         const answer = applyStarMagic(entry.answer);
 
         const isUrdu = meta.subjectName === 'Islamiyat' || meta.subjectName === 'Tarjama-tul-Quran';
-        let rawBadgeTitle = entry.badgeTitle || entry.badge_title || (isUrdu ? 'کلیدی معلومات/یاد رکھنے والی بات:' : 'MARKS BOOSTER');
+        let rawBadgeTitle = entry.badgeTitle !== undefined ? entry.badgeTitle : (entry.badge_title || '');
         // Translate common hardcoded english headers to Urdu for Urdu subjects
-        if (isUrdu && ['MARKS BOOSTER', 'ENERGY FLOW', 'QUICK NOTE'].includes(rawBadgeTitle.toUpperCase())) {
+        if (isUrdu && rawBadgeTitle && ['MARKS BOOSTER', 'ENERGY FLOW', 'QUICK NOTE'].includes(rawBadgeTitle.toUpperCase())) {
             rawBadgeTitle = 'کلیدی معلومات/یاد رکھنے والی بات:';
         }
         
@@ -3243,10 +3243,11 @@ const initializeNotesCraftApp = () => {
     <div class="a-body">
         <p class="answer-text"><span class="a-label">${aLabelText}</span>${answer}</p>
     </div>
+    ${(badgeTitle || badgeText) ? `
     <div class="card-footer">
-        <span class="extra-badge">${badgeTitle}</span>
-        <p class="extra-text">${badgeText}</p>
-    </div>
+        ${badgeTitle ? `<span class="extra-badge">${badgeTitle}</span>` : ''}
+        ${badgeText ? `<p class="extra-text">${badgeText}</p>` : ''}
+    </div>` : ''}
     <div class="card-meta-actions">
         <button class="bookmark-btn${isBookmarked ? ' is-active' : ''}" type="button" data-question-id="${questionId}" aria-label="Save question" aria-pressed="${isBookmarked ? 'true' : 'false'}" title="${isBookmarked ? 'Remove bookmark' : 'Save question'}">
             <i class="${isBookmarked ? 'fas' : 'far'} fa-bookmark"></i>

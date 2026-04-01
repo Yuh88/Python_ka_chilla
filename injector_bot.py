@@ -227,7 +227,7 @@ def build_entry(question, answer, category, badge_title, badge_text):
         "question": str(question).strip(),
         "answer": str(answer).strip(),
         "category": normalize_category(category) or "most",
-        "badgeTitle": str(badge_title).strip() or "MARKS BOOSTER",
+        "badgeTitle": str(badge_title).strip(),
         "badgeText": str(badge_text).strip(),
     }
 
@@ -247,7 +247,7 @@ def normalize_existing_site_data_schema(data_obj):
             badge_title = (
                 entry.get("badgeTitle")
                 or entry.get("badge_title")
-                or "MARKS BOOSTER"
+                or ""
             )
             badge_text = (
                 entry.get("badgeText")
@@ -369,7 +369,7 @@ def collect_single_entries(save_callback):
             print("Going back to previous menu.")
             continue
         if not badge_title:
-            badge_title = "MARKS BOOSTER"
+            badge_title = ""
 
         badge_text = prompt_with_back("Badge Text (extra info)")
         if badge_text is None:
@@ -452,7 +452,7 @@ def parse_bulk_entry_block(block: str):
     question = data.get("q", "").strip()
     answer = data.get("a", "").strip()
     category = normalize_category(data.get("c", ""))
-    badge_title = data.get("b", "").strip() or "MARKS BOOSTER"
+    badge_title = data.get("b", "").strip()
     badge_text = data.get("bt", "").strip()
 
     if not question or not answer or category is None:
@@ -510,8 +510,8 @@ def collect_bulk_entries(save_callback):
     print("\nBulk Mode Format (use --- between questions):")
     print("Q: Your question text")
     print("A: Your answer text")
-    print("B: Badge Title (e.g., MARKS BOOSTER)")
-    print("BT: Badge Text")
+    print("B: Badge Title (Optional)")
+    print("BT: Badge Text (Optional)")
     print("C: 1|2|3  (1=Most, 2=Important, 3=Conceptual)")
     print("---")
     print("\nBulk Mode Commands:")
