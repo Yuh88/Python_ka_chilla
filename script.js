@@ -3333,24 +3333,25 @@ const initializeNotesCraftApp = () => {
         });
     };
 
-    const buildNavState = (view, subject = null, chapter = null) => ({
-        [navStateKey]: true,
-        view,
-        subject,
-        chapter
-    });
+const buildNavState = (view, subject = null, chapter = null, islamiyatBaabId = null) => ({
+          [navStateKey]: true,
+          view,
+          subject,
+          chapter,
+          islamiyatBaabId
+      });
 
-    const normalizeNavState = (state) => {
-        if (!state || state[navStateKey] !== true) {
-            return buildNavState('dashboard');
-        }
+      const normalizeNavState = (state) => {
+          if (!state || state[navStateKey] !== true) {
+              return buildNavState('dashboard');
+          }
 
-        if (state.view === 'model-papers') {
-            return buildNavState('model-papers');
-        }
+          if (state.view === 'model-papers') {
+              return buildNavState('model-papers');
+          }
 
-        if (state.view === 'chapters' && state.subject) {
-            return buildNavState('chapters', state.subject);
+          if (state.view === 'chapters' && state.subject) {
+              return buildNavState('chapters', state.subject, null, state.islamiyatBaabId);
         }
 
         if (state.view === 'content' && state.subject && state.chapter) {
@@ -3659,8 +3660,12 @@ const initializeNotesCraftApp = () => {
                         const subject = topicCard.getAttribute('data-subject');
                         const chapter = topicCard.getAttribute('data-chapter');
                         if (subject && chapter) {
-                            navigateToState(buildNavState('content', subject, chapter), 'forward');
-                        }
+                              if (subject === 'Islamiyat') {
+                                    const currentState = buildNavState('chapters', 'Islamiyat', null, activeIslamiyatBaabId);
+                                    history.replaceState(currentState, '', getRoutePathFromState(currentState));
+                                }
+                                navigateToState(buildNavState('content', subject, chapter), 'forward');
+                          }
                     });
                 });
 
@@ -3743,8 +3748,12 @@ const initializeNotesCraftApp = () => {
                 const subject = chapterCard.getAttribute('data-subject');
                 const chapter = chapterCard.getAttribute('data-chapter');
                 if (subject && chapter) {
-                    navigateToState(buildNavState('content', subject, chapter), 'forward');
-                }
+                              if (subject === 'Islamiyat') {
+                                    const currentState = buildNavState('chapters', 'Islamiyat', null, activeIslamiyatBaabId);
+                                    history.replaceState(currentState, '', getRoutePathFromState(currentState));
+                                }
+                                navigateToState(buildNavState('content', subject, chapter), 'forward');
+                          }
             });
         });
     };
@@ -3815,7 +3824,7 @@ const initializeNotesCraftApp = () => {
         if (safeState.view === 'model-papers') {
             showModelPapersMenu();
         } else if (safeState.view === 'chapters' && safeState.subject) {
-            showChapterSelection(safeState.subject);
+            showChapterSelection(safeState.subject, safeState.islamiyatBaabId);
         } else if (safeState.view === 'content' && safeState.subject && safeState.chapter) {
             showChapterContent(safeState.subject, safeState.chapter);
         } else {
@@ -4016,10 +4025,12 @@ const initializeNotesCraftApp = () => {
             const mode = persistentBackBtn.dataset.mode;
 
             if (mode === 'subjects' && activeSubject === 'Islamiyat' && activeIslamiyatBaabId) {
-                // In Islamiyat nested view, step back from topics grid to baab grid first.
-                showChapterSelection('Islamiyat');
-                return;
-            }
+                  // In Islamiyat nested view, step back from topics grid to baab grid first.
+                  const state = buildNavState('chapters', 'Islamiyat');
+                  history.replaceState(state, '', getRoutePathFromState(state));
+                  showChapterSelection('Islamiyat', '');
+                  return;
+              }
 
             if (mode === 'chapters' || mode === 'subjects') {
                 history.back();
