@@ -3646,7 +3646,7 @@ const buildNavState = (view, subject = null, chapter = null, islamiyatBaabId = n
                 chapterList.innerHTML = '';
                 topicList.forEach((topic) => {
                     const topicCard = document.createElement('button');
-                    topicCard.className = 'chapter-card';
+                    topicCard.className = 'chapter-card islamiyat-ui-card';
                     topicCard.type = 'button';
                     topicCard.setAttribute('data-subject', subjectName);
                     topicCard.setAttribute('data-chapter', encodeChapterPath([String(selectedBaab.id), String(topic.id)]));
@@ -3679,7 +3679,7 @@ const buildNavState = (view, subject = null, chapter = null, islamiyatBaabId = n
             chapterList.innerHTML = '';
             islamiyatHierarchy.forEach((baab) => {
                 const baabCard = document.createElement('button');
-                baabCard.className = 'chapter-card';
+                baabCard.className = 'chapter-card islamiyat-ui-card';
                 baabCard.type = 'button';
                 baabCard.setAttribute('data-subject', subjectName);
                 baabCard.setAttribute('data-islamiyat-baab', String(baab.id));
