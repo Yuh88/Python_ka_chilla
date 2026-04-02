@@ -1,4 +1,4 @@
-﻿/* ==========================================================================
+/* ==========================================================================
 
     NotesCraft - Premium Dashboard Stylesheet
 
@@ -1274,7 +1274,7 @@ a {
 
     justify-content: space-between;
 
-    padding: 0 5.25rem 0 2rem;
+    padding: 0 2rem;
 
     position: sticky;
 
@@ -1291,9 +1291,7 @@ a {
 
 
 .menu-toggle-btn {
-    position: fixed;
-    top: 14px;
-    right: 16px;
+    margin-right: 16px;
     z-index: 220;
     display: inline-flex;
     align-items: center;
@@ -1325,7 +1323,9 @@ a {
 
     padding: 0.5rem 1rem;
 
-    width: 300px;
+    flex-grow: 1;
+    max-width: 600px;
+    margin: 0 1rem;
 
     transition: var(--transition-smooth);
 
@@ -2164,15 +2164,13 @@ body, .sidebar, .topbar, .question-card, .search-container, .card-footer, .theme
 
 
     .menu-toggle-btn {
-        top: 12px;
-        right: 12px;
         width: 42px;
         height: 42px;
     }
 
     .topbar {
 
-        padding: 0 4.5rem 0 1.5rem;
+        padding: 0 1rem;
 
         gap: 1rem;
 
@@ -2468,9 +2466,7 @@ body, html { max-width: 100%; overflow-x: hidden; width: 100%; }
 
 /* Desktop & Universal Sidebar Toggle Enhancements */
 .menu-toggle-btn {
-    position: fixed;
-    top: 14px;
-    right: 16px;
+    margin-right: 16px;
     z-index: 220;
     display: inline-flex;
     align-items: center;
@@ -2533,7 +2529,7 @@ body.sidebar-collapsed .content-area {
     }
 
     .topbar {
-        padding: 0 5.25rem 0 1.25rem;
+        padding: 0 2rem;
     }
 
     .content-area {
@@ -3871,3 +3867,6 @@ body.dark-mode .subject-icon {
     box-shadow: 0 6px 16px rgba(0, 206, 203, 0.25);
     transform: translateY(-2px);
 }
+
+
+
