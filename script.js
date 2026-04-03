@@ -256,10 +256,10 @@ const initializeNotesCraftApp = () => {
             if (hasClosed) return;
             hasClosed = true;
             hideSplash();
-            window.setTimeout(startFeatureTour, 760);
+            window.setTimeout(startFeatureTour, 300);
         };
 
-        const splashDisplayDuration = window.matchMedia('(max-width: 768px)').matches ? 1400 : 2600;
+        const splashDisplayDuration = 300;
         window.setTimeout(closeOnce, splashDisplayDuration);
 
     };
@@ -4272,7 +4272,9 @@ const buildNavState = (view, subject = null, chapter = null, islamiyatBaabId = n
 };
 
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initializeNotesCraftApp, { once: true });
+    document.addEventListener('DOMContentLoaded', () => {
+        initializeNotesCraftApp();
+    });
 } else {
     initializeNotesCraftApp();
 }
