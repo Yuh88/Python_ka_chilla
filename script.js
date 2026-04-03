@@ -51,7 +51,7 @@
             <details class="seo-buffer-accordion">
                 <summary>About these 11th Class Notes (Punjab Board)</summary>
                 <div class="seo-buffer-body">
-                    <p>Master your 11th Class ${subjectName} exam with these interactive, chapter-wise notes. Specifically designed for the 2026 Punjab Board (BISE Lahore, Multan, Faisalabad, etc.) smart syllabus. Whether you are an FSc or ICS Part 1 student, these ${decodedChapter} short questions, flashcards, and solved exercises provide the best PDF-alternative for exam preparation. Download/view complete notes to secure maximum marks.</p>
+                    <p>Master your 11th Class ${subjectName} exam with these interactive, chapter-wise notes. Specifically designed for the 2026 Punjab Board (BISE Lahore, Multan, Faisalabad, etc.) smart syllabus. Whether you are an FSc or ICS Part 1 student, these ${decodedChapter} short questions, flashcards, and solved exercises provide the best PDF-alternative for exam preparation. Download/view complete notes to secure maximum marks. Looking for a 1st Year ${subjectName} PDF? Our interactive notes are a faster, mobile-friendly alternative to traditional PDF downloads.</p>
                 </div>
             </details>
         `;

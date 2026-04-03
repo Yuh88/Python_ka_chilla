@@ -1,59 +1,195 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-<!-- Root URL -->
-<url>
-  <loc>https://notescraft.dev/</loc>
-  <lastmod>2026-03-30</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>1.0</priority>
-</url>
-
-<!-- Main Subject Dashboard Routes (SPA Handled) -->
-<url>
-  <loc>https://notescraft.dev/computer-science</loc>
-  <lastmod>2026-03-30</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://notescraft.dev/english</loc>
-  <lastmod>2026-03-30</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://notescraft.dev/physics</loc>
-  <lastmod>2026-03-30</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://notescraft.dev/islamiyat</loc>
-  <lastmod>2026-03-30</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://notescraft.dev/tarjama-tul-quran</loc>
-  <lastmod>2026-03-30</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://notescraft.dev/model-papers</loc>
-  <lastmod>2026-03-30</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.8</priority>
-</url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://notescraft.dev/</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/computer-science</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/computer-science/chapter-1</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/computer-science/chapter-2</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/computer-science/chapter-3</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/computer-science/chapter-4</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/computer-science/chapter-5</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/computer-science/chapter-6</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/computer-science/chapter-7</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/computer-science/chapter-8</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/computer-science/chapter-9</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/english</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/english/chapter-1</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/english/chapter-2</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/english/chapter-3</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/english/chapter-5</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/english/chapter-6</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/english/chapter-8</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/english/chapter-10</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/english/chapter-11</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/english/chapter-13</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/english/chapter-14</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/physics</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/physics/chapter-1</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/physics/chapter-2</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/physics/chapter-3</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/physics/chapter-4</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/physics/chapter-5</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/physics/chapter-6</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/physics/chapter-7</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/physics/chapter-8</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/physics/chapter-9</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/physics/chapter-10</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/physics/chapter-11</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/physics/chapter-12</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/باب-اول-قرآن-مجید-و-حدیث-نبوی-الف-علوم-القرآن</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/باب-اول-قرآن-مجید-و-حدیث-نبوی-ب-علوم-الحدیث</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/باب-دوم-ایمانیات-و-عبادات-1-ایمانیات-الف-توحید-کے-دلائل-اور-تقاضے</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/باب-دوم-ایمانیات-و-عبادات-1-ایمانیات-ب-رسالتِ-محمدی-کی-خصوصیات</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/باب-دوم-ایمانیات-و-عبادات-1-ایمانیات-ج-ملائکہ-پر-ایمان</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/باب-دوم-ایمانیات-و-عبادات-1-ایمانیات-د-کُتبِ-سماویہ-پر-ایمان</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/باب-دوم-ایمانیات-و-عبادات-1-ایمانیات-ہ-آخرت-پر-ایمان</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/باب-دوم-ایمانیات-و-عبادات-2-عبادات-الف-فلسفۂ-نماز</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/باب-دوم-ایمانیات-و-عبادات-2-عبادات-ب-فلسفۂ-زکوٰۃ-و-صدقات</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/باب-دوم-ایمانیات-و-عبادات-2-عبادات-ج-فلسفۂ-صوم</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/باب-دوم-ایمانیات-و-عبادات-2-عبادات-د-فلسفۂ-حج-و-قربانی</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/باب-سوم-سیرتِ-نبوی-الف-نبی-کریم-بطور-مثالی-سربراہِ-خاندان</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/باب-سوم-سیرتِ-نبوی-ب-نبی-کریم-بطور-مثالی-سربراہِ-ریاست</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/باب-سوم-سیرتِ-نبوی-ج-نبی-کریم-بطور-مثالی-سپہ-سالار</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/باب-سوم-سیرتِ-نبوی-د-نبی-کریم-کی-معاشی-تعلیمات</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/باب-چہارم-اخلاق-و-آداب-الف-اجتماعی-خیر-خواہی-اور-احترامِ-انسانیت</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/باب-چہارم-اخلاق-و-آداب-ب-اخلاقی-رذائل-سے-اجتناب</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/باب-پنجم-حُسنِ-معاملات-و-معاشرت-الف-حقوق-العباد-اساتذہ-کرام،-معاون-عملہ،-زوجین،-اولاد،-بیوہ</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/باب-پنجم-حُسنِ-معاملات-و-معاشرت-ب-نکاح-و-طلاق-کی-اسلامی-تعلیمات</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/باب-ششم-ہدایت-کے-سرچشمے-اور-مشاہیرِ-اسلام-الف-خلافتِ-راشدہ</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/باب-ششم-ہدایت-کے-سرچشمے-اور-مشاہیرِ-اسلام-ب-ائمہ-اہلِ-بیتِ-اطہار-رَضِیَ-اللَّهُ-تَعَالَىٰ-عَنْهُمْ</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/باب-ہفتم-اسلامی-تعلیمات-اور-عصرِ-حاضر-کے-تقاضے-الف-قانون-کی-پاسداری</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/باب-ہفتم-اسلامی-تعلیمات-اور-عصرِ-حاضر-کے-تقاضے-ب-اسلاموفوبیا-اور-ہماری-ذمہ-داریاں</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/tarjama-tul-quran</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/tarjama-tul-quran/سُورَةُ-الْبَقَرَةِ</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/tarjama-tul-quran/سُورَةُ-آلِ-عِمْرَانَ</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/tarjama-tul-quran/سُورَةُ-الْأَنْفَالِ</loc>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/tarjama-tul-quran/سُورَةُ-التَّوْبَةِ</loc>
+  </url>
 </urlset>
