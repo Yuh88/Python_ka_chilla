@@ -2,6 +2,61 @@
     const url = new URL(window.location.href);
     const rawPath = url.searchParams.get('p');
 
+    // SEO Helper Function
+    window.updateSEO = function(pageTitle, metaDescription, urlPath) {
+        if (pageTitle) {
+            document.title = pageTitle;
+        }
+        
+        if (metaDescription) {
+            let metaDescTag = document.querySelector('meta[name="description"]');
+            if (!metaDescTag) {
+                metaDescTag = document.createElement('meta');
+                metaDescTag.name = "description";
+                document.head.appendChild(metaDescTag);
+            }
+            metaDescTag.content = metaDescription;
+        }
+        
+        if (urlPath && window.location.pathname !== urlPath) {
+            window.history.pushState(null, '', urlPath);
+        }
+    };
+
+    // Schema Helper Function
+    window.injectSchema = function(schemaData) {
+        const existingScript = document.getElementById('dynamic-seo-schema');
+        if (existingScript) {
+            existingScript.remove();
+        }
+
+        const dataToInject = schemaData || {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "NotesCraft",
+            "url": window.location.origin
+        };
+
+        const script = document.createElement('script');
+        script.id = 'dynamic-seo-schema';
+        script.type = 'application/ld+json';
+        script.textContent = JSON.stringify(dataToInject);
+        document.head.appendChild(script);
+    };
+
+    // SEO Content Block Helper
+    window.getSeoContentHtml = function(subjectName, chapterName) {
+        const decodedChapter = decodeChapterPath(chapterName);
+        return `
+            <details class="seo-buffer-accordion">
+                <summary>About these 11th Class Notes (Punjab Board)</summary>
+                <div class="seo-buffer-body">
+                    <p>Master your 11th Class ${subjectName} exam with these interactive, chapter-wise notes. Specifically designed for the 2026 Punjab Board (BISE Lahore, Multan, Faisalabad, etc.) smart syllabus. Whether you are an FSc or ICS Part 1 student, these ${decodedChapter} short questions, flashcards, and solved exercises provide the best PDF-alternative for exam preparation. Download/view complete notes to secure maximum marks.</p>
+                </div>
+            </details>
+        `;
+    };
+
     if (!rawPath) {
         window.__notescraftBootPathname = '';
         return;
@@ -3127,6 +3182,8 @@ const initializeNotesCraftApp = () => {
 
         if (questionsFeed) {
             questionsFeed.querySelectorAll('.question-card').forEach((card) => card.remove());
+            const existingBuffer = questionsFeed.querySelector('.seo-buffer-accordion');
+            if (existingBuffer) existingBuffer.remove();
         }
     };
 
@@ -3513,6 +3570,15 @@ const buildNavState = (view, subject = null, chapter = null, islamiyatBaabId = n
     const showModelPapersMenu = () => {
         activeSubject = null;
         activeChapter = null;
+        
+        if (window.updateSEO) {
+            window.updateSEO(
+                '11th Class Model Papers 2026 - All Subjects Punjab Board',
+                'Solved model papers and past papers for ICS and FSc part 1. Prepare for board exams with NotesCraft.',
+                withBasePrefix(getRoutePathFromState(buildNavState('model-papers')))
+            );
+        }
+
         clearRenderedQuestionContent();
         setFlashcardFabVisibility(false);
         setCommentsSectionVisibility(false);
@@ -3598,12 +3664,33 @@ const buildNavState = (view, subject = null, chapter = null, islamiyatBaabId = n
         if (chapterList) {
             chapterList.classList.remove('model-papers-grid');
         }
+        
+        if (window.updateSEO) {
+            window.updateSEO(
+                'NotesCraft | Best Board Exam Revision Notes for ICS & FSc',
+                'Master your ICS and FSc board exams with NotesCraft. Get interactive chapter-wise short questions... Punjab Board 2026.',
+                '/'
+            );
+        }
+        
+        if (window.injectSchema) {
+            window.injectSchema(null);
+        }
     };
 
     const showChapterSelection = (subjectName, islamiyatBaabId = '') => {
         activeSubject = subjectName;
         activeChapter = null;
         activeIslamiyatBaabId = subjectName === 'Islamiyat' ? String(islamiyatBaabId || '') : '';
+        
+        if (window.updateSEO) {
+            window.updateSEO(
+                `11th Class ${subjectName} Notes - Punjab Board 2026`,
+                `Interactive short notes for 1st year ${subjectName}. Latest curriculum for board exams.`,
+                withBasePrefix(getRoutePathFromState(buildNavState('chapters', subjectName, null, islamiyatBaabId)))
+            );
+        }
+
         clearRenderedQuestionContent();
         setFlashcardFabVisibility(false);
         setCommentsSectionVisibility(false);
@@ -3763,6 +3850,14 @@ const buildNavState = (view, subject = null, chapter = null, islamiyatBaabId = n
         activeChapter = chapterName;
         activeIslamiyatBaabId = '';
 
+        if (window.updateSEO) {
+            window.updateSEO(
+                `11th Class ${subjectName} ${decodeChapterPath(chapterName)} Notes - Punjab Board 2026`,
+                `Most important short questions and notes for ${decodeChapterPath(chapterName)} of ${subjectName}. Latest full syllabus 11th class.`,
+                withBasePrefix(getRoutePathFromState(buildNavState('content', subjectName, chapterName)))
+            );
+        }
+
         const authUser = getCurrentAuthUser();
         if (authUser && authUser.uid) {
             startBookmarksRealtimeListener(authUser.uid);
@@ -3790,6 +3885,30 @@ const buildNavState = (view, subject = null, chapter = null, islamiyatBaabId = n
 
         if (hasChapterContent) {
             renderQuestionsByCategory(chapterQuestions, subjectName, chapterName);
+            
+            if (window.injectSchema) {
+                const schemaQuestions = chapterQuestions.slice(0, 5).map(q => {
+                    const cleanQ = String(q.question || '').replace(/<[^>]*>?/g, '').trim();
+                    const cleanA = String(q.answer || '').replace(/<[^>]*>?/g, '').trim();
+                    return {
+                        "@type": "Question",
+                        "name": cleanQ,
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": cleanA
+                        }
+                    };
+                });
+                
+                if (schemaQuestions.length > 0) {
+                    window.injectSchema({
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": schemaQuestions
+                    });
+                }
+            }
+
             setFlashcardFabVisibility(true);
             setCommentsSectionVisibility(true);
 
@@ -3803,6 +3922,19 @@ const buildNavState = (view, subject = null, chapter = null, islamiyatBaabId = n
             tabPanes.forEach(pane => pane.classList.remove('active'));
             if (firstTabBtn) firstTabBtn.classList.add('active');
             if (firstTabPane) firstTabPane.classList.add('active');
+            
+            // Inject SEO Buffer explicitly
+            if (questionsFeed && window.getSeoContentHtml) {
+                const existingBuffer = questionsFeed.querySelector('.seo-buffer-accordion');
+                if (existingBuffer) existingBuffer.remove();
+                
+                const template = document.createElement('div');
+                template.innerHTML = window.getSeoContentHtml(subjectName, chapterName);
+                if (template.firstElementChild) {
+                    questionsFeed.appendChild(template.firstElementChild);
+                }
+            }
+
             runSearchFilter();
             runFlashcardSync();
         } else {
