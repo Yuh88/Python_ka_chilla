@@ -1541,10 +1541,21 @@ a {
 
 
 .banner-content p {
-
     font-size: 1rem;
-
     opacity: 0.9;
+}
+
+.seo-board-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    background-color: rgba(0, 206, 203, 0.1);
+    color: #00CECB;
+    border-radius: 20px;
+    margin-top: 8px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
 
 }
 

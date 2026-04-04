@@ -3717,6 +3717,13 @@ const buildNavState = (view, subject = null, chapter = null, islamiyatBaabId = n
                     chapterSelectionTitle.innerText = selectedBaab
                         ? selectedBaab.title
                         : 'اسلامیات: موضوعات';
+                    let badge = chapterSelectionTitle.nextElementSibling;
+                    if (!badge || !badge.classList.contains('seo-board-badge')) {
+                        badge = document.createElement('span');
+                        badge.className = 'seo-board-badge';
+                        chapterSelectionTitle.parentNode.insertBefore(badge, chapterSelectionTitle.nextSibling);
+                    }
+                    badge.innerText = '11th Class • Punjab Board';
                 }
 
                 if (!selectedBaab || !Array.isArray(selectedBaab.topics)) {
@@ -3759,9 +3766,16 @@ const buildNavState = (view, subject = null, chapter = null, islamiyatBaabId = n
                 return;
             }
 
-            if (chapterSelectionTitle) {
-                chapterSelectionTitle.innerText = 'اسلامیات: ابواب';
-            }
+                if (chapterSelectionTitle) {
+                    chapterSelectionTitle.innerText = 'اسلامیات: ابواب';
+                    let badge = chapterSelectionTitle.nextElementSibling;
+                    if (!badge || !badge.classList.contains('seo-board-badge')) {
+                        badge = document.createElement('span');
+                        badge.className = 'seo-board-badge';
+                        chapterSelectionTitle.parentNode.insertBefore(badge, chapterSelectionTitle.nextSibling);
+                    }
+                    badge.innerText = '11th Class • Punjab Board';
+                }
 
             chapterList.innerHTML = '';
             islamiyatHierarchy.forEach((baab) => {
@@ -3789,6 +3803,13 @@ const buildNavState = (view, subject = null, chapter = null, islamiyatBaabId = n
 
         if (chapterSelectionTitle) {
             chapterSelectionTitle.innerText = `${subjectName} Chapters`;
+            let badge = chapterSelectionTitle.nextElementSibling;
+            if (!badge || !badge.classList.contains('seo-board-badge')) {
+                badge = document.createElement('span');
+                badge.className = 'seo-board-badge';
+                chapterSelectionTitle.parentNode.insertBefore(badge, chapterSelectionTitle.nextSibling);
+            }
+            badge.innerText = '11th Class • Punjab Board';
         }
 
         const chapters = getChapterEntries(subjectName);
@@ -3875,6 +3896,13 @@ const buildNavState = (view, subject = null, chapter = null, islamiyatBaabId = n
         if (bannerTitle) {
             const chapterDisplay = getChapterDisplayParts(subjectName, decodeChapterPath(chapterName));
             bannerTitle.innerText = chapterDisplay.headerTitle;
+            let badge = bannerTitle.nextElementSibling;
+            if (!badge || !badge.classList.contains('seo-board-badge')) {
+                badge = document.createElement('span');
+                badge.className = 'seo-board-badge';
+                bannerTitle.parentNode.insertBefore(badge, bannerTitle.nextSibling);
+            }
+            badge.innerText = 'ICS / FSc Part 1 • BISE Punjab';
         }
         if (bannerSubtitle) {
             bannerSubtitle.innerText = 'Focused revision view for board preparation.';
