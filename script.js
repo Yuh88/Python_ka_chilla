@@ -235,6 +235,47 @@ const initializeNotesCraftApp = () => {
 
     initFirstVisitSplash();
 
+    // 0. Pairing Scheme Modal Logic
+    const pairingModal = document.getElementById('pairingSchemeModal');
+    const openPairingBtn = document.getElementById('openPairingSchemeModal');
+    const closePairingBtn = document.getElementById('closePairingModalBtn');
+    const pairingBackdrop = document.getElementById('pairingModalBackdrop');
+    const pairingSubjectBtns = document.querySelectorAll('.pairing-subject-btn');
+
+    if (pairingModal && openPairingBtn) {
+        const togglePairingModal = (show) => {
+            if (show) {
+                pairingModal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            } else {
+                pairingModal.classList.add('hidden');
+                document.body.style.overflow = '';
+            }
+        };
+
+        openPairingBtn.addEventListener('click', () => togglePairingModal(true));
+        
+        if (closePairingBtn) closePairingBtn.addEventListener('click', () => togglePairingModal(false));
+        if (pairingBackdrop) pairingBackdrop.addEventListener('click', () => togglePairingModal(false));
+        
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !pairingModal.classList.contains('hidden')) {
+                togglePairingModal(false);
+            }
+        });
+
+        // Add dummy event listeners to the subject buttons for now
+        pairingSubjectBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const subject = e.target.getAttribute('data-subject');
+                console.log(`Pairing scheme selected for: ${subject}`);
+                // In the future, logic to show the pairing scheme will go here
+                togglePairingModal(false);
+            });
+        });
+    }
+
     // 1. Mobile Sidebar Toggle
     const sidebar = document.getElementById('sidebar');
     const openBtn = document.getElementById('openSidebar');

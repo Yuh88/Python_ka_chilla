@@ -90,13 +90,13 @@
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <!-- Preload Critical Assets -->
-    <link rel="preload" href="/style.css?v=1.0.24" as="style">
+    <link rel="preload" href="/style.css?v=1.0.26" as="style">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
     <!-- Premium Tech Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
-  <link rel="stylesheet" href="/style.css?v=1.0.24">
+  <link rel="stylesheet" href="/style.css?v=1.0.26">
 </head>
 <body class="dark-mode" style="background-color: #0b0b0d; color: #ffffff;">
 
@@ -433,6 +433,19 @@
                   <span class="subject-name">Islamiyat</span>
                 </button>
               </div>
+
+              <!-- VIP Pairing Scheme Banner -->
+              <button id="openPairingSchemeModal" class="vip-pairing-banner" type="button" aria-label="Open Pairing Schemes 2026 Modal">
+                <div class="vip-pairing-content">
+                  <div class="vip-badge-wrapper"><span class="vip-badge">🔥 Trending</span></div>
+                  <h2 class="vip-title">📊 1st Year Pairing Schemes 2026</h2>
+                  <p class="vip-subtitle">Check chapter-wise board weightage for ICS &amp; FSc (All Punjab Boards).</p>
+                </div>
+                <div class="vip-icon-wrapper" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+                </div>
+              </button>
+
               <section class="why-features-section" aria-label="Why NotesCraft?">
                 <div class="why-features-header">
                   <h2>Why NotesCraft?</h2>
@@ -1612,6 +1625,26 @@ Schools organize these debates because <strong>storytelling makes arguments more
         </div>
         <p id="privateChatStatus" class="private-chat-status" aria-live="polite"></p>
       </section>
+    </div>
+  </div>
+</div>
+
+<div id="pairingSchemeModal" class="pairing-modal hidden" role="dialog" aria-modal="true" aria-labelledby="pairingModalTitle">
+  <div id="pairingModalBackdrop" class="pairing-modal-backdrop" aria-hidden="true"></div>
+  <div class="pairing-modal-dialog">
+    <div class="pairing-modal-header">
+      <h3 id="pairingModalTitle">📊 Select Subject</h3>
+      <button id="closePairingModalBtn" class="pairing-modal-close" type="button" aria-label="Close modal">&times;</button>
+    </div>
+    <div class="pairing-modal-body">
+      <div class="pairing-modal-grid">
+        <button class="pairing-subject-btn" data-subject="Computer Science" type="button">Computer Science</button>
+        <button class="pairing-subject-btn" data-subject="Physics" type="button">Physics</button>
+        <button class="pairing-subject-btn" data-subject="Mathematics" type="button">Mathematics</button>
+        <button class="pairing-subject-btn" data-subject="English" type="button">English</button>
+        <button class="pairing-subject-btn" data-subject="Urdu" type="button">Urdu</button>
+        <button class="pairing-subject-btn" data-subject="Islamiyat" type="button">Islamiyat</button>
+      </div>
     </div>
   </div>
 </div>
