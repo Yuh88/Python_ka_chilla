@@ -220,6 +220,32 @@
   border-radius: 6px;
 }
 
+.highlight-num {
+  font-weight: 700;
+  color: #0ea5e9;
+  background: rgba(14, 165, 233, 0.15);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+}
+
+.unit-pill {
+  display: inline-block;
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: 6px;
+  padding: 0.25rem 0.5rem;
+  margin: 0.2rem 0.2rem;
+  font-size: 0.85rem;
+  color: var(--text-main);
+  white-space: nowrap;
+}
+
+.unit-weight {
+  color: #f59e0b;
+  font-weight: 700;
+  margin-left: 0.15rem;
+}
+
 @media (max-width: 768px) {
   .pairing-schemes-view {
     padding: 0.75rem;

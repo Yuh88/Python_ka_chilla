@@ -63,6 +63,19 @@
         }
     };
 
+    window.formatAttemptRules = function(text) {
+        if (!text) return '';
+        return text.replace(/\b(\d+)\b/g, '<span class="highlight-num">$1</span>');
+    };
+
+    window.formatUnitPills = function(text) {
+        if (!text) return '';
+        return text.split(',').map(part => {
+            let formatted = part.trim().replace(/\((\s*\d+\s*)\)/g, '<span class="unit-weight">($1)</span>');
+            return `<span class="unit-pill">${formatted}</span>`;
+        }).join(' ');
+    };
+
     window.renderPairingScheme = function(subject) {
       const contentDiv = document.getElementById('pairingSchemeContent');
       contentDiv.style.display = 'block';
@@ -107,8 +120,8 @@
                   ${schemeData.shortQuestions.map(q => `
                     <tr>
                       <td><strong>${q.qNo}</strong></td>
-                      <td>${q.rules}</td>
-                      <td>${q.units}</td>
+                      <td>${window.formatAttemptRules(q.rules)}</td>
+                      <td>${window.formatUnitPills(q.units)}</td>
                     </tr>
                   `).join('')}
                 </tbody>
@@ -136,8 +149,8 @@
                   ${schemeData.longQuestions.map(q => `
                     <tr>
                       <td><strong>${q.qNo}</strong></td>
-                      <td>${q.partA}</td>
-                      <td>${q.partB}</td>
+                      <td>${window.formatUnitPills(q.partA)}</td>
+                      <td>${window.formatUnitPills(q.partB)}</td>
                     </tr>
                   `).join('')}
                 </tbody>
