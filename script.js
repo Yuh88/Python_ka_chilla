@@ -53,16 +53,19 @@
              window.updateSEO('11th Class Pairing Schemes 2026 - NotesCraft', 'Official 11th class pairing schemes 2026 for all Punjab boards. Math, Physics, Computer, and more.', '/pairing-schemes');
         }
 
-        // Render Math scheme by default when opening if none is currently open
-        const grid = document.getElementById('pairingSubjectGrid');
-        const activeBtn = grid && grid.querySelector('.active');
-        if (!activeBtn && window.renderPairingScheme) {
-             window.renderPairingScheme('Mathematics');
+        // No default subject rendering on initial load
+        const contentDiv = document.getElementById('pairingSchemeContent');
+        const gridOptions = document.querySelectorAll('.pairing-subject-card');
+        const activeBtn = Array.from(gridOptions).find(btn => btn.classList.contains('active'));
+        if (!activeBtn && contentDiv) {
+             contentDiv.innerHTML = '';
+             contentDiv.style.display = 'none';
         }
     };
 
     window.renderPairingScheme = function(subject) {
       const contentDiv = document.getElementById('pairingSchemeContent');
+      contentDiv.style.display = 'block';
       const gridOptions = document.querySelectorAll('.pairing-subject-card');
       
       gridOptions.forEach(btn => {
