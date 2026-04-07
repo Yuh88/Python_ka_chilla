@@ -79,22 +79,16 @@
          return;
       }
       
-      contentDiv.innerHTML = `
-        <div class="scheme-card">
-          <div class="scheme-card-header">
-            <h3>${schemeData.title}</h3>
-            <div class="scheme-badges">
-              <span class="badge total">Total Marks: ${schemeData.totalMarks}</span>
-              <span class="badge obj">Objective: ${schemeData.objective}</span>
-              <span class="badge subj">Subjective: ${schemeData.subjective}</span>
-            </div>
-          </div>
-          
-          <div class="scheme-section">
-            <h4>Objective Part</h4>
-            <p class="scheme-text">${schemeData.objectiveRules}</p>
-          </div>
+      let sectionsHtml = '';
+      
+      if (schemeData.note) {
+        sectionsHtml += `<div class="scheme-section note-section">
+          <p style="color: #ef4444; font-weight: 500;"><strong>Note:</strong> ${schemeData.note}</p>
+        </div>`;
+      }
 
+      if (schemeData.shortQuestions) {
+        sectionsHtml += `
           <div class="scheme-section">
             <h4>Subjective Part-I (Short Questions)</h4>
             <div class="table-responsive">
@@ -118,10 +112,14 @@
               </table>
             </div>
           </div>
+        `;
+      }
 
+      if (schemeData.longQuestions) {
+        sectionsHtml += `
           <div class="scheme-section">
             <h4>Subjective Part-II (Long Questions)</h4>
-            <p class="scheme-instruction">${schemeData.longInstruction}</p>
+            ${schemeData.longInstruction ? `<p class="scheme-instruction">${schemeData.longInstruction}</p>` : ''}
             <div class="table-responsive">
               <table class="scheme-table">
                 <thead>
@@ -143,6 +141,59 @@
               </table>
             </div>
           </div>
+        `;
+      }
+      
+      if (schemeData.subjectiveList) {
+        const title = schemeData.subjectiveListTitle || "Subjective Part";
+        const instruction = schemeData.subjectiveListInstruction ? `<p class="scheme-instruction">${schemeData.subjectiveListInstruction}</p>` : '';
+        const headerTask = schemeData.subjectiveListHeaderTask || "Question No. & Task";
+        const headerMarks = schemeData.subjectiveListHeader || "Marks Details";
+
+        sectionsHtml += `
+          <div class="scheme-section">
+            <h4>${title}</h4>
+            ${instruction}
+            <div class="table-responsive">
+              <table class="scheme-table">
+                <thead>
+                  <tr>
+                    <th>${headerTask}</th>
+                    <th>${headerMarks}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${schemeData.subjectiveList.map(q => `
+                    <tr>
+                      <td><strong>${q.task}</strong></td>
+                      <td>${q.marks}</td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `;
+      }
+
+      contentDiv.innerHTML = `
+        <div class="scheme-card">
+          <div class="scheme-card-header">
+            <h3>${schemeData.title}</h3>
+            <div class="scheme-badges">
+              <span class="badge total" style="${schemeData.totalMarks !== 100 ? 'background-color:#f59e0b;color:#fff;' : ''}">Total Marks: ${schemeData.totalMarks}</span>
+              ${schemeData.time ? `<span class="badge obj">Time: ${schemeData.time}</span>` : ''}
+              <span class="badge obj">Objective: ${schemeData.objective}</span>
+              <span class="badge subj">Subjective: ${schemeData.subjective}</span>
+            </div>
+          </div>
+          
+          <div class="scheme-section">
+            <h4>Objective Part</h4>
+            <p class="scheme-text">${schemeData.objectiveRules}</p>
+          </div>
+
+          ${sectionsHtml}
         </div>
       `;
     };

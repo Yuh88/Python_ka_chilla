@@ -18,6 +18,111 @@ window.pairingSchemes = {
       { qNo: "Q-8", partA: "Unit 10", partB: "Unit 12" },
       { qNo: "Q-9", partA: "Unit 13", partB: "Unit 14" }
     ]
+  },
+  "Computer Science": {
+    title: "Computer Science",
+    totalMarks: 75,
+    time: "2:30 Hrs",
+    objective: 15,
+    subjective: 60,
+    objectiveRules: "<strong>MCQs Breakdown:</strong> Ch1(2), Ch2(1), Ch3(1), Ch4(1), Ch5(3), Ch6(1), Ch7(2), Ch8(2), Ch9(2).",
+    shortQuestions: [
+      { qNo: "Q-2", rules: "Attempt 6 out of 9", units: "Ch1(4), Ch2(2), Ch8(3)" },
+      { qNo: "Q-3", rules: "Attempt 6 out of 9", units: "Ch3(4), Ch6(2), Ch7(3)" },
+      { qNo: "Q-4", rules: "Attempt 6 out of 9", units: "Ch4(3), Ch5(3), Ch9(3)" }
+    ],
+    longInstruction: "<strong>Instruction:</strong> Attempt any 3 out of 5 (8 Marks each).",
+    longQuestions: [
+      { qNo: "Q-5", partA: "Ch2", partB: "-" },
+      { qNo: "Q-6", partA: "Ch3", partB: "-" },
+      { qNo: "Q-7", partA: "Ch4", partB: "-" },
+      { qNo: "Q-8", partA: "Ch5", partB: "-" },
+      { qNo: "Q-9", partA: "Ch7", partB: "-" }
+    ]
+  },
+  "Physics": {
+    title: "Physics",
+    totalMarks: 85,
+    time: "3 Hrs",
+    objective: 17,
+    subjective: 68,
+    objectiveRules: "<strong>MCQs Breakdown:</strong> 1 MCQ from: Ch 1, 2, 3, 4, 6, 8, 11 | 2 MCQs from: Ch 5, 7, 9, 10, 12",
+    shortQuestions: [
+      { qNo: "Q-2", rules: "Attempt 8 out of 12", units: "Ch1(2), Ch2(2), Ch3(4), Ch4(4)" },
+      { qNo: "Q-3", rules: "Attempt 8 out of 12", units: "Ch6(2), Ch8(2), Ch5(4), Ch7(4)" },
+      { qNo: "Q-4", rules: "Attempt 6 out of 9", units: "Ch9(3), Ch10(3), Ch11(1), Ch12(2)" }
+    ],
+    longInstruction: "<strong>Instruction:</strong> Attempt any 3 out of 5 (8 Marks each).",
+    longQuestions: [
+      { qNo: "Q-5", partA: "Ch1,2,3", partB: "-" },
+      { qNo: "Q-6", partA: "Ch4,5,6", partB: "-" },
+      { qNo: "Q-7", partA: "Ch7,8", partB: "-" },
+      { qNo: "Q-8", partA: "Ch9,10", partB: "-" },
+      { qNo: "Q-9", partA: "Ch11,12", partB: "-" }
+    ]
+  },
+  "Urdu": {
+    title: "Urdu",
+    totalMarks: 100,
+    time: "3 Hrs",
+    objective: 20,
+    subjective: 80,
+    objectiveRules: "<strong>MCQs Breakdown:</strong> Nasar (5 MCQs), Qawaid (5 MCQs), Ilm-e-Bayan/Badee (5 MCQs), Shehri Istilahat (5 MCQs).",
+    subjectiveList: [
+      { task: "Q2(a): Nazm Tashreeh", marks: "10" },
+      { task: "Q2(b): Ghazal Tashreeh", marks: "10" },
+      { task: "Q3: Para Tashreeh with Siyaq-o-Sabaq", marks: "15" },
+      { task: "Q4: Sabaq Khulasa", marks: "10" },
+      { task: "Q5: Nazm Khulasa/Markazi Khayal", marks: "5" },
+      { task: "Q6: Mukalma / Roodad / Roznamcha", marks: "10" },
+      { task: "Q7: Darkhwast / Raseed", marks: "10" },
+      { task: "Q8: Talkhees + Unwan", marks: "10" }
+    ]
+  },
+  "English": {
+    title: "English",
+    totalMarks: 100,
+    time: "3 Hrs",
+    objective: 20,
+    subjective: 80,
+    note: "Excluded Units: 4, 7, 9, 12.",
+    objectiveRules: "<strong>MCQs Breakdown:</strong> Synonyms (10 MCQs), Text-based (5 MCQs), Correct Form of Verb (5 MCQs).",
+    shortQuestions: [
+      { qNo: "Q-2", rules: "Attempt 7 out of 10 (14 Marks)", units: "Units 1, 2, 5, 8, 10" },
+      { qNo: "Q-3", rules: "Attempt 5 out of 8 (10 Marks)", units: "Units 3, 6, 11, 13" },
+      { qNo: "Q-4", rules: "Attempt 3 out of 5 (6 Marks)", units: "Unit 14" }
+    ],
+    subjectiveListTitle: "Subjective Section II",
+    subjectiveList: [
+      { task: "Q5: Letter OR Application", marks: "10" },
+      { task: "Q6: Moral Story from 2 topics", marks: "10" },
+      { task: "Q7(a): Stanza Explanation (Units 3, 6, 11, 13)", marks: "5" },
+      { task: "Q7(b): Punctuation (Units 1, 2, 5, 8, 10)", marks: "5" },
+      { task: "Q7(c): Pair of Words - 5 out of 8", marks: "5" },
+      { task: "Q8: Translation into Urdu (Units 1, 2, 5, 8, 10)", marks: "15" }
+    ]
+  },
+  "Islamiyat": {
+    title: "Islamiyat Lazmi",
+    totalMarks: 50,
+    time: "2 Hrs",
+    objective: 10,
+    subjective: 40,
+    objectiveRules: "<strong>MCQs Breakdown:</strong> Bab 1, 4, 5, 6, 7 (1 MCQ each) | Bab 2 (3 MCQs) | Bab 3 (2 MCQs).",
+    shortQuestions: [
+      { qNo: "Q-2", rules: "Attempt 5 out of 8 (10 Marks)", units: "Bab 1, 2, 3" },
+      { qNo: "Q-3", rules: "Attempt 5 out of 8 (10 Marks)", units: "Bab 4, 5, 6, 7" }
+    ],
+    subjectiveListTitle: "Long Qs & Translation",
+    subjectiveListInstruction: "<strong>Instruction:</strong> Q4: Ahadith Translation (Attempt 2/4 from Bab 1 - 4 Marks), Q5: Long Questions (Attempt 2/4 - 16 Marks)",
+    subjectiveListHeader: "Details (Bab)",
+    subjectiveList: [
+      { task: "Q4: Ahadith Translation", marks: "Bab 1" },
+      { task: "Q5 Part (i): Long Question", marks: "Bab 1 or 3" },
+      { task: "Q5 Part (ii): Long Question", marks: "Bab 2" },
+      { task: "Q5 Part (iii): Long Question", marks: "Bab 4 or 5" },
+      { task: "Q5 Part (iv): Long Question", marks: "Bab 6 or 7" }
+    ]
   }
 };
 
