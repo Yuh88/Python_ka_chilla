@@ -1,6 +1,5 @@
 (() => {
-    const url = new URL(window.location.href);
-    const rawPath = url.searchParams.get('path');
+    window.__notescraftBootPathname = window.location.pathname;
 
     // SEO Helper Function
     window.updateSEO = function(pageTitle, metaDescription, urlPath) {
@@ -57,29 +56,6 @@
         `;
     };
 
-    if (!rawPath) {
-        window.__notescraftBootPathname = '';
-        return;
-    }
-
-    const normalizedPath = String(rawPath).trim();
-    if (!normalizedPath) {
-        window.__notescraftBootPathname = '';
-        return;
-    }
-
-    const withLeadingSlash = normalizedPath.startsWith('/') ? normalizedPath : `/${normalizedPath}`;
-
-    try {
-        const parsed = new URL(withLeadingSlash, window.location.origin);
-        window.__notescraftBootPathname = parsed.pathname;
-    } catch (error) {
-        window.__notescraftBootPathname = withLeadingSlash.split('?')[0].split('#')[0] || '';
-    }
-
-    url.searchParams.delete('path');
-    const cleanRelativeUrl = `${url.pathname}${url.search}${url.hash}`;
-    history.replaceState(history.state, '', cleanRelativeUrl);
 })();
 
 const initializeNotesCraftApp = () => {
