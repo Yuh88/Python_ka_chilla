@@ -21,6 +21,131 @@
             window.history.pushState(null, '', urlPath);
         }
     };
+    
+    window.addEventListener('popstate', (e) => {
+      const path = location.pathname;
+      if (path === '/' || path === '/index.html') {
+        const bd = document.getElementById('subjectDashboardView');
+        if (bd && bd.classList.contains('hidden')) {
+          bd.classList.remove('hidden');
+          document.getElementById('chapterSelectionView')?.classList.add('hidden');
+          document.querySelector('.chapter-header-banner')?.classList.add('hidden');
+          document.querySelector('.tab-navigation')?.classList.add('hidden');
+          document.getElementById('questions-feed')?.classList.add('hidden');
+          document.getElementById('pairing-schemes-view')?.classList.add('hidden');
+        }
+      } else if (path === '/pairing-schemes') {
+          openPairingSchemesView(true);
+      }
+    });
+
+    window.openPairingSchemesView = function(isHistoryEvent = false) {
+        document.getElementById('subjectDashboardView')?.classList.add('hidden');
+        document.getElementById('chapterSelectionView')?.classList.add('hidden');
+        document.querySelector('.chapter-header-banner')?.classList.add('hidden');
+        document.querySelector('.tab-navigation')?.classList.add('hidden');
+        document.getElementById('questions-feed')?.classList.add('hidden');
+        
+        const psView = document.getElementById('pairing-schemes-view');
+        if (psView) psView.classList.remove('hidden');
+        
+        if (!isHistoryEvent) {
+             window.updateSEO('11th Class Pairing Schemes 2026 - NotesCraft', 'Official 11th class pairing schemes 2026 for all Punjab boards. Math, Physics, Computer, and more.', '/pairing-schemes');
+        }
+
+        // Render Math scheme by default when opening if none is currently open
+        const grid = document.getElementById('pairingSubjectGrid');
+        const activeBtn = grid && grid.querySelector('.active');
+        if (!activeBtn && window.renderPairingScheme) {
+             window.renderPairingScheme('Mathematics');
+        }
+    };
+
+    window.renderPairingScheme = function(subject) {
+      const contentDiv = document.getElementById('pairingSchemeContent');
+      const gridOptions = document.querySelectorAll('.pairing-subject-card');
+      
+      gridOptions.forEach(btn => {
+         if (btn.getAttribute('data-subject') === subject) {
+             btn.classList.add('active');
+         } else {
+             btn.classList.remove('active');
+         }
+      });
+      
+      const schemeData = window.pairingSchemes && window.pairingSchemes[subject];
+      if (!schemeData) {
+         contentDiv.innerHTML = `<div class="content-unavailable" style="text-align:center; padding: 3rem; color: #94a3b8;"><p>${subject} pairing scheme data is coming soon.</p></div>`;
+         return;
+      }
+      
+      contentDiv.innerHTML = `
+        <div class="scheme-card">
+          <div class="scheme-card-header">
+            <h3>${schemeData.title}</h3>
+            <div class="scheme-badges">
+              <span class="badge total">Total Marks: ${schemeData.totalMarks}</span>
+              <span class="badge obj">Objective: ${schemeData.objective}</span>
+              <span class="badge subj">Subjective: ${schemeData.subjective}</span>
+            </div>
+          </div>
+          
+          <div class="scheme-section">
+            <h4>Objective Part</h4>
+            <p class="scheme-text">${schemeData.objectiveRules}</p>
+          </div>
+
+          <div class="scheme-section">
+            <h4>Subjective Part-I (Short Questions)</h4>
+            <div class="table-responsive">
+              <table class="scheme-table">
+                <thead>
+                  <tr>
+                    <th>Question No.</th>
+                    <th>Attempt Rules</th>
+                    <th>Chapter Distribution (Questions)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${schemeData.shortQuestions.map(q => `
+                    <tr>
+                      <td><strong>${q.qNo}</strong></td>
+                      <td>${q.rules}</td>
+                      <td>${q.units}</td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="scheme-section">
+            <h4>Subjective Part-II (Long Questions)</h4>
+            <p class="scheme-instruction">${schemeData.longInstruction}</p>
+            <div class="table-responsive">
+              <table class="scheme-table">
+                <thead>
+                  <tr>
+                    <th>Question No.</th>
+                    <th>Part (a)</th>
+                    <th>Part (b)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${schemeData.longQuestions.map(q => `
+                    <tr>
+                      <td><strong>${q.qNo}</strong></td>
+                      <td>${q.partA}</td>
+                      <td>${q.partB}</td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      `;
+    };
 
     // Schema Helper Function
     window.injectSchema = function(schemaData) {
@@ -236,42 +361,33 @@ const initializeNotesCraftApp = () => {
     initFirstVisitSplash();
 
     // 0. Pairing Scheme Modal Logic
-    const pairingModal = document.getElementById('pairingSchemeModal');
-    const openPairingBtn = document.getElementById('openPairingSchemeModal');
-    const closePairingBtn = document.getElementById('closePairingModalBtn');
-    const pairingBackdrop = document.getElementById('pairingModalBackdrop');
-    const pairingSubjectBtns = document.querySelectorAll('.pairing-subject-btn');
-
-    if (pairingModal && openPairingBtn) {
-        const togglePairingModal = (show) => {
-            if (show) {
-                pairingModal.classList.remove('hidden');
-                document.body.style.overflow = 'hidden'; // Prevent background scrolling
-            } else {
-                pairingModal.classList.add('hidden');
-                document.body.style.overflow = '';
-            }
-        };
-
-        openPairingBtn.addEventListener('click', () => togglePairingModal(true));
-        
-        if (closePairingBtn) closePairingBtn.addEventListener('click', () => togglePairingModal(false));
-        if (pairingBackdrop) pairingBackdrop.addEventListener('click', () => togglePairingModal(false));
-        
-        // Close on Escape key
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && !pairingModal.classList.contains('hidden')) {
-                togglePairingModal(false);
-            }
+    const openPairingBtn = document.getElementById('openPairingSchemeView');
+    
+    if (openPairingBtn) {
+        openPairingBtn.addEventListener('click', () => {
+             window.openPairingSchemesView(false);
         });
+    }
 
-        // Add dummy event listeners to the subject buttons for now
+    const pairingBackBtn = document.getElementById('pairingBackBtn');
+    if (pairingBackBtn) {
+        pairingBackBtn.addEventListener('click', () => {
+             window.updateSEO('11th Class Notes PDF Punjab Board 2026 - NotesCraft', '11th Class Notes PDF Punjab Board 2026. Master your ICS and FSc board exams with NotesCraft. Get interactive chapter-wise short questions, active recall flashcards, and solved model papers.', '/');
+            const psView = document.getElementById('pairing-schemes-view');
+            if (psView) psView.classList.add('hidden');
+            const bd = document.getElementById('subjectDashboardView');
+            if (bd) bd.classList.remove('hidden');
+        });
+    }
+
+    const pairingSubjectBtns = document.querySelectorAll('.pairing-subject-card');
+    if (pairingSubjectBtns.length > 0) {
         pairingSubjectBtns.forEach(btn => {
             btn.addEventListener('click', (e) => {
                 const subject = e.target.getAttribute('data-subject');
-                console.log(`Pairing scheme selected for: ${subject}`);
-                // In the future, logic to show the pairing scheme will go here
-                togglePairingModal(false);
+                if (window.renderPairingScheme) {
+                    window.renderPairingScheme(subject);
+                }
             });
         });
     }

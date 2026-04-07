@@ -1,3 +1,26 @@
+window.pairingSchemes = {
+  "Mathematics": {
+    title: "Mathematics (FSc/ICS)",
+    totalMarks: 100,
+    objective: 20,
+    subjective: 80,
+    objectiveRules: "<strong>Q-1:</strong> 20 MCQs from the entire textbook.",
+    shortQuestions: [
+      { qNo: "Q-2", rules: "Attempt 8 out of 12", units: "Unit 1 (4), Unit 2 (2), Unit 3 (2), Unit 4 (3), Unit 5 (1)" },
+      { qNo: "Q-3", rules: "Attempt 8 out of 12", units: "Unit 6 (4), Unit 7 (2), Unit 9 (3), Unit 10 (3)" },
+      { qNo: "Q-4", rules: "Attempt 9 out of 13", units: "Unit 11 (2), Unit 12 (4), Unit 13 (4), Unit 14 (3)" }
+    ],
+    longInstruction: "<strong>Instruction:</strong> Attempt any 3 out of 5. Each question has Part 'a' & 'b' (5 marks each).",
+    longQuestions: [
+      { qNo: "Q-5", partA: "Unit 1", partB: "Unit 2 OR Unit 3" },
+      { qNo: "Q-6", partA: "Unit 4", partB: "Unit 5 OR Unit 9" },
+      { qNo: "Q-7", partA: "Unit 6", partB: "Unit 7" },
+      { qNo: "Q-8", partA: "Unit 10", partB: "Unit 12" },
+      { qNo: "Q-9", partA: "Unit 13", partB: "Unit 14" }
+    ]
+  }
+};
+
 const siteData = {
   "Computer Science": {
     "1": [

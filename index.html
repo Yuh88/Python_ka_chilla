@@ -90,13 +90,13 @@
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <!-- Preload Critical Assets -->
-    <link rel="preload" href="/style.css?v=1.0.26" as="style">
+    <link rel="preload" href="/style.css?v=1.0.27" as="style">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
     <!-- Premium Tech Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
-  <link rel="stylesheet" href="/style.css?v=1.0.26">
+  <link rel="stylesheet" href="/style.css?v=1.0.27">
 </head>
 <body class="dark-mode" style="background-color: #0b0b0d; color: #ffffff;">
 
@@ -368,6 +368,29 @@
               </svg>
             </button>
 
+            <!-- Pairing Schemes View -->
+            <section id="pairing-schemes-view" class="pairing-schemes-view hidden">
+              <div class="pairing-header">
+                <button id="pairingBackBtn" class="pairing-back-btn" type="button">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                  Back to Dashboard
+                </button>
+                <h2 class="pairing-title">📊 11th Class Pairing Schemes 2026</h2>
+                <p class="pairing-subtitle">Official weightage & paper pattern for all Punjab Boards.</p>
+              </div>
+
+              <!-- Subject Selection Grid -->
+              <div class="pairing-subject-grid" id="pairingSubjectGrid">
+                <button class="pairing-subject-card" data-subject="Mathematics" type="button">Mathematics</button>
+                <button class="pairing-subject-card" data-subject="Computer Science" type="button">Computer Science</button>
+                <button class="pairing-subject-card" data-subject="Physics" type="button">Physics</button>
+              </div>
+
+              <div class="pairing-content" id="pairingSchemeContent">
+                <!-- Data will be dynamically rendered here -->
+              </div>
+            </section>
+
             <!-- Subject Dashboard (Default Home View) -->
             <section id="subjectDashboardView" class="subject-dashboard-view">
               <div id="globalAnnouncementBanner" class="global-announcement-banner hidden" aria-live="polite">
@@ -435,10 +458,10 @@
               </div>
 
               <!-- VIP Pairing Scheme Banner -->
-              <button id="openPairingSchemeModal" class="vip-pairing-banner" type="button" aria-label="Open Pairing Schemes 2026 Modal">
+              <button id="openPairingSchemeView" class="vip-pairing-banner" type="button" aria-label="Open Pairing Schemes 2026">
                 <div class="vip-pairing-content">
                   <div class="vip-badge-wrapper"><span class="vip-badge">🔥 Trending</span></div>
-                  <h2 class="vip-title">📊 1st Year Pairing Schemes 2026</h2>
+                  <h2 class="vip-title">📊 11th Class Pairing Schemes 2026</h2>
                   <p class="vip-subtitle">Check chapter-wise board weightage for ICS &amp; FSc (All Punjab Boards).</p>
                 </div>
                 <div class="vip-icon-wrapper" aria-hidden="true">
@@ -1651,8 +1674,8 @@ Schools organize these debates because <strong>storytelling makes arguments more
 
 <script defer src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
 <script defer src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
-<script defer src="/content_data.js?v=1.0.24"></script>
-<script defer src="/script.js?v=1.0.24"></script>
+<script defer src="/content_data.js?v=1.0.28"></script>
+<script defer src="/script.js?v=1.0.28"></script>
 
 </body>
 </html>
