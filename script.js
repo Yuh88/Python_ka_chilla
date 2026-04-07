@@ -1,6 +1,6 @@
 (() => {
     const url = new URL(window.location.href);
-    const rawPath = url.searchParams.get('p');
+    const rawPath = url.searchParams.get('path');
 
     // SEO Helper Function
     window.updateSEO = function(pageTitle, metaDescription, urlPath) {
@@ -77,20 +77,13 @@
         window.__notescraftBootPathname = withLeadingSlash.split('?')[0].split('#')[0] || '';
     }
 
-    url.searchParams.delete('p');
+    url.searchParams.delete('path');
     const cleanRelativeUrl = `${url.pathname}${url.search}${url.hash}`;
     history.replaceState(history.state, '', cleanRelativeUrl);
 })();
 
 const initializeNotesCraftApp = () => {
     window.openModelPapers = function openModelPapers() {};
-
-    const savedPath = sessionStorage.getItem('spaRedirect');
-    if (savedPath) {
-        sessionStorage.removeItem('spaRedirect');
-        history.replaceState(null, null, savedPath);
-        window.__notescraftBootPathname = savedPath;
-    }
 
     const splashKey = 'notescraft_splash_seen';
     const splash = document.getElementById('firstVisitSplash');
