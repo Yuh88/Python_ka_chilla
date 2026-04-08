@@ -40,6 +40,7 @@
     });
 
     window.openPairingSchemesView = function(isHistoryEvent = false) {
+        window.scrollTo(0, 0);
         document.getElementById('subjectDashboardView')?.classList.add('hidden');
         document.getElementById('chapterSelectionView')?.classList.add('hidden');
         document.querySelector('.chapter-header-banner')?.classList.add('hidden');
@@ -4172,6 +4173,7 @@ const buildNavState = (view, subject = null, chapter = null, islamiyatBaabId = n
     };
 
     const renderNavState = (state, direction = 'none') => {
+        window.scrollTo(0, 0);
         const safeState = normalizeNavState(state);
 
         if (safeState.view === 'model-papers') {
