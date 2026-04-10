@@ -17,6 +17,15 @@
         if (pageTitle) {
             document.title = pageTitle;
         }
+
+        // GA4 Manual Page View Tracking
+        if (typeof gtag === 'function') {
+            gtag('event', 'page_view', {
+                page_title: pageTitle,
+                page_location: window.location.href,
+                page_path: window.location.pathname + window.location.hash
+            });
+        }
         
         if (metaDescription) {
             let metaDescTag = document.querySelector('meta[name="description"]');
@@ -667,6 +676,13 @@ const initializeNotesCraftApp = () => {
     const downloadPdfBtn = document.getElementById('downloadPdfBtn');
     if (downloadPdfBtn) {
         downloadPdfBtn.addEventListener('click', () => {
+            if (typeof gtag === 'function') {
+                gtag('event', 'download_pdf', {
+                    event_category: 'engagement',
+                    event_label: document.title // Sends the name of the chapter being downloaded
+                });
+            }
+
             const content = document.getElementById('questions-feed'); // or a wrapper if needed
             if (!content) return;
             
