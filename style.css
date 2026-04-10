@@ -4368,3 +4368,54 @@ body:not(.dark-mode) .vip-icon-wrapper {
 
 
 
+
+
+/* PDF Export Tool & Print Styling */
+.download-pdf-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+    margin-top: 15px;
+}
+.download-pdf-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(16, 185, 129, 0.3);
+    background: linear-gradient(135deg, #059669, #047857);
+}
+@media (min-width: 768px) {
+    .chapter-header-banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .download-pdf-btn { margin-top: 0; }
+}
+
+@media print, body.pdf-export-mode {
+    .pdf-hide {
+        display: none !important;
+    }
+    .main-wrapper { margin: 0 !important; padding: 0 !important; }
+    .question-card {
+        break-inside: avoid;
+        margin-bottom: 20px !important;
+    }
+    .answer-text, .a-body, .answer-reveal-area {
+        display: block !important;
+        opacity: 1 !important;
+        max-height: none !important;
+        filter: none !important;
+        visibility: visible !important;
+    }
+}
+

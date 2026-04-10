@@ -89,14 +89,15 @@
   </script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Preload Critical Assets -->
-    <link rel="preload" href="/style.css?v=1.0.29" as="style">
+    <link rel="preload" href="/style.css?v=1.0.31" as="style">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
     <!-- Premium Tech Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
-  <link rel="stylesheet" href="/style.css?v=1.0.29">
+  <link rel="stylesheet" href="/style.css?v=1.0.31">
 </head>
 <body class="dark-mode" style="background-color: #0b0b0d; color: #ffffff;">
 
@@ -513,6 +514,14 @@
                     <h2>Chapter 9: Entrepreneurship in Digital Age</h2>
                     <p>PHASE 1: MOST IMPORTANT & HIGHLY REPEATED BOARD-LEVEL SQs</p>
                 </div>
+                <button id="downloadPdfBtn" class="download-pdf-btn" aria-label="Download PDF" title="Download chapter as PDF">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download PDF
+                </button>
             </div>
 
             <!-- Tab Navigation System -->
@@ -1678,7 +1687,7 @@ Schools organize these debates because <strong>storytelling makes arguments more
 <script defer src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
 <script defer src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
 <script defer src="/content_data.js?v=1.0.30"></script>
-<script defer src="/script.js?v=1.0.33"></script>
+<script defer src="/script.js?v=1.0.36"></script>
 
 </body>
 </html>

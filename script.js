@@ -1,4 +1,15 @@
 (() => {
+    // Service Worker Registration
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js').then(registration => {
+                console.log('SW registered: ', registration);
+            }).catch(registrationError => {
+                console.log('SW registration failed: ', registrationError);
+            });
+        });
+    }
+
     window.__notescraftBootPathname = window.location.pathname;
 
     // SEO Helper Function
@@ -613,6 +624,52 @@ const initializeNotesCraftApp = () => {
     let currentChapterQuestionList = [];
     let currentChapterSubjectName = '';
     let currentChapterName = '';
+    
+    // PDF Download Initialization
+    const downloadPdfBtn = document.getElementById('downloadPdfBtn');
+    if (downloadPdfBtn) {
+        downloadPdfBtn.addEventListener('click', () => {
+            const content = document.getElementById('questions-feed'); // or a wrapper if needed
+            if (!content) return;
+            
+            const originalBtnHtml = downloadPdfBtn.innerHTML;
+            downloadPdfBtn.innerHTML = '⏳ Generating...';
+            downloadPdfBtn.disabled = true;
+            
+            setTimeout(() => {
+                // Format filename dynamically
+                const safeSubject = currentChapterSubjectName.replace(/[^a-zA-Z0-9]/g, '');
+                const safeChapter = window.decodeChapterPath ? window.decodeChapterPath(currentChapterName).replace(/[^a-zA-Z0-9]/g, '') : currentChapterName.replace(/[^a-zA-Z0-9]/g, '');
+                const fileName = `NotesCraft_${safeSubject}_${safeChapter}.pdf`;
+                
+                const opt = {
+                    margin:       0.5,
+                    filename:     fileName,
+                    image:        { type: 'jpeg', quality: 0.98 },
+                    html2canvas:  { scale: 2, scrollY: 0, backgroundColor: '#0b0b0d', useCORS: true, windowWidth: document.documentElement.offsetWidth },
+                    jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+                };
+                
+                const elementsToHide = document.querySelectorAll('.topbar, .sidebar, .tab-navigation, .persistent-back-btn, .download-pdf-btn, .theme-toggle, .search-container, .copy-btn, .bookmark-btn, .action-btn, .mark-done-btn');
+                elementsToHide.forEach(el => el.classList.add('pdf-hide'));
+                
+                const originalClasses = document.body.className;
+                document.body.classList.add('pdf-export-mode');
+                
+                html2pdf().set(opt).from(content).save().then(() => {
+                    document.body.className = originalClasses;
+                    elementsToHide.forEach(el => el.classList.remove('pdf-hide'));
+                    downloadPdfBtn.innerHTML = originalBtnHtml;
+                    downloadPdfBtn.disabled = false;
+                }).catch(() => {
+                    document.body.className = originalClasses;
+                    elementsToHide.forEach(el => el.classList.remove('pdf-hide'));
+                    downloadPdfBtn.innerHTML = originalBtnHtml;
+                    downloadPdfBtn.disabled = false;
+                });
+            }, 100);
+        });
+    }
 
     const moonIcon = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>`;
     const sunIcon = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>`;
@@ -4501,3 +4558,4 @@ if (document.readyState === 'loading') {
 } else {
     initializeNotesCraftApp();
 }
+
