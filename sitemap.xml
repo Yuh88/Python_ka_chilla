@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://notescraft.dev/</loc>
-    <priority>0.9</priority>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://notescraft.dev/pairing-schemes</loc>
@@ -13,47 +13,47 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/computer-science/chapter-1</loc>
+    <loc>https://notescraft.dev/computer-science/1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/computer-science/chapter-2</loc>
+    <loc>https://notescraft.dev/computer-science/2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/computer-science/chapter-3</loc>
+    <loc>https://notescraft.dev/computer-science/3</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/computer-science/chapter-4</loc>
+    <loc>https://notescraft.dev/computer-science/4</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/computer-science/chapter-5</loc>
+    <loc>https://notescraft.dev/computer-science/5</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/computer-science/chapter-6</loc>
+    <loc>https://notescraft.dev/computer-science/6</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/computer-science/chapter-7</loc>
+    <loc>https://notescraft.dev/computer-science/7</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/computer-science/chapter-8</loc>
+    <loc>https://notescraft.dev/computer-science/8</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/computer-science/chapter-9</loc>
+    <loc>https://notescraft.dev/computer-science/9</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -62,52 +62,52 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/english/chapter-1</loc>
+    <loc>https://notescraft.dev/english/1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/english/chapter-2</loc>
+    <loc>https://notescraft.dev/english/2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/english/chapter-3</loc>
+    <loc>https://notescraft.dev/english/3</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/english/chapter-5</loc>
+    <loc>https://notescraft.dev/english/5</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/english/chapter-6</loc>
+    <loc>https://notescraft.dev/english/6</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/english/chapter-8</loc>
+    <loc>https://notescraft.dev/english/8</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/english/chapter-10</loc>
+    <loc>https://notescraft.dev/english/10</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/english/chapter-11</loc>
+    <loc>https://notescraft.dev/english/11</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/english/chapter-13</loc>
+    <loc>https://notescraft.dev/english/13</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/english/chapter-14</loc>
+    <loc>https://notescraft.dev/english/14</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -116,62 +116,62 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/physics/chapter-1</loc>
+    <loc>https://notescraft.dev/physics/1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/physics/chapter-2</loc>
+    <loc>https://notescraft.dev/physics/2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/physics/chapter-3</loc>
+    <loc>https://notescraft.dev/physics/3</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/physics/chapter-4</loc>
+    <loc>https://notescraft.dev/physics/4</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/physics/chapter-5</loc>
+    <loc>https://notescraft.dev/physics/5</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/physics/chapter-6</loc>
+    <loc>https://notescraft.dev/physics/6</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/physics/chapter-7</loc>
+    <loc>https://notescraft.dev/physics/7</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/physics/chapter-8</loc>
+    <loc>https://notescraft.dev/physics/8</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/physics/chapter-9</loc>
+    <loc>https://notescraft.dev/physics/9</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/physics/chapter-10</loc>
+    <loc>https://notescraft.dev/physics/10</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/physics/chapter-11</loc>
+    <loc>https://notescraft.dev/physics/11</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/physics/chapter-12</loc>
+    <loc>https://notescraft.dev/physics/12</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -180,22 +180,117 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/islamiyat/باب-اول-قرآن-مجید-و-حدیث-نبوی-الف-علوم-القرآن</loc>
+    <loc>https://notescraft.dev/islamiyat/bab-1-quran-o-hadees-الف-علوم-القرآن</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/islamiyat/باب-دوم-ایمانیات-و-عبادات-1-ایمانیات-الف-توحید-کے-دلائل-اور-تقاضے</loc>
+    <loc>https://notescraft.dev/islamiyat/bab-1-quran-o-hadees-ب-علوم-الحدیث</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/islamiyat/باب-دوم-ایمانیات-و-عبادات-1-ایمانیات-ب-رسالتِ-محمدی-کی-خصوصیات</loc>
+    <loc>https://notescraft.dev/islamiyat/bab-2-emaniyat-o-ibadaat-1-ایمانیات-الف-توحید-کے-دلائل-اور-تقاضے</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notescraft.dev/islamiyat/باب-دوم-ایمانیات-و-عبادات-1-ایمانیات-ج-ملائکہ-پر-ایمان</loc>
+    <loc>https://notescraft.dev/islamiyat/bab-2-emaniyat-o-ibadaat-1-ایمانیات-ب-رسالتِ-محمدی-کی-خصوصیات</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/bab-2-emaniyat-o-ibadaat-1-ایمانیات-ج-ملائکہ-پر-ایمان</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/bab-2-emaniyat-o-ibadaat-1-ایمانیات-د-کُتبِ-سماویہ-پر-ایمان</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/bab-2-emaniyat-o-ibadaat-1-ایمانیات-ہ-آخرت-پر-ایمان</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/bab-2-emaniyat-o-ibadaat-2-عبادات-الف-فلسفۂ-نماز</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/bab-2-emaniyat-o-ibadaat-2-عبادات-ب-فلسفۂ-زکوٰۃ-و-صدقات</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/bab-2-emaniyat-o-ibadaat-2-عبادات-ج-فلسفۂ-صوم</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/bab-2-emaniyat-o-ibadaat-2-عبادات-د-فلسفۂ-حج-و-قربانی</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/bab-3-seerat-e-nabvi-الف-نبی-کریم-بطور-مثالی-سربراہِ-خاندان</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/bab-3-seerat-e-nabvi-ب-نبی-کریم-بطور-مثالی-سربراہِ-ریاست</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/bab-3-seerat-e-nabvi-ج-نبی-کریم-بطور-مثالی-سپہ-سالار</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/bab-3-seerat-e-nabvi-د-نبی-کریم-کی-معاشی-تعلیمات</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/bab-4-akhlaq-o-aadab-الف-اجتماعی-خیر-خواہی-اور-احترامِ-انسانیت</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/bab-4-akhlaq-o-aadab-ب-اخلاقی-رذائل-سے-اجتناب</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/bab-5-husn-e-mamlat-الف-حقوق-العباد-اساتذہ-کرام،-معاون-عملہ،-زوجین،-اولاد،-بیوہ</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/bab-5-husn-e-mamlat-ب-نکاح-و-طلاق-کی-اسلامی-تعلیمات</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/bab-6-hidayat-ke-sarchashme-الف-خلافتِ-راشدہ</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/bab-6-hidayat-ke-sarchashme-ب-ائمہ-اہلِ-بیتِ-اطہار-رَضِیَ-اللَّهُ-تَعَالَىٰ-عَنْهُمْ</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/bab-7-islami-taleemat-الف-قانون-کی-پاسداری</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/islamiyat/bab-7-islami-taleemat-ب-اسلاموفوبیا-اور-ہماری-ذمہ-داریاں</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -205,6 +300,21 @@
   </url>
   <url>
     <loc>https://notescraft.dev/tarjama-tul-quran/سُورَةُ-الْبَقَرَةِ</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/tarjama-tul-quran/سُورَةُ-آلِ-عِمْرَانَ</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/tarjama-tul-quran/سُورَةُ-الْأَنْفَالِ</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://notescraft.dev/tarjama-tul-quran/سُورَةُ-التَّوْبَةِ</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
