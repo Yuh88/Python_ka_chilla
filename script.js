@@ -3201,6 +3201,7 @@ const initializeNotesCraftApp = () => {
 
             const topics = [];
             for (const topicName in topicsData) {
+                if (topicName === "slug") continue;
                 topics.push({
                     id: topicName,
                     title: topicName,
@@ -3209,6 +3210,7 @@ const initializeNotesCraftApp = () => {
             }
 
             hierarchy.push({
+                slug: topicsData.slug || undefined,
                 id: baabName,
                 title: baabName,
                 topics: topics
@@ -3708,12 +3710,16 @@ const buildNavState = (view, subject = null, chapter = null, islamiyatBaabId = n
     };
 
     const slugifyRouteSegment = (value) => {
-        // Encode standard string, but support Arabic/Urdu unicode block to avoid empty slugs
         let safeStr = String(value || '').toLowerCase().trim();
-        // Remove characters that are NOT alphanumeric, spaces, hyphens, or Arabic script
         safeStr = safeStr.replace(/[^a-z0-9\s-\u0600-\u06FF]/g, '');
         safeStr = safeStr.replace(/\s+/g, '-');
         safeStr = safeStr.replace(/-+/g, '-');
+        
+        if (!safeStr || safeStr === '-') {
+            let hash = 0;
+            for (let i = 0; i < String(value).length; i++) hash = ((hash << 5) - hash) + String(value).charCodeAt(i);
+            return 'chapter-' + Math.abs(hash).toString(36);
+        }
         return safeStr;
     };
 
@@ -3721,8 +3727,39 @@ const buildNavState = (view, subject = null, chapter = null, islamiyatBaabId = n
 
     const getChapterSlug = (subjectName, chapterKey) => {
         const pathSegments = decodeChapterPath(chapterKey);
-        const chapterLabel = formatChapterLabelFromPath(subjectName, pathSegments);
-        return slugifyRouteSegment(chapterLabel);
+        const data = getSubjectChapterData(subjectName);
+
+        if (data) {
+            let currentLevel = data;
+            let slugs = [];
+
+            for (const segment of pathSegments) {
+                if (currentLevel[segment]) {
+                    if (currentLevel[segment].slug) {
+                        // Use explicit slug if provided
+                        slugs.push(currentLevel[segment].slug);
+                    } else {
+                        // Generate slug for sub-topic
+                        let generated = slugifyRouteSegment(segment);
+                        
+                        // If the generator fell back to a random hash (meaning the text was pure Urdu/Arabic)
+                        if (generated.match(/^chapter-[0-9a-z]+$/)) {
+                            // Find the positional index of this sub-topic
+                            const keys = Object.keys(currentLevel).filter(k => k !== 'slug');
+                            const index = keys.indexOf(segment) + 1;
+                            generated = 'topic-' + index;
+                        }
+                        slugs.push(generated);
+                    }
+                    currentLevel = currentLevel[segment];
+                }
+            }
+            
+            if (slugs.length > 0) {
+                return slugs.join('-');
+            }
+        }
+        return slugifyRouteSegment(formatChapterLabelFromPath(subjectName, pathSegments));
     };
 
     const getRoutePathFromState = (state) => {
