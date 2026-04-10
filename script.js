@@ -13,7 +13,7 @@
     window.__notescraftBootPathname = window.location.pathname;
 
     // SEO Helper Function
-    window.updateSEO = function(pageTitle, metaDescription, urlPath) {
+    window.updateSEO = function(pageTitle, metaDescription, urlPath = null, faqData = null) {
         if (pageTitle) {
             document.title = pageTitle;
         }
@@ -27,9 +27,47 @@
             }
             metaDescTag.content = metaDescription;
         }
+
+        // Handle Canonical URL
+        let canonicalTag = document.querySelector('link[rel="canonical"]');
+        if (!canonicalTag) {
+            canonicalTag = document.createElement('link');
+            canonicalTag.rel = "canonical";
+            document.head.appendChild(canonicalTag);
+        }
+        canonicalTag.href = window.location.href;
         
         if (urlPath && window.location.pathname !== urlPath) {
             window.history.pushState(null, '', urlPath);
+        }
+
+        // Dynamic FAQ Schema Injection
+        let schemaScript = document.getElementById('dynamic-seo-schema-faq');
+        if (schemaScript) {
+            schemaScript.remove();
+        }
+
+        if (faqData && Array.isArray(faqData) && faqData.length > 0) {
+            const faqEntities = faqData.map(item => ({
+                "@type": "Question",
+                "name": String(item.question || item.q || '').replace(/<[^>]*>?/g, '').trim(),
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": String(item.answer || item.a || '').replace(/<[^>]*>?/g, '').trim()
+                }
+            }));
+
+            const faqSchema = {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": faqEntities
+            };
+
+            const script = document.createElement('script');
+            script.id = 'dynamic-seo-schema-faq';
+            script.type = 'application/ld+json';
+            script.textContent = JSON.stringify(faqSchema);
+            document.head.appendChild(script);
         }
     };
     
@@ -3923,10 +3961,6 @@ const buildNavState = (view, subject = null, chapter = null, islamiyatBaabId = n
                 '/'
             );
         }
-        
-        if (window.injectSchema) {
-            window.injectSchema(null);
-        }
     };
 
     const showChapterSelection = (subjectName, islamiyatBaabId = '') => {
@@ -4122,11 +4156,14 @@ const buildNavState = (view, subject = null, chapter = null, islamiyatBaabId = n
         activeChapter = chapterName;
         activeIslamiyatBaabId = '';
 
+        const chapterQuestions = getChapterQuestions(subjectName, chapterName);
+
         if (window.updateSEO) {
             window.updateSEO(
                 `11th Class ${subjectName} ${decodeChapterPath(chapterName)} Notes - Punjab Board 2026`,
                 `Most important short questions and notes for ${decodeChapterPath(chapterName)} of ${subjectName}. Latest full syllabus 11th class.`,
-                withBasePrefix(getRoutePathFromState(buildNavState('content', subjectName, chapterName)))
+                withBasePrefix(getRoutePathFromState(buildNavState('content', subjectName, chapterName))),
+                chapterQuestions ? chapterQuestions.slice(0, 5) : null
             );
         }
 
@@ -4159,34 +4196,10 @@ const buildNavState = (view, subject = null, chapter = null, islamiyatBaabId = n
             bannerSubtitle.innerText = 'Focused revision view for board preparation.';
         }
 
-        const chapterQuestions = getChapterQuestions(subjectName, chapterName);
-        const hasChapterContent = chapterQuestions.length > 0;
+        const hasChapterContent = chapterQuestions && chapterQuestions.length > 0;
 
         if (hasChapterContent) {
             renderQuestionsByCategory(chapterQuestions, subjectName, chapterName);
-            
-            if (window.injectSchema) {
-                const schemaQuestions = chapterQuestions.slice(0, 5).map(q => {
-                    const cleanQ = String(q.question || '').replace(/<[^>]*>?/g, '').trim();
-                    const cleanA = String(q.answer || '').replace(/<[^>]*>?/g, '').trim();
-                    return {
-                        "@type": "Question",
-                        "name": cleanQ,
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": cleanA
-                        }
-                    };
-                });
-                
-                if (schemaQuestions.length > 0) {
-                    window.injectSchema({
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
-                        "mainEntity": schemaQuestions
-                    });
-                }
-            }
 
             setFlashcardFabVisibility(true);
             setCommentsSectionVisibility(true);
