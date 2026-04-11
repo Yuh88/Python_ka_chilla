@@ -2564,7 +2564,7 @@ const initializeNotesCraftApp = () => {
             return;
         }
 
-        const targetTimestamp = new Date('May 20, 2026 00:00:00').getTime();
+        const targetTimestamp = new Date('June 15, 2026 08:00:00').getTime();
         if (!Number.isFinite(targetTimestamp)) {
             return;
         }
