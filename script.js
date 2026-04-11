@@ -2564,7 +2564,8 @@ const initializeNotesCraftApp = () => {
             return;
         }
 
-        const targetTimestamp = new Date('June 15, 2026 08:00:00').getTime();
+        // Pakistan Standard Time (PKT) is UTC+5. 08:00 AM PKT = 2026-06-15T08:00:00+05:00
+        const targetTimestamp = new Date('2026-06-15T08:00:00+05:00').getTime();
         if (!Number.isFinite(targetTimestamp)) {
             return;
         }
