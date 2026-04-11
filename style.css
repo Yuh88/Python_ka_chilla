@@ -131,6 +131,9 @@
 .badge.total { background: rgba(79, 70, 229, 0.1); color: var(--primary-color); border: 1px solid rgba(79, 70, 229, 0.2); }
 .badge.obj { background: rgba(16, 185, 129, 0.1); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.2); }
 .badge.subj { background: rgba(245, 158, 11, 0.1); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.2); }
+.badge.time-total { background: rgba(79, 70, 229, 0.05); color: var(--primary-color); border: 1px dashed rgba(79, 70, 229, 0.4); }
+.badge.time-obj { background: rgba(16, 185, 129, 0.05); color: #10b981; border: 1px dashed rgba(16, 185, 129, 0.4); }
+.badge.time-subj { background: rgba(245, 158, 11, 0.05); color: #f59e0b; border: 1px dashed rgba(245, 158, 11, 0.4); }
 
 .scheme-section {
   margin-bottom: 2rem;

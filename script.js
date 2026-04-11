@@ -257,10 +257,15 @@
             <h3>${schemeData.title}</h3>
             <div class="scheme-badges">
               <span class="badge total" style="${schemeData.totalMarks !== 100 ? 'background-color:#f59e0b;color:#fff;' : ''}">Total Marks: ${schemeData.totalMarks}</span>
-              ${schemeData.time ? `<span class="badge obj">Time: ${schemeData.time}</span>` : ''}
               <span class="badge obj">Objective: ${schemeData.objective}</span>
               <span class="badge subj">Subjective: ${schemeData.subjective}</span>
             </div>
+            ${schemeData.totalTime ? `
+            <div class="scheme-badges time-badges" style="margin-top: 8px;">
+              <span class="badge time-total">⏱️ Total Time: ${schemeData.totalTime}</span>
+              <span class="badge time-obj">⏱️ Objective: ${schemeData.objTime}</span>
+              <span class="badge time-subj">⏱️ Subjective: ${schemeData.subjTime}</span>
+            </div>` : ''}
           </div>
           
           <div class="scheme-section">
