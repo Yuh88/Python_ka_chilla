@@ -2112,20 +2112,18 @@ body.dark-mode .answer-text strong {
 
 
 .extra-badge {
-    font-size: 0.9rem;
+    font-size: 1.05rem;
     font-weight: 600;
-    color: var(--text-primary);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    color: var(--text-muted);
     min-width: max-content;
 }
 
 
 
 .extra-text {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     color: var(--text-primary);
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .card-meta-actions {
