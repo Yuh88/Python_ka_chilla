@@ -2114,7 +2114,7 @@ body.dark-mode .answer-text strong {
 .extra-badge {
     font-size: 0.9rem;
     font-weight: 600;
-    color: var(--text-muted);
+    color: var(--text-primary);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     min-width: max-content;
@@ -2124,7 +2124,7 @@ body.dark-mode .answer-text strong {
 
 .extra-text {
     font-size: 0.95rem;
-    color: var(--text-secondary);
+    color: var(--text-primary);
     line-height: 1.6;
 }
 
